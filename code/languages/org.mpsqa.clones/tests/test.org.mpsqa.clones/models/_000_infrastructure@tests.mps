@@ -141,7 +141,7 @@
     </language>
   </registry>
   <node concept="2XOHcx" id="5dW8pSKf75s">
-    <property role="2XOHcw" value="${mps.qa.home}/code/languages/com.mps.qa.clones" />
+    <property role="2XOHcw" value="${mpsqa.home}/code/languages/org.mpsqa.clones" />
   </node>
   <node concept="1lH9Xt" id="5dW8pSKf75r">
     <property role="TrG5h" value="_010_hashcode" />

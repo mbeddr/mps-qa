@@ -180,7 +180,7 @@
     </node>
   </node>
   <node concept="2XOHcx" id="5dW8pSKf75s">
-    <property role="2XOHcw" value="${mps.qa.home}/code/languages/com.mps.qa.clones" />
+    <property role="2XOHcw" value="${mpsqa.home}/code/languages/org.mpsqa.clones" />
   </node>
 </model>
 
