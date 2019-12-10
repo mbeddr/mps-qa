@@ -9,7 +9,7 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
   </languages>
   <imports>
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
@@ -204,10 +204,17 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
     </language>
-    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="5753587520027641499" name="com.mbeddr.mpsutil.blutil.structure.SafeReadAction" flags="ng" index="3kxDZ6">
+    <language id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access">
+      <concept id="8974276187400348173" name="jetbrains.mps.lang.access.structure.CommandClosureLiteral" flags="nn" index="1QHqEC" />
+      <concept id="8974276187400348170" name="jetbrains.mps.lang.access.structure.BaseExecuteCommandStatement" flags="nn" index="1QHqEJ">
         <child id="1423104411234567454" name="repo" index="ukAjM" />
-        <child id="5753587520027644759" name="body" index="3kxCCa" />
+        <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
+      </concept>
+      <concept id="8974276187400348181" name="jetbrains.mps.lang.access.structure.ExecuteLightweightCommandStatement" flags="nn" index="1QHqEK" />
+    </language>
+    <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
+        <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
@@ -658,9 +665,9 @@
           </node>
           <node concept="9aQIb" id="1oYl8Ffq6DE" role="9aQIa">
             <node concept="3clFbS" id="1oYl8Ffq6DF" role="9aQI4">
-              <node concept="3kxDZ6" id="7WP_sw5_yHU" role="3cqZAp">
-                <node concept="9aQIb" id="7WP_sw5_yHV" role="3kxCCa">
-                  <node concept="3clFbS" id="7WP_sw5_yHW" role="9aQI4">
+              <node concept="1QHqEK" id="7JEz8ilsCJt" role="3cqZAp">
+                <node concept="1QHqEC" id="7JEz8ilsCJv" role="1QHqEI">
+                  <node concept="3clFbS" id="7JEz8ilsCJx" role="1bW5cS">
                     <node concept="2Gpval" id="7WP_sw5AiXS" role="3cqZAp">
                       <node concept="2GrKxI" id="7WP_sw5AiXU" role="2Gsz3X">
                         <property role="TrG5h" value="module" />
@@ -677,7 +684,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="7WP_sw5AkZF" role="2OqNvi">
-                          <ref role="37wK5l" to="z1c4:~ProjectBase.getProjectModules():java.util.List" resolve="getProjectModules" />
+                          <ref role="37wK5l" to="z1c4:~ProjectBase.getProjectModules()" resolve="getProjectModules" />
                         </node>
                       </node>
                       <node concept="3clFbS" id="7WP_sw5AiXY" role="2LFqv$">
@@ -690,7 +697,7 @@
                               <ref role="2Gs0qQ" node="7WP_sw5AiXU" resolve="module" />
                             </node>
                             <node concept="liA8E" id="7WP_sw5_PFG" role="2OqNvi">
-                              <ref role="37wK5l" to="lui2:~SModule.getModels():java.lang.Iterable" resolve="getModels" />
+                              <ref role="37wK5l" to="lui2:~SModule.getModels()" resolve="getModels" />
                             </node>
                           </node>
                           <node concept="3clFbS" id="7WP_sw5_NBp" role="2LFqv$">
@@ -703,7 +710,7 @@
                                   <ref role="2Gs0qQ" node="7WP_sw5_NBl" resolve="m" />
                                 </node>
                                 <node concept="liA8E" id="E3aAvrSGtR" role="2OqNvi">
-                                  <ref role="37wK5l" to="mhbf:~SModel.isReadOnly():boolean" resolve="isReadOnly" />
+                                  <ref role="37wK5l" to="mhbf:~SModel.isReadOnly()" resolve="isReadOnly" />
                                 </node>
                               </node>
                             </node>
@@ -725,7 +732,7 @@
                     </node>
                   </node>
                 </node>
-                <node concept="37vLTw" id="1oYl8Ffq9sV" role="ukAjM">
+                <node concept="37vLTw" id="7JEz8ilsCTK" role="ukAjM">
                   <ref role="3cqZAo" node="1oYl8FfqV43" resolve="repo" />
                 </node>
               </node>

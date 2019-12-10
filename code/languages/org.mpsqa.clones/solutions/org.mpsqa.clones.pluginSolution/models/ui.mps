@@ -5,7 +5,7 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
   </languages>
   <imports>
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
@@ -185,11 +185,6 @@
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
       </concept>
     </language>
-    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="5753587520027641499" name="com.mbeddr.mpsutil.blutil.structure.SafeReadAction" flags="ng" index="3kxDZ6">
-        <child id="5753587520027644759" name="body" index="3kxCCa" />
-      </concept>
-    </language>
     <language id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access">
       <concept id="8974276187400348173" name="jetbrains.mps.lang.access.structure.CommandClosureLiteral" flags="nn" index="1QHqEC" />
       <concept id="8974276187400348174" name="jetbrains.mps.lang.access.structure.ExecuteCommandInEDTStatement" flags="nn" index="1QHqEF" />
@@ -197,6 +192,7 @@
         <child id="1423104411234567454" name="repo" index="ukAjM" />
         <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
       </concept>
+      <concept id="8974276187400348181" name="jetbrains.mps.lang.access.structure.ExecuteLightweightCommandStatement" flags="nn" index="1QHqEK" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -353,9 +349,9 @@
             <node concept="17QB3L" id="7WP_sw5xxne" role="1tU5fm" />
           </node>
         </node>
-        <node concept="3kxDZ6" id="7WP_sw5xu9T" role="3cqZAp">
-          <node concept="9aQIb" id="7WP_sw5xuR5" role="3kxCCa">
-            <node concept="3clFbS" id="7WP_sw5xuR7" role="9aQI4">
+        <node concept="1QHqEK" id="7JEz8ilsWgL" role="3cqZAp">
+          <node concept="1QHqEC" id="7JEz8ilsWgN" role="1QHqEI">
+            <node concept="3clFbS" id="7JEz8ilsWgP" role="1bW5cS">
               <node concept="3cpWs8" id="1zTNC9MJP5Y" role="3cqZAp">
                 <node concept="3cpWsn" id="1zTNC9MJP5Z" role="3cpWs9">
                   <property role="TrG5h" value="currentClone" />
@@ -379,7 +375,7 @@
                   <node concept="3clFbF" id="E3aAvrG2f3" role="3cqZAp">
                     <node concept="37vLTI" id="E3aAvrG2FO" role="3clFbG">
                       <node concept="2YIFZM" id="E3aAvrG4AY" role="37vLTx">
-                        <ref role="37wK5l" to="wyt6:~Integer.toString(int):java.lang.String" resolve="toString" />
+                        <ref role="37wK5l" to="wyt6:~Integer.toString(int)" resolve="toString" />
                         <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
                         <node concept="3cpWs3" id="E3aAvrG3T9" role="37wK5m">
                           <node concept="3cmrfG" id="E3aAvrG40k" role="3uHU7w">
@@ -1079,9 +1075,9 @@
             </node>
           </node>
         </node>
-        <node concept="3kxDZ6" id="1zTNC9MIIGv" role="3cqZAp">
-          <node concept="9aQIb" id="1zTNC9MIK$D" role="3kxCCa">
-            <node concept="3clFbS" id="1zTNC9MIK$F" role="9aQI4">
+        <node concept="1QHqEK" id="7JEz8ilsSCN" role="3cqZAp">
+          <node concept="1QHqEC" id="7JEz8ilsSCP" role="1QHqEI">
+            <node concept="3clFbS" id="7JEz8ilsSCR" role="1bW5cS">
               <node concept="2Gpval" id="1zTNC9MGUy0" role="3cqZAp">
                 <node concept="2GrKxI" id="1zTNC9MGUy2" role="2Gsz3X">
                   <property role="TrG5h" value="c" />
@@ -2035,23 +2031,22 @@
         <node concept="10Oyi0" id="E3aAvrHN$1" role="1tU5fm" />
       </node>
       <node concept="3clFbS" id="E3aAvrHN$2" role="3clF47">
-        <node concept="3clFbH" id="E3aAvrHN$3" role="3cqZAp" />
         <node concept="3cpWs8" id="E3aAvrHN$4" role="3cqZAp">
           <node concept="3cpWsn" id="E3aAvrHN$5" role="3cpWs9">
             <property role="TrG5h" value="val" />
             <node concept="17QB3L" id="E3aAvrHN$6" role="1tU5fm" />
           </node>
         </node>
-        <node concept="3kxDZ6" id="E3aAvrHN$7" role="3cqZAp">
-          <node concept="9aQIb" id="E3aAvrHN$8" role="3kxCCa">
-            <node concept="3clFbS" id="E3aAvrHN$9" role="9aQI4">
+        <node concept="1QHqEK" id="7JEz8ilsJxR" role="3cqZAp">
+          <node concept="1QHqEC" id="7JEz8ilsJxT" role="1QHqEI">
+            <node concept="3clFbS" id="7JEz8ilsJxV" role="1bW5cS">
               <node concept="3clFbJ" id="E3aAvrHN$a" role="3cqZAp">
                 <node concept="3clFbS" id="E3aAvrHN$b" role="3clFbx">
                   <node concept="3clFbF" id="E3aAvrHN$c" role="3cqZAp">
                     <node concept="37vLTI" id="E3aAvrHN$d" role="3clFbG">
                       <node concept="2YIFZM" id="E3aAvrHN$e" role="37vLTx">
                         <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
-                        <ref role="37wK5l" to="wyt6:~Integer.toString(int):java.lang.String" resolve="toString" />
+                        <ref role="37wK5l" to="wyt6:~Integer.toString(int)" resolve="toString" />
                         <node concept="3cpWs3" id="E3aAvrHN$f" role="37wK5m">
                           <node concept="3cmrfG" id="E3aAvrHN$g" role="3uHU7w">
                             <property role="3cmrfH" value="1" />
@@ -2154,7 +2149,7 @@
                                   <node concept="2yIwOk" id="E3aAvrIZNy" role="2OqNvi" />
                                 </node>
                                 <node concept="liA8E" id="E3aAvrJ5ju" role="2OqNvi">
-                                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
                                 </node>
                               </node>
                               <node concept="37vLTw" id="E3aAvrIUit" role="37vLTJ">

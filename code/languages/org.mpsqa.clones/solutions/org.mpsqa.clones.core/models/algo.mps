@@ -5,29 +5,20 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
-    <use id="73736c50-f124-433b-b789-2828a15a0adc" name="jetbrains.mps.baseLanguage.collections.trove" version="0" />
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
-    <import index="39al" ref="5454dbfd-2075-4de0-b85e-fa645eb6957e/r:5bc020f2-590a-4818-ae68-fa483b92486f(com.mbeddr.mpsutil.serializer.xml/com.mbeddr.mpsutil.serializer.xml.serializer)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="8oaq" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.io(org.apache.commons/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="daiw" ref="r:83cef4f4-b155-43d5-82b7-b95ae5c31ef3(org.mpsqa.clones.core.hashcode)" />
-    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
-    <import index="z1c4" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
-      <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
-        <child id="1082485599096" name="statements" index="9aQI4" />
-      </concept>
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
@@ -148,13 +139,17 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
     </language>
-    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
-      </concept>
-      <concept id="5753587520027641499" name="com.mbeddr.mpsutil.blutil.structure.SafeReadAction" flags="ng" index="3kxDZ6">
+    <language id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access">
+      <concept id="8974276187400348173" name="jetbrains.mps.lang.access.structure.CommandClosureLiteral" flags="nn" index="1QHqEC" />
+      <concept id="8974276187400348170" name="jetbrains.mps.lang.access.structure.BaseExecuteCommandStatement" flags="nn" index="1QHqEJ">
         <child id="1423104411234567454" name="repo" index="ukAjM" />
-        <child id="5753587520027644759" name="body" index="3kxCCa" />
+        <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
+      </concept>
+      <concept id="8974276187400348181" name="jetbrains.mps.lang.access.structure.ExecuteLightweightCommandStatement" flags="nn" index="1QHqEK" />
+    </language>
+    <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
+        <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -325,9 +320,9 @@
             </node>
           </node>
         </node>
-        <node concept="3kxDZ6" id="7WP_sw5_yHU" role="3cqZAp">
-          <node concept="9aQIb" id="7WP_sw5_yHV" role="3kxCCa">
-            <node concept="3clFbS" id="7WP_sw5_yHW" role="9aQI4">
+        <node concept="1QHqEK" id="7JEz8iltZP4" role="3cqZAp">
+          <node concept="1QHqEC" id="7JEz8iltZP6" role="1QHqEI">
+            <node concept="3clFbS" id="7JEz8iltZP8" role="1bW5cS">
               <node concept="2Gpval" id="7WP_sw5AiXS" role="3cqZAp">
                 <node concept="2GrKxI" id="7WP_sw5AiXU" role="2Gsz3X">
                   <property role="TrG5h" value="m" />
@@ -347,7 +342,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="E3aAvrSGtR" role="2OqNvi">
-                        <ref role="37wK5l" to="mhbf:~SModel.isReadOnly():boolean" resolve="isReadOnly" />
+                        <ref role="37wK5l" to="mhbf:~SModel.isReadOnly()" resolve="isReadOnly" />
                       </node>
                     </node>
                   </node>
@@ -371,7 +366,7 @@
               </node>
             </node>
           </node>
-          <node concept="37vLTw" id="4elAKXinkGB" role="ukAjM">
+          <node concept="37vLTw" id="7JEz8ilu0kI" role="ukAjM">
             <ref role="3cqZAo" node="1oYl8Ffq7oW" resolve="repo" />
           </node>
         </node>
@@ -1135,11 +1130,7 @@
   <node concept="312cEu" id="1oYl8FfodCD">
     <property role="TrG5h" value="ClonesDetectorSettings" />
     <node concept="2tJIrI" id="1oYl8FfodG1" role="jymVt" />
-    <node concept="2tJIrI" id="4elAKXimCnF" role="jymVt">
-      <node concept="NWlO9" id="4elAKXimCou" role="lGtFl">
-        <property role="NWlVz" value="Suffix size is how many children should a node have." />
-      </node>
-    </node>
+    <node concept="2tJIrI" id="4elAKXimCnF" role="jymVt" />
     <node concept="3Tm1VV" id="1oYl8FfodCE" role="1B3o_S" />
     <node concept="312cEg" id="1oYl8FfoCUT" role="jymVt">
       <property role="TrG5h" value="maximalSuffixSize" />
@@ -1148,9 +1139,6 @@
         <property role="3cmrfH" value="5" />
       </node>
       <node concept="3Tm1VV" id="1oYl8FfoCUW" role="1B3o_S" />
-      <node concept="NWlO9" id="E3aAvrC3tO" role="lGtFl">
-        <property role="NWlVz" value="The maximal depth of the suffix tree (intuitively, comparable to the &quot;size of a line&quot;)" />
-      </node>
     </node>
     <node concept="2tJIrI" id="E3aAvrC3o1" role="jymVt" />
     <node concept="312cEg" id="1oYl8FftbCe" role="jymVt">
@@ -1160,9 +1148,6 @@
         <property role="3cmrfH" value="1" />
       </node>
       <node concept="3Tm1VV" id="1oYl8FftbCh" role="1B3o_S" />
-      <node concept="NWlO9" id="E3aAvrC3oX" role="lGtFl">
-        <property role="NWlVz" value="The minimal depth of the sufix tree (1 means that we consider nodes without any children." />
-      </node>
     </node>
     <node concept="2tJIrI" id="E3aAvrC3jB" role="jymVt" />
     <node concept="312cEg" id="1oYl8FfoCVF" role="jymVt">
@@ -1172,9 +1157,6 @@
         <property role="3cmrfH" value="4" />
       </node>
       <node concept="3Tm1VV" id="1oYl8FfoCVI" role="1B3o_S" />
-      <node concept="NWlO9" id="E3aAvrC3kw" role="lGtFl">
-        <property role="NWlVz" value="The length of the clone considered as number of consecutive siblings." />
-      </node>
     </node>
     <node concept="2tJIrI" id="1oYl8FfwhFp" role="jymVt" />
   </node>

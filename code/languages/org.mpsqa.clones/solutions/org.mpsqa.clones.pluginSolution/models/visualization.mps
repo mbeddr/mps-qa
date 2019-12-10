@@ -6,8 +6,8 @@
     <use id="73736c50-f124-433b-b789-2828a15a0adc" name="jetbrains.mps.baseLanguage.collections.trove" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
   </languages>
   <imports>
     <import index="t49a" ref="56f134c7-a829-428d-9119-715369c69768/java:net.sf.jtreemap.swing(org.mpsqa.treemap.lib/)" />
@@ -27,9 +27,6 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
-        <child id="1082485599096" name="statements" index="9aQI4" />
-      </concept>
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
@@ -38,9 +35,6 @@
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
       <concept id="1095950406618" name="jetbrains.mps.baseLanguage.structure.DivExpression" flags="nn" index="FJ1c_" />
-      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
-        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
-      </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -160,10 +154,17 @@
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
       </concept>
     </language>
-    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="5753587520027641499" name="com.mbeddr.mpsutil.blutil.structure.SafeReadAction" flags="ng" index="3kxDZ6">
+    <language id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access">
+      <concept id="8974276187400348173" name="jetbrains.mps.lang.access.structure.CommandClosureLiteral" flags="nn" index="1QHqEC" />
+      <concept id="8974276187400348170" name="jetbrains.mps.lang.access.structure.BaseExecuteCommandStatement" flags="nn" index="1QHqEJ">
         <child id="1423104411234567454" name="repo" index="ukAjM" />
-        <child id="5753587520027644759" name="body" index="3kxCCa" />
+        <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
+      </concept>
+      <concept id="8974276187400348181" name="jetbrains.mps.lang.access.structure.ExecuteLightweightCommandStatement" flags="nn" index="1QHqEK" />
+    </language>
+    <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
+        <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -345,9 +346,9 @@
           </node>
         </node>
         <node concept="3clFbH" id="5Dw7oA67C5x" role="3cqZAp" />
-        <node concept="3kxDZ6" id="5Dw7oA63C35" role="3cqZAp">
-          <node concept="9aQIb" id="5Dw7oA63O93" role="3kxCCa">
-            <node concept="3clFbS" id="5Dw7oA63O95" role="9aQI4">
+        <node concept="1QHqEK" id="7JEz8ilt5oC" role="3cqZAp">
+          <node concept="1QHqEC" id="7JEz8ilt5oE" role="1QHqEI">
+            <node concept="3clFbS" id="7JEz8ilt5oG" role="1bW5cS">
               <node concept="2Gpval" id="5Dw7oA61vrK" role="3cqZAp">
                 <node concept="2GrKxI" id="5Dw7oA61vrM" role="2Gsz3X">
                   <property role="TrG5h" value="m" />
@@ -367,7 +368,7 @@
                           <ref role="3cqZAo" node="5Dw7oA61uHH" resolve="builder" />
                         </node>
                         <node concept="liA8E" id="5Dw7oA61_Bv" role="2OqNvi">
-                          <ref role="37wK5l" to="t49a:~TreeMapNodeBuilder.buildBranch(java.lang.String,net.sf.jtreemap.swing.TreeMapNode):net.sf.jtreemap.swing.TreeMapNode" resolve="buildBranch" />
+                          <ref role="37wK5l" to="t49a:~TreeMapNodeBuilder.buildBranch(java.lang.String,net.sf.jtreemap.swing.TreeMapNode)" resolve="buildBranch" />
                           <node concept="2OqwBi" id="5Dw7oA61A2o" role="37wK5m">
                             <node concept="2GrUjf" id="5Dw7oA61_Vc" role="2Oq$k0">
                               <ref role="2Gs0qQ" node="5Dw7oA61vrM" resolve="m" />
@@ -418,7 +419,7 @@
                                 <node concept="2yIwOk" id="5Dw7oA62ayi" role="2OqNvi" />
                               </node>
                               <node concept="liA8E" id="5Dw7oA63AE2" role="2OqNvi">
-                                <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                                <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
                               </node>
                             </node>
                             <node concept="2OqwBi" id="5Dw7oA61QdT" role="3K4Cdx">
@@ -466,7 +467,7 @@
                               <ref role="3cqZAo" node="5Dw7oA61uHH" resolve="builder" />
                             </node>
                             <node concept="liA8E" id="5Dw7oA67JcN" role="2OqNvi">
-                              <ref role="37wK5l" to="t49a:~TreeMapNodeBuilder.buildLeaf(java.lang.String,double,net.sf.jtreemap.swing.Value,net.sf.jtreemap.swing.TreeMapNode):net.sf.jtreemap.swing.TreeMapNode" resolve="buildLeaf" />
+                              <ref role="37wK5l" to="t49a:~TreeMapNodeBuilder.buildLeaf(java.lang.String,double,net.sf.jtreemap.swing.Value,net.sf.jtreemap.swing.TreeMapNode)" resolve="buildLeaf" />
                               <node concept="37vLTw" id="5Dw7oA67JcO" role="37wK5m">
                                 <ref role="3cqZAo" node="5Dw7oA61PSM" resolve="name" />
                               </node>
@@ -515,12 +516,12 @@
               </node>
             </node>
           </node>
-          <node concept="2OqwBi" id="5Dw7oA63DLc" role="ukAjM">
-            <node concept="37vLTw" id="5Dw7oA63CTE" role="2Oq$k0">
+          <node concept="2OqwBi" id="7JEz8ilt8EI" role="ukAjM">
+            <node concept="37vLTw" id="7JEz8ilt754" role="2Oq$k0">
               <ref role="3cqZAo" node="5Dw7oA61l$e" resolve="proj" />
             </node>
-            <node concept="liA8E" id="5Dw7oA63NdY" role="2OqNvi">
-              <ref role="37wK5l" to="z1c4:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+            <node concept="liA8E" id="7JEz8iltjLH" role="2OqNvi">
+              <ref role="37wK5l" to="z1c4:~Project.getRepository()" resolve="getRepository" />
             </node>
           </node>
         </node>
@@ -678,8 +679,8 @@
               <ref role="3uigEE" to="dxuu:~JPopupMenu" resolve="JPopupMenu" />
             </node>
             <node concept="2ShNRf" id="4elAKXiulTZ" role="33vP2m">
-              <node concept="HV5vD" id="4elAKXiulU0" role="2ShVmc">
-                <ref role="HV5vE" to="dxuu:~JPopupMenu" resolve="JPopupMenu" />
+              <node concept="1pGfFk" id="7JEz8ilt4r4" role="2ShVmc">
+                <ref role="37wK5l" to="dxuu:~JPopupMenu.&lt;init&gt;()" resolve="JPopupMenu" />
               </node>
             </node>
           </node>

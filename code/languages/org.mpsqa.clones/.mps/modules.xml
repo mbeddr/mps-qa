@@ -2,11 +2,12 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.clones.core/org.mpsqa.clones.core.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.clones.java.pluginSolution/org.mpsqa.clones.java.pluginSolution.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.clones.pluginSolution/org.mpsqa.clones.pluginSolution.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.treemap.lib/org.mpsqa.treemap.lib.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/tests/test.org.mpsqa.clones/test.org.mpsqa.clones.msd" folder="tests" />
+      <modulePath path="${mpsqa.home}/code/languages/org.mpsqa.clones/solutions/org.mpsqa.base.lib/org.mpsqa.base.lib.msd" folder="" />
+      <modulePath path="${mpsqa.home}/code/languages/org.mpsqa.clones/solutions/org.mpsqa.clones.core/org.mpsqa.clones.core.msd" folder="" />
+      <modulePath path="${mpsqa.home}/code/languages/org.mpsqa.clones/solutions/org.mpsqa.clones.java.pluginSolution/org.mpsqa.clones.java.pluginSolution.msd" folder="" />
+      <modulePath path="${mpsqa.home}/code/languages/org.mpsqa.clones/solutions/org.mpsqa.clones.pluginSolution/org.mpsqa.clones.pluginSolution.msd" folder="" />
+      <modulePath path="${mpsqa.home}/code/languages/org.mpsqa.clones/solutions/org.mpsqa.treemap.lib/org.mpsqa.treemap.lib.msd" folder="" />
+      <modulePath path="${mpsqa.home}/code/languages/org.mpsqa.clones/tests/test.org.mpsqa.clones/test.org.mpsqa.clones.msd" folder="tests" />
     </projectModules>
   </component>
 </project>

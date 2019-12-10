@@ -16,13 +16,11 @@
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="e8bb" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.adapter.ids(MPS.Core/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="gphs" ref="5454dbfd-2075-4de0-b85e-fa645eb6957e/java:org.jdom2(com.mbeddr.mpsutil.serializer.xml/)" />
-    <import index="n2xr" ref="5454dbfd-2075-4de0-b85e-fa645eb6957e/java:org.jdom2.output(com.mbeddr.mpsutil.serializer.xml/)" />
     <import index="2e2r" ref="r:1ddd18d0-b744-46a8-b000-0f4cabc830f7(org.mpsqa.clones.core.algo)" />
     <import index="daiw" ref="r:83cef4f4-b155-43d5-82b7-b95ae5c31ef3(org.mpsqa.clones.core.hashcode)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
-    <import index="qt06" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3.builder(org.apache.commons/)" />
     <import index="xx25" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.adapter.structure.types(MPS.Core/)" />
+    <import index="qt06" ref="79c13063-8a7d-4070-aaba-966b36d6e0c4/java:org.apache.commons.lang3.builder(org.mpsqa.base.lib/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -33,9 +31,6 @@
       </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
-      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
-        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
-      </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -99,6 +94,7 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
@@ -198,12 +194,12 @@
         <node concept="3cpWs8" id="4elAKXimRJH" role="3cqZAp">
           <node concept="3cpWsn" id="4elAKXimRJG" role="3cpWs9">
             <property role="TrG5h" value="builder" />
-            <node concept="3uibUv" id="4elAKXimUm_" role="1tU5fm">
+            <node concept="3uibUv" id="7JEz8ilts5R" role="1tU5fm">
               <ref role="3uigEE" to="qt06:~HashCodeBuilder" resolve="HashCodeBuilder" />
             </node>
             <node concept="2ShNRf" id="4elAKXimRRW" role="33vP2m">
-              <node concept="HV5vD" id="4elAKXimRRY" role="2ShVmc">
-                <ref role="HV5vE" to="qt06:~HashCodeBuilder" resolve="HashCodeBuilder" />
+              <node concept="1pGfFk" id="7JEz8iltu9S" role="2ShVmc">
+                <ref role="37wK5l" to="qt06:~HashCodeBuilder.&lt;init&gt;()" resolve="HashCodeBuilder" />
               </node>
             </node>
           </node>
@@ -233,8 +229,8 @@
             <node concept="37vLTw" id="4elAKXimRR6" role="2Oq$k0">
               <ref role="3cqZAo" node="4elAKXimRJG" resolve="builder" />
             </node>
-            <node concept="liA8E" id="4elAKXimRR8" role="2OqNvi">
-              <ref role="37wK5l" to="qt06:~HashCodeBuilder.toHashCode():int" resolve="toHashCode" />
+            <node concept="liA8E" id="7JEz8iltTgv" role="2OqNvi">
+              <ref role="37wK5l" to="qt06:~HashCodeBuilder.toHashCode()" resolve="toHashCode" />
             </node>
           </node>
         </node>
@@ -257,7 +253,7 @@
       <node concept="37vLTG" id="4elAKXimXQY" role="3clF46">
         <property role="TrG5h" value="builder" />
         <property role="2Lvdk3" value="builder" />
-        <node concept="3uibUv" id="4elAKXimXQZ" role="1tU5fm">
+        <node concept="3uibUv" id="7JEz8iltuc4" role="1tU5fm">
           <ref role="3uigEE" to="qt06:~HashCodeBuilder" resolve="HashCodeBuilder" />
         </node>
       </node>
@@ -347,7 +343,7 @@
                           <ref role="3cqZAo" node="4elAKXimXQY" resolve="builder" />
                         </node>
                         <node concept="liA8E" id="4elAKXimXRw" role="2OqNvi">
-                          <ref role="37wK5l" to="qt06:~HashCodeBuilder.append(java.lang.Object):org.apache.commons.lang3.builder.HashCodeBuilder" resolve="append" />
+                          <ref role="37wK5l" to="qt06:~HashCodeBuilder.append(java.lang.Object)" resolve="append" />
                           <node concept="37vLTw" id="4elAKXimXRx" role="37wK5m">
                             <ref role="3cqZAo" node="4elAKXimXRc" resolve="propertyValue" />
                           </node>
@@ -400,7 +396,7 @@
                         <ref role="3cqZAo" node="4elAKXimXQY" resolve="builder" />
                       </node>
                       <node concept="liA8E" id="4elAKXipmmp" role="2OqNvi">
-                        <ref role="37wK5l" to="qt06:~HashCodeBuilder.append(java.lang.Object):org.apache.commons.lang3.builder.HashCodeBuilder" resolve="append" />
+                        <ref role="37wK5l" to="qt06:~HashCodeBuilder.append(java.lang.Object)" resolve="append" />
                         <node concept="2OqwBi" id="4elAKXip$R5" role="37wK5m">
                           <node concept="2OqwBi" id="4elAKXipmLj" role="2Oq$k0">
                             <node concept="2GrUjf" id="4elAKXipmvb" role="2Oq$k0">
@@ -490,7 +486,7 @@
                   <ref role="3cqZAo" node="4elAKXimXQY" resolve="builder" />
                 </node>
                 <node concept="liA8E" id="4elAKXinZpP" role="2OqNvi">
-                  <ref role="37wK5l" to="qt06:~HashCodeBuilder.append(java.lang.Object):org.apache.commons.lang3.builder.HashCodeBuilder" resolve="append" />
+                  <ref role="37wK5l" to="qt06:~HashCodeBuilder.append(java.lang.Object)" resolve="append" />
                   <node concept="37vLTw" id="4elAKXinZy0" role="37wK5m">
                     <ref role="3cqZAo" node="4elAKXinYh1" resolve="referencedNode" />
                   </node>
