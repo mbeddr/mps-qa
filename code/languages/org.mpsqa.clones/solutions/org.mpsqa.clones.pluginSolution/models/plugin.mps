@@ -364,7 +364,7 @@
               <node concept="1pGfFk" id="7WP_sw5wYS$" role="2ShVmc">
                 <ref role="37wK5l" to="kyr3:7WP_sw5s1HY" resolve="ClonesOverviewPanel" />
                 <node concept="2YIFZM" id="7WP_sw5wZ4d" role="37wK5m">
-                  <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProject(com.intellij.openapi.project.Project):jetbrains.mps.project.MPSProject" resolve="fromIdeaProject" />
+                  <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProject(com.intellij.openapi.project.Project)" resolve="fromIdeaProject" />
                   <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
                   <node concept="2xqhHp" id="7WP_sw5x2tS" role="37wK5m" />
                 </node>
@@ -407,7 +407,7 @@
               <ref role="3uigEE" to="z1c3:~MPSProject" resolve="MPSProject" />
             </node>
             <node concept="2YIFZM" id="7WP_sw5xgmj" role="33vP2m">
-              <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProject(com.intellij.openapi.project.Project):jetbrains.mps.project.MPSProject" resolve="fromIdeaProject" />
+              <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProject(com.intellij.openapi.project.Project)" resolve="fromIdeaProject" />
               <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
               <node concept="2OqwBi" id="7WP_sw5xgmk" role="37wK5m">
                 <node concept="2WthIp" id="7WP_sw5xgml" role="2Oq$k0" />
@@ -488,7 +488,7 @@
             </node>
             <node concept="2YIFZM" id="7WP_sw5_SsD" role="33vP2m">
               <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
-              <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProject(com.intellij.openapi.project.Project):jetbrains.mps.project.MPSProject" resolve="fromIdeaProject" />
+              <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProject(com.intellij.openapi.project.Project)" resolve="fromIdeaProject" />
               <node concept="2OqwBi" id="7WP_sw5_SsE" role="37wK5m">
                 <node concept="2WthIp" id="7WP_sw5_SsF" role="2Oq$k0" />
                 <node concept="1DTwFV" id="7WP_sw5_SsG" role="2OqNvi">
@@ -598,7 +598,7 @@
                 <ref role="3cqZAo" node="1oYl8Ffq5$W" resolve="project" />
               </node>
               <node concept="liA8E" id="1oYl8FfqV46" role="2OqNvi">
-                <ref role="37wK5l" to="z1c4:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                <ref role="37wK5l" to="z1c4:~Project.getRepository()" resolve="getRepository" />
               </node>
             </node>
           </node>
@@ -799,7 +799,7 @@
               <ref role="3cqZAo" node="1oYl8FfqRO8" resolve="cv" />
             </node>
             <node concept="liA8E" id="7WP_sw5xmV7" role="2OqNvi">
-              <ref role="37wK5l" to="71xd:~BaseTool.openToolLater(boolean):void" resolve="openToolLater" />
+              <ref role="37wK5l" to="71xd:~BaseTool.openToolLater(boolean)" resolve="openToolLater" />
               <node concept="3clFbT" id="7WP_sw5xmYE" role="37wK5m">
                 <property role="3clFbU" value="true" />
               </node>
@@ -856,7 +856,7 @@
               <ref role="3cqZAo" node="5Dw7oA60CnS" resolve="ctv" />
             </node>
             <node concept="liA8E" id="5Dw7oA60CnK" role="2OqNvi">
-              <ref role="37wK5l" to="71xd:~BaseTool.openToolLater(boolean):void" resolve="openToolLater" />
+              <ref role="37wK5l" to="71xd:~BaseTool.openToolLater(boolean)" resolve="openToolLater" />
               <node concept="3clFbT" id="5Dw7oA60CnL" role="37wK5m">
                 <property role="3clFbU" value="true" />
               </node>
@@ -965,7 +965,7 @@
                 <ref role="37wK5l" to="kyr3:E3aAvrKgH_" resolve="ClonesDetailsPanel" />
                 <node concept="2YIFZM" id="E3aAvrKKH0" role="37wK5m">
                   <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
-                  <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProject(com.intellij.openapi.project.Project):jetbrains.mps.project.MPSProject" resolve="fromIdeaProject" />
+                  <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProject(com.intellij.openapi.project.Project)" resolve="fromIdeaProject" />
                   <node concept="2xqhHp" id="E3aAvrKKH1" role="37wK5m" />
                 </node>
               </node>
@@ -1025,7 +1025,7 @@
               <ref role="3cqZAo" node="E3aAvrKTm4" resolve="cdv" />
             </node>
             <node concept="liA8E" id="E3aAvrNCif" role="2OqNvi">
-              <ref role="37wK5l" to="71xd:~BaseTool.openToolLater(boolean):void" resolve="openToolLater" />
+              <ref role="37wK5l" to="71xd:~BaseTool.openToolLater(boolean)" resolve="openToolLater" />
               <node concept="3clFbT" id="E3aAvrNCoe" role="37wK5m">
                 <property role="3clFbU" value="true" />
               </node>
@@ -1127,7 +1127,7 @@
               <ref role="3cqZAo" node="4elAKXis8gO" resolve="scrollPane" />
             </node>
             <node concept="liA8E" id="4elAKXis9tL" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~JScrollPane.setHorizontalScrollBarPolicy(int):void" resolve="setHorizontalScrollBarPolicy" />
+              <ref role="37wK5l" to="dxuu:~JScrollPane.setHorizontalScrollBarPolicy(int)" resolve="setHorizontalScrollBarPolicy" />
               <node concept="10M0yZ" id="4elAKXis9tM" role="37wK5m">
                 <ref role="1PxDUh" to="dxuu:~JScrollPane" resolve="JScrollPane" />
                 <ref role="3cqZAo" to="dxuu:~ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED" resolve="HORIZONTAL_SCROLLBAR_AS_NEEDED" />
@@ -1141,7 +1141,7 @@
               <ref role="3cqZAo" node="4elAKXis8gO" resolve="scrollPane" />
             </node>
             <node concept="liA8E" id="4elAKXisadF" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~JScrollPane.setVerticalScrollBarPolicy(int):void" resolve="setVerticalScrollBarPolicy" />
+              <ref role="37wK5l" to="dxuu:~JScrollPane.setVerticalScrollBarPolicy(int)" resolve="setVerticalScrollBarPolicy" />
               <node concept="10M0yZ" id="4elAKXisMhS" role="37wK5m">
                 <ref role="3cqZAo" to="dxuu:~ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS" resolve="VERTICAL_SCROLLBAR_ALWAYS" />
                 <ref role="1PxDUh" to="dxuu:~JScrollPane" resolve="JScrollPane" />
@@ -1155,7 +1155,7 @@
               <ref role="3cqZAo" node="4elAKXis8gO" resolve="scrollPane" />
             </node>
             <node concept="liA8E" id="4elAKXis9JU" role="2OqNvi">
-              <ref role="37wK5l" to="z60i:~Component.setBounds(int,int,int,int):void" resolve="setBounds" />
+              <ref role="37wK5l" to="z60i:~Component.setBounds(int,int,int,int)" resolve="setBounds" />
               <node concept="3cmrfG" id="4elAKXis9JV" role="37wK5m">
                 <property role="3cmrfH" value="50" />
               </node>
@@ -1186,7 +1186,7 @@
               <node concept="1pGfFk" id="5Dw7oA60$D4" role="2ShVmc">
                 <ref role="37wK5l" to="8tkk:5Dw7oA61kp6" resolve="ClonesTreemapPanel" />
                 <node concept="2YIFZM" id="5Dw7oA60$D5" role="37wK5m">
-                  <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProject(com.intellij.openapi.project.Project):jetbrains.mps.project.MPSProject" resolve="fromIdeaProject" />
+                  <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProject(com.intellij.openapi.project.Project)" resolve="fromIdeaProject" />
                   <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
                   <node concept="2xqhHp" id="5Dw7oA60$D6" role="37wK5m" />
                 </node>

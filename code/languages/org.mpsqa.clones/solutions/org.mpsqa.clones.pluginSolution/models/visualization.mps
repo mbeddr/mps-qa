@@ -259,7 +259,7 @@
           <node concept="2OqwBi" id="4elAKXisKtu" role="3clFbG">
             <node concept="Xjq3P" id="4elAKXisLus" role="2Oq$k0" />
             <node concept="liA8E" id="4elAKXisKtw" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~JComponent.setPreferredSize(java.awt.Dimension):void" resolve="setPreferredSize" />
+              <ref role="37wK5l" to="dxuu:~JComponent.setPreferredSize(java.awt.Dimension)" resolve="setPreferredSize" />
               <node concept="2ShNRf" id="4elAKXisKtx" role="37wK5m">
                 <node concept="1pGfFk" id="4elAKXisKty" role="2ShVmc">
                   <ref role="37wK5l" to="z60i:~Dimension.&lt;init&gt;(int,int)" resolve="Dimension" />
@@ -288,7 +288,7 @@
       <node concept="3clFbS" id="5Dw7oA60FKw" role="3clF47">
         <node concept="3clFbF" id="5Dw7oA61sZT" role="3cqZAp">
           <node concept="1rXfSq" id="5Dw7oA61sZR" role="3clFbG">
-            <ref role="37wK5l" to="z60i:~Container.removeAll():void" resolve="removeAll" />
+            <ref role="37wK5l" to="z60i:~Container.removeAll()" resolve="removeAll" />
           </node>
         </node>
         <node concept="3clFbH" id="5Dw7oA61sqY" role="3cqZAp" />
@@ -316,7 +316,7 @@
                 <ref role="3cqZAo" node="5Dw7oA61uHH" resolve="builder" />
               </node>
               <node concept="liA8E" id="5Dw7oA61uHQ" role="2OqNvi">
-                <ref role="37wK5l" to="t49a:~TreeMapNodeBuilder.buildBranch(java.lang.String,net.sf.jtreemap.swing.TreeMapNode):net.sf.jtreemap.swing.TreeMapNode" resolve="buildBranch" />
+                <ref role="37wK5l" to="t49a:~TreeMapNodeBuilder.buildBranch(java.lang.String,net.sf.jtreemap.swing.TreeMapNode)" resolve="buildBranch" />
                 <node concept="Xl_RD" id="5Dw7oA61uHR" role="37wK5m">
                   <property role="Xl_RC" value="analyzed scope" />
                 </node>
@@ -537,7 +537,7 @@
                 <ref role="3cqZAo" node="5Dw7oA61uHH" resolve="builder" />
               </node>
               <node concept="liA8E" id="5Dw7oA61GDO" role="2OqNvi">
-                <ref role="37wK5l" to="t49a:~TreeMapNodeBuilder.getRoot():net.sf.jtreemap.swing.TreeMapNode" resolve="getRoot" />
+                <ref role="37wK5l" to="t49a:~TreeMapNodeBuilder.getRoot()" resolve="getRoot" />
               </node>
             </node>
           </node>
@@ -565,7 +565,7 @@
               <ref role="3cqZAo" node="5Dw7oA61GDS" resolve="jTreeMap" />
             </node>
             <node concept="liA8E" id="5Dw7oA64r69" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~JComponent.setFont(java.awt.Font):void" resolve="setFont" />
+              <ref role="37wK5l" to="dxuu:~JComponent.setFont(java.awt.Font)" resolve="setFont" />
               <node concept="2ShNRf" id="5Dw7oA64r6a" role="37wK5m">
                 <node concept="1pGfFk" id="5Dw7oA64r6b" role="2ShVmc">
                   <ref role="37wK5l" to="z60i:~Font.&lt;init&gt;(java.lang.String,int,int)" resolve="Font" />
@@ -588,7 +588,7 @@
               <ref role="3cqZAo" node="5Dw7oA61GDS" resolve="jTreeMap" />
             </node>
             <node concept="liA8E" id="5Dw7oA64r6C" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~JComponent.setPreferredSize(java.awt.Dimension):void" resolve="setPreferredSize" />
+              <ref role="37wK5l" to="dxuu:~JComponent.setPreferredSize(java.awt.Dimension)" resolve="setPreferredSize" />
               <node concept="2ShNRf" id="5Dw7oA64r6D" role="37wK5m">
                 <node concept="1pGfFk" id="5Dw7oA64r6E" role="2ShVmc">
                   <ref role="37wK5l" to="z60i:~Dimension.&lt;init&gt;(int,int)" resolve="Dimension" />
@@ -609,10 +609,10 @@
               <ref role="3cqZAo" node="5Dw7oA61GDS" resolve="jTreeMap" />
             </node>
             <node concept="liA8E" id="5Dw7oA64r6K" role="2OqNvi">
-              <ref role="37wK5l" to="t49a:~JTreeMap.setBorder(javax.swing.border.Border):void" resolve="setBorder" />
+              <ref role="37wK5l" to="t49a:~JTreeMap.setBorder(javax.swing.border.Border)" resolve="setBorder" />
               <node concept="2YIFZM" id="5Dw7oA64r6L" role="37wK5m">
                 <ref role="1Pybhc" to="dxuu:~BorderFactory" resolve="BorderFactory" />
-                <ref role="37wK5l" to="dxuu:~BorderFactory.createEtchedBorder(int):javax.swing.border.Border" resolve="createEtchedBorder" />
+                <ref role="37wK5l" to="dxuu:~BorderFactory.createEtchedBorder(int)" resolve="createEtchedBorder" />
                 <node concept="10M0yZ" id="5Dw7oA64r6M" role="37wK5m">
                   <ref role="1PxDUh" to="9z78:~EtchedBorder" resolve="EtchedBorder" />
                   <ref role="3cqZAo" to="9z78:~EtchedBorder.LOWERED" resolve="LOWERED" />
@@ -663,7 +663,7 @@
               <ref role="3cqZAo" node="5Dw7oA61GDS" resolve="jTreeMap" />
             </node>
             <node concept="liA8E" id="5Dw7oA66r7K" role="2OqNvi">
-              <ref role="37wK5l" to="t49a:~JTreeMap.setColorProvider(net.sf.jtreemap.swing.ColorProvider):void" resolve="setColorProvider" />
+              <ref role="37wK5l" to="t49a:~JTreeMap.setColorProvider(net.sf.jtreemap.swing.ColorProvider)" resolve="setColorProvider" />
               <node concept="37vLTw" id="5Dw7oA66r7L" role="37wK5m">
                 <ref role="3cqZAo" node="5Dw7oA66r6z" resolve="provider" />
               </node>
@@ -707,7 +707,7 @@
               <ref role="3cqZAo" node="1zTNC9MF6M8" resolve="filter" />
             </node>
             <node concept="liA8E" id="1zTNC9MFfgM" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~AbstractButton.addActionListener(java.awt.event.ActionListener):void" resolve="addActionListener" />
+              <ref role="37wK5l" to="dxuu:~AbstractButton.addActionListener(java.awt.event.ActionListener)" resolve="addActionListener" />
               <node concept="2ShNRf" id="7WP_sw5y2ZQ" role="37wK5m">
                 <node concept="YeOm9" id="7WP_sw5y6MO" role="2ShVmc">
                   <node concept="1Y3b0j" id="7WP_sw5y6MR" role="YeSDq">
@@ -737,7 +737,7 @@
                                 <ref role="3cqZAo" node="5Dw7oA61GDS" resolve="jTreeMap" />
                               </node>
                               <node concept="liA8E" id="4elAKXitpXC" role="2OqNvi">
-                                <ref role="37wK5l" to="t49a:~JTreeMap.getActiveLeaf():net.sf.jtreemap.swing.TreeMapNode" resolve="getActiveLeaf" />
+                                <ref role="37wK5l" to="t49a:~JTreeMap.getActiveLeaf()" resolve="getActiveLeaf" />
                               </node>
                             </node>
                           </node>
@@ -779,7 +779,7 @@
               <ref role="3cqZAo" node="4elAKXiulTY" resolve="popup" />
             </node>
             <node concept="liA8E" id="4elAKXiusIV" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~JPopupMenu.add(javax.swing.JMenuItem):javax.swing.JMenuItem" resolve="add" />
+              <ref role="37wK5l" to="dxuu:~JPopupMenu.add(javax.swing.JMenuItem)" resolve="add" />
               <node concept="37vLTw" id="1zTNC9MF6Mc" role="37wK5m">
                 <ref role="3cqZAo" node="1zTNC9MF6M8" resolve="filter" />
               </node>
@@ -792,7 +792,7 @@
               <ref role="3cqZAo" node="5Dw7oA61GDS" resolve="jTreeMap" />
             </node>
             <node concept="liA8E" id="4elAKXiuikI" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~JComponent.setComponentPopupMenu(javax.swing.JPopupMenu):void" resolve="setComponentPopupMenu" />
+              <ref role="37wK5l" to="dxuu:~JComponent.setComponentPopupMenu(javax.swing.JPopupMenu)" resolve="setComponentPopupMenu" />
               <node concept="37vLTw" id="4elAKXiulU1" role="37wK5m">
                 <ref role="3cqZAo" node="4elAKXiulTY" resolve="popup" />
               </node>
@@ -802,7 +802,7 @@
         <node concept="3clFbH" id="1zTNC9MFpoM" role="3cqZAp" />
         <node concept="3clFbF" id="5Dw7oA61EnI" role="3cqZAp">
           <node concept="1rXfSq" id="5Dw7oA61EnG" role="3clFbG">
-            <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
+            <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component)" resolve="add" />
             <node concept="37vLTw" id="4elAKXisrFk" role="37wK5m">
               <ref role="3cqZAo" node="5Dw7oA61GDS" resolve="jTreeMap" />
             </node>
