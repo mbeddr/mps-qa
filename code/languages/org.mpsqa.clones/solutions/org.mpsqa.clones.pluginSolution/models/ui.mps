@@ -1911,8 +1911,8 @@
                       </node>
                       <node concept="3clFbS" id="1oYl8FfoCob" role="3clF47">
                         <node concept="3clFbF" id="1oYl8Ffr4oj" role="3cqZAp">
-                          <node concept="2YIFZM" id="1oYl8Ffr4ol" role="3clFbG">
-                            <ref role="37wK5l" to="9vt7:1oYl8FfqKvX" resolve="reRunClonesDetector" />
+                          <node concept="2YIFZM" id="6dWFC76WzdI" role="3clFbG">
+                            <ref role="37wK5l" to="9vt7:6dWFC76Wr0V" resolve="reRunClonesDetectionTask" />
                             <ref role="1Pybhc" to="9vt7:1oYl8Ffq3Xu" resolve="ClonesDetectorRunner" />
                           </node>
                         </node>

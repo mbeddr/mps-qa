@@ -27,6 +27,9 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="8tkk" ref="r:cc01d642-86a6-46e7-b474-e98429b38895(org.mpsqa.clones.pluginSolution.visualization)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
+    <import index="xygl" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.progress(MPS.IDEA/)" />
+    <import index="mk8z" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.progress(MPS.Platform/)" />
+    <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
   </imports>
   <registry>
@@ -100,6 +103,12 @@
       </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
+        <reference id="1188208074048" name="annotation" index="2AI5Lk" />
+      </concept>
+      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
+        <child id="1188208488637" name="annotation" index="2AJF6D" />
+      </concept>
       <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
         <reference id="2820489544401957798" name="classifier" index="HV5vE" />
       </concept>
@@ -120,6 +129,9 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1182160077978" name="jetbrains.mps.baseLanguage.structure.AnonymousClassCreator" flags="nn" index="YeOm9">
+        <child id="1182160096073" name="cls" index="YeSDq" />
+      </concept>
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
@@ -138,6 +150,7 @@
       </concept>
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
@@ -153,6 +166,7 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
+      <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_" />
       <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
@@ -187,9 +201,9 @@
       </concept>
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
+        <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
-      <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
@@ -203,6 +217,9 @@
       <concept id="1082113931046" name="jetbrains.mps.baseLanguage.structure.ContinueStatement" flags="nn" index="3N13vt" />
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
+      <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
+        <reference id="1170346070688" name="classifier" index="1Y3XeK" />
+      </concept>
     </language>
     <language id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access">
       <concept id="8974276187400348173" name="jetbrains.mps.lang.access.structure.CommandClosureLiteral" flags="nn" index="1QHqEC" />
@@ -439,6 +456,11 @@
           <node concept="2YIFZM" id="1oYl8FfqYSH" role="3clFbG">
             <ref role="1Pybhc" node="1oYl8Ffq3Xu" resolve="ClonesDetectorRunner" />
             <ref role="37wK5l" node="1oYl8Ffqb3R" resolve="runClonesDetector" />
+            <node concept="2ShNRf" id="6dWFC76VaSm" role="37wK5m">
+              <node concept="1pGfFk" id="6dWFC76Vbmk" role="2ShVmc">
+                <ref role="37wK5l" to="xygl:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
+              </node>
+            </node>
             <node concept="2OqwBi" id="1oYl8FfqYSI" role="37wK5m">
               <node concept="2WthIp" id="1oYl8FfqYSJ" role="2Oq$k0" />
               <node concept="3gHZIF" id="1oYl8FfqYSK" role="2OqNvi">
@@ -515,14 +537,11 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="1oYl8Ffr3Ec" role="3cqZAp">
-          <node concept="2YIFZM" id="1oYl8Ffr3Ee" role="3clFbG">
-            <ref role="37wK5l" node="1oYl8Ffqb3R" resolve="runClonesDetector" />
+        <node concept="3clFbF" id="6dWFC76Wvdl" role="3cqZAp">
+          <node concept="2YIFZM" id="6dWFC76WvrQ" role="3clFbG">
+            <ref role="37wK5l" node="6dWFC76WoXX" resolve="startClonesDetectionTask" />
             <ref role="1Pybhc" node="1oYl8Ffq3Xu" resolve="ClonesDetectorRunner" />
-            <node concept="37vLTw" id="1oYl8Ffr3Ef" role="37wK5m">
-              <ref role="3cqZAo" node="7WP_sw5_SsB" resolve="mpsProject" />
-            </node>
-            <node concept="37vLTw" id="1oYl8Ffr3Eg" role="37wK5m">
+            <node concept="37vLTw" id="6dWFC76Wv$1" role="37wK5m">
               <ref role="3cqZAo" node="7WP_sw5_SsB" resolve="mpsProject" />
             </node>
           </node>
@@ -739,6 +758,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="6dWFC76UCfV" role="3cqZAp" />
         <node concept="3clFbF" id="1oYl8FfqQto" role="3cqZAp">
           <node concept="37vLTI" id="1oYl8FfqR6O" role="3clFbG">
             <node concept="37vLTw" id="1oYl8FfqQtm" role="37vLTJ">
@@ -750,6 +770,9 @@
               </node>
               <node concept="liA8E" id="1oYl8FfqRaa" role="2OqNvi">
                 <ref role="37wK5l" to="2e2r:7WP_sw5_yHK" resolve="findClones" />
+                <node concept="37vLTw" id="6dWFC76UQgs" role="37wK5m">
+                  <ref role="3cqZAo" node="6dWFC76UvXw" resolve="pi" />
+                </node>
                 <node concept="37vLTw" id="1oYl8FfqRah" role="37wK5m">
                   <ref role="3cqZAo" node="1oYl8Ffq4i$" resolve="settings" />
                 </node>
@@ -864,6 +887,12 @@
           </node>
         </node>
       </node>
+      <node concept="37vLTG" id="6dWFC76UvXw" role="3clF46">
+        <property role="TrG5h" value="pi" />
+        <node concept="3uibUv" id="6dWFC76UC5N" role="1tU5fm">
+          <ref role="3uigEE" to="xygl:~ProgressIndicator" resolve="ProgressIndicator" />
+        </node>
+      </node>
       <node concept="37vLTG" id="1oYl8Ffq4wj" role="3clF46">
         <property role="TrG5h" value="scope" />
         <node concept="3uibUv" id="1oYl8Ffq4wi" role="1tU5fm">
@@ -880,23 +909,187 @@
       <node concept="3Tm1VV" id="1oYl8Ffq4kk" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="1oYl8FfqKHJ" role="jymVt" />
-    <node concept="2YIFZL" id="1oYl8FfqKvX" role="jymVt">
-      <property role="TrG5h" value="reRunClonesDetector" />
-      <node concept="3clFbS" id="1oYl8FfqKvY" role="3clF47">
-        <node concept="3clFbF" id="1oYl8FfqLqI" role="3cqZAp">
-          <node concept="1rXfSq" id="1oYl8FfqLqG" role="3clFbG">
-            <ref role="37wK5l" node="1oYl8Ffqb3R" resolve="runClonesDetector" />
-            <node concept="37vLTw" id="1oYl8FfqLwJ" role="37wK5m">
-              <ref role="3cqZAo" node="1oYl8Ffq4hP" resolve="lastScope" />
+    <node concept="2YIFZL" id="6dWFC76WoXX" role="jymVt">
+      <property role="TrG5h" value="startClonesDetectionTask" />
+      <node concept="3clFbS" id="6dWFC76WoY0" role="3clF47">
+        <node concept="3cpWs8" id="6dWFC76Wp6$" role="3cqZAp">
+          <node concept="3cpWsn" id="6dWFC76Wp6_" role="3cpWs9">
+            <property role="TrG5h" value="task" />
+            <node concept="3uibUv" id="6dWFC76Wp6A" role="1tU5fm">
+              <ref role="3uigEE" to="xygl:~Task$Backgroundable" resolve="Task.Backgroundable" />
             </node>
-            <node concept="37vLTw" id="1oYl8FfqLzH" role="37wK5m">
-              <ref role="3cqZAo" node="1oYl8Ffq5JR" resolve="lastProject" />
+            <node concept="2ShNRf" id="6dWFC76Wp6B" role="33vP2m">
+              <node concept="YeOm9" id="6dWFC76Wp6C" role="2ShVmc">
+                <node concept="1Y3b0j" id="6dWFC76Wp6D" role="YeSDq">
+                  <property role="2bfB8j" value="true" />
+                  <ref role="1Y3XeK" to="xygl:~Task$Backgroundable" resolve="Task.Backgroundable" />
+                  <ref role="37wK5l" to="xygl:~Task$Backgroundable.&lt;init&gt;(com.intellij.openapi.project.Project,java.lang.String,boolean)" resolve="Task.Backgroundable" />
+                  <node concept="3Tm1VV" id="6dWFC76Wp6E" role="1B3o_S" />
+                  <node concept="3clFb_" id="6dWFC76Wp6F" role="jymVt">
+                    <property role="TrG5h" value="run" />
+                    <node concept="3Tm1VV" id="6dWFC76Wp6G" role="1B3o_S" />
+                    <node concept="3cqZAl" id="6dWFC76Wp6H" role="3clF45" />
+                    <node concept="37vLTG" id="6dWFC76Wp6I" role="3clF46">
+                      <property role="TrG5h" value="pi" />
+                      <node concept="3uibUv" id="6dWFC76Wp6J" role="1tU5fm">
+                        <ref role="3uigEE" to="xygl:~ProgressIndicator" resolve="ProgressIndicator" />
+                      </node>
+                      <node concept="2AHcQZ" id="6dWFC76Wp6K" role="2AJF6D">
+                        <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+                      </node>
+                    </node>
+                    <node concept="3clFbS" id="6dWFC76Wp6L" role="3clF47">
+                      <node concept="3clFbF" id="6dWFC76Wp6M" role="3cqZAp">
+                        <node concept="2YIFZM" id="6dWFC76Wp6N" role="3clFbG">
+                          <ref role="1Pybhc" node="1oYl8Ffq3Xu" resolve="ClonesDetectorRunner" />
+                          <ref role="37wK5l" node="1oYl8Ffqb3R" resolve="runClonesDetector" />
+                          <node concept="37vLTw" id="6dWFC76Wp6O" role="37wK5m">
+                            <ref role="3cqZAo" node="6dWFC76Wp6I" resolve="pi" />
+                          </node>
+                          <node concept="37vLTw" id="6dWFC76Wp6P" role="37wK5m">
+                            <ref role="3cqZAo" node="6dWFC76Wp_w" resolve="mpsProject" />
+                          </node>
+                          <node concept="37vLTw" id="6dWFC76Wp6Q" role="37wK5m">
+                            <ref role="3cqZAo" node="6dWFC76Wp_w" resolve="mpsProject" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2AHcQZ" id="6dWFC76Wp6R" role="2AJF6D">
+                      <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="6dWFC76Wp6S" role="37wK5m">
+                    <node concept="37vLTw" id="6dWFC76Wp6T" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6dWFC76Wp_w" resolve="mpsProject" />
+                    </node>
+                    <node concept="liA8E" id="6dWFC76Wp6U" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~MPSProject.getProject()" resolve="getProject" />
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="6dWFC76Wp6V" role="37wK5m">
+                    <property role="Xl_RC" value="Launching clones detection ..." />
+                  </node>
+                  <node concept="3clFbT" id="6dWFC76Wp6W" role="37wK5m">
+                    <property role="3clFbU" value="true" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6dWFC76Wp6X" role="3cqZAp">
+          <node concept="2OqwBi" id="6dWFC76Wp6Y" role="3clFbG">
+            <node concept="2YIFZM" id="6dWFC76Wp6Z" role="2Oq$k0">
+              <ref role="37wK5l" to="xygl:~ProgressManager.getInstance()" resolve="getInstance" />
+              <ref role="1Pybhc" to="xygl:~ProgressManager" resolve="ProgressManager" />
+            </node>
+            <node concept="liA8E" id="6dWFC76Wp70" role="2OqNvi">
+              <ref role="37wK5l" to="xygl:~ProgressManager.run(com.intellij.openapi.progress.Task)" resolve="run" />
+              <node concept="37vLTw" id="6dWFC76Wp71" role="37wK5m">
+                <ref role="3cqZAo" node="6dWFC76Wp6_" resolve="task" />
+              </node>
             </node>
           </node>
         </node>
       </node>
-      <node concept="3Tm1VV" id="1oYl8FfqKwG" role="1B3o_S" />
-      <node concept="3cqZAl" id="1oYl8FfqYCv" role="3clF45" />
+      <node concept="3Tm1VV" id="6dWFC76WoEE" role="1B3o_S" />
+      <node concept="3cqZAl" id="6dWFC76WoXn" role="3clF45" />
+      <node concept="37vLTG" id="6dWFC76Wp_w" role="3clF46">
+        <property role="TrG5h" value="mpsProject" />
+        <property role="3TUv4t" value="true" />
+        <node concept="3uibUv" id="6dWFC76Wp_v" role="1tU5fm">
+          <ref role="3uigEE" to="z1c3:~MPSProject" resolve="MPSProject" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6dWFC76WrxR" role="jymVt" />
+    <node concept="2YIFZL" id="6dWFC76Wr0V" role="jymVt">
+      <property role="TrG5h" value="reRunClonesDetectionTask" />
+      <node concept="3clFbS" id="6dWFC76Wr0W" role="3clF47">
+        <node concept="3cpWs8" id="6dWFC76Wr0X" role="3cqZAp">
+          <node concept="3cpWsn" id="6dWFC76Wr0Y" role="3cpWs9">
+            <property role="TrG5h" value="task" />
+            <node concept="3uibUv" id="6dWFC76Wr0Z" role="1tU5fm">
+              <ref role="3uigEE" to="xygl:~Task$Backgroundable" resolve="Task.Backgroundable" />
+            </node>
+            <node concept="2ShNRf" id="6dWFC76Wr10" role="33vP2m">
+              <node concept="YeOm9" id="6dWFC76Wr11" role="2ShVmc">
+                <node concept="1Y3b0j" id="6dWFC76Wr12" role="YeSDq">
+                  <property role="2bfB8j" value="true" />
+                  <ref role="1Y3XeK" to="xygl:~Task$Backgroundable" resolve="Task.Backgroundable" />
+                  <ref role="37wK5l" to="xygl:~Task$Backgroundable.&lt;init&gt;(com.intellij.openapi.project.Project,java.lang.String,boolean)" resolve="Task.Backgroundable" />
+                  <node concept="3Tm1VV" id="6dWFC76Wr13" role="1B3o_S" />
+                  <node concept="3clFb_" id="6dWFC76Wr14" role="jymVt">
+                    <property role="TrG5h" value="run" />
+                    <node concept="3Tm1VV" id="6dWFC76Wr15" role="1B3o_S" />
+                    <node concept="3cqZAl" id="6dWFC76Wr16" role="3clF45" />
+                    <node concept="37vLTG" id="6dWFC76Wr17" role="3clF46">
+                      <property role="TrG5h" value="pi" />
+                      <node concept="3uibUv" id="6dWFC76Wr18" role="1tU5fm">
+                        <ref role="3uigEE" to="xygl:~ProgressIndicator" resolve="ProgressIndicator" />
+                      </node>
+                      <node concept="2AHcQZ" id="6dWFC76Wr19" role="2AJF6D">
+                        <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+                      </node>
+                    </node>
+                    <node concept="3clFbS" id="6dWFC76Wr1a" role="3clF47">
+                      <node concept="3clFbF" id="6dWFC76Wr1b" role="3cqZAp">
+                        <node concept="2YIFZM" id="6dWFC76Wr1c" role="3clFbG">
+                          <ref role="1Pybhc" node="1oYl8Ffq3Xu" resolve="ClonesDetectorRunner" />
+                          <ref role="37wK5l" node="1oYl8Ffqb3R" resolve="runClonesDetector" />
+                          <node concept="37vLTw" id="6dWFC76Wr1d" role="37wK5m">
+                            <ref role="3cqZAo" node="6dWFC76Wr17" resolve="pi" />
+                          </node>
+                          <node concept="37vLTw" id="6dWFC76W$11" role="37wK5m">
+                            <ref role="3cqZAo" node="1oYl8Ffq4hP" resolve="lastScope" />
+                          </node>
+                          <node concept="37vLTw" id="6dWFC76Wu4x" role="37wK5m">
+                            <ref role="3cqZAo" node="1oYl8Ffq5JR" resolve="lastProject" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2AHcQZ" id="6dWFC76Wr1g" role="2AJF6D">
+                      <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="6dWFC76Wr1h" role="37wK5m">
+                    <node concept="37vLTw" id="6dWFC76WtoK" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1oYl8Ffq5JR" resolve="lastProject" />
+                    </node>
+                    <node concept="liA8E" id="6dWFC76Wr1j" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~MPSProject.getProject()" resolve="getProject" />
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="6dWFC76Wr1k" role="37wK5m">
+                    <property role="Xl_RC" value="Launching clones detection ..." />
+                  </node>
+                  <node concept="3clFbT" id="6dWFC76Wr1l" role="37wK5m">
+                    <property role="3clFbU" value="true" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6dWFC76Wr1m" role="3cqZAp">
+          <node concept="2OqwBi" id="6dWFC76Wr1n" role="3clFbG">
+            <node concept="2YIFZM" id="6dWFC76Wr1o" role="2Oq$k0">
+              <ref role="37wK5l" to="xygl:~ProgressManager.getInstance()" resolve="getInstance" />
+              <ref role="1Pybhc" to="xygl:~ProgressManager" resolve="ProgressManager" />
+            </node>
+            <node concept="liA8E" id="6dWFC76Wr1p" role="2OqNvi">
+              <ref role="37wK5l" to="xygl:~ProgressManager.run(com.intellij.openapi.progress.Task)" resolve="run" />
+              <node concept="37vLTw" id="6dWFC76Wr1q" role="37wK5m">
+                <ref role="3cqZAo" node="6dWFC76Wr0Y" resolve="task" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6dWFC76Wr1r" role="1B3o_S" />
+      <node concept="3cqZAl" id="6dWFC76Wr1s" role="3clF45" />
     </node>
     <node concept="3Tm1VV" id="1oYl8Ffq3Xv" role="1B3o_S" />
   </node>

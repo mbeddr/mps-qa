@@ -14,6 +14,7 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="daiw" ref="r:83cef4f4-b155-43d5-82b7-b95ae5c31ef3(org.mpsqa.clones.core.hashcode)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
+    <import index="xygl" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.progress(MPS.IDEA/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
@@ -25,9 +26,11 @@
       </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="1239709250944" name="jetbrains.mps.baseLanguage.structure.PrefixIncrementExpression" flags="nn" index="2$rviw" />
       <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
         <child id="1239714902950" name="expression" index="2$L3a6" />
       </concept>
+      <concept id="1095950406618" name="jetbrains.mps.baseLanguage.structure.DivExpression" flags="nn" index="FJ1c_" />
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -52,6 +55,7 @@
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
+      <concept id="1070534513062" name="jetbrains.mps.baseLanguage.structure.DoubleType" flags="in" index="10P55v" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
@@ -315,6 +319,38 @@
         <node concept="1QHqEK" id="7JEz8iltZP4" role="3cqZAp">
           <node concept="1QHqEC" id="7JEz8iltZP6" role="1QHqEI">
             <node concept="3clFbS" id="7JEz8iltZP8" role="1bW5cS">
+              <node concept="3clFbF" id="6dWFC76UGrq" role="3cqZAp">
+                <node concept="2OqwBi" id="6dWFC76UGGC" role="3clFbG">
+                  <node concept="37vLTw" id="6dWFC76UGro" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6dWFC76UDOE" resolve="pi" />
+                  </node>
+                  <node concept="liA8E" id="6dWFC76UH5I" role="2OqNvi">
+                    <ref role="37wK5l" to="xygl:~ProgressIndicator.setText(java.lang.String)" resolve="setText" />
+                    <node concept="Xl_RD" id="6dWFC76UHc1" role="37wK5m">
+                      <property role="Xl_RC" value="Populating Hashmap" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="6dWFC76UFD0" role="3cqZAp">
+                <node concept="2OqwBi" id="6dWFC76UFLD" role="3clFbG">
+                  <node concept="37vLTw" id="6dWFC76UFCY" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6dWFC76UDOE" resolve="pi" />
+                  </node>
+                  <node concept="liA8E" id="6dWFC76UGfJ" role="2OqNvi">
+                    <ref role="37wK5l" to="xygl:~ProgressIndicator.start()" resolve="start" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3cpWs8" id="6dWFC76UIPa" role="3cqZAp">
+                <node concept="3cpWsn" id="6dWFC76UIPd" role="3cpWs9">
+                  <property role="TrG5h" value="crtStep" />
+                  <node concept="10P55v" id="6dWFC76UIP8" role="1tU5fm" />
+                  <node concept="3cmrfG" id="6dWFC76UJ60" role="33vP2m">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                </node>
+              </node>
               <node concept="2Gpval" id="7WP_sw5AiXS" role="3cqZAp">
                 <node concept="2GrKxI" id="7WP_sw5AiXU" role="2Gsz3X">
                   <property role="TrG5h" value="m" />
@@ -323,6 +359,42 @@
                   <ref role="3cqZAo" node="5Dw7oA60LlQ" resolve="modelsList" />
                 </node>
                 <node concept="3clFbS" id="7WP_sw5AiXY" role="2LFqv$">
+                  <node concept="3clFbF" id="6dWFC76UJZz" role="3cqZAp">
+                    <node concept="2OqwBi" id="6dWFC76UKhj" role="3clFbG">
+                      <node concept="37vLTw" id="6dWFC76UJZx" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6dWFC76UDOE" resolve="pi" />
+                      </node>
+                      <node concept="liA8E" id="6dWFC76UKKq" role="2OqNvi">
+                        <ref role="37wK5l" to="xygl:~ProgressIndicator.setFraction(double)" resolve="setFraction" />
+                        <node concept="FJ1c_" id="6dWFC76ULeC" role="37wK5m">
+                          <node concept="2OqwBi" id="6dWFC76UM7Q" role="3uHU7w">
+                            <node concept="37vLTw" id="6dWFC76ULo8" role="2Oq$k0">
+                              <ref role="3cqZAo" node="5Dw7oA60LlQ" resolve="modelsList" />
+                            </node>
+                            <node concept="34oBXx" id="6dWFC76UNR5" role="2OqNvi" />
+                          </node>
+                          <node concept="2$rviw" id="6dWFC76UO9D" role="3uHU7B">
+                            <node concept="37vLTw" id="6dWFC76UKR1" role="2$L3a6">
+                              <ref role="3cqZAo" node="6dWFC76UIPd" resolve="crtStep" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbJ" id="6dWFC76VVby" role="3cqZAp">
+                    <node concept="3clFbS" id="6dWFC76VVb$" role="3clFbx">
+                      <node concept="3cpWs6" id="6dWFC76VWPf" role="3cqZAp" />
+                    </node>
+                    <node concept="2OqwBi" id="6dWFC76VVUi" role="3clFbw">
+                      <node concept="37vLTw" id="6dWFC76VVsG" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6dWFC76UDOE" resolve="pi" />
+                      </node>
+                      <node concept="liA8E" id="6dWFC76VW$o" role="2OqNvi">
+                        <ref role="37wK5l" to="xygl:~ProgressIndicator.isCanceled()" resolve="isCanceled" />
+                      </node>
+                    </node>
+                  </node>
                   <node concept="3clFbJ" id="E3aAvrSFQJ" role="3cqZAp">
                     <node concept="3clFbS" id="E3aAvrSFQL" role="3clFbx">
                       <node concept="3N13vt" id="E3aAvrSGBA" role="3cqZAp" />
@@ -351,8 +423,21 @@
               <node concept="3clFbF" id="7WP_sw5_Rmo" role="3cqZAp">
                 <node concept="1rXfSq" id="7WP_sw5_Rmm" role="3clFbG">
                   <ref role="37wK5l" node="7WP_sw5_CZ1" resolve="buildClonesFromHashmap" />
+                  <node concept="37vLTw" id="6dWFC76VhZp" role="37wK5m">
+                    <ref role="3cqZAo" node="6dWFC76UDOE" resolve="pi" />
+                  </node>
                   <node concept="37vLTw" id="7WP_sw5_RDn" role="37wK5m">
                     <ref role="3cqZAo" node="7WP_sw5_yHN" resolve="clones" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="6dWFC76VPEW" role="3cqZAp">
+                <node concept="2OqwBi" id="6dWFC76VPY$" role="3clFbG">
+                  <node concept="37vLTw" id="6dWFC76VPEU" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6dWFC76UDOE" resolve="pi" />
+                  </node>
+                  <node concept="liA8E" id="6dWFC76VQz7" role="2OqNvi">
+                    <ref role="37wK5l" to="xygl:~ProgressIndicator.stop()" resolve="stop" />
                   </node>
                 </node>
               </node>
@@ -372,6 +457,12 @@
       <node concept="_YKpA" id="7WP_sw5_yIV" role="3clF45">
         <node concept="3uibUv" id="7WP_sw5_yIW" role="_ZDj9">
           <ref role="3uigEE" node="5dW8pSK6_ts" resolve="Clone" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="6dWFC76UDOE" role="3clF46">
+        <property role="TrG5h" value="pi" />
+        <node concept="3uibUv" id="6dWFC76UFno" role="1tU5fm">
+          <ref role="3uigEE" to="xygl:~ProgressIndicator" resolve="ProgressIndicator" />
         </node>
       </node>
       <node concept="37vLTG" id="1oYl8FfpkVh" role="3clF46">
@@ -398,6 +489,12 @@
       <property role="TrG5h" value="buildClonesFromHashmap" />
       <node concept="3Tm6S6" id="7WP_sw5_CZ2" role="1B3o_S" />
       <node concept="3cqZAl" id="7WP_sw5_CZ3" role="3clF45" />
+      <node concept="37vLTG" id="6dWFC76Vio8" role="3clF46">
+        <property role="TrG5h" value="pi" />
+        <node concept="3uibUv" id="6dWFC76VjA3" role="1tU5fm">
+          <ref role="3uigEE" to="xygl:~ProgressIndicator" resolve="ProgressIndicator" />
+        </node>
+      </node>
       <node concept="37vLTG" id="7WP_sw5_CYV" role="3clF46">
         <property role="TrG5h" value="clones" />
         <node concept="_YKpA" id="7WP_sw5_CYW" role="1tU5fm">
@@ -407,11 +504,81 @@
         </node>
       </node>
       <node concept="3clFbS" id="7WP_sw5_CY6" role="3clF47">
+        <node concept="3clFbF" id="6dWFC76VkR8" role="3cqZAp">
+          <node concept="2OqwBi" id="6dWFC76VlBD" role="3clFbG">
+            <node concept="37vLTw" id="6dWFC76VkR6" role="2Oq$k0">
+              <ref role="3cqZAo" node="6dWFC76Vio8" resolve="pi" />
+            </node>
+            <node concept="liA8E" id="6dWFC76VmsF" role="2OqNvi">
+              <ref role="37wK5l" to="xygl:~ProgressIndicator.setText(java.lang.String)" resolve="setText" />
+              <node concept="Xl_RD" id="6dWFC76Vmv3" role="37wK5m">
+                <property role="Xl_RC" value="Collecting Clones ..." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6dWFC76VnNT" role="3cqZAp">
+          <node concept="3cpWsn" id="6dWFC76VnNU" role="3cpWs9">
+            <property role="TrG5h" value="crtStep" />
+            <node concept="10P55v" id="6dWFC76VnNV" role="1tU5fm" />
+            <node concept="3cmrfG" id="6dWFC76VnNW" role="33vP2m">
+              <property role="3cmrfH" value="0" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6dWFC76VrTF" role="3cqZAp">
+          <node concept="3cpWsn" id="6dWFC76VrTI" role="3cpWs9">
+            <property role="TrG5h" value="size" />
+            <node concept="10Oyi0" id="6dWFC76VrTD" role="1tU5fm" />
+            <node concept="2OqwBi" id="6dWFC76VA$O" role="33vP2m">
+              <node concept="2OqwBi" id="6dWFC76VsSl" role="2Oq$k0">
+                <node concept="37vLTw" id="6dWFC76VsSm" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5dW8pSK7VWM" resolve="hash2SimilarNodes" />
+                </node>
+                <node concept="3lbrtF" id="6dWFC76VsSn" role="2OqNvi" />
+              </node>
+              <node concept="34oBXx" id="6dWFC76VLy7" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
         <node concept="2Gpval" id="7WP_sw5_CY7" role="3cqZAp">
           <node concept="2GrKxI" id="7WP_sw5_CY8" role="2Gsz3X">
             <property role="TrG5h" value="k" />
           </node>
           <node concept="3clFbS" id="7WP_sw5_CY9" role="2LFqv$">
+            <node concept="3clFbF" id="6dWFC76VpRf" role="3cqZAp">
+              <node concept="2OqwBi" id="6dWFC76VpRg" role="3clFbG">
+                <node concept="37vLTw" id="6dWFC76VpRh" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6dWFC76Vio8" resolve="pi" />
+                </node>
+                <node concept="liA8E" id="6dWFC76VpRi" role="2OqNvi">
+                  <ref role="37wK5l" to="xygl:~ProgressIndicator.setFraction(double)" resolve="setFraction" />
+                  <node concept="FJ1c_" id="6dWFC76VpRj" role="37wK5m">
+                    <node concept="2$rviw" id="6dWFC76VpRn" role="3uHU7B">
+                      <node concept="37vLTw" id="6dWFC76VpRo" role="2$L3a6">
+                        <ref role="3cqZAo" node="6dWFC76VnNU" resolve="crtStep" />
+                      </node>
+                    </node>
+                    <node concept="37vLTw" id="6dWFC76VMwo" role="3uHU7w">
+                      <ref role="3cqZAo" node="6dWFC76VrTI" resolve="size" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="6dWFC76VXCr" role="3cqZAp">
+              <node concept="3clFbS" id="6dWFC76VXCs" role="3clFbx">
+                <node concept="3cpWs6" id="6dWFC76VXCt" role="3cqZAp" />
+              </node>
+              <node concept="2OqwBi" id="6dWFC76VXCu" role="3clFbw">
+                <node concept="37vLTw" id="6dWFC76VXCv" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6dWFC76Vio8" resolve="pi" />
+                </node>
+                <node concept="liA8E" id="6dWFC76VXCw" role="2OqNvi">
+                  <ref role="37wK5l" to="xygl:~ProgressIndicator.isCanceled()" resolve="isCanceled" />
+                </node>
+              </node>
+            </node>
             <node concept="3cpWs8" id="7WP_sw5_CYa" role="3cqZAp">
               <node concept="3cpWsn" id="7WP_sw5_CYb" role="3cpWs9">
                 <property role="TrG5h" value="list" />
