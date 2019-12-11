@@ -31,6 +31,7 @@
     <import index="mk8z" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.progress(MPS.Platform/)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
+    <import index="mk90" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.progress(MPS.Core/)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -452,14 +453,30 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="7vLq_hsrpTP" role="3cqZAp">
+          <node concept="3cpWsn" id="7vLq_hsrpTQ" role="3cpWs9">
+            <property role="TrG5h" value="pma" />
+            <node concept="3uibUv" id="7vLq_hsrpTN" role="1tU5fm">
+              <ref role="3uigEE" to="mk8z:~ProgressMonitorAdapter" resolve="ProgressMonitorAdapter" />
+            </node>
+            <node concept="2ShNRf" id="7vLq_hsrpTR" role="33vP2m">
+              <node concept="1pGfFk" id="7vLq_hsrpTS" role="2ShVmc">
+                <ref role="37wK5l" to="mk8z:~ProgressMonitorAdapter.&lt;init&gt;(com.intellij.openapi.progress.ProgressIndicator)" resolve="ProgressMonitorAdapter" />
+                <node concept="2ShNRf" id="7vLq_hsrpTT" role="37wK5m">
+                  <node concept="1pGfFk" id="7vLq_hsrpTU" role="2ShVmc">
+                    <ref role="37wK5l" to="xygl:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="1oYl8FfqYSF" role="3cqZAp">
           <node concept="2YIFZM" id="1oYl8FfqYSH" role="3clFbG">
             <ref role="1Pybhc" node="1oYl8Ffq3Xu" resolve="ClonesDetectorRunner" />
             <ref role="37wK5l" node="1oYl8Ffqb3R" resolve="runClonesDetector" />
-            <node concept="2ShNRf" id="6dWFC76VaSm" role="37wK5m">
-              <node concept="1pGfFk" id="6dWFC76Vbmk" role="2ShVmc">
-                <ref role="37wK5l" to="xygl:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
-              </node>
+            <node concept="37vLTw" id="7vLq_hsrpTV" role="37wK5m">
+              <ref role="3cqZAo" node="7vLq_hsrpTQ" resolve="pma" />
             </node>
             <node concept="2OqwBi" id="1oYl8FfqYSI" role="37wK5m">
               <node concept="2WthIp" id="1oYl8FfqYSJ" role="2Oq$k0" />
@@ -771,7 +788,7 @@
               <node concept="liA8E" id="1oYl8FfqRaa" role="2OqNvi">
                 <ref role="37wK5l" to="2e2r:7WP_sw5_yHK" resolve="findClones" />
                 <node concept="37vLTw" id="6dWFC76UQgs" role="37wK5m">
-                  <ref role="3cqZAo" node="6dWFC76UvXw" resolve="pi" />
+                  <ref role="3cqZAo" node="6dWFC76UvXw" resolve="pma" />
                 </node>
                 <node concept="37vLTw" id="1oYl8FfqRah" role="37wK5m">
                   <ref role="3cqZAo" node="1oYl8Ffq4i$" resolve="settings" />
@@ -864,6 +881,9 @@
             </node>
             <node concept="2XshWL" id="5Dw7oA60CnP" role="2OqNvi">
               <ref role="2WH_rO" node="5Dw7oA60$CC" resolve="setClones" />
+              <node concept="37vLTw" id="7vLq_hssoGi" role="2XxRq1">
+                <ref role="3cqZAo" node="6dWFC76UvXw" resolve="pma" />
+              </node>
               <node concept="37vLTw" id="5Dw7oA60CnQ" role="2XxRq1">
                 <ref role="3cqZAo" node="1oYl8FfqOTD" resolve="clones" />
               </node>
@@ -886,11 +906,21 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="7vLq_hssfxV" role="3cqZAp">
+          <node concept="2OqwBi" id="7vLq_hssfUo" role="3clFbG">
+            <node concept="37vLTw" id="7vLq_hssfxT" role="2Oq$k0">
+              <ref role="3cqZAo" node="6dWFC76UvXw" resolve="pma" />
+            </node>
+            <node concept="liA8E" id="7vLq_hssg$B" role="2OqNvi">
+              <ref role="37wK5l" to="mk90:~ProgressMonitorBase.done()" resolve="done" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="37vLTG" id="6dWFC76UvXw" role="3clF46">
-        <property role="TrG5h" value="pi" />
-        <node concept="3uibUv" id="6dWFC76UC5N" role="1tU5fm">
-          <ref role="3uigEE" to="xygl:~ProgressIndicator" resolve="ProgressIndicator" />
+        <property role="TrG5h" value="pma" />
+        <node concept="3uibUv" id="7vLq_hsqY0a" role="1tU5fm">
+          <ref role="3uigEE" to="mk8z:~ProgressMonitorAdapter" resolve="ProgressMonitorAdapter" />
         </node>
       </node>
       <node concept="37vLTG" id="1oYl8Ffq4wj" role="3clF46">
@@ -939,12 +969,28 @@
                       </node>
                     </node>
                     <node concept="3clFbS" id="6dWFC76Wp6L" role="3clF47">
+                      <node concept="3cpWs8" id="7vLq_hsqXaB" role="3cqZAp">
+                        <node concept="3cpWsn" id="7vLq_hsqXaC" role="3cpWs9">
+                          <property role="TrG5h" value="pma" />
+                          <node concept="3uibUv" id="7vLq_hsqXaD" role="1tU5fm">
+                            <ref role="3uigEE" to="mk8z:~ProgressMonitorAdapter" resolve="ProgressMonitorAdapter" />
+                          </node>
+                          <node concept="2ShNRf" id="7vLq_hsqXaE" role="33vP2m">
+                            <node concept="1pGfFk" id="7vLq_hsqXaF" role="2ShVmc">
+                              <ref role="37wK5l" to="mk8z:~ProgressMonitorAdapter.&lt;init&gt;(com.intellij.openapi.progress.ProgressIndicator)" resolve="ProgressMonitorAdapter" />
+                              <node concept="37vLTw" id="7vLq_hsqXaG" role="37wK5m">
+                                <ref role="3cqZAo" node="6dWFC76Wp6I" resolve="pi" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
                       <node concept="3clFbF" id="6dWFC76Wp6M" role="3cqZAp">
                         <node concept="2YIFZM" id="6dWFC76Wp6N" role="3clFbG">
                           <ref role="1Pybhc" node="1oYl8Ffq3Xu" resolve="ClonesDetectorRunner" />
                           <ref role="37wK5l" node="1oYl8Ffqb3R" resolve="runClonesDetector" />
-                          <node concept="37vLTw" id="6dWFC76Wp6O" role="37wK5m">
-                            <ref role="3cqZAo" node="6dWFC76Wp6I" resolve="pi" />
+                          <node concept="37vLTw" id="7vLq_hsqXFJ" role="37wK5m">
+                            <ref role="3cqZAo" node="7vLq_hsqXaC" resolve="pma" />
                           </node>
                           <node concept="37vLTw" id="6dWFC76Wp6P" role="37wK5m">
                             <ref role="3cqZAo" node="6dWFC76Wp_w" resolve="mpsProject" />
@@ -1034,12 +1080,28 @@
                       </node>
                     </node>
                     <node concept="3clFbS" id="6dWFC76Wr1a" role="3clF47">
+                      <node concept="3cpWs8" id="7vLq_hsqWEF" role="3cqZAp">
+                        <node concept="3cpWsn" id="7vLq_hsqWEG" role="3cpWs9">
+                          <property role="TrG5h" value="pma" />
+                          <node concept="3uibUv" id="7vLq_hsqWEB" role="1tU5fm">
+                            <ref role="3uigEE" to="mk8z:~ProgressMonitorAdapter" resolve="ProgressMonitorAdapter" />
+                          </node>
+                          <node concept="2ShNRf" id="7vLq_hsqWEH" role="33vP2m">
+                            <node concept="1pGfFk" id="7vLq_hsqWEI" role="2ShVmc">
+                              <ref role="37wK5l" to="mk8z:~ProgressMonitorAdapter.&lt;init&gt;(com.intellij.openapi.progress.ProgressIndicator)" resolve="ProgressMonitorAdapter" />
+                              <node concept="37vLTw" id="7vLq_hsqWEJ" role="37wK5m">
+                                <ref role="3cqZAo" node="6dWFC76Wr17" resolve="pi" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
                       <node concept="3clFbF" id="6dWFC76Wr1b" role="3cqZAp">
                         <node concept="2YIFZM" id="6dWFC76Wr1c" role="3clFbG">
                           <ref role="1Pybhc" node="1oYl8Ffq3Xu" resolve="ClonesDetectorRunner" />
                           <ref role="37wK5l" node="1oYl8Ffqb3R" resolve="runClonesDetector" />
-                          <node concept="37vLTw" id="6dWFC76Wr1d" role="37wK5m">
-                            <ref role="3cqZAo" node="6dWFC76Wr17" resolve="pi" />
+                          <node concept="37vLTw" id="7vLq_hsqX4U" role="37wK5m">
+                            <ref role="3cqZAo" node="7vLq_hsqWEG" resolve="pma" />
                           </node>
                           <node concept="37vLTw" id="6dWFC76W$11" role="37wK5m">
                             <ref role="3cqZAo" node="1oYl8Ffq4hP" resolve="lastScope" />
@@ -1063,7 +1125,7 @@
                     </node>
                   </node>
                   <node concept="Xl_RD" id="6dWFC76Wr1k" role="37wK5m">
-                    <property role="Xl_RC" value="Launching clones detection ..." />
+                    <property role="Xl_RC" value="Detecting clones ..." />
                   </node>
                   <node concept="3clFbT" id="6dWFC76Wr1l" role="37wK5m">
                     <property role="3clFbU" value="true" />
@@ -1261,6 +1323,9 @@
             </node>
             <node concept="liA8E" id="5Dw7oA60$CL" role="2OqNvi">
               <ref role="37wK5l" to="8tkk:5Dw7oA60FKt" resolve="refresh" />
+              <node concept="37vLTw" id="7vLq_hssjjJ" role="37wK5m">
+                <ref role="3cqZAo" node="7vLq_hssiYF" resolve="pma" />
+              </node>
               <node concept="37vLTw" id="5Dw7oA61rkZ" role="37wK5m">
                 <ref role="3cqZAo" node="5Dw7oA60$CO" resolve="clones" />
               </node>
@@ -1269,6 +1334,12 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="7vLq_hssiYF" role="3clF46">
+        <property role="TrG5h" value="pma" />
+        <node concept="3uibUv" id="7vLq_hssj7a" role="1tU5fm">
+          <ref role="3uigEE" to="mk8z:~ProgressMonitorAdapter" resolve="ProgressMonitorAdapter" />
         </node>
       </node>
       <node concept="37vLTG" id="5Dw7oA60$CO" role="3clF46">

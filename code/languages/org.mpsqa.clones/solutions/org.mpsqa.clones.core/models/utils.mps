@@ -12,6 +12,7 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" />
     <import index="xygl" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.progress(MPS.IDEA/)" />
+    <import index="mk8z" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.progress(MPS.Platform/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -184,9 +185,14 @@
             </node>
             <node concept="liA8E" id="5dW8pSKf6QU" role="2OqNvi">
               <ref role="37wK5l" to="2e2r:7WP_sw5_yHK" resolve="findClones" />
-              <node concept="2ShNRf" id="6dWFC76UP8$" role="37wK5m">
-                <node concept="1pGfFk" id="6dWFC76UPvh" role="2ShVmc">
-                  <ref role="37wK5l" to="xygl:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
+              <node concept="2ShNRf" id="7vLq_hsrjK8" role="37wK5m">
+                <node concept="1pGfFk" id="7vLq_hsrk2k" role="2ShVmc">
+                  <ref role="37wK5l" to="mk8z:~ProgressMonitorAdapter.&lt;init&gt;(com.intellij.openapi.progress.ProgressIndicator)" resolve="ProgressMonitorAdapter" />
+                  <node concept="2ShNRf" id="6dWFC76UP8$" role="37wK5m">
+                    <node concept="1pGfFk" id="6dWFC76UPvh" role="2ShVmc">
+                      <ref role="37wK5l" to="xygl:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
+                    </node>
+                  </node>
                 </node>
               </node>
               <node concept="37vLTw" id="1oYl8Ffpxgb" role="37wK5m">
