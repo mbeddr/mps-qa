@@ -1187,7 +1187,7 @@
       <node concept="3uibUv" id="1oYl8FfvOXT" role="1tU5fm">
         <ref role="3uigEE" to="2e2r:1oYl8FfodCD" resolve="ClonesDetectorSettings" />
       </node>
-      <node concept="10M0yZ" id="1oYl8FfvSly" role="33vP2m">
+      <node concept="10M0yZ" id="GBiWXwHbr6" role="33vP2m">
         <ref role="3cqZAo" to="9vt7:1oYl8Ffq4i$" resolve="settings" />
         <ref role="1PxDUh" to="9vt7:1oYl8Ffq3Xu" resolve="ClonesDetectorRunner" />
       </node>
@@ -1911,7 +1911,7 @@
                       </node>
                       <node concept="3clFbS" id="1oYl8FfoCob" role="3clF47">
                         <node concept="3clFbF" id="1oYl8Ffr4oj" role="3cqZAp">
-                          <node concept="2YIFZM" id="6dWFC76WzdI" role="3clFbG">
+                          <node concept="2YIFZM" id="GBiWXwHbrm" role="3clFbG">
                             <ref role="37wK5l" to="9vt7:6dWFC76Wr0V" resolve="reRunClonesDetectionTask" />
                             <ref role="1Pybhc" to="9vt7:1oYl8Ffq3Xu" resolve="ClonesDetectorRunner" />
                           </node>
