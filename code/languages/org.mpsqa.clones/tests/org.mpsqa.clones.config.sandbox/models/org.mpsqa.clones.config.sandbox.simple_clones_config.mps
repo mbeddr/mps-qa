@@ -12,6 +12,7 @@
       </concept>
       <concept id="8642806070461796367" name="org.mpsqa.clones.config.structure.ClonesDetectionConfig" flags="ng" index="FxBDr">
         <child id="8642806070461801866" name="ignoredSolutions" index="Fx$Zu" />
+        <child id="803694412562296355" name="ignoredConcepts" index="1FAEnG" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -22,6 +23,15 @@
   </registry>
   <node concept="FxBDr" id="7vLq_hsu6FX">
     <property role="TrG5h" value="simple_config" />
+    <node concept="Fx$Zk" id="4vctr_xSHzl" role="1FAEnG">
+      <property role="Fx$Zl" value="CommentLine" />
+    </node>
+    <node concept="Fx$Zk" id="4vctr_xSHzt" role="1FAEnG">
+      <property role="Fx$Zl" value="SingleCommentLine" />
+    </node>
+    <node concept="Fx$Zk" id="4vctr_xSHzo" role="1FAEnG">
+      <property role="Fx$Zl" value="Statement" />
+    </node>
     <node concept="Fx$Zk" id="7vLq_hsu6FY" role="Fx$Zu">
       <property role="Fx$Zl" value="test.*" />
     </node>

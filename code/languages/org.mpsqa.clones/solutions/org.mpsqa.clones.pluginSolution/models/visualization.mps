@@ -11,7 +11,6 @@
   </languages>
   <imports>
     <import index="t49a" ref="56f134c7-a829-428d-9119-715369c69768/java:net.sf.jtreemap.swing(org.mpsqa.treemap.lib/)" />
-    <import index="8tkk" ref="r:cc01d642-86a6-46e7-b474-e98429b38895(org.mpsqa.clones.pluginSolution.visualization)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="tlox" ref="56f134c7-a829-428d-9119-715369c69768/java:net.sf.jtreemap.swing.provider(org.mpsqa.treemap.lib/)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
