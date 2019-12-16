@@ -697,7 +697,7 @@
                 <node concept="1pGfFk" id="5Dw7oA64r6E" role="2ShVmc">
                   <ref role="37wK5l" to="z60i:~Dimension.&lt;init&gt;(int,int)" resolve="Dimension" />
                   <node concept="3cmrfG" id="5Dw7oA64r6F" role="37wK5m">
-                    <property role="3cmrfH" value="500" />
+                    <property role="3cmrfH" value="1200" />
                   </node>
                   <node concept="3cmrfG" id="5Dw7oA64r6G" role="37wK5m">
                     <property role="3cmrfH" value="500" />
@@ -795,13 +795,13 @@
                   <ref role="1Px2BO" to="tlox:~HSBTreeMapColorProvider$ColorDistributionTypes" resolve="HSBTreeMapColorProvider.ColorDistributionTypes" />
                   <ref role="Rm8GQ" to="tlox:~HSBTreeMapColorProvider$ColorDistributionTypes.Log" resolve="Log" />
                 </node>
-                <node concept="10M0yZ" id="5Dw7oA66r6D" role="37wK5m">
-                  <ref role="3cqZAo" to="z60i:~Color.GREEN" resolve="GREEN" />
-                  <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                </node>
                 <node concept="10M0yZ" id="5Dw7oA66r6E" role="37wK5m">
                   <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
                   <ref role="3cqZAo" to="z60i:~Color.RED" resolve="RED" />
+                </node>
+                <node concept="10M0yZ" id="5Dw7oA66r6D" role="37wK5m">
+                  <ref role="3cqZAo" to="z60i:~Color.GREEN" resolve="GREEN" />
+                  <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
                 </node>
               </node>
             </node>
