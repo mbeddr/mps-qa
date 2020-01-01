@@ -2,7 +2,7 @@
 <model ref="r:22785113-1a35-4733-9815-1e286985f483(org.mpsqa.clones.config.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -192,7 +192,7 @@
         <property role="3F0ifm" value="***" />
         <ref role="1ERwB7" node="4vctr_xTVfI" resolve="annotationAction" />
         <node concept="30gYXW" id="4vctr_xTFNy" role="3F10Kt">
-          <property role="Vb096" value="yellow" />
+          <property role="Vb096" value="fLwANPq/yellow" />
         </node>
       </node>
       <node concept="2SsqMj" id="4vctr_xTFNm" role="3EZMnx" />
@@ -203,7 +203,7 @@
     <property role="TrG5h" value="annotationAction" />
     <ref role="1h_SK9" to="mpzi:4vctr_xTpQN" resolve="ClonedNodeAnnotation" />
     <node concept="1hA7zw" id="4vctr_xTVfJ" role="1h_SK8">
-      <property role="1hAc7j" value="backspace_action_id" />
+      <property role="1hAc7j" value="7P1WhNABvta/backspace_action_id" />
       <node concept="1hAIg9" id="4vctr_xTVfK" role="1hA7z_">
         <node concept="3clFbS" id="4vctr_xTVfL" role="2VODD2">
           <node concept="3cpWs8" id="4vctr_xUKai" role="3cqZAp">

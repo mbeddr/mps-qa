@@ -4,9 +4,9 @@
   <languages>
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="4" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
@@ -291,7 +291,7 @@
   <node concept="sEfby" id="7WP_sw5r_62">
     <property role="TrG5h" value="ClonesOverviewViewer" />
     <property role="2XNbzY" value="Clones Overview Viewer" />
-    <property role="2bmUCM" value="RIGHT" />
+    <property role="2bmUCM" value="2aGS$UDXOxV/RIGHT" />
     <node concept="2XrIbr" id="7WP_sw5x34O" role="2XNbBy">
       <property role="TrG5h" value="setClones" />
       <node concept="3cqZAl" id="7WP_sw5x3lA" role="3clF45" />
@@ -442,7 +442,7 @@
         <node concept="3clFbJ" id="1oYl8FfqyLH" role="3cqZAp">
           <node concept="3clFbS" id="1oYl8FfqyLI" role="3clFbx">
             <node concept="2xdQw9" id="1oYl8FfqyLJ" role="3cqZAp">
-              <property role="2xdLsb" value="error" />
+              <property role="2xdLsb" value="gZ5fh_4/error" />
               <node concept="Xl_RD" id="1oYl8FfqyLK" role="9lYJi">
                 <property role="Xl_RC" value="could not get the MPSProject object" />
               </node>
@@ -543,7 +543,7 @@
         <node concept="3clFbJ" id="1oYl8Ffqp1d" role="3cqZAp">
           <node concept="3clFbS" id="1oYl8Ffqp1f" role="3clFbx">
             <node concept="2xdQw9" id="1oYl8FfqycI" role="3cqZAp">
-              <property role="2xdLsb" value="error" />
+              <property role="2xdLsb" value="gZ5fh_4/error" />
               <node concept="Xl_RD" id="1oYl8FfqycK" role="9lYJi">
                 <property role="Xl_RC" value="could not get the MPSProject object" />
               </node>
@@ -575,7 +575,6 @@
   <node concept="sEfby" id="E3aAvrKKGx">
     <property role="TrG5h" value="ClonesDetailsViewer" />
     <property role="2XNbzY" value="Clone Details Viewer" />
-    <property role="2bmUCM" value="BOTTOM" />
     <node concept="2XrIbr" id="E3aAvrKKGy" role="2XNbBy">
       <property role="TrG5h" value="setClones" />
       <node concept="3cqZAl" id="E3aAvrKKGz" role="3clF45" />
@@ -725,7 +724,6 @@
   <node concept="sEfby" id="5Dw7oA60$CB">
     <property role="TrG5h" value="ClonesTreemapViewer" />
     <property role="2XNbzY" value="Clone Treemap Viewer" />
-    <property role="2bmUCM" value="BOTTOM" />
     <node concept="2XrIbr" id="5Dw7oA60$CC" role="2XNbBy">
       <property role="TrG5h" value="setClones" />
       <node concept="3cqZAl" id="5Dw7oA60$CD" role="3clF45" />
@@ -1138,7 +1136,7 @@
                         <node concept="3clFbJ" id="7vLq_hsvpNl" role="3cqZAp">
                           <node concept="3clFbS" id="7vLq_hsvpNn" role="3clFbx">
                             <node concept="2xdQw9" id="GBiWXwJ4yV" role="3cqZAp">
-                              <property role="2xdLsb" value="info" />
+                              <property role="2xdLsb" value="h1akgim/info" />
                               <node concept="3cpWs3" id="GBiWXwJ64f" role="9lYJi">
                                 <node concept="Xl_RD" id="GBiWXwJ4yX" role="3uHU7B">
                                   <property role="Xl_RC" value="module ignored: " />
@@ -1201,7 +1199,7 @@
                             <node concept="3clFbJ" id="7vLq_hsvORd" role="3cqZAp">
                               <node concept="3clFbS" id="7vLq_hsvORe" role="3clFbx">
                                 <node concept="2xdQw9" id="GBiWXwJ6Ut" role="3cqZAp">
-                                  <property role="2xdLsb" value="info" />
+                                  <property role="2xdLsb" value="h1akgim/info" />
                                   <node concept="3cpWs3" id="GBiWXwJ6Uu" role="9lYJi">
                                     <node concept="Xl_RD" id="GBiWXwJ6Uv" role="3uHU7B">
                                       <property role="Xl_RC" value="model ignored: " />
@@ -1306,8 +1304,13 @@
               <ref role="1xYkEM" node="7WP_sw5r_62" resolve="ClonesOverviewViewer" />
             </node>
             <node concept="2OqwBi" id="1oYl8FfqX_a" role="33vP2m">
-              <node concept="37vLTw" id="1oYl8FfqXF_" role="2Oq$k0">
-                <ref role="3cqZAo" node="1oYl8Ffq5$W" resolve="project" />
+              <node concept="2OqwBi" id="1gWn68rIkDt" role="2Oq$k0">
+                <node concept="37vLTw" id="1oYl8FfqXF_" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1oYl8Ffq5$W" resolve="project" />
+                </node>
+                <node concept="liA8E" id="1gWn68rIlYy" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~MPSProject.getProject()" resolve="getProject" />
+                </node>
               </node>
               <node concept="LR4U6" id="1oYl8FfqX_e" role="2OqNvi">
                 <ref role="LR4U5" node="7WP_sw5r_62" resolve="ClonesOverviewViewer" />
@@ -1360,8 +1363,13 @@
               <ref role="1xYkEM" node="5Dw7oA60$CB" resolve="ClonesTreemapViewer" />
             </node>
             <node concept="2OqwBi" id="5Dw7oA60CnU" role="33vP2m">
-              <node concept="37vLTw" id="5Dw7oA60CnV" role="2Oq$k0">
-                <ref role="3cqZAo" node="1oYl8Ffq5$W" resolve="project" />
+              <node concept="2OqwBi" id="1gWn68rInA2" role="2Oq$k0">
+                <node concept="37vLTw" id="5Dw7oA60CnV" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1oYl8Ffq5$W" resolve="project" />
+                </node>
+                <node concept="liA8E" id="1gWn68rIosE" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~MPSProject.getProject()" resolve="getProject" />
+                </node>
               </node>
               <node concept="LR4U6" id="5Dw7oA60CnW" role="2OqNvi">
                 <ref role="LR4U5" node="5Dw7oA60$CB" resolve="ClonesTreemapViewer" />
