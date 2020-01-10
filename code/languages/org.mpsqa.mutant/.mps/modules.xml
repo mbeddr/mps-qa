@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/org.mpsqa.mutant.demolang/org.mpsqa.mutant.demolang.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.mpsqa.mutant/org.mpsqa.mutant.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.mutant.base/org.mpsqa.mutant.base.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.mutant.pluginSolution/org.mpsqa.mutant.pluginSolution.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.mutant.sandbox/org.mpsqa.mutant.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/tests/test.org.mpsqa.mutant.demolang/test.org.mpsqa.mutant.demolang.msd" folder="" />
+    </projectModules>
+  </component>
+</project>
