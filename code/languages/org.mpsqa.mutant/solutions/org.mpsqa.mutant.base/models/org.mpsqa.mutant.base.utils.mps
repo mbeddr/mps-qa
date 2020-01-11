@@ -332,8 +332,11 @@
               <ref role="3uigEE" to="a4mm:4DkAay7SlG4" resolve="IReferenceSynthethiser" />
             </node>
             <node concept="2ShNRf" id="4DkAay7SCu5" role="33vP2m">
-              <node concept="HV5vD" id="4DkAay7SCBm" role="2ShVmc">
-                <ref role="HV5vE" to="a4mm:4DkAay7Smu5" resolve="RandomReferenceChooser" />
+              <node concept="1pGfFk" id="5FP1kGC0a6l" role="2ShVmc">
+                <ref role="37wK5l" to="a4mm:5FP1kGC050j" resolve="RandomReferenceChooser" />
+                <node concept="37vLTw" id="5FP1kGC0a6k" role="37wK5m">
+                  <ref role="3cqZAo" node="4eFGY40pPtY" resolve="m" />
+                </node>
               </node>
             </node>
           </node>

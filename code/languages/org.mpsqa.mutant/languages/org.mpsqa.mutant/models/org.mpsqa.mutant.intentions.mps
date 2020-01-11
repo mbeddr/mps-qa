@@ -35,9 +35,6 @@
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
-      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
-        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
-      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -113,6 +110,7 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
+      <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS" />
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
@@ -355,8 +353,12 @@
               <ref role="3uigEE" to="a4mm:4DkAay7SlG4" resolve="IReferenceSynthethiser" />
             </node>
             <node concept="2ShNRf" id="4DkAay7SCu5" role="33vP2m">
-              <node concept="HV5vD" id="4DkAay7SCBm" role="2ShVmc">
-                <ref role="HV5vE" to="a4mm:4DkAay7Smu5" resolve="RandomReferenceChooser" />
+              <node concept="1pGfFk" id="5FP1kGC07Qt" role="2ShVmc">
+                <ref role="37wK5l" to="a4mm:5FP1kGC050j" resolve="RandomReferenceChooser" />
+                <node concept="2OqwBi" id="5FP1kGC084c" role="37wK5m">
+                  <node concept="2Sf5sV" id="5FP1kGC07Qs" role="2Oq$k0" />
+                  <node concept="I4A8Y" id="5FP1kGC08jc" role="2OqNvi" />
+                </node>
               </node>
             </node>
           </node>
