@@ -24,6 +24,7 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
@@ -51,6 +52,7 @@
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -64,6 +66,13 @@
     <property role="34LRSv" value="clones detection config" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2VgkkwRm66h" role="1TKVEi">
+      <property role="IQ2ns" value="3373285491508535697" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="scope" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2VgkkwRm66t" resolve="CloneDetectionScopeBase" />
+    </node>
     <node concept="1TJgyj" id="7vLq_hstMma" role="1TKVEi">
       <property role="IQ2ns" value="8642806070461801866" />
       <property role="20lmBu" value="aggregation" />
@@ -112,6 +121,27 @@
         <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
       </node>
     </node>
+  </node>
+  <node concept="1TIwiD" id="2VgkkwRm66t">
+    <property role="EcuMT" value="3373285491508535709" />
+    <property role="TrG5h" value="CloneDetectionScopeBase" />
+    <property role="R5$K7" value="true" />
+    <property role="3GE5qa" value="scope" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="2VgkkwRm67z">
+    <property role="EcuMT" value="3373285491508535779" />
+    <property role="TrG5h" value="ProjectScope" />
+    <property role="34LRSv" value="project scope" />
+    <property role="3GE5qa" value="scope" />
+    <ref role="1TJDcQ" node="2VgkkwRm66t" resolve="CloneDetectionScopeBase" />
+  </node>
+  <node concept="1TIwiD" id="2VgkkwRm67E">
+    <property role="EcuMT" value="3373285491508535786" />
+    <property role="TrG5h" value="GlobalScope" />
+    <property role="34LRSv" value="global scope" />
+    <property role="3GE5qa" value="scope" />
+    <ref role="1TJDcQ" node="2VgkkwRm66t" resolve="CloneDetectionScopeBase" />
   </node>
 </model>
 

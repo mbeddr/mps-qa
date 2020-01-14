@@ -11,6 +11,7 @@
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="mpzi" ref="r:07e7fd96-d60b-4292-b200-0ad59ee3fadf(org.mpsqa.clones.config.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -23,6 +24,9 @@
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
+      </concept>
+      <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
+        <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
       <concept id="1149850725784" name="jetbrains.mps.lang.editor.structure.CellModel_AttributedNodeCell" flags="ng" index="2SsqMj" />
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
@@ -56,6 +60,7 @@
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
+      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
       <concept id="1161622981231" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_editorContext" flags="nn" index="1Q80Hx" />
       <concept id="1198256887712" name="jetbrains.mps.lang.editor.structure.CellModel_Indent" flags="ng" index="3XFhqQ" />
@@ -115,6 +120,9 @@
       <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -134,6 +142,18 @@
         <node concept="l2Vlx" id="7vLq_hstMbe" role="2iSdaV" />
       </node>
       <node concept="3F0ifn" id="7vLq_hstMl$" role="3EZMnx" />
+      <node concept="3F0ifn" id="2VgkkwRm67F" role="3EZMnx">
+        <property role="3F0ifm" value="scope:" />
+      </node>
+      <node concept="3EZMnI" id="2VgkkwRm69R" role="3EZMnx">
+        <node concept="VPM3Z" id="2VgkkwRm69T" role="3F10Kt" />
+        <node concept="3XFhqQ" id="2VgkkwRm6ba" role="3EZMnx" />
+        <node concept="3F1sOY" id="2VgkkwRm6bj" role="3EZMnx">
+          <ref role="1NtTu8" to="mpzi:2VgkkwRm66h" resolve="scope" />
+        </node>
+        <node concept="l2Vlx" id="2VgkkwRm69W" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="2VgkkwRm6bp" role="3EZMnx" />
       <node concept="3F0ifn" id="7vLq_hstMlL" role="3EZMnx">
         <property role="3F0ifm" value="ignore solutions:" />
       </node>
@@ -231,12 +251,19 @@
                 <ref role="3cqZAo" node="4vctr_xUKaj" resolve="context" />
               </node>
               <node concept="liA8E" id="4vctr_xULPZ" role="2OqNvi">
-                <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
+                <ref role="37wK5l" to="cj4x:~EditorContext.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
               </node>
             </node>
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="2VgkkwRpLka">
+    <property role="3GE5qa" value="scope" />
+    <ref role="1XX52x" to="mpzi:2VgkkwRm66t" resolve="CloneDetectionScopeBase" />
+    <node concept="PMmxH" id="2VgkkwRpLkg" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
 </model>

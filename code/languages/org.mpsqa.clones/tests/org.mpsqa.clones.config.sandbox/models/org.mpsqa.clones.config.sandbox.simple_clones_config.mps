@@ -7,10 +7,12 @@
   <imports />
   <registry>
     <language id="56cfcf05-92e4-4822-8126-2ea0e0cece6b" name="org.mpsqa.clones.config">
+      <concept id="3373285491508535786" name="org.mpsqa.clones.config.structure.GlobalScope" flags="ng" index="py32y" />
       <concept id="8642806070461801856" name="org.mpsqa.clones.config.structure.IgnoredElement" flags="ng" index="Fx$Zk">
         <property id="8642806070461801857" name="value" index="Fx$Zl" />
       </concept>
       <concept id="8642806070461796367" name="org.mpsqa.clones.config.structure.ClonesDetectionConfig" flags="ng" index="FxBDr">
+        <child id="3373285491508535697" name="scope" index="py33p" />
         <child id="8642806070461801866" name="ignoredSolutions" index="Fx$Zu" />
         <child id="803694412562296355" name="ignoredConcepts" index="1FAEnG" />
       </concept>
@@ -38,6 +40,7 @@
     <node concept="Fx$Zk" id="7vLq_hsu6G1" role="Fx$Zu">
       <property role="Fx$Zl" value=".*sandbox" />
     </node>
+    <node concept="py32y" id="2VgkkwRpLjH" role="py33p" />
   </node>
 </model>
 
