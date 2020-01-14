@@ -32,6 +32,7 @@
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
       </concept>
+      <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1214406454886" name="jetbrains.mps.lang.editor.structure.TextBackgroundColorStyleClassItem" flags="ln" index="30gYXW" />
       <concept id="1139535219966" name="jetbrains.mps.lang.editor.structure.CellActionMapDeclaration" flags="ig" index="1h_SRR">
@@ -200,6 +201,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7vLq_hstMm4">
+    <property role="3GE5qa" value="ignored_elements" />
     <ref role="1XX52x" to="mpzi:7vLq_hstMm0" resolve="IgnoredElement" />
     <node concept="3F0A7n" id="7vLq_hstMm6" role="2wV5jI">
       <ref role="1NtTu8" to="mpzi:7vLq_hstMm1" resolve="value" />
@@ -264,6 +266,25 @@
     <ref role="1XX52x" to="mpzi:2VgkkwRm66t" resolve="CloneDetectionScopeBase" />
     <node concept="PMmxH" id="2VgkkwRpLkg" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2VgkkwRqN66">
+    <property role="3GE5qa" value="ignored_elements" />
+    <ref role="1XX52x" to="mpzi:2VgkkwRqN5W" resolve="Comment" />
+    <node concept="3EZMnI" id="2VgkkwRqN68" role="2wV5jI">
+      <node concept="3F0ifn" id="2VgkkwRqN6i" role="3EZMnx">
+        <property role="3F0ifm" value="//" />
+      </node>
+      <node concept="3F0A7n" id="2VgkkwRqN6x" role="3EZMnx">
+        <ref role="1NtTu8" to="mpzi:2VgkkwRqN63" resolve="val" />
+        <node concept="VechU" id="2VgkkwRqN6B" role="3F10Kt">
+          <property role="Vb096" value="gray" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="2VgkkwRqPcP" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+      </node>
+      <node concept="l2Vlx" id="2VgkkwRqN6b" role="2iSdaV" />
     </node>
   </node>
 </model>

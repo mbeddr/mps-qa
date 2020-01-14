@@ -8,6 +8,9 @@
   <registry>
     <language id="56cfcf05-92e4-4822-8126-2ea0e0cece6b" name="org.mpsqa.clones.config">
       <concept id="3373285491508535786" name="org.mpsqa.clones.config.structure.GlobalScope" flags="ng" index="py32y" />
+      <concept id="3373285491509768572" name="org.mpsqa.clones.config.structure.IgnoreComment" flags="ng" index="pIQ0O">
+        <property id="3373285491509768579" name="val" index="pIQ3b" />
+      </concept>
       <concept id="8642806070461801856" name="org.mpsqa.clones.config.structure.IgnoredElement" flags="ng" index="Fx$Zk">
         <property id="8642806070461801857" name="value" index="Fx$Zl" />
       </concept>
@@ -25,6 +28,9 @@
   </registry>
   <node concept="FxBDr" id="7vLq_hsu6FX">
     <property role="TrG5h" value="simple_config" />
+    <node concept="pIQ0O" id="2VgkkwRqRjQ" role="1FAEnG">
+      <property role="pIQ3b" value="java baseLanguage concepts" />
+    </node>
     <node concept="Fx$Zk" id="4vctr_xSHzl" role="1FAEnG">
       <property role="Fx$Zl" value="CommentLine" />
     </node>

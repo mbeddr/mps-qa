@@ -24,11 +24,13 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -78,21 +80,21 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="ignoredSolutions" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="7vLq_hstMm0" resolve="IgnoredElement" />
+      <ref role="20lvS9" node="2VgkkwRqN5V" resolve="IIgnoreElement" />
     </node>
     <node concept="1TJgyj" id="7vLq_hstMmd" role="1TKVEi">
       <property role="IQ2ns" value="8642806070461801869" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="ignoredModels" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="7vLq_hstMm0" resolve="IgnoredElement" />
+      <ref role="20lvS9" node="2VgkkwRqN5V" resolve="IIgnoreElement" />
     </node>
     <node concept="1TJgyj" id="GBiWXwJuSz" role="1TKVEi">
       <property role="IQ2ns" value="803694412562296355" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="ignoredConcepts" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="7vLq_hstMm0" resolve="IgnoredElement" />
+      <ref role="20lvS9" node="2VgkkwRqN5V" resolve="IIgnoreElement" />
     </node>
     <node concept="PrWs8" id="7vLq_hstL0g" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -104,11 +106,16 @@
   <node concept="1TIwiD" id="7vLq_hstMm0">
     <property role="EcuMT" value="8642806070461801856" />
     <property role="TrG5h" value="IgnoredElement" />
+    <property role="34LRSv" value="ignore" />
+    <property role="3GE5qa" value="ignored_elements" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="7vLq_hstMm1" role="1TKVEl">
       <property role="IQ2nx" value="8642806070461801857" />
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="2VgkkwRqN60" role="PzmwI">
+      <ref role="PrY4T" node="2VgkkwRqN5V" resolve="IIgnoreElement" />
     </node>
   </node>
   <node concept="1TIwiD" id="4vctr_xTpQN">
@@ -142,6 +149,27 @@
     <property role="34LRSv" value="global scope" />
     <property role="3GE5qa" value="scope" />
     <ref role="1TJDcQ" node="2VgkkwRm66t" resolve="CloneDetectionScopeBase" />
+  </node>
+  <node concept="PlHQZ" id="2VgkkwRqN5V">
+    <property role="EcuMT" value="3373285491509768571" />
+    <property role="TrG5h" value="IIgnoreElement" />
+    <property role="3GE5qa" value="ignored_elements" />
+  </node>
+  <node concept="1TIwiD" id="2VgkkwRqN5W">
+    <property role="EcuMT" value="3373285491509768572" />
+    <property role="3GE5qa" value="ignored_elements" />
+    <property role="TrG5h" value="Comment" />
+    <property role="34LRSv" value="//" />
+    <property role="R4oN_" value="comment line" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2VgkkwRqN5X" role="PzmwI">
+      <ref role="PrY4T" node="2VgkkwRqN5V" resolve="IIgnoreElement" />
+    </node>
+    <node concept="1TJgyi" id="2VgkkwRqN63" role="1TKVEl">
+      <property role="IQ2nx" value="3373285491509768579" />
+      <property role="TrG5h" value="val" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
 </model>
 
