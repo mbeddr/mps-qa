@@ -21,7 +21,7 @@
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="xx25" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.adapter.structure.types(MPS.Core/)" />
     <import index="qt06" ref="79c13063-8a7d-4070-aaba-966b36d6e0c4/java:org.apache.commons.lang3.builder(org.mpsqa.base.lib/)" />
-    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -38,8 +38,16 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1164879751025" name="jetbrains.mps.baseLanguage.structure.TryCatchStatement" flags="nn" index="SfApY">
+        <child id="1164879758292" name="body" index="SfCbr" />
+        <child id="1164903496223" name="catchClause" index="TEbGg" />
+      </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
+      </concept>
+      <concept id="1164903280175" name="jetbrains.mps.baseLanguage.structure.CatchClause" flags="nn" index="TDmWw">
+        <child id="1164903359218" name="catchBody" index="TDEfX" />
+        <child id="1164903359217" name="throwable" index="TDEfY" />
       </concept>
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
@@ -231,7 +239,7 @@
               <ref role="3cqZAo" node="4elAKXimRJG" resolve="builder" />
             </node>
             <node concept="liA8E" id="7JEz8iltTgv" role="2OqNvi">
-              <ref role="37wK5l" to="qt06:~HashCodeBuilder.toHashCode()" resolve="toHashCode" />
+              <ref role="37wK5l" to="qt06:~HashCodeBuilder.toHashCode():int" resolve="toHashCode" />
             </node>
           </node>
         </node>
@@ -276,7 +284,7 @@
               <ref role="3cqZAo" node="4elAKXimXQY" resolve="builder" />
             </node>
             <node concept="liA8E" id="4vctr_xVLzC" role="2OqNvi">
-              <ref role="37wK5l" to="qt06:~HashCodeBuilder.append(java.lang.Object)" resolve="append" />
+              <ref role="37wK5l" to="qt06:~HashCodeBuilder.append(java.lang.Object):org.apache.commons.lang3.builder.HashCodeBuilder" resolve="append" />
               <node concept="2OqwBi" id="4vctr_xVNXt" role="37wK5m">
                 <node concept="2OqwBi" id="4vctr_xVN7Z" role="2Oq$k0">
                   <node concept="37vLTw" id="4vctr_xVLP3" role="2Oq$k0">
@@ -285,7 +293,7 @@
                   <node concept="2yIwOk" id="4vctr_xVNw4" role="2OqNvi" />
                 </node>
                 <node concept="liA8E" id="4vctr_xVSjU" role="2OqNvi">
-                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
+                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
                 </node>
               </node>
             </node>
@@ -303,7 +311,7 @@
               </node>
             </node>
             <node concept="liA8E" id="4elAKXimXR8" role="2OqNvi">
-              <ref role="37wK5l" to="mhbf:~SNode.getProperties()" resolve="getProperties" />
+              <ref role="37wK5l" to="mhbf:~SNode.getProperties():java.lang.Iterable" resolve="getProperties" />
             </node>
           </node>
           <node concept="3clFbS" id="4elAKXimXRa" role="2LFqv$">
@@ -318,7 +326,7 @@
                     <ref role="2Gs0qQ" node="4elAKXimXR3" resolve="p" />
                   </node>
                   <node concept="liA8E" id="4elAKXiosar" role="2OqNvi">
-                    <ref role="37wK5l" to="c17a:~SProperty.getType()" resolve="getType" />
+                    <ref role="37wK5l" to="c17a:~SProperty.getType():org.jetbrains.mps.openapi.language.SDataType" resolve="getType" />
                   </node>
                 </node>
               </node>
@@ -342,7 +350,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="4elAKXimXRh" role="2OqNvi">
-                        <ref role="37wK5l" to="mhbf:~SNode.getProperty(org.jetbrains.mps.openapi.language.SProperty)" resolve="getProperty" />
+                        <ref role="37wK5l" to="mhbf:~SNode.getProperty(org.jetbrains.mps.openapi.language.SProperty):java.lang.String" resolve="getProperty" />
                         <node concept="2GrUjf" id="4elAKXimXRi" role="37wK5m">
                           <ref role="2Gs0qQ" node="4elAKXimXR3" resolve="p" />
                         </node>
@@ -365,7 +373,7 @@
                           <ref role="3cqZAo" node="4elAKXimXQY" resolve="builder" />
                         </node>
                         <node concept="liA8E" id="4elAKXimXRw" role="2OqNvi">
-                          <ref role="37wK5l" to="qt06:~HashCodeBuilder.append(java.lang.Object)" resolve="append" />
+                          <ref role="37wK5l" to="qt06:~HashCodeBuilder.append(java.lang.Object):org.apache.commons.lang3.builder.HashCodeBuilder" resolve="append" />
                           <node concept="37vLTw" id="4elAKXimXRx" role="37wK5m">
                             <ref role="3cqZAo" node="4elAKXimXRc" resolve="propertyValue" />
                           </node>
@@ -418,18 +426,18 @@
                         <ref role="3cqZAo" node="4elAKXimXQY" resolve="builder" />
                       </node>
                       <node concept="liA8E" id="4elAKXipmmp" role="2OqNvi">
-                        <ref role="37wK5l" to="qt06:~HashCodeBuilder.append(java.lang.Object)" resolve="append" />
+                        <ref role="37wK5l" to="qt06:~HashCodeBuilder.append(java.lang.Object):org.apache.commons.lang3.builder.HashCodeBuilder" resolve="append" />
                         <node concept="2OqwBi" id="4elAKXip$R5" role="37wK5m">
                           <node concept="2OqwBi" id="4elAKXipmLj" role="2Oq$k0">
                             <node concept="2GrUjf" id="4elAKXipmvb" role="2Oq$k0">
                               <ref role="2Gs0qQ" node="4elAKXimXR3" resolve="p" />
                             </node>
                             <node concept="liA8E" id="4elAKXip$hV" role="2OqNvi">
-                              <ref role="37wK5l" to="c17a:~SProperty.getType()" resolve="getType" />
+                              <ref role="37wK5l" to="c17a:~SProperty.getType():org.jetbrains.mps.openapi.language.SDataType" resolve="getType" />
                             </node>
                           </node>
                           <node concept="liA8E" id="4elAKXip_xz" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
+                            <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
                           </node>
                         </node>
                       </node>
@@ -452,7 +460,7 @@
               </node>
             </node>
             <node concept="liA8E" id="4elAKXimXRE" role="2OqNvi">
-              <ref role="37wK5l" to="mhbf:~SNode.getChildren()" resolve="getChildren" />
+              <ref role="37wK5l" to="mhbf:~SNode.getChildren():java.lang.Iterable" resolve="getChildren" />
             </node>
           </node>
           <node concept="3clFbS" id="4elAKXimXRG" role="2LFqv$">
@@ -481,7 +489,7 @@
               </node>
             </node>
             <node concept="liA8E" id="4elAKXimXRU" role="2OqNvi">
-              <ref role="37wK5l" to="mhbf:~SNode.getReferences()" resolve="getReferences" />
+              <ref role="37wK5l" to="mhbf:~SNode.getReferences():java.lang.Iterable" resolve="getReferences" />
             </node>
           </node>
           <node concept="3clFbS" id="4elAKXimXRW" role="2LFqv$">
@@ -496,7 +504,7 @@
                       <ref role="2Gs0qQ" node="4elAKXimXRP" resolve="ref" />
                     </node>
                     <node concept="liA8E" id="4elAKXinYjm" role="2OqNvi">
-                      <ref role="37wK5l" to="mhbf:~SReference.getTargetNode()" resolve="getTargetNode" />
+                      <ref role="37wK5l" to="mhbf:~SReference.getTargetNode():org.jetbrains.mps.openapi.model.SNode" resolve="getTargetNode" />
                     </node>
                   </node>
                 </node>
@@ -508,7 +516,7 @@
                   <ref role="3cqZAo" node="4elAKXimXQY" resolve="builder" />
                 </node>
                 <node concept="liA8E" id="4elAKXinZpP" role="2OqNvi">
-                  <ref role="37wK5l" to="qt06:~HashCodeBuilder.append(java.lang.Object)" resolve="append" />
+                  <ref role="37wK5l" to="qt06:~HashCodeBuilder.append(java.lang.Object):org.apache.commons.lang3.builder.HashCodeBuilder" resolve="append" />
                   <node concept="37vLTw" id="4elAKXinZy0" role="37wK5m">
                     <ref role="3cqZAo" node="4elAKXinYh1" resolve="referencedNode" />
                   </node>
@@ -553,13 +561,40 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs6" id="4elAKXiqNBg" role="3cqZAp">
-          <node concept="2OqwBi" id="4elAKXiqO9p" role="3cqZAk">
-            <node concept="37vLTw" id="4elAKXiqO0h" role="2Oq$k0">
-              <ref role="3cqZAo" node="4elAKXintIk" resolve="n" />
+        <node concept="SfApY" id="2VgkkwRpcP8" role="3cqZAp">
+          <node concept="3clFbS" id="2VgkkwRpcPa" role="SfCbr">
+            <node concept="3cpWs6" id="2VgkkwRpdWg" role="3cqZAp">
+              <node concept="2OqwBi" id="2VgkkwRpetP" role="3cqZAk">
+                <node concept="37vLTw" id="2VgkkwRpetQ" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4elAKXintIk" resolve="n" />
+                </node>
+                <node concept="2qgKlT" id="2VgkkwRpetR" role="2OqNvi">
+                  <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                </node>
+              </node>
             </node>
-            <node concept="2qgKlT" id="4elAKXiqOEZ" role="2OqNvi">
-              <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+          </node>
+          <node concept="TDmWw" id="2VgkkwRpcPb" role="TEbGg">
+            <node concept="3cpWsn" id="2VgkkwRpcPd" role="TDEfY">
+              <property role="TrG5h" value="e" />
+              <node concept="3uibUv" id="2VgkkwRpdJn" role="1tU5fm">
+                <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
+              </node>
+            </node>
+            <node concept="3clFbS" id="2VgkkwRpcPh" role="TDEfX">
+              <node concept="3cpWs6" id="2VgkkwRpfh4" role="3cqZAp">
+                <node concept="2OqwBi" id="2VgkkwRpimj" role="3cqZAk">
+                  <node concept="2OqwBi" id="2VgkkwRpfG9" role="2Oq$k0">
+                    <node concept="37vLTw" id="2VgkkwRpfya" role="2Oq$k0">
+                      <ref role="3cqZAo" node="4elAKXintIk" resolve="n" />
+                    </node>
+                    <node concept="2yIwOk" id="2VgkkwRpghV" role="2OqNvi" />
+                  </node>
+                  <node concept="liA8E" id="2VgkkwRpjoM" role="2OqNvi">
+                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
