@@ -75,10 +75,17 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="2VgkkwRm66t" resolve="CloneDetectionScopeBase" />
     </node>
+    <node concept="1TJgyj" id="1GhTetdWNt7" role="1TKVEi">
+      <property role="IQ2ns" value="1950591795724498759" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="consideredModules" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="2VgkkwRqN5V" resolve="IIgnoreElement" />
+    </node>
     <node concept="1TJgyj" id="7vLq_hstMma" role="1TKVEi">
       <property role="IQ2ns" value="8642806070461801866" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="ignoredSolutions" />
+      <property role="20kJfa" value="ignoredModules" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="2VgkkwRqN5V" resolve="IIgnoreElement" />
     </node>

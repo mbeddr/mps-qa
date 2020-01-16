@@ -19,6 +19,7 @@
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
+        <child id="1140524464359" name="emptyCellModel" index="2czzBI" />
       </concept>
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
@@ -33,6 +34,9 @@
         <property id="1186403713874" name="color" index="Vb096" />
       </concept>
       <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
+      <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
+        <property id="1186414551515" name="flag" index="VOm3f" />
+      </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1214406454886" name="jetbrains.mps.lang.editor.structure.TextBackgroundColorStyleClassItem" flags="ln" index="30gYXW" />
       <concept id="1139535219966" name="jetbrains.mps.lang.editor.structure.CellActionMapDeclaration" flags="ig" index="1h_SRR">
@@ -44,6 +48,7 @@
         <child id="1139535280620" name="executeFunction" index="1hA7z_" />
       </concept>
       <concept id="1139535439104" name="jetbrains.mps.lang.editor.structure.CellActionMap_ExecuteFunction" flags="in" index="1hAIg9" />
+      <concept id="1219226236603" name="jetbrains.mps.lang.editor.structure.DrawBracketsStyleClassItem" flags="ln" index="3vyZuw" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
@@ -155,22 +160,71 @@
         <node concept="l2Vlx" id="2VgkkwRm69W" role="2iSdaV" />
       </node>
       <node concept="3F0ifn" id="2VgkkwRm6bp" role="3EZMnx" />
+      <node concept="3EZMnI" id="1GhTetdXFII" role="3EZMnx">
+        <node concept="VPM3Z" id="1GhTetdXFIK" role="3F10Kt" />
+        <node concept="3vyZuw" id="1GhTetdXFNa" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3F0ifn" id="1GhTetdXFIM" role="3EZMnx">
+          <property role="3F0ifm" value="Help:" />
+        </node>
+        <node concept="3F0ifn" id="1GhTetdX$PF" role="3EZMnx">
+          <property role="3F0ifm" value="If considered modules is not empty, then we take all modules with matching names and then filter out the modules whose names match the ignored modules." />
+          <node concept="VechU" id="1GhTetdX$SR" role="3F10Kt">
+            <property role="Vb096" value="gray" />
+          </node>
+        </node>
+        <node concept="3F0ifn" id="1GhTetdX$Wd" role="3EZMnx">
+          <property role="3F0ifm" value="If considered modules is empty, then we take all modules from scope and then filter out the modules whose names match the ignored modules." />
+          <node concept="VechU" id="1GhTetdX$We" role="3F10Kt">
+            <property role="Vb096" value="gray" />
+          </node>
+        </node>
+        <node concept="2iRkQZ" id="1GhTetdXFIN" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="1GhTetdX$Rg" role="3EZMnx" />
       <node concept="3F0ifn" id="7vLq_hstMlL" role="3EZMnx">
-        <property role="3F0ifm" value="ignore solutions:" />
+        <property role="3F0ifm" value="consider modules (white list):" />
       </node>
       <node concept="3EZMnI" id="7vLq_hstMmz" role="3EZMnx">
         <node concept="VPM3Z" id="7vLq_hstMm_" role="3F10Kt" />
         <node concept="3XFhqQ" id="7vLq_hstMn0" role="3EZMnx" />
         <node concept="3F2HdR" id="7vLq_hstMnu" role="3EZMnx">
-          <ref role="1NtTu8" to="mpzi:7vLq_hstMma" resolve="ignoredSolutions" />
+          <ref role="1NtTu8" to="mpzi:1GhTetdWNt7" resolve="consideredModules" />
           <node concept="2iRkQZ" id="7vLq_hstMnx" role="2czzBx" />
           <node concept="VPM3Z" id="7vLq_hstMny" role="3F10Kt" />
+          <node concept="3F0ifn" id="1GhTetdXIsN" role="2czzBI">
+            <property role="3F0ifm" value="all modules in scope" />
+            <node concept="VechU" id="1GhTetdXNNL" role="3F10Kt">
+              <property role="Vb096" value="lightGray" />
+            </node>
+          </node>
         </node>
         <node concept="l2Vlx" id="7vLq_hstMmC" role="2iSdaV" />
       </node>
       <node concept="3F0ifn" id="7vLq_hstMnF" role="3EZMnx" />
+      <node concept="3F0ifn" id="1GhTetdWNtt" role="3EZMnx">
+        <property role="3F0ifm" value="ignore modules (black list):" />
+      </node>
+      <node concept="3EZMnI" id="1GhTetdWNtm" role="3EZMnx">
+        <node concept="VPM3Z" id="1GhTetdWNtn" role="3F10Kt" />
+        <node concept="3XFhqQ" id="1GhTetdWNto" role="3EZMnx" />
+        <node concept="3F2HdR" id="1GhTetdWNtp" role="3EZMnx">
+          <ref role="1NtTu8" to="mpzi:7vLq_hstMma" resolve="ignoredModules" />
+          <node concept="2iRkQZ" id="1GhTetdWNtq" role="2czzBx" />
+          <node concept="VPM3Z" id="1GhTetdWNtr" role="3F10Kt" />
+          <node concept="3F0ifn" id="1GhTetdXNNv" role="2czzBI">
+            <property role="3F0ifm" value="no module is ignored" />
+            <node concept="VechU" id="1GhTetdXNNI" role="3F10Kt">
+              <property role="Vb096" value="lightGray" />
+            </node>
+          </node>
+        </node>
+        <node concept="l2Vlx" id="1GhTetdWNts" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="1GhTetdWNtl" role="3EZMnx" />
       <node concept="3F0ifn" id="7vLq_hstMoF" role="3EZMnx">
-        <property role="3F0ifm" value="ignore models:" />
+        <property role="3F0ifm" value="ignore models (black list):" />
       </node>
       <node concept="3EZMnI" id="7vLq_hstMoG" role="3EZMnx">
         <node concept="VPM3Z" id="7vLq_hstMoH" role="3F10Kt" />
@@ -179,6 +233,12 @@
           <ref role="1NtTu8" to="mpzi:7vLq_hstMmd" resolve="ignoredModels" />
           <node concept="2iRkQZ" id="7vLq_hstMoK" role="2czzBx" />
           <node concept="VPM3Z" id="7vLq_hstMoL" role="3F10Kt" />
+          <node concept="3F0ifn" id="1GhTetdXNNy" role="2czzBI">
+            <property role="3F0ifm" value="no model is ignored" />
+            <node concept="VechU" id="1GhTetdXNNF" role="3F10Kt">
+              <property role="Vb096" value="lightGray" />
+            </node>
+          </node>
         </node>
         <node concept="l2Vlx" id="7vLq_hstMoM" role="2iSdaV" />
       </node>
@@ -193,6 +253,12 @@
           <ref role="1NtTu8" to="mpzi:GBiWXwJuSz" resolve="ignoredConcepts" />
           <node concept="2iRkQZ" id="GBiWXwJuSM" role="2czzBx" />
           <node concept="VPM3Z" id="GBiWXwJuSN" role="3F10Kt" />
+          <node concept="3F0ifn" id="1GhTetdXNN_" role="2czzBI">
+            <property role="3F0ifm" value="no concept is ignored" />
+            <node concept="VechU" id="1GhTetdXNNC" role="3F10Kt">
+              <property role="Vb096" value="lightGray" />
+            </node>
+          </node>
         </node>
         <node concept="l2Vlx" id="GBiWXwJuSO" role="2iSdaV" />
       </node>
@@ -203,8 +269,17 @@
   <node concept="24kQdi" id="7vLq_hstMm4">
     <property role="3GE5qa" value="ignored_elements" />
     <ref role="1XX52x" to="mpzi:7vLq_hstMm0" resolve="IgnoredElement" />
-    <node concept="3F0A7n" id="7vLq_hstMm6" role="2wV5jI">
-      <ref role="1NtTu8" to="mpzi:7vLq_hstMm1" resolve="value" />
+    <node concept="3EZMnI" id="1GhTetdXIsQ" role="2wV5jI">
+      <node concept="l2Vlx" id="1GhTetdXIsR" role="2iSdaV" />
+      <node concept="3F0A7n" id="7vLq_hstMm6" role="3EZMnx">
+        <ref role="1NtTu8" to="mpzi:7vLq_hstMm1" resolve="value" />
+      </node>
+      <node concept="3F0ifn" id="1GhTetdXIt5" role="3EZMnx">
+        <property role="3F0ifm" value="(regex)" />
+        <node concept="VechU" id="1GhTetdXL87" role="3F10Kt">
+          <property role="Vb096" value="gray" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="4vctr_xTFMV">
