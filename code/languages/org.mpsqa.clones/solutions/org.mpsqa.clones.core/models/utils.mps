@@ -94,11 +94,6 @@
       <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
         <child id="1151688676805" name="elementType" index="_ZDj9" />
       </concept>
-      <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
-        <child id="1237721435808" name="initValue" index="HW$Y0" />
-        <child id="1237721435807" name="elementType" index="HW$YZ" />
-      </concept>
-      <concept id="1227008614712" name="jetbrains.mps.baseLanguage.collections.structure.LinkedListCreator" flags="nn" index="2Jqq0_" />
     </language>
   </registry>
   <node concept="312cEu" id="5dW8pSK6_rA">
@@ -107,19 +102,6 @@
     <node concept="2YIFZL" id="5dW8pSK6_ue" role="jymVt">
       <property role="TrG5h" value="checkClones" />
       <node concept="3clFbS" id="5dW8pSK6_uh" role="3clF47">
-        <node concept="3cpWs8" id="5dW8pSK6ACk" role="3cqZAp">
-          <node concept="3cpWsn" id="5dW8pSK6ACl" role="3cpWs9">
-            <property role="TrG5h" value="cd" />
-            <node concept="3uibUv" id="5dW8pSK6ACi" role="1tU5fm">
-              <ref role="3uigEE" to="2e2r:5dW8pSK6xq0" resolve="ClonesDetector" />
-            </node>
-            <node concept="2ShNRf" id="5dW8pSK6ACm" role="33vP2m">
-              <node concept="HV5vD" id="5dW8pSK6ACn" role="2ShVmc">
-                <ref role="HV5vE" to="2e2r:5dW8pSK6xq0" resolve="ClonesDetector" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="1oYl8FfpwSF" role="3cqZAp">
           <node concept="3cpWsn" id="1oYl8FfpwSG" role="3cpWs9">
             <property role="TrG5h" value="cds" />
@@ -127,8 +109,11 @@
               <ref role="3uigEE" to="2e2r:1oYl8FfodCD" resolve="ClonesDetectorSettings" />
             </node>
             <node concept="2ShNRf" id="1oYl8FfpwYu" role="33vP2m">
-              <node concept="HV5vD" id="1oYl8Ffpxb$" role="2ShVmc">
-                <ref role="HV5vE" to="2e2r:1oYl8FfodCD" resolve="ClonesDetectorSettings" />
+              <node concept="1pGfFk" id="7YZJmepAkgg" role="2ShVmc">
+                <ref role="37wK5l" to="2e2r:7YZJmep_1Ec" resolve="ClonesDetectorSettings" />
+                <node concept="37vLTw" id="7YZJmepAkBW" role="37wK5m">
+                  <ref role="3cqZAo" node="5dW8pSK6_uN" resolve="m" />
+                </node>
               </node>
             </node>
           </node>
@@ -178,6 +163,19 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="5dW8pSK6ACk" role="3cqZAp">
+          <node concept="3cpWsn" id="5dW8pSK6ACl" role="3cpWs9">
+            <property role="TrG5h" value="cd" />
+            <node concept="3uibUv" id="5dW8pSK6ACi" role="1tU5fm">
+              <ref role="3uigEE" to="2e2r:5dW8pSK6xq0" resolve="ClonesDetector" />
+            </node>
+            <node concept="2ShNRf" id="5dW8pSK6ACm" role="33vP2m">
+              <node concept="HV5vD" id="5dW8pSK6ACn" role="2ShVmc">
+                <ref role="HV5vE" to="2e2r:5dW8pSK6xq0" resolve="ClonesDetector" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="5dW8pSK6_vC" role="3cqZAp">
           <node concept="2OqwBi" id="5dW8pSKf6KH" role="3clFbG">
             <node concept="37vLTw" id="5dW8pSK6ACo" role="2Oq$k0">
@@ -197,14 +195,6 @@
               </node>
               <node concept="37vLTw" id="1oYl8Ffpxgb" role="37wK5m">
                 <ref role="3cqZAo" node="1oYl8FfpwSG" resolve="cds" />
-              </node>
-              <node concept="2ShNRf" id="5Dw7oA61b38" role="37wK5m">
-                <node concept="2Jqq0_" id="5Dw7oA61bka" role="2ShVmc">
-                  <node concept="H_c77" id="5Dw7oA61b$x" role="HW$YZ" />
-                  <node concept="37vLTw" id="5Dw7oA61bLN" role="HW$Y0">
-                    <ref role="3cqZAo" node="5dW8pSK6_uN" resolve="m" />
-                  </node>
-                </node>
               </node>
               <node concept="37vLTw" id="5dW8pSKf71h" role="37wK5m">
                 <ref role="3cqZAo" node="5dW8pSKf6Xg" resolve="repo" />

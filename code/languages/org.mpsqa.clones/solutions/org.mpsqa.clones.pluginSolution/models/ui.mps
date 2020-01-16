@@ -245,18 +245,8 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
-      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
-        <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
-      </concept>
-      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
-        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -473,7 +463,7 @@
                                 <ref role="3cqZAo" node="1zTNC9MJP5Z" resolve="currentClone" />
                               </node>
                               <node concept="liA8E" id="E3aAvrLt$2" role="2OqNvi">
-                                <ref role="37wK5l" to="2e2r:E3aAvrI2SU" resolve="getRoots" />
+                                <ref role="37wK5l" to="2e2r:E3aAvrI2SU" resolve="getFirstNodes" />
                               </node>
                             </node>
                             <node concept="34oBXx" id="E3aAvrLPjf" role="2OqNvi" />
@@ -517,7 +507,7 @@
                           <ref role="3cqZAo" node="1zTNC9MJP5Z" resolve="currentClone" />
                         </node>
                         <node concept="liA8E" id="1zTNC9MKdcx" role="2OqNvi">
-                          <ref role="37wK5l" to="2e2r:E3aAvrI2SU" resolve="getRoots" />
+                          <ref role="37wK5l" to="2e2r:E3aAvrI2SU" resolve="getFirstNodes" />
                         </node>
                       </node>
                       <node concept="3clFbS" id="1zTNC9MJXyJ" role="2LFqv$">
@@ -825,29 +815,6 @@
             </node>
             <node concept="37vLTw" id="7WP_sw5s1Ap" role="37vLTx">
               <ref role="3cqZAo" node="7WP_sw5s1Ah" resolve="project" />
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="E3aAvrS$Bf" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbF" id="7WP_sw5s1Aq" role="8Wnug">
-            <node concept="2OqwBi" id="7WP_sw5s1Ar" role="3clFbG">
-              <node concept="Xjq3P" id="7WP_sw5s1As" role="2Oq$k0" />
-              <node concept="liA8E" id="7WP_sw5s1At" role="2OqNvi">
-                <ref role="37wK5l" to="dxuu:~JComponent.setPreferredSize(java.awt.Dimension):void" resolve="setPreferredSize" />
-                <node concept="2ShNRf" id="7WP_sw5scIu" role="37wK5m">
-                  <node concept="1pGfFk" id="7WP_sw5scIK" role="2ShVmc">
-                    <ref role="37wK5l" to="z60i:~Dimension.&lt;init&gt;(int,int)" resolve="Dimension" />
-                    <node concept="3cmrfG" id="7WP_sw5scIL" role="37wK5m">
-                      <property role="3cmrfH" value="300" />
-                    </node>
-                    <node concept="3cmrfG" id="7WP_sw5scIM" role="37wK5m">
-                      <property role="3cmrfH" value="700" />
-                    </node>
-                  </node>
-                </node>
-              </node>
             </node>
           </node>
         </node>
@@ -1263,7 +1230,7 @@
                           <ref role="2Gs0qQ" node="1zTNC9MGUy2" resolve="c" />
                         </node>
                         <node concept="liA8E" id="1zTNC9MHs$F" role="2OqNvi">
-                          <ref role="37wK5l" to="2e2r:E3aAvrI2SU" resolve="getRoots" />
+                          <ref role="37wK5l" to="2e2r:E3aAvrI2SU" resolve="getFirstNodes" />
                         </node>
                       </node>
                       <node concept="2HwmR7" id="1zTNC9MHs$G" role="2OqNvi">
@@ -1346,16 +1313,6 @@
         <ref role="3uigEE" node="7WP_sw5s1A5" resolve="ClonesOverviewTable" />
       </node>
     </node>
-    <node concept="312cEg" id="1oYl8FfvQRp" role="jymVt">
-      <property role="TrG5h" value="cds" />
-      <node concept="3uibUv" id="1oYl8FfvOXT" role="1tU5fm">
-        <ref role="3uigEE" to="2e2r:1oYl8FfodCD" resolve="ClonesDetectorSettings" />
-      </node>
-      <node concept="10M0yZ" id="GBiWXwHbr6" role="33vP2m">
-        <ref role="3cqZAo" to="9vt7:1oYl8Ffq4i$" resolve="settings" />
-        <ref role="1PxDUh" to="9vt7:1oYl8Ffq3Xu" resolve="ClonesDetectorRunner" />
-      </node>
-    </node>
     <node concept="2tJIrI" id="7WP_sw5wG9g" role="jymVt" />
     <node concept="3clFbW" id="7WP_sw5s1HY" role="jymVt">
       <node concept="3cqZAl" id="7WP_sw5s1HZ" role="3clF45" />
@@ -1407,31 +1364,6 @@
                 <ref role="37wK5l" to="dxuu:~JScrollPane.&lt;init&gt;(java.awt.Component)" resolve="JScrollPane" />
                 <node concept="37vLTw" id="7WP_sw5CIX_" role="37wK5m">
                   <ref role="3cqZAo" node="7WP_sw5s1HR" resolve="clonesTable" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="E3aAvrSsyd" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbF" id="1GgrF831JkF" role="8Wnug">
-            <node concept="2OqwBi" id="1GgrF831PZ0" role="3clFbG">
-              <node concept="37vLTw" id="1oYl8FfkF31" role="2Oq$k0">
-                <ref role="3cqZAo" node="7WP_sw5CEdN" resolve="clonesScrollPane" />
-              </node>
-              <node concept="liA8E" id="1GgrF831Tzt" role="2OqNvi">
-                <ref role="37wK5l" to="dxuu:~JComponent.setPreferredSize(java.awt.Dimension)" resolve="setPreferredSize" />
-                <node concept="2ShNRf" id="1GgrF831TCg" role="37wK5m">
-                  <node concept="1pGfFk" id="1GgrF831UkY" role="2ShVmc">
-                    <ref role="37wK5l" to="z60i:~Dimension.&lt;init&gt;(int,int)" resolve="Dimension" />
-                    <node concept="3cmrfG" id="1GgrF831UqZ" role="37wK5m">
-                      <property role="3cmrfH" value="500" />
-                    </node>
-                    <node concept="3cmrfG" id="1GgrF831UGO" role="37wK5m">
-                      <property role="3cmrfH" value="750" />
-                    </node>
-                  </node>
                 </node>
               </node>
             </node>
@@ -1589,13 +1521,9 @@
             <node concept="2ShNRf" id="1oYl8Ffri4w" role="33vP2m">
               <node concept="1pGfFk" id="1oYl8Ffri4Q" role="2ShVmc">
                 <ref role="37wK5l" to="dxuu:~SpinnerNumberModel.&lt;init&gt;(int,int,int,int)" resolve="SpinnerNumberModel" />
-                <node concept="2OqwBi" id="1oYl8FfvVWL" role="37wK5m">
-                  <node concept="37vLTw" id="1oYl8FfvV28" role="2Oq$k0">
-                    <ref role="3cqZAo" node="1oYl8FfvQRp" resolve="cds" />
-                  </node>
-                  <node concept="2OwXpG" id="1oYl8FfvWzV" role="2OqNvi">
-                    <ref role="2Oxat5" to="2e2r:1oYl8FfoCUT" resolve="maximalSuffixSize" />
-                  </node>
+                <node concept="10M0yZ" id="2JVMSZMFDMu" role="37wK5m">
+                  <ref role="3cqZAo" to="2e2r:2JVMSZMFxmE" resolve="DEFAULT_MAXIMAL_SUFFIX_SIZE" />
+                  <ref role="1PxDUh" to="2e2r:1oYl8FfodCD" resolve="ClonesDetectorSettings" />
                 </node>
                 <node concept="3cmrfG" id="1oYl8FfrkV2" role="37wK5m">
                   <property role="3cmrfH" value="3" />
@@ -1667,11 +1595,12 @@
                               </node>
                             </node>
                             <node concept="2OqwBi" id="1oYl8FfrN0q" role="37vLTJ">
-                              <node concept="37vLTw" id="1oYl8FfvTgI" role="2Oq$k0">
-                                <ref role="3cqZAo" node="1oYl8FfvQRp" resolve="cds" />
-                              </node>
                               <node concept="2OwXpG" id="1oYl8FfrN6C" role="2OqNvi">
                                 <ref role="2Oxat5" to="2e2r:1oYl8FfoCUT" resolve="maximalSuffixSize" />
+                              </node>
+                              <node concept="10M0yZ" id="2JVMSZMFs5$" role="2Oq$k0">
+                                <ref role="1PxDUh" to="9vt7:1oYl8Ffq3Xu" resolve="ClonesDetectorRunner" />
+                                <ref role="3cqZAo" to="9vt7:1oYl8Ffq4i$" resolve="lastSettings" />
                               </node>
                             </node>
                           </node>
@@ -1737,13 +1666,9 @@
             <node concept="2ShNRf" id="1oYl8Fft4Bd" role="33vP2m">
               <node concept="1pGfFk" id="1oYl8Fft4Be" role="2ShVmc">
                 <ref role="37wK5l" to="dxuu:~SpinnerNumberModel.&lt;init&gt;(int,int,int,int)" resolve="SpinnerNumberModel" />
-                <node concept="2OqwBi" id="1oYl8FfvYPm" role="37wK5m">
-                  <node concept="37vLTw" id="1oYl8FfvXnc" role="2Oq$k0">
-                    <ref role="3cqZAo" node="1oYl8FfvQRp" resolve="cds" />
-                  </node>
-                  <node concept="2OwXpG" id="1oYl8Ffw14y" role="2OqNvi">
-                    <ref role="2Oxat5" to="2e2r:1oYl8FftbCe" resolve="minimalSuffixSize" />
-                  </node>
+                <node concept="10M0yZ" id="2JVMSZMFFz9" role="37wK5m">
+                  <ref role="3cqZAo" to="2e2r:2JVMSZMFwz7" resolve="DEFAULT_MINIMAL_SUFFIX_SIZE" />
+                  <ref role="1PxDUh" to="2e2r:1oYl8FfodCD" resolve="ClonesDetectorSettings" />
                 </node>
                 <node concept="3cmrfG" id="1oYl8Fft4Bh" role="37wK5m">
                   <property role="3cmrfH" value="1" />
@@ -1815,11 +1740,12 @@
                               </node>
                             </node>
                             <node concept="2OqwBi" id="1oYl8Fft4BJ" role="37vLTJ">
-                              <node concept="37vLTw" id="1oYl8FfvTSI" role="2Oq$k0">
-                                <ref role="3cqZAo" node="1oYl8FfvQRp" resolve="cds" />
-                              </node>
                               <node concept="2OwXpG" id="1oYl8Fftzxj" role="2OqNvi">
                                 <ref role="2Oxat5" to="2e2r:1oYl8FftbCe" resolve="minimalSuffixSize" />
+                              </node>
+                              <node concept="10M0yZ" id="2JVMSZMFswK" role="2Oq$k0">
+                                <ref role="3cqZAo" to="9vt7:1oYl8Ffq4i$" resolve="lastSettings" />
+                                <ref role="1PxDUh" to="9vt7:1oYl8Ffq3Xu" resolve="ClonesDetectorRunner" />
                               </node>
                             </node>
                           </node>
@@ -1911,13 +1837,9 @@
             <node concept="2ShNRf" id="1oYl8FfuPls" role="33vP2m">
               <node concept="1pGfFk" id="1oYl8FfuPlt" role="2ShVmc">
                 <ref role="37wK5l" to="dxuu:~SpinnerNumberModel.&lt;init&gt;(int,int,int,int)" resolve="SpinnerNumberModel" />
-                <node concept="2OqwBi" id="1oYl8Ffw3oT" role="37wK5m">
-                  <node concept="37vLTw" id="1oYl8Ffw25W" role="2Oq$k0">
-                    <ref role="3cqZAo" node="1oYl8FfvQRp" resolve="cds" />
-                  </node>
-                  <node concept="2OwXpG" id="1oYl8Ffw66N" role="2OqNvi">
-                    <ref role="2Oxat5" to="2e2r:1oYl8FfoCVF" resolve="minimumNumberOfSiblings" />
-                  </node>
+                <node concept="10M0yZ" id="2JVMSZMFG$c" role="37wK5m">
+                  <ref role="3cqZAo" to="2e2r:2JVMSZMFydW" resolve="DEFAULT_MINIMUM_NUMBER_OF_SIBLINGS" />
+                  <ref role="1PxDUh" to="2e2r:1oYl8FfodCD" resolve="ClonesDetectorSettings" />
                 </node>
                 <node concept="3cmrfG" id="1oYl8FfuPlv" role="37wK5m">
                   <property role="3cmrfH" value="3" />
@@ -1989,11 +1911,12 @@
                               </node>
                             </node>
                             <node concept="2OqwBi" id="1oYl8FfuPlY" role="37vLTJ">
-                              <node concept="37vLTw" id="1oYl8FfvUwP" role="2Oq$k0">
-                                <ref role="3cqZAo" node="1oYl8FfvQRp" resolve="cds" />
-                              </node>
                               <node concept="2OwXpG" id="1oYl8Ffv5oH" role="2OqNvi">
                                 <ref role="2Oxat5" to="2e2r:1oYl8FfoCVF" resolve="minimumNumberOfSiblings" />
+                              </node>
+                              <node concept="10M0yZ" id="2JVMSZMFt4w" role="2Oq$k0">
+                                <ref role="3cqZAo" to="9vt7:1oYl8Ffq4i$" resolve="lastSettings" />
+                                <ref role="1PxDUh" to="9vt7:1oYl8Ffq3Xu" resolve="ClonesDetectorRunner" />
                               </node>
                             </node>
                           </node>
@@ -2187,7 +2110,7 @@
                 <ref role="3cqZAo" node="E3aAvrHNz_" resolve="currentClone" />
               </node>
               <node concept="liA8E" id="E3aAvrI8pD" role="2OqNvi">
-                <ref role="37wK5l" to="2e2r:E3aAvrI2SU" resolve="getRoots" />
+                <ref role="37wK5l" to="2e2r:E3aAvrI2SU" resolve="getFirstNodes" />
               </node>
             </node>
             <node concept="34oBXx" id="E3aAvrIf0g" role="2OqNvi" />
@@ -2288,7 +2211,7 @@
                                 <ref role="3cqZAo" node="E3aAvrHNz_" resolve="currentClone" />
                               </node>
                               <node concept="liA8E" id="E3aAvrIxjy" role="2OqNvi">
-                                <ref role="37wK5l" to="2e2r:E3aAvrI2SU" resolve="getRoots" />
+                                <ref role="37wK5l" to="2e2r:E3aAvrI2SU" resolve="getFirstNodes" />
                               </node>
                             </node>
                             <node concept="34jXtK" id="E3aAvrIxjz" role="2OqNvi">
@@ -2370,7 +2293,7 @@
                                 <ref role="3cqZAo" node="E3aAvrHNz_" resolve="currentClone" />
                               </node>
                               <node concept="liA8E" id="E3aAvrJ8Yr" role="2OqNvi">
-                                <ref role="37wK5l" to="2e2r:E3aAvrI2SU" resolve="getRoots" />
+                                <ref role="37wK5l" to="2e2r:E3aAvrI2SU" resolve="getFirstNodes" />
                               </node>
                             </node>
                             <node concept="34jXtK" id="E3aAvrJfvl" role="2OqNvi">
@@ -2441,7 +2364,7 @@
                               <ref role="3cqZAo" node="E3aAvrHNz_" resolve="currentClone" />
                             </node>
                             <node concept="liA8E" id="2tukI2XpCmv" role="2OqNvi">
-                              <ref role="37wK5l" to="2e2r:E3aAvrI2SU" resolve="getRoots" />
+                              <ref role="37wK5l" to="2e2r:E3aAvrI2SU" resolve="getFirstNodes" />
                             </node>
                           </node>
                           <node concept="34jXtK" id="2tukI2XpCmw" role="2OqNvi">
@@ -3299,7 +3222,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="E3aAvrJWth" role="2OqNvi">
-                <ref role="37wK5l" to="2e2r:E3aAvrI2SU" resolve="getRoots" />
+                <ref role="37wK5l" to="2e2r:E3aAvrI2SU" resolve="getFirstNodes" />
               </node>
             </node>
             <node concept="34jXtK" id="E3aAvrK6tw" role="2OqNvi">
