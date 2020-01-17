@@ -403,51 +403,6 @@
         <node concept="1QHqEK" id="7JEz8ilt5oC" role="3cqZAp">
           <node concept="1QHqEC" id="7JEz8ilt5oE" role="1QHqEI">
             <node concept="3clFbS" id="7JEz8ilt5oG" role="1bW5cS">
-              <node concept="3cpWs8" id="7vLq_hssvgf" role="3cqZAp">
-                <node concept="3cpWsn" id="7vLq_hssvgg" role="3cpWs9">
-                  <property role="TrG5h" value="subTask" />
-                  <node concept="3uibUv" id="7vLq_hssvg7" role="1tU5fm">
-                    <ref role="3uigEE" to="yyf4:~ProgressMonitor" resolve="ProgressMonitor" />
-                  </node>
-                  <node concept="2OqwBi" id="7vLq_hssvgh" role="33vP2m">
-                    <node concept="37vLTw" id="7vLq_hssvgi" role="2Oq$k0">
-                      <ref role="3cqZAo" node="7vLq_hssl65" resolve="pma" />
-                    </node>
-                    <node concept="liA8E" id="7vLq_hssvgj" role="2OqNvi">
-                      <ref role="37wK5l" to="mk90:~ProgressMonitorBase.subTask(int,org.jetbrains.mps.openapi.util.SubProgressKind):org.jetbrains.mps.openapi.util.ProgressMonitor" resolve="subTask" />
-                      <node concept="2OqwBi" id="7vLq_hssvgk" role="37wK5m">
-                        <node concept="37vLTw" id="7vLq_hssvgl" role="2Oq$k0">
-                          <ref role="3cqZAo" node="5Dw7oA60GZN" resolve="models" />
-                        </node>
-                        <node concept="34oBXx" id="7vLq_hssvgm" role="2OqNvi" />
-                      </node>
-                      <node concept="Rm8GO" id="7vLq_hstrsx" role="37wK5m">
-                        <ref role="Rm8GQ" to="yyf4:~SubProgressKind.AS_COMMENT" resolve="AS_COMMENT" />
-                        <ref role="1Px2BO" to="yyf4:~SubProgressKind" resolve="SubProgressKind" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbF" id="7vLq_hssdOD" role="3cqZAp">
-                <node concept="2OqwBi" id="7vLq_hssecn" role="3clFbG">
-                  <node concept="37vLTw" id="7vLq_hsswUO" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7vLq_hssvgg" resolve="subTask" />
-                  </node>
-                  <node concept="liA8E" id="7vLq_hsseQ3" role="2OqNvi">
-                    <ref role="37wK5l" to="yyf4:~ProgressMonitor.start(java.lang.String,int):void" resolve="start" />
-                    <node concept="Xl_RD" id="7vLq_hsseUv" role="37wK5m">
-                      <property role="Xl_RC" value="Building the TreeMap view" />
-                    </node>
-                    <node concept="2OqwBi" id="7vLq_hsszgX" role="37wK5m">
-                      <node concept="37vLTw" id="7vLq_hssya2" role="2Oq$k0">
-                        <ref role="3cqZAo" node="5Dw7oA60GZN" resolve="models" />
-                      </node>
-                      <node concept="34oBXx" id="7vLq_hss$Up" role="2OqNvi" />
-                    </node>
-                  </node>
-                </node>
-              </node>
               <node concept="2Gpval" id="5Dw7oA61vrK" role="3cqZAp">
                 <node concept="2GrKxI" id="5Dw7oA61vrM" role="2Gsz3X">
                   <property role="TrG5h" value="m" />
@@ -456,32 +411,6 @@
                   <ref role="3cqZAo" node="5Dw7oA60GZN" resolve="models" />
                 </node>
                 <node concept="3clFbS" id="5Dw7oA61vrQ" role="2LFqv$">
-                  <node concept="3clFbF" id="7vLq_hssAhB" role="3cqZAp">
-                    <node concept="2OqwBi" id="7vLq_hssAwH" role="3clFbG">
-                      <node concept="37vLTw" id="7vLq_hssAh_" role="2Oq$k0">
-                        <ref role="3cqZAo" node="7vLq_hssvgg" resolve="subTask" />
-                      </node>
-                      <node concept="liA8E" id="7vLq_hssD1r" role="2OqNvi">
-                        <ref role="37wK5l" to="yyf4:~ProgressMonitor.advance(int):void" resolve="advance" />
-                        <node concept="3cmrfG" id="7vLq_hssDEt" role="37wK5m">
-                          <property role="3cmrfH" value="1" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3clFbJ" id="7vLq_hssEYF" role="3cqZAp">
-                    <node concept="3clFbS" id="7vLq_hssEYH" role="3clFbx">
-                      <node concept="3cpWs6" id="7vLq_hssIYu" role="3cqZAp" />
-                    </node>
-                    <node concept="2OqwBi" id="7vLq_hssFU_" role="3clFbw">
-                      <node concept="37vLTw" id="7vLq_hssFDR" role="2Oq$k0">
-                        <ref role="3cqZAo" node="7vLq_hssvgg" resolve="subTask" />
-                      </node>
-                      <node concept="liA8E" id="7vLq_hssIkV" role="2OqNvi">
-                        <ref role="37wK5l" to="yyf4:~ProgressMonitor.isCanceled():boolean" resolve="isCanceled" />
-                      </node>
-                    </node>
-                  </node>
                   <node concept="3cpWs8" id="5Dw7oA61zQd" role="3cqZAp">
                     <node concept="3cpWsn" id="5Dw7oA61zQe" role="3cpWs9">
                       <property role="TrG5h" value="crtModelNode" />
@@ -699,16 +628,6 @@
                         </node>
                       </node>
                     </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbF" id="7vLq_hst5gw" role="3cqZAp">
-                <node concept="2OqwBi" id="7vLq_hst60W" role="3clFbG">
-                  <node concept="37vLTw" id="7vLq_hst5gu" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7vLq_hssvgg" resolve="subTask" />
-                  </node>
-                  <node concept="liA8E" id="7vLq_hst8ww" role="2OqNvi">
-                    <ref role="37wK5l" to="yyf4:~ProgressMonitor.done():void" resolve="done" />
                   </node>
                 </node>
               </node>
@@ -1058,13 +977,6 @@
       </node>
       <node concept="3Tm1VV" id="5Dw7oA60FtK" role="1B3o_S" />
       <node concept="3cqZAl" id="5Dw7oA60FFv" role="3clF45" />
-      <node concept="37vLTG" id="7vLq_hssl65" role="3clF46">
-        <property role="TrG5h" value="pma" />
-        <property role="3TUv4t" value="true" />
-        <node concept="3uibUv" id="7vLq_hssmSn" role="1tU5fm">
-          <ref role="3uigEE" to="mk8z:~ProgressMonitorAdapter" resolve="ProgressMonitorAdapter" />
-        </node>
-      </node>
       <node concept="37vLTG" id="5Dw7oA60GlN" role="3clF46">
         <property role="TrG5h" value="clones" />
         <property role="3TUv4t" value="true" />

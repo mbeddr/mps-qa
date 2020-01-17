@@ -1318,6 +1318,7 @@
       <node concept="3cqZAl" id="7WP_sw5s1HZ" role="3clF45" />
       <node concept="37vLTG" id="7WP_sw5s1I0" role="3clF46">
         <property role="TrG5h" value="proj" />
+        <property role="3TUv4t" value="true" />
         <node concept="3uibUv" id="7WP_sw5s1I1" role="1tU5fm">
           <ref role="3uigEE" to="z1c3:~MPSProject" resolve="MPSProject" />
         </node>
@@ -1956,6 +1957,19 @@
           </node>
         </node>
         <node concept="3clFbH" id="1oYl8FfuNxh" role="3cqZAp" />
+        <node concept="3cpWs8" id="4vC8Gjx09wx" role="3cqZAp">
+          <node concept="3cpWsn" id="4vC8Gjx09w$" role="3cpWs9">
+            <property role="TrG5h" value="cloneBottomPanel" />
+            <node concept="3uibUv" id="4vC8Gjx09w_" role="1tU5fm">
+              <ref role="3uigEE" to="dxuu:~JPanel" resolve="JPanel" />
+            </node>
+            <node concept="2ShNRf" id="4vC8Gjx09wA" role="33vP2m">
+              <node concept="1pGfFk" id="4vC8Gjx09wB" role="2ShVmc">
+                <ref role="37wK5l" to="dxuu:~JPanel.&lt;init&gt;()" resolve="JPanel" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="1oYl8FfoaKc" role="3cqZAp">
           <node concept="3cpWsn" id="1oYl8FfoaKd" role="3cpWs9">
             <property role="TrG5h" value="reRunButton" />
@@ -2013,13 +2027,106 @@
         </node>
         <node concept="3clFbF" id="1oYl8Ffo3Kt" role="3cqZAp">
           <node concept="2OqwBi" id="1oYl8Ffo57j" role="3clFbG">
-            <node concept="37vLTw" id="1oYl8Ffo3Kr" role="2Oq$k0">
-              <ref role="3cqZAo" node="2k2dPZH6$r7" resolve="settingsPanel" />
+            <node concept="37vLTw" id="4vC8Gjx0f0c" role="2Oq$k0">
+              <ref role="3cqZAo" node="4vC8Gjx09w$" resolve="cloneBottomPanel" />
             </node>
             <node concept="liA8E" id="1oYl8Ffo71e" role="2OqNvi">
               <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
               <node concept="37vLTw" id="1oYl8FfoaKh" role="37wK5m">
                 <ref role="3cqZAo" node="1oYl8FfoaKd" resolve="reRunButton" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4vC8GjwZF3W" role="3cqZAp" />
+        <node concept="3cpWs8" id="4vC8GjwZCAt" role="3cqZAp">
+          <node concept="3cpWsn" id="4vC8GjwZCAu" role="3cpWs9">
+            <property role="TrG5h" value="openTreemapButton" />
+            <node concept="3uibUv" id="4vC8GjwZCAv" role="1tU5fm">
+              <ref role="3uigEE" to="dxuu:~JButton" resolve="JButton" />
+            </node>
+            <node concept="2ShNRf" id="4vC8GjwZCAw" role="33vP2m">
+              <node concept="1pGfFk" id="4vC8GjwZCAx" role="2ShVmc">
+                <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;(java.lang.String)" resolve="JButton" />
+                <node concept="Xl_RD" id="4vC8GjwZCAy" role="37wK5m">
+                  <property role="Xl_RC" value="Open Treemap" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4vC8GjwZCAd" role="3cqZAp">
+          <node concept="2OqwBi" id="4vC8GjwZCAe" role="3clFbG">
+            <node concept="37vLTw" id="4vC8GjwZHK2" role="2Oq$k0">
+              <ref role="3cqZAo" node="4vC8GjwZCAu" resolve="openTreemapButton" />
+            </node>
+            <node concept="liA8E" id="4vC8GjwZCAg" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~AbstractButton.addActionListener(java.awt.event.ActionListener):void" resolve="addActionListener" />
+              <node concept="2ShNRf" id="4vC8GjwZCAh" role="37wK5m">
+                <node concept="YeOm9" id="4vC8GjwZCAi" role="2ShVmc">
+                  <node concept="1Y3b0j" id="4vC8GjwZCAj" role="YeSDq">
+                    <property role="2bfB8j" value="true" />
+                    <ref role="1Y3XeK" to="hyam:~ActionListener" resolve="ActionListener" />
+                    <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+                    <node concept="3Tm1VV" id="4vC8GjwZCAk" role="1B3o_S" />
+                    <node concept="3clFb_" id="4vC8GjwZCAl" role="jymVt">
+                      <property role="TrG5h" value="actionPerformed" />
+                      <node concept="3Tm1VV" id="4vC8GjwZCAm" role="1B3o_S" />
+                      <node concept="3cqZAl" id="4vC8GjwZCAn" role="3clF45" />
+                      <node concept="37vLTG" id="4vC8GjwZCAo" role="3clF46">
+                        <property role="TrG5h" value="p0" />
+                        <node concept="3uibUv" id="4vC8GjwZCAp" role="1tU5fm">
+                          <ref role="3uigEE" to="hyam:~ActionEvent" resolve="ActionEvent" />
+                        </node>
+                      </node>
+                      <node concept="3clFbS" id="4vC8GjwZCAq" role="3clF47">
+                        <node concept="3clFbF" id="4vC8GjwZJmh" role="3cqZAp">
+                          <node concept="2YIFZM" id="4vC8GjwZJns" role="3clFbG">
+                            <ref role="37wK5l" to="9vt7:4vC8GjwZo3S" resolve="openTreemap" />
+                            <ref role="1Pybhc" to="9vt7:4vC8GjwZnio" resolve="ClonesTreemapOpener" />
+                            <node concept="37vLTw" id="4vC8GjwZL9r" role="37wK5m">
+                              <ref role="3cqZAo" node="7WP_sw5s1I0" resolve="proj" />
+                            </node>
+                            <node concept="2OqwBi" id="4vC8GjwZN_6" role="37wK5m">
+                              <node concept="37vLTw" id="4vC8GjwZLXu" role="2Oq$k0">
+                                <ref role="3cqZAo" node="7WP_sw5s1HR" resolve="clonesTable" />
+                              </node>
+                              <node concept="2OwXpG" id="4vC8GjwZOSu" role="2OqNvi">
+                                <ref role="2Oxat5" node="1zTNC9MFMRD" resolve="allClones" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4vC8Gjx0i4c" role="3cqZAp">
+          <node concept="2OqwBi" id="4vC8Gjx0l12" role="3clFbG">
+            <node concept="37vLTw" id="4vC8Gjx0i4a" role="2Oq$k0">
+              <ref role="3cqZAo" node="4vC8Gjx09w$" resolve="cloneBottomPanel" />
+            </node>
+            <node concept="liA8E" id="4vC8Gjx0ows" role="2OqNvi">
+              <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
+              <node concept="37vLTw" id="4vC8Gjx0q6B" role="37wK5m">
+                <ref role="3cqZAo" node="4vC8GjwZCAu" resolve="openTreemapButton" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4vC8GjwZCA8" role="3cqZAp">
+          <node concept="2OqwBi" id="4vC8GjwZCA9" role="3clFbG">
+            <node concept="37vLTw" id="4vC8GjwZCAa" role="2Oq$k0">
+              <ref role="3cqZAo" node="2k2dPZH6$r7" resolve="settingsPanel" />
+            </node>
+            <node concept="liA8E" id="4vC8GjwZCAb" role="2OqNvi">
+              <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
+              <node concept="37vLTw" id="4vC8Gjx0r46" role="37wK5m">
+                <ref role="3cqZAo" node="4vC8Gjx09w$" resolve="cloneBottomPanel" />
               </node>
             </node>
           </node>
