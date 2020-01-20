@@ -1001,6 +1001,31 @@
           </node>
         </node>
         <node concept="3clFbH" id="6dWFC76UCfV" role="3cqZAp" />
+        <node concept="3clFbJ" id="6n_zVnC9_NG" role="3cqZAp">
+          <node concept="3clFbS" id="6n_zVnC9_NI" role="3clFbx">
+            <node concept="3clFbF" id="6n_zVnC9ACp" role="3cqZAp">
+              <node concept="37vLTI" id="6n_zVnC9ALr" role="3clFbG">
+                <node concept="2ShNRf" id="6n_zVnC9AVh" role="37vLTx">
+                  <node concept="1pGfFk" id="6n_zVnC9ARQ" role="2ShVmc">
+                    <ref role="37wK5l" to="2e2r:7YZJmep_1Ec" resolve="ClonesDetectorSettings" />
+                    <node concept="37vLTw" id="6n_zVnC9B2z" role="37wK5m">
+                      <ref role="3cqZAo" node="1oYl8Ffq5$W" resolve="project" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTw" id="6n_zVnC9ACn" role="37vLTJ">
+                  <ref role="3cqZAo" node="1oYl8Ffq4i$" resolve="lastSettings" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="6n_zVnC9AgH" role="3clFbw">
+            <node concept="10Nm6u" id="6n_zVnC9AqA" role="3uHU7w" />
+            <node concept="37vLTw" id="6n_zVnC9A2V" role="3uHU7B">
+              <ref role="3cqZAo" node="1oYl8Ffq4i$" resolve="lastSettings" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="7YZJmep_4F8" role="3cqZAp" />
         <node concept="3clFbF" id="1oYl8FfqQto" role="3cqZAp">
           <node concept="37vLTI" id="1oYl8FfqR6O" role="3clFbG">
