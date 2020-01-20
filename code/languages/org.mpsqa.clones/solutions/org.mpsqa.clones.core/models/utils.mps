@@ -36,6 +36,7 @@
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
+      <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -136,7 +137,7 @@
         <node concept="3clFbF" id="E3aAvrBu04" role="3cqZAp">
           <node concept="37vLTI" id="E3aAvrBw4L" role="3clFbG">
             <node concept="3cmrfG" id="E3aAvrBwbj" role="37vLTx">
-              <property role="3cmrfH" value="5" />
+              <property role="3cmrfH" value="15" />
             </node>
             <node concept="2OqwBi" id="E3aAvrBu6x" role="37vLTJ">
               <node concept="37vLTw" id="E3aAvrBu02" role="2Oq$k0">
@@ -150,8 +151,8 @@
         </node>
         <node concept="3clFbF" id="E3aAvrBwl8" role="3cqZAp">
           <node concept="37vLTI" id="E3aAvrBxTp" role="3clFbG">
-            <node concept="3cmrfG" id="E3aAvrBxZV" role="37vLTx">
-              <property role="3cmrfH" value="4" />
+            <node concept="37vLTw" id="5YQNmM9b37P" role="37vLTx">
+              <ref role="3cqZAo" node="5YQNmM9b2KP" resolve="minimumNumberOfSiblings" />
             </node>
             <node concept="2OqwBi" id="E3aAvrBwrR" role="37vLTJ">
               <node concept="37vLTw" id="E3aAvrBwl6" role="2Oq$k0">
@@ -218,6 +219,10 @@
         <node concept="3uibUv" id="5dW8pSKf6YP" role="1tU5fm">
           <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
+      </node>
+      <node concept="37vLTG" id="5YQNmM9b2KP" role="3clF46">
+        <property role="TrG5h" value="minimumNumberOfSiblings" />
+        <node concept="10Oyi0" id="5YQNmM9b2OY" role="1tU5fm" />
       </node>
     </node>
     <node concept="2tJIrI" id="5dW8pSK6_sC" role="jymVt" />

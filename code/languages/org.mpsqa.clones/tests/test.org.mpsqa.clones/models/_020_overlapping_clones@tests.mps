@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:2300b946-2889-4051-9431-762ec90e752a(test.org.mpsqa.clones._010_identical_java_statements@tests)">
+<model ref="r:8adceaa9-7768-4497-aa0f-fda6fdac3b15(test.org.mpsqa.clones._020_overlapping_clones@tests)">
   <persistence version="9" />
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
@@ -103,86 +103,86 @@
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
     </language>
   </registry>
-  <node concept="1lH9Xt" id="5dW8pSKf75r">
-    <property role="TrG5h" value="_010_identical_java_statements" />
-    <node concept="1LZb2c" id="5dW8pSKf75t" role="1SL9yI">
-      <property role="TrG5h" value="_010_smoke" />
-      <node concept="3cqZAl" id="5dW8pSKf75u" role="3clF45" />
-      <node concept="3clFbS" id="5dW8pSKf75v" role="3clF47">
-        <node concept="3cpWs8" id="4elAKXim_cw" role="3cqZAp">
-          <node concept="3cpWsn" id="4elAKXim_cx" role="3cpWs9">
+  <node concept="1lH9Xt" id="5YQNmM9b6pe">
+    <property role="TrG5h" value="_020_overlapping_clones" />
+    <node concept="1LZb2c" id="5YQNmM9b6pg" role="1SL9yI">
+      <property role="TrG5h" value="_010_ignore_overlapping" />
+      <node concept="3cqZAl" id="5YQNmM9b6pj" role="3clF45" />
+      <node concept="3clFbS" id="5YQNmM9b6pk" role="3clF47">
+        <node concept="3cpWs8" id="5YQNmM9b6pq" role="3cqZAp">
+          <node concept="3cpWsn" id="5YQNmM9b6p$" role="3cpWs9">
             <property role="TrG5h" value="repo" />
-            <node concept="3uibUv" id="4elAKXim_ct" role="1tU5fm">
+            <node concept="3uibUv" id="5YQNmM9b6pL" role="1tU5fm">
               <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
             </node>
-            <node concept="2OqwBi" id="4elAKXim_cy" role="33vP2m">
-              <node concept="1jxXqW" id="4elAKXim_cz" role="2Oq$k0" />
-              <node concept="liA8E" id="4elAKXim_c$" role="2OqNvi">
+            <node concept="2OqwBi" id="5YQNmM9b6pM" role="33vP2m">
+              <node concept="1jxXqW" id="5YQNmM9b6q1" role="2Oq$k0" />
+              <node concept="liA8E" id="5YQNmM9b6q2" role="2OqNvi">
                 <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="5dW8pSKf7_L" role="3cqZAp">
-          <node concept="3cpWsn" id="5dW8pSKf7_O" role="3cpWs9">
+        <node concept="3cpWs8" id="5YQNmM9b6pr" role="3cqZAp">
+          <node concept="3cpWsn" id="5YQNmM9b6p_" role="3cpWs9">
             <property role="TrG5h" value="m" />
-            <node concept="H_c77" id="5dW8pSKf7_J" role="1tU5fm" />
-            <node concept="2OqwBi" id="7WP_sw5nKfS" role="33vP2m">
-              <node concept="1Xw6AR" id="5dW8pSKf7A_" role="2Oq$k0">
-                <node concept="1dCxOl" id="5dW8pSKf7DX" role="1XwpL7">
-                  <property role="1XweGQ" value="r:0f8622b2-2aec-4512-840b-ef7423a06c76" />
-                  <node concept="1j_P7g" id="5dW8pSKf7DY" role="1j$8Uc">
-                    <property role="1j_P7h" value="test.com.mps.qa.clones.testcode._010_identical_java_statements" />
+            <node concept="H_c77" id="5YQNmM9b6pN" role="1tU5fm" />
+            <node concept="2OqwBi" id="5YQNmM9b6pO" role="33vP2m">
+              <node concept="1Xw6AR" id="5YQNmM9b6q3" role="2Oq$k0">
+                <node concept="1dCxOl" id="5YQNmM9b6Mh" role="1XwpL7">
+                  <property role="1XweGQ" value="r:feae21fb-7a53-4ab0-bedf-18e5794f625d" />
+                  <node concept="1j_P7g" id="5YQNmM9b6Mi" role="1j$8Uc">
+                    <property role="1j_P7h" value="test.org.mpsqa.clones.testcode._020_overlapping_clones" />
                   </node>
                 </node>
               </node>
-              <node concept="2yCiCJ" id="7WP_sw5nK$l" role="2OqNvi">
-                <node concept="37vLTw" id="4elAKXim_c_" role="Vysub">
-                  <ref role="3cqZAo" node="4elAKXim_cx" resolve="repo" />
+              <node concept="2yCiCJ" id="5YQNmM9b6q4" role="2OqNvi">
+                <node concept="37vLTw" id="5YQNmM9b6qc" role="Vysub">
+                  <ref role="3cqZAo" node="5YQNmM9b6p$" resolve="repo" />
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="7WP_sw5nK7j" role="3cqZAp">
-          <node concept="3cpWsn" id="7WP_sw5nK7k" role="3cpWs9">
+        <node concept="3cpWs8" id="5YQNmM9b6ps" role="3cqZAp">
+          <node concept="3cpWsn" id="5YQNmM9b6pA" role="3cpWs9">
             <property role="TrG5h" value="foundClones" />
-            <node concept="_YKpA" id="7WP_sw5nK7e" role="1tU5fm">
-              <node concept="3uibUv" id="7WP_sw5nK7h" role="_ZDj9">
+            <node concept="_YKpA" id="5YQNmM9b6pP" role="1tU5fm">
+              <node concept="3uibUv" id="5YQNmM9b6q5" role="_ZDj9">
                 <ref role="3uigEE" to="2e2r:5dW8pSK6_ts" resolve="Clone" />
               </node>
             </node>
-            <node concept="2YIFZM" id="7WP_sw5nK7l" role="33vP2m">
+            <node concept="2YIFZM" id="5YQNmM9b6pQ" role="33vP2m">
               <ref role="37wK5l" to="zvdt:5dW8pSK6_ue" resolve="checkClones" />
               <ref role="1Pybhc" to="zvdt:5dW8pSK6_rA" resolve="TestUtils" />
-              <node concept="37vLTw" id="7WP_sw5nK7m" role="37wK5m">
-                <ref role="3cqZAo" node="5dW8pSKf7_O" resolve="m" />
+              <node concept="37vLTw" id="5YQNmM9b6q6" role="37wK5m">
+                <ref role="3cqZAo" node="5YQNmM9b6p_" resolve="m" />
               </node>
-              <node concept="37vLTw" id="4elAKXim_cA" role="37wK5m">
-                <ref role="3cqZAo" node="4elAKXim_cx" resolve="repo" />
+              <node concept="37vLTw" id="5YQNmM9b6q7" role="37wK5m">
+                <ref role="3cqZAo" node="5YQNmM9b6p$" resolve="repo" />
               </node>
-              <node concept="3cmrfG" id="5YQNmM9b3pm" role="37wK5m">
+              <node concept="3cmrfG" id="5YQNmM9b6q8" role="37wK5m">
                 <property role="3cmrfH" value="4" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="7WP_sw5ryAu" role="3cqZAp" />
-        <node concept="3vlDli" id="7WP_sw5nLxA" role="3cqZAp">
-          <node concept="3cmrfG" id="7WP_sw5nLzR" role="3tpDZB">
-            <property role="3cmrfH" value="2" />
+        <node concept="3clFbH" id="5YQNmM9b6pt" role="3cqZAp" />
+        <node concept="3vlDli" id="5YQNmM9b6pu" role="3cqZAp">
+          <node concept="3cmrfG" id="5YQNmM9b6pB" role="3tpDZB">
+            <property role="3cmrfH" value="0" />
           </node>
-          <node concept="2OqwBi" id="7WP_sw5nM8C" role="3tpDZA">
-            <node concept="37vLTw" id="7WP_sw5nLBd" role="2Oq$k0">
-              <ref role="3cqZAo" node="7WP_sw5nK7k" resolve="foundClones" />
+          <node concept="2OqwBi" id="5YQNmM9b6pC" role="3tpDZA">
+            <node concept="37vLTw" id="5YQNmM9b6pR" role="2Oq$k0">
+              <ref role="3cqZAo" node="5YQNmM9b6pA" resolve="foundClones" />
             </node>
-            <node concept="34oBXx" id="7WP_sw5nR_s" role="2OqNvi" />
+            <node concept="34oBXx" id="5YQNmM9b6pS" role="2OqNvi" />
           </node>
         </node>
       </node>
     </node>
   </node>
-  <node concept="2XOHcx" id="5dW8pSKf75s">
+  <node concept="2XOHcx" id="5YQNmM9b6qf">
     <property role="2XOHcw" value="${mpsqa.home}/code/languages/org.mpsqa.clones" />
   </node>
 </model>
