@@ -103,6 +103,13 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="2VgkkwRqN5V" resolve="IIgnoreElement" />
     </node>
+    <node concept="1TJgyj" id="6n_zVnCj$Yw" role="1TKVEi">
+      <property role="IQ2ns" value="7342432778946760608" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="postprocessor" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="6n_zVnCdQPg" resolve="IClonesPostprocessor" />
+    </node>
     <node concept="PrWs8" id="7vLq_hstL0g" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -176,6 +183,39 @@
       <property role="IQ2nx" value="3373285491509768579" />
       <property role="TrG5h" value="val" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6n_zVnCdQPg">
+    <property role="EcuMT" value="7342432778945260880" />
+    <property role="TrG5h" value="IClonesPostprocessor" />
+    <property role="3GE5qa" value="postprocessing" />
+  </node>
+  <node concept="1TIwiD" id="6n_zVnCj$XC">
+    <property role="EcuMT" value="7342432778946760552" />
+    <property role="3GE5qa" value="postprocessing" />
+    <property role="TrG5h" value="ClonesSaver" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="6n_zVnCj$XD" role="1TKVEl">
+      <property role="IQ2nx" value="7342432778946760553" />
+      <property role="TrG5h" value="path" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="6n_zVnCj_ce" role="PzmwI">
+      <ref role="PrY4T" node="6n_zVnCdQPg" resolve="IClonesPostprocessor" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6n_zVnCvTNA">
+    <property role="EcuMT" value="7342432778949991654" />
+    <property role="3GE5qa" value="postprocessing" />
+    <property role="TrG5h" value="ClonesLoader" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="6n_zVnCvXt8" role="1TKVEl">
+      <property role="IQ2nx" value="7342432778950006600" />
+      <property role="TrG5h" value="path" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="6n_zVnCvTNB" role="PzmwI">
+      <ref role="PrY4T" node="6n_zVnCdQPg" resolve="IClonesPostprocessor" />
     </node>
   </node>
 </model>

@@ -30,6 +30,7 @@
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <import index="tpy2" ref="r:09c925f8-54a9-4591-ab56-735d31a867ae(org.mpsqa.clones.core.management)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1855,6 +1856,14 @@
       <node concept="3Tm1VV" id="GBiWXwJdk6" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="7vLq_hsuTe6" role="jymVt" />
+    <node concept="312cEg" id="6n_zVnCjFsD" role="jymVt">
+      <property role="TrG5h" value="postprocessor" />
+      <node concept="3Tm1VV" id="6n_zVnCjEqE" role="1B3o_S" />
+      <node concept="3uibUv" id="6n_zVnCjFrF" role="1tU5fm">
+        <ref role="3uigEE" to="tpy2:6n_zVnCdSRR" resolve="IClonesPostprocessor" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6n_zVnCjDw$" role="jymVt" />
     <node concept="3clFbW" id="7YZJmep_1Ec" role="jymVt">
       <node concept="3cqZAl" id="7YZJmep_1Ee" role="3clF45" />
       <node concept="3Tm1VV" id="7YZJmep_1Ef" role="1B3o_S" />
