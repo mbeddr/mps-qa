@@ -194,6 +194,7 @@
     <property role="EcuMT" value="7342432778946760552" />
     <property role="3GE5qa" value="postprocessing" />
     <property role="TrG5h" value="ClonesSaver" />
+    <property role="34LRSv" value="clones saver" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="6n_zVnCj$XD" role="1TKVEl">
       <property role="IQ2nx" value="7342432778946760553" />
@@ -208,6 +209,7 @@
     <property role="EcuMT" value="7342432778949991654" />
     <property role="3GE5qa" value="postprocessing" />
     <property role="TrG5h" value="ClonesLoader" />
+    <property role="34LRSv" value="clones loader" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="6n_zVnCvXt8" role="1TKVEl">
       <property role="IQ2nx" value="7342432778950006600" />
@@ -215,6 +217,21 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="PrWs8" id="6n_zVnCvTNB" role="PzmwI">
+      <ref role="PrY4T" node="6n_zVnCdQPg" resolve="IClonesPostprocessor" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="16s82eE9_4w">
+    <property role="EcuMT" value="1268924532562219296" />
+    <property role="3GE5qa" value="postprocessing" />
+    <property role="TrG5h" value="NewClonesFilter" />
+    <property role="34LRSv" value="new clones filter" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="16s82eE9_4x" role="1TKVEl">
+      <property role="IQ2nx" value="1268924532562219297" />
+      <property role="TrG5h" value="path" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="16s82eE9_4y" role="PzmwI">
       <ref role="PrY4T" node="6n_zVnCdQPg" resolve="IClonesPostprocessor" />
     </node>
   </node>

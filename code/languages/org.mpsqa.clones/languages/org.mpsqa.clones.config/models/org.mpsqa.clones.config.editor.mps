@@ -399,5 +399,18 @@
       <node concept="l2Vlx" id="6n_zVnCvXic" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="16s82eE9_4z">
+    <property role="3GE5qa" value="postprocessing" />
+    <ref role="1XX52x" to="mpzi:16s82eE9_4w" resolve="NewClonesFilter" />
+    <node concept="3EZMnI" id="16s82eE9_4_" role="2wV5jI">
+      <node concept="3F0ifn" id="16s82eE9_4A" role="3EZMnx">
+        <property role="3F0ifm" value="filter new clones w.r.t. file:" />
+      </node>
+      <node concept="3F0A7n" id="16s82eE9_4B" role="3EZMnx">
+        <ref role="1NtTu8" to="mpzi:16s82eE9_4x" resolve="path" />
+      </node>
+      <node concept="l2Vlx" id="16s82eE9_4C" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

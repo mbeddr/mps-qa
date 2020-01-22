@@ -201,5 +201,40 @@
       </node>
     </node>
   </node>
+  <node concept="13h7C7" id="16s82eE9_9f">
+    <property role="3GE5qa" value="postprocessing" />
+    <ref role="13h7C2" to="mpzi:16s82eE9_4w" resolve="NewClonesFilter" />
+    <node concept="13i0hz" id="16s82eE9_9q" role="13h7CS">
+      <property role="TrG5h" value="createPostprocessor" />
+      <ref role="13i0hy" node="6n_zVnCj_a9" resolve="createPostprocessor" />
+      <node concept="3Tm1VV" id="16s82eE9_9r" role="1B3o_S" />
+      <node concept="3clFbS" id="16s82eE9_9s" role="3clF47">
+        <node concept="3clFbF" id="16s82eE9_9t" role="3cqZAp">
+          <node concept="2ShNRf" id="16s82eE9_9u" role="3clFbG">
+            <node concept="1pGfFk" id="16s82eE9_9v" role="2ShVmc">
+              <ref role="37wK5l" to="tpy2:16s82eE58lj" resolve="NewClonesFilter" />
+              <node concept="2ShNRf" id="16s82eE9_9w" role="37wK5m">
+                <node concept="1pGfFk" id="16s82eE9_9x" role="2ShVmc">
+                  <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                  <node concept="2OqwBi" id="16s82eE9_9y" role="37wK5m">
+                    <node concept="13iPFW" id="16s82eE9_9z" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="16s82eE9_9$" role="2OqNvi">
+                      <ref role="3TsBF5" to="mpzi:16s82eE9_4x" resolve="path" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="16s82eE9_9_" role="3clF45">
+        <ref role="3uigEE" to="tpy2:6n_zVnCdSRR" resolve="IClonesPostprocessor" />
+      </node>
+    </node>
+    <node concept="13hLZK" id="16s82eE9_9g" role="13h7CW">
+      <node concept="3clFbS" id="16s82eE9_9h" role="2VODD2" />
+    </node>
+  </node>
 </model>
 
