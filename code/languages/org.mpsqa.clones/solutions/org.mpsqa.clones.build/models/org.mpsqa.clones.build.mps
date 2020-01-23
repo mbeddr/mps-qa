@@ -496,6 +496,21 @@
             <ref role="3bR37D" node="2JVMSZMFXgG" resolve="org.mpsqa.base.lib" />
           </node>
         </node>
+        <node concept="1SiIV0" id="vol1C1m$hK" role="3bR37C">
+          <node concept="3bR9La" id="vol1C1m$hL" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="vol1C1m$hM" role="3bR37C">
+          <node concept="3bR9La" id="vol1C1m$hN" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L8Y" resolve="jetbrains.mps.lang.project" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="vol1C1m$hO" role="3bR37C">
+          <node concept="3bR9La" id="vol1C1m$hP" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6Lg8" resolve="jetbrains.mps.runtime" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="2JVMSZMFXgG" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -721,6 +736,11 @@
         <node concept="1SiIV0" id="2JVMSZMFXFF" role="3bR37C">
           <node concept="3bR9La" id="2JVMSZMFXFG" role="1SiIV1">
             <ref role="3bR37D" node="2JVMSZMFXgY" resolve="org.mpsqa.clones.config" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="vol1C1m$ik" role="3bR37C">
+          <node concept="3bR9La" id="vol1C1m$il" role="1SiIV1">
+            <ref role="3bR37D" node="2JVMSZMFXgA" resolve="org.mpsqa.clones.core" />
           </node>
         </node>
       </node>
