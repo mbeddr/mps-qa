@@ -1495,6 +1495,31 @@
       <node concept="3Tm1VV" id="1zTNC9MGBYf" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="1zTNC9MFIhs" role="jymVt" />
+    <node concept="3clFb_" id="16s82eEAPNT" role="jymVt">
+      <property role="TrG5h" value="resetFilter" />
+      <node concept="3clFbS" id="16s82eEAPNW" role="3clF47">
+        <node concept="3clFbF" id="16s82eEASCF" role="3cqZAp">
+          <node concept="2OqwBi" id="16s82eEATKt" role="3clFbG">
+            <node concept="37vLTw" id="16s82eEASCE" role="2Oq$k0">
+              <ref role="3cqZAo" node="7WP_sw5s1A8" resolve="tableModel" />
+            </node>
+            <node concept="liA8E" id="16s82eEAXZw" role="2OqNvi">
+              <ref role="37wK5l" node="7WP_sw5rZB6" resolve="setClones" />
+              <node concept="37vLTw" id="16s82eEAYPv" role="37wK5m">
+                <ref role="3cqZAo" node="1zTNC9MFMRD" resolve="allClones" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="16s82eEB0zk" role="3cqZAp">
+          <node concept="1rXfSq" id="16s82eEB0zi" role="3clFbG">
+            <ref role="37wK5l" to="z60i:~Component.repaint():void" resolve="repaint" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="16s82eEANpi" role="1B3o_S" />
+      <node concept="3cqZAl" id="16s82eEAPmg" role="3clF45" />
+    </node>
     <node concept="2tJIrI" id="1zTNC9MFIjp" role="jymVt" />
   </node>
   <node concept="312cEu" id="7WP_sw5s1HO">
@@ -2236,6 +2261,79 @@
           </node>
         </node>
         <node concept="3clFbH" id="4vC8GjwZF3W" role="3cqZAp" />
+        <node concept="3cpWs8" id="16s82eEAAsH" role="3cqZAp">
+          <node concept="3cpWsn" id="16s82eEAAsI" role="3cpWs9">
+            <property role="TrG5h" value="resetOverview" />
+            <node concept="3uibUv" id="16s82eEAAsJ" role="1tU5fm">
+              <ref role="3uigEE" to="dxuu:~JButton" resolve="JButton" />
+            </node>
+            <node concept="2ShNRf" id="16s82eEAAsK" role="33vP2m">
+              <node concept="1pGfFk" id="16s82eEAAsL" role="2ShVmc">
+                <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;(java.lang.String)" resolve="JButton" />
+                <node concept="Xl_RD" id="16s82eEAAsM" role="37wK5m">
+                  <property role="Xl_RC" value="Reset Filter" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="16s82eEAAsN" role="3cqZAp">
+          <node concept="2OqwBi" id="16s82eEAAsO" role="3clFbG">
+            <node concept="37vLTw" id="16s82eEAAsP" role="2Oq$k0">
+              <ref role="3cqZAo" node="16s82eEAAsI" resolve="resetOverview" />
+            </node>
+            <node concept="liA8E" id="16s82eEAAsQ" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~AbstractButton.addActionListener(java.awt.event.ActionListener):void" resolve="addActionListener" />
+              <node concept="2ShNRf" id="16s82eEAAsR" role="37wK5m">
+                <node concept="YeOm9" id="16s82eEAAsS" role="2ShVmc">
+                  <node concept="1Y3b0j" id="16s82eEAAsT" role="YeSDq">
+                    <property role="2bfB8j" value="true" />
+                    <ref role="1Y3XeK" to="hyam:~ActionListener" resolve="ActionListener" />
+                    <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+                    <node concept="3Tm1VV" id="16s82eEAAsU" role="1B3o_S" />
+                    <node concept="3clFb_" id="16s82eEAAsV" role="jymVt">
+                      <property role="TrG5h" value="actionPerformed" />
+                      <node concept="3Tm1VV" id="16s82eEAAsW" role="1B3o_S" />
+                      <node concept="3cqZAl" id="16s82eEAAsX" role="3clF45" />
+                      <node concept="37vLTG" id="16s82eEAAsY" role="3clF46">
+                        <property role="TrG5h" value="p0" />
+                        <node concept="3uibUv" id="16s82eEAAsZ" role="1tU5fm">
+                          <ref role="3uigEE" to="hyam:~ActionEvent" resolve="ActionEvent" />
+                        </node>
+                      </node>
+                      <node concept="3clFbS" id="16s82eEAAt0" role="3clF47">
+                        <node concept="3clFbF" id="16s82eEB6UF" role="3cqZAp">
+                          <node concept="2OqwBi" id="16s82eEB89g" role="3clFbG">
+                            <node concept="37vLTw" id="16s82eEB6UE" role="2Oq$k0">
+                              <ref role="3cqZAo" node="7WP_sw5s1HR" resolve="clonesTable" />
+                            </node>
+                            <node concept="liA8E" id="16s82eEBCNO" role="2OqNvi">
+                              <ref role="37wK5l" node="16s82eEAPNT" resolve="resetFilter" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="16s82eEAAt3" role="3cqZAp">
+          <node concept="2OqwBi" id="16s82eEAAt4" role="3clFbG">
+            <node concept="37vLTw" id="16s82eEAHGQ" role="2Oq$k0">
+              <ref role="3cqZAo" node="4vC8Gjx09w$" resolve="cloneBottomPanel" />
+            </node>
+            <node concept="liA8E" id="16s82eEAAt6" role="2OqNvi">
+              <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
+              <node concept="37vLTw" id="16s82eEAAt7" role="37wK5m">
+                <ref role="3cqZAo" node="16s82eEAAsI" resolve="resetOverview" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="16s82eEA$77" role="3cqZAp" />
         <node concept="3cpWs8" id="4vC8GjwZCAt" role="3cqZAp">
           <node concept="3cpWsn" id="4vC8GjwZCAu" role="3cpWs9">
             <property role="TrG5h" value="openTreemapButton" />
