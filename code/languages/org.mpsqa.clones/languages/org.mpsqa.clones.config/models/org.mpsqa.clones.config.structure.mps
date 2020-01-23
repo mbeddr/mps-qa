@@ -68,6 +68,21 @@
     <property role="34LRSv" value="clones detection config" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="6dJ4vxiQa_1" role="1TKVEl">
+      <property role="IQ2nx" value="7164965290409240897" />
+      <property role="TrG5h" value="minimalSuffixSize" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="6dJ4vxiQa_5" role="1TKVEl">
+      <property role="IQ2nx" value="7164965290409240901" />
+      <property role="TrG5h" value="maximalSuffixSize" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="6dJ4vxiQa_c" role="1TKVEl">
+      <property role="IQ2nx" value="7164965290409240908" />
+      <property role="TrG5h" value="minimalNumberOfSiblings" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
     <node concept="1TJgyj" id="2VgkkwRm66h" role="1TKVEi">
       <property role="IQ2ns" value="3373285491508535697" />
       <property role="20lmBu" value="aggregation" />
@@ -119,9 +134,10 @@
   </node>
   <node concept="1TIwiD" id="7vLq_hstMm0">
     <property role="EcuMT" value="8642806070461801856" />
-    <property role="TrG5h" value="IgnoredElement" />
-    <property role="34LRSv" value="ignore" />
+    <property role="TrG5h" value="NamePattern" />
+    <property role="34LRSv" value="name pattern" />
     <property role="3GE5qa" value="ignored_elements" />
+    <property role="R4oN_" value="name pattern (regex)" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="7vLq_hstMm1" role="1TKVEl">
       <property role="IQ2nx" value="8642806070461801857" />

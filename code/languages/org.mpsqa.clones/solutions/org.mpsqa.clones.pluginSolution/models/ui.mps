@@ -1714,20 +1714,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="1oYl8FfocJD" role="3cqZAp" />
-        <node concept="3cpWs8" id="6dJ4vxiNeCv" role="3cqZAp">
-          <node concept="3cpWsn" id="6dJ4vxiNeCw" role="3cpWs9">
-            <property role="TrG5h" value="settings" />
-            <property role="3TUv4t" value="true" />
-            <node concept="3uibUv" id="6dJ4vxiNeCt" role="1tU5fm">
-              <ref role="3uigEE" to="2e2r:1oYl8FfodCD" resolve="ClonesDetectorSettings" />
-            </node>
-            <node concept="10M0yZ" id="6dJ4vxiNeCx" role="33vP2m">
-              <ref role="1PxDUh" to="9vt7:1oYl8Ffq3Xu" resolve="ClonesDetectorRunner" />
-              <ref role="3cqZAo" to="9vt7:1oYl8Ffq4i$" resolve="lastSettings" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="6dJ4vxiNFoN" role="3cqZAp" />
         <node concept="3cpWs8" id="1oYl8Ffs1gL" role="3cqZAp">
           <node concept="3cpWsn" id="1oYl8Ffs1gM" role="3cpWs9">
             <property role="TrG5h" value="suffixSizePanel" />
@@ -1855,8 +1841,9 @@
                               <node concept="2OwXpG" id="1oYl8FfrN6C" role="2OqNvi">
                                 <ref role="2Oxat5" to="2e2r:1oYl8FfoCUT" resolve="maximalSuffixSize" />
                               </node>
-                              <node concept="37vLTw" id="6dJ4vxiNsLr" role="2Oq$k0">
-                                <ref role="3cqZAo" node="6dJ4vxiNeCw" resolve="settings" />
+                              <node concept="10M0yZ" id="6dJ4vxiNeCx" role="2Oq$k0">
+                                <ref role="1PxDUh" to="9vt7:1oYl8Ffq3Xu" resolve="ClonesDetectorRunner" />
+                                <ref role="3cqZAo" to="9vt7:1oYl8Ffq4i$" resolve="lastSettings" />
                               </node>
                             </node>
                           </node>
@@ -1997,8 +1984,9 @@
                               <node concept="2OwXpG" id="1oYl8Fftzxj" role="2OqNvi">
                                 <ref role="2Oxat5" to="2e2r:1oYl8FftbCe" resolve="minimalSuffixSize" />
                               </node>
-                              <node concept="37vLTw" id="6dJ4vxiNNxX" role="2Oq$k0">
-                                <ref role="3cqZAo" node="6dJ4vxiNeCw" resolve="settings" />
+                              <node concept="10M0yZ" id="6dJ4vxiR4DI" role="2Oq$k0">
+                                <ref role="1PxDUh" to="9vt7:1oYl8Ffq3Xu" resolve="ClonesDetectorRunner" />
+                                <ref role="3cqZAo" to="9vt7:1oYl8Ffq4i$" resolve="lastSettings" />
                               </node>
                             </node>
                           </node>
@@ -2165,8 +2153,9 @@
                               <node concept="2OwXpG" id="1oYl8Ffv5oH" role="2OqNvi">
                                 <ref role="2Oxat5" to="2e2r:1oYl8FfoCVF" resolve="minimumNumberOfSiblings" />
                               </node>
-                              <node concept="37vLTw" id="6dJ4vxiNYSK" role="2Oq$k0">
-                                <ref role="3cqZAo" node="6dJ4vxiNeCw" resolve="settings" />
+                              <node concept="10M0yZ" id="6dJ4vxiR4T0" role="2Oq$k0">
+                                <ref role="3cqZAo" to="9vt7:1oYl8Ffq4i$" resolve="lastSettings" />
+                                <ref role="1PxDUh" to="9vt7:1oYl8Ffq3Xu" resolve="ClonesDetectorRunner" />
                               </node>
                             </node>
                           </node>

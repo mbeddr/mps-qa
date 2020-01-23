@@ -16,7 +16,9 @@
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1402906326895675325" name="jetbrains.mps.lang.editor.structure.CellActionMap_FunctionParm_selectedNode" flags="nn" index="0IXxy" />
-      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
+      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
+        <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
+      </concept>
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
         <child id="1140524464359" name="emptyCellModel" index="2czzBI" />
@@ -148,6 +150,66 @@
         <node concept="l2Vlx" id="7vLq_hstMbe" role="2iSdaV" />
       </node>
       <node concept="3F0ifn" id="7vLq_hstMl$" role="3EZMnx" />
+      <node concept="3EZMnI" id="1GhTetdXFII" role="3EZMnx">
+        <node concept="VPM3Z" id="1GhTetdXFIK" role="3F10Kt" />
+        <node concept="3vyZuw" id="1GhTetdXFNa" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3F0ifn" id="1GhTetdXFIM" role="3EZMnx">
+          <property role="3F0ifm" value="Help (clones parameters):" />
+        </node>
+        <node concept="3F0ifn" id="6dJ4vxiQBTa" role="3EZMnx">
+          <property role="3F0ifm" value="minimal/maximal suffix size - minimal/maximal depth of a node to be considered part of a clone" />
+          <node concept="VechU" id="6dJ4vxiQBT$" role="3F10Kt">
+            <property role="Vb096" value="gray" />
+          </node>
+        </node>
+        <node concept="3F0ifn" id="6dJ4vxiQBTb" role="3EZMnx">
+          <property role="3F0ifm" value="minimal number of siblings - minimal number of sibling nodes of a clone (similar to 'number of lines')" />
+          <node concept="VechU" id="6dJ4vxiQBTC" role="3F10Kt">
+            <property role="Vb096" value="gray" />
+          </node>
+        </node>
+        <node concept="2iRkQZ" id="1GhTetdXFIN" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="6dJ4vxiQBJq" role="3EZMnx" />
+      <node concept="3F0ifn" id="6dJ4vxiQa_m" role="3EZMnx">
+        <property role="3F0ifm" value="parameters:" />
+      </node>
+      <node concept="3EZMnI" id="6dJ4vxiQaJW" role="3EZMnx">
+        <node concept="VPM3Z" id="6dJ4vxiQaJX" role="3F10Kt" />
+        <node concept="3XFhqQ" id="6dJ4vxiQaJY" role="3EZMnx" />
+        <node concept="3F0ifn" id="6dJ4vxiQb0A" role="3EZMnx">
+          <property role="3F0ifm" value="minimal suffix size:" />
+        </node>
+        <node concept="3F0A7n" id="6dJ4vxiQb0S" role="3EZMnx">
+          <ref role="1NtTu8" to="mpzi:6dJ4vxiQa_1" resolve="minimalSuffixSize" />
+        </node>
+        <node concept="l2Vlx" id="6dJ4vxiQaK0" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="6dJ4vxiQaNO" role="3EZMnx">
+        <node concept="VPM3Z" id="6dJ4vxiQaNP" role="3F10Kt" />
+        <node concept="3XFhqQ" id="6dJ4vxiQaNQ" role="3EZMnx" />
+        <node concept="3F0ifn" id="6dJ4vxiQb13" role="3EZMnx">
+          <property role="3F0ifm" value="maximal suffix size:" />
+        </node>
+        <node concept="3F0A7n" id="6dJ4vxiQb14" role="3EZMnx">
+          <ref role="1NtTu8" to="mpzi:6dJ4vxiQa_5" resolve="maximalSuffixSize" />
+        </node>
+        <node concept="l2Vlx" id="6dJ4vxiQaNS" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="6dJ4vxiQaRV" role="3EZMnx">
+        <node concept="VPM3Z" id="6dJ4vxiQaRW" role="3F10Kt" />
+        <node concept="3XFhqQ" id="6dJ4vxiQaRX" role="3EZMnx" />
+        <node concept="3F0ifn" id="6dJ4vxiQb1e" role="3EZMnx">
+          <property role="3F0ifm" value="minimal number of siblings:" />
+        </node>
+        <node concept="3F0A7n" id="6dJ4vxiQb1f" role="3EZMnx">
+          <ref role="1NtTu8" to="mpzi:6dJ4vxiQa_c" resolve="minimalNumberOfSiblings" />
+        </node>
+        <node concept="l2Vlx" id="6dJ4vxiQaRZ" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="6dJ4vxiQaCP" role="3EZMnx" />
       <node concept="3F0ifn" id="2VgkkwRm67F" role="3EZMnx">
         <property role="3F0ifm" value="scope:" />
       </node>
@@ -160,27 +222,27 @@
         <node concept="l2Vlx" id="2VgkkwRm69W" role="2iSdaV" />
       </node>
       <node concept="3F0ifn" id="2VgkkwRm6bp" role="3EZMnx" />
-      <node concept="3EZMnI" id="1GhTetdXFII" role="3EZMnx">
-        <node concept="VPM3Z" id="1GhTetdXFIK" role="3F10Kt" />
-        <node concept="3vyZuw" id="1GhTetdXFNa" role="3F10Kt">
+      <node concept="3EZMnI" id="6dJ4vxiQBNP" role="3EZMnx">
+        <node concept="VPM3Z" id="6dJ4vxiQBNQ" role="3F10Kt" />
+        <node concept="3vyZuw" id="6dJ4vxiQBNR" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
-        <node concept="3F0ifn" id="1GhTetdXFIM" role="3EZMnx">
-          <property role="3F0ifm" value="Help:" />
+        <node concept="3F0ifn" id="6dJ4vxiQBNS" role="3EZMnx">
+          <property role="3F0ifm" value="Help (white/black list):" />
         </node>
-        <node concept="3F0ifn" id="1GhTetdX$PF" role="3EZMnx">
+        <node concept="3F0ifn" id="6dJ4vxiQBNT" role="3EZMnx">
           <property role="3F0ifm" value="If considered modules is not empty, then we take all modules with matching names and then filter out the modules whose names match the ignored modules." />
-          <node concept="VechU" id="1GhTetdX$SR" role="3F10Kt">
+          <node concept="VechU" id="6dJ4vxiQBNU" role="3F10Kt">
             <property role="Vb096" value="gray" />
           </node>
         </node>
-        <node concept="3F0ifn" id="1GhTetdX$Wd" role="3EZMnx">
+        <node concept="3F0ifn" id="6dJ4vxiQBNV" role="3EZMnx">
           <property role="3F0ifm" value="If considered modules is empty, then we take all modules from scope and then filter out the modules whose names match the ignored modules." />
-          <node concept="VechU" id="1GhTetdX$We" role="3F10Kt">
+          <node concept="VechU" id="6dJ4vxiQBNW" role="3F10Kt">
             <property role="Vb096" value="gray" />
           </node>
         </node>
-        <node concept="2iRkQZ" id="1GhTetdXFIN" role="2iSdaV" />
+        <node concept="2iRkQZ" id="6dJ4vxiQBNX" role="2iSdaV" />
       </node>
       <node concept="3F0ifn" id="1GhTetdX$Rg" role="3EZMnx" />
       <node concept="3F0ifn" id="7vLq_hstMlL" role="3EZMnx">
@@ -276,10 +338,23 @@
       </node>
       <node concept="2iRkQZ" id="7vLq_hstMb2" role="2iSdaV" />
     </node>
+    <node concept="3EZMnI" id="6dJ4vxiQb1p" role="6VMZX">
+      <node concept="3F0ifn" id="6dJ4vxiQb1G" role="3EZMnx">
+        <property role="3F0ifm" value="Help:" />
+      </node>
+      <node concept="3F0ifn" id="6dJ4vxiQb1Q" role="3EZMnx" />
+      <node concept="2iRkQZ" id="6dJ4vxiQb1q" role="2iSdaV" />
+      <node concept="3F0ifn" id="6dJ4vxiQb1x" role="3EZMnx">
+        <property role="3F0ifm" value="minimal suffix size - minimal depth of a node to be considered part of a clone" />
+      </node>
+      <node concept="3F0ifn" id="6dJ4vxiQb1_" role="3EZMnx">
+        <property role="3F0ifm" value="minimal number of siblings - minimal number of sibling nodes of a clone (similar to 'number of lines')" />
+      </node>
+    </node>
   </node>
   <node concept="24kQdi" id="7vLq_hstMm4">
     <property role="3GE5qa" value="ignored_elements" />
-    <ref role="1XX52x" to="mpzi:7vLq_hstMm0" resolve="IgnoredElement" />
+    <ref role="1XX52x" to="mpzi:7vLq_hstMm0" resolve="NamePattern" />
     <node concept="3EZMnI" id="1GhTetdXIsQ" role="2wV5jI">
       <node concept="l2Vlx" id="1GhTetdXIsR" role="2iSdaV" />
       <node concept="3F0A7n" id="7vLq_hstMm6" role="3EZMnx">

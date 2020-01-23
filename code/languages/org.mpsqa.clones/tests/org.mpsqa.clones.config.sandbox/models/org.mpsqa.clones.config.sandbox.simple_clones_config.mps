@@ -11,10 +11,13 @@
       <concept id="3373285491509768572" name="org.mpsqa.clones.config.structure.Comment" flags="ng" index="pIQ0O">
         <property id="3373285491509768579" name="val" index="pIQ3b" />
       </concept>
-      <concept id="8642806070461801856" name="org.mpsqa.clones.config.structure.IgnoredElement" flags="ng" index="Fx$Zk">
+      <concept id="8642806070461801856" name="org.mpsqa.clones.config.structure.NamePattern" flags="ng" index="Fx$Zk">
         <property id="8642806070461801857" name="value" index="Fx$Zl" />
       </concept>
       <concept id="8642806070461796367" name="org.mpsqa.clones.config.structure.ClonesDetectionConfig" flags="ng" index="FxBDr">
+        <property id="7164965290409240908" name="minimalNumberOfSiblings" index="LHVyO" />
+        <property id="7164965290409240897" name="minimalSuffixSize" index="LHVyT" />
+        <property id="7164965290409240901" name="maximalSuffixSize" index="LHVyX" />
         <child id="7342432778946760608" name="postprocessor" index="2dEW0l" />
         <child id="3373285491508535697" name="scope" index="py33p" />
         <child id="8642806070461801869" name="ignoredModels" index="Fx$Zp" />
@@ -43,6 +46,9 @@
   </registry>
   <node concept="FxBDr" id="7vLq_hsu6FX">
     <property role="TrG5h" value="simple_config_sandbox" />
+    <property role="LHVyT" value="2" />
+    <property role="LHVyX" value="10" />
+    <property role="LHVyO" value="8" />
     <node concept="Fx$Zk" id="6n_zVnCAe$W" role="Fx$Zu">
       <property role="Fx$Zl" value="jetbrains.mps.lang.project.modules" />
     </node>
@@ -116,7 +122,31 @@
       <property role="Fx$Zl" value="com.mbeddr.core.stdlib.*" />
     </node>
     <node concept="Fx$Zk" id="4vC8Gjx0vMB" role="Fx$Zp">
-      <property role="Fx$Zl" value="groovy.*" />
+      <property role="Fx$Zl" value=".*groovy.*" />
+    </node>
+    <node concept="Fx$Zk" id="6dJ4vxiMutm" role="Fx$Zp">
+      <property role="Fx$Zl" value="com.polarion.*" />
+    </node>
+    <node concept="Fx$Zk" id="6dJ4vxiMuuz" role="Fx$Zp">
+      <property role="Fx$Zl" value="client_server.*" />
+    </node>
+    <node concept="Fx$Zk" id="6dJ4vxiMM$P" role="Fx$Zp">
+      <property role="Fx$Zl" value="C.E" />
+    </node>
+    <node concept="Fx$Zk" id="6dJ4vxiMMA8" role="Fx$Zp">
+      <property role="Fx$Zl" value="C.I" />
+    </node>
+    <node concept="Fx$Zk" id="6dJ4vxiMMBt" role="Fx$Zp">
+      <property role="Fx$Zl" value="org.plm.*" />
+    </node>
+    <node concept="Fx$Zk" id="6dJ4vxiMMCP" role="Fx$Zp">
+      <property role="Fx$Zl" value="com.och.*" />
+    </node>
+    <node concept="Fx$Zk" id="6dJ4vxiMMEg" role="Fx$Zp">
+      <property role="Fx$Zl" value="msk.*" />
+    </node>
+    <node concept="Fx$Zk" id="6dJ4vxiMMFI" role="Fx$Zp">
+      <property role="Fx$Zl" value="antlr.*" />
     </node>
     <node concept="pIQ0O" id="2VgkkwRqRjQ" role="1FAEnG">
       <property role="pIQ3b" value="java baseLanguage concepts" />
@@ -179,16 +209,16 @@
     <node concept="Fx$Zk" id="4vC8GjwSCvw" role="Fx$Zu">
       <property role="Fx$Zl" value="com.mbeddr.embedded.platform" />
     </node>
+    <node concept="py32y" id="2VgkkwRpLjH" role="py33p" />
+    <node concept="2VIB43" id="16s82eEDHxi" role="2dEW0l">
+      <property role="2VIB42" value="d:\clones_live.xml" />
+    </node>
     <node concept="1X3_iC" id="4vC8Gjx0vIU" role="lGtFl">
       <property role="3V$3am" value="consideredModules" />
       <property role="3V$3ak" value="56cfcf05-92e4-4822-8126-2ea0e0cece6b/8642806070461796367/1950591795724498759" />
       <node concept="Fx$Zk" id="4vC8GjwE6Ob" role="8Wnug">
         <property role="Fx$Zl" value="com.mbeddr.*" />
       </node>
-    </node>
-    <node concept="py32y" id="2VgkkwRpLjH" role="py33p" />
-    <node concept="2VIB43" id="16s82eE9P3a" role="2dEW0l">
-      <property role="2VIB42" value="d:\clones.xml" />
     </node>
   </node>
 </model>
