@@ -833,6 +833,12 @@
         </node>
       </node>
     </node>
+    <node concept="398rNT" id="6dJ4vxiMMPU" role="1l3spd">
+      <property role="TrG5h" value="mps.macro.mpsqa.home" />
+      <node concept="398BVA" id="6dJ4vxiMMQJ" role="398pKh">
+        <ref role="398BVh" node="1GhTetdB0nZ" resolve="mpsqa.home" />
+      </node>
+    </node>
     <node concept="10PD9b" id="2JVMSZMFXJS" role="10PD9s" />
     <node concept="3b7kt6" id="2JVMSZMFXJT" role="10PD9s" />
     <node concept="1gjT0q" id="2JVMSZMFXK5" role="10PD9s" />
