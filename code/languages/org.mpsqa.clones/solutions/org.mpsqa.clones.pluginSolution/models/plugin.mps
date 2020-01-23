@@ -265,19 +265,14 @@
       <node concept="3clFbS" id="7WP_sw5x34Q" role="3clF47">
         <node concept="3clFbF" id="7WP_sw5x3Hu" role="3cqZAp">
           <node concept="2OqwBi" id="7WP_sw5x4Lm" role="3clFbG">
-            <node concept="2OqwBi" id="7WP_sw5x4cQ" role="2Oq$k0">
-              <node concept="2OqwBi" id="7WP_sw5x3LV" role="2Oq$k0">
-                <node concept="2WthIp" id="7WP_sw5x3Ht" role="2Oq$k0" />
-                <node concept="2BZ7hE" id="7WP_sw5x40p" role="2OqNvi">
-                  <ref role="2WH_rO" node="7WP_sw5wXJJ" resolve="clonesPanel" />
-                </node>
-              </node>
-              <node concept="liA8E" id="7WP_sw5x4yV" role="2OqNvi">
-                <ref role="37wK5l" to="kyr3:7WP_sw5s1Je" resolve="getTable" />
+            <node concept="2OqwBi" id="7WP_sw5x3LV" role="2Oq$k0">
+              <node concept="2WthIp" id="7WP_sw5x3Ht" role="2Oq$k0" />
+              <node concept="2BZ7hE" id="7WP_sw5x40p" role="2OqNvi">
+                <ref role="2WH_rO" node="7WP_sw5wXJJ" resolve="clonesPanel" />
               </node>
             </node>
             <node concept="liA8E" id="7WP_sw5x5p9" role="2OqNvi">
-              <ref role="37wK5l" to="kyr3:7WP_sw5s1Bi" resolve="setClones" />
+              <ref role="37wK5l" to="kyr3:6dJ4vxiP9$K" resolve="setClones" />
               <node concept="37vLTw" id="7WP_sw5x5qz" role="37wK5m">
                 <ref role="3cqZAo" node="7WP_sw5x3vS" resolve="clones" />
               </node>
@@ -304,19 +299,14 @@
       <node concept="3clFbS" id="1zTNC9MHOVs" role="3clF47">
         <node concept="3clFbF" id="1zTNC9MHPlv" role="3cqZAp">
           <node concept="2OqwBi" id="1zTNC9MHSDp" role="3clFbG">
-            <node concept="2OqwBi" id="1zTNC9MHQu2" role="2Oq$k0">
-              <node concept="2OqwBi" id="1zTNC9MHPu0" role="2Oq$k0">
-                <node concept="2WthIp" id="1zTNC9MHPlu" role="2Oq$k0" />
-                <node concept="2BZ7hE" id="1zTNC9MHPYs" role="2OqNvi">
-                  <ref role="2WH_rO" node="7WP_sw5wXJJ" resolve="clonesPanel" />
-                </node>
-              </node>
-              <node concept="liA8E" id="1zTNC9MHS2_" role="2OqNvi">
-                <ref role="37wK5l" to="kyr3:7WP_sw5s1Je" resolve="getTable" />
+            <node concept="2OqwBi" id="1zTNC9MHPu0" role="2Oq$k0">
+              <node concept="2WthIp" id="1zTNC9MHPlu" role="2Oq$k0" />
+              <node concept="2BZ7hE" id="1zTNC9MHPYs" role="2OqNvi">
+                <ref role="2WH_rO" node="7WP_sw5wXJJ" resolve="clonesPanel" />
               </node>
             </node>
             <node concept="liA8E" id="1zTNC9MHVT4" role="2OqNvi">
-              <ref role="37wK5l" to="kyr3:1zTNC9MGBYc" resolve="filterClonesAffectingRootNode" />
+              <ref role="37wK5l" to="kyr3:6dJ4vxiP9$M" resolve="filterClonesAffectingRoot" />
               <node concept="37vLTw" id="1zTNC9MHW2A" role="37wK5m">
                 <ref role="3cqZAo" node="1zTNC9MHVUC" resolve="root" />
               </node>

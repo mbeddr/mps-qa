@@ -1536,6 +1536,28 @@
       </node>
     </node>
     <node concept="2tJIrI" id="7WP_sw5wG9g" role="jymVt" />
+    <node concept="312cEg" id="6dJ4vxiOPoM" role="jymVt">
+      <property role="TrG5h" value="maximalSuffixSizeSpinnerModel" />
+      <node concept="3Tm6S6" id="6dJ4vxiOPoN" role="1B3o_S" />
+      <node concept="3uibUv" id="1oYl8FfriSs" role="1tU5fm">
+        <ref role="3uigEE" to="dxuu:~SpinnerModel" resolve="SpinnerModel" />
+      </node>
+    </node>
+    <node concept="312cEg" id="6dJ4vxiOywv" role="jymVt">
+      <property role="TrG5h" value="minSuffixSizeSpinnerModel" />
+      <node concept="3Tm6S6" id="6dJ4vxiOyww" role="1B3o_S" />
+      <node concept="3uibUv" id="1oYl8Fft4Bc" role="1tU5fm">
+        <ref role="3uigEE" to="dxuu:~SpinnerModel" resolve="SpinnerModel" />
+      </node>
+    </node>
+    <node concept="312cEg" id="6dJ4vxiOn0y" role="jymVt">
+      <property role="TrG5h" value="minimalCloneLengthSpinnerModel" />
+      <node concept="3Tm6S6" id="6dJ4vxiOn0z" role="1B3o_S" />
+      <node concept="3uibUv" id="1oYl8FfuPlr" role="1tU5fm">
+        <ref role="3uigEE" to="dxuu:~SpinnerModel" resolve="SpinnerModel" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6dJ4vxiOkPO" role="jymVt" />
     <node concept="3clFbW" id="7WP_sw5s1HY" role="jymVt">
       <node concept="3cqZAl" id="7WP_sw5s1HZ" role="3clF45" />
       <node concept="37vLTG" id="7WP_sw5s1I0" role="3clF46">
@@ -1692,6 +1714,20 @@
           </node>
         </node>
         <node concept="3clFbH" id="1oYl8FfocJD" role="3cqZAp" />
+        <node concept="3cpWs8" id="6dJ4vxiNeCv" role="3cqZAp">
+          <node concept="3cpWsn" id="6dJ4vxiNeCw" role="3cpWs9">
+            <property role="TrG5h" value="settings" />
+            <property role="3TUv4t" value="true" />
+            <node concept="3uibUv" id="6dJ4vxiNeCt" role="1tU5fm">
+              <ref role="3uigEE" to="2e2r:1oYl8FfodCD" resolve="ClonesDetectorSettings" />
+            </node>
+            <node concept="10M0yZ" id="6dJ4vxiNeCx" role="33vP2m">
+              <ref role="1PxDUh" to="9vt7:1oYl8Ffq3Xu" resolve="ClonesDetectorRunner" />
+              <ref role="3cqZAo" to="9vt7:1oYl8Ffq4i$" resolve="lastSettings" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6dJ4vxiNFoN" role="3cqZAp" />
         <node concept="3cpWs8" id="1oYl8Ffs1gL" role="3cqZAp">
           <node concept="3cpWsn" id="1oYl8Ffs1gM" role="3cpWs9">
             <property role="TrG5h" value="suffixSizePanel" />
@@ -1734,17 +1770,12 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="1oYl8FfrgXe" role="3cqZAp">
-          <node concept="3cpWsn" id="1oYl8FfrgXd" role="3cpWs9">
-            <property role="TrG5h" value="maximalSuffixSizeSpinnerModel" />
-            <property role="3TUv4t" value="true" />
-            <node concept="3uibUv" id="1oYl8FfriSs" role="1tU5fm">
-              <ref role="3uigEE" to="dxuu:~SpinnerModel" resolve="SpinnerModel" />
-            </node>
-            <node concept="2ShNRf" id="1oYl8Ffri4w" role="33vP2m">
+        <node concept="3clFbF" id="6dJ4vxiOHLn" role="3cqZAp">
+          <node concept="37vLTI" id="6dJ4vxiOHLp" role="3clFbG">
+            <node concept="2ShNRf" id="1oYl8Ffri4w" role="37vLTx">
               <node concept="1pGfFk" id="1oYl8Ffri4Q" role="2ShVmc">
                 <ref role="37wK5l" to="dxuu:~SpinnerNumberModel.&lt;init&gt;(int,int,int,int)" resolve="SpinnerNumberModel" />
-                <node concept="10M0yZ" id="2JVMSZMFDMu" role="37wK5m">
+                <node concept="10M0yZ" id="6dJ4vxiO1Gn" role="37wK5m">
                   <ref role="3cqZAo" to="2e2r:2JVMSZMFxmE" resolve="DEFAULT_MAXIMAL_SUFFIX_SIZE" />
                   <ref role="1PxDUh" to="2e2r:1oYl8FfodCD" resolve="ClonesDetectorSettings" />
                 </node>
@@ -1759,6 +1790,9 @@
                 </node>
               </node>
             </node>
+            <node concept="37vLTw" id="6dJ4vxiOHLt" role="37vLTJ">
+              <ref role="3cqZAo" node="6dJ4vxiOPoM" resolve="maximalSuffixSizeSpinnerModel" />
+            </node>
           </node>
         </node>
         <node concept="3cpWs8" id="1oYl8FfrgXj" role="3cqZAp">
@@ -1771,7 +1805,7 @@
               <node concept="1pGfFk" id="1oYl8Ffri4l" role="2ShVmc">
                 <ref role="37wK5l" to="dxuu:~JSpinner.&lt;init&gt;(javax.swing.SpinnerModel)" resolve="JSpinner" />
                 <node concept="37vLTw" id="1oYl8Ffri4m" role="37wK5m">
-                  <ref role="3cqZAo" node="1oYl8FfrgXd" resolve="maximalSuffixSizeSpinnerModel" />
+                  <ref role="3cqZAo" node="6dJ4vxiOPoM" resolve="maximalSuffixSizeSpinnerModel" />
                 </node>
               </node>
             </node>
@@ -1808,7 +1842,7 @@
                               <node concept="10QFUN" id="1oYl8FfrSQV" role="1eOMHV">
                                 <node concept="2OqwBi" id="1oYl8FfrSQS" role="10QFUP">
                                   <node concept="37vLTw" id="1oYl8FfrSQT" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="1oYl8FfrgXd" resolve="maximalSuffixSizeSpinnerModel" />
+                                    <ref role="3cqZAo" node="6dJ4vxiOPoM" resolve="maximalSuffixSizeSpinnerModel" />
                                   </node>
                                   <node concept="liA8E" id="1oYl8FfrSQU" role="2OqNvi">
                                     <ref role="37wK5l" to="dxuu:~SpinnerModel.getValue():java.lang.Object" resolve="getValue" />
@@ -1821,9 +1855,8 @@
                               <node concept="2OwXpG" id="1oYl8FfrN6C" role="2OqNvi">
                                 <ref role="2Oxat5" to="2e2r:1oYl8FfoCUT" resolve="maximalSuffixSize" />
                               </node>
-                              <node concept="10M0yZ" id="2JVMSZMFs5$" role="2Oq$k0">
-                                <ref role="1PxDUh" to="9vt7:1oYl8Ffq3Xu" resolve="ClonesDetectorRunner" />
-                                <ref role="3cqZAo" to="9vt7:1oYl8Ffq4i$" resolve="lastSettings" />
+                              <node concept="37vLTw" id="6dJ4vxiNsLr" role="2Oq$k0">
+                                <ref role="3cqZAo" node="6dJ4vxiNeCw" resolve="settings" />
                               </node>
                             </node>
                           </node>
@@ -1879,17 +1912,12 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="1oYl8Fft4Ba" role="3cqZAp">
-          <node concept="3cpWsn" id="1oYl8Fft4Bb" role="3cpWs9">
-            <property role="TrG5h" value="minSuffixSizeSpinnerModel" />
-            <property role="3TUv4t" value="true" />
-            <node concept="3uibUv" id="1oYl8Fft4Bc" role="1tU5fm">
-              <ref role="3uigEE" to="dxuu:~SpinnerModel" resolve="SpinnerModel" />
-            </node>
-            <node concept="2ShNRf" id="1oYl8Fft4Bd" role="33vP2m">
+        <node concept="3clFbF" id="6dJ4vxiOsGN" role="3cqZAp">
+          <node concept="37vLTI" id="6dJ4vxiOsGP" role="3clFbG">
+            <node concept="2ShNRf" id="1oYl8Fft4Bd" role="37vLTx">
               <node concept="1pGfFk" id="1oYl8Fft4Be" role="2ShVmc">
                 <ref role="37wK5l" to="dxuu:~SpinnerNumberModel.&lt;init&gt;(int,int,int,int)" resolve="SpinnerNumberModel" />
-                <node concept="10M0yZ" id="2JVMSZMFFz9" role="37wK5m">
+                <node concept="10M0yZ" id="6dJ4vxiO5tn" role="37wK5m">
                   <ref role="3cqZAo" to="2e2r:2JVMSZMFwz7" resolve="DEFAULT_MINIMAL_SUFFIX_SIZE" />
                   <ref role="1PxDUh" to="2e2r:1oYl8FfodCD" resolve="ClonesDetectorSettings" />
                 </node>
@@ -1904,6 +1932,9 @@
                 </node>
               </node>
             </node>
+            <node concept="37vLTw" id="6dJ4vxiOsGT" role="37vLTJ">
+              <ref role="3cqZAo" node="6dJ4vxiOywv" resolve="minSuffixSizeSpinnerModel" />
+            </node>
           </node>
         </node>
         <node concept="3cpWs8" id="1oYl8Fft4Bj" role="3cqZAp">
@@ -1916,7 +1947,7 @@
               <node concept="1pGfFk" id="1oYl8Fft4Bn" role="2ShVmc">
                 <ref role="37wK5l" to="dxuu:~JSpinner.&lt;init&gt;(javax.swing.SpinnerModel)" resolve="JSpinner" />
                 <node concept="37vLTw" id="1oYl8Fft4Bo" role="37wK5m">
-                  <ref role="3cqZAo" node="1oYl8Fft4Bb" resolve="minSuffixSizeSpinnerModel" />
+                  <ref role="3cqZAo" node="6dJ4vxiOywv" resolve="minSuffixSizeSpinnerModel" />
                 </node>
               </node>
             </node>
@@ -1953,7 +1984,7 @@
                               <node concept="10QFUN" id="1oYl8Fft4BE" role="1eOMHV">
                                 <node concept="2OqwBi" id="1oYl8Fft4BF" role="10QFUP">
                                   <node concept="37vLTw" id="1oYl8Fft4BG" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="1oYl8Fft4Bb" resolve="minSuffixSizeSpinnerModel" />
+                                    <ref role="3cqZAo" node="6dJ4vxiOywv" resolve="minSuffixSizeSpinnerModel" />
                                   </node>
                                   <node concept="liA8E" id="1oYl8Fft4BH" role="2OqNvi">
                                     <ref role="37wK5l" to="dxuu:~SpinnerModel.getValue():java.lang.Object" resolve="getValue" />
@@ -1966,9 +1997,8 @@
                               <node concept="2OwXpG" id="1oYl8Fftzxj" role="2OqNvi">
                                 <ref role="2Oxat5" to="2e2r:1oYl8FftbCe" resolve="minimalSuffixSize" />
                               </node>
-                              <node concept="10M0yZ" id="2JVMSZMFswK" role="2Oq$k0">
-                                <ref role="3cqZAo" to="9vt7:1oYl8Ffq4i$" resolve="lastSettings" />
-                                <ref role="1PxDUh" to="9vt7:1oYl8Ffq3Xu" resolve="ClonesDetectorRunner" />
+                              <node concept="37vLTw" id="6dJ4vxiNNxX" role="2Oq$k0">
+                                <ref role="3cqZAo" node="6dJ4vxiNeCw" resolve="settings" />
                               </node>
                             </node>
                           </node>
@@ -2050,17 +2080,12 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="1oYl8FfuPlp" role="3cqZAp">
-          <node concept="3cpWsn" id="1oYl8FfuPlq" role="3cpWs9">
-            <property role="TrG5h" value="minimalCloneLengthSpinnerModel" />
-            <property role="3TUv4t" value="true" />
-            <node concept="3uibUv" id="1oYl8FfuPlr" role="1tU5fm">
-              <ref role="3uigEE" to="dxuu:~SpinnerModel" resolve="SpinnerModel" />
-            </node>
-            <node concept="2ShNRf" id="1oYl8FfuPls" role="33vP2m">
+        <node concept="3clFbF" id="6dJ4vxiOeyn" role="3cqZAp">
+          <node concept="37vLTI" id="6dJ4vxiOeyp" role="3clFbG">
+            <node concept="2ShNRf" id="1oYl8FfuPls" role="37vLTx">
               <node concept="1pGfFk" id="1oYl8FfuPlt" role="2ShVmc">
                 <ref role="37wK5l" to="dxuu:~SpinnerNumberModel.&lt;init&gt;(int,int,int,int)" resolve="SpinnerNumberModel" />
-                <node concept="10M0yZ" id="2JVMSZMFG$c" role="37wK5m">
+                <node concept="10M0yZ" id="6dJ4vxiO99V" role="37wK5m">
                   <ref role="3cqZAo" to="2e2r:2JVMSZMFydW" resolve="DEFAULT_MINIMUM_NUMBER_OF_SIBLINGS" />
                   <ref role="1PxDUh" to="2e2r:1oYl8FfodCD" resolve="ClonesDetectorSettings" />
                 </node>
@@ -2075,6 +2100,9 @@
                 </node>
               </node>
             </node>
+            <node concept="37vLTw" id="6dJ4vxiOeyt" role="37vLTJ">
+              <ref role="3cqZAo" node="6dJ4vxiOn0y" resolve="minimalCloneLengthSpinnerModel" />
+            </node>
           </node>
         </node>
         <node concept="3cpWs8" id="1oYl8FfuPly" role="3cqZAp">
@@ -2087,7 +2115,7 @@
               <node concept="1pGfFk" id="1oYl8FfuPlA" role="2ShVmc">
                 <ref role="37wK5l" to="dxuu:~JSpinner.&lt;init&gt;(javax.swing.SpinnerModel)" resolve="JSpinner" />
                 <node concept="37vLTw" id="1oYl8FfuPlB" role="37wK5m">
-                  <ref role="3cqZAo" node="1oYl8FfuPlq" resolve="minimalCloneLengthSpinnerModel" />
+                  <ref role="3cqZAo" node="6dJ4vxiOn0y" resolve="minimalCloneLengthSpinnerModel" />
                 </node>
               </node>
             </node>
@@ -2124,7 +2152,7 @@
                               <node concept="10QFUN" id="1oYl8FfuPlT" role="1eOMHV">
                                 <node concept="2OqwBi" id="1oYl8FfuPlU" role="10QFUP">
                                   <node concept="37vLTw" id="1oYl8FfuPlV" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="1oYl8FfuPlq" resolve="minimalCloneLengthSpinnerModel" />
+                                    <ref role="3cqZAo" node="6dJ4vxiOn0y" resolve="minimalCloneLengthSpinnerModel" />
                                   </node>
                                   <node concept="liA8E" id="1oYl8FfuPlW" role="2OqNvi">
                                     <ref role="37wK5l" to="dxuu:~SpinnerModel.getValue():java.lang.Object" resolve="getValue" />
@@ -2137,9 +2165,8 @@
                               <node concept="2OwXpG" id="1oYl8Ffv5oH" role="2OqNvi">
                                 <ref role="2Oxat5" to="2e2r:1oYl8FfoCVF" resolve="minimumNumberOfSiblings" />
                               </node>
-                              <node concept="10M0yZ" id="2JVMSZMFt4w" role="2Oq$k0">
-                                <ref role="3cqZAo" to="9vt7:1oYl8Ffq4i$" resolve="lastSettings" />
-                                <ref role="1PxDUh" to="9vt7:1oYl8Ffq3Xu" resolve="ClonesDetectorRunner" />
+                              <node concept="37vLTw" id="6dJ4vxiNYSK" role="2Oq$k0">
+                                <ref role="3cqZAo" node="6dJ4vxiNeCw" resolve="settings" />
                               </node>
                             </node>
                           </node>
@@ -2439,21 +2466,130 @@
       </node>
       <node concept="3Tm1VV" id="7WP_sw5s1Jd" role="1B3o_S" />
     </node>
-    <node concept="2tJIrI" id="7WP_sw5wQ5J" role="jymVt" />
-    <node concept="3clFb_" id="7WP_sw5s1Je" role="jymVt">
-      <property role="TrG5h" value="getTable" />
-      <node concept="3clFbS" id="7WP_sw5s1Jf" role="3clF47">
-        <node concept="3clFbF" id="7WP_sw5s1Jg" role="3cqZAp">
-          <node concept="37vLTw" id="7WP_sw5s1Ji" role="3clFbG">
-            <ref role="3cqZAo" node="7WP_sw5s1HR" resolve="clonesTable" />
+    <node concept="2tJIrI" id="6dJ4vxiP6xG" role="jymVt" />
+    <node concept="3clFb_" id="6dJ4vxiP9$K" role="jymVt">
+      <property role="TrG5h" value="setClones" />
+      <node concept="37vLTG" id="7WP_sw5x3vS" role="3clF46">
+        <property role="TrG5h" value="clones" />
+        <node concept="_YKpA" id="7WP_sw5x3vQ" role="1tU5fm">
+          <node concept="3uibUv" id="7WP_sw5x3DL" role="_ZDj9">
+            <ref role="3uigEE" to="2e2r:5dW8pSK6_ts" resolve="Clone" />
           </node>
         </node>
       </node>
-      <node concept="3Tm1VV" id="7WP_sw5s1Jk" role="1B3o_S" />
-      <node concept="3uibUv" id="7WP_sw5s1Jl" role="3clF45">
-        <ref role="3uigEE" node="7WP_sw5s1A5" resolve="ClonesOverviewTable" />
+      <node concept="3cqZAl" id="7WP_sw5x3lA" role="3clF45" />
+      <node concept="3clFbS" id="7WP_sw5x34Q" role="3clF47">
+        <node concept="3clFbF" id="7WP_sw5x3Hu" role="3cqZAp">
+          <node concept="2OqwBi" id="7WP_sw5x4Lm" role="3clFbG">
+            <node concept="37vLTw" id="6dJ4vxiPfQO" role="2Oq$k0">
+              <ref role="3cqZAo" node="7WP_sw5s1HR" resolve="clonesTable" />
+            </node>
+            <node concept="liA8E" id="7WP_sw5x5p9" role="2OqNvi">
+              <ref role="37wK5l" node="7WP_sw5s1Bi" resolve="setClones" />
+              <node concept="37vLTw" id="7WP_sw5x5qz" role="37wK5m">
+                <ref role="3cqZAo" node="7WP_sw5x3vS" resolve="clones" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6dJ4vxiPzUP" role="3cqZAp" />
+        <node concept="3clFbJ" id="6dJ4vxiP$Gd" role="3cqZAp">
+          <node concept="3clFbS" id="6dJ4vxiP$Gf" role="3clFbx">
+            <node concept="3clFbF" id="6dJ4vxiPBHU" role="3cqZAp">
+              <node concept="2OqwBi" id="6dJ4vxiPBHV" role="3clFbG">
+                <node concept="37vLTw" id="6dJ4vxiPCBy" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6dJ4vxiOywv" resolve="minSuffixSizeSpinnerModel" />
+                </node>
+                <node concept="liA8E" id="6dJ4vxiPBHX" role="2OqNvi">
+                  <ref role="37wK5l" to="dxuu:~SpinnerModel.setValue(java.lang.Object):void" resolve="setValue" />
+                  <node concept="2OqwBi" id="6dJ4vxiPBHY" role="37wK5m">
+                    <node concept="10M0yZ" id="6dJ4vxiPBHZ" role="2Oq$k0">
+                      <ref role="1PxDUh" to="9vt7:1oYl8Ffq3Xu" resolve="ClonesDetectorRunner" />
+                      <ref role="3cqZAo" to="9vt7:1oYl8Ffq4i$" resolve="lastSettings" />
+                    </node>
+                    <node concept="2OwXpG" id="6dJ4vxiPDdi" role="2OqNvi">
+                      <ref role="2Oxat5" to="2e2r:1oYl8FftbCe" resolve="minimalSuffixSize" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="6dJ4vxiPAjs" role="3cqZAp">
+              <node concept="2OqwBi" id="6dJ4vxiPAO9" role="3clFbG">
+                <node concept="37vLTw" id="6dJ4vxiPAjq" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6dJ4vxiOPoM" resolve="maximalSuffixSizeSpinnerModel" />
+                </node>
+                <node concept="liA8E" id="6dJ4vxiPB4X" role="2OqNvi">
+                  <ref role="37wK5l" to="dxuu:~SpinnerModel.setValue(java.lang.Object):void" resolve="setValue" />
+                  <node concept="2OqwBi" id="6dJ4vxiPBfy" role="37wK5m">
+                    <node concept="10M0yZ" id="6dJ4vxiPB7j" role="2Oq$k0">
+                      <ref role="1PxDUh" to="9vt7:1oYl8Ffq3Xu" resolve="ClonesDetectorRunner" />
+                      <ref role="3cqZAo" to="9vt7:1oYl8Ffq4i$" resolve="lastSettings" />
+                    </node>
+                    <node concept="2OwXpG" id="6dJ4vxiPBAN" role="2OqNvi">
+                      <ref role="2Oxat5" to="2e2r:1oYl8FfoCUT" resolve="maximalSuffixSize" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="6dJ4vxiPBIF" role="3cqZAp">
+              <node concept="2OqwBi" id="6dJ4vxiPBIG" role="3clFbG">
+                <node concept="37vLTw" id="6dJ4vxiPEcx" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6dJ4vxiOn0y" resolve="minimalCloneLengthSpinnerModel" />
+                </node>
+                <node concept="liA8E" id="6dJ4vxiPBII" role="2OqNvi">
+                  <ref role="37wK5l" to="dxuu:~SpinnerModel.setValue(java.lang.Object):void" resolve="setValue" />
+                  <node concept="2OqwBi" id="6dJ4vxiPBIJ" role="37wK5m">
+                    <node concept="10M0yZ" id="6dJ4vxiPBIK" role="2Oq$k0">
+                      <ref role="1PxDUh" to="9vt7:1oYl8Ffq3Xu" resolve="ClonesDetectorRunner" />
+                      <ref role="3cqZAo" to="9vt7:1oYl8Ffq4i$" resolve="lastSettings" />
+                    </node>
+                    <node concept="2OwXpG" id="6dJ4vxiPEKW" role="2OqNvi">
+                      <ref role="2Oxat5" to="2e2r:1oYl8FfoCVF" resolve="minimumNumberOfSiblings" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3y3z36" id="6dJ4vxiP_gb" role="3clFbw">
+            <node concept="10Nm6u" id="6dJ4vxiP_JW" role="3uHU7w" />
+            <node concept="10M0yZ" id="6dJ4vxiP$Va" role="3uHU7B">
+              <ref role="3cqZAo" to="9vt7:1oYl8Ffq4i$" resolve="lastSettings" />
+              <ref role="1PxDUh" to="9vt7:1oYl8Ffq3Xu" resolve="ClonesDetectorRunner" />
+            </node>
+          </node>
+        </node>
       </node>
+      <node concept="3Tm1VV" id="6dJ4vxiPcFl" role="1B3o_S" />
     </node>
+    <node concept="2tJIrI" id="6dJ4vxiPgGR" role="jymVt" />
+    <node concept="3clFb_" id="6dJ4vxiP9$M" role="jymVt">
+      <property role="TrG5h" value="filterClonesAffectingRoot" />
+      <node concept="37vLTG" id="1zTNC9MHVUC" role="3clF46">
+        <property role="TrG5h" value="root" />
+        <node concept="3Tqbb2" id="1zTNC9MHW24" role="1tU5fm" />
+      </node>
+      <node concept="3cqZAl" id="1zTNC9MHPdv" role="3clF45" />
+      <node concept="3clFbS" id="1zTNC9MHOVs" role="3clF47">
+        <node concept="3clFbF" id="1zTNC9MHPlv" role="3cqZAp">
+          <node concept="2OqwBi" id="1zTNC9MHSDp" role="3clFbG">
+            <node concept="37vLTw" id="6dJ4vxiPmRe" role="2Oq$k0">
+              <ref role="3cqZAo" node="7WP_sw5s1HR" resolve="clonesTable" />
+            </node>
+            <node concept="liA8E" id="1zTNC9MHVT4" role="2OqNvi">
+              <ref role="37wK5l" node="1zTNC9MGBYc" resolve="filterClonesAffectingRootNode" />
+              <node concept="37vLTw" id="1zTNC9MHW2A" role="37wK5m">
+                <ref role="3cqZAo" node="1zTNC9MHVUC" resolve="root" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6dJ4vxiPjB2" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="6dJ4vxiP6NH" role="jymVt" />
   </node>
   <node concept="312cEu" id="E3aAvrHM5t">
     <property role="TrG5h" value="ClonesDetailsTableModel" />
