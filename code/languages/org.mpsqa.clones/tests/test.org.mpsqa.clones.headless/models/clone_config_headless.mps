@@ -7,14 +7,21 @@
   <imports />
   <registry>
     <language id="56cfcf05-92e4-4822-8126-2ea0e0cece6b" name="org.mpsqa.clones.config">
+      <concept id="7342432778946760552" name="org.mpsqa.clones.config.structure.ClonesSaver" flags="ng" index="2dEW3t">
+        <property id="7342432778946760553" name="path" index="2dEW3s" />
+      </concept>
       <concept id="3373285491508535779" name="org.mpsqa.clones.config.structure.ProjectScope" flags="ng" index="py32F" />
       <concept id="3373285491509768572" name="org.mpsqa.clones.config.structure.Comment" flags="ng" index="pIQ0O">
         <property id="3373285491509768579" name="val" index="pIQ3b" />
       </concept>
-      <concept id="8642806070461801856" name="org.mpsqa.clones.config.structure.IgnoredElement" flags="ng" index="Fx$Zk">
+      <concept id="8642806070461801856" name="org.mpsqa.clones.config.structure.NamePattern" flags="ng" index="Fx$Zk">
         <property id="8642806070461801857" name="value" index="Fx$Zl" />
       </concept>
       <concept id="8642806070461796367" name="org.mpsqa.clones.config.structure.ClonesDetectionConfig" flags="ng" index="FxBDr">
+        <property id="7164965290409240908" name="minimalNumberOfSiblings" index="LHVyO" />
+        <property id="7164965290409240897" name="minimalSuffixSize" index="LHVyT" />
+        <property id="7164965290409240901" name="maximalSuffixSize" index="LHVyX" />
+        <child id="7342432778946760608" name="postprocessor" index="2dEW0l" />
         <child id="3373285491508535697" name="scope" index="py33p" />
         <child id="8642806070461801866" name="ignoredModules" index="Fx$Zu" />
         <child id="1950591795724498759" name="consideredModules" index="1mSHew" />
@@ -29,8 +36,11 @@
   </registry>
   <node concept="FxBDr" id="7vLq_hsu6FX">
     <property role="TrG5h" value="simple_config_headless_tests" />
+    <property role="LHVyT" value="2" />
+    <property role="LHVyX" value="10" />
+    <property role="LHVyO" value="4" />
     <node concept="Fx$Zk" id="1GhTetdXQxM" role="1mSHew">
-      <property role="Fx$Zl" value="org.mpsqa.*" />
+      <property role="Fx$Zl" value=".*org.mpsqa.*" />
     </node>
     <node concept="pIQ0O" id="2VgkkwRqRjQ" role="1FAEnG">
       <property role="pIQ3b" value="java baseLanguage concepts" />
@@ -54,6 +64,9 @@
       <property role="Fx$Zl" value=".*lib" />
     </node>
     <node concept="py32F" id="7YZJmepzrg1" role="py33p" />
+    <node concept="2dEW3t" id="16s82eEDOMg" role="2dEW0l">
+      <property role="2dEW3s" value="d:\clones.xml" />
+    </node>
   </node>
 </model>
 

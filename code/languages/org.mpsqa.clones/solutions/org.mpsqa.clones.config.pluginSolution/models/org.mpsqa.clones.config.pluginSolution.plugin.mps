@@ -307,8 +307,8 @@
                         </node>
                         <node concept="3clFbF" id="1oYl8FfqYSF" role="3cqZAp">
                           <node concept="2YIFZM" id="GBiWXwHbrg" role="3clFbG">
-                            <ref role="37wK5l" to="9vt7:7vLq_hstReX" resolve="runClonesDetector" />
                             <ref role="1Pybhc" to="9vt7:1oYl8Ffq3Xu" resolve="ClonesDetectorRunner" />
+                            <ref role="37wK5l" to="9vt7:7vLq_hstReX" resolve="runClonesDetector" />
                             <node concept="37vLTw" id="7vLq_hsucTF" role="37wK5m">
                               <ref role="3cqZAo" node="7vLq_hsucDG" resolve="settings" />
                             </node>
@@ -318,6 +318,7 @@
                             <node concept="37vLTw" id="1oYl8FfqZ5o" role="37wK5m">
                               <ref role="3cqZAo" node="7WP_sw5xgmi" resolve="proj" />
                             </node>
+                            <node concept="3clFbT" id="6dJ4vxiS0Fc" role="37wK5m" />
                           </node>
                         </node>
                       </node>

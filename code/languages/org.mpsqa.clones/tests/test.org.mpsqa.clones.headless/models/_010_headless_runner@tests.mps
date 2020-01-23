@@ -114,7 +114,7 @@
     <property role="2XOHcw" value="${mpsqa.home}/code/languages/org.mpsqa.clones" />
   </node>
   <node concept="1lH9Xt" id="7YZJmepzqZp">
-    <property role="TrG5h" value="RunHeadless" />
+    <property role="TrG5h" value="TestRunHeadless" />
     <node concept="1LZb2c" id="7YZJmepzqZz" role="1SL9yI">
       <property role="TrG5h" value="run_clones_headless" />
       <node concept="3cqZAl" id="7YZJmepzqZ$" role="3clF45" />
@@ -125,10 +125,10 @@
             <node concept="H_c77" id="7YZJmepB4GQ" role="1tU5fm" />
             <node concept="2OqwBi" id="7YZJmepB4GU" role="33vP2m">
               <node concept="1Xw6AR" id="7YZJmepB4GV" role="2Oq$k0">
-                <node concept="1dCxOl" id="7YZJmepB4GW" role="1XwpL7">
+                <node concept="1dCxOl" id="6dJ4vxiRtDq" role="1XwpL7">
                   <property role="1XweGQ" value="r:f245e375-a66b-4901-b97c-e702a02226c8" />
-                  <node concept="1j_P7g" id="7YZJmepB4GX" role="1j$8Uc">
-                    <property role="1j_P7h" value="test.org.mpsqa.clones.headless.clone_config_01" />
+                  <node concept="1j_P7g" id="6dJ4vxiRtDr" role="1j$8Uc">
+                    <property role="1j_P7h" value="test.org.mpsqa.clones.headless.clone_config_headless" />
                   </node>
                 </node>
               </node>
