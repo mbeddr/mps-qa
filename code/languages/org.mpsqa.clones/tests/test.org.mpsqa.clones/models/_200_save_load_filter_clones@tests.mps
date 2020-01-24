@@ -234,28 +234,21 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="16s82eEmlPU" role="3cqZAp">
-          <node concept="3cpWsn" id="16s82eEmlPV" role="3cpWs9">
-            <property role="TrG5h" value="file" />
-            <node concept="3uibUv" id="16s82eEmlPP" role="1tU5fm">
-              <ref role="3uigEE" to="guwi:~File" resolve="File" />
-            </node>
-            <node concept="2ShNRf" id="16s82eEmlPW" role="33vP2m">
-              <node concept="1pGfFk" id="16s82eEmlPX" role="2ShVmc">
-                <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-                <node concept="3cpWs3" id="16s82eEmlPY" role="37wK5m">
-                  <node concept="Xl_RD" id="16s82eEmlPZ" role="3uHU7w">
-                    <property role="Xl_RC" value="clones.xml" />
-                  </node>
-                  <node concept="3cpWs3" id="16s82eEmlQ0" role="3uHU7B">
-                    <node concept="37vLTw" id="16s82eEmlQ1" role="3uHU7B">
-                      <ref role="3cqZAo" node="16s82eEmiLk" resolve="tempDir" />
-                    </node>
-                    <node concept="10M0yZ" id="16s82eEmlQ2" role="3uHU7w">
-                      <ref role="3cqZAo" to="guwi:~File.separator" resolve="separator" />
-                      <ref role="1PxDUh" to="guwi:~File" resolve="File" />
-                    </node>
-                  </node>
+        <node concept="3cpWs8" id="6dJ4vxiT9gM" role="3cqZAp">
+          <node concept="3cpWsn" id="6dJ4vxiT9gN" role="3cpWs9">
+            <property role="TrG5h" value="filePath" />
+            <node concept="17QB3L" id="6dJ4vxiT9gI" role="1tU5fm" />
+            <node concept="3cpWs3" id="6dJ4vxiT9gO" role="33vP2m">
+              <node concept="Xl_RD" id="6dJ4vxiT9gP" role="3uHU7w">
+                <property role="Xl_RC" value="clones.xml" />
+              </node>
+              <node concept="3cpWs3" id="6dJ4vxiT9gQ" role="3uHU7B">
+                <node concept="37vLTw" id="6dJ4vxiT9gR" role="3uHU7B">
+                  <ref role="3cqZAo" node="16s82eEmiLk" resolve="tempDir" />
+                </node>
+                <node concept="10M0yZ" id="6dJ4vxiT9gS" role="3uHU7w">
+                  <ref role="3cqZAo" to="guwi:~File.separator" resolve="separator" />
+                  <ref role="1PxDUh" to="guwi:~File" resolve="File" />
                 </node>
               </node>
             </node>
@@ -271,8 +264,8 @@
             <node concept="2ShNRf" id="16s82eEm6Aw" role="33vP2m">
               <node concept="1pGfFk" id="16s82eEm6IO" role="2ShVmc">
                 <ref role="37wK5l" to="tpy2:6n_zVnCdTZ4" resolve="ClonesSaver" />
-                <node concept="37vLTw" id="16s82eEmlQ3" role="37wK5m">
-                  <ref role="3cqZAo" node="16s82eEmlPV" resolve="file" />
+                <node concept="37vLTw" id="6dJ4vxiTaWA" role="37wK5m">
+                  <ref role="3cqZAo" node="6dJ4vxiT9gN" resolve="filePath" />
                 </node>
               </node>
             </node>
@@ -304,8 +297,8 @@
             <node concept="2ShNRf" id="16s82eEmpCT" role="33vP2m">
               <node concept="1pGfFk" id="16s82eEmq6G" role="2ShVmc">
                 <ref role="37wK5l" to="tpy2:6n_zVnCvTNJ" resolve="ClonesLoader" />
-                <node concept="37vLTw" id="16s82eEmq6V" role="37wK5m">
-                  <ref role="3cqZAo" node="16s82eEmlPV" resolve="file" />
+                <node concept="37vLTw" id="6dJ4vxiTaY6" role="37wK5m">
+                  <ref role="3cqZAo" node="6dJ4vxiT9gN" resolve="filePath" />
                 </node>
               </node>
             </node>
@@ -370,28 +363,21 @@
           </node>
         </node>
         <node concept="3clFbH" id="16s82eEo_5U" role="3cqZAp" />
-        <node concept="3cpWs8" id="16s82eEoAor" role="3cqZAp">
-          <node concept="3cpWsn" id="16s82eEoAos" role="3cpWs9">
-            <property role="TrG5h" value="reSavedFile" />
-            <node concept="3uibUv" id="16s82eEoAot" role="1tU5fm">
-              <ref role="3uigEE" to="guwi:~File" resolve="File" />
-            </node>
-            <node concept="2ShNRf" id="16s82eEoAou" role="33vP2m">
-              <node concept="1pGfFk" id="16s82eEoAov" role="2ShVmc">
-                <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-                <node concept="3cpWs3" id="16s82eEoAow" role="37wK5m">
-                  <node concept="Xl_RD" id="16s82eEoAox" role="3uHU7w">
-                    <property role="Xl_RC" value="clones_resaved.xml" />
-                  </node>
-                  <node concept="3cpWs3" id="16s82eEoAoy" role="3uHU7B">
-                    <node concept="37vLTw" id="16s82eEoAoz" role="3uHU7B">
-                      <ref role="3cqZAo" node="16s82eEmiLk" resolve="tempDir" />
-                    </node>
-                    <node concept="10M0yZ" id="16s82eEoAo$" role="3uHU7w">
-                      <ref role="3cqZAo" to="guwi:~File.separator" resolve="separator" />
-                      <ref role="1PxDUh" to="guwi:~File" resolve="File" />
-                    </node>
-                  </node>
+        <node concept="3cpWs8" id="6dJ4vxiTbyi" role="3cqZAp">
+          <node concept="3cpWsn" id="6dJ4vxiTbyj" role="3cpWs9">
+            <property role="TrG5h" value="reSavedFilePath" />
+            <node concept="17QB3L" id="6dJ4vxiTbye" role="1tU5fm" />
+            <node concept="3cpWs3" id="6dJ4vxiTbyk" role="33vP2m">
+              <node concept="Xl_RD" id="6dJ4vxiTbyl" role="3uHU7w">
+                <property role="Xl_RC" value="clones_resaved.xml" />
+              </node>
+              <node concept="3cpWs3" id="6dJ4vxiTbym" role="3uHU7B">
+                <node concept="37vLTw" id="6dJ4vxiTbyn" role="3uHU7B">
+                  <ref role="3cqZAo" node="16s82eEmiLk" resolve="tempDir" />
+                </node>
+                <node concept="10M0yZ" id="6dJ4vxiTbyo" role="3uHU7w">
+                  <ref role="3cqZAo" to="guwi:~File.separator" resolve="separator" />
+                  <ref role="1PxDUh" to="guwi:~File" resolve="File" />
                 </node>
               </node>
             </node>
@@ -406,8 +392,8 @@
             <node concept="2ShNRf" id="16s82eEoDzl" role="33vP2m">
               <node concept="1pGfFk" id="16s82eEoDzm" role="2ShVmc">
                 <ref role="37wK5l" to="tpy2:6n_zVnCdTZ4" resolve="ClonesSaver" />
-                <node concept="37vLTw" id="16s82eEoEfZ" role="37wK5m">
-                  <ref role="3cqZAo" node="16s82eEoAos" resolve="reSavedFile" />
+                <node concept="37vLTw" id="6dJ4vxiTe5e" role="37wK5m">
+                  <ref role="3cqZAo" node="6dJ4vxiTbyj" resolve="reSavedFilePath" />
                 </node>
               </node>
             </node>
@@ -434,15 +420,25 @@
           <node concept="2YIFZM" id="16s82eEoIfX" role="3tpDZB">
             <ref role="37wK5l" to="8oaq:~FileUtils.sizeOf(java.io.File):long" resolve="sizeOf" />
             <ref role="1Pybhc" to="8oaq:~FileUtils" resolve="FileUtils" />
-            <node concept="37vLTw" id="16s82eEoIie" role="37wK5m">
-              <ref role="3cqZAo" node="16s82eEmlPV" resolve="file" />
+            <node concept="2ShNRf" id="6dJ4vxiTed1" role="37wK5m">
+              <node concept="1pGfFk" id="6dJ4vxiTed0" role="2ShVmc">
+                <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                <node concept="37vLTw" id="6dJ4vxiTedY" role="37wK5m">
+                  <ref role="3cqZAo" node="6dJ4vxiT9gN" resolve="filePath" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="2YIFZM" id="16s82eEoIQp" role="3tpDZA">
             <ref role="37wK5l" to="8oaq:~FileUtils.sizeOf(java.io.File):long" resolve="sizeOf" />
             <ref role="1Pybhc" to="8oaq:~FileUtils" resolve="FileUtils" />
-            <node concept="37vLTw" id="16s82eEoISQ" role="37wK5m">
-              <ref role="3cqZAo" node="16s82eEoAos" resolve="reSavedFile" />
+            <node concept="2ShNRf" id="6dJ4vxiTeb5" role="37wK5m">
+              <node concept="1pGfFk" id="6dJ4vxiTeb4" role="2ShVmc">
+                <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                <node concept="37vLTw" id="6dJ4vxiTebv" role="37wK5m">
+                  <ref role="3cqZAo" node="6dJ4vxiTbyj" resolve="reSavedFilePath" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
