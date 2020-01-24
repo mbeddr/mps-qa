@@ -174,15 +174,11 @@ task run_clones_detection(type: TestLanguages) {
 	script new File("$buildDir/scripts/clones-detection-headless-runner-build.xml")
 }
 
-check.dependsOn run_clones_headless
-
-assemble.dependsOn run_clones_headless
-
 task cleanMps(type: Delete) {
     delete fileTree(dir: projectDir, include: ["**/classes_gen/**", "**/source_gen/**", "**/source_gen.caches/**", "tmp/**"])
 }
 
-//clean.dependsOn cleanMps
+clean.dependsOn cleanMps
 
 
 defaultTasks 'run_clones_detection'
