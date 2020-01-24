@@ -10,6 +10,7 @@
     <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
     <dependency reexport="false">c444eed9-4c7b-48e8-a62c-124f7b6b1712(org.mpsqa.clones.config.pluginSolution)</dependency>
     <dependency reexport="false">742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)</dependency>
+    <dependency reexport="false">48b1eeb1-bf01-4e84-8d12-d2fc8bf60fb7(org.mpsqa.clones.core)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="8" />
@@ -35,6 +36,7 @@
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
     <module reference="c444eed9-4c7b-48e8-a62c-124f7b6b1712(org.mpsqa.clones.config.pluginSolution)" version="0" />
+    <module reference="48b1eeb1-bf01-4e84-8d12-d2fc8bf60fb7(org.mpsqa.clones.core)" version="0" />
     <module reference="3f198f21-a320-4b82-bf5e-e7c501e76d9d(test.org.mpsqa.clones.headless)" version="0" />
   </dependencyVersions>
 </solution>

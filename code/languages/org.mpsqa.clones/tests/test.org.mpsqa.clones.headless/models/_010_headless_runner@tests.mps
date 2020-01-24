@@ -10,6 +10,7 @@
   <imports>
     <import index="f4mj" ref="r:87c69567-b194-437c-b9e6-0ce2770f06d2(org.mpsqa.clones.config.pluginSolution.utils)" />
     <import index="z1c3" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
+    <import index="2e2r" ref="r:1ddd18d0-b744-46a8-b000-0f4cabc830f7(org.mpsqa.clones.core.algo)" />
     <import index="z1c4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
   </imports>
   <registry>
@@ -28,9 +29,6 @@
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
-      </concept>
-      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
-        <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
@@ -51,9 +49,6 @@
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
         <child id="1068580123133" name="returnType" index="3clF45" />
         <child id="1068580123135" name="body" index="3clF47" />
-      </concept>
-      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
-        <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
@@ -76,6 +71,12 @@
       </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
+      </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
     </language>
     <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
@@ -108,6 +109,12 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+    </language>
+    <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
+        <child id="1151688676805" name="elementType" index="_ZDj9" />
+      </concept>
+      <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
     </language>
   </registry>
   <node concept="2XOHcx" id="5dW8pSKf75s">
@@ -143,33 +150,51 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="7YZJmepB5Np" role="3cqZAp">
-          <node concept="2YIFZM" id="7YZJmepB5Pi" role="3clFbG">
-            <ref role="37wK5l" to="f4mj:7YZJmepzrhO" resolve="runHeadless" />
-            <ref role="1Pybhc" to="f4mj:7YZJmepzrg5" resolve="HeadlessRunnerUtils" />
-            <node concept="37vLTw" id="7YZJmepB5PW" role="37wK5m">
-              <ref role="3cqZAo" node="7YZJmepB4GT" resolve="m" />
+        <node concept="3cpWs8" id="6dJ4vxiTUYF" role="3cqZAp">
+          <node concept="3cpWsn" id="6dJ4vxiTUYG" role="3cpWs9">
+            <property role="TrG5h" value="detectedClones" />
+            <node concept="_YKpA" id="6dJ4vxiTUYA" role="1tU5fm">
+              <node concept="3uibUv" id="6dJ4vxiTUYD" role="_ZDj9">
+                <ref role="3uigEE" to="2e2r:5dW8pSK6_ts" resolve="Clone" />
+              </node>
             </node>
-            <node concept="Xl_RD" id="7YZJmepB5RT" role="37wK5m">
-              <property role="Xl_RC" value="" />
-            </node>
-            <node concept="1eOMI4" id="7YZJmepB9sV" role="37wK5m">
-              <node concept="10QFUN" id="7YZJmepB9sU" role="1eOMHV">
-                <node concept="1jxXqW" id="7YZJmepB9sT" role="10QFUP" />
-                <node concept="3uibUv" id="7YZJmepB9sS" role="10QFUM">
-                  <ref role="3uigEE" to="z1c3:~MPSProject" resolve="MPSProject" />
+            <node concept="2YIFZM" id="6dJ4vxiTUYH" role="33vP2m">
+              <ref role="37wK5l" to="f4mj:7YZJmepzrhO" resolve="runHeadless" />
+              <ref role="1Pybhc" to="f4mj:7YZJmepzrg5" resolve="HeadlessRunnerUtils" />
+              <node concept="37vLTw" id="6dJ4vxiTUYI" role="37wK5m">
+                <ref role="3cqZAo" node="7YZJmepB4GT" resolve="m" />
+              </node>
+              <node concept="1eOMI4" id="6dJ4vxiTUYK" role="37wK5m">
+                <node concept="10QFUN" id="6dJ4vxiTUYL" role="1eOMHV">
+                  <node concept="1jxXqW" id="6dJ4vxiTUYM" role="10QFUP" />
+                  <node concept="3uibUv" id="6dJ4vxiTUYN" role="10QFUM">
+                    <ref role="3uigEE" to="z1c3:~MPSProject" resolve="MPSProject" />
+                  </node>
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="1GhTetdCkSN" role="3cqZAp" />
-        <node concept="3vlDli" id="1GhTetdCl2$" role="3cqZAp">
-          <node concept="3cmrfG" id="1GhTetdCl4g" role="3tpDZB">
-            <property role="3cmrfH" value="1" />
+        <node concept="3clFbH" id="6dJ4vxiU2xr" role="3cqZAp" />
+        <node concept="3SKdUt" id="6dJ4vxiU2I5" role="3cqZAp">
+          <node concept="3SKdUq" id="6dJ4vxiU2I7" role="3SKWNk">
+            <property role="3SKdUp" value="if the clones detection config has as postprocessor the &quot;filtering of new clones w.r.t. baseline&quot;, then our test " />
           </node>
-          <node concept="3cmrfG" id="1GhTetdCl5e" role="3tpDZA">
-            <property role="3cmrfH" value="2" />
+        </node>
+        <node concept="3SKdUt" id="6dJ4vxiU3cL" role="3cqZAp">
+          <node concept="3SKdUq" id="6dJ4vxiU3cN" role="3SKWNk">
+            <property role="3SKdUp" value="will fail if new clones are detected " />
+          </node>
+        </node>
+        <node concept="3vlDli" id="6dJ4vxiTVOZ" role="3cqZAp">
+          <node concept="3cmrfG" id="6dJ4vxiTVT_" role="3tpDZB">
+            <property role="3cmrfH" value="0" />
+          </node>
+          <node concept="2OqwBi" id="6dJ4vxiTW$h" role="3tpDZA">
+            <node concept="37vLTw" id="6dJ4vxiTVV0" role="2Oq$k0">
+              <ref role="3cqZAo" node="6dJ4vxiTUYG" resolve="detectedClones" />
+            </node>
+            <node concept="34oBXx" id="6dJ4vxiU2sx" role="2OqNvi" />
           </node>
         </node>
       </node>
