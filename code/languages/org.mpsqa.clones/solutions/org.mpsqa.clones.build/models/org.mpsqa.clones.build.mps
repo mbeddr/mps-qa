@@ -897,6 +897,11 @@
             <ref role="3bR37D" node="2JVMSZMFXgS" resolve="org.mpsqa.clones.config.pluginSolution" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6dJ4vxiUvDX" role="3bR37C">
+          <node concept="3bR9La" id="6dJ4vxiUvDY" role="1SiIV1">
+            <ref role="3bR37D" node="2JVMSZMFXgA" resolve="org.mpsqa.clones.core" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="22LTRH" id="2JVMSZMFYqK" role="1hWBAP">
