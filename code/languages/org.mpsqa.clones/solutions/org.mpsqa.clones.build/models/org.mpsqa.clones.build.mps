@@ -156,7 +156,7 @@
       </node>
     </node>
     <node concept="398rNT" id="2JVMSZMFXgl" role="1l3spd">
-      <property role="TrG5h" value="mps_home" />
+      <property role="TrG5h" value="mps.home" />
       <node concept="55IIr" id="2JVMSZMFXMl" role="398pKh">
         <node concept="2Ry0Ak" id="2JVMSZMFXNT" role="iGT6I">
           <property role="2Ry0Am" value=".." />
@@ -193,7 +193,7 @@
     <node concept="2sgV4H" id="2JVMSZMFXgm" role="1l3spa">
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
       <node concept="398BVA" id="2JVMSZMFXgn" role="2JcizS">
-        <ref role="398BVh" node="2JVMSZMFXgl" resolve="mps_home" />
+        <ref role="398BVh" node="2JVMSZMFXgl" resolve="mps.home" />
       </node>
     </node>
     <node concept="1l3spV" id="2JVMSZMFXhb" role="1l3spN">
@@ -781,7 +781,7 @@
     <node concept="2sgV4H" id="2JVMSZMFY8e" role="1l3spa">
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
       <node concept="398BVA" id="2JVMSZMFY8f" role="2JcizS">
-        <ref role="398BVh" node="1GhTetdB0o4" resolve="mps_home" />
+        <ref role="398BVh" node="1GhTetdB0o4" resolve="mps.home" />
       </node>
     </node>
     <node concept="2sgV4H" id="1GhTetdABhh" role="1l3spa">
@@ -799,7 +799,7 @@
       </node>
     </node>
     <node concept="398rNT" id="1GhTetdB0o4" role="1l3spd">
-      <property role="TrG5h" value="mps_home" />
+      <property role="TrG5h" value="mps.home" />
       <node concept="55IIr" id="1GhTetdB0o5" role="398pKh">
         <node concept="2Ry0Ak" id="1GhTetdB0o6" role="iGT6I">
           <property role="2Ry0Am" value=".." />
