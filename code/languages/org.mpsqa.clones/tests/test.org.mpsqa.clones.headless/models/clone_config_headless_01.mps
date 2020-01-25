@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:f245e375-a66b-4901-b97c-e702a02226c8(test.org.mpsqa.clones.headless.clone_config_headless)">
+<model ref="r:f245e375-a66b-4901-b97c-e702a02226c8(test.org.mpsqa.clones.headless.clone_config_headless_01)">
   <persistence version="9" />
   <languages>
     <use id="56cfcf05-92e4-4822-8126-2ea0e0cece6b" name="org.mpsqa.clones.config" version="0" />
@@ -64,8 +64,8 @@
       <property role="Fx$Zl" value=".*lib" />
     </node>
     <node concept="py32F" id="7YZJmepzrg1" role="py33p" />
-    <node concept="2VIB43" id="6dJ4vxiUNp_" role="2dEW0l">
-      <property role="2VIB42" value="d:\clones.xml" />
+    <node concept="2VIB43" id="wcbKZIZ4mX" role="2dEW0l">
+      <property role="2VIB42" value="d:/clones.xml" />
     </node>
   </node>
 </model>

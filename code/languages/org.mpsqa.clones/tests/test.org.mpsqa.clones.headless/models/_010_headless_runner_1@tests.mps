@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:ea4ccff6-b739-4afd-850a-000fa0a10cfd(test.org.mpsqa.clones.headless._010_headless_runner@tests)">
+<model ref="r:ea4ccff6-b739-4afd-850a-000fa0a10cfd(test.org.mpsqa.clones.headless._010_headless_runner_1@tests)">
   <persistence version="9" />
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="4" />
+    <use id="56cfcf05-92e4-4822-8126-2ea0e0cece6b" name="org.mpsqa.clones.config" version="0" />
   </languages>
   <imports>
     <import index="f4mj" ref="r:87c69567-b194-437c-b9e6-0ce2770f06d2(org.mpsqa.clones.config.pluginSolution.utils)" />
     <import index="z1c3" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
     <import index="2e2r" ref="r:1ddd18d0-b744-46a8-b000-0f4cabc830f7(org.mpsqa.clones.core.algo)" />
+    <import index="mpzi" ref="r:07e7fd96-d60b-4292-b200-0ad59ee3fadf(org.mpsqa.clones.config.structure)" />
     <import index="z1c4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
   </imports>
   <registry>
@@ -25,6 +27,10 @@
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
+        <child id="1068498886297" name="rValue" index="37vLTx" />
+        <child id="1068498886295" name="lValue" index="37vLTJ" />
+      </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -43,12 +49,16 @@
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
+      <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
         <child id="1068580123133" name="returnType" index="3clF45" />
         <child id="1068580123135" name="body" index="3clF47" />
+      </concept>
+      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
+        <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
@@ -120,29 +130,29 @@
   <node concept="2XOHcx" id="5dW8pSKf75s">
     <property role="2XOHcw" value="${mpsqa.home}/code/languages/org.mpsqa.clones" />
   </node>
-  <node concept="1lH9Xt" id="7YZJmepzqZp">
+  <node concept="1lH9Xt" id="2KLGrfl1HUl">
     <property role="TrG5h" value="TestRunHeadless" />
-    <node concept="1LZb2c" id="7YZJmepzqZz" role="1SL9yI">
+    <node concept="1LZb2c" id="2KLGrfl1HU$" role="1SL9yI">
       <property role="TrG5h" value="run_clones_headless" />
-      <node concept="3cqZAl" id="7YZJmepzqZ$" role="3clF45" />
-      <node concept="3clFbS" id="7YZJmepzqZC" role="3clF47">
-        <node concept="3cpWs8" id="7YZJmepB4GS" role="3cqZAp">
-          <node concept="3cpWsn" id="7YZJmepB4GT" role="3cpWs9">
+      <node concept="3cqZAl" id="2KLGrfl1HU_" role="3clF45" />
+      <node concept="3clFbS" id="2KLGrfl1HUA" role="3clF47">
+        <node concept="3cpWs8" id="2KLGrfl1HUB" role="3cqZAp">
+          <node concept="3cpWsn" id="2KLGrfl1HUC" role="3cpWs9">
             <property role="TrG5h" value="m" />
-            <node concept="H_c77" id="7YZJmepB4GQ" role="1tU5fm" />
-            <node concept="2OqwBi" id="7YZJmepB4GU" role="33vP2m">
-              <node concept="1Xw6AR" id="7YZJmepB4GV" role="2Oq$k0">
-                <node concept="1dCxOl" id="6dJ4vxiRtDq" role="1XwpL7">
+            <node concept="H_c77" id="2KLGrfl1HUD" role="1tU5fm" />
+            <node concept="2OqwBi" id="2KLGrfl1HUE" role="33vP2m">
+              <node concept="1Xw6AR" id="2KLGrfl1HUF" role="2Oq$k0">
+                <node concept="1dCxOl" id="wcbKZIXSdr" role="1XwpL7">
                   <property role="1XweGQ" value="r:f245e375-a66b-4901-b97c-e702a02226c8" />
-                  <node concept="1j_P7g" id="6dJ4vxiRtDr" role="1j$8Uc">
-                    <property role="1j_P7h" value="test.org.mpsqa.clones.headless.clone_config_headless" />
+                  <node concept="1j_P7g" id="wcbKZIXSds" role="1j$8Uc">
+                    <property role="1j_P7h" value="test.org.mpsqa.clones.headless.clone_config_headless_01" />
                   </node>
                 </node>
               </node>
-              <node concept="2yCiCJ" id="7YZJmepB4GY" role="2OqNvi">
-                <node concept="2OqwBi" id="7YZJmepB4S5" role="Vysub">
-                  <node concept="1jxXqW" id="7YZJmepB4GZ" role="2Oq$k0" />
-                  <node concept="liA8E" id="7YZJmepB5wq" role="2OqNvi">
+              <node concept="2yCiCJ" id="2KLGrfl1HUI" role="2OqNvi">
+                <node concept="2OqwBi" id="2KLGrfl1HUJ" role="Vysub">
+                  <node concept="1jxXqW" id="2KLGrfl1HUK" role="2Oq$k0" />
+                  <node concept="liA8E" id="2KLGrfl1HUL" role="2OqNvi">
                     <ref role="37wK5l" to="z1c4:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
                   </node>
                 </node>
@@ -150,51 +160,58 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="6dJ4vxiTUYF" role="3cqZAp">
-          <node concept="3cpWsn" id="6dJ4vxiTUYG" role="3cpWs9">
+        <node concept="3cpWs8" id="2KLGrfl1HUM" role="3cqZAp">
+          <node concept="3cpWsn" id="2KLGrfl1HUN" role="3cpWs9">
             <property role="TrG5h" value="detectedClones" />
-            <node concept="_YKpA" id="6dJ4vxiTUYA" role="1tU5fm">
-              <node concept="3uibUv" id="6dJ4vxiTUYD" role="_ZDj9">
+            <node concept="_YKpA" id="2KLGrfl1HUO" role="1tU5fm">
+              <node concept="3uibUv" id="2KLGrfl1HUP" role="_ZDj9">
                 <ref role="3uigEE" to="2e2r:5dW8pSK6_ts" resolve="Clone" />
               </node>
             </node>
-            <node concept="2YIFZM" id="6dJ4vxiTUYH" role="33vP2m">
-              <ref role="37wK5l" to="f4mj:7YZJmepzrhO" resolve="runHeadless" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="wcbKZIWYcR" role="3cqZAp">
+          <node concept="37vLTI" id="wcbKZIWYcT" role="3clFbG">
+            <node concept="2YIFZM" id="2KLGrfl1HUQ" role="37vLTx">
               <ref role="1Pybhc" to="f4mj:7YZJmepzrg5" resolve="HeadlessRunnerUtils" />
-              <node concept="37vLTw" id="6dJ4vxiTUYI" role="37wK5m">
-                <ref role="3cqZAo" node="7YZJmepB4GT" resolve="m" />
+              <ref role="37wK5l" to="f4mj:7YZJmepzrhO" resolve="runHeadless" />
+              <node concept="37vLTw" id="2KLGrfl1HUR" role="37wK5m">
+                <ref role="3cqZAo" node="2KLGrfl1HUC" resolve="m" />
               </node>
-              <node concept="1eOMI4" id="6dJ4vxiTUYK" role="37wK5m">
-                <node concept="10QFUN" id="6dJ4vxiTUYL" role="1eOMHV">
-                  <node concept="1jxXqW" id="6dJ4vxiTUYM" role="10QFUP" />
-                  <node concept="3uibUv" id="6dJ4vxiTUYN" role="10QFUM">
+              <node concept="1eOMI4" id="2KLGrfl1HUS" role="37wK5m">
+                <node concept="10QFUN" id="2KLGrfl1HUT" role="1eOMHV">
+                  <node concept="1jxXqW" id="2KLGrfl1HUU" role="10QFUP" />
+                  <node concept="3uibUv" id="2KLGrfl1HUV" role="10QFUM">
                     <ref role="3uigEE" to="z1c3:~MPSProject" resolve="MPSProject" />
                   </node>
                 </node>
               </node>
             </node>
+            <node concept="37vLTw" id="wcbKZIWYcX" role="37vLTJ">
+              <ref role="3cqZAo" node="2KLGrfl1HUN" resolve="detectedClones" />
+            </node>
           </node>
         </node>
-        <node concept="3clFbH" id="6dJ4vxiU2xr" role="3cqZAp" />
-        <node concept="3SKdUt" id="6dJ4vxiU2I5" role="3cqZAp">
-          <node concept="3SKdUq" id="6dJ4vxiU2I7" role="3SKWNk">
+        <node concept="3clFbH" id="2KLGrfl1HUW" role="3cqZAp" />
+        <node concept="3SKdUt" id="2KLGrfl1HUX" role="3cqZAp">
+          <node concept="3SKdUq" id="2KLGrfl1HUY" role="3SKWNk">
             <property role="3SKdUp" value="if the clones detection config has as postprocessor the &quot;filtering of new clones w.r.t. baseline&quot;, then our test " />
           </node>
         </node>
-        <node concept="3SKdUt" id="6dJ4vxiU3cL" role="3cqZAp">
-          <node concept="3SKdUq" id="6dJ4vxiU3cN" role="3SKWNk">
+        <node concept="3SKdUt" id="2KLGrfl1HUZ" role="3cqZAp">
+          <node concept="3SKdUq" id="2KLGrfl1HV0" role="3SKWNk">
             <property role="3SKdUp" value="will fail if new clones are detected " />
           </node>
         </node>
-        <node concept="3vlDli" id="6dJ4vxiTVOZ" role="3cqZAp">
-          <node concept="3cmrfG" id="6dJ4vxiTVT_" role="3tpDZB">
+        <node concept="3vlDli" id="2KLGrfl1HV1" role="3cqZAp">
+          <node concept="3cmrfG" id="2KLGrfl1HV2" role="3tpDZB">
             <property role="3cmrfH" value="0" />
           </node>
-          <node concept="2OqwBi" id="6dJ4vxiTW$h" role="3tpDZA">
-            <node concept="37vLTw" id="6dJ4vxiTVV0" role="2Oq$k0">
-              <ref role="3cqZAo" node="6dJ4vxiTUYG" resolve="detectedClones" />
+          <node concept="2OqwBi" id="2KLGrfl1HV3" role="3tpDZA">
+            <node concept="37vLTw" id="2KLGrfl1HV4" role="2Oq$k0">
+              <ref role="3cqZAo" node="2KLGrfl1HUN" resolve="detectedClones" />
             </node>
-            <node concept="34oBXx" id="6dJ4vxiU2sx" role="2OqNvi" />
+            <node concept="34oBXx" id="2KLGrfl1HV5" role="2OqNvi" />
           </node>
         </node>
       </node>
