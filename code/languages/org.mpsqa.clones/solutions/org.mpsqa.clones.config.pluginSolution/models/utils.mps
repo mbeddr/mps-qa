@@ -89,6 +89,9 @@
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
+        <child id="1068581517676" name="expression" index="3cqZAk" />
+      </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -207,85 +210,16 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="7YZJmepAJBB" role="3cqZAp">
-          <node concept="3cpWsn" id="7YZJmepAJBC" role="3cpWs9">
-            <property role="TrG5h" value="cds" />
-            <node concept="3uibUv" id="7YZJmepAJBA" role="1tU5fm">
-              <ref role="3uigEE" to="2e2r:1oYl8FfodCD" resolve="ClonesDetectorSettings" />
+        <node concept="3cpWs6" id="wcbKZIWUWp" role="3cqZAp">
+          <node concept="2YIFZM" id="wcbKZIWUWo" role="3cqZAk">
+            <ref role="1Pybhc" node="7YZJmepzrg5" resolve="HeadlessRunnerUtils" />
+            <ref role="37wK5l" node="wcbKZIWUWi" resolve="runHeadless" />
+            <node concept="37vLTw" id="wcbKZIWUWm" role="37wK5m">
+              <ref role="3cqZAo" node="7YZJmepzwu8" resolve="cfg" />
             </node>
-            <node concept="2YIFZM" id="7YZJmepAJBD" role="33vP2m">
-              <ref role="37wK5l" node="7YZJmepAFGV" resolve="buildCloneDetectionSettings" />
-              <ref role="1Pybhc" node="7YZJmepAEQY" resolve="ClonesDetectorSettingsBuilder" />
-              <node concept="37vLTw" id="7YZJmepAJBE" role="37wK5m">
-                <ref role="3cqZAo" node="7YZJmepzwu8" resolve="cfg" />
-              </node>
-              <node concept="37vLTw" id="7YZJmepAJBF" role="37wK5m">
-                <ref role="3cqZAo" node="7YZJmepAJr5" resolve="proj" />
-              </node>
+            <node concept="37vLTw" id="wcbKZIWUWn" role="37wK5m">
+              <ref role="3cqZAo" node="7YZJmepAJr5" resolve="proj" />
             </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="6dJ4vxiRCoE" role="3cqZAp">
-          <node concept="3cpWsn" id="6dJ4vxiRCoF" role="3cpWs9">
-            <property role="TrG5h" value="pma" />
-            <node concept="3uibUv" id="6dJ4vxiRCoD" role="1tU5fm">
-              <ref role="3uigEE" to="mk8z:~ProgressMonitorAdapter" resolve="ProgressMonitorAdapter" />
-            </node>
-            <node concept="2ShNRf" id="6dJ4vxiRCoG" role="33vP2m">
-              <node concept="1pGfFk" id="6dJ4vxiRCoH" role="2ShVmc">
-                <ref role="37wK5l" to="mk8z:~ProgressMonitorAdapter.&lt;init&gt;(com.intellij.openapi.progress.ProgressIndicator)" resolve="ProgressMonitorAdapter" />
-                <node concept="2ShNRf" id="6dJ4vxiRCoI" role="37wK5m">
-                  <node concept="1pGfFk" id="6dJ4vxiRCoJ" role="2ShVmc">
-                    <ref role="37wK5l" to="xygl:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="6dJ4vxiRBMM" role="3cqZAp">
-          <node concept="3cpWsn" id="6dJ4vxiRBMN" role="3cpWs9">
-            <property role="TrG5h" value="clonesList" />
-            <node concept="_YKpA" id="6dJ4vxiRBMH" role="1tU5fm">
-              <node concept="3uibUv" id="6dJ4vxiRBMK" role="_ZDj9">
-                <ref role="3uigEE" to="2e2r:5dW8pSK6_ts" resolve="Clone" />
-              </node>
-            </node>
-            <node concept="2YIFZM" id="6dJ4vxiRBMO" role="33vP2m">
-              <ref role="1Pybhc" to="9vt7:1oYl8Ffq3Xu" resolve="ClonesDetectorRunner" />
-              <ref role="37wK5l" to="9vt7:7vLq_hstReX" resolve="runClonesDetector" />
-              <node concept="37vLTw" id="6dJ4vxiRFlQ" role="37wK5m">
-                <ref role="3cqZAo" node="7YZJmepAJBC" resolve="cds" />
-              </node>
-              <node concept="37vLTw" id="6dJ4vxiRCoK" role="37wK5m">
-                <ref role="3cqZAo" node="6dJ4vxiRCoF" resolve="pma" />
-              </node>
-              <node concept="37vLTw" id="6dJ4vxiRBMT" role="37wK5m">
-                <ref role="3cqZAo" node="7YZJmepAJr5" resolve="proj" />
-              </node>
-              <node concept="3clFbT" id="6dJ4vxiS17C" role="37wK5m">
-                <property role="3clFbU" value="true" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="RRSsy" id="3yuAl1UL9xh" role="3cqZAp">
-          <property role="RRSoG" value="info" />
-          <node concept="3cpWs3" id="3yuAl1ULadL" role="RRSoy">
-            <node concept="2OqwBi" id="3yuAl1ULadM" role="3uHU7w">
-              <node concept="37vLTw" id="3yuAl1ULadN" role="2Oq$k0">
-                <ref role="3cqZAo" node="6dJ4vxiRBMN" resolve="clonesList" />
-              </node>
-              <node concept="34oBXx" id="3yuAl1ULadO" role="2OqNvi" />
-            </node>
-            <node concept="Xl_RD" id="3yuAl1ULadP" role="3uHU7B">
-              <property role="Xl_RC" value="number of clones found: " />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="6dJ4vxiTRAF" role="3cqZAp">
-          <node concept="37vLTw" id="6dJ4vxiTRAD" role="3clFbG">
-            <ref role="3cqZAo" node="6dJ4vxiRBMN" resolve="clonesList" />
           </node>
         </node>
       </node>
@@ -303,6 +237,111 @@
       <node concept="_YKpA" id="6dJ4vxiTRMx" role="3clF45">
         <node concept="3uibUv" id="6dJ4vxiTRMy" role="_ZDj9">
           <ref role="3uigEE" to="2e2r:5dW8pSK6_ts" resolve="Clone" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="wcbKZIWV8G" role="jymVt" />
+    <node concept="2YIFZL" id="wcbKZIWUWi" role="jymVt">
+      <property role="TrG5h" value="runHeadless" />
+      <node concept="3Tm1VV" id="wcbKZIWVb0" role="1B3o_S" />
+      <node concept="_YKpA" id="wcbKZIWUWk" role="3clF45">
+        <node concept="3uibUv" id="wcbKZIWUWl" role="_ZDj9">
+          <ref role="3uigEE" to="2e2r:5dW8pSK6_ts" resolve="Clone" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="wcbKZIWUW7" role="3clF46">
+        <property role="TrG5h" value="cfg" />
+        <node concept="3Tqbb2" id="wcbKZIWUW8" role="1tU5fm">
+          <ref role="ehGHo" to="mpzi:7vLq_hstL0f" resolve="ClonesDetectionConfig" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="wcbKZIWUW9" role="3clF46">
+        <property role="TrG5h" value="proj" />
+        <node concept="3uibUv" id="wcbKZIWUWa" role="1tU5fm">
+          <ref role="3uigEE" to="z1c3:~MPSProject" resolve="MPSProject" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="wcbKZIWUVC" role="3clF47">
+        <node concept="3cpWs8" id="wcbKZIWUVD" role="3cqZAp">
+          <node concept="3cpWsn" id="wcbKZIWUVE" role="3cpWs9">
+            <property role="TrG5h" value="cds" />
+            <node concept="3uibUv" id="wcbKZIWUVF" role="1tU5fm">
+              <ref role="3uigEE" to="2e2r:1oYl8FfodCD" resolve="ClonesDetectorSettings" />
+            </node>
+            <node concept="2YIFZM" id="wcbKZIWUVG" role="33vP2m">
+              <ref role="37wK5l" node="7YZJmepAFGV" resolve="buildCloneDetectionSettings" />
+              <ref role="1Pybhc" node="7YZJmepAEQY" resolve="ClonesDetectorSettingsBuilder" />
+              <node concept="37vLTw" id="wcbKZIWUWb" role="37wK5m">
+                <ref role="3cqZAo" node="wcbKZIWUW7" resolve="cfg" />
+              </node>
+              <node concept="37vLTw" id="wcbKZIWUWc" role="37wK5m">
+                <ref role="3cqZAo" node="wcbKZIWUW9" resolve="proj" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="wcbKZIWUVJ" role="3cqZAp">
+          <node concept="3cpWsn" id="wcbKZIWUVK" role="3cpWs9">
+            <property role="TrG5h" value="pma" />
+            <node concept="3uibUv" id="wcbKZIWUVL" role="1tU5fm">
+              <ref role="3uigEE" to="mk8z:~ProgressMonitorAdapter" resolve="ProgressMonitorAdapter" />
+            </node>
+            <node concept="2ShNRf" id="wcbKZIWUVM" role="33vP2m">
+              <node concept="1pGfFk" id="wcbKZIWUVN" role="2ShVmc">
+                <ref role="37wK5l" to="mk8z:~ProgressMonitorAdapter.&lt;init&gt;(com.intellij.openapi.progress.ProgressIndicator)" resolve="ProgressMonitorAdapter" />
+                <node concept="2ShNRf" id="wcbKZIWUVO" role="37wK5m">
+                  <node concept="1pGfFk" id="wcbKZIWUVP" role="2ShVmc">
+                    <ref role="37wK5l" to="xygl:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="wcbKZIWUVQ" role="3cqZAp">
+          <node concept="3cpWsn" id="wcbKZIWUVR" role="3cpWs9">
+            <property role="TrG5h" value="clonesList" />
+            <node concept="_YKpA" id="wcbKZIWUVS" role="1tU5fm">
+              <node concept="3uibUv" id="wcbKZIWUVT" role="_ZDj9">
+                <ref role="3uigEE" to="2e2r:5dW8pSK6_ts" resolve="Clone" />
+              </node>
+            </node>
+            <node concept="2YIFZM" id="wcbKZIWUVU" role="33vP2m">
+              <ref role="1Pybhc" to="9vt7:1oYl8Ffq3Xu" resolve="ClonesDetectorRunner" />
+              <ref role="37wK5l" to="9vt7:7vLq_hstReX" resolve="runClonesDetector" />
+              <node concept="37vLTw" id="wcbKZIWUVV" role="37wK5m">
+                <ref role="3cqZAo" node="wcbKZIWUVE" resolve="cds" />
+              </node>
+              <node concept="37vLTw" id="wcbKZIWUVW" role="37wK5m">
+                <ref role="3cqZAo" node="wcbKZIWUVK" resolve="pma" />
+              </node>
+              <node concept="37vLTw" id="wcbKZIWUWd" role="37wK5m">
+                <ref role="3cqZAo" node="wcbKZIWUW9" resolve="proj" />
+              </node>
+              <node concept="3clFbT" id="wcbKZIWUVY" role="37wK5m">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="RRSsy" id="wcbKZIWUVZ" role="3cqZAp">
+          <property role="RRSoG" value="info" />
+          <node concept="3cpWs3" id="wcbKZIWUW0" role="RRSoy">
+            <node concept="2OqwBi" id="wcbKZIWUW1" role="3uHU7w">
+              <node concept="37vLTw" id="wcbKZIWUW2" role="2Oq$k0">
+                <ref role="3cqZAo" node="wcbKZIWUVR" resolve="clonesList" />
+              </node>
+              <node concept="34oBXx" id="wcbKZIWUW3" role="2OqNvi" />
+            </node>
+            <node concept="Xl_RD" id="wcbKZIWUW4" role="3uHU7B">
+              <property role="Xl_RC" value="number of clones found: " />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="wcbKZIWUW5" role="3cqZAp">
+          <node concept="37vLTw" id="wcbKZIWUW6" role="3clFbG">
+            <ref role="3cqZAo" node="wcbKZIWUVR" resolve="clonesList" />
+          </node>
         </node>
       </node>
     </node>
@@ -415,6 +454,12 @@
           </node>
           <node concept="9aQIb" id="1GhTetdCzIr" role="9aQIa">
             <node concept="3clFbS" id="1GhTetdCzIs" role="9aQI4">
+              <node concept="RRSsy" id="wcbKZJ57ie" role="3cqZAp">
+                <property role="RRSoG" value="error" />
+                <node concept="Xl_RD" id="wcbKZJ57ig" role="RRSoy">
+                  <property role="Xl_RC" value="unknown scope" />
+                </node>
+              </node>
               <node concept="YS8fn" id="1GhTetdCzX3" role="3cqZAp">
                 <node concept="2ShNRf" id="1GhTetdCzXI" role="YScLw">
                   <node concept="1pGfFk" id="1GhTetdCDjq" role="2ShVmc">
@@ -428,6 +473,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="wcbKZJ5tAw" role="3cqZAp" />
         <node concept="3cpWs8" id="7vLq_hsud4a" role="3cqZAp">
           <node concept="3cpWsn" id="7vLq_hsud4b" role="3cpWs9">
             <property role="TrG5h" value="cds" />
@@ -708,7 +754,7 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="6n_zVnCjGLz" role="3cqZAp" />
+        <node concept="3clFbH" id="wcbKZJ5uaz" role="3cqZAp" />
         <node concept="3clFbJ" id="6n_zVnCjH38" role="3cqZAp">
           <node concept="3clFbS" id="6n_zVnCjH3a" role="3clFbx">
             <node concept="3clFbF" id="6n_zVnCjIT$" role="3cqZAp">
@@ -749,7 +795,7 @@
             <node concept="3x8VRR" id="6n_zVnCjINU" role="2OqNvi" />
           </node>
         </node>
-        <node concept="3clFbH" id="6n_zVnCjLxZ" role="3cqZAp" />
+        <node concept="3clFbH" id="wcbKZJ5iOS" role="3cqZAp" />
         <node concept="3clFbF" id="7vLq_hsudl4" role="3cqZAp">
           <node concept="37vLTw" id="7vLq_hsudl2" role="3clFbG">
             <ref role="3cqZAo" node="7vLq_hsud4b" resolve="cds" />

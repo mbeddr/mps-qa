@@ -179,6 +179,7 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
@@ -231,6 +232,10 @@
       <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
         <property id="6332851714983843871" name="severity" index="2xdLsb" />
         <child id="5721587534047265374" name="message" index="9lYJi" />
+      </concept>
+      <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
+        <property id="2034914114981261751" name="severity" index="RRSoG" />
+        <child id="2034914114981261753" name="message" index="RRSoy" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -962,6 +967,17 @@
     <node concept="2YIFZL" id="1oYl8Ffqb3R" role="jymVt">
       <property role="TrG5h" value="runClonesDetector" />
       <node concept="3clFbS" id="1oYl8Ffq4td" role="3clF47">
+        <node concept="RRSsy" id="wcbKZJ4C3R" role="3cqZAp">
+          <property role="RRSoG" value="info" />
+          <node concept="3cpWs3" id="wcbKZJ4CAL" role="RRSoy">
+            <node concept="37vLTw" id="wcbKZJ4CLW" role="3uHU7w">
+              <ref role="3cqZAo" node="1oYl8Ffq4i$" resolve="lastSettings" />
+            </node>
+            <node concept="Xl_RD" id="wcbKZJ4C3T" role="3uHU7B">
+              <property role="Xl_RC" value="about to start the clones detector on settings " />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="1oYl8FfqV42" role="3cqZAp">
           <node concept="3cpWsn" id="1oYl8FfqV43" role="3cpWs9">
             <property role="TrG5h" value="repo" />
