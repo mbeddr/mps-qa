@@ -33,8 +33,8 @@
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="mk90" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.progress(MPS.Core/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="tpy2" ref="r:09c925f8-54a9-4591-ab56-735d31a867ae(org.mpsqa.clones.core.management)" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
-    <import index="tpy2" ref="r:09c925f8-54a9-4591-ab56-735d31a867ae(org.mpsqa.clones.core.management)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -98,6 +98,9 @@
       </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
+        <child id="1082485599096" name="statements" index="9aQI4" />
+      </concept>
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
@@ -137,6 +140,10 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1081256982272" name="jetbrains.mps.baseLanguage.structure.InstanceOfExpression" flags="nn" index="2ZW3vV">
+        <child id="1081256993305" name="classType" index="2ZW6by" />
+        <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
+      </concept>
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
@@ -167,6 +174,7 @@
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
@@ -251,6 +259,10 @@
       <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
         <child id="1151688676805" name="elementType" index="_ZDj9" />
       </concept>
+      <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
+        <child id="1237721435807" name="elementType" index="HW$YZ" />
+      </concept>
+      <concept id="1227008614712" name="jetbrains.mps.baseLanguage.collections.structure.LinkedListCreator" flags="nn" index="2Jqq0_" />
     </language>
   </registry>
   <node concept="2DaZZR" id="7WP_sw5r_61" />
@@ -1031,38 +1043,73 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="1oYl8Ffq4Ve" role="3cqZAp">
-          <node concept="3cpWsn" id="1oYl8Ffq4Vf" role="3cpWs9">
-            <property role="TrG5h" value="cd" />
-            <node concept="3uibUv" id="1oYl8Ffq4Vg" role="1tU5fm">
-              <ref role="3uigEE" to="2e2r:5dW8pSK6xq0" resolve="ClonesDetector" />
-            </node>
-            <node concept="2ShNRf" id="1oYl8Ffq4WM" role="33vP2m">
-              <node concept="HV5vD" id="1oYl8Ffq590" role="2ShVmc">
-                <ref role="HV5vE" to="2e2r:5dW8pSK6xq0" resolve="ClonesDetector" />
+        <node concept="3clFbJ" id="6R7Q$YvB9Ne" role="3cqZAp">
+          <node concept="3clFbS" id="6R7Q$YvB9Ng" role="3clFbx">
+            <node concept="3clFbF" id="6R7Q$YvBbxY" role="3cqZAp">
+              <node concept="37vLTI" id="6R7Q$YvBc5Y" role="3clFbG">
+                <node concept="2ShNRf" id="6R7Q$YvBcfj" role="37vLTx">
+                  <node concept="2Jqq0_" id="6R7Q$YvBcbL" role="2ShVmc">
+                    <node concept="3uibUv" id="6R7Q$YvBcbM" role="HW$YZ">
+                      <ref role="3uigEE" to="2e2r:5dW8pSK6_ts" resolve="Clone" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTw" id="6R7Q$YvBbxW" role="37vLTJ">
+                  <ref role="3cqZAo" node="1oYl8FfqOTD" resolve="clones" />
+                </node>
               </node>
             </node>
           </node>
-        </node>
-        <node concept="3clFbF" id="1oYl8FfqQto" role="3cqZAp">
-          <node concept="37vLTI" id="1oYl8FfqR6O" role="3clFbG">
-            <node concept="37vLTw" id="1oYl8FfqQtm" role="37vLTJ">
-              <ref role="3cqZAo" node="1oYl8FfqOTD" resolve="clones" />
+          <node concept="2ZW3vV" id="6R7Q$YvBb6F" role="3clFbw">
+            <node concept="3uibUv" id="6R7Q$YvBfRA" role="2ZW6by">
+              <ref role="3uigEE" to="tpy2:6n_zVnCvTNE" resolve="ClonesLoader" />
             </node>
-            <node concept="2OqwBi" id="1oYl8FfqRa8" role="37vLTx">
-              <node concept="37vLTw" id="1oYl8FfqRa9" role="2Oq$k0">
-                <ref role="3cqZAo" node="1oYl8Ffq4Vf" resolve="cd" />
+            <node concept="2OqwBi" id="6R7Q$YvB9ZV" role="2ZW6bz">
+              <node concept="37vLTw" id="6R7Q$YvB9ZZ" role="2Oq$k0">
+                <ref role="3cqZAo" node="1oYl8Ffq4i$" resolve="lastSettings" />
               </node>
-              <node concept="liA8E" id="1oYl8FfqRaa" role="2OqNvi">
-                <ref role="37wK5l" to="2e2r:7WP_sw5_yHK" resolve="findClones" />
-                <node concept="37vLTw" id="6dWFC76UQgs" role="37wK5m">
-                  <ref role="3cqZAo" node="6dWFC76UvXw" resolve="pma" />
+              <node concept="2OwXpG" id="6R7Q$YvB9ZW" role="2OqNvi">
+                <ref role="2Oxat5" to="2e2r:6n_zVnCjFsD" resolve="postprocessor" />
+              </node>
+            </node>
+          </node>
+          <node concept="9aQIb" id="6R7Q$YvBcnr" role="9aQIa">
+            <node concept="3clFbS" id="6R7Q$YvBcns" role="9aQI4">
+              <node concept="3cpWs8" id="1oYl8Ffq4Ve" role="3cqZAp">
+                <node concept="3cpWsn" id="1oYl8Ffq4Vf" role="3cpWs9">
+                  <property role="TrG5h" value="cd" />
+                  <node concept="3uibUv" id="1oYl8Ffq4Vg" role="1tU5fm">
+                    <ref role="3uigEE" to="2e2r:5dW8pSK6xq0" resolve="ClonesDetector" />
+                  </node>
+                  <node concept="2ShNRf" id="1oYl8Ffq4WM" role="33vP2m">
+                    <node concept="HV5vD" id="1oYl8Ffq590" role="2ShVmc">
+                      <ref role="HV5vE" to="2e2r:5dW8pSK6xq0" resolve="ClonesDetector" />
+                    </node>
+                  </node>
                 </node>
-                <node concept="37vLTw" id="1oYl8FfqRah" role="37wK5m">
-                  <ref role="3cqZAo" node="1oYl8Ffq4i$" resolve="lastSettings" />
-                </node>
-                <node concept="37vLTw" id="1oYl8FfqV48" role="37wK5m">
-                  <ref role="3cqZAo" node="1oYl8FfqV43" resolve="repo" />
+              </node>
+              <node concept="3clFbF" id="1oYl8FfqQto" role="3cqZAp">
+                <node concept="37vLTI" id="1oYl8FfqR6O" role="3clFbG">
+                  <node concept="37vLTw" id="1oYl8FfqQtm" role="37vLTJ">
+                    <ref role="3cqZAo" node="1oYl8FfqOTD" resolve="clones" />
+                  </node>
+                  <node concept="2OqwBi" id="1oYl8FfqRa8" role="37vLTx">
+                    <node concept="37vLTw" id="1oYl8FfqRa9" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1oYl8Ffq4Vf" resolve="cd" />
+                    </node>
+                    <node concept="liA8E" id="1oYl8FfqRaa" role="2OqNvi">
+                      <ref role="37wK5l" to="2e2r:7WP_sw5_yHK" resolve="findClones" />
+                      <node concept="37vLTw" id="6dWFC76UQgs" role="37wK5m">
+                        <ref role="3cqZAo" node="6dWFC76UvXw" resolve="pma" />
+                      </node>
+                      <node concept="37vLTw" id="1oYl8FfqRah" role="37wK5m">
+                        <ref role="3cqZAo" node="1oYl8Ffq4i$" resolve="lastSettings" />
+                      </node>
+                      <node concept="37vLTw" id="1oYl8FfqV48" role="37wK5m">
+                        <ref role="3cqZAo" node="1oYl8FfqV43" resolve="repo" />
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
