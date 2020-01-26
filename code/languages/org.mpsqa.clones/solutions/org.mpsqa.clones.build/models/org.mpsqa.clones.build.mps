@@ -902,6 +902,21 @@
             <ref role="3bR37D" node="2JVMSZMFXgA" resolve="org.mpsqa.clones.core" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6R7Q$YvDvMq" role="3bR37C">
+          <node concept="3bR9La" id="6R7Q$YvDvMr" role="1SiIV1">
+            <ref role="3bR37D" node="2JVMSZMFXgY" resolve="org.mpsqa.clones.config" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6R7Q$YvDvMs" role="3bR37C">
+          <node concept="3bR9La" id="6R7Q$YvDvMt" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6R7Q$YvDvMu" role="3bR37C">
+          <node concept="3bR9La" id="6R7Q$YvDvMv" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:ymnOULAU0j" resolve="jetbrains.mps.baseLanguage.unitTest" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="22LTRH" id="2JVMSZMFYqK" role="1hWBAP">
