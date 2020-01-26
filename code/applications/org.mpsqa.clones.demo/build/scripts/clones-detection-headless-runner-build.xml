@@ -4,8 +4,10 @@
   <property name="build.tmp" location="${build.dir}/tmp/headless_runner" />
   <property name="build.layout" location="${build.dir}/artifacts/headless_runner" />
   <property name="mps_home" location="${basedir}/../../../../../../../MPS_2018_3_7_esd_devel_clones_detection" />
-  <property name="mpsqa.clones.detection.home" location="${basedir}/../../code" />
-  <property name="mps.mpsqa.clones.detection.home" location="${mpsqa.clones.detection.home}" />
+  <property name="mpsqa.clones.detection.home" location="${basedir}/../.." />
+  <property name="mpsqa.clones.dir" location="${basedir}/../../../../../../../tmp/clones" />
+  <property name="mps.macro.mpsqa.clones.detection.home" location="${mpsqa.clones.detection.home}" />
+  <property name="mps.macro.mpsqa.clones.dir" location="${mpsqa.clones.dir}" />
   <property name="artifacts.mps" location="${mps_home}" />
   <property name="artifacts.org.mpsqa.clones" location="${mps_home}" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
@@ -55,22 +57,22 @@
     </echoxml>
     <jar destfile="${build.layout}/org.mpsqa.clones.demo.config.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/org.mpsqa.clones.demo.config" />
-      <fileset dir="${mpsqa.clones.detection.home}/solutions/org.mpsqa.clones.demo.config" includes="icons/**" />
-      <fileset dir="${mpsqa.clones.detection.home}/solutions/org.mpsqa.clones.demo.config/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${mpsqa.clones.detection.home}/code/solutions/org.mpsqa.clones.demo.config" includes="icons/**" />
+      <fileset dir="${mpsqa.clones.detection.home}/code/solutions/org.mpsqa.clones.demo.config/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/org.mpsqa.clones.demo.config.jar" />
     </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-org.mpsqa.clones.demo.config-models">
-      <fileset dir="${mpsqa.clones.detection.home}/solutions/org.mpsqa.clones.demo.config/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/code-solutions-org.mpsqa.clones.demo.config-models">
+      <fileset dir="${mpsqa.clones.detection.home}/code/solutions/org.mpsqa.clones.demo.config/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/org.mpsqa.clones.demo.config-src.jar" duplicate="preserve">
-      <fileset dir="${mpsqa.clones.detection.home}/solutions/org.mpsqa.clones.demo.config/source_gen">
+      <fileset dir="${mpsqa.clones.detection.home}/code/solutions/org.mpsqa.clones.demo.config/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
         <exclude name="**/checkpoints" />
         <exclude name="**/*.mps" />
       </fileset>
-      <zipfileset file="${mpsqa.clones.detection.home}/solutions/org.mpsqa.clones.demo.config/org.mpsqa.clones.demo.config.msd" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-org.mpsqa.clones.demo.config-models" prefix="module/models" />
+      <zipfileset file="${mpsqa.clones.detection.home}/code/solutions/org.mpsqa.clones.demo.config/org.mpsqa.clones.demo.config.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/code-solutions-org.mpsqa.clones.demo.config-models" prefix="module/models" />
     </jar>
     <echo file="${build.layout}/build.properties">mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
   </target>
@@ -174,14 +176,16 @@
       <library file="${build.tmp}/deps/org.mpsqa.clones/org.mpsqa.clones.zip/org.mpsqa.clones/languages/org.mpsqa.clones/org.mpsqa.clones.pluginSolution.jar" />
       <library file="${build.tmp}/deps/org.mpsqa.clones/org.mpsqa.clones.zip/org.mpsqa.clones/languages/org.mpsqa.clones/org.mpsqa.treemap.lib.jar" />
       <chunk>
-        <module file="${mpsqa.clones.detection.home}/solutions/org.mpsqa.clones.demo.config/org.mpsqa.clones.demo.config.msd" />
+        <module file="${mpsqa.clones.detection.home}/code/solutions/org.mpsqa.clones.demo.config/org.mpsqa.clones.demo.config.msd" />
       </chunk>
       <jvmargs>
         <arg value="-Xmx512m" />
       </jvmargs>
       <macro name="mps_home" path="${mps_home}" />
       <macro name="mpsqa.clones.detection.home" path="${mpsqa.clones.detection.home}" />
-      <macro name="mps.mpsqa.clones.detection.home" path="${mps.mpsqa.clones.detection.home}" />
+      <macro name="mpsqa.clones.dir" path="${mpsqa.clones.dir}" />
+      <macro name="mps.macro.mpsqa.clones.detection.home" path="${mps.macro.mpsqa.clones.detection.home}" />
+      <macro name="mps.macro.mpsqa.clones.dir" path="${mps.macro.mpsqa.clones.dir}" />
     </generate>
   </target>
   
@@ -194,13 +198,13 @@
   <target name="module-tests" depends="assemble, test.detect clones headless" />
   
   <target name="java.compile.org.mpsqa.clones.demo.config" depends="fetchDependencies">
-    <mkdir dir="${mpsqa.clones.detection.home}/solutions/org.mpsqa.clones.demo.config/source_gen" />
+    <mkdir dir="${mpsqa.clones.detection.home}/code/solutions/org.mpsqa.clones.demo.config/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.mpsqa.clones.demo.config" />
     <javac destdir="${build.tmp}/java/out/org.mpsqa.clones.demo.config" fork="true" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${mpsqa.clones.detection.home}/solutions/org.mpsqa.clones.demo.config/source_gen" />
-        <pathelement path="${mpsqa.clones.detection.home}/solutions/org.mpsqa.clones.demo.config/test_gen/" />
+        <path location="${mpsqa.clones.detection.home}/code/solutions/org.mpsqa.clones.demo.config/source_gen" />
+        <pathelement path="${mpsqa.clones.detection.home}/code/solutions/org.mpsqa.clones.demo.config/test_gen/" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
@@ -376,6 +380,8 @@
       <sysproperty key="mps.libraries" value="${mps.libraries.path.string}" />
       <sysproperty key="mps.test.modules" value="${mps.tests.path.string}" />
       
+      <sysproperty key="mps.macro.mpsqa.clones.detection.home" value="${mpsqa.clones.detection.home}" />
+      <sysproperty key="mps.macro.mpsqa.clones.dir" value="${mpsqa.clones.dir}" />
       
       <test name="jetbrains.mps.testbench.junit.suites.AntModuleTestSuite" outfile="TEST-jetbrains.mps.testbench.junit.suites.AntModuleTestSuite-detect clones headless" />
       <formatter type="xml" />
@@ -383,7 +389,7 @@
   </target>
   
   <target name="cleanSources">
-    <delete dir="${mpsqa.clones.detection.home}/solutions/org.mpsqa.clones.demo.config/source_gen" />
-    <delete dir="${mpsqa.clones.detection.home}/solutions/org.mpsqa.clones.demo.config/test_gen" />
+    <delete dir="${mpsqa.clones.detection.home}/code/solutions/org.mpsqa.clones.demo.config/source_gen" />
+    <delete dir="${mpsqa.clones.detection.home}/code/solutions/org.mpsqa.clones.demo.config/test_gen" />
   </target>
 </project>
