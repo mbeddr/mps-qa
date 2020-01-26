@@ -199,7 +199,7 @@
     </node>
   </node>
   <node concept="2XOHcx" id="5dW8pSKf75s">
-    <property role="2XOHcw" value="${mpsqa.clones.detection.home}/code/languages/org.mpsqa.clones" />
+    <property role="2XOHcw" value="${mpsqa.clones.detection.home}/" />
   </node>
 </model>
 
