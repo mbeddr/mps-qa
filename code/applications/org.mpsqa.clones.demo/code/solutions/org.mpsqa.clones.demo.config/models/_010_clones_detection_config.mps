@@ -67,6 +67,9 @@
     <node concept="Fx$Zk" id="6R7Q$YvCFbb" role="1FAEnG">
       <property role="Fx$Zl" value="TypeVariableDeclaration" />
     </node>
+    <node concept="Fx$Zk" id="6R7Q$YvErWC" role="1FAEnG">
+      <property role="Fx$Zl" value="UpperBoundType" />
+    </node>
     <node concept="pIQ0O" id="4vC8GjwSv0u" role="1FAEnG">
       <property role="pIQ3b" value="MPS language design concepts" />
     </node>
@@ -74,7 +77,7 @@
       <property role="Fx$Zl" value="RefactoringPart" />
     </node>
     <node concept="py32y" id="6dJ4vxiTQhs" role="py33p" />
-    <node concept="2dEW3t" id="6R7Q$YvDFYi" role="2dEW0l">
+    <node concept="2dEW3t" id="6R7Q$YvErX6" role="2dEW0l">
       <property role="2dEW3s" value="${mpsqa.clones.dir}/clones_baseline.xml" />
     </node>
   </node>
