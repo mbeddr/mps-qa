@@ -118,7 +118,7 @@
             <node concept="2OqwBi" id="4elAKXim_cy" role="33vP2m">
               <node concept="1jxXqW" id="4elAKXim_cz" role="2Oq$k0" />
               <node concept="liA8E" id="4elAKXim_c$" role="2OqNvi">
-                <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
               </node>
             </node>
           </node>
@@ -160,6 +160,9 @@
               </node>
               <node concept="37vLTw" id="4elAKXim_cA" role="37wK5m">
                 <ref role="3cqZAo" node="4elAKXim_cx" resolve="repo" />
+              </node>
+              <node concept="3cmrfG" id="5YQNmM9b3pm" role="37wK5m">
+                <property role="3cmrfH" value="4" />
               </node>
             </node>
           </node>

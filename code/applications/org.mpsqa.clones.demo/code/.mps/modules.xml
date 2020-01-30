@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.clones.demo.build/org.mpsqa.clones.demo.build.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.clones.demo.config/org.mpsqa.clones.demo.config.msd" folder="" />
+    </projectModules>
+  </component>
+</project>

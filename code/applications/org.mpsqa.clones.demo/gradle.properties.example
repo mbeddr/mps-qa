@@ -1,0 +1,3 @@
+mpsHomeDir=<mps_home>
+mpsqa.clones.detection.home=<current_directory>
+mpsqa.clones.dir=<directory_where_clones_baselines_are_saved>

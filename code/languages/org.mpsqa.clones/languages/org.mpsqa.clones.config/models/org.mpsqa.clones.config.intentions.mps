@@ -125,7 +125,7 @@
               <ref role="3cqZAo" node="4vctr_xUKaj" resolve="context" />
             </node>
             <node concept="liA8E" id="4vctr_xULPZ" role="2OqNvi">
-              <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
+              <ref role="37wK5l" to="cj4x:~EditorContext.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
             </node>
           </node>
         </node>

@@ -1,0 +1,195 @@
+import de.itemis.mps.gradle.*
+
+//will pull the groovy classes/types from nexus to the classpath
+buildscript {
+    repositories {
+        maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
+    }
+    dependencies {
+        classpath 'de.itemis.mps:mps-gradle-plugin:1.2+'
+    }
+}
+
+plugins {
+    id 'base'
+    id 'maven-publish'
+    id 'co.riiid.gradle' version '0.4.2'
+}
+
+
+// detect if we are in a CI build
+if (project.hasProperty("forceCI")) {
+    ext.ciBuild = true
+} else {
+    // on teamcity we are in a CI build
+    ext.ciBuild = project.hasProperty("teamcity")
+}
+
+// comprehensible error message if not running java 8
+if(JavaVersion.current() != JavaVersion.VERSION_1_8){
+    throw new GradleException("This build script requires java " + JavaVersion.VERSION_1_8 + ", but you are currently using " + JavaVersion.current())
+}
+// Detect jdk location, required to start ant with tools.jar on classpath otherwise javac and tests will fail
+def java_home = System.properties['java.home']
+def jdk_home = java_home
+if (!file("$jdk_home/lib/tools.jar").isFile()) {
+    jdk_home = jdk_home + "/.."
+}
+if (!file("$jdk_home/lib/tools.jar").isFile()) {
+    throw new GradleException("Was not able to locate jdk home folder. Use 'jdk_home' project variable to specify JDK location explicitly. Current JAVA_HOME is: $java_home")
+}
+ext.jdk_home = jdk_home
+
+// Default repository credentials
+if (!project.hasProperty('nexusUsername')) {
+    ext.nexusUsername = ''
+    ext.nexusPassword = ''
+}
+logger.info 'Repository username: {}', project.nexusUsername
+
+ext.dependencyRepositories = [
+        'https://projects.itemis.de/nexus/content/repositories/mbeddr',
+        'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots',
+]
+
+// Dependency versions
+ext.mpsVersion =  '2018.3.7'
+ext.mbeddrVersion =  '[1.3,1.4]'
+
+// Project versions
+ext.major = '1'
+ext.minor = '0'
+
+if (ciBuild) {
+    String branch = GitBasedVersioning.gitBranch
+
+    def buildNumber = System.env.BUILD_NUMBER.toInteger()
+    if (branch.startsWith("maintenance") || branch.startsWith("mps")) {
+        version = "$major.$minor.$buildNumber.${GitBasedVersioning.gitShortCommitHash}"
+    } else {
+        version = GitBasedVersioning.getVersionWithCount(major, minor, buildNumber)
+    }
+
+    println "##teamcity[buildNumber '${version}']"
+} else {
+    println "Local build detected, version will be SNAPSHOT"
+    version = "$major.$minor-SNAPSHOT"
+}
+
+/*
+def userHome = System.properties['user.home']
+def mpsPluginsDirPattern
+if (System.properties['os.name'].toLowerCase().contains('mac')) {
+    mpsPluginsDirPattern = "$userHome/Library/Application Support/%s"
+} else {
+    mpsPluginsDirPattern = "$userHome/.%s/config/plugins"
+}
+
+if (project.hasProperty("MPS_PATHS_SELECTOR")) {
+    ext.mpsPluginsDir = sprintf(mpsPluginsDirPattern, project.getProperty("MPS_PATHS_SELECTOR"))
+} else {
+    ext.mpsPluginsDir = sprintf(mpsPluginsDirPattern, "MPS$mpsMajor")
+}
+*/
+
+ext.publishingRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
+
+
+configurations {
+    mps
+    // includes also junit tasks support
+    antLib
+}
+
+dependencies {
+    mps "com.jetbrains:mps:$mpsVersion"
+    antLib "org.apache.ant:ant-junit:1.10.6"
+}
+
+repositories {
+    mavenLocal()
+    for (repoUrl in project.dependencyRepositories) {
+        maven {
+            url repoUrl
+        }
+    }
+    mavenCentral()
+}
+
+ext.skipResolveMps = project.hasProperty('mpsHomeDir')
+ext.mpsHomeDir = rootProject.file(project.findProperty('mpsHomeDir') ?: "$buildDir/mps")
+
+if (project.skipResolveMps) {
+    task resolveMps {
+        doLast {
+            logger.info "MPS resolution skipped"
+            logger.info "MPS home: " + mpsHomeDir.getAbsolutePath()
+        }
+    }
+} else {
+    task resolveMps(type: Copy) {
+        dependsOn configurations.mps
+        from {
+            configurations.mps.resolve().collect { zipTree(it) }
+        }
+        into mpsHomeDir
+    }
+}
+
+// tools needed for compiler support in ant calls
+ext.buildScriptClasspath = project.configurations.antLib.fileCollection { true } +
+        project.files("$project.jdk_home/lib/tools.jar")
+
+def artifactsDir = file("$buildDir/artifacts")
+def dependenciesDir = file("$buildDir/dependencies")
+
+
+// ___________________ utilities ___________________
+
+def defaultScriptArgs = [
+        'mps.home'                          : mpsHomeDir,
+        'mpsqa.home'                : rootDir,
+        'build.dir'                         : buildDir,
+        'version'                           : version,
+        'build.date'                        : new Date(),
+        //incremental build support
+        'mps.generator.skipUnmodifiedModels': true
+]
+
+// enables https://github.com/mbeddr/mps-gradle-plugin#providing-global-defaults
+ext["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.collect { "-D$it.key=$it.value".toString() }
+ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = buildScriptClasspath
+ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = new File(jdk_home, 'bin/java')
+
+task resolveLanguageLibs(type: Copy) {
+    from {
+        configurations.languageLibs.resolve().collect { zipTree(it) }
+    }
+    into dependenciesDir
+}
+
+task build_clones_languages(type: BuildLanguages, dependsOn: []) {
+    script "$buildDir/scripts/build-clones-languages.xml"
+}
+
+task run_clones_headless(type: TestLanguages, dependsOn: build_clones_languages) { 
+    description "Will execute all tests from command line"
+    print "mpsqa.home = " + rootDir;
+	script new File("$buildDir/scripts/build-clones-headless-detector.xml")
+}
+
+check.dependsOn run_clones_headless
+
+assemble.dependsOn run_clones_headless
+
+task cleanMps(type: Delete) {
+    delete fileTree(dir: projectDir, include: ["**/classes_gen/**", "**/source_gen/**", "**/source_gen.caches/**", "tmp/**"])
+}
+
+clean.dependsOn cleanMps
+
+
+defaultTasks 'run_clones_headless'
+
+task rebuild(dependsOn:[clean, build_clones_languages])
+
