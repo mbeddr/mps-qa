@@ -97,10 +97,12 @@
       </concept>
       <concept id="6592112598314498926" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_Plugin" flags="ng" index="m$_wl">
         <reference id="6592112598314801433" name="plugin" index="m_rDy" />
+        <child id="3570488090019868128" name="packagingType" index="pUk7w" />
       </concept>
       <concept id="6592112598314499027" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginDependency" flags="ng" index="m$_yC">
         <reference id="6592112598314499066" name="target" index="m$_y1" />
       </concept>
+      <concept id="3570488090019868065" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_AutoPluginLayoutType" flags="ng" index="pUk6x" />
       <concept id="1500819558095907805" name="jetbrains.mps.build.mps.structure.BuildMps_Group" flags="ng" index="2G$12M">
         <child id="1500819558095907806" name="modules" index="2G$12L" />
       </concept>
@@ -166,8 +168,8 @@
               <property role="2Ry0Am" value=".." />
               <node concept="2Ry0Ak" id="2JVMSZMFXWD" role="2Ry0An">
                 <property role="2Ry0Am" value=".." />
-                <node concept="2Ry0Ak" id="1GhTetdBQMJ" role="2Ry0An">
-                  <property role="2Ry0Am" value="MPS_2018_3_7_esd_devel" />
+                <node concept="2Ry0Ak" id="52XWqlKvtBc" role="2Ry0An">
+                  <property role="2Ry0Am" value="MPS_2019_3" />
                 </node>
               </node>
             </node>
@@ -313,6 +315,7 @@
               </node>
             </node>
           </node>
+          <node concept="pUk6x" id="52XWqlKvt_S" role="pUk7w" />
         </node>
       </node>
     </node>
@@ -809,8 +812,8 @@
               <property role="2Ry0Am" value=".." />
               <node concept="2Ry0Ak" id="1GhTetdB0o9" role="2Ry0An">
                 <property role="2Ry0Am" value=".." />
-                <node concept="2Ry0Ak" id="1GhTetdBQO4" role="2Ry0An">
-                  <property role="2Ry0Am" value="MPS_2018_3_7_esd_devel" />
+                <node concept="2Ry0Ak" id="52XWqlKvtCw" role="2Ry0An">
+                  <property role="2Ry0Am" value="MPS_2019_3" />
                 </node>
               </node>
             </node>
@@ -853,7 +856,7 @@
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="test.org.mpsqa.clones.headless" />
         <property role="3LESm3" value="3f198f21-a320-4b82-bf5e-e7c501e76d9d" />
-        <property role="aoJFB" value="sources and tests" />
+        <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
         <node concept="398BVA" id="2JVMSZMFYb6" role="3LF7KH">
           <ref role="398BVh" node="1GhTetdB0oc" resolve="mpsqa.clones.home" />
           <node concept="2Ry0Ak" id="2JVMSZMFYb7" role="iGT6I">

@@ -2,9 +2,9 @@
 <model ref="r:58f16ec6-c72c-4f1f-aad3-d330a651f9dd(test.org.mpsqa.clones._200_save_load_filter_clones@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
   </languages>
   <imports>
     <import index="zvdt" ref="r:feaaf0a4-b53f-4c4a-a6cb-c3a954e615e6(org.mpsqa.clones.core.utils)" />
@@ -14,7 +14,6 @@
     <import index="tpy2" ref="r:09c925f8-54a9-4591-ab56-735d31a867ae(org.mpsqa.clones.core.management)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="8oaq" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.io(org.apache.commons/)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -417,10 +416,8 @@
         </node>
         <node concept="3clFbH" id="16s82eEo_8L" role="3cqZAp" />
         <node concept="3vlDli" id="16s82eEoFwP" role="3cqZAp">
-          <node concept="2YIFZM" id="16s82eEoIfX" role="3tpDZB">
-            <ref role="37wK5l" to="8oaq:~FileUtils.sizeOf(java.io.File):long" resolve="sizeOf" />
-            <ref role="1Pybhc" to="8oaq:~FileUtils" resolve="FileUtils" />
-            <node concept="2ShNRf" id="6dJ4vxiTed1" role="37wK5m">
+          <node concept="2OqwBi" id="5GfQmX$cvl_" role="3tpDZB">
+            <node concept="2ShNRf" id="6dJ4vxiTed1" role="2Oq$k0">
               <node concept="1pGfFk" id="6dJ4vxiTed0" role="2ShVmc">
                 <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
                 <node concept="37vLTw" id="6dJ4vxiTedY" role="37wK5m">
@@ -428,17 +425,21 @@
                 </node>
               </node>
             </node>
+            <node concept="liA8E" id="5GfQmX$cvHm" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~File.length()" resolve="length" />
+            </node>
           </node>
-          <node concept="2YIFZM" id="16s82eEoIQp" role="3tpDZA">
-            <ref role="37wK5l" to="8oaq:~FileUtils.sizeOf(java.io.File):long" resolve="sizeOf" />
-            <ref role="1Pybhc" to="8oaq:~FileUtils" resolve="FileUtils" />
-            <node concept="2ShNRf" id="6dJ4vxiTeb5" role="37wK5m">
+          <node concept="2OqwBi" id="5GfQmX$cvW8" role="3tpDZA">
+            <node concept="2ShNRf" id="6dJ4vxiTeb5" role="2Oq$k0">
               <node concept="1pGfFk" id="6dJ4vxiTeb4" role="2ShVmc">
                 <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
                 <node concept="37vLTw" id="6dJ4vxiTebv" role="37wK5m">
                   <ref role="3cqZAo" node="6dJ4vxiTbyj" resolve="reSavedFilePath" />
                 </node>
               </node>
+            </node>
+            <node concept="liA8E" id="5GfQmX$cw0W" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~File.length()" resolve="length" />
             </node>
           </node>
         </node>

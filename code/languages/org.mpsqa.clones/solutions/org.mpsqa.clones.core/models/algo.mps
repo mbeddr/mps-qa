@@ -363,13 +363,13 @@
         <node concept="3clFbJ" id="6n_zVnCadhZ" role="3cqZAp">
           <node concept="3clFbS" id="6n_zVnCadi1" role="3clFbx">
             <node concept="2xdQw9" id="6n_zVnCaj9K" role="3cqZAp">
-              <property role="2xdLsb" value="error" />
+              <property role="2xdLsb" value="gZ5fh_4/error" />
               <node concept="Xl_RD" id="6n_zVnCaj9M" role="9lYJi">
                 <property role="Xl_RC" value="The set of models on which clones detection is performed is empty!" />
               </node>
             </node>
             <node concept="RRSsy" id="wcbKZJ4est" role="3cqZAp">
-              <property role="RRSoG" value="error" />
+              <property role="RRSoG" value="gZ5fh_4/error" />
               <node concept="Xl_RD" id="wcbKZJ4esv" role="RRSoy">
                 <property role="Xl_RC" value="The set of models on which clones detection is performed is empty!" />
               </node>
@@ -384,7 +384,7 @@
           <node concept="9aQIb" id="wcbKZJ4eoq" role="9aQIa">
             <node concept="3clFbS" id="wcbKZJ4eor" role="9aQI4">
               <node concept="RRSsy" id="wcbKZJ4e_A" role="3cqZAp">
-                <property role="RRSoG" value="info" />
+                <property role="RRSoG" value="h1akgim/info" />
                 <node concept="3cpWs3" id="wcbKZJ4ocZ" role="RRSoy">
                   <node concept="Xl_RD" id="wcbKZJ4ols" role="3uHU7w">
                     <property role="Xl_RC" value=" models" />
@@ -603,7 +603,7 @@
               </node>
               <node concept="3clFbH" id="4vC8GjwR6Q0" role="3cqZAp" />
               <node concept="2xdQw9" id="4vC8GjwR7vG" role="3cqZAp">
-                <property role="2xdLsb" value="info" />
+                <property role="2xdLsb" value="h1akgim/info" />
                 <node concept="3cpWs3" id="4vC8GjwRbgf" role="9lYJi">
                   <node concept="Xl_RD" id="4vC8GjwRbhn" role="3uHU7w">
                     <property role="Xl_RC" value="(ms)" />
@@ -626,7 +626,7 @@
                 </node>
               </node>
               <node concept="2xdQw9" id="4vC8GjwRcuU" role="3cqZAp">
-                <property role="2xdLsb" value="info" />
+                <property role="2xdLsb" value="h1akgim/info" />
                 <node concept="3cpWs3" id="4vC8GjwRcuV" role="9lYJi">
                   <node concept="Xl_RD" id="4vC8GjwRcuW" role="3uHU7w">
                     <property role="Xl_RC" value="(ms)" />
@@ -1048,7 +1048,7 @@
                 </node>
                 <node concept="3clFbS" id="1GhTetdTr1p" role="TDEfX">
                   <node concept="RRSsy" id="1GhTetdUXCs" role="3cqZAp">
-                    <property role="RRSoG" value="error" />
+                    <property role="RRSoG" value="gZ5fh_4/error" />
                     <node concept="2OqwBi" id="1GhTetdUYPH" role="RRSoy">
                       <node concept="37vLTw" id="1GhTetdUYCY" role="2Oq$k0">
                         <ref role="3cqZAo" node="1GhTetdTr1l" resolve="e" />
@@ -2423,7 +2423,7 @@
                       <node concept="3clFbJ" id="1GhTetdXjzu" role="3cqZAp">
                         <node concept="3clFbS" id="1GhTetdXjzv" role="3clFbx">
                           <node concept="2xdQw9" id="1GhTetdXjzw" role="3cqZAp">
-                            <property role="2xdLsb" value="info" />
+                            <property role="2xdLsb" value="h1akgim/info" />
                             <node concept="3cpWs3" id="1GhTetdXjzx" role="9lYJi">
                               <node concept="Xl_RD" id="1GhTetdXjzy" role="3uHU7B">
                                 <property role="Xl_RC" value="module is not considered: " />
@@ -2461,7 +2461,7 @@
                       <node concept="3clFbJ" id="7YZJmep$QpL" role="3cqZAp">
                         <node concept="3clFbS" id="7YZJmep$QpM" role="3clFbx">
                           <node concept="2xdQw9" id="7YZJmep$QpN" role="3cqZAp">
-                            <property role="2xdLsb" value="info" />
+                            <property role="2xdLsb" value="h1akgim/info" />
                             <node concept="3cpWs3" id="7YZJmep$QpO" role="9lYJi">
                               <node concept="Xl_RD" id="7YZJmep$QpP" role="3uHU7B">
                                 <property role="Xl_RC" value="module ignored: " />
@@ -2510,7 +2510,7 @@
                           <node concept="3clFbJ" id="7YZJmep$Qqc" role="3cqZAp">
                             <node concept="3clFbS" id="7YZJmep$Qqd" role="3clFbx">
                               <node concept="2xdQw9" id="7YZJmep$Qqe" role="3cqZAp">
-                                <property role="2xdLsb" value="info" />
+                                <property role="2xdLsb" value="h1akgim/info" />
                                 <node concept="3cpWs3" id="7YZJmep$Qqf" role="9lYJi">
                                   <node concept="Xl_RD" id="7YZJmep$Qqg" role="3uHU7B">
                                     <property role="Xl_RC" value="model ignored: " />
@@ -2600,7 +2600,7 @@
         <node concept="3clFbJ" id="wcbKZJ3JaH" role="3cqZAp">
           <node concept="3clFbS" id="wcbKZJ3JaJ" role="3clFbx">
             <node concept="RRSsy" id="wcbKZJ3OUz" role="3cqZAp">
-              <property role="RRSoG" value="error" />
+              <property role="RRSoG" value="gZ5fh_4/error" />
               <node concept="Xl_RD" id="wcbKZJ3OU_" role="RRSoy">
                 <property role="Xl_RC" value="no model was collected. Your clones-detection configuration seems too restrictive!" />
               </node>
@@ -2615,7 +2615,7 @@
           <node concept="9aQIb" id="wcbKZJ3XqM" role="9aQIa">
             <node concept="3clFbS" id="wcbKZJ3XqN" role="9aQI4">
               <node concept="RRSsy" id="wcbKZJ3XrH" role="3cqZAp">
-                <property role="RRSoG" value="info" />
+                <property role="RRSoG" value="h1akgim/info" />
                 <node concept="3cpWs3" id="wcbKZJ3XvJ" role="RRSoy">
                   <node concept="2OqwBi" id="wcbKZJ3Yqt" role="3uHU7B">
                     <node concept="37vLTw" id="wcbKZJ3Xxb" role="2Oq$k0">

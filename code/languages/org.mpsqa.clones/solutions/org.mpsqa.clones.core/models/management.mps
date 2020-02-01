@@ -2,9 +2,9 @@
 <model ref="r:09c925f8-54a9-4591-ab56-735d31a867ae(org.mpsqa.clones.core.management)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
   </languages>
@@ -956,13 +956,13 @@
               </node>
             </node>
             <node concept="2xdQw9" id="wcbKZJvSuq" role="3cqZAp">
-              <property role="2xdLsb" value="info" />
+              <property role="2xdLsb" value="h1akgim/info" />
               <node concept="37vLTw" id="wcbKZJvXDh" role="9lYJi">
                 <ref role="3cqZAo" node="wcbKZJvTza" resolve="msg" />
               </node>
             </node>
             <node concept="RRSsy" id="6dJ4vxiRKaJ" role="3cqZAp">
-              <property role="RRSoG" value="info" />
+              <property role="RRSoG" value="h1akgim/info" />
               <node concept="37vLTw" id="wcbKZJvTzg" role="RRSoy">
                 <ref role="3cqZAo" node="wcbKZJvTza" resolve="msg" />
               </node>
@@ -1192,7 +1192,7 @@
               <node concept="SfApY" id="16s82eEmQsi" role="3cqZAp">
                 <node concept="3clFbS" id="16s82eEmQsj" role="SfCbr">
                   <node concept="RRSsy" id="wcbKZIYk1y" role="3cqZAp">
-                    <property role="RRSoG" value="info" />
+                    <property role="RRSoG" value="h1akgim/info" />
                     <node concept="3cpWs3" id="wcbKZIYk1C" role="RRSoy">
                       <node concept="Xl_RD" id="wcbKZIYk1D" role="3uHU7B">
                         <property role="Xl_RC" value="loading clones from: " />
@@ -1504,7 +1504,7 @@
                             <node concept="9aQIb" id="16s82eEmQu7" role="9aQIa">
                               <node concept="3clFbS" id="16s82eEmQu8" role="9aQI4">
                                 <node concept="RRSsy" id="16s82eEmQu9" role="3cqZAp">
-                                  <property role="RRSoG" value="error" />
+                                  <property role="RRSoG" value="gZ5fh_4/error" />
                                   <node concept="3cpWs3" id="16s82eEmQua" role="RRSoy">
                                     <node concept="37vLTw" id="16s82eEmQub" role="3uHU7w">
                                       <ref role="3cqZAo" node="16s82eEmQtm" resolve="moduleName" />
@@ -1651,7 +1651,7 @@
                   <node concept="3clFbJ" id="16s82eEpRYz" role="3cqZAp">
                     <node concept="3clFbS" id="16s82eEpRY_" role="3clFbx">
                       <node concept="RRSsy" id="wcbKZIYihV" role="3cqZAp">
-                        <property role="RRSoG" value="error" />
+                        <property role="RRSoG" value="gZ5fh_4/error" />
                         <node concept="3cpWs3" id="wcbKZIYihX" role="RRSoy">
                           <node concept="3cpWs3" id="wcbKZIYihY" role="3uHU7B">
                             <node concept="Xl_RD" id="wcbKZIYihZ" role="3uHU7B">
@@ -1727,13 +1727,13 @@
           </node>
         </node>
         <node concept="RRSsy" id="wcbKZIY$bE" role="3cqZAp">
-          <property role="RRSoG" value="info" />
+          <property role="RRSoG" value="h1akgim/info" />
           <node concept="37vLTw" id="6R7Q$YvB_jm" role="RRSoy">
             <ref role="3cqZAo" node="6R7Q$YvB_je" resolve="msg" />
           </node>
         </node>
         <node concept="2xdQw9" id="6R7Q$YvBB3D" role="3cqZAp">
-          <property role="2xdLsb" value="info" />
+          <property role="2xdLsb" value="h1akgim/info" />
           <node concept="37vLTw" id="6R7Q$YvBCvi" role="9lYJi">
             <ref role="3cqZAo" node="6R7Q$YvB_je" resolve="msg" />
           </node>
@@ -1806,7 +1806,7 @@
         <node concept="3clFbJ" id="16s82eEqyFf" role="3cqZAp">
           <node concept="3clFbS" id="16s82eEqyFh" role="3clFbx">
             <node concept="RRSsy" id="16s82eEqzNq" role="3cqZAp">
-              <property role="RRSoG" value="error" />
+              <property role="RRSoG" value="gZ5fh_4/error" />
               <node concept="3cpWs3" id="16s82eEqAZm" role="RRSoy">
                 <node concept="Xl_RD" id="16s82eEqBtG" role="3uHU7w">
                   <property role="Xl_RC" value=" could not be found!" />
@@ -2328,7 +2328,7 @@
       </node>
       <node concept="3clFbS" id="16s82eE58vq" role="3clF47">
         <node concept="RRSsy" id="wcbKZIYeIz" role="3cqZAp">
-          <property role="RRSoG" value="info" />
+          <property role="RRSoG" value="h1akgim/info" />
           <node concept="3cpWs3" id="wcbKZIYeI_" role="RRSoy">
             <node concept="2OqwBi" id="wcbKZIYeIA" role="3uHU7w">
               <node concept="37vLTw" id="wcbKZIYeIB" role="2Oq$k0">
@@ -2384,7 +2384,7 @@
           </node>
         </node>
         <node concept="RRSsy" id="wcbKZIYfhu" role="3cqZAp">
-          <property role="RRSoG" value="info" />
+          <property role="RRSoG" value="h1akgim/info" />
           <node concept="3cpWs3" id="wcbKZIYfhw" role="RRSoy">
             <node concept="2OqwBi" id="wcbKZIYfhx" role="3uHU7w">
               <node concept="37vLTw" id="wcbKZIYfhy" role="2Oq$k0">
@@ -2469,7 +2469,7 @@
           </node>
         </node>
         <node concept="RRSsy" id="wcbKZIYgbM" role="3cqZAp">
-          <property role="RRSoG" value="info" />
+          <property role="RRSoG" value="h1akgim/info" />
           <node concept="3cpWs3" id="wcbKZIYgbO" role="RRSoy">
             <node concept="2OqwBi" id="wcbKZIYgbP" role="3uHU7w">
               <node concept="37vLTw" id="wcbKZIYgbQ" role="2Oq$k0">
@@ -2602,13 +2602,13 @@
               </node>
             </node>
             <node concept="2xdQw9" id="wcbKZJwdn$" role="3cqZAp">
-              <property role="2xdLsb" value="info" />
+              <property role="2xdLsb" value="h1akgim/info" />
               <node concept="37vLTw" id="wcbKZJwdnA" role="9lYJi">
                 <ref role="3cqZAo" node="wcbKZJwcw0" resolve="msg" />
               </node>
             </node>
             <node concept="RRSsy" id="wcbKZJwcXE" role="3cqZAp">
-              <property role="RRSoG" value="info" />
+              <property role="RRSoG" value="h1akgim/info" />
               <node concept="37vLTw" id="wcbKZJwcXF" role="RRSoy">
                 <ref role="3cqZAo" node="wcbKZJwcw0" resolve="msg" />
               </node>
@@ -2731,13 +2731,13 @@
               </node>
             </node>
             <node concept="2xdQw9" id="wcbKZJwmRc" role="3cqZAp">
-              <property role="2xdLsb" value="info" />
+              <property role="2xdLsb" value="h1akgim/info" />
               <node concept="37vLTw" id="wcbKZJwnr9" role="9lYJi">
                 <ref role="3cqZAo" node="wcbKZJwlKm" resolve="msg1" />
               </node>
             </node>
             <node concept="RRSsy" id="wcbKZJwbJa" role="3cqZAp">
-              <property role="RRSoG" value="info" />
+              <property role="RRSoG" value="h1akgim/info" />
               <node concept="37vLTw" id="wcbKZJwlKq" role="RRSoy">
                 <ref role="3cqZAo" node="wcbKZJwlKm" resolve="msg1" />
               </node>
