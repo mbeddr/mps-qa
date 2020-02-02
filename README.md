@@ -15,6 +15,10 @@ There are two possibilities to use the clones detection:
 ** please make sure to download plugins which match your MPS version!
 * you can build the clones detection MPS plugins from sources
 
+**Binary Distribution**
+
+Binaries can be downloaded from the [release](https://github.com/mbeddr/mps-qa/releases) page
+
 **Building the mps.qa.clones plugin**
 1. rename "gradle.properties.example" in "gradle.properties" 
 2. set the required macros (mpsqa.home and mpsHomeDir)
