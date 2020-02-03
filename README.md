@@ -29,7 +29,7 @@ Currently supported versions are MPS 2018.3 and 2019.3.
 2. set the required macros (mpsqa.home and mpsHomeDir)
 3. open a terminal and call ```gradlew.bat```
 
-**Usage guide**
+**Usage**
 1. create a model and import the language ```org.mpsqa.clones.config```
 2. create a ```clones detection config``` root node and specify
  - how big should be the clones (minimmum number of sibling nodes, how deep can a node be)
@@ -51,6 +51,10 @@ Currently supported versions are MPS 2018.3 and 2019.3.
    - black squares are models without clones, red squares are models with clones
    - right-click on a red node, and filter clones contained in that model
 5. if manual investigation of the clones reveals too many false positives, then you can refine the configuration (Step 2) and re-run the detection 
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=prZ93fIptsw
+" target="_blank"><img src="http://img.youtube.com/vi/prZ93fIptsw/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 **Internal implementation**
 - the core clones detection algorithm is contained in ```org.mpsqa.clones.core```
