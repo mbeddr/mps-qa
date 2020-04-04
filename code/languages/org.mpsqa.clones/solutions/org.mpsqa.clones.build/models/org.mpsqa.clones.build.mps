@@ -504,6 +504,9 @@
       <node concept="m$_yC" id="1GhTetdABhp" role="m$_yJ">
         <ref role="m$_y1" node="2JVMSZMFXh0" resolve="org.mpsqa.clones" />
       </node>
+      <node concept="m$_yC" id="3PN66LDpHE9" role="m$_yJ">
+        <ref role="m$_y1" to="2tou:7C9PHv6FBIO" resolve="org.mpsqa.base" />
+      </node>
       <node concept="3_J27D" id="2JVMSZMFY9r" role="m_cZH">
         <node concept="3Mxwew" id="2JVMSZMFY9s" role="3MwsjC">
           <property role="3MwjfP" value="org.mpsqa.clones" />
@@ -518,6 +521,9 @@
     </node>
     <node concept="2sgV4H" id="1GhTetdABhh" role="1l3spa">
       <ref role="1l3spb" node="2JVMSZMFXgi" resolve="org.mpsqa.clones" />
+    </node>
+    <node concept="2sgV4H" id="3PN66LDpHDZ" role="1l3spa">
+      <ref role="1l3spb" to="2tou:7C9PHv6FBIG" resolve="org.mpsqa.base" />
     </node>
     <node concept="398rNT" id="1GhTetdB0nZ" role="1l3spd">
       <property role="TrG5h" value="mpsqa.home" />
