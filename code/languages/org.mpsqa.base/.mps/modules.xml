@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.base.lib/org.mpsqa.base.lib.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.treemap.lib/org.mpsqa.treemap.lib.msd" folder="" />
+    </projectModules>
+  </component>
+</project>
