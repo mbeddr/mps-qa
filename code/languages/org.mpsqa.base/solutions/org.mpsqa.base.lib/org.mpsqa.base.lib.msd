@@ -8,10 +8,14 @@
       <sourceRoot location="commons-lang3-3.3.2-javadoc.jar" />
       <sourceRoot location="commons-lang3-3.3.2.jar" />
     </modelRoot>
+    <modelRoot contentPath="${module}/lib" type="java_classes">
+      <sourceRoot location="commons-io-2.6.jar" />
+    </modelRoot>
   </models>
   <stubModelEntries>
     <stubModelEntry path="${module}/lib/commons-lang3-3.3.2/commons-lang3-3.3.2-javadoc.jar" />
     <stubModelEntry path="${module}/lib/commons-lang3-3.3.2/commons-lang3-3.3.2.jar" />
+    <stubModelEntry path="${module}/lib/commons-io-2.6.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
