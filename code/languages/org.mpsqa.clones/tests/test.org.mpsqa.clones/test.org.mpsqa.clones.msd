@@ -31,7 +31,6 @@
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="9e98f4e2-decf-4e97-bf80-9109e8b759aa(jetbrains.mps.lang.feedback.context)" version="0" />
-    <module reference="b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)" version="0" />
     <module reference="48b1eeb1-bf01-4e84-8d12-d2fc8bf60fb7(org.mpsqa.clones.core)" version="0" />
     <module reference="54e0d114-6207-49e4-a0f6-ed8cd64992b2(test.org.mpsqa.clones)" version="0" />
   </dependencyVersions>
