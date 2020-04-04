@@ -228,6 +228,23 @@
               </node>
             </node>
           </node>
+          <node concept="28jJK3" id="3PN66LDpt3o" role="39821P">
+            <node concept="398BVA" id="3PN66LDpt3p" role="28jJRO">
+              <ref role="398BVh" node="7C9PHv6FBIL" resolve="mpsqa.base.home" />
+              <node concept="2Ry0Ak" id="3PN66LDpt3q" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="3PN66LDpt3r" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.base.lib" />
+                  <node concept="2Ry0Ak" id="3PN66LDpt3s" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="3PN66LDpt3t" role="2Ry0An">
+                      <property role="2Ry0Am" value="commons-io-2.6.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="28jJK3" id="7C9PHv6FBJm" role="39821P">
             <node concept="398BVA" id="7C9PHv6FBJ_" role="28jJRO">
               <ref role="398BVh" node="7C9PHv6FBIL" resolve="mpsqa.base.home" />
@@ -423,6 +440,25 @@
                       <node concept="2Ry0Ak" id="7C9PHv6FBKK" role="2Ry0An">
                         <property role="2Ry0Am" value="commons-lang3-3.3.2.jar" />
                       </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3PN66LDpt9k" role="3bR37C">
+          <node concept="1BurEX" id="3PN66LDpt9l" role="1SiIV1">
+            <node concept="398BVA" id="3PN66LDpt97" role="1BurEY">
+              <ref role="398BVh" node="7C9PHv6FBIL" resolve="mpsqa.base.home" />
+              <node concept="2Ry0Ak" id="3PN66LDpt98" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="3PN66LDpt99" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.base.lib" />
+                  <node concept="2Ry0Ak" id="3PN66LDpt9a" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="3PN66LDpt9b" role="2Ry0An">
+                      <property role="2Ry0Am" value="commons-io-2.6.jar" />
                     </node>
                   </node>
                 </node>
