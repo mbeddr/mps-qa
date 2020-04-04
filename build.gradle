@@ -179,11 +179,23 @@ ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = buildScriptClasspath
 ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = new File(jdk_home, 'bin/java')
 
 
+task build_base_languages(type: BuildLanguages, dependsOn: []) {
+    script "$buildDir/scripts/build-base-languages.xml"
+}
+
+task build_testing_languages(type: BuildLanguages, dependsOn: [build_base_languages]) {
+    script "$buildDir/scripts/build-testing-languages.xml"
+}
+
 task build_clones_languages(type: BuildLanguages, dependsOn: []) {
     script "$buildDir/scripts/build-clones-languages.xml"
 }
 
-task run_clones_headless(type: TestLanguages, dependsOn: build_clones_languages) { 
+task build_all_languages(type: BuildLanguages, dependsOn: [build_base_languages,build_testing_languages,build_clones_languages]) {
+    script "$buildDir/scripts/build-all-languages.xml"
+}
+
+task run_clones_headless(type: TestLanguages, dependsOn: build_clones_languages) {
     description "Will execute all tests from command line"
     print "mpsqa.home = " + rootDir;
 	script new File("$buildDir/scripts/build-clones-headless-detector.xml")
@@ -193,7 +205,6 @@ check.dependsOn run_clones_headless
 
 assemble.dependsOn run_clones_headless
 
-
 task cleanMps(type: Delete) {
     delete fileTree(dir: projectDir, include: ["**/classes_gen/**", "**/source_gen/**", "**/source_gen.caches/**", "tmp/**"])
 }
@@ -201,7 +212,6 @@ task cleanMps(type: Delete) {
 //clean.dependsOn cleanMps
 
 
-defaultTasks 'build_clones_languages'
+defaultTasks 'build_all_languages'
 
-task rebuild(dependsOn:[clean, build_clones_languages])
-
+task rebuild(dependsOn:[clean, build_all_languages])
