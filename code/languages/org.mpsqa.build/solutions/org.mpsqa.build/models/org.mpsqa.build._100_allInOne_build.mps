@@ -132,16 +132,16 @@
         </node>
         <node concept="3PtdJl" id="3PN66LDqBYv" role="39821P">
           <node concept="3_I8Xc" id="3PN66LDqBYx" role="39821P">
-            <ref role="3_I8Xa" to="2tou:7C9PHv6FBIV" resolve="org.mpsqa.base.zip" />
+            <ref role="3_I8Xa" to="2tou:7C9PHv6FBJ6" resolve="org.mpsqa.base" />
           </node>
           <node concept="3_I8Xc" id="3PN66LDqBYA" role="39821P">
-            <ref role="3_I8Xa" to="hx16:2JVMSZMFXhc" resolve="org.mpsqa.testing.zip" />
+            <ref role="3_I8Xa" to="hx16:2JVMSZMFXhf" resolve="org.mpsqa.testing" />
           </node>
           <node concept="3_I8Xc" id="3PN66LDqBYI" role="39821P">
-            <ref role="3_I8Xa" to="5g2w:2JVMSZMFXhc" resolve="org.mpsqa.clones.zip" />
+            <ref role="3_I8Xa" to="5g2w:2JVMSZMFXhf" resolve="org.mpsqa.clones" />
           </node>
           <node concept="3_I8Xc" id="3PN66LDrQC$" role="39821P">
-            <ref role="3_I8Xa" to="c8rw:3PN66LDqBZ3" resolve="org.mpsqa.mutant.zip" />
+            <ref role="3_I8Xa" to="c8rw:3PN66LDqBZi" resolve="org.mpsqa.mutant" />
           </node>
         </node>
       </node>
