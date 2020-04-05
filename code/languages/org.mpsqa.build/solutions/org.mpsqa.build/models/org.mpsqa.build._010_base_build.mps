@@ -180,7 +180,7 @@
       <node concept="3981dG" id="7C9PHv6FBIV" role="39821P">
         <node concept="3_J27D" id="7C9PHv6FBJ5" role="Nbhlr">
           <node concept="3Mxwew" id="7C9PHv6FBJj" role="3MwsjC">
-            <property role="3MwjfP" value="org.mpsqa.testing.zip" />
+            <property role="3MwjfP" value="org.mpsqa.base.zip" />
           </node>
         </node>
         <node concept="m$_wl" id="7C9PHv6FBJ6" role="39821P">
