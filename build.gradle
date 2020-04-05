@@ -191,8 +191,16 @@ task build_clones_languages(type: BuildLanguages, dependsOn: []) {
     script "$buildDir/scripts/build-clones-languages.xml"
 }
 
-task build_all_languages(type: BuildLanguages, dependsOn: [build_base_languages,build_testing_languages,build_clones_languages]) {
-    script "$buildDir/scripts/build-all-languages.xml"
+task build_mutant_languages(type: BuildLanguages, dependsOn: []) {
+    script "$buildDir/scripts/build-mutant-languages.xml"
+}
+
+task build_allInOne_package(type: BuildLanguages, dependsOn: []) {
+    dependsOn 'build_base_languages'
+    dependsOn 'build_testing_languages'
+    dependsOn 'build_clones_languages'
+    dependsOn 'build_mutant_languages'
+    script "$buildDir/scripts/build-allInOne-package.xml"
 }
 
 task run_clones_headless(type: TestLanguages, dependsOn: build_clones_languages) {
@@ -212,6 +220,6 @@ task cleanMps(type: Delete) {
 //clean.dependsOn cleanMps
 
 
-defaultTasks 'build_all_languages'
+defaultTasks 'build_allInOne_package'
 
-task rebuild(dependsOn:[clean, build_all_languages])
+task rebuild(dependsOn:[clean, build_allInOne_package])
