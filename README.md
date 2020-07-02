@@ -22,7 +22,7 @@ There are two possibilities to use the clones detection:
 **Binary Distribution**
 
 Binaries can be downloaded from the [release](https://github.com/mbeddr/mps-qa/releases) page
-Currently supported versions are MPS 2018.3 and 2019.3.
+Currently supported versions are MPS 2018.3, 2019.3 and 2020.1.
 
 **Building the mps.qa.clones plugin**
 1. rename "gradle.properties.example" in "gradle.properties" 
