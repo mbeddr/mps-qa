@@ -12,6 +12,11 @@
       <sourceRoot location="commons-io-2.6.jar" />
     </modelRoot>
   </models>
+  <facets>
+    <facet type="java">
+      <classes generated="true" path="${module}/classes_gen" />
+    </facet>
+  </facets>
   <stubModelEntries>
     <stubModelEntry path="${module}/lib/commons-lang3-3.3.2/commons-lang3-3.3.2-javadoc.jar" />
     <stubModelEntry path="${module}/lib/commons-lang3-3.3.2/commons-lang3-3.3.2.jar" />

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:45429e77-7aae-481a-9ed0-68ca83e0a66b(org.mpsqa.clones.config.sandbox.simple_clones_config)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="true" />
   <languages>
     <use id="56cfcf05-92e4-4822-8126-2ea0e0cece6b" name="org.mpsqa.clones.config" version="-1" />
   </languages>

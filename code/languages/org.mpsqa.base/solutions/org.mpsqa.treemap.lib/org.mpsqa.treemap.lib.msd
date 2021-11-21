@@ -11,6 +11,11 @@
       <sourceRoot location="net.sf.jtreemap.ktreemap-1.1.0.jar" />
     </modelRoot>
   </models>
+  <facets>
+    <facet type="java">
+      <classes generated="true" path="${module}/classes_gen" />
+    </facet>
+  </facets>
   <stubModelEntries>
     <stubModelEntry path="${module}/lib/jtreemap-1.1.0-bundle.jar" />
     <stubModelEntry path="${module}/lib/jtreemap-1.1.0.jar" />
