@@ -2,7 +2,10 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.gentest.baseline/org.mpsqa.gentest.baseline.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.mpsqa.testcov.jacoco/org.mpsqa.testcov.jacoco.mpl" folder="testcov" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.gentest.baseline/org.mpsqa.gentest.baseline.msd" folder="gentest" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.testcov.jacoco.rt/org.mpsqa.testcov.jacoco.rt.msd" folder="testcov" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.testcov.jacoco.sandbox/org.mpsqa.testcov.jacoco.sandbox.msd" folder="testcov" />
     </projectModules>
   </component>
 </project>
