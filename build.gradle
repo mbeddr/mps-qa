@@ -3,10 +3,20 @@ import de.itemis.mps.gradle.*
 //will pull the groovy classes/types from nexus to the classpath
 buildscript {
     repositories {
-        maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
+        mavenCentral()
+        def githubRepos = ["https://maven.pkg.github.com/mbeddr/*"]
+        for (def repo in githubRepos) {
+            maven {
+                url = uri(repo)
+                credentials {
+                    username = project.findProperty("github_username") ?: System.getenv("GITHUB_ACTOR")
+                    password = project.findProperty("github_token") ?: System.getenv("GITHUB_TOKEN")
+                }
+            }
+        }
     }
     dependencies {
-        classpath 'de.itemis.mps:mps-gradle-plugin:1.2+'
+        classpath 'de.itemis.mps:mps-gradle-plugin:1.5.+'
     }
 }
 
@@ -16,6 +26,13 @@ plugins {
     id 'co.riiid.gradle' version '0.4.2'
 }
 
+apply plugin: 'download-jbr'
+
+ext.jbrVers = '11_0_10-b1145.96'
+
+downloadJbr {
+    jbrVersion = jbrVers
+}
 
 // detect if we are in a CI build
 if (project.hasProperty("forceCI")) {
@@ -25,7 +42,6 @@ if (project.hasProperty("forceCI")) {
     ext.ciBuild = project.hasProperty("teamcity")
 }
 
-// Detect jdk location, required to start ant with tools.jar on classpath otherwise javac and tests will fail
 // Detect jdk location, required to start ant with tools.jar on classpath otherwise javac and tests will fail
 def jdk_home
 
@@ -53,27 +69,16 @@ logger.info 'Using JDK at {}', jdk_home
 
 ext.jdk_home = jdk_home
 
-// Default repository credentials
-if (!project.hasProperty('nexusUsername')) {
-    ext.nexusUsername = ''
-    ext.nexusPassword = ''
-}
-logger.info 'Repository username: {}', project.nexusUsername
-
 ext.dependencyRepositories = [
-        'https://projects.itemis.de/nexus/content/repositories/mbeddr',
-        'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots',
+        'https://maven.pkg.github.com/mbeddr/*',
 ]
 
 // Dependency versions
-// ext.mpsVersion =  '2019.1.4'
-// ext.mbeddrVersion =  '1.3.21722.0d19fb0'
-ext.mpsVersion =  '2020.1.2'
-ext.mbeddrVersion =  '[2019.3,2020.1]'
+ext.mpsVersion =  '2020.3.+'
 
 // Project versions
-ext.major = '1'
-ext.minor = '0'
+ext.major = '2020'
+ext.minor = '3'
 
 if (ciBuild) {
     String branch = GitBasedVersioning.gitBranch
@@ -91,22 +96,6 @@ if (ciBuild) {
     version = "$major.$minor-SNAPSHOT"
 }
 
-/*
-def userHome = System.properties['user.home']
-def mpsPluginsDirPattern
-if (System.properties['os.name'].toLowerCase().contains('mac')) {
-    mpsPluginsDirPattern = "$userHome/Library/Application Support/%s"
-} else {
-    mpsPluginsDirPattern = "$userHome/.%s/config/plugins"
-}
-
-if (project.hasProperty("MPS_PATHS_SELECTOR")) {
-    ext.mpsPluginsDir = sprintf(mpsPluginsDirPattern, project.getProperty("MPS_PATHS_SELECTOR"))
-} else {
-    ext.mpsPluginsDir = sprintf(mpsPluginsDirPattern, "MPS$mpsMajor")
-}
-*/
-
 ext.publishingRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
 
 
@@ -119,7 +108,6 @@ configurations {
 
 dependencies {
     mps "com.jetbrains:mps:$mpsVersion"
-    // languageLibs "com.mbeddr:platform:$mbeddrVersion"
     antLib "org.apache.ant:ant-junit:1.10.6"
 }
 
@@ -128,6 +116,10 @@ repositories {
     for (repoUrl in project.dependencyRepositories) {
         maven {
             url repoUrl
+            credentials {
+                username = project.findProperty("github_username") ?: System.getenv("GITHUB_ACTOR")
+                password = project.findProperty("github_token") ?: System.getenv("GITHUB_TOKEN")
+            }
         }
     }
     mavenCentral()
@@ -174,12 +166,21 @@ def defaultScriptArgs = [
 ]
 
 // enables https://github.com/mbeddr/mps-gradle-plugin#providing-global-defaults
-ext["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.collect { "-D$it.key=$it.value".toString() }
-ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = buildScriptClasspath
-ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = new File(jdk_home, 'bin/java')
+task configureJava {
+    dependsOn "downloadJbr"
+    doLast {
+        project.ext["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.collect { "-D$it.key=$it.value".toString() }
+        project.ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = buildScriptClasspath
+        project.ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = tasks.getByName("downloadJbr").javaExecutable
+        println project.findProperty("itemis.mps.gradle.ant.defaultJavaExecutable")
+    }
+}
 
+task build_allScripts(type: BuildLanguages, dependsOn: [resolveMps, configureJava]) {
+    script "$buildDir/scripts/build_all_scripts.xml"
+}
 
-task build_base_languages(type: BuildLanguages, dependsOn: []) {
+task build_base_languages(type: BuildLanguages, dependsOn: [build_allScripts]) {
     script "$buildDir/scripts/build-base-languages.xml"
 }
 
@@ -217,7 +218,7 @@ task cleanMps(type: Delete) {
     delete fileTree(dir: projectDir, include: ["**/classes_gen/**", "**/source_gen/**", "**/source_gen.caches/**", "tmp/**"])
 }
 
-//clean.dependsOn cleanMps
+clean.dependsOn cleanMps
 
 
 defaultTasks 'build_allInOne_package'
