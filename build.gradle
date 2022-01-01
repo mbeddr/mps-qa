@@ -188,7 +188,7 @@ task build_testing_languages(type: BuildLanguages, dependsOn: [build_base_langua
     script "$buildDir/scripts/build-testing-languages.xml"
 }
 
-task build_clones_languages(type: BuildLanguages, dependsOn: []) {
+task build_clones_languages(type: BuildLanguages, dependsOn: [build_base_languages]) {
     script "$buildDir/scripts/build-clones-languages.xml"
 }
 

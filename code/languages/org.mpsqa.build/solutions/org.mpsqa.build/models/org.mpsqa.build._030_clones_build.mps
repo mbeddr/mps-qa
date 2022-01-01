@@ -121,9 +121,6 @@
     <property role="TrG5h" value="org.mpsqa.clones" />
     <property role="2DA0ip" value="../../../../../build/scripts" />
     <property role="turDy" value="build-clones-languages.xml" />
-    <node concept="2sgV4H" id="7C9PHv6FDQo" role="1l3spa">
-      <ref role="1l3spb" to="2tou:7C9PHv6FBIG" resolve="org.mpsqa.base" />
-    </node>
     <node concept="10PD9b" id="2JVMSZMFXgj" role="10PD9s" />
     <node concept="3b7kt6" id="2JVMSZMFXgk" role="10PD9s" />
     <node concept="398rNT" id="1GhTetdAZXl" role="1l3spd">
@@ -173,6 +170,21 @@
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
       <node concept="398BVA" id="2JVMSZMFXgn" role="2JcizS">
         <ref role="398BVh" node="2JVMSZMFXgl" resolve="mps.home" />
+      </node>
+    </node>
+    <node concept="2sgV4H" id="7C9PHv6FDQo" role="1l3spa">
+      <ref role="1l3spb" to="2tou:7C9PHv6FBIG" resolve="org.mpsqa.base" />
+      <node concept="398BVA" id="67NgLmjV$iW" role="2JcizS">
+        <ref role="398BVh" node="1GhTetdAZXl" resolve="mpsqa.home" />
+        <node concept="2Ry0Ak" id="67NgLmjV$j1" role="iGT6I">
+          <property role="2Ry0Am" value="build" />
+          <node concept="2Ry0Ak" id="67NgLmjV$jV" role="2Ry0An">
+            <property role="2Ry0Am" value="artifacts" />
+            <node concept="2Ry0Ak" id="67NgLmjV$jZ" role="2Ry0An">
+              <property role="2Ry0Am" value="org.mpsqa.base" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="1l3spV" id="2JVMSZMFXhb" role="1l3spN">
@@ -350,6 +362,22 @@
             <ref role="3bR37D" to="2tou:7C9PHv6FBMC" resolve="org.mpsqa.treemap.lib" />
           </node>
         </node>
+        <node concept="3rtmxn" id="67NgLmjRLy3" role="3bR31x">
+          <node concept="3LXTmp" id="67NgLmjRLy4" role="3rtmxm">
+            <node concept="398BVA" id="67NgLmjRLy5" role="3LXTmr">
+              <ref role="398BVh" node="2JVMSZMFXgq" resolve="mpsqa.clones.home" />
+              <node concept="2Ry0Ak" id="67NgLmjRLy6" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="67NgLmjRLy7" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.clones.pluginSolution" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="67NgLmjRLy9" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="2JVMSZMFXgS" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -400,6 +428,22 @@
         <node concept="1SiIV0" id="2JVMSZMFXFD" role="3bR37C">
           <node concept="3bR9La" id="2JVMSZMFXFE" role="1SiIV1">
             <ref role="3bR37D" node="2JVMSZMFXgM" resolve="org.mpsqa.clones.pluginSolution" />
+          </node>
+        </node>
+        <node concept="3rtmxn" id="67NgLmjRLyC" role="3bR31x">
+          <node concept="3LXTmp" id="67NgLmjRLyD" role="3rtmxm">
+            <node concept="398BVA" id="67NgLmjRLyE" role="3LXTmr">
+              <ref role="398BVh" node="2JVMSZMFXgq" resolve="mpsqa.clones.home" />
+              <node concept="2Ry0Ak" id="67NgLmjRLyF" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="67NgLmjRLyG" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.clones.config.pluginSolution" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="67NgLmjRLyI" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
           </node>
         </node>
       </node>
