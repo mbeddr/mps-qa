@@ -95,6 +95,7 @@
       </concept>
       <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
       <concept id="5253498789149381388" name="jetbrains.mps.build.mps.structure.BuildMps_Module" flags="ng" index="3bQrTs">
+        <property id="1500819558096356884" name="doNotCompile" index="2GAjPV" />
         <child id="5253498789149547825" name="sources" index="3bR31x" />
         <child id="5253498789149547704" name="dependencies" index="3bR37C" />
       </concept>
@@ -242,6 +243,23 @@
               </node>
             </node>
           </node>
+          <node concept="28jJK3" id="67NgLmjPxuZ" role="39821P">
+            <node concept="398BVA" id="67NgLmjPxv0" role="28jJRO">
+              <ref role="398BVh" node="7C9PHv6FBIL" resolve="mpsqa.base.home" />
+              <node concept="2Ry0Ak" id="67NgLmjPxv1" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="67NgLmjPxv2" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.base.lib" />
+                  <node concept="2Ry0Ak" id="67NgLmjPxv3" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="67NgLmjPxxz" role="2Ry0An">
+                      <property role="2Ry0Am" value="commons-cli-1.5.0.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="28jJK3" id="7C9PHv6FBJm" role="39821P">
             <node concept="398BVA" id="7C9PHv6FBJ_" role="28jJRO">
               <ref role="398BVh" node="7C9PHv6FBIL" resolve="mpsqa.base.home" />
@@ -344,6 +362,7 @@
         <property role="TrG5h" value="org.mpsqa.base.lib" />
         <property role="3LESm3" value="79c13063-8a7d-4070-aaba-966b36d6e0c4" />
         <property role="BnDLt" value="true" />
+        <property role="2GAjPV" value="true" />
         <node concept="398BVA" id="7C9PHv6FBJa" role="3LF7KH">
           <ref role="398BVh" node="7C9PHv6FBIL" resolve="mpsqa.base.home" />
           <node concept="2Ry0Ak" id="7C9PHv6FBJr" role="iGT6I">
@@ -359,45 +378,6 @@
         <node concept="1SiIV0" id="7C9PHv6FBJb" role="3bR37C">
           <node concept="3bR9La" id="7C9PHv6FBJs" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
-          </node>
-        </node>
-        <node concept="1BupzO" id="7C9PHv6FBJf" role="3bR31x">
-          <property role="3ZfqAx" value="models" />
-          <property role="1Hdu6h" value="true" />
-          <property role="1HemKv" value="true" />
-          <node concept="3LXTmp" id="7C9PHv6FBJw" role="1HemKq">
-            <node concept="398BVA" id="7C9PHv6FBJE" role="3LXTmr">
-              <ref role="398BVh" node="7C9PHv6FBIL" resolve="mpsqa.base.home" />
-              <node concept="2Ry0Ak" id="7C9PHv6FBJO" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="7C9PHv6FBJW" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.mpsqa.gentest.baseline" />
-                  <node concept="2Ry0Ak" id="7C9PHv6FBK3" role="2Ry0An">
-                    <property role="2Ry0Am" value="models" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3qWCbU" id="7C9PHv6FBJF" role="3LXTna">
-              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-            </node>
-          </node>
-          <node concept="3LXTmp" id="7C9PHv6FBL7" role="1HemKq">
-            <node concept="398BVA" id="7C9PHv6FBKW" role="3LXTmr">
-              <ref role="398BVh" node="7C9PHv6FBIL" resolve="mpsqa.base.home" />
-              <node concept="2Ry0Ak" id="7C9PHv6FBKX" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="7C9PHv6FBKY" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.mpsqa.base.lib" />
-                  <node concept="2Ry0Ak" id="7C9PHv6FBKZ" role="2Ry0An">
-                    <property role="2Ry0Am" value="models" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3qWCbU" id="7C9PHv6FBL8" role="3LXTna">
-              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-            </node>
           </node>
         </node>
         <node concept="1SiIV0" id="7C9PHv6FBKD" role="3bR37C">
@@ -456,6 +436,25 @@
                     <property role="2Ry0Am" value="lib" />
                     <node concept="2Ry0Ak" id="3PN66LDpt9b" role="2Ry0An">
                       <property role="2Ry0Am" value="commons-io-2.6.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="67NgLmjPxrM" role="3bR37C">
+          <node concept="1BurEX" id="67NgLmjPxrN" role="1SiIV1">
+            <node concept="398BVA" id="67NgLmjPxr_" role="1BurEY">
+              <ref role="398BVh" node="7C9PHv6FBIL" resolve="mpsqa.base.home" />
+              <node concept="2Ry0Ak" id="67NgLmjPxrA" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="67NgLmjPxrB" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.base.lib" />
+                  <node concept="2Ry0Ak" id="67NgLmjPxrC" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="67NgLmjPxrD" role="2Ry0An">
+                      <property role="2Ry0Am" value="commons-cli-1.5.0.jar" />
                     </node>
                   </node>
                 </node>

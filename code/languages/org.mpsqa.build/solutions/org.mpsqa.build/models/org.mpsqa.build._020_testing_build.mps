@@ -99,13 +99,23 @@
       <concept id="5253498789149585690" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyOnModule" flags="ng" index="3bR9La">
         <reference id="5253498789149547705" name="module" index="3bR37D" />
       </concept>
+      <concept id="763829979718664966" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleResources" flags="ng" index="3rtmxn">
+        <child id="763829979718664967" name="files" index="3rtmxm" />
+      </concept>
+      <concept id="5507251971038816436" name="jetbrains.mps.build.mps.structure.BuildMps_Generator" flags="ng" index="1yeLz9" />
       <concept id="4278635856200817744" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleModelRoot" flags="ng" index="1BupzO">
         <property id="8137134783396907368" name="convert2binary" index="1Hdu6h" />
         <property id="8137134783396676838" name="extracted" index="1HemKv" />
         <property id="2889113830911481881" name="deployFolderName" index="3ZfqAx" />
         <child id="8137134783396676835" name="location" index="1HemKq" />
       </concept>
+      <concept id="4278635856200826393" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyJar" flags="ng" index="1BurEX">
+        <child id="4278635856200826394" name="path" index="1BurEY" />
+      </concept>
       <concept id="3189788309731840247" name="jetbrains.mps.build.mps.structure.BuildMps_Solution" flags="ng" index="1E1JtA" />
+      <concept id="3189788309731840248" name="jetbrains.mps.build.mps.structure.BuildMps_Language" flags="ng" index="1E1JtD">
+        <child id="9200313594498201639" name="generator" index="1TViLv" />
+      </concept>
       <concept id="322010710375871467" name="jetbrains.mps.build.mps.structure.BuildMps_AbstractModule" flags="ng" index="3LEN3z">
         <property id="8369506495128725901" name="compact" index="BnDLt" />
         <property id="322010710375892619" name="uuid" index="3LESm3" />
@@ -205,6 +215,9 @@
       <node concept="m$_yC" id="2JVMSZMFXh6" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
+      <node concept="m$_yC" id="67NgLmjPxzk" role="m$_yJ">
+        <ref role="m$_y1" to="2tou:7C9PHv6FBIO" resolve="org.mpsqa.base" />
+      </node>
       <node concept="3_J27D" id="2JVMSZMFXh7" role="m_cZH">
         <node concept="3Mxwew" id="2JVMSZMFXh8" role="3MwsjC">
           <property role="3MwjfP" value="org.mpsqa.testing" />
@@ -274,6 +287,294 @@
         <node concept="1SiIV0" id="3PN66LDpFjL" role="3bR37C">
           <node concept="3bR9La" id="3PN66LDpFjM" role="1SiIV1">
             <ref role="3bR37D" to="2tou:7C9PHv6FBJ1" resolve="org.mpsqa.base.lib" />
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtA" id="67NgLmjPxB5" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="org.mpsqa.testcov.jacoco.rt" />
+        <property role="3LESm3" value="998f9a96-8397-4ccb-acfb-d98f854aae12" />
+        <node concept="398BVA" id="67NgLmjPxBx" role="3LF7KH">
+          <ref role="398BVh" node="2JVMSZMFXgq" resolve="mpsqa.testing.home" />
+          <node concept="2Ry0Ak" id="67NgLmjPxBB" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="67NgLmjPxBG" role="2Ry0An">
+              <property role="2Ry0Am" value="org.mpsqa.testcov.jacoco.rt" />
+              <node concept="2Ry0Ak" id="67NgLmjPxBL" role="2Ry0An">
+                <property role="2Ry0Am" value="org.mpsqa.testcov.jacoco.rt.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="67NgLmjPxBY" role="3bR37C">
+          <node concept="3bR9La" id="67NgLmjPxBZ" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="67NgLmjPxC0" role="3bR37C">
+          <node concept="3bR9La" id="67NgLmjPxC1" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="67NgLmjPxC2" role="3bR37C">
+          <node concept="3bR9La" id="67NgLmjPxC3" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="67NgLmjPxC4" role="3bR37C">
+          <node concept="3bR9La" id="67NgLmjPxC5" role="1SiIV1">
+            <ref role="3bR37D" to="2tou:7C9PHv6FBJ1" resolve="org.mpsqa.base.lib" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="67NgLmjPxC6" role="3bR37C">
+          <node concept="3bR9La" id="67NgLmjPxC7" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="67NgLmjPxC8" role="3bR37C">
+          <node concept="3bR9La" id="67NgLmjPxC9" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="67NgLmjPxCa" role="3bR37C">
+          <node concept="3bR9La" id="67NgLmjPxCb" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="67NgLmjPxCr" role="3bR37C">
+          <node concept="1BurEX" id="67NgLmjPxCs" role="1SiIV1">
+            <node concept="398BVA" id="67NgLmjPxCc" role="1BurEY">
+              <ref role="398BVh" node="2JVMSZMFXgq" resolve="mpsqa.testing.home" />
+              <node concept="2Ry0Ak" id="67NgLmjPxCd" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="67NgLmjPxCe" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.testcov.jacoco.rt" />
+                  <node concept="2Ry0Ak" id="67NgLmjPxCf" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="67NgLmjPxCg" role="2Ry0An">
+                      <property role="2Ry0Am" value="lib" />
+                      <node concept="2Ry0Ak" id="67NgLmjPxCh" role="2Ry0An">
+                        <property role="2Ry0Am" value="org.jacoco.core-0.8.7.202105040129.jar" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="67NgLmjPxCG" role="3bR37C">
+          <node concept="1BurEX" id="67NgLmjPxCH" role="1SiIV1">
+            <node concept="398BVA" id="67NgLmjPxCt" role="1BurEY">
+              <ref role="398BVh" node="2JVMSZMFXgq" resolve="mpsqa.testing.home" />
+              <node concept="2Ry0Ak" id="67NgLmjPxCu" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="67NgLmjPxCv" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.testcov.jacoco.rt" />
+                  <node concept="2Ry0Ak" id="67NgLmjPxCw" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="67NgLmjPxCx" role="2Ry0An">
+                      <property role="2Ry0Am" value="lib" />
+                      <node concept="2Ry0Ak" id="67NgLmjPxCy" role="2Ry0An">
+                        <property role="2Ry0Am" value="org.jacoco.report-0.8.7.202105040129.jar" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="67NgLmjPxCX" role="3bR37C">
+          <node concept="1BurEX" id="67NgLmjPxCY" role="1SiIV1">
+            <node concept="398BVA" id="67NgLmjPxCI" role="1BurEY">
+              <ref role="398BVh" node="2JVMSZMFXgq" resolve="mpsqa.testing.home" />
+              <node concept="2Ry0Ak" id="67NgLmjPxCJ" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="67NgLmjPxCK" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.testcov.jacoco.rt" />
+                  <node concept="2Ry0Ak" id="67NgLmjPxCL" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="67NgLmjPxCM" role="2Ry0An">
+                      <property role="2Ry0Am" value="lib" />
+                      <node concept="2Ry0Ak" id="67NgLmjPxCN" role="2Ry0An">
+                        <property role="2Ry0Am" value="asm-9.2.jar" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="67NgLmjPxDe" role="3bR37C">
+          <node concept="1BurEX" id="67NgLmjPxDf" role="1SiIV1">
+            <node concept="398BVA" id="67NgLmjPxCZ" role="1BurEY">
+              <ref role="398BVh" node="2JVMSZMFXgq" resolve="mpsqa.testing.home" />
+              <node concept="2Ry0Ak" id="67NgLmjPxD0" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="67NgLmjPxD1" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.testcov.jacoco.rt" />
+                  <node concept="2Ry0Ak" id="67NgLmjPxD2" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="67NgLmjPxD3" role="2Ry0An">
+                      <property role="2Ry0Am" value="lib" />
+                      <node concept="2Ry0Ak" id="67NgLmjPxD4" role="2Ry0An">
+                        <property role="2Ry0Am" value="asm-tree-9.2.jar" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="67NgLmjPxDv" role="3bR37C">
+          <node concept="1BurEX" id="67NgLmjPxDw" role="1SiIV1">
+            <node concept="398BVA" id="67NgLmjPxDg" role="1BurEY">
+              <ref role="398BVh" node="2JVMSZMFXgq" resolve="mpsqa.testing.home" />
+              <node concept="2Ry0Ak" id="67NgLmjPxDh" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="67NgLmjPxDi" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.testcov.jacoco.rt" />
+                  <node concept="2Ry0Ak" id="67NgLmjPxDj" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="67NgLmjPxDk" role="2Ry0An">
+                      <property role="2Ry0Am" value="lib" />
+                      <node concept="2Ry0Ak" id="67NgLmjPxDl" role="2Ry0An">
+                        <property role="2Ry0Am" value="asm-commons-9.2.jar" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1BupzO" id="67NgLmjPxDG" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="67NgLmjPxDH" role="1HemKq">
+            <node concept="398BVA" id="67NgLmjPxDx" role="3LXTmr">
+              <ref role="398BVh" node="2JVMSZMFXgq" resolve="mpsqa.testing.home" />
+              <node concept="2Ry0Ak" id="67NgLmjPxDy" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="67NgLmjPxDz" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.testcov.jacoco.rt" />
+                  <node concept="2Ry0Ak" id="67NgLmjPxD$" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="67NgLmjPxDI" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtD" id="67NgLmjPxID" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="org.mpsqa.testcov.jacoco" />
+        <property role="3LESm3" value="05161dc2-0920-41d5-b911-43911e948ddd" />
+        <node concept="398BVA" id="67NgLmjPxLi" role="3LF7KH">
+          <ref role="398BVh" node="2JVMSZMFXgq" resolve="mpsqa.testing.home" />
+          <node concept="2Ry0Ak" id="67NgLmjPxNI" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="67NgLmjPxRk" role="2Ry0An">
+              <property role="2Ry0Am" value="org.mpsqa.testcov.jacoco" />
+              <node concept="2Ry0Ak" id="67NgLmjPxTJ" role="2Ry0An">
+                <property role="2Ry0Am" value="org.mpsqa.testcov.jacoco.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="67NgLmjPxWt" role="3bR37C">
+          <node concept="3bR9La" id="67NgLmjPxWu" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="67NgLmjPxWv" role="3bR37C">
+          <node concept="3bR9La" id="67NgLmjPxWw" role="1SiIV1">
+            <ref role="3bR37D" node="67NgLmjPxB5" resolve="org.mpsqa.testcov.jacoco.rt" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="67NgLmjPxWx" role="3bR37C">
+          <node concept="3bR9La" id="67NgLmjPxWy" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="67NgLmjPxWz" role="3bR37C">
+          <node concept="3bR9La" id="67NgLmjPxW$" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="67NgLmjPxWK" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="67NgLmjPxWL" role="1HemKq">
+            <node concept="398BVA" id="67NgLmjPxW_" role="3LXTmr">
+              <ref role="398BVh" node="2JVMSZMFXgq" resolve="mpsqa.testing.home" />
+              <node concept="2Ry0Ak" id="67NgLmjPxWA" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="67NgLmjPxWB" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.testcov.jacoco" />
+                  <node concept="2Ry0Ak" id="67NgLmjPxWC" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="67NgLmjPxWM" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="1yeLz9" id="67NgLmjPxWN" role="1TViLv">
+          <property role="TrG5h" value="org.mpsqa.testcov.jacoco.generator" />
+          <property role="3LESm3" value="3ecc46a1-b266-4e9e-9cd5-3c598c921b70" />
+          <node concept="1BupzO" id="67NgLmjPxX1" role="3bR31x">
+            <property role="3ZfqAx" value="generator/templates" />
+            <property role="1Hdu6h" value="true" />
+            <property role="1HemKv" value="true" />
+            <node concept="3LXTmp" id="67NgLmjPxX2" role="1HemKq">
+              <node concept="398BVA" id="67NgLmjPxWO" role="3LXTmr">
+                <ref role="398BVh" node="2JVMSZMFXgq" resolve="mpsqa.testing.home" />
+                <node concept="2Ry0Ak" id="67NgLmjPxWP" role="iGT6I">
+                  <property role="2Ry0Am" value="languages" />
+                  <node concept="2Ry0Ak" id="67NgLmjPxWQ" role="2Ry0An">
+                    <property role="2Ry0Am" value="org.mpsqa.testcov.jacoco" />
+                    <node concept="2Ry0Ak" id="67NgLmjPxWR" role="2Ry0An">
+                      <property role="2Ry0Am" value="generator" />
+                      <node concept="2Ry0Ak" id="67NgLmjPxWS" role="2Ry0An">
+                        <property role="2Ry0Am" value="templates" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3qWCbU" id="67NgLmjPxX3" role="3LXTna">
+                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="67NgLmjPxZ7" role="3bR31x">
+          <node concept="3LXTmp" id="67NgLmjPxZ8" role="3rtmxm">
+            <node concept="398BVA" id="67NgLmjPxZ9" role="3LXTmr">
+              <ref role="398BVh" node="2JVMSZMFXgq" resolve="mpsqa.testing.home" />
+              <node concept="2Ry0Ak" id="67NgLmjPxZa" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="67NgLmjPxZb" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.testcov.jacoco" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="67NgLmjPxZd" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
           </node>
         </node>
       </node>
