@@ -12,15 +12,15 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="z9q9" ref="998f9a96-8397-4ccb-acfb-d98f854aae12/java:org.jacoco.core.tools(org.mpsqa.testcov.jacoco.rt/)" />
     <import index="hhx2" ref="998f9a96-8397-4ccb-acfb-d98f854aae12/java:org.jacoco.core.analysis(org.mpsqa.testcov.jacoco.rt/)" />
-    <import index="pszg" ref="r:e34556a8-a27b-4866-96f7-e57027441842(org.mpsqa.testcov.jacoco.rt.utils)" />
     <import index="eb9s" ref="998f9a96-8397-4ccb-acfb-d98f854aae12/java:org.jacoco.report.html(org.mpsqa.testcov.jacoco.rt/)" />
     <import index="kq95" ref="998f9a96-8397-4ccb-acfb-d98f854aae12/java:org.jacoco.report(org.mpsqa.testcov.jacoco.rt/)" />
     <import index="nsg4" ref="998f9a96-8397-4ccb-acfb-d98f854aae12/java:org.jacoco.core.data(org.mpsqa.testcov.jacoco.rt/)" />
-    <import index="hmqo" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.io.filefilter(org.apache.commons/)" />
-    <import index="8oaq" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.io(org.apache.commons/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="6lci" ref="998f9a96-8397-4ccb-acfb-d98f854aae12/java:org.jacoco.report.xml(org.mpsqa.testcov.jacoco.rt/)" />
     <import index="65xd" ref="998f9a96-8397-4ccb-acfb-d98f854aae12/java:org.jacoco.report.csv(org.mpsqa.testcov.jacoco.rt/)" />
+    <import index="8oaq" ref="79c13063-8a7d-4070-aaba-966b36d6e0c4/java:org.apache.commons.io(org.mpsqa.base.lib/)" />
+    <import index="hmqo" ref="79c13063-8a7d-4070-aaba-966b36d6e0c4/java:org.apache.commons.io.filefilter(org.mpsqa.base.lib/)" />
+    <import index="gb0k" ref="79c13063-8a7d-4070-aaba-966b36d6e0c4/java:org.apache.commons.cli(org.mpsqa.base.lib/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -94,6 +94,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
       <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
@@ -135,9 +138,6 @@
         <child id="8276990574886367510" name="catchClause" index="1zxBo5" />
         <child id="8276990574886367508" name="body" index="1zxBo7" />
       </concept>
-      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="8356039341262087992" name="line" index="1aUNEU" />
-      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
     </language>
@@ -145,13 +145,13 @@
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
         <child id="8465538089690331502" name="body" index="TZ5H$" />
       </concept>
-      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
       <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
         <child id="8970989240999019149" name="part" index="1dT_Ay" />
       </concept>
       <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
         <property id="8970989240999019144" name="text" index="1dT_AB" />
       </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -159,14 +159,6 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-    </language>
-    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
-      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
-        <property id="155656958578482949" name="value" index="3oM_SC" />
-      </concept>
-      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
-        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -192,7 +184,7 @@
     </language>
   </registry>
   <node concept="312cEu" id="4DA1Mfy76SI">
-    <property role="TrG5h" value="ReportGenerator" />
+    <property role="TrG5h" value="JaCoCoReportGenerator" />
     <node concept="2tJIrI" id="4DA1Mfy77nv" role="jymVt" />
     <node concept="312cEg" id="4DA1Mfy7fDI" role="jymVt">
       <property role="TrG5h" value="title" />
@@ -325,21 +317,21 @@
               </node>
             </node>
             <node concept="2YIFZM" id="7YpeH5eZaVD" role="33vP2m">
-              <ref role="37wK5l" to="8oaq:~FileUtils.listFilesAndDirs(java.io.File,org.apache.commons.io.filefilter.IOFileFilter,org.apache.commons.io.filefilter.IOFileFilter)" resolve="listFilesAndDirs" />
               <ref role="1Pybhc" to="8oaq:~FileUtils" resolve="FileUtils" />
+              <ref role="37wK5l" to="8oaq:~FileUtils.listFilesAndDirs(java.io.File,org.apache.commons.io.filefilter.IOFileFilter,org.apache.commons.io.filefilter.IOFileFilter)" resolve="listFilesAndDirs" />
               <node concept="37vLTw" id="7YpeH5eZaVE" role="37wK5m">
                 <ref role="3cqZAo" node="4DA1Mfy7fE8" resolve="projectDirectory" />
               </node>
               <node concept="2ShNRf" id="7YpeH5eZaVF" role="37wK5m">
                 <node concept="1pGfFk" id="7YpeH5eZaVG" role="2ShVmc">
                   <ref role="37wK5l" to="hmqo:~NotFileFilter.&lt;init&gt;(org.apache.commons.io.filefilter.IOFileFilter)" resolve="NotFileFilter" />
-                  <node concept="10M0yZ" id="7YpeH5eZaVH" role="37wK5m">
+                  <node concept="10M0yZ" id="HEhrUSle$f" role="37wK5m">
                     <ref role="3cqZAo" to="hmqo:~TrueFileFilter.INSTANCE" resolve="INSTANCE" />
                     <ref role="1PxDUh" to="hmqo:~TrueFileFilter" resolve="TrueFileFilter" />
                   </node>
                 </node>
               </node>
-              <node concept="10M0yZ" id="7YpeH5eZaVI" role="37wK5m">
+              <node concept="10M0yZ" id="HEhrUSlf7N" role="37wK5m">
                 <ref role="3cqZAo" to="hmqo:~DirectoryFileFilter.DIRECTORY" resolve="DIRECTORY" />
                 <ref role="1PxDUh" to="hmqo:~DirectoryFileFilter" resolve="DirectoryFileFilter" />
               </node>
@@ -479,282 +471,18 @@
     </node>
     <node concept="2tJIrI" id="7YpeH5eZHZ9" role="jymVt" />
     <node concept="3clFb_" id="4DA1Mfy7fEN" role="jymVt">
-      <property role="TrG5h" value="create" />
+      <property role="TrG5h" value="createReport" />
       <node concept="3uibUv" id="4DA1Mfy7fEO" role="Sfmx6">
         <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
       </node>
       <node concept="3clFbS" id="4DA1Mfy7fEP" role="3clF47">
-        <node concept="3SKdUt" id="4DA1Mfy7fGL" role="3cqZAp">
-          <node concept="1PaTwC" id="4DA1Mfy7fGM" role="1aUNEU">
-            <node concept="3oM_SD" id="4DA1Mfy7fGO" role="1PaTwD">
-              <property role="3oM_SC" value="Read" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fGP" role="1PaTwD">
-              <property role="3oM_SC" value="the" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fGQ" role="1PaTwD">
-              <property role="3oM_SC" value="jacoco.exec" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fGR" role="1PaTwD">
-              <property role="3oM_SC" value="file." />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fGS" role="1PaTwD">
-              <property role="3oM_SC" value="Multiple" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fGT" role="1PaTwD">
-              <property role="3oM_SC" value="data" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fGU" role="1PaTwD">
-              <property role="3oM_SC" value="files" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fGV" role="1PaTwD">
-              <property role="3oM_SC" value="could" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fGW" role="1PaTwD">
-              <property role="3oM_SC" value="be" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fGX" role="1PaTwD">
-              <property role="3oM_SC" value="merged" />
-            </node>
-          </node>
-        </node>
-        <node concept="3SKdUt" id="4DA1Mfy7fGY" role="3cqZAp">
-          <node concept="1PaTwC" id="4DA1Mfy7fGZ" role="1aUNEU">
-            <node concept="3oM_SD" id="4DA1Mfy7fH1" role="1PaTwD">
-              <property role="3oM_SC" value="at" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fH2" role="1PaTwD">
-              <property role="3oM_SC" value="this" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fH3" role="1PaTwD">
-              <property role="3oM_SC" value="point" />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="4DA1Mfy7fEQ" role="3cqZAp">
           <node concept="1rXfSq" id="4DA1Mfy7fER" role="3clFbG">
             <ref role="37wK5l" node="4DA1Mfy7fF$" resolve="loadExecutionData" />
           </node>
         </node>
-        <node concept="3SKdUt" id="4DA1Mfy7fH4" role="3cqZAp">
-          <node concept="1PaTwC" id="4DA1Mfy7fH5" role="1aUNEU">
-            <node concept="3oM_SD" id="4DA1Mfy7fH7" role="1PaTwD">
-              <property role="3oM_SC" value="Run" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fH8" role="1PaTwD">
-              <property role="3oM_SC" value="the" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fH9" role="1PaTwD">
-              <property role="3oM_SC" value="structure" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fHa" role="1PaTwD">
-              <property role="3oM_SC" value="analyzer" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fHb" role="1PaTwD">
-              <property role="3oM_SC" value="on" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fHc" role="1PaTwD">
-              <property role="3oM_SC" value="a" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fHd" role="1PaTwD">
-              <property role="3oM_SC" value="single" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fHe" role="1PaTwD">
-              <property role="3oM_SC" value="class" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fHf" role="1PaTwD">
-              <property role="3oM_SC" value="folder" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fHg" role="1PaTwD">
-              <property role="3oM_SC" value="to" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fHh" role="1PaTwD">
-              <property role="3oM_SC" value="build" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fHi" role="1PaTwD">
-              <property role="3oM_SC" value="up" />
-            </node>
-          </node>
-        </node>
-        <node concept="3SKdUt" id="4DA1Mfy7fHj" role="3cqZAp">
-          <node concept="1PaTwC" id="4DA1Mfy7fHk" role="1aUNEU">
-            <node concept="3oM_SD" id="4DA1Mfy7fHm" role="1PaTwD">
-              <property role="3oM_SC" value="the" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fHn" role="1PaTwD">
-              <property role="3oM_SC" value="coverage" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fHo" role="1PaTwD">
-              <property role="3oM_SC" value="model." />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fHp" role="1PaTwD">
-              <property role="3oM_SC" value="The" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fHq" role="1PaTwD">
-              <property role="3oM_SC" value="process" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fHr" role="1PaTwD">
-              <property role="3oM_SC" value="would" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fHs" role="1PaTwD">
-              <property role="3oM_SC" value="be" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fHt" role="1PaTwD">
-              <property role="3oM_SC" value="similar" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fHu" role="1PaTwD">
-              <property role="3oM_SC" value="if" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fHv" role="1PaTwD">
-              <property role="3oM_SC" value="your" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fHw" role="1PaTwD">
-              <property role="3oM_SC" value="classes" />
-            </node>
-          </node>
-        </node>
-        <node concept="3SKdUt" id="4DA1Mfy7fHx" role="3cqZAp">
-          <node concept="1PaTwC" id="4DA1Mfy7fHy" role="1aUNEU">
-            <node concept="3oM_SD" id="4DA1Mfy7fH$" role="1PaTwD">
-              <property role="3oM_SC" value="were" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fH_" role="1PaTwD">
-              <property role="3oM_SC" value="in" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fHA" role="1PaTwD">
-              <property role="3oM_SC" value="a" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fHB" role="1PaTwD">
-              <property role="3oM_SC" value="jar" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fHC" role="1PaTwD">
-              <property role="3oM_SC" value="file." />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fHD" role="1PaTwD">
-              <property role="3oM_SC" value="Typically" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fHE" role="1PaTwD">
-              <property role="3oM_SC" value="you" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fHF" role="1PaTwD">
-              <property role="3oM_SC" value="would" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fHG" role="1PaTwD">
-              <property role="3oM_SC" value="create" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fHH" role="1PaTwD">
-              <property role="3oM_SC" value="a" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fHI" role="1PaTwD">
-              <property role="3oM_SC" value="bundle" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fHJ" role="1PaTwD">
-              <property role="3oM_SC" value="for" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fHK" role="1PaTwD">
-              <property role="3oM_SC" value="each" />
-            </node>
-          </node>
-        </node>
-        <node concept="3SKdUt" id="4DA1Mfy7fHL" role="3cqZAp">
-          <node concept="1PaTwC" id="4DA1Mfy7fHM" role="1aUNEU">
-            <node concept="3oM_SD" id="4DA1Mfy7fHO" role="1PaTwD">
-              <property role="3oM_SC" value="class" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fHP" role="1PaTwD">
-              <property role="3oM_SC" value="folder" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fHQ" role="1PaTwD">
-              <property role="3oM_SC" value="and" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fHR" role="1PaTwD">
-              <property role="3oM_SC" value="each" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fHS" role="1PaTwD">
-              <property role="3oM_SC" value="jar" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fHT" role="1PaTwD">
-              <property role="3oM_SC" value="you" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fHU" role="1PaTwD">
-              <property role="3oM_SC" value="want" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fHV" role="1PaTwD">
-              <property role="3oM_SC" value="in" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fHW" role="1PaTwD">
-              <property role="3oM_SC" value="your" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fHX" role="1PaTwD">
-              <property role="3oM_SC" value="report." />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fHY" role="1PaTwD">
-              <property role="3oM_SC" value="If" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fHZ" role="1PaTwD">
-              <property role="3oM_SC" value="you" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fI0" role="1PaTwD">
-              <property role="3oM_SC" value="have" />
-            </node>
-          </node>
-        </node>
-        <node concept="3SKdUt" id="4DA1Mfy7fI1" role="3cqZAp">
-          <node concept="1PaTwC" id="4DA1Mfy7fI2" role="1aUNEU">
-            <node concept="3oM_SD" id="4DA1Mfy7fI4" role="1PaTwD">
-              <property role="3oM_SC" value="more" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fI5" role="1PaTwD">
-              <property role="3oM_SC" value="than" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fI6" role="1PaTwD">
-              <property role="3oM_SC" value="one" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fI7" role="1PaTwD">
-              <property role="3oM_SC" value="bundle" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fI8" role="1PaTwD">
-              <property role="3oM_SC" value="you" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fI9" role="1PaTwD">
-              <property role="3oM_SC" value="will" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fIa" role="1PaTwD">
-              <property role="3oM_SC" value="need" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fIb" role="1PaTwD">
-              <property role="3oM_SC" value="to" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fIc" role="1PaTwD">
-              <property role="3oM_SC" value="add" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fId" role="1PaTwD">
-              <property role="3oM_SC" value="a" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fIe" role="1PaTwD">
-              <property role="3oM_SC" value="grouping" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fIf" role="1PaTwD">
-              <property role="3oM_SC" value="node" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fIg" role="1PaTwD">
-              <property role="3oM_SC" value="to" />
-            </node>
-            <node concept="3oM_SD" id="4DA1Mfy7fIh" role="1PaTwD">
-              <property role="3oM_SC" value="your" />
-            </node>
-          </node>
-        </node>
-        <node concept="3SKdUt" id="4DA1Mfy7fIi" role="3cqZAp">
-          <node concept="1PaTwC" id="4DA1Mfy7fIj" role="1aUNEU">
-            <node concept="3oM_SD" id="4DA1Mfy7fIl" role="1PaTwD">
-              <property role="3oM_SC" value="report" />
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="4DA1Mfy7fET" role="3cqZAp">
           <node concept="3cpWsn" id="4DA1Mfy7fES" role="3cpWs9">
-            <property role="3TUv4t" value="true" />
             <property role="TrG5h" value="bundleCoverage" />
             <node concept="3uibUv" id="4DA1Mfy7fEU" role="1tU5fm">
               <ref role="3uigEE" to="hhx2:~IBundleCoverage" resolve="IBundleCoverage" />
@@ -775,13 +503,6 @@
       </node>
       <node concept="3Tm1VV" id="4DA1Mfy7fEZ" role="1B3o_S" />
       <node concept="3cqZAl" id="4DA1Mfy7fF0" role="3clF45" />
-      <node concept="P$JXv" id="4DA1Mfy7fF1" role="lGtFl">
-        <node concept="TZ5HA" id="4DA1Mfy7fGF" role="TZ5H$">
-          <node concept="1dT_AC" id="4DA1Mfy7fGG" role="1dT_Ay">
-            <property role="1dT_AB" value=" Create the report." />
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="2tJIrI" id="3uTLX9ZEgAh" role="jymVt" />
     <node concept="3clFb_" id="4DA1Mfy7fF2" role="jymVt">
@@ -1160,6 +881,7 @@
       <node concept="3Tm6S6" id="4DA1Mfy7fFI" role="1B3o_S" />
       <node concept="3cqZAl" id="4DA1Mfy7fFJ" role="3clF45" />
     </node>
+    <node concept="2tJIrI" id="HEhrUSmtBi" role="jymVt" />
     <node concept="3clFb_" id="4DA1Mfy7fFK" role="jymVt">
       <property role="TrG5h" value="analyzeStructure" />
       <node concept="3uibUv" id="4DA1Mfy7fFL" role="Sfmx6">
@@ -1289,48 +1011,242 @@
         <property role="TrG5h" value="args" />
         <property role="3TUv4t" value="true" />
         <node concept="10Q1$e" id="4DA1Mfy7fG8" role="1tU5fm">
-          <node concept="3uibUv" id="4DA1Mfy7fG7" role="10Q1$1">
-            <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-          </node>
+          <node concept="17QB3L" id="67NgLmjNLDy" role="10Q1$1" />
         </node>
       </node>
       <node concept="3uibUv" id="4DA1Mfy7fG9" role="Sfmx6">
         <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
       </node>
       <node concept="3clFbS" id="4DA1Mfy7fGa" role="3clF47">
+        <node concept="3cpWs8" id="67NgLmjNk8P" role="3cqZAp">
+          <node concept="3cpWsn" id="67NgLmjNk8Q" role="3cpWs9">
+            <property role="TrG5h" value="HELP_OPTION" />
+            <property role="3TUv4t" value="true" />
+            <node concept="17QB3L" id="67NgLmjNk8R" role="1tU5fm" />
+            <node concept="Xl_RD" id="67NgLmjNk8S" role="33vP2m">
+              <property role="Xl_RC" value="help" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="67NgLmjMYYZ" role="3cqZAp">
+          <node concept="3cpWsn" id="67NgLmjMYZ0" role="3cpWs9">
+            <property role="TrG5h" value="PROJECT_OPTION" />
+            <property role="3TUv4t" value="true" />
+            <node concept="17QB3L" id="67NgLmjMY3Y" role="1tU5fm" />
+            <node concept="Xl_RD" id="67NgLmjMYZ1" role="33vP2m">
+              <property role="Xl_RC" value="project" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="67NgLmjN03I" role="3cqZAp">
+          <node concept="3cpWsn" id="67NgLmjN03J" role="3cpWs9">
+            <property role="TrG5h" value="JACOCO_EXEC_PATH_OPTION" />
+            <property role="3TUv4t" value="true" />
+            <node concept="17QB3L" id="67NgLmjN03K" role="1tU5fm" />
+            <node concept="Xl_RD" id="67NgLmjN03L" role="33vP2m">
+              <property role="Xl_RC" value="jacoco_exec_path" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="67NgLmjMZsj" role="3cqZAp" />
+        <node concept="3cpWs8" id="HEhrUSmm$R" role="3cqZAp">
+          <node concept="3cpWsn" id="HEhrUSmm$S" role="3cpWs9">
+            <property role="TrG5h" value="options" />
+            <node concept="3uibUv" id="67NgLmjMWSp" role="1tU5fm">
+              <ref role="3uigEE" to="gb0k:~Options" resolve="Options" />
+            </node>
+            <node concept="2ShNRf" id="HEhrUSmmJv" role="33vP2m">
+              <node concept="1pGfFk" id="67NgLmjMWVF" role="2ShVmc">
+                <ref role="37wK5l" to="gb0k:~Options.&lt;init&gt;()" resolve="Options" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="67NgLmjNirM" role="3cqZAp">
+          <node concept="2OqwBi" id="67NgLmjNiBa" role="3clFbG">
+            <node concept="37vLTw" id="67NgLmjNirK" role="2Oq$k0">
+              <ref role="3cqZAo" node="HEhrUSmm$S" resolve="options" />
+            </node>
+            <node concept="liA8E" id="67NgLmjNiPY" role="2OqNvi">
+              <ref role="37wK5l" to="gb0k:~Options.addOption(java.lang.String,java.lang.String)" resolve="addOption" />
+              <node concept="37vLTw" id="67NgLmjNksW" role="37wK5m">
+                <ref role="3cqZAo" node="67NgLmjNk8Q" resolve="HELP_OPTION" />
+              </node>
+              <node concept="Xl_RD" id="67NgLmjNjap" role="37wK5m">
+                <property role="Xl_RC" value="prints this message" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="HEhrUSmnA4" role="3cqZAp">
+          <node concept="2OqwBi" id="HEhrUSmnFH" role="3clFbG">
+            <node concept="37vLTw" id="HEhrUSmnA2" role="2Oq$k0">
+              <ref role="3cqZAo" node="HEhrUSmm$S" resolve="options" />
+            </node>
+            <node concept="liA8E" id="HEhrUSmnN1" role="2OqNvi">
+              <ref role="37wK5l" to="gb0k:~Options.addOption(java.lang.String,boolean,java.lang.String)" resolve="addOption" />
+              <node concept="37vLTw" id="67NgLmjMYZ2" role="37wK5m">
+                <ref role="3cqZAo" node="67NgLmjMYZ0" resolve="PROJECT_OPTION" />
+              </node>
+              <node concept="3clFbT" id="HEhrUSmoIW" role="37wK5m">
+                <property role="3clFbU" value="true" />
+              </node>
+              <node concept="Xl_RD" id="HEhrUSmoN1" role="37wK5m">
+                <property role="Xl_RC" value="path to the directory containing the project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="HEhrUSmpNm" role="3cqZAp">
+          <node concept="2OqwBi" id="HEhrUSmpNn" role="3clFbG">
+            <node concept="37vLTw" id="HEhrUSmpNo" role="2Oq$k0">
+              <ref role="3cqZAo" node="HEhrUSmm$S" resolve="options" />
+            </node>
+            <node concept="liA8E" id="HEhrUSmpNp" role="2OqNvi">
+              <ref role="37wK5l" to="gb0k:~Options.addOption(java.lang.String,boolean,java.lang.String)" resolve="addOption" />
+              <node concept="37vLTw" id="67NgLmjN15h" role="37wK5m">
+                <ref role="3cqZAo" node="67NgLmjN03J" resolve="JACOCO_EXEC_PATH_OPTION" />
+              </node>
+              <node concept="3clFbT" id="HEhrUSmpNs" role="37wK5m">
+                <property role="3clFbU" value="true" />
+              </node>
+              <node concept="Xl_RD" id="HEhrUSmpNt" role="37wK5m">
+                <property role="Xl_RC" value="path to the execution data file 'jacoco.exec' (likely 'MPS_install_dir\\bin')" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="HEhrUSmma5" role="3cqZAp" />
+        <node concept="3cpWs8" id="HEhrUSmrIp" role="3cqZAp">
+          <node concept="3cpWsn" id="HEhrUSmrIo" role="3cpWs9">
+            <property role="TrG5h" value="parser" />
+            <node concept="3uibUv" id="67NgLmjMX0_" role="1tU5fm">
+              <ref role="3uigEE" to="gb0k:~CommandLineParser" resolve="CommandLineParser" />
+            </node>
+            <node concept="2ShNRf" id="HEhrUSmrOM" role="33vP2m">
+              <node concept="1pGfFk" id="67NgLmjMX3t" role="2ShVmc">
+                <ref role="37wK5l" to="gb0k:~DefaultParser.&lt;init&gt;()" resolve="DefaultParser" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="HEhrUSmrIt" role="3cqZAp">
+          <node concept="3cpWsn" id="HEhrUSmrIs" role="3cpWs9">
+            <property role="TrG5h" value="cmd" />
+            <node concept="3uibUv" id="67NgLmjMX9w" role="1tU5fm">
+              <ref role="3uigEE" to="gb0k:~CommandLine" resolve="CommandLine" />
+            </node>
+            <node concept="2OqwBi" id="HEhrUSmrNH" role="33vP2m">
+              <node concept="37vLTw" id="HEhrUSmrNG" role="2Oq$k0">
+                <ref role="3cqZAo" node="HEhrUSmrIo" resolve="parser" />
+              </node>
+              <node concept="liA8E" id="HEhrUSmrNI" role="2OqNvi">
+                <ref role="37wK5l" to="gb0k:~CommandLineParser.parse(org.apache.commons.cli.Options,java.lang.String[])" resolve="parse" />
+                <node concept="37vLTw" id="HEhrUSmrNJ" role="37wK5m">
+                  <ref role="3cqZAo" node="HEhrUSmm$S" resolve="options" />
+                </node>
+                <node concept="37vLTw" id="HEhrUSmrNK" role="37wK5m">
+                  <ref role="3cqZAo" node="4DA1Mfy7fG6" resolve="args" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="67NgLmjMXrN" role="3cqZAp" />
+        <node concept="3clFbJ" id="67NgLmjNjAu" role="3cqZAp">
+          <node concept="3clFbS" id="67NgLmjNjAw" role="3clFbx">
+            <node concept="3cpWs8" id="67NgLmjNkOw" role="3cqZAp">
+              <node concept="3cpWsn" id="67NgLmjNkOv" role="3cpWs9">
+                <property role="TrG5h" value="formatter" />
+                <node concept="3uibUv" id="67NgLmjNkOx" role="1tU5fm">
+                  <ref role="3uigEE" to="gb0k:~HelpFormatter" resolve="HelpFormatter" />
+                </node>
+                <node concept="2ShNRf" id="67NgLmjNkS3" role="33vP2m">
+                  <node concept="1pGfFk" id="67NgLmjNkS4" role="2ShVmc">
+                    <ref role="37wK5l" to="gb0k:~HelpFormatter.&lt;init&gt;()" resolve="HelpFormatter" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="67NgLmjNkOz" role="3cqZAp">
+              <node concept="2OqwBi" id="67NgLmjNkSa" role="3clFbG">
+                <node concept="37vLTw" id="67NgLmjNkS9" role="2Oq$k0">
+                  <ref role="3cqZAo" node="67NgLmjNkOv" resolve="formatter" />
+                </node>
+                <node concept="liA8E" id="67NgLmjNkSb" role="2OqNvi">
+                  <ref role="37wK5l" to="gb0k:~HelpFormatter.printHelp(java.lang.String,org.apache.commons.cli.Options)" resolve="printHelp" />
+                  <node concept="Xl_RD" id="67NgLmjNkSc" role="37wK5m">
+                    <property role="Xl_RC" value="JaCoCo Report Generator" />
+                  </node>
+                  <node concept="37vLTw" id="67NgLmjNkSd" role="37wK5m">
+                    <ref role="3cqZAo" node="HEhrUSmm$S" resolve="options" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="67NgLmjNl1e" role="3cqZAp" />
+          </node>
+          <node concept="2OqwBi" id="67NgLmjNjZ8" role="3clFbw">
+            <node concept="37vLTw" id="67NgLmjNjNI" role="2Oq$k0">
+              <ref role="3cqZAo" node="HEhrUSmrIs" resolve="cmd" />
+            </node>
+            <node concept="liA8E" id="67NgLmjNk6n" role="2OqNvi">
+              <ref role="37wK5l" to="gb0k:~CommandLine.hasOption(java.lang.String)" resolve="hasOption" />
+              <node concept="37vLTw" id="67NgLmjNkuC" role="37wK5m">
+                <ref role="3cqZAo" node="67NgLmjNk8Q" resolve="HELP_OPTION" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="67NgLmjNEON" role="3cqZAp" />
         <node concept="3cpWs8" id="4DA1Mfy7kZH" role="3cqZAp">
           <node concept="3cpWsn" id="4DA1Mfy7kZK" role="3cpWs9">
             <property role="TrG5h" value="path" />
             <node concept="17QB3L" id="4DA1Mfy7kZF" role="1tU5fm" />
-            <node concept="Xl_RD" id="4DA1Mfy7lis" role="33vP2m">
-              <property role="Xl_RC" value="C:\\work\\mbeddr.formal\\code\\languages\\com.mbeddr.formal.safety\\" />
+            <node concept="2OqwBi" id="67NgLmjMYht" role="33vP2m">
+              <node concept="37vLTw" id="67NgLmjMYa4" role="2Oq$k0">
+                <ref role="3cqZAo" node="HEhrUSmrIs" resolve="cmd" />
+              </node>
+              <node concept="liA8E" id="67NgLmjMYw3" role="2OqNvi">
+                <ref role="37wK5l" to="gb0k:~CommandLine.getOptionValue(java.lang.String)" resolve="getOptionValue" />
+                <node concept="37vLTw" id="67NgLmjMYZ3" role="37wK5m">
+                  <ref role="3cqZAo" node="67NgLmjMYZ0" resolve="PROJECT_OPTION" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="3cpWs8" id="7YpeH5eVp$x" role="3cqZAp">
           <node concept="3cpWsn" id="7YpeH5eVp$y" role="3cpWs9">
-            <property role="TrG5h" value="mpsHomePath" />
+            <property role="TrG5h" value="jacocoExecPath" />
             <node concept="17QB3L" id="7YpeH5eVp$z" role="1tU5fm" />
-            <node concept="Xl_RD" id="7YpeH5eVp$$" role="33vP2m">
-              <property role="Xl_RC" value="C:\\work\\MPS_2020_3_5\\bin" />
+            <node concept="2OqwBi" id="67NgLmjNEiA" role="33vP2m">
+              <node concept="37vLTw" id="67NgLmjNEiB" role="2Oq$k0">
+                <ref role="3cqZAo" node="HEhrUSmrIs" resolve="cmd" />
+              </node>
+              <node concept="liA8E" id="67NgLmjNEiC" role="2OqNvi">
+                <ref role="37wK5l" to="gb0k:~CommandLine.getOptionValue(java.lang.String)" resolve="getOptionValue" />
+                <node concept="37vLTw" id="67NgLmjNXPu" role="37wK5m">
+                  <ref role="3cqZAo" node="67NgLmjN03J" resolve="JACOCO_EXEC_PATH_OPTION" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="3cpWs8" id="4DA1Mfy7fGp" role="3cqZAp">
           <node concept="3cpWsn" id="4DA1Mfy7fGo" role="3cpWs9">
-            <property role="3TUv4t" value="true" />
             <property role="TrG5h" value="generator" />
             <node concept="3uibUv" id="4DA1Mfy7fGq" role="1tU5fm">
-              <ref role="3uigEE" node="4DA1Mfy76SI" resolve="ReportGenerator" />
+              <ref role="3uigEE" node="4DA1Mfy76SI" resolve="JaCoCoReportGenerator" />
             </node>
             <node concept="2ShNRf" id="4DA1Mfy7gDV" role="33vP2m">
               <node concept="1pGfFk" id="4DA1Mfy7gE9" role="2ShVmc">
-                <ref role="37wK5l" node="4DA1Mfy7fE6" resolve="ReportGenerator" />
+                <ref role="37wK5l" node="4DA1Mfy7fE6" resolve="JaCoCoReportGenerator" />
                 <node concept="2ShNRf" id="7YpeH5eVryN" role="37wK5m">
                   <node concept="1pGfFk" id="7YpeH5eVrSF" role="2ShVmc">
                     <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
                     <node concept="37vLTw" id="7YpeH5eVs46" role="37wK5m">
-                      <ref role="3cqZAo" node="7YpeH5eVp$y" resolve="mpsHomePath" />
+                      <ref role="3cqZAo" node="7YpeH5eVp$y" resolve="jacocoExecPath" />
                     </node>
                   </node>
                 </node>
@@ -1352,15 +1268,60 @@
               <ref role="3cqZAo" node="4DA1Mfy7fGo" resolve="generator" />
             </node>
             <node concept="liA8E" id="4DA1Mfy7guR" role="2OqNvi">
-              <ref role="37wK5l" node="4DA1Mfy7fEN" resolve="create" />
+              <ref role="37wK5l" node="4DA1Mfy7fEN" resolve="createReport" />
             </node>
           </node>
         </node>
       </node>
       <node concept="3Tm1VV" id="4DA1Mfy7fGy" role="1B3o_S" />
       <node concept="3cqZAl" id="4DA1Mfy7fGz" role="3clF45" />
+      <node concept="3uibUv" id="67NgLmjMXeq" role="Sfmx6">
+        <ref role="3uigEE" to="gb0k:~ParseException" resolve="ParseException" />
+      </node>
     </node>
     <node concept="3Tm1VV" id="4DA1Mfy76SJ" role="1B3o_S" />
+    <node concept="3UR2Jj" id="67NgLmjPkml" role="lGtFl">
+      <node concept="TZ5HA" id="67NgLmjPkmm" role="TZ5H$">
+        <node concept="1dT_AC" id="67NgLmjPkmn" role="1dT_Ay">
+          <property role="1dT_AB" value="Command line tool for generating coverage reports for MPS projects. Reports are generated as HTML, XML and CSV." />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="67NgLmjPmah" role="TZ5H$">
+        <node concept="1dT_AC" id="67NgLmjPmai" role="1dT_Ay">
+          <property role="1dT_AB" value="Before calling this tool, we assume that MPS was previously ran and coverage information was collected - i.e. the &quot;jacoco.exec&quot; file containing coverage information exists." />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="67NgLmjPof5" role="TZ5H$">
+        <node concept="1dT_AC" id="67NgLmjPof6" role="1dT_Ay">
+          <property role="1dT_AB" value="" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="67NgLmjPofd" role="TZ5H$">
+        <node concept="1dT_AC" id="67NgLmjPofe" role="1dT_Ay">
+          <property role="1dT_AB" value="Typical usage scenario is:" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="67NgLmjPoyL" role="TZ5H$">
+        <node concept="1dT_AC" id="67NgLmjPoyM" role="1dT_Ay">
+          <property role="1dT_AB" value="   - Step 1: enable code coverage instrumentation for your running MPS. Add &quot;-javaagent:C:\work\mps-qa\code\languages\org.mpsqa.testing\solutions\org.mpsqa.testcov.jacoco.rt\lib\lib\jacocoagent.jar&quot; to &quot;MPS_install_dir\bin\mps64.exe.vmoptions&quot;" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="67NgLmjPpHF" role="TZ5H$">
+        <node concept="1dT_AC" id="67NgLmjPpHG" role="1dT_Ay">
+          <property role="1dT_AB" value="   - Step 2: start MPS and perform some actions (e.g. run tests, call model checker on project, ... or simply do some work)" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="67NgLmjPrFM" role="TZ5H$">
+        <node concept="1dT_AC" id="67NgLmjPrFN" role="1dT_Ay">
+          <property role="1dT_AB" value="   - Step 3: gently exit MPS - &quot;File-&gt;Exit&quot; (the coverage information is saved on the hard-disk in the file &quot;jacoco.exec&quot;) in directory &quot;MPS_install_dir\bin&quot;" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="67NgLmjPtGP" role="TZ5H$">
+        <node concept="1dT_AC" id="67NgLmjPtGQ" role="1dT_Ay">
+          <property role="1dT_AB" value="   - Step 4: call this tool to produce the coverage report" />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 

@@ -29,6 +29,7 @@
       </concept>
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
         <property id="1205250923097" name="caption" index="2uzpH1" />
+        <property id="1213273179528" name="description" index="1WHSii" />
         <child id="1203083196627" name="updateBlock" index="tmbBb" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
         <child id="1217413222820" name="parameter" index="1NuT2Z" />
@@ -117,10 +118,10 @@
   </registry>
   <node concept="2DaZZR" id="3uTLX9ZIuF6" />
   <node concept="tC5Ba" id="3uTLX9ZIuUd">
-    <property role="TrG5h" value="JaCoCo" />
+    <property role="TrG5h" value="JaCoCo_Group" />
     <node concept="ftmFs" id="3uTLX9ZIvph" role="ftER_">
       <node concept="tCFHf" id="7YpeH5eSNz6" role="ftvYc">
-        <ref role="tCJdB" node="3uTLX9ZIvB$" resolve="JaCoCo" />
+        <ref role="tCJdB" node="3uTLX9ZIvB$" resolve="JaCoCo Root Node Coverage" />
       </node>
     </node>
     <node concept="tT9cl" id="7YpeH5eSNBJ" role="2f5YQi">
@@ -128,8 +129,9 @@
     </node>
   </node>
   <node concept="sE7Ow" id="3uTLX9ZIvB$">
-    <property role="TrG5h" value="JaCoCo" />
-    <property role="2uzpH1" value="Display JaCoCo Tests Coverage" />
+    <property role="TrG5h" value="JaCoCo Root Node Coverage" />
+    <property role="2uzpH1" value="Display JaCoCo Tests Coverage for This Root" />
+    <property role="1WHSii" value="Display JaCoCo Tests Coverage for This Root Node" />
     <node concept="tnohg" id="3uTLX9ZIvB_" role="tncku">
       <node concept="3clFbS" id="3uTLX9ZIvBA" role="2VODD2">
         <node concept="3clFbF" id="7YpeH5eSUN9" role="3cqZAp">
@@ -188,7 +190,7 @@
   <node concept="Zd50a" id="7YpeH5eV8gG">
     <property role="TrG5h" value="JaCoCo" />
     <node concept="Zd509" id="7YpeH5eV8uX" role="Zd508">
-      <ref role="1bYAoF" node="3uTLX9ZIvB$" resolve="JaCoCo" />
+      <ref role="1bYAoF" node="3uTLX9ZIvB$" resolve="JaCoCo Root Node Coverage" />
       <node concept="pLAjd" id="7YpeH5eV8uY" role="Zd501">
         <property role="pLAjc" value="ctrl+alt" />
         <property role="pLAjf" value="VK_C" />
