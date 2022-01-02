@@ -29,10 +29,6 @@
         <child id="8618885170173601778" name="tail" index="2Ry0An" />
       </concept>
       <concept id="6647099934206700647" name="jetbrains.mps.build.structure.BuildJavaPlugin" flags="ng" index="10PD9b" />
-      <concept id="7389400916848050071" name="jetbrains.mps.build.structure.BuildLayout_Zip" flags="ng" index="3981dG" />
-      <concept id="7389400916848050060" name="jetbrains.mps.build.structure.BuildLayout_NamedContainer" flags="ng" index="3981dR">
-        <child id="4380385936562148502" name="containerName" index="Nbhlr" />
-      </concept>
       <concept id="7389400916848136194" name="jetbrains.mps.build.structure.BuildFolderMacro" flags="ng" index="398rNT">
         <child id="7389400916848144618" name="defaultPath" index="398pKh" />
       </concept>
@@ -178,158 +174,151 @@
       </node>
     </node>
     <node concept="1l3spV" id="7C9PHv6FBIN" role="1l3spN">
-      <node concept="3981dG" id="7C9PHv6FBIV" role="39821P">
-        <node concept="3_J27D" id="7C9PHv6FBJ5" role="Nbhlr">
-          <node concept="3Mxwew" id="7C9PHv6FBJj" role="3MwsjC">
-            <property role="3MwjfP" value="org.mpsqa.base.zip" />
+      <node concept="m$_wl" id="7C9PHv6FBJ6" role="39821P">
+        <ref role="m_rDy" node="7C9PHv6FBIO" resolve="org.mpsqa.base" />
+        <node concept="28jJK3" id="7C9PHv6FBJk" role="39821P">
+          <node concept="398BVA" id="7C9PHv6FBJz" role="28jJRO">
+            <ref role="398BVh" node="7C9PHv6FBIL" resolve="mpsqa.base.home" />
+            <node concept="2Ry0Ak" id="7C9PHv6FBJH" role="iGT6I">
+              <property role="2Ry0Am" value="solutions" />
+              <node concept="2Ry0Ak" id="7C9PHv6FBJQ" role="2Ry0An">
+                <property role="2Ry0Am" value="org.mpsqa.base.lib" />
+                <node concept="2Ry0Ak" id="7C9PHv6FBJX" role="2Ry0An">
+                  <property role="2Ry0Am" value="lib" />
+                  <node concept="2Ry0Ak" id="7C9PHv6FBK4" role="2Ry0An">
+                    <property role="2Ry0Am" value="commons-lang3-3.3.2" />
+                    <node concept="2Ry0Ak" id="7C9PHv6FBKa" role="2Ry0An">
+                      <property role="2Ry0Am" value="commons-lang3-3.3.2.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
-        <node concept="m$_wl" id="7C9PHv6FBJ6" role="39821P">
-          <ref role="m_rDy" node="7C9PHv6FBIO" resolve="org.mpsqa.base" />
-          <node concept="28jJK3" id="7C9PHv6FBJk" role="39821P">
-            <node concept="398BVA" id="7C9PHv6FBJz" role="28jJRO">
-              <ref role="398BVh" node="7C9PHv6FBIL" resolve="mpsqa.base.home" />
-              <node concept="2Ry0Ak" id="7C9PHv6FBJH" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="7C9PHv6FBJQ" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.mpsqa.base.lib" />
-                  <node concept="2Ry0Ak" id="7C9PHv6FBJX" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="7C9PHv6FBK4" role="2Ry0An">
-                      <property role="2Ry0Am" value="commons-lang3-3.3.2" />
-                      <node concept="2Ry0Ak" id="7C9PHv6FBKa" role="2Ry0An">
-                        <property role="2Ry0Am" value="commons-lang3-3.3.2.jar" />
-                      </node>
+        <node concept="28jJK3" id="7C9PHv6FBJl" role="39821P">
+          <node concept="398BVA" id="7C9PHv6FBJ$" role="28jJRO">
+            <ref role="398BVh" node="7C9PHv6FBIL" resolve="mpsqa.base.home" />
+            <node concept="2Ry0Ak" id="7C9PHv6FBJI" role="iGT6I">
+              <property role="2Ry0Am" value="solutions" />
+              <node concept="2Ry0Ak" id="7C9PHv6FBJR" role="2Ry0An">
+                <property role="2Ry0Am" value="org.mpsqa.base.lib" />
+                <node concept="2Ry0Ak" id="7C9PHv6FBJY" role="2Ry0An">
+                  <property role="2Ry0Am" value="lib" />
+                  <node concept="2Ry0Ak" id="7C9PHv6FBK5" role="2Ry0An">
+                    <property role="2Ry0Am" value="commons-lang3-3.3.2" />
+                    <node concept="2Ry0Ak" id="7C9PHv6FBKb" role="2Ry0An">
+                      <property role="2Ry0Am" value="commons-lang3-3.3.2-javadoc.jar" />
                     </node>
                   </node>
                 </node>
               </node>
             </node>
           </node>
-          <node concept="28jJK3" id="7C9PHv6FBJl" role="39821P">
-            <node concept="398BVA" id="7C9PHv6FBJ$" role="28jJRO">
-              <ref role="398BVh" node="7C9PHv6FBIL" resolve="mpsqa.base.home" />
-              <node concept="2Ry0Ak" id="7C9PHv6FBJI" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="7C9PHv6FBJR" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.mpsqa.base.lib" />
-                  <node concept="2Ry0Ak" id="7C9PHv6FBJY" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="7C9PHv6FBK5" role="2Ry0An">
-                      <property role="2Ry0Am" value="commons-lang3-3.3.2" />
-                      <node concept="2Ry0Ak" id="7C9PHv6FBKb" role="2Ry0An">
-                        <property role="2Ry0Am" value="commons-lang3-3.3.2-javadoc.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="28jJK3" id="3PN66LDpt3o" role="39821P">
-            <node concept="398BVA" id="3PN66LDpt3p" role="28jJRO">
-              <ref role="398BVh" node="7C9PHv6FBIL" resolve="mpsqa.base.home" />
-              <node concept="2Ry0Ak" id="3PN66LDpt3q" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="3PN66LDpt3r" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.mpsqa.base.lib" />
-                  <node concept="2Ry0Ak" id="3PN66LDpt3s" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3PN66LDpt3t" role="2Ry0An">
-                      <property role="2Ry0Am" value="commons-io-2.6.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="28jJK3" id="67NgLmjPxuZ" role="39821P">
-            <node concept="398BVA" id="67NgLmjPxv0" role="28jJRO">
-              <ref role="398BVh" node="7C9PHv6FBIL" resolve="mpsqa.base.home" />
-              <node concept="2Ry0Ak" id="67NgLmjPxv1" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="67NgLmjPxv2" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.mpsqa.base.lib" />
-                  <node concept="2Ry0Ak" id="67NgLmjPxv3" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="67NgLmjPxxz" role="2Ry0An">
-                      <property role="2Ry0Am" value="commons-cli-1.5.0.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="28jJK3" id="7C9PHv6FBJm" role="39821P">
-            <node concept="398BVA" id="7C9PHv6FBJ_" role="28jJRO">
-              <ref role="398BVh" node="7C9PHv6FBIL" resolve="mpsqa.base.home" />
-              <node concept="2Ry0Ak" id="7C9PHv6FBJJ" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="7C9PHv6FBJS" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.mpsqa.treemap.lib" />
-                  <node concept="2Ry0Ak" id="7C9PHv6FBJZ" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="7C9PHv6FBK6" role="2Ry0An">
-                      <property role="2Ry0Am" value="jtreemap-1.1.0-bundle.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="28jJK3" id="7C9PHv6FBJn" role="39821P">
-            <node concept="398BVA" id="7C9PHv6FBJA" role="28jJRO">
-              <ref role="398BVh" node="7C9PHv6FBIL" resolve="mpsqa.base.home" />
-              <node concept="2Ry0Ak" id="7C9PHv6FBJK" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="7C9PHv6FBJT" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.mpsqa.treemap.lib" />
-                  <node concept="2Ry0Ak" id="7C9PHv6FBK0" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="7C9PHv6FBK7" role="2Ry0An">
-                      <property role="2Ry0Am" value="jtreemap-1.1.0.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="28jJK3" id="7C9PHv6FBJo" role="39821P">
-            <node concept="398BVA" id="7C9PHv6FBJB" role="28jJRO">
-              <ref role="398BVh" node="7C9PHv6FBIL" resolve="mpsqa.base.home" />
-              <node concept="2Ry0Ak" id="7C9PHv6FBJL" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="7C9PHv6FBJU" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.mpsqa.treemap.lib" />
-                  <node concept="2Ry0Ak" id="7C9PHv6FBK1" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="7C9PHv6FBK8" role="2Ry0An">
-                      <property role="2Ry0Am" value="net.sf.jtreemap.ktreemap-1.1.0-bundle.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="28jJK3" id="7C9PHv6FBJp" role="39821P">
-            <node concept="398BVA" id="7C9PHv6FBJC" role="28jJRO">
-              <ref role="398BVh" node="7C9PHv6FBIL" resolve="mpsqa.base.home" />
-              <node concept="2Ry0Ak" id="7C9PHv6FBJM" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="7C9PHv6FBJV" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.mpsqa.treemap.lib" />
-                  <node concept="2Ry0Ak" id="7C9PHv6FBK2" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="7C9PHv6FBK9" role="2Ry0An">
-                      <property role="2Ry0Am" value="net.sf.jtreemap.ktreemap-1.1.0.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="pUk6x" id="7C9PHv6FBJq" role="pUk7w" />
         </node>
+        <node concept="28jJK3" id="3PN66LDpt3o" role="39821P">
+          <node concept="398BVA" id="3PN66LDpt3p" role="28jJRO">
+            <ref role="398BVh" node="7C9PHv6FBIL" resolve="mpsqa.base.home" />
+            <node concept="2Ry0Ak" id="3PN66LDpt3q" role="iGT6I">
+              <property role="2Ry0Am" value="solutions" />
+              <node concept="2Ry0Ak" id="3PN66LDpt3r" role="2Ry0An">
+                <property role="2Ry0Am" value="org.mpsqa.base.lib" />
+                <node concept="2Ry0Ak" id="3PN66LDpt3s" role="2Ry0An">
+                  <property role="2Ry0Am" value="lib" />
+                  <node concept="2Ry0Ak" id="3PN66LDpt3t" role="2Ry0An">
+                    <property role="2Ry0Am" value="commons-io-2.6.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="28jJK3" id="67NgLmjPxuZ" role="39821P">
+          <node concept="398BVA" id="67NgLmjPxv0" role="28jJRO">
+            <ref role="398BVh" node="7C9PHv6FBIL" resolve="mpsqa.base.home" />
+            <node concept="2Ry0Ak" id="67NgLmjPxv1" role="iGT6I">
+              <property role="2Ry0Am" value="solutions" />
+              <node concept="2Ry0Ak" id="67NgLmjPxv2" role="2Ry0An">
+                <property role="2Ry0Am" value="org.mpsqa.base.lib" />
+                <node concept="2Ry0Ak" id="67NgLmjPxv3" role="2Ry0An">
+                  <property role="2Ry0Am" value="lib" />
+                  <node concept="2Ry0Ak" id="67NgLmjPxxz" role="2Ry0An">
+                    <property role="2Ry0Am" value="commons-cli-1.5.0.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="28jJK3" id="7C9PHv6FBJm" role="39821P">
+          <node concept="398BVA" id="7C9PHv6FBJ_" role="28jJRO">
+            <ref role="398BVh" node="7C9PHv6FBIL" resolve="mpsqa.base.home" />
+            <node concept="2Ry0Ak" id="7C9PHv6FBJJ" role="iGT6I">
+              <property role="2Ry0Am" value="solutions" />
+              <node concept="2Ry0Ak" id="7C9PHv6FBJS" role="2Ry0An">
+                <property role="2Ry0Am" value="org.mpsqa.treemap.lib" />
+                <node concept="2Ry0Ak" id="7C9PHv6FBJZ" role="2Ry0An">
+                  <property role="2Ry0Am" value="lib" />
+                  <node concept="2Ry0Ak" id="7C9PHv6FBK6" role="2Ry0An">
+                    <property role="2Ry0Am" value="jtreemap-1.1.0-bundle.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="28jJK3" id="7C9PHv6FBJn" role="39821P">
+          <node concept="398BVA" id="7C9PHv6FBJA" role="28jJRO">
+            <ref role="398BVh" node="7C9PHv6FBIL" resolve="mpsqa.base.home" />
+            <node concept="2Ry0Ak" id="7C9PHv6FBJK" role="iGT6I">
+              <property role="2Ry0Am" value="solutions" />
+              <node concept="2Ry0Ak" id="7C9PHv6FBJT" role="2Ry0An">
+                <property role="2Ry0Am" value="org.mpsqa.treemap.lib" />
+                <node concept="2Ry0Ak" id="7C9PHv6FBK0" role="2Ry0An">
+                  <property role="2Ry0Am" value="lib" />
+                  <node concept="2Ry0Ak" id="7C9PHv6FBK7" role="2Ry0An">
+                    <property role="2Ry0Am" value="jtreemap-1.1.0.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="28jJK3" id="7C9PHv6FBJo" role="39821P">
+          <node concept="398BVA" id="7C9PHv6FBJB" role="28jJRO">
+            <ref role="398BVh" node="7C9PHv6FBIL" resolve="mpsqa.base.home" />
+            <node concept="2Ry0Ak" id="7C9PHv6FBJL" role="iGT6I">
+              <property role="2Ry0Am" value="solutions" />
+              <node concept="2Ry0Ak" id="7C9PHv6FBJU" role="2Ry0An">
+                <property role="2Ry0Am" value="org.mpsqa.treemap.lib" />
+                <node concept="2Ry0Ak" id="7C9PHv6FBK1" role="2Ry0An">
+                  <property role="2Ry0Am" value="lib" />
+                  <node concept="2Ry0Ak" id="7C9PHv6FBK8" role="2Ry0An">
+                    <property role="2Ry0Am" value="net.sf.jtreemap.ktreemap-1.1.0-bundle.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="28jJK3" id="7C9PHv6FBJp" role="39821P">
+          <node concept="398BVA" id="7C9PHv6FBJC" role="28jJRO">
+            <ref role="398BVh" node="7C9PHv6FBIL" resolve="mpsqa.base.home" />
+            <node concept="2Ry0Ak" id="7C9PHv6FBJM" role="iGT6I">
+              <property role="2Ry0Am" value="solutions" />
+              <node concept="2Ry0Ak" id="7C9PHv6FBJV" role="2Ry0An">
+                <property role="2Ry0Am" value="org.mpsqa.treemap.lib" />
+                <node concept="2Ry0Ak" id="7C9PHv6FBK2" role="2Ry0An">
+                  <property role="2Ry0Am" value="lib" />
+                  <node concept="2Ry0Ak" id="7C9PHv6FBK9" role="2Ry0An">
+                    <property role="2Ry0Am" value="net.sf.jtreemap.ktreemap-1.1.0.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="pUk6x" id="7C9PHv6FBJq" role="pUk7w" />
       </node>
     </node>
     <node concept="m$_wf" id="7C9PHv6FBIO" role="3989C9">

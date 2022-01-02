@@ -5,14 +5,9 @@
       <sourceRoot location="commons-lang3-3.3.2-javadoc.jar" />
       <sourceRoot location="commons-lang3-3.3.2.jar" />
     </modelRoot>
-    <modelRoot contentPath="${module}/lib/commons-io-2.6.jar!/" type="java_classes">
-      <sourceRoot location="." />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib/commons-cli-1.5.0.jar!/" type="java_classes">
-      <sourceRoot location="." />
-    </modelRoot>
     <modelRoot contentPath="${module}/lib" type="java_classes">
       <sourceRoot location="commons-cli-1.5.0.jar" />
+      <sourceRoot location="commons-io-2.6.jar" />
     </modelRoot>
   </models>
   <facets>
