@@ -214,12 +214,51 @@ check.dependsOn run_clones_headless
 
 assemble.dependsOn run_clones_headless
 
+publishing {
+    repositories {
+		maven {
+			name = "GitHubPackages"
+			url = uri("https://maven.pkg.github.com/mbeddr/mps-qa")
+			if(project.hasProperty("gpr.token")) {
+				credentials {
+					username = project.findProperty("gpr.user")
+					password = project.findProperty("gpr.token")
+				}
+			}
+		}
+    }
+    publications {
+        MPSQA(MavenPublication) {
+            groupId 'org.mpsqa'
+            artifactId 'org.mpsqa.allInOne'
+            artifact build_allInOne_package
+            pom.withXml {
+                def dependenciesNode = asNode().appendNode('dependencies')
+                configurations.languageLibs.resolvedConfiguration.firstLevelModuleDependencies.each {
+                    def dependencyNode = dependenciesNode.appendNode('dependency')
+                    dependencyNode.appendNode('groupId', it.moduleGroup)
+                    dependencyNode.appendNode('artifactId', it.moduleName)
+                    dependencyNode.appendNode('version', it.moduleVersion)
+                    dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
+                }
+                configurations.mps.resolvedConfiguration.firstLevelModuleDependencies.each {
+                    def dependencyNode = dependenciesNode.appendNode('dependency')
+                    dependencyNode.appendNode('groupId', it.moduleGroup)
+                    dependencyNode.appendNode('artifactId', it.moduleName)
+                    dependencyNode.appendNode('version', it.moduleVersion)
+                    dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
+                    dependencyNode.appendNode('scope', 'provided')
+                }
+            }
+        }
+    }
+}
+
 task cleanMps(type: Delete) {
     delete fileTree(dir: projectDir, include: ["**/classes_gen/**", "**/source_gen/**", "**/source_gen.caches/**", "tmp/**"])
 }
 
 clean.dependsOn cleanMps
-
 
 defaultTasks 'build_allInOne_package'
 
