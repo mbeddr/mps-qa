@@ -11,6 +11,7 @@
     <import index="hx16" ref="r:b207e9c3-ef31-40d7-92fc-7e446d92ce2a(org.mpsqa.build._020_testing_build)" />
     <import index="5g2w" ref="r:eecfcc09-6fb4-4fd4-bb99-b3d1712ec5a4(org.mpsqa.build._030_clones_build)" />
     <import index="c8rw" ref="r:2377d435-973d-4687-839a-7353546ffa8d(org.mpsqa.build._040_mutant_build)" />
+    <import index="m9y5" ref="r:f769f949-59da-40a3-b1a7-86c225f998f5(org.mpsqa.build._050_unused_build)" />
   </imports>
   <registry>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
@@ -87,6 +88,9 @@
     <node concept="2sgV4H" id="3PN66LDrQD5" role="1l3spa">
       <ref role="1l3spb" to="c8rw:3PN66LDqBYN" resolve="org.mpsqa.mutant" />
     </node>
+    <node concept="2sgV4H" id="1YSnQiVh0BS" role="1l3spa">
+      <ref role="1l3spb" to="m9y5:1YSnQiVh0x1" resolve="org.mpsqa.unused" />
+    </node>
     <node concept="10PD9b" id="3PN66LDqBUz" role="10PD9s" />
     <node concept="3b7kt6" id="3PN66LDqBU$" role="10PD9s" />
     <node concept="398rNT" id="3PN66LDqBU_" role="1l3spd">
@@ -142,6 +146,9 @@
           </node>
           <node concept="3_I8Xc" id="3PN66LDrQC$" role="39821P">
             <ref role="3_I8Xa" to="c8rw:3PN66LDqBZi" resolve="org.mpsqa.mutant" />
+          </node>
+          <node concept="3_I8Xc" id="1YSnQiVh0C1" role="39821P">
+            <ref role="3_I8Xa" to="m9y5:1YSnQiVh0xw" resolve="org.mpsqa.unused" />
           </node>
         </node>
       </node>

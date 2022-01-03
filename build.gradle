@@ -196,11 +196,16 @@ task build_mutant_languages(type: BuildLanguages, dependsOn: []) {
     script "$buildDir/scripts/build-mutant-languages.xml"
 }
 
+task build_unused_languages(type: BuildLanguages, dependsOn: []) {
+    script "$buildDir/scripts/build-unused-languages-analysis.xml"
+}
+
 task build_allInOne_package(type: BuildLanguages, dependsOn: []) {
     dependsOn 'build_base_languages'
     dependsOn 'build_testing_languages'
     dependsOn 'build_clones_languages'
     dependsOn 'build_mutant_languages'
+    dependsOn 'build_unused_languages'
     script "$buildDir/scripts/build-allInOne-package.xml"
 }
 
