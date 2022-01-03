@@ -204,6 +204,12 @@ task build_allInOne_package(type: BuildLanguages, dependsOn: []) {
     script "$buildDir/scripts/build-allInOne-package.xml"
 }
 
+task package_mpsqa(type: Zip, dependsOn: build_allInOne_package) {
+    archiveBaseName = 'org.mpsqa'
+    from artifactsDir
+    include 'org.mpsqa.allInOne/**'
+}
+
 task run_clones_headless(type: TestLanguages, dependsOn: build_clones_languages) {
     description "Will execute all tests from command line"
     print "mpsqa.home = " + rootDir;
@@ -231,7 +237,7 @@ publishing {
         MPSQA(MavenPublication) {
             groupId 'org.mpsqa'
             artifactId 'org.mpsqa.allInOne'
-            artifact build_allInOne_package
+            artifact package_mpsqa
             pom.withXml {
                 def dependenciesNode = asNode().appendNode('dependencies')
                 configurations.languageLibs.resolvedConfiguration.firstLevelModuleDependencies.each {
