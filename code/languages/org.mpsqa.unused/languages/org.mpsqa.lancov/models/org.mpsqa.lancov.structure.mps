@@ -50,9 +50,9 @@
   </registry>
   <node concept="1TIwiD" id="5PcqW5O_3wl">
     <property role="EcuMT" value="6722866822386038805" />
-    <property role="TrG5h" value="LancovConfigRoot" />
+    <property role="TrG5h" value="UninstantiatedConceptsAnalysisConfigRoot" />
     <property role="19KtqR" value="true" />
-    <property role="34LRSv" value="lancov root" />
+    <property role="34LRSv" value="uninstantiated concepts analysis" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="5PcqW5OBma1" role="1TKVEl">
       <property role="IQ2nx" value="6722866822386639489" />
@@ -112,9 +112,9 @@
   </node>
   <node concept="1TIwiD" id="5PcqW5OA5bZ">
     <property role="EcuMT" value="6722866822386307839" />
-    <property role="3GE5qa" value="postprocessor" />
-    <property role="TrG5h" value="NodesListRoot" />
-    <property role="34LRSv" value="nodes list" />
+    <property role="3GE5qa" value="analysis_results" />
+    <property role="TrG5h" value="AnalysisResultListRoot" />
+    <property role="34LRSv" value="analysis results list" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5PcqW5OA5ce" role="PzmwI">
@@ -123,14 +123,14 @@
     <node concept="1TJgyj" id="5PcqW5OBE2S" role="1TKVEi">
       <property role="IQ2ns" value="6722866822386720952" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="refs" />
+      <property role="20kJfa" value="analysisResults" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="5PcqW5OA5cg" resolve="NodeRef" />
+      <ref role="20lvS9" node="1YSnQiVjV0M" resolve="AnalysisResult" />
     </node>
   </node>
   <node concept="1TIwiD" id="5PcqW5OA5cg">
     <property role="EcuMT" value="6722866822386307856" />
-    <property role="3GE5qa" value="postprocessor" />
+    <property role="3GE5qa" value="analysis_results" />
     <property role="TrG5h" value="NodeRef" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5PcqW5OA5cv" role="1TKVEi">
@@ -157,6 +157,106 @@
       <property role="TrG5h" value="lanName" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="1YSnQiVhxB2">
+    <property role="EcuMT" value="2285681697133828546" />
+    <property role="TrG5h" value="UnusedConceptsFieldsAnalysisConfigRoot" />
+    <property role="19KtqR" value="true" />
+    <property role="34LRSv" value="unused concepts fields analysis" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="1YSnQiVhxB4" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="1YSnQiVhxB5" role="1TKVEi">
+      <property role="IQ2ns" value="2285681697133828549" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="scope" />
+      <ref role="20lvS9" node="5PcqW5O_3wA" resolve="LancovScopeBase" />
+    </node>
+    <node concept="1TJgyj" id="1YSnQiVhxB6" role="1TKVEi">
+      <property role="IQ2ns" value="2285681697133828550" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="postprocessor" />
+      <ref role="20lvS9" node="5PcqW5OA4Ib" resolve="PostprocessorBase" />
+    </node>
+    <node concept="1TJgyj" id="1YSnQiVhxB7" role="1TKVEi">
+      <property role="IQ2ns" value="2285681697133828551" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="analysisScope" />
+      <ref role="20lvS9" node="5PcqW5OA8KA" resolve="AnalysisScopeBase" />
+    </node>
+    <node concept="1TJgyj" id="1YSnQiVpYXN" role="1TKVEi">
+      <property role="IQ2ns" value="2285681697136045939" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="analysesKinds" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="1YSnQiVpYVO" resolve="UnusedFieldsAnalysisBase" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1YSnQiVjV0M">
+    <property role="EcuMT" value="2285681697134456882" />
+    <property role="TrG5h" value="AnalysisResult" />
+    <property role="3GE5qa" value="analysis_results" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="1YSnQiVk0__" role="1TKVEl">
+      <property role="IQ2nx" value="2285681697134479717" />
+      <property role="TrG5h" value="analysis" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="1YSnQiVjV0N" role="1TKVEl">
+      <property role="IQ2nx" value="2285681697134456883" />
+      <property role="TrG5h" value="explanation" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="1YSnQiVjV0P" role="1TKVEi">
+      <property role="IQ2ns" value="2285681697134456885" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="nodeRef" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="5PcqW5OA5cg" resolve="NodeRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1YSnQiVpYVO">
+    <property role="EcuMT" value="2285681697136045812" />
+    <property role="TrG5h" value="UnusedFieldsAnalysisBase" />
+    <property role="R5$K7" value="true" />
+    <property role="3GE5qa" value="unused_fields_analyses_kinds" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="1YSnQiVpYW2">
+    <property role="EcuMT" value="2285681697136045826" />
+    <property role="3GE5qa" value="unused_fields_analyses_kinds" />
+    <property role="TrG5h" value="UnusedBooleanProperties" />
+    <property role="34LRSv" value="unused boolean properties" />
+    <ref role="1TJDcQ" node="1YSnQiVpYVO" resolve="UnusedFieldsAnalysisBase" />
+  </node>
+  <node concept="1TIwiD" id="1YSnQiVpYW3">
+    <property role="EcuMT" value="2285681697136045827" />
+    <property role="3GE5qa" value="unused_fields_analyses_kinds" />
+    <property role="TrG5h" value="UnusedIntegerProperties" />
+    <property role="34LRSv" value="unused integer properties" />
+    <ref role="1TJDcQ" node="1YSnQiVpYVO" resolve="UnusedFieldsAnalysisBase" />
+  </node>
+  <node concept="1TIwiD" id="1YSnQiVpYW4">
+    <property role="EcuMT" value="2285681697136045828" />
+    <property role="3GE5qa" value="unused_fields_analyses_kinds" />
+    <property role="TrG5h" value="UnusedEnumerationProperties" />
+    <property role="34LRSv" value="unused enumeration properties" />
+    <ref role="1TJDcQ" node="1YSnQiVpYVO" resolve="UnusedFieldsAnalysisBase" />
+  </node>
+  <node concept="1TIwiD" id="1YSnQiVpYW5">
+    <property role="EcuMT" value="2285681697136045829" />
+    <property role="3GE5qa" value="unused_fields_analyses_kinds" />
+    <property role="TrG5h" value="UnusedStringProperties" />
+    <property role="34LRSv" value="unused string properties" />
+    <ref role="1TJDcQ" node="1YSnQiVpYVO" resolve="UnusedFieldsAnalysisBase" />
+  </node>
+  <node concept="1TIwiD" id="1YSnQiVpYW6">
+    <property role="EcuMT" value="2285681697136045830" />
+    <property role="3GE5qa" value="unused_fields_analyses_kinds" />
+    <property role="TrG5h" value="UnusedMultipleCardinalityChildren" />
+    <property role="34LRSv" value="unused multiple cardinality of children" />
+    <ref role="1TJDcQ" node="1YSnQiVpYVO" resolve="UnusedFieldsAnalysisBase" />
   </node>
 </model>
 

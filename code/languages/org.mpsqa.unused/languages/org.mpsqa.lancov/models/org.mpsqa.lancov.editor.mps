@@ -12,11 +12,13 @@
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
+        <property id="1140524450557" name="separatorText" index="2czwfO" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
@@ -25,6 +27,9 @@
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
+      </concept>
+      <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
+        <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
@@ -125,12 +130,12 @@
     </language>
   </registry>
   <node concept="24kQdi" id="5PcqW5O_3wR">
-    <ref role="1XX52x" to="7ouc:5PcqW5O_3wl" resolve="LancovConfigRoot" />
+    <ref role="1XX52x" to="7ouc:5PcqW5O_3wl" resolve="UninstantiatedConceptsAnalysisConfigRoot" />
     <node concept="3EZMnI" id="5PcqW5O_3x7" role="2wV5jI">
       <node concept="3EZMnI" id="5PcqW5O_3xe" role="3EZMnx">
         <node concept="VPM3Z" id="5PcqW5O_3xg" role="3F10Kt" />
         <node concept="3F0ifn" id="5PcqW5O_3xo" role="3EZMnx">
-          <property role="3F0ifm" value="lancov config:" />
+          <property role="3F0ifm" value="uninstantiated concepts analysis config:" />
         </node>
         <node concept="3F0A7n" id="5PcqW5O_3xy" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -154,7 +159,7 @@
         </node>
         <node concept="3F0ifn" id="640xwjo$i$U" role="3EZMnx" />
         <node concept="3F0ifn" id="1GhTetdXFIM" role="3EZMnx">
-          <property role="3F0ifm" value="Help (lancov parameters):" />
+          <property role="3F0ifm" value="Help (uninstantiated-concepts-analysis parameters):" />
         </node>
         <node concept="3F0ifn" id="6dJ4vxiQBTa" role="3EZMnx">
           <property role="3F0ifm" value="treshold: the minimum number of instances we expect for a concept in order NOT to consider it as &quot;dead&quot;" />
@@ -247,7 +252,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5PcqW5OA5cx">
-    <property role="3GE5qa" value="postprocessor" />
+    <property role="3GE5qa" value="analysis_results" />
     <ref role="1XX52x" to="7ouc:5PcqW5OA5cg" resolve="NodeRef" />
     <node concept="3EZMnI" id="5PcqW5OA5cL" role="2wV5jI">
       <node concept="1HlG4h" id="5PcqW5OA5cS" role="3EZMnx">
@@ -355,8 +360,8 @@
     </node>
   </node>
   <node concept="24kQdi" id="5PcqW5OBE1k">
-    <property role="3GE5qa" value="postprocessor" />
-    <ref role="1XX52x" to="7ouc:5PcqW5OA5bZ" resolve="NodesListRoot" />
+    <property role="3GE5qa" value="analysis_results" />
+    <ref role="1XX52x" to="7ouc:5PcqW5OA5bZ" resolve="AnalysisResultListRoot" />
     <node concept="3EZMnI" id="5PcqW5OBE1$" role="2wV5jI">
       <node concept="3EZMnI" id="5PcqW5OBE1F" role="3EZMnx">
         <node concept="VPM3Z" id="5PcqW5OBE1H" role="3F10Kt" />
@@ -370,11 +375,232 @@
       </node>
       <node concept="3F0ifn" id="5PcqW5OBE23" role="3EZMnx" />
       <node concept="3F2HdR" id="5PcqW5OBE2i" role="3EZMnx">
-        <ref role="1NtTu8" to="7ouc:5PcqW5OBE2S" resolve="refs" />
+        <ref role="1NtTu8" to="7ouc:5PcqW5OBE2S" resolve="analysisResults" />
         <node concept="2iRkQZ" id="5PcqW5OBE2l" role="2czzBx" />
         <node concept="VPM3Z" id="5PcqW5OBE2m" role="3F10Kt" />
       </node>
       <node concept="2iRkQZ" id="5PcqW5OBE1B" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1YSnQiVhJv1">
+    <ref role="1XX52x" to="7ouc:1YSnQiVhxB2" resolve="UnusedConceptsFieldsAnalysisConfigRoot" />
+    <node concept="3EZMnI" id="1YSnQiVhJv$" role="2wV5jI">
+      <node concept="3EZMnI" id="1YSnQiVhJv_" role="3EZMnx">
+        <node concept="VPM3Z" id="1YSnQiVhJvA" role="3F10Kt" />
+        <node concept="3F0ifn" id="1YSnQiVhJvB" role="3EZMnx">
+          <property role="3F0ifm" value="unused concepts fields analysis config:" />
+        </node>
+        <node concept="3F0A7n" id="1YSnQiVhJvC" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="2iRfu4" id="1YSnQiVhJvD" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="1YSnQiVhJvE" role="3EZMnx" />
+      <node concept="3EZMnI" id="1YSnQiVhJvF" role="3EZMnx">
+        <node concept="VPM3Z" id="1YSnQiVhJvG" role="3F10Kt" />
+        <node concept="3vyZuw" id="1YSnQiVhJvH" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3F0ifn" id="1YSnQiVhJvI" role="3EZMnx">
+          <property role="3F0ifm" value="Help (purpose):" />
+        </node>
+        <node concept="3F0ifn" id="1YSnQiVhJvJ" role="3EZMnx">
+          <property role="3F0ifm" value="this analysis aims to identify the fields of concepts which are not instantiated" />
+          <node concept="VechU" id="1YSnQiVhJvK" role="3F10Kt">
+            <property role="Vb096" value="gray" />
+          </node>
+        </node>
+        <node concept="3F0ifn" id="1YSnQiVhJAT" role="3EZMnx">
+          <property role="3F0ifm" value="   - properties" />
+          <node concept="VechU" id="1YSnQiVhJAU" role="3F10Kt">
+            <property role="Vb096" value="gray" />
+          </node>
+        </node>
+        <node concept="3F0ifn" id="1YSnQiVhJJ8" role="3EZMnx">
+          <property role="3F0ifm" value="      - boolean properties for which all concept instances have TRUE or FALSE value" />
+          <node concept="VechU" id="1YSnQiVhJJ9" role="3F10Kt">
+            <property role="Vb096" value="gray" />
+          </node>
+        </node>
+        <node concept="3F0ifn" id="1YSnQiVhJKI" role="3EZMnx">
+          <property role="3F0ifm" value="      - integer properties for which all concept instances have only one value" />
+          <node concept="VechU" id="1YSnQiVhJKJ" role="3F10Kt">
+            <property role="Vb096" value="gray" />
+          </node>
+        </node>
+        <node concept="3F0ifn" id="1YSnQiVhJMs" role="3EZMnx">
+          <property role="3F0ifm" value="      - string properties for which all concept instances have only one value" />
+          <node concept="VechU" id="1YSnQiVhJMt" role="3F10Kt">
+            <property role="Vb096" value="gray" />
+          </node>
+        </node>
+        <node concept="3F0ifn" id="1YSnQiVhKd$" role="3EZMnx">
+          <property role="3F0ifm" value="      - enumeration properties for which all concept instances do not cover all possible values" />
+          <node concept="VechU" id="1YSnQiVhKd_" role="3F10Kt">
+            <property role="Vb096" value="gray" />
+          </node>
+        </node>
+        <node concept="3F0ifn" id="1YSnQiVhJDn" role="3EZMnx">
+          <property role="3F0ifm" value="   - children" />
+          <node concept="VechU" id="1YSnQiVhJDo" role="3F10Kt">
+            <property role="Vb096" value="gray" />
+          </node>
+        </node>
+        <node concept="3F0ifn" id="1YSnQiVhJRZ" role="3EZMnx">
+          <property role="3F0ifm" value="      - with cardinality 0..1 or 0..n for which all concept instances have no child in this role " />
+          <node concept="VechU" id="1YSnQiVhJS0" role="3F10Kt">
+            <property role="Vb096" value="gray" />
+          </node>
+        </node>
+        <node concept="3F0ifn" id="1YSnQiVhJTX" role="3EZMnx">
+          <property role="3F0ifm" value="      - with cardinality 1..n or 0..n for which all concept instances have one child in this role " />
+          <node concept="VechU" id="1YSnQiVhJTY" role="3F10Kt">
+            <property role="Vb096" value="gray" />
+          </node>
+        </node>
+        <node concept="3F0ifn" id="1YSnQiVhJW3" role="3EZMnx">
+          <property role="3F0ifm" value="   - references" />
+          <node concept="VechU" id="1YSnQiVhJW4" role="3F10Kt">
+            <property role="Vb096" value="gray" />
+          </node>
+        </node>
+        <node concept="3F0ifn" id="1YSnQiVhK4H" role="3EZMnx">
+          <property role="3F0ifm" value="      - with cardinality 0..1 for which all concept instances have no reference in this role " />
+          <node concept="VechU" id="1YSnQiVhK4I" role="3F10Kt">
+            <property role="Vb096" value="gray" />
+          </node>
+        </node>
+        <node concept="3F0ifn" id="1YSnQiVhJ$F" role="3EZMnx" />
+        <node concept="3F0ifn" id="1YSnQiVhJzE" role="3EZMnx">
+          <property role="3F0ifm" value="Help (run):" />
+        </node>
+        <node concept="3F0ifn" id="1YSnQiVhJzC" role="3EZMnx">
+          <property role="3F0ifm" value="call an intention (ALT+Enter) on this current node" />
+          <node concept="VechU" id="1YSnQiVhJzD" role="3F10Kt">
+            <property role="Vb096" value="gray" />
+          </node>
+        </node>
+        <node concept="3F0ifn" id="1YSnQiVhJvL" role="3EZMnx" />
+        <node concept="3F0ifn" id="1YSnQiVhJvM" role="3EZMnx">
+          <property role="3F0ifm" value="Help (uninstantiated-concepts-fields parameters):" />
+        </node>
+        <node concept="3F0ifn" id="1YSnQiVhJvN" role="3EZMnx">
+          <property role="3F0ifm" value="treshold: the minimum number of instances we expect for a concept in order NOT to consider it as &quot;dead&quot;" />
+          <node concept="VechU" id="1YSnQiVhJvO" role="3F10Kt">
+            <property role="Vb096" value="gray" />
+          </node>
+        </node>
+        <node concept="3F0ifn" id="1YSnQiVhJvP" role="3EZMnx">
+          <property role="3F0ifm" value="analysis scope: which concepts should be searched" />
+          <node concept="VechU" id="1YSnQiVhJvQ" role="3F10Kt">
+            <property role="Vb096" value="gray" />
+          </node>
+        </node>
+        <node concept="3F0ifn" id="1YSnQiVhJvR" role="3EZMnx">
+          <property role="3F0ifm" value="search scope: where to search for instances of concepts (e.g. in a set of modules, current project, global)" />
+          <node concept="VechU" id="1YSnQiVhJvS" role="3F10Kt">
+            <property role="Vb096" value="gray" />
+          </node>
+        </node>
+        <node concept="3F0ifn" id="1YSnQiVhJvT" role="3EZMnx">
+          <property role="3F0ifm" value="postproccessor: what to do with identified nodes (e.g. save references into model, write in a file, typesystem error)" />
+          <node concept="VechU" id="1YSnQiVhJvU" role="3F10Kt">
+            <property role="Vb096" value="gray" />
+          </node>
+        </node>
+        <node concept="2iRkQZ" id="1YSnQiVhJvV" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="1YSnQiVhJvW" role="3EZMnx" />
+      <node concept="3F0ifn" id="1YSnQiVhJvZ" role="3EZMnx">
+        <property role="3F0ifm" value="Analyses Kinds:" />
+      </node>
+      <node concept="3EZMnI" id="1YSnQiVhJvX" role="3EZMnx">
+        <node concept="VPM3Z" id="1YSnQiVhJvY" role="3F10Kt" />
+        <node concept="l2Vlx" id="1YSnQiVhJw1" role="2iSdaV" />
+        <node concept="3XFhqQ" id="1YSnQiVpZ3m" role="3EZMnx" />
+        <node concept="3F2HdR" id="1YSnQiVpZ3$" role="3EZMnx">
+          <ref role="1NtTu8" to="7ouc:1YSnQiVpYXN" resolve="analysesKinds" />
+          <node concept="2iRkQZ" id="1YSnQiVpZ3B" role="2czzBx" />
+          <node concept="VPM3Z" id="1YSnQiVpZ3C" role="3F10Kt" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1YSnQiVhJw2" role="3EZMnx" />
+      <node concept="3F0ifn" id="1YSnQiVhJw3" role="3EZMnx">
+        <property role="3F0ifm" value="Analysis Scope:" />
+      </node>
+      <node concept="3EZMnI" id="1YSnQiVhJw4" role="3EZMnx">
+        <node concept="VPM3Z" id="1YSnQiVhJw5" role="3F10Kt" />
+        <node concept="3XFhqQ" id="1YSnQiVhJw6" role="3EZMnx" />
+        <node concept="3F1sOY" id="1YSnQiVhJw7" role="3EZMnx">
+          <ref role="1NtTu8" to="7ouc:1YSnQiVhxB7" resolve="analysisScope" />
+        </node>
+        <node concept="l2Vlx" id="1YSnQiVhJw8" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="1YSnQiVhJw9" role="3EZMnx" />
+      <node concept="3F0ifn" id="1YSnQiVhJwa" role="3EZMnx">
+        <property role="3F0ifm" value="Search Scope:" />
+      </node>
+      <node concept="3EZMnI" id="1YSnQiVhJwb" role="3EZMnx">
+        <node concept="VPM3Z" id="1YSnQiVhJwc" role="3F10Kt" />
+        <node concept="3XFhqQ" id="1YSnQiVhJwd" role="3EZMnx" />
+        <node concept="3F1sOY" id="1YSnQiVhJwe" role="3EZMnx">
+          <ref role="1NtTu8" to="7ouc:1YSnQiVhxB5" resolve="scope" />
+        </node>
+        <node concept="l2Vlx" id="1YSnQiVhJwf" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="1YSnQiVhJwg" role="3EZMnx" />
+      <node concept="3F0ifn" id="1YSnQiVhJwh" role="3EZMnx">
+        <property role="3F0ifm" value="Postprocessor:" />
+      </node>
+      <node concept="3EZMnI" id="1YSnQiVhJwi" role="3EZMnx">
+        <node concept="VPM3Z" id="1YSnQiVhJwj" role="3F10Kt" />
+        <node concept="3XFhqQ" id="1YSnQiVhJwk" role="3EZMnx" />
+        <node concept="3F1sOY" id="1YSnQiVhJwl" role="3EZMnx">
+          <ref role="1NtTu8" to="7ouc:1YSnQiVhxB6" resolve="postprocessor" />
+        </node>
+        <node concept="l2Vlx" id="1YSnQiVhJwm" role="2iSdaV" />
+      </node>
+      <node concept="2iRkQZ" id="1YSnQiVhJwn" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1YSnQiVk0A3">
+    <property role="3GE5qa" value="analysis_results" />
+    <ref role="1XX52x" to="7ouc:1YSnQiVjV0M" resolve="AnalysisResult" />
+    <node concept="3EZMnI" id="1YSnQiVk0A5" role="2wV5jI">
+      <node concept="3EZMnI" id="1YSnQiVk0Al" role="3EZMnx">
+        <node concept="VPM3Z" id="1YSnQiVk0An" role="3F10Kt" />
+        <node concept="3F0ifn" id="1YSnQiVk0AF" role="3EZMnx">
+          <property role="3F0ifm" value="Analysis:" />
+        </node>
+        <node concept="3F0A7n" id="1YSnQiVk0B4" role="3EZMnx">
+          <ref role="1NtTu8" to="7ouc:1YSnQiVk0__" resolve="analysis" />
+        </node>
+        <node concept="2iRfu4" id="1YSnQiVk0Aq" role="2iSdaV" />
+        <node concept="3F0ifn" id="1YSnQiVk0Br" role="3EZMnx">
+          <property role="3F0ifm" value="-" />
+        </node>
+        <node concept="3F2HdR" id="1YSnQiVk0BU" role="3EZMnx">
+          <property role="2czwfO" value="," />
+          <ref role="1NtTu8" to="7ouc:1YSnQiVjV0P" resolve="nodeRef" />
+          <node concept="2iRfu4" id="1YSnQiVk0BW" role="2czzBx" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="1YSnQiVk0Cj" role="3EZMnx">
+        <node concept="VPM3Z" id="1YSnQiVk0Ck" role="3F10Kt" />
+        <node concept="3XFhqQ" id="1YSnQiVk0Dr" role="3EZMnx" />
+        <node concept="3F0A7n" id="1YSnQiVk0Cm" role="3EZMnx">
+          <ref role="1NtTu8" to="7ouc:1YSnQiVjV0N" resolve="explanation" />
+        </node>
+        <node concept="2iRfu4" id="1YSnQiVk0Cn" role="2iSdaV" />
+      </node>
+      <node concept="2iRkQZ" id="1YSnQiVk0A8" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1YSnQiVpYVP">
+    <property role="3GE5qa" value="unused_fields_analyses_kinds" />
+    <ref role="1XX52x" to="7ouc:1YSnQiVpYVO" resolve="UnusedFieldsAnalysisBase" />
+    <node concept="PMmxH" id="1YSnQiVpYVX" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
 </model>
