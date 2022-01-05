@@ -350,6 +350,16 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="3Koqcp7RDKR" role="3bR37C">
+          <node concept="3bR9La" id="3Koqcp7RDKS" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7YI57w6K0rx" resolve="jetbrains.mps.lang.smodel#1139186730696" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3Koqcp7RDKT" role="3bR37C">
+          <node concept="3bR9La" id="3Koqcp7RDKU" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6Lg8" resolve="jetbrains.mps.runtime" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="55IIr" id="1YSnQiVh0xc" role="auvoZ" />
