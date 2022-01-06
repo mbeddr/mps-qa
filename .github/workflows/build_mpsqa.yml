@@ -30,19 +30,30 @@ jobs:
       with:
         java-version: 11  
         
-    - name: Build MPS-QA
+#    - name: Build MPS-QA
+#      uses: gradle/gradle-build-action@v1.3.3
+#      with: 
+#        arguments: build_allInOne_package -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
+#        wrapper-cache-enabled: true
+#        dependencies-cache-enabled: true
+#        dependencies-cache-key: gradle/dependency-locks/**
+#        dependencies-cache-exact: true
+#        configuration-cache-enabled: true
+#        gradle-executable: /home/runner/work/mps-qa/mps-qa/gradlew
+
+    - name: Build MPS-QA and Publish to Github Maven
       uses: gradle/gradle-build-action@v1.3.3
       with: 
-        arguments: build_allInOne_package -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
+        arguments: publish -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
         wrapper-cache-enabled: true
         dependencies-cache-enabled: true
         dependencies-cache-key: gradle/dependency-locks/**
         dependencies-cache-exact: true
         configuration-cache-enabled: true
         gradle-executable: /home/runner/work/mps-qa/mps-qa/gradlew
-        
+
     - name: Archive distribution
       uses: actions/upload-artifact@v2
       with:
         name: mpsqa-distribution-2020.3-${{ steps.time.outputs.time }}
-        path: build/artifacts/mps-qa/mps-qa-2020.3-SNAPSHOT.zip
+        path: build/artifacts/org.mpsqa.allInOne/org.mpsqa.allInOne.zip
