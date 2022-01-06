@@ -23,18 +23,11 @@
         <reference id="5617550519002745380" name="script" index="1l3spb" />
         <child id="4129895186893471026" name="artifacts" index="2JcizS" />
       </concept>
-      <concept id="4380385936562003279" name="jetbrains.mps.build.structure.BuildString" flags="ng" index="NbPM2">
-        <child id="4903714810883783243" name="parts" index="3MwsjC" />
-      </concept>
       <concept id="8618885170173601777" name="jetbrains.mps.build.structure.BuildCompositePath" flags="nn" index="2Ry0Ak">
         <property id="8618885170173601779" name="head" index="2Ry0Am" />
         <child id="8618885170173601778" name="tail" index="2Ry0An" />
       </concept>
       <concept id="6647099934206700647" name="jetbrains.mps.build.structure.BuildJavaPlugin" flags="ng" index="10PD9b" />
-      <concept id="7389400916848050071" name="jetbrains.mps.build.structure.BuildLayout_Zip" flags="ng" index="3981dG" />
-      <concept id="7389400916848050060" name="jetbrains.mps.build.structure.BuildLayout_NamedContainer" flags="ng" index="3981dR">
-        <child id="4380385936562148502" name="containerName" index="Nbhlr" />
-      </concept>
       <concept id="7389400916848136194" name="jetbrains.mps.build.structure.BuildFolderMacro" flags="ng" index="398rNT">
         <child id="7389400916848144618" name="defaultPath" index="398pKh" />
       </concept>
@@ -57,10 +50,6 @@
       <concept id="841011766565753074" name="jetbrains.mps.build.structure.BuildLayout_Import" flags="ng" index="3_I8Xc">
         <reference id="841011766565753076" name="target" index="3_I8Xa" />
       </concept>
-      <concept id="841011766566059607" name="jetbrains.mps.build.structure.BuildStringNotEmpty" flags="ng" index="3_J27D" />
-      <concept id="4903714810883702019" name="jetbrains.mps.build.structure.BuildTextStringPart" flags="ng" index="3Mxwew">
-        <property id="4903714810883755350" name="text" index="3MwjfP" />
-      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -69,7 +58,6 @@
     </language>
     <language id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps">
       <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
-      <concept id="3335207478148059730" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_ModuleJarContent" flags="ng" index="3PtdJl" />
     </language>
   </registry>
   <node concept="1l3spW" id="3PN66LDqBUx">
@@ -128,29 +116,20 @@
       </node>
     </node>
     <node concept="1l3spV" id="3PN66LDqBUD" role="1l3spN">
-      <node concept="3981dG" id="3PN66LDqBUL" role="39821P">
-        <node concept="3_J27D" id="3PN66LDqBUZ" role="Nbhlr">
-          <node concept="3Mxwew" id="3PN66LDqBVF" role="3MwsjC">
-            <property role="3MwjfP" value="org.mpsqa.allInOne.zip" />
-          </node>
-        </node>
-        <node concept="3PtdJl" id="3PN66LDqBYv" role="39821P">
-          <node concept="3_I8Xc" id="3PN66LDqBYx" role="39821P">
-            <ref role="3_I8Xa" to="2tou:7C9PHv6FBJ6" resolve="org.mpsqa.base" />
-          </node>
-          <node concept="3_I8Xc" id="3PN66LDqBYA" role="39821P">
-            <ref role="3_I8Xa" to="hx16:2JVMSZMFXhf" resolve="org.mpsqa.testing" />
-          </node>
-          <node concept="3_I8Xc" id="3PN66LDqBYI" role="39821P">
-            <ref role="3_I8Xa" to="5g2w:2JVMSZMFXhf" resolve="org.mpsqa.clones" />
-          </node>
-          <node concept="3_I8Xc" id="3PN66LDrQC$" role="39821P">
-            <ref role="3_I8Xa" to="c8rw:3PN66LDqBZi" resolve="org.mpsqa.mutant" />
-          </node>
-          <node concept="3_I8Xc" id="1YSnQiVh0C1" role="39821P">
-            <ref role="3_I8Xa" to="m9y5:1YSnQiVh0xw" resolve="org.mpsqa.unused" />
-          </node>
-        </node>
+      <node concept="3_I8Xc" id="3PN66LDqBYx" role="39821P">
+        <ref role="3_I8Xa" to="2tou:7C9PHv6FBJ6" resolve="org.mpsqa.base" />
+      </node>
+      <node concept="3_I8Xc" id="3PN66LDqBYA" role="39821P">
+        <ref role="3_I8Xa" to="hx16:2JVMSZMFXhf" resolve="org.mpsqa.testing" />
+      </node>
+      <node concept="3_I8Xc" id="3PN66LDqBYI" role="39821P">
+        <ref role="3_I8Xa" to="5g2w:2JVMSZMFXhf" resolve="org.mpsqa.clones" />
+      </node>
+      <node concept="3_I8Xc" id="3PN66LDrQC$" role="39821P">
+        <ref role="3_I8Xa" to="c8rw:3PN66LDqBZi" resolve="org.mpsqa.mutant" />
+      </node>
+      <node concept="3_I8Xc" id="1YSnQiVh0C1" role="39821P">
+        <ref role="3_I8Xa" to="m9y5:1YSnQiVh0xw" resolve="org.mpsqa.unused" />
       </node>
     </node>
     <node concept="55IIr" id="3PN66LDqBUG" role="auvoZ" />
