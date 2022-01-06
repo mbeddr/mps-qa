@@ -240,8 +240,8 @@ publishing {
     }
     publications {
         MPSQA(MavenPublication) {
-            groupId 'org.mpsqa'
-            artifactId 'org.mpsqa.allInOne'
+            groupId 'com.mbeddr'
+            artifactId 'mpsqa.allInOne'
             artifact package_mpsqa
             pom.withXml {
                 def dependenciesNode = asNode().appendNode('dependencies')
