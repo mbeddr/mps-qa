@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/org.mpsqa.arch/org.mpsqa.arch.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/test.org.mpsqa.arch.baselang/test.org.mpsqa.arch.baselang.mpl" folder="test" />
+      <modulePath path="$PROJECT_DIR$/languages/test.org.mpsqa.arch.ext/test.org.mpsqa.arch.ext.mpl" folder="test" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.arch.pluginSolution/org.mpsqa.arch.pluginSolution.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.arch.sandbox/org.mpsqa.arch.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/test.org.mpsqa.arch/test.org.mpsqa.arch.msd" folder="test" />
+    </projectModules>
+  </component>
+</project>
