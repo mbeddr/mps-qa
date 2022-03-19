@@ -278,7 +278,7 @@
               <node concept="2Ry0Ak" id="50Wzfz4sh$8" role="iGT6I">
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="50Wzfz4sh$c" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.mpsqa.lancov" />
+                  <property role="2Ry0Am" value="org.mpsqa.arch" />
                   <node concept="2Ry0Ak" id="50Wzfz4sh$f" role="2Ry0An">
                     <property role="2Ry0Am" value="models" />
                   </node>
@@ -314,7 +314,7 @@
               <node concept="2Ry0Ak" id="50Wzfz4sh$b" role="iGT6I">
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="50Wzfz4sh$e" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.mpsqa.lancov" />
+                  <property role="2Ry0Am" value="org.mpsqa.arch" />
                 </node>
               </node>
             </node>

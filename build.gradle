@@ -204,7 +204,7 @@ task build_arch_languages(type: BuildLanguages, dependsOn: []) {
     script "$buildDir/scripts/build-arch-analysis-languages.xml"
 }
 
-task build_allInOne_package(type: BuildLanguages, dependsOn: []) {
+task build_allInOne_package(type: BuildLanguages, dependsOn: [build_allScripts]) {
     dependsOn 'build_base_languages'
     dependsOn 'build_testing_languages'
     dependsOn 'build_clones_languages'
