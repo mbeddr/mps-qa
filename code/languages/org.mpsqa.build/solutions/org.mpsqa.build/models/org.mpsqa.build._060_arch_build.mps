@@ -130,7 +130,7 @@
   <node concept="1l3spW" id="50Wzfz4shyZ">
     <property role="TrG5h" value="org.mpsqa.arch" />
     <property role="2DA0ip" value="../../../../../build/scripts" />
-    <property role="turDy" value="build-arch-spec.xml" />
+    <property role="turDy" value="build-arch-analysis-languages.xml" />
     <node concept="2sgV4H" id="50Wzfz4shz0" role="1l3spa">
       <ref role="1l3spb" to="2tou:7C9PHv6FBIG" resolve="org.mpsqa.base" />
     </node>
