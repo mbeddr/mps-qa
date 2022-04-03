@@ -172,6 +172,7 @@
       <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
         <child id="1151689745422" name="elementType" index="A3Ik2" />
       </concept>
+      <concept id="1151702311717" name="jetbrains.mps.baseLanguage.collections.structure.ToListOperation" flags="nn" index="ANE8D" />
       <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
         <child id="1153944400369" name="variable" index="2Gsz3X" />
         <child id="1153944424730" name="inputSequence" index="2GsD0m" />
@@ -208,6 +209,42 @@
         </node>
       </node>
       <node concept="3clFbH" id="fm3v0WXMd4" role="3cqZAp" />
+      <node concept="3cpWs8" id="fm3v0X1rSq" role="3cqZAp">
+        <node concept="3cpWsn" id="fm3v0X1rSt" role="3cpWs9">
+          <property role="TrG5h" value="allDirectComponentsOfAllAncestors" />
+          <node concept="2I9FWS" id="fm3v0X1rSo" role="1tU5fm">
+            <ref role="2I9WkF" to="ryx8:6MUZd5UjGNW" resolve="IComponentLike" />
+          </node>
+          <node concept="2OqwBi" id="fm3v0X1xO7" role="33vP2m">
+            <node concept="2OqwBi" id="fm3v0X1x2v" role="2Oq$k0">
+              <node concept="2OqwBi" id="fm3v0X1wuz" role="2Oq$k0">
+                <node concept="2OqwBi" id="fm3v0X1ux6" role="2Oq$k0">
+                  <node concept="2OqwBi" id="fm3v0X1sr2" role="2Oq$k0">
+                    <node concept="1YBJjd" id="fm3v0X1sdi" role="2Oq$k0">
+                      <ref role="1YBMHb" node="1tkdAPw1fX2" resolve="componentDefinition" />
+                    </node>
+                    <node concept="z$bX8" id="fm3v0X1sYo" role="2OqNvi" />
+                  </node>
+                  <node concept="v3k3i" id="fm3v0X1wf7" role="2OqNvi">
+                    <node concept="chp4Y" id="fm3v0X1wg1" role="v3oSu">
+                      <ref role="cht4Q" to="ryx8:6MUZd5Uj9vB" resolve="ComponentDefinition" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="13MTOL" id="fm3v0X1wKV" role="2OqNvi">
+                  <ref role="13MTZf" to="ryx8:6MUZd5Uj9xT" resolve="content" />
+                </node>
+              </node>
+              <node concept="v3k3i" id="fm3v0X1xzd" role="2OqNvi">
+                <node concept="chp4Y" id="fm3v0X1xzI" role="v3oSu">
+                  <ref role="cht4Q" to="ryx8:6MUZd5UjGNW" resolve="IComponentLike" />
+                </node>
+              </node>
+            </node>
+            <node concept="ANE8D" id="fm3v0X1ypy" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
       <node concept="3cpWs8" id="fm3v0WXKkB" role="3cqZAp">
         <node concept="3cpWsn" id="fm3v0WXKkC" role="3cpWs9">
           <property role="TrG5h" value="allSubComponents" />
@@ -276,7 +313,22 @@
                   </node>
                 </node>
               </node>
-              <node concept="3clFbH" id="fm3v0WXNrY" role="3cqZAp" />
+              <node concept="3clFbJ" id="fm3v0X1yrR" role="3cqZAp">
+                <node concept="3clFbS" id="fm3v0X1yrT" role="3clFbx">
+                  <node concept="3N13vt" id="fm3v0X1_Kz" role="3cqZAp" />
+                </node>
+                <node concept="2OqwBi" id="fm3v0X1$3U" role="3clFbw">
+                  <node concept="37vLTw" id="fm3v0X1ytN" role="2Oq$k0">
+                    <ref role="3cqZAo" node="fm3v0X1rSt" resolve="allDirectComponentsOfAllAncestors" />
+                  </node>
+                  <node concept="3JPx81" id="fm3v0X1_I_" role="2OqNvi">
+                    <node concept="2GrUjf" id="fm3v0X1_J$" role="25WWJ7">
+                      <ref role="2Gs0qQ" node="fm3v0WXNq1" resolve="dependencyTarget" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbH" id="fm3v0X1_KC" role="3cqZAp" />
               <node concept="3cpWs8" id="fm3v0WXXcJ" role="3cqZAp">
                 <node concept="3cpWsn" id="fm3v0WXXcK" role="3cpWs9">
                   <property role="TrG5h" value="ancestorComponentsOfDependencyTarget" />
@@ -851,7 +903,18 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbH" id="fm3v0WXElA" role="3cqZAp" />
+          <node concept="3clFbJ" id="fm3v0X1Iba" role="3cqZAp">
+            <node concept="3clFbS" id="fm3v0X1Ibc" role="3clFbx">
+              <node concept="3N13vt" id="fm3v0X1IJP" role="3cqZAp" />
+            </node>
+            <node concept="2OqwBi" id="fm3v0X1IwX" role="3clFbw">
+              <node concept="37vLTw" id="fm3v0X1Imn" role="2Oq$k0">
+                <ref role="3cqZAo" node="fm3v0WXEls" resolve="targParent" />
+              </node>
+              <node concept="3w_OXm" id="fm3v0X1IFC" role="2OqNvi" />
+            </node>
+          </node>
+          <node concept="3clFbH" id="fm3v0X1IJT" role="3cqZAp" />
           <node concept="3clFbJ" id="fm3v0WXElB" role="3cqZAp">
             <node concept="3clFbS" id="fm3v0WXElC" role="3clFbx">
               <node concept="2MkqsV" id="fm3v0WXElD" role="3cqZAp">
