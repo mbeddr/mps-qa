@@ -30,11 +30,19 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1068580123160" name="condition" index="3clFbw" />
+        <child id="1068580123161" name="ifTrue" index="3clFbx" />
+      </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
+        <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
@@ -54,6 +62,9 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
+        <reference id="1138056395725" name="property" index="3TsBF5" />
+      </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
@@ -65,6 +76,27 @@
       <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
       <node concept="Eqf_E" id="6MUZd5UjNBa" role="EtsB7">
         <node concept="3clFbS" id="6MUZd5UjNBb" role="2VODD2">
+          <node concept="3clFbJ" id="fm3v0WRfWK" role="3cqZAp">
+            <node concept="3clFbS" id="fm3v0WRfWM" role="3clFbx">
+              <node concept="3cpWs6" id="fm3v0WRhmF" role="3cqZAp">
+                <node concept="2OqwBi" id="fm3v0WRhRj" role="3cqZAk">
+                  <node concept="EsrRn" id="fm3v0WRhpt" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="fm3v0WRhTO" role="2OqNvi">
+                    <ref role="3TsBF5" to="ryx8:fm3v0WReOV" resolve="shortName" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="fm3v0WRh4M" role="3clFbw">
+              <node concept="2OqwBi" id="fm3v0WRggi" role="2Oq$k0">
+                <node concept="EsrRn" id="fm3v0WRfY8" role="2Oq$k0" />
+                <node concept="3TrcHB" id="fm3v0WRgHj" role="2OqNvi">
+                  <ref role="3TsBF5" to="ryx8:fm3v0WReOV" resolve="shortName" />
+                </node>
+              </node>
+              <node concept="17RvpY" id="fm3v0WRhln" role="2OqNvi" />
+            </node>
+          </node>
           <node concept="3clFbF" id="6MUZd5UjNGr" role="3cqZAp">
             <node concept="2OqwBi" id="1tkdAPw0bC4" role="3clFbG">
               <node concept="2OqwBi" id="6MUZd5UjQS0" role="2Oq$k0">

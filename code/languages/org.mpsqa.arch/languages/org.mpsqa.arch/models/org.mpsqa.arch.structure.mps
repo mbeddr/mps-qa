@@ -140,6 +140,13 @@
       <property role="20kJfa" value="module" />
       <ref role="20lvS9" to="tp25:1t9FffgebJy" resolve="ModuleRefExpression" />
     </node>
+    <node concept="1TJgyj" id="fm3v0WRQCu" role="1TKVEi">
+      <property role="IQ2ns" value="276423752594450974" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="excludeModels" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" to="tp25:1Bs_61$nfRn" resolve="ModelPointerExpression" />
+    </node>
     <node concept="1TJgyj" id="1tkdAPw1fXR" role="1TKVEi">
       <property role="IQ2ns" value="1681028404306313079" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -153,12 +160,28 @@
     <node concept="PrWs8" id="6MUZd5UjGO4" role="PzmwI">
       <ref role="PrY4T" node="6MUZd5UjGNW" resolve="IComponentLike" />
     </node>
+    <node concept="1TJgyi" id="fm3v0WReOV" role="1TKVEl">
+      <property role="IQ2nx" value="276423752594287931" />
+      <property role="TrG5h" value="shortName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="PlHQZ" id="6MUZd5UjGNW">
     <property role="EcuMT" value="7834852478394748156" />
     <property role="TrG5h" value="IComponentLike" />
     <node concept="PrWs8" id="6MUZd5UjGNX" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="fm3v0WWntE">
+    <property role="EcuMT" value="276423752595634026" />
+    <property role="TrG5h" value="EmptyLine" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="fm3v0WWntF" role="PzmwI">
+      <ref role="PrY4T" node="6MUZd5Uj9MP" resolve="IComponentDefinitionContent" />
+    </node>
+    <node concept="PrWs8" id="fm3v0WWntI" role="PzmwI">
+      <ref role="PrY4T" node="6MUZd5Uj9vC" resolve="IArchitectureSpecificationContent" />
     </node>
   </node>
 </model>
