@@ -133,7 +133,7 @@
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
-      <concept id="1171310072040" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRootOperation" flags="nn" index="2Rxl7S" />
+      <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
         <reference id="3562215692195600259" name="link" index="13MTZf" />
       </concept>
@@ -453,7 +453,13 @@
             <node concept="2OqwBi" id="fm3v0WWYXp" role="33vP2m">
               <node concept="2OqwBi" id="fm3v0WWYXq" role="2Oq$k0">
                 <node concept="13iPFW" id="fm3v0WWYXr" role="2Oq$k0" />
-                <node concept="2Rxl7S" id="fm3v0WWYXs" role="2OqNvi" />
+                <node concept="2Xjw5R" id="fm3v0X0F_C" role="2OqNvi">
+                  <node concept="1xMEDy" id="fm3v0X0F_E" role="1xVPHs">
+                    <node concept="chp4Y" id="fm3v0X0FJa" role="ri$Ld">
+                      <ref role="cht4Q" to="ryx8:6MUZd5Uj9vA" resolve="ArchSpecification" />
+                    </node>
+                  </node>
+                </node>
               </node>
               <node concept="2Rf3mk" id="fm3v0WWYXt" role="2OqNvi">
                 <node concept="1xMEDy" id="fm3v0WWYXu" role="1xVPHs">

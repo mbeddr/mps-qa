@@ -4,6 +4,7 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/org.mpsqa.arch/org.mpsqa.arch.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/test.org.mpsqa.arch.baselang/test.org.mpsqa.arch.baselang.mpl" folder="test" />
+      <modulePath path="$PROJECT_DIR$/languages/test.org.mpsqa.arch.ext.ext/test.org.mpsqa.arch.ext.ext.mpl" folder="test" />
       <modulePath path="$PROJECT_DIR$/languages/test.org.mpsqa.arch.ext/test.org.mpsqa.arch.ext.mpl" folder="test" />
       <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.arch.pluginSolution/org.mpsqa.arch.pluginSolution.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.arch.sandbox/org.mpsqa.arch.sandbox.msd" folder="" />

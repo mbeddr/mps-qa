@@ -109,6 +109,14 @@
         <property role="TrG5h" value="_020_simple" />
         <node concept="mXAGQ" id="6ESRMYIDD8x" role="mXAGU">
           <property role="TrG5h" value="first" />
+          <node concept="mXxR0" id="fm3v0X0Tm$" role="mXAiC">
+            <node concept="37shsh" id="fm3v0X0TmJ" role="mXxR3">
+              <node concept="1dCxOk" id="fm3v0X0THt" role="37shsm">
+                <property role="1XweGW" value="0777ffbf-ace4-4237-ba8d-43a217645761" />
+                <property role="1XxBO9" value="test.org.mpsqa.arch.ext.ext" />
+              </node>
+            </node>
+          </node>
           <node concept="mXxR0" id="6ESRMYIDD8y" role="mXAiC">
             <node concept="37shsh" id="6ESRMYIDD8z" role="mXxR3">
               <node concept="1dCxOk" id="6ESRMYIDD8$" role="37shsm">
@@ -127,6 +135,11 @@
             <node concept="7CXmI" id="6ESRMYIDD96" role="lGtFl">
               <node concept="1TM$A" id="6ESRMYIDD97" role="7EUXB" />
             </node>
+            <node concept="mXA1B" id="fm3v0X0THy" role="1Rkc$q">
+              <node concept="mXAj4" id="fm3v0X0TH$" role="mXvOw">
+                <ref role="mXAj7" node="fm3v0X0Tm$" resolve="test.org.mpsqa.arch.ext.ext" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="7CXmI" id="6ESRMYIDD9b" role="lGtFl">
@@ -141,6 +154,14 @@
         <property role="TrG5h" value="_030_simple" />
         <node concept="mXAGQ" id="6ESRMYIDD9l" role="mXAGU">
           <property role="TrG5h" value="first" />
+          <node concept="mXxR0" id="fm3v0X0U3b" role="mXAiC">
+            <node concept="37shsh" id="fm3v0X0U3m" role="mXxR3">
+              <node concept="1dCxOk" id="fm3v0X0U3t" role="37shsm">
+                <property role="1XweGW" value="8585453e-6bfb-4d80-98de-b16074f1d86c" />
+                <property role="1XxBO9" value="jetbrains.mps.lang.test" />
+              </node>
+            </node>
+          </node>
           <node concept="mXxR0" id="6ESRMYIDD9m" role="mXAiC">
             <node concept="37shsh" id="6ESRMYIDD9n" role="mXxR3">
               <node concept="1dCxOk" id="6ESRMYIDZWC" role="37shsm">
@@ -158,6 +179,11 @@
             </node>
             <node concept="7CXmI" id="6ESRMYIDZWH" role="lGtFl">
               <node concept="1TM$A" id="6ESRMYIDZWI" role="7EUXB" />
+            </node>
+            <node concept="mXA1B" id="fm3v0X0U4i" role="1Rkc$q">
+              <node concept="mXAj4" id="fm3v0X0U4k" role="mXvOw">
+                <ref role="mXAj7" node="fm3v0X0U3b" resolve="jetbrains.mps.lang.test" />
+              </node>
             </node>
           </node>
         </node>
