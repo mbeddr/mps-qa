@@ -335,11 +335,11 @@
     <ref role="1XX52x" to="ryx8:6MUZd5Uj9MQ" resolve="ComponentDependency" />
     <node concept="3EZMnI" id="6MUZd5UjK7P" role="2wV5jI">
       <node concept="3F0ifn" id="6MUZd5UjK7W" role="3EZMnx">
-        <property role="3F0ifm" value="dependends on:" />
+        <property role="3F0ifm" value="depends on:" />
       </node>
       <node concept="3F2HdR" id="6MUZd5UjK82" role="3EZMnx">
         <property role="2czwfO" value="," />
-        <ref role="1NtTu8" to="ryx8:6MUZd5UjK7L" resolve="dependendsOn" />
+        <ref role="1NtTu8" to="ryx8:6MUZd5UjK7L" resolve="dependsOn" />
         <node concept="2iRfu4" id="6MUZd5UjK84" role="2czzBx" />
       </node>
       <node concept="2iRfu4" id="6MUZd5UjK7S" role="2iSdaV" />
