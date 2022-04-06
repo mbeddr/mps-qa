@@ -32,7 +32,21 @@
   </path>
   
   <target name="assemble" depends="classes, declare-mps-tasks">
-    <mkdir dir="${build.layout}" />
+    <mkdir dir="${build.layout}/org.mpsqa.build" />
+    <mkdir dir="${build.layout}/org.mpsqa.build/META-INF" />
+    <echoxml file="${build.layout}/org.mpsqa.build/META-INF/plugin.xml">
+      <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
+        <id>org.mpsqa.build</id>
+        <name>org.mpsqa.build</name>
+        <version>0.1</version>
+        <depends>jetbrains.mps.build</depends>
+        
+        <extensions defaultExtensionNs="com.intellij">
+          <mps.LanguageLibrary dir="/languages" />
+        </extensions>
+      </idea-plugin>
+    </echoxml>
+    <mkdir dir="${build.layout}/org.mpsqa.build/languages" />
     <mkdir dir="${build.tmp}/default/org.mpsqa.build.jar" />
     <mkdir dir="${build.tmp}/default/org.mpsqa.build.jar/META-INF" />
     <echoxml file="${build.tmp}/default/org.mpsqa.build.jar/META-INF/module.xml">
@@ -50,7 +64,7 @@
         <sources jar="org.mpsqa.build-src.jar" descriptor="org.mpsqa.build.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/org.mpsqa.build.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/org.mpsqa.build/languages/org.mpsqa.build.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/org.mpsqa.build" />
       <fileset dir="${mpsqa.build.home}/solutions/org.mpsqa.build/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/org.mpsqa.build.jar" />
@@ -58,7 +72,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-org.mpsqa.build-models">
       <fileset dir="${mpsqa.build.home}/solutions/org.mpsqa.build/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.layout}/org.mpsqa.build-src.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/org.mpsqa.build/languages/org.mpsqa.build-src.jar" duplicate="preserve">
       <fileset dir="${mpsqa.build.home}/solutions/org.mpsqa.build/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
