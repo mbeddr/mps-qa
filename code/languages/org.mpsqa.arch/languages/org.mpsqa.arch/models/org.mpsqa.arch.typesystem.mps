@@ -676,7 +676,7 @@
               <ref role="1YBMHb" node="6ESRMYICZ1k" resolve="moduleComponent" />
             </node>
             <node concept="3Tsc0h" id="fm3v0WWAFT" role="2OqNvi">
-              <ref role="3TtcxE" to="ryx8:1tkdAPw1fXR" resolve="dependendsOn" />
+              <ref role="3TtcxE" to="ryx8:1tkdAPw1fXR" resolve="dependsOn" />
             </node>
           </node>
           <node concept="1v1jN8" id="fm3v0WWECe" role="2OqNvi" />
@@ -698,7 +698,7 @@
                   <ref role="1YBMHb" node="6ESRMYICZ1k" resolve="moduleComponent" />
                 </node>
                 <node concept="3Tsc0h" id="6ESRMYIDhvh" role="2OqNvi">
-                  <ref role="3TtcxE" to="ryx8:1tkdAPw1fXR" resolve="dependendsOn" />
+                  <ref role="3TtcxE" to="ryx8:1tkdAPw1fXR" resolve="dependsOn" />
                 </node>
               </node>
               <node concept="13MTOL" id="6ESRMYIDhvi" role="2OqNvi">

@@ -153,7 +153,7 @@
     <node concept="1TJgyj" id="1tkdAPw1fXR" role="1TKVEi">
       <property role="IQ2ns" value="1681028404306313079" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="dependendsOn" />
+      <property role="20kJfa" value="dependsOn" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="6MUZd5Uj9MQ" resolve="ComponentDependency" />
     </node>
