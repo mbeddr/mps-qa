@@ -14,7 +14,7 @@
         <child id="1681028404306313079" name="dependendsOn" index="1Rkc$q" />
       </concept>
       <concept id="7834852478394604726" name="org.mpsqa.arch.structure.ComponentDependency" flags="ng" index="mXA1B">
-        <child id="7834852478394761713" name="dependendsOn" index="mXvOw" />
+        <child id="7834852478394761713" name="dependsOn" index="mXvOw" />
       </concept>
       <concept id="7834852478394603541" name="org.mpsqa.arch.structure.ComponentRef" flags="ng" index="mXAj4">
         <reference id="7834852478394603542" name="component" index="mXAj7" />

@@ -4,7 +4,7 @@
   <languages>
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="5" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
   </languages>
@@ -1759,7 +1759,7 @@
                       <ref role="1M0zk5" node="6qVhvNsKA7D" resolve="dep" />
                     </node>
                     <node concept="3Tsc0h" id="6qVhvNsKBm5" role="2OqNvi">
-                      <ref role="3TtcxE" to="ryx8:6MUZd5UjK7L" resolve="dependendsOn" />
+                      <ref role="3TtcxE" to="ryx8:6MUZd5UjK7L" resolve="dependsOn" />
                     </node>
                   </node>
                   <node concept="3clFbS" id="6qVhvNsKBm6" role="2LFqv$">
@@ -1934,7 +1934,7 @@
                   <ref role="2Gs0qQ" node="6qVhvNsJRAE" resolve="conn" />
                 </node>
                 <node concept="3Tsc0h" id="6qVhvNsJT$K" role="2OqNvi">
-                  <ref role="3TtcxE" to="ryx8:6MUZd5UjK7L" resolve="dependendsOn" />
+                  <ref role="3TtcxE" to="ryx8:6MUZd5UjK7L" resolve="dependsOn" />
                 </node>
               </node>
               <node concept="3clFbS" id="6qVhvNsJSNq" role="2LFqv$">
