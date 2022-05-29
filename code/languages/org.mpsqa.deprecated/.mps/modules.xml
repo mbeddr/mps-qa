@@ -5,6 +5,7 @@
       <modulePath path="$PROJECT_DIR$/languages/org.mpsqa.deprecated.example_lan/org.mpsqa.deprecated.example_lan.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.mpsqa.deprecated/org.mpsqa.deprecated.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.deprecated.sandbox/org.mpsqa.deprecated.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/tests/test.org.mpsqa.deprecated/test.org.mpsqa.deprecated.msd" folder="" />
     </projectModules>
   </component>
 </project>

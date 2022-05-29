@@ -119,10 +119,10 @@
         <node concept="VPM3Z" id="7LZ1KAVSF_8" role="3F10Kt" />
         <node concept="3XFhqQ" id="7LZ1KAVSF_m" role="3EZMnx" />
         <node concept="3F0ifn" id="7LZ1KAVSF_s" role="3EZMnx">
-          <property role="3F0ifm" value="deprecated since:" />
+          <property role="3F0ifm" value="deprecated before:" />
         </node>
         <node concept="3F0A7n" id="7LZ1KAVSF_$" role="3EZMnx">
-          <ref role="1NtTu8" to="3idh:7LZ1KAVSF$l" resolve="deprecatedSince" />
+          <ref role="1NtTu8" to="3idh:7LZ1KAVSF$l" resolve="deprecatedBefore" />
         </node>
         <node concept="l2Vlx" id="7LZ1KAVSF_b" role="2iSdaV" />
         <node concept="3F0ifn" id="7mZvE$BcCtM" role="3EZMnx">

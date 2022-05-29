@@ -59,7 +59,7 @@
     </node>
     <node concept="1TJgyi" id="7LZ1KAVSF$l" role="1TKVEl">
       <property role="IQ2nx" value="8970896721133615381" />
-      <property role="TrG5h" value="deprecatedSince" />
+      <property role="TrG5h" value="deprecatedBefore" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyi" id="7LZ1KAVSF$p" role="1TKVEl">
