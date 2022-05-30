@@ -27,6 +27,7 @@
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
       </concept>
+      <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2" />
       <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
@@ -37,6 +38,7 @@
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
+      <concept id="1219226236603" name="jetbrains.mps.lang.editor.structure.DrawBracketsStyleClassItem" flags="ln" index="3vyZuw" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
@@ -108,7 +110,7 @@
       <node concept="3EZMnI" id="7LZ1KAVSF$A" role="3EZMnx">
         <node concept="2iRfu4" id="7LZ1KAVSF$B" role="2iSdaV" />
         <node concept="3F0ifn" id="7LZ1KAVSF$z" role="3EZMnx">
-          <property role="3F0ifm" value="deprecated code:" />
+          <property role="3F0ifm" value="deprecated nodes finder:" />
         </node>
         <node concept="3F0A7n" id="7LZ1KAVSF$P" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -196,6 +198,42 @@
         <node concept="VPxyj" id="7mZvE$BdpE$" role="3F10Kt" />
       </node>
       <node concept="l2Vlx" id="7mZvE$BdpDG" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3h5$iQ9qIoJ">
+    <ref role="1XX52x" to="3idh:3h5$iQ9qIoG" resolve="DeprecationInformationChecker" />
+    <node concept="3EZMnI" id="3h5$iQ9qIoL" role="2wV5jI">
+      <node concept="3EZMnI" id="3h5$iQ9qIoM" role="3EZMnx">
+        <node concept="2iRfu4" id="3h5$iQ9qIoN" role="2iSdaV" />
+        <node concept="3F0ifn" id="3h5$iQ9qIoO" role="3EZMnx">
+          <property role="3F0ifm" value="deprecation information checker:" />
+        </node>
+        <node concept="3F0A7n" id="3h5$iQ9qIoP" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="3h5$iQ9qIoQ" role="3EZMnx" />
+      <node concept="3EZMnI" id="3h5$iQ9qIqt" role="3EZMnx">
+        <node concept="2iRkQZ" id="3h5$iQ9qIqu" role="2iSdaV" />
+        <node concept="3F0ifn" id="3h5$iQ9qIpp" role="3EZMnx">
+          <property role="3F0ifm" value="Checks that DeprecatedNodeAnnotation has the 'build' property set (in inspector)" />
+          <node concept="Vb9p2" id="3h5$iQ9qIri" role="3F10Kt" />
+          <node concept="VechU" id="3h5$iQ9qIrn" role="3F10Kt">
+            <property role="Vb096" value="fLJRk5_/gray" />
+          </node>
+        </node>
+        <node concept="3F0ifn" id="3h5$iQ9qIq2" role="3EZMnx">
+          <property role="3F0ifm" value="and it uses the format dd.MM.yyy" />
+          <node concept="Vb9p2" id="3h5$iQ9qIrr" role="3F10Kt" />
+          <node concept="VechU" id="3h5$iQ9qIrs" role="3F10Kt">
+            <property role="Vb096" value="fLJRk5_/gray" />
+          </node>
+        </node>
+        <node concept="3vyZuw" id="3h5$iQ9qIrv" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="2iRkQZ" id="3h5$iQ9qIp4" role="2iSdaV" />
     </node>
   </node>
 </model>

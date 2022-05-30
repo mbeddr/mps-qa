@@ -86,5 +86,15 @@
       <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
     </node>
   </node>
+  <node concept="1TIwiD" id="3h5$iQ9qIoG">
+    <property role="EcuMT" value="3766576288130328108" />
+    <property role="TrG5h" value="DeprecationInformationChecker" />
+    <property role="19KtqR" value="true" />
+    <property role="34LRSv" value="deprecation information checker" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3h5$iQ9qIoH" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
 </model>
 
