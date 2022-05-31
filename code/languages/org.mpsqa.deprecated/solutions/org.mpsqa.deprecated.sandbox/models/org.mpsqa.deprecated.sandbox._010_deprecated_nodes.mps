@@ -15,7 +15,7 @@
         <reference id="8970896721134198523" name="node" index="37_9BM" />
       </concept>
       <concept id="8970896721133615380" name="org.mpsqa.deprecated.structure.DeprecatedNodesFinder" flags="ng" index="37BrSt">
-        <property id="8970896721133615381" name="deprecatedSince" index="37BrSs" />
+        <property id="8970896721133615381" name="deprecatedBefore" index="37BrSs" />
         <child id="8484639487961548030" name="deprecatedResults" index="1iz3Dn" />
       </concept>
     </language>
