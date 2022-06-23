@@ -81,6 +81,9 @@
     <node concept="PrWs8" id="5rJPecpIaUU" role="PzmwI">
       <ref role="PrY4T" node="5rJPecpIaUT" resolve="ICoverageAspect" />
     </node>
+    <node concept="PrWs8" id="4BvAvMowvPB" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="32pgWhTc99u">
     <property role="EcuMT" value="3501904696383148638" />
@@ -149,6 +152,23 @@
     </node>
     <node concept="PrWs8" id="5rJPecpIbEH" role="PrDN$">
       <ref role="PrY4T" to="3ior:IFRVVI6zqz" resolve="BuildExternalDependency" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4BvAvMowwri">
+    <property role="EcuMT" value="5323142594744682194" />
+    <property role="TrG5h" value="CoverageOf_MpsGroup" />
+    <ref role="1TJDcQ" node="65fUPtD3WWf" resolve="CoverageOf" />
+    <node concept="1TJgyj" id="4BvAvMowwrj" role="1TKVEi">
+      <property role="IQ2ns" value="5323142594744682195" />
+      <property role="20kJfa" value="group" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="kdzh:1jjYQYSgYJt" resolve="BuildMps_Group" />
+    </node>
+    <node concept="RPilO" id="4BvAvMowwrm" role="lGtFl">
+      <ref role="RPilL" node="4BvAvMowwrj" resolve="group" />
+      <node concept="ROjv2" id="4BvAvMowwrp" role="ROhUF">
+        <property role="1W_73P" value="mps group " />
+      </node>
     </node>
   </node>
 </model>

@@ -235,5 +235,23 @@
       <node concept="l2Vlx" id="5rJPecpIeQX" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="4BvAvMowwrQ">
+    <ref role="1XX52x" to="km3i:4BvAvMowwri" resolve="CoverageOf_MpsGroup" />
+    <node concept="3EZMnI" id="4BvAvMowwrS" role="2wV5jI">
+      <node concept="3F0ifn" id="4BvAvMowws2" role="3EZMnx">
+        <property role="3F0ifm" value="mps group" />
+      </node>
+      <node concept="1iCGBv" id="4BvAvMowwsb" role="3EZMnx">
+        <ref role="1NtTu8" to="km3i:4BvAvMowwrj" resolve="group" />
+        <node concept="1sVBvm" id="4BvAvMowwsd" role="1sWHZn">
+          <node concept="3F0A7n" id="4BvAvMowwsp" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="4BvAvMowwrV" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

@@ -817,6 +817,16 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="30QItL_9RY4" role="3bR37C">
+          <node concept="3bR9La" id="30QItL_9RY5" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="30QItL_9RY6" role="3bR37C">
+          <node concept="3bR9La" id="30QItL_9RY7" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="55IIr" id="1GhTetdB0pU" role="auvoZ" />
