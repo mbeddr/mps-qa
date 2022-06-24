@@ -93,6 +93,20 @@
             </external-mapping>
           </lesser-priority-mapping>
         </mapping-priority-rule>
+        <mapping-priority-rule kind="before_or_together">
+          <greater-priority-mapping>
+            <generator generatorUID="ad6d008c-f448-4180-b9fb-31e3161958a3(org.mpsqa.testcov.buildIntegration.jacoco.generator)" />
+            <external-mapping>
+              <mapping-node modelUID="r:ffc17c8c-7679-4450-a6aa-20f69bdde224(org.mpsqa.testcov.buildIntegration.jacoco.generator.templates@generator)" nodeID="3501904696382909061" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="9b03dd0d-f0d2-42fc-8909-d7710e678ca3(jetbrains.mps.build.mps#3189788309732033979)" />
+            <external-mapping>
+              <mapping-node modelUID="r:54537613-52b5-40a8-b223-e87f0960b04f(jetbrains.mps.build.mps.generator.template.main@generator)" nodeID="3189788309732033980" />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
       </mapping-priorities>
     </generator>
   </generators>
