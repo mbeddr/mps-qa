@@ -157,6 +157,10 @@
         <child id="3961775458390032826" name="subTasks" index="3bMsLN" />
         <child id="3961775458390352322" name="additionalDependencies" index="3bNaKb" />
       </concept>
+      <concept id="6896005762093571400" name="jetbrains.mps.build.workflow.structure.BwfMacro" flags="ng" index="1_4tnW">
+        <property id="6896005762093571407" name="isLocation" index="1_4tnV" />
+        <property id="6896005762093571402" name="defaultValue" index="1_4tnY" />
+      </concept>
     </language>
     <language id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml">
       <concept id="6666499814681541919" name="jetbrains.mps.core.xml.structure.XmlTextValue" flags="ng" index="2pMdtt">
@@ -3438,7 +3442,7 @@
                       </node>
                       <node concept="3cpWs3" id="3ZE65pvOj9M" role="3uHU7B">
                         <node concept="Xl_RD" id="3ZE65pvOiNv" role="3uHU7B">
-                          <property role="Xl_RC" value="${build.tmp}/jacoco." />
+                          <property role="Xl_RC" value="${build.tmp}/jacoco/" />
                         </node>
                         <node concept="2OqwBi" id="3ZE65pvOjuX" role="3uHU7w">
                           <node concept="30H73N" id="3ZE65pvOjaf" role="2Oq$k0" />
@@ -4547,7 +4551,7 @@
                   <node concept="2pNUuL" id="3ZE65punzsL" role="2pNNFR">
                     <property role="2pNUuO" value="destdir" />
                     <node concept="2pMdtt" id="3ZE65punzsM" role="2pMdts">
-                      <property role="2pMdty" value="${build.layout}/report.$NAME$" />
+                      <property role="2pMdty" value="${jacoco.reports.dir}/@name@/html" />
                       <node concept="17Uvod" id="2fH87dTu99a" role="lGtFl">
                         <property role="2qtEX9" value="text" />
                         <property role="P4ACc" value="479c7a8c-02f9-43b5-9139-d910cb22f298/6666499814681541919/6666499814681541920" />
@@ -4559,7 +4563,7 @@
                                 <node concept="liA8E" id="2fH87dTu9Nt" role="2OqNvi">
                                   <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence)" resolve="replace" />
                                   <node concept="Xl_RD" id="2fH87dTu9Nx" role="37wK5m">
-                                    <property role="Xl_RC" value="$NAME$" />
+                                    <property role="Xl_RC" value="@name@" />
                                   </node>
                                   <node concept="2OqwBi" id="2fH87dTuatD" role="37wK5m">
                                     <node concept="30H73N" id="2fH87dTuaex" role="2Oq$k0" />
@@ -4582,7 +4586,7 @@
                   <node concept="2pNUuL" id="65fUPtCNuFj" role="2pNNFR">
                     <property role="2pNUuO" value="destfile" />
                     <node concept="2pMdtt" id="65fUPtCNuFo" role="2pMdts">
-                      <property role="2pMdty" value="${build.layout}/report.$NAME$.xml" />
+                      <property role="2pMdty" value="${jacoco.reports.dir}/@name@.xml" />
                       <node concept="17Uvod" id="65fUPtCNuFp" role="lGtFl">
                         <property role="2qtEX9" value="text" />
                         <property role="P4ACc" value="479c7a8c-02f9-43b5-9139-d910cb22f298/6666499814681541919/6666499814681541920" />
@@ -4594,7 +4598,7 @@
                                 <node concept="liA8E" id="65fUPtCNuFv" role="2OqNvi">
                                   <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence)" resolve="replace" />
                                   <node concept="Xl_RD" id="65fUPtCNuFw" role="37wK5m">
-                                    <property role="Xl_RC" value="$NAME$" />
+                                    <property role="Xl_RC" value="@name@" />
                                   </node>
                                   <node concept="2OqwBi" id="65fUPtCNuFx" role="37wK5m">
                                     <node concept="30H73N" id="65fUPtCNuFy" role="2Oq$k0" />
@@ -4656,6 +4660,36 @@
       <property role="TrG5h" value="project" />
       <node concept="1l3spV" id="ahkU72nmc1" role="1l3spN" />
       <node concept="1y0Vig" id="2coTtJvKlf1" role="1hWBAP">
+        <node concept="1_4tnW" id="4z7U0UICElr" role="1y0Vin">
+          <property role="1_4tnV" value="true" />
+          <property role="TrG5h" value="jacoco.reports.dir" />
+          <property role="1_4tnY" value="${build.dir}/jacoco-reports/@name@" />
+          <node concept="17Uvod" id="4z7U0UICNdC" role="lGtFl">
+            <property role="2qtEX9" value="defaultValue" />
+            <property role="P4ACc" value="698a8d22-a104-47a0-ba8d-10e3ec237f13/6896005762093571400/6896005762093571402" />
+            <node concept="3zFVjK" id="4z7U0UICNdD" role="3zH0cK">
+              <node concept="3clFbS" id="4z7U0UICNdE" role="2VODD2">
+                <node concept="3clFbF" id="4z7U0UICRJY" role="3cqZAp">
+                  <node concept="2OqwBi" id="4z7U0UICS68" role="3clFbG">
+                    <node concept="3zGtF$" id="4z7U0UICRJX" role="2Oq$k0" />
+                    <node concept="liA8E" id="4z7U0UICSqf" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence)" resolve="replace" />
+                      <node concept="Xl_RD" id="4z7U0UICSwf" role="37wK5m">
+                        <property role="Xl_RC" value="@name@" />
+                      </node>
+                      <node concept="2OqwBi" id="4z7U0UICSSi" role="37wK5m">
+                        <node concept="30H73N" id="4z7U0UICS_r" role="2Oq$k0" />
+                        <node concept="3TrcHB" id="4z7U0UICT2G" role="2OqNvi">
+                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3bMsLL" id="m8_23bAAS9" role="1y0Vin">
           <ref role="3bMsLK" to="zwni:m8_23b_6ft" resolve="declare-mps-tasks" />
           <node concept="2VaFvH" id="2coTtJvKlfj" role="3bMsLN">
