@@ -395,8 +395,8 @@
                   <property role="2Ry0Am" value="org.mpsqa.arch.pluginSolution" />
                   <node concept="2Ry0Ak" id="50Wzfz4sh_j" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="50Wzfz4sh_k" role="2Ry0An">
-                      <property role="2Ry0Am" value="plantuml-1.2022.2.jar" />
+                    <node concept="2Ry0Ak" id="1$4Qbt$B9z4" role="2Ry0An">
+                      <property role="2Ry0Am" value="plantuml-1.2022.6.jar" />
                     </node>
                   </node>
                 </node>
@@ -423,6 +423,22 @@
             </node>
             <node concept="3qWCbU" id="50Wzfz4sh_G" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="1$4Qbt$B9zk" role="3bR31x">
+          <node concept="3LXTmp" id="1$4Qbt$B9zl" role="3rtmxm">
+            <node concept="398BVA" id="1$4Qbt$B9zm" role="3LXTmr">
+              <ref role="398BVh" node="50Wzfz4shz5" resolve="mpsqa.arch.home" />
+              <node concept="2Ry0Ak" id="1$4Qbt$B9zn" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="1$4Qbt$B9zo" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.arch.pluginSolution" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="1$4Qbt$B9zq" role="3LXTna">
+              <property role="3qWCbO" value="icons/**" />
             </node>
           </node>
         </node>
