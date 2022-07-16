@@ -198,8 +198,8 @@
                 <property role="2Ry0Am" value="org.mpsqa.arch.pluginSolution" />
                 <node concept="2Ry0Ak" id="50Wzfz4sDIC" role="2Ry0An">
                   <property role="2Ry0Am" value="lib" />
-                  <node concept="2Ry0Ak" id="50Wzfz4sDIF" role="2Ry0An">
-                    <property role="2Ry0Am" value="plantuml-1.2022.2.jar" />
+                  <node concept="2Ry0Ak" id="1$4Qbt$B9yr" role="2Ry0An">
+                    <property role="2Ry0Am" value="plantuml-1.2022.6.jar" />
                   </node>
                 </node>
               </node>

@@ -1043,26 +1043,6 @@
                         </node>
                       </node>
                       <node concept="3clFbS" id="fm3v0X1VDD" role="3clF47">
-                        <node concept="2xdQw9" id="fm3v0X2ih8" role="3cqZAp">
-                          <node concept="3cpWs3" id="fm3v0X2inS" role="9lYJi">
-                            <node concept="Xl_RD" id="fm3v0X2iha" role="3uHU7B">
-                              <property role="Xl_RC" value="width = " />
-                            </node>
-                            <node concept="2OqwBi" id="fm3v0X2izD" role="3uHU7w">
-                              <node concept="2OqwBi" id="fm3v0X2izE" role="2Oq$k0">
-                                <node concept="2WthIp" id="fm3v0X2izF" role="2Oq$k0">
-                                  <ref role="32nkFo" node="1tkdAPw5hIG" resolve="PlantUML" />
-                                </node>
-                                <node concept="2BZ7hE" id="fm3v0X2izG" role="2OqNvi">
-                                  <ref role="2WH_rO" node="fm3v0WVVdz" resolve="toolPanel" />
-                                </node>
-                              </node>
-                              <node concept="liA8E" id="fm3v0X2izH" role="2OqNvi">
-                                <ref role="37wK5l" to="dxuu:~JComponent.getWidth()" resolve="getWidth" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
                         <node concept="3clFbF" id="fm3v0X2tEu" role="3cqZAp">
                           <node concept="2OqwBi" id="fm3v0X2uof" role="3clFbG">
                             <node concept="2OqwBi" id="fm3v0X2tEo" role="2Oq$k0">
