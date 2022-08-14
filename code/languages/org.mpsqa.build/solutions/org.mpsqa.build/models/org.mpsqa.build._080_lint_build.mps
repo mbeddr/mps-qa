@@ -265,8 +265,8 @@
               <ref role="398BVh" node="3dqUbgQmcyv" resolve="mpsqa.lint.home" />
               <node concept="2Ry0Ak" id="3dqUbgQmczR" role="iGT6I">
                 <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="3dqUbgQmcAZ" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.mpsqa.deprecated" />
+                <node concept="2Ry0Ak" id="3ywQ_KXFePY" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.lint.generic" />
                 </node>
               </node>
             </node>
