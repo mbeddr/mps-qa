@@ -39,6 +39,7 @@
         <child id="1081256993305" name="classType" index="2ZW6by" />
         <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
         <child id="1070534934091" name="type" index="10QFUM" />
         <child id="1070534934092" name="expression" index="10QFUP" />
@@ -53,6 +54,7 @@
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -148,7 +150,7 @@
     </language>
   </registry>
   <node concept="1MIHA_" id="2dSiT1hKT_t">
-    <property role="TrG5h" value="modules_and_file_system_layout_consistencyw" />
+    <property role="TrG5h" value="modules_and_file_system_layout_consistency" />
     <node concept="1MIXq2" id="2dSiT1hL2tl" role="14J5yK">
       <node concept="3clFbS" id="2dSiT1hL2tm" role="2VODD2">
         <node concept="3cpWs8" id="2dSiT1hLwVf" role="3cqZAp">
@@ -210,6 +212,39 @@
                         </node>
                       </node>
                     </node>
+                    <node concept="3clFbJ" id="fo0j1lMWyC" role="3cqZAp">
+                      <node concept="3clFbS" id="fo0j1lMWyE" role="3clFbx">
+                        <node concept="3clFbF" id="fo0j1lMX6W" role="3cqZAp">
+                          <node concept="2OqwBi" id="fo0j1lMXBL" role="3clFbG">
+                            <node concept="37vLTw" id="fo0j1lMX6U" role="2Oq$k0">
+                              <ref role="3cqZAo" node="2dSiT1hLwVi" resolve="res" />
+                            </node>
+                            <node concept="TSZUe" id="fo0j1lMYu9" role="2OqNvi">
+                              <node concept="3cpWs3" id="fo0j1lMZ3P" role="25WWJ7">
+                                <node concept="2OqwBi" id="fo0j1lMZjA" role="3uHU7w">
+                                  <node concept="2GrUjf" id="fo0j1lMZ9M" role="2Oq$k0">
+                                    <ref role="2Gs0qQ" node="2dSiT1hLxZj" resolve="m" />
+                                  </node>
+                                  <node concept="liA8E" id="fo0j1lMZO$" role="2OqNvi">
+                                    <ref role="37wK5l" to="lui2:~SModule.getModuleName()" resolve="getModuleName" />
+                                  </node>
+                                </node>
+                                <node concept="Xl_RD" id="fo0j1lMYzU" role="3uHU7B">
+                                  <property role="Xl_RC" value="module descriptor file NOT found for " />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3N13vt" id="fo0j1lMWWD" role="3cqZAp" />
+                      </node>
+                      <node concept="3clFbC" id="fo0j1lMWSY" role="3clFbw">
+                        <node concept="10Nm6u" id="fo0j1lMWWb" role="3uHU7w" />
+                        <node concept="37vLTw" id="fo0j1lMWG$" role="3uHU7B">
+                          <ref role="3cqZAo" node="2dSiT1hOGHU" resolve="moduleDescriptorFile" />
+                        </node>
+                      </node>
+                    </node>
                     <node concept="3cpWs8" id="2dSiT1hOHb4" role="3cqZAp">
                       <node concept="3cpWsn" id="2dSiT1hOHb5" role="3cpWs9">
                         <property role="TrG5h" value="moduleDirectory" />
@@ -223,6 +258,39 @@
                           <node concept="liA8E" id="2dSiT1hOHb8" role="2OqNvi">
                             <ref role="37wK5l" to="3ju5:~IFile.getParent()" resolve="getParent" />
                           </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbJ" id="fo0j1lNk6E" role="3cqZAp">
+                      <node concept="3clFbS" id="fo0j1lNk6F" role="3clFbx">
+                        <node concept="3clFbF" id="fo0j1lNk6G" role="3cqZAp">
+                          <node concept="2OqwBi" id="fo0j1lNk6H" role="3clFbG">
+                            <node concept="37vLTw" id="fo0j1lNk6I" role="2Oq$k0">
+                              <ref role="3cqZAo" node="2dSiT1hLwVi" resolve="res" />
+                            </node>
+                            <node concept="TSZUe" id="fo0j1lNk6J" role="2OqNvi">
+                              <node concept="3cpWs3" id="fo0j1lNk6K" role="25WWJ7">
+                                <node concept="2OqwBi" id="fo0j1lNk6L" role="3uHU7w">
+                                  <node concept="2GrUjf" id="fo0j1lNk6M" role="2Oq$k0">
+                                    <ref role="2Gs0qQ" node="2dSiT1hLxZj" resolve="m" />
+                                  </node>
+                                  <node concept="liA8E" id="fo0j1lNk6N" role="2OqNvi">
+                                    <ref role="37wK5l" to="lui2:~SModule.getModuleName()" resolve="getModuleName" />
+                                  </node>
+                                </node>
+                                <node concept="Xl_RD" id="fo0j1lNk6O" role="3uHU7B">
+                                  <property role="Xl_RC" value="module directory NOT found for " />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3N13vt" id="fo0j1lNk6P" role="3cqZAp" />
+                      </node>
+                      <node concept="3clFbC" id="fo0j1lNk6Q" role="3clFbw">
+                        <node concept="10Nm6u" id="fo0j1lNk6R" role="3uHU7w" />
+                        <node concept="37vLTw" id="fo0j1lNk6S" role="3uHU7B">
+                          <ref role="3cqZAo" node="2dSiT1hOHb5" resolve="moduleDirectory" />
                         </node>
                       </node>
                     </node>

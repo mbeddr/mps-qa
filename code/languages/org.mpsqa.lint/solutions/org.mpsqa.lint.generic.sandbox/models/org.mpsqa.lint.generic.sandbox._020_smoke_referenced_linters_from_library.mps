@@ -15,7 +15,7 @@
     </language>
   </registry>
   <node concept="2wR3oc" id="3ibIDIkmpe3">
-    <ref role="2wR3oD" to="wpu7:2dSiT1hKT_t" resolve="modules_and_file_system_layout_consistencyw" />
+    <ref role="2wR3oD" to="wpu7:2dSiT1hKT_t" resolve="modules_and_file_system_layout_consistency" />
   </node>
 </model>
 

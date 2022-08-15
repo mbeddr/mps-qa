@@ -23,6 +23,7 @@
         <property id="1186403713874" name="color" index="Vb096" />
       </concept>
       <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
+      <concept id="1186404574412" name="jetbrains.mps.lang.editor.structure.BackgroundColorStyleClassItem" flags="ln" index="Veino" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -110,9 +111,6 @@
         <node concept="2iRfu4" id="3ibIDIklTPO" role="2iSdaV" />
         <node concept="3F0ifn" id="3ibIDIklTQ9" role="3EZMnx">
           <property role="3F0ifm" value="Explanation:" />
-          <node concept="VechU" id="3ibIDIklTQf" role="3F10Kt">
-            <property role="Vb096" value="fLJRk5A/lightGray" />
-          </node>
         </node>
         <node concept="1iCGBv" id="3ibIDIklTPt" role="3EZMnx">
           <ref role="1NtTu8" to="a1af:3ibIDIklSMM" resolve="script" />
@@ -122,14 +120,15 @@
               <node concept="xShMh" id="3ibIDIklTQh" role="3F10Kt">
                 <property role="VOm3f" value="true" />
               </node>
-              <node concept="VPxyj" id="3ibIDIklTQm" role="3F10Kt">
-                <property role="VOm3f" value="true" />
-              </node>
+              <node concept="VPxyj" id="3ibIDIklTQm" role="3F10Kt" />
               <node concept="VechU" id="3ibIDIklTQu" role="3F10Kt">
                 <property role="Vb096" value="fLJRk5A/lightGray" />
               </node>
             </node>
           </node>
+        </node>
+        <node concept="Veino" id="fo0j1lLTMq" role="3F10Kt">
+          <property role="Vb096" value="fLJRk5A/lightGray" />
         </node>
       </node>
     </node>
