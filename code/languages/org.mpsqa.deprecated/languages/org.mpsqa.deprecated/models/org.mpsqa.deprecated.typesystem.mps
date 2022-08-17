@@ -50,6 +50,7 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
@@ -144,6 +145,7 @@
       <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
+      <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
     </language>
   </registry>
   <node concept="18kY7G" id="3h5$iQ9rrSp">
@@ -347,6 +349,54 @@
       </node>
     </node>
     <node concept="2tJIrI" id="3h5$iQ9r_69" role="jymVt" />
+  </node>
+  <node concept="18kY7G" id="ah8HpWh1_K">
+    <property role="TrG5h" value="check_DeprecatedItem" />
+    <node concept="3clFbS" id="ah8HpWh1_L" role="18ibNy">
+      <node concept="3clFbJ" id="ah8HpWhRmx" role="3cqZAp">
+        <node concept="3clFbS" id="ah8HpWhRmz" role="3clFbx">
+          <node concept="3cpWs6" id="ah8HpWhRJa" role="3cqZAp" />
+        </node>
+        <node concept="3fqX7Q" id="ah8HpWhRFu" role="3clFbw">
+          <node concept="2OqwBi" id="ah8HpWhRFw" role="3fr31v">
+            <node concept="1YBJjd" id="ah8HpWhRFx" role="2Oq$k0">
+              <ref role="1YBMHb" node="ah8HpWh1JR" resolve="deprecatedNodesFinder" />
+            </node>
+            <node concept="3TrcHB" id="ah8HpWhRFy" role="2OqNvi">
+              <ref role="3TsBF5" to="3idh:7LZ1KAVSF$p" resolve="reportError" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="ah8HpWhRJd" role="3cqZAp" />
+      <node concept="3clFbJ" id="ah8HpWhKTt" role="3cqZAp">
+        <node concept="2OqwBi" id="ah8HpWhMJ0" role="3clFbw">
+          <node concept="2OqwBi" id="ah8HpWhLeK" role="2Oq$k0">
+            <node concept="1YBJjd" id="ah8HpWhL55" role="2Oq$k0">
+              <ref role="1YBMHb" node="ah8HpWh1JR" resolve="deprecatedNodesFinder" />
+            </node>
+            <node concept="3Tsc0h" id="ah8HpWhLn2" role="2OqNvi">
+              <ref role="3TtcxE" to="3idh:3imng2mT8pi" resolve="modelsContainingDeprecated" />
+            </node>
+          </node>
+          <node concept="3GX2aA" id="ah8HpWhOrN" role="2OqNvi" />
+        </node>
+        <node concept="3clFbS" id="ah8HpWhKTv" role="3clFbx">
+          <node concept="2MkqsV" id="ah8HpWhOs_" role="3cqZAp">
+            <node concept="Xl_RD" id="ah8HpWhOsL" role="2MkJ7o">
+              <property role="Xl_RC" value="Deprecated nodes are found in the project!" />
+            </node>
+            <node concept="1YBJjd" id="ah8HpWhOtw" role="1urrMF">
+              <ref role="1YBMHb" node="ah8HpWh1JR" resolve="deprecatedNodesFinder" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="ah8HpWh1JR" role="1YuTPh">
+      <property role="TrG5h" value="deprecatedNodesFinder" />
+      <ref role="1YaFvo" to="3idh:7LZ1KAVSF$k" resolve="DeprecatedNodesFinder" />
+    </node>
   </node>
 </model>
 
