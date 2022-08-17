@@ -109,7 +109,7 @@
     <property role="TrG5h" value="DeprecatedPropertiesExample" />
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="deprecated properties" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="45IuY9n6QIw" resolve="SuperconceptWithDeprecatedProperty" />
     <node concept="1TJgyi" id="3dqUbgQqQLr" role="1TKVEl">
       <property role="IQ2nx" value="3700525904543050843" />
       <property role="TrG5h" value="deprecatedStringProperty" />
@@ -140,6 +140,20 @@
     <node concept="25R33" id="3dqUbgQqQLB" role="25R1y">
       <property role="3tVfz5" value="3700525904543050855" />
       <property role="TrG5h" value="SECOND" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="45IuY9n6QIw">
+    <property role="EcuMT" value="4714842071957728160" />
+    <property role="TrG5h" value="SuperconceptWithDeprecatedProperty" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="45IuY9n6QIx" role="1TKVEl">
+      <property role="IQ2nx" value="4714842071957728161" />
+      <property role="TrG5h" value="id" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="asaX9" id="45IuY9n6QIz" role="lGtFl">
+        <property role="YLPcu" value="2021-04-21" />
+      </node>
     </node>
   </node>
 </model>
