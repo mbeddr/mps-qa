@@ -114,6 +114,9 @@
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179168000618" name="jetbrains.mps.lang.smodel.structure.Node_GetIndexInParentOperation" flags="nn" index="2bSWHS" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
+      <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
+        <reference id="3562215692195600259" name="link" index="13MTZf" />
+      </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -328,10 +331,15 @@
                   <node concept="2OqwBi" id="7_scOS2Ff3r" role="2Oq$k0">
                     <node concept="2OqwBi" id="7_scOS2FeHz" role="2Oq$k0">
                       <node concept="2OqwBi" id="269xudmyXB0" role="2Oq$k0">
-                        <node concept="2OqwBi" id="7_scOS2FenS" role="2Oq$k0">
-                          <node concept="pncrf" id="7_scOS2Fecf" role="2Oq$k0" />
-                          <node concept="3Tsc0h" id="269xudmyVYn" role="2OqNvi">
-                            <ref role="3TtcxE" to="3idh:3imng2mTc_W" resolve="deprecatedNodes" />
+                        <node concept="2OqwBi" id="45IuY9n74Bf" role="2Oq$k0">
+                          <node concept="2OqwBi" id="7_scOS2FenS" role="2Oq$k0">
+                            <node concept="pncrf" id="7_scOS2Fecf" role="2Oq$k0" />
+                            <node concept="3Tsc0h" id="269xudmyVYn" role="2OqNvi">
+                              <ref role="3TtcxE" to="3idh:3imng2mTc_W" resolve="deprecatedNodes" />
+                            </node>
+                          </node>
+                          <node concept="13MTOL" id="45IuY9n76lg" role="2OqNvi">
+                            <ref role="13MTZf" to="3idh:7LZ1KAVUTVV" resolve="node" />
                           </node>
                         </node>
                         <node concept="1uHKPH" id="269xudmyZeg" role="2OqNvi" />
