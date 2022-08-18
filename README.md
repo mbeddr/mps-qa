@@ -9,8 +9,8 @@ We have the following components (each in its own MPS project):
 #### Contribute
 We happily accept any contribution like bug reports, code or feedback.
 
-#### Using the components
-There are two possibilities to use the clones detection:
+#### Using the plugins
+There are two possibilities to use the plugins:
 * you can either download the released plugins from the release page 
 ** please make sure to download plugins which match your MPS version!
 * you can build the MPS plugins from sources
@@ -67,9 +67,9 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 ## Deprecation Finder
 #### Motivation
-Deprecation of concepts and its features are very often as languages develop. In user repositories, models prone to be not migrated completely or having migration conflicts. This leads to existing instances of deprecated concepts or its features that to be obsolute.
+Deprecation of concepts and its features happens very often as languages develop. In user repositories, models are prone to be not migrated completely or have migration conflicts. This leads to existing instances of deprecated concepts or its features that are obsolete.
 
-Deprecation Finder provides features around the out of box MPS DeprecatedNodeAnnotation to somewhat standardize the deprecation process in language development and usage: 
+Deprecation Finder provides features around the MPS DeprecatedNodeAnnotation to somewhat standardize the deprecation process in language development and usage: 
 - deprecated information checker enforces a checking rule to validate the deprecation date is set when a concept or a feature is deprecated.
 - deprecated code finder provides a checker for any existing deprecation that is deprecated before given date and displays the results.
 
@@ -85,6 +85,7 @@ Deprecation Finder provides features around the out of box MPS DeprecatedNodeAnn
   - the date you want to search deprecations before to that.
 3. Tick the checkbox "Report as error" in order to enable the checking rule for any existing deprecation.
 4. Trigger the intentions on the root node to display the deprecations.
+5. A lot of errors will appear due to missing imports, that's alright. These results are not meant to be commited.
 
 **Internal implementation**
 - the core deprecation finder algorithm is contained in ```org.mpsqa.deprecated```

@@ -91,6 +91,7 @@
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
+      <concept id="7992060018732187438" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatementAnnotation" flags="ng" index="AMVWg" />
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
@@ -134,6 +135,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -359,7 +363,7 @@
     <node concept="2tJIrI" id="3h5$iQ9r_69" role="jymVt" />
   </node>
   <node concept="18kY7G" id="ah8HpWh1_K">
-    <property role="TrG5h" value="check_DeprecatedItem" />
+    <property role="TrG5h" value="check_DeprecatedNodesFinder" />
     <node concept="3clFbS" id="ah8HpWh1_L" role="18ibNy">
       <node concept="3clFbJ" id="ah8HpWhRmx" role="3cqZAp">
         <node concept="3clFbS" id="ah8HpWhRmz" role="3clFbx">
@@ -441,10 +445,13 @@
         <node concept="3clFbS" id="ah8HpWhKTv" role="3clFbx">
           <node concept="2MkqsV" id="ah8HpWhOs_" role="3cqZAp">
             <node concept="Xl_RD" id="ah8HpWhOsL" role="2MkJ7o">
-              <property role="Xl_RC" value="Deprecated nodes are found in the project!" />
+              <property role="Xl_RC" value="Deprecated nodes found in the project!" />
             </node>
             <node concept="1YBJjd" id="ah8HpWhOtw" role="1urrMF">
               <ref role="1YBMHb" node="ah8HpWh1JR" resolve="finder" />
+            </node>
+            <node concept="AMVWg" id="dIZf5trg$i" role="lGtFl">
+              <property role="TrG5h" value="DeprecatedNodesExist" />
             </node>
           </node>
         </node>

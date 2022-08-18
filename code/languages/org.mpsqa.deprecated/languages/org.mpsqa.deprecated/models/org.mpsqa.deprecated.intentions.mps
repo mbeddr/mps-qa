@@ -730,7 +730,7 @@
                                       <property role="3oM_SC" value="first" />
                                     </node>
                                     <node concept="3oM_SD" id="dIZf5toDYC" role="1PaTwD">
-                                      <property role="3oM_SC" value="20" />
+                                      <property role="3oM_SC" value="50" />
                                     </node>
                                     <node concept="3oM_SD" id="dIZf5toE6T" role="1PaTwD">
                                       <property role="3oM_SC" value="to" />
@@ -794,7 +794,7 @@
                                         </node>
                                         <node concept="8ftyA" id="45IuY9nfOr$" role="2OqNvi">
                                           <node concept="3cmrfG" id="45IuY9nfOHR" role="8f$Dv">
-                                            <property role="3cmrfH" value="20" />
+                                            <property role="3cmrfH" value="50" />
                                           </node>
                                         </node>
                                       </node>
