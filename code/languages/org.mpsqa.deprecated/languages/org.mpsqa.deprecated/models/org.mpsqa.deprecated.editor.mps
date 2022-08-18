@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
-    <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
+    <use id="602c36ad-cc55-47ff-8c40-73d7f12f035c" name="jetbrains.mps.lang.editor.forms" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -26,6 +26,7 @@
       <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
       <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
+      <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
@@ -108,8 +109,15 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
     </language>
-    <language id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool">
-      <concept id="4900677560559655527" name="de.itemis.mps.editor.bool.structure.CellModel_Checkbox" flags="sg" stub="416014060004381438" index="27S6Sx" />
+    <language id="602c36ad-cc55-47ff-8c40-73d7f12f035c" name="jetbrains.mps.lang.editor.forms">
+      <concept id="312429380032619384" name="jetbrains.mps.lang.editor.forms.structure.CellModel_Checkbox" flags="ng" index="2yq9I_">
+        <reference id="3696012239575138271" name="propertyDeclaration" index="225u1j" />
+        <child id="1340057216891284122" name="ui" index="1563LE" />
+      </concept>
+      <concept id="1340057216891283515" name="jetbrains.mps.lang.editor.forms.structure.CheckboxUI_Text" flags="ng" index="1563Vb">
+        <property id="1340057216891283520" name="falseText" index="1563UK" />
+        <property id="1340057216891283518" name="trueText" index="1563Ve" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179168000618" name="jetbrains.mps.lang.smodel.structure.Node_GetIndexInParentOperation" flags="nn" index="2bSWHS" />
@@ -163,8 +171,12 @@
         <node concept="3F0ifn" id="ah8HpWh3Ki" role="3EZMnx">
           <property role="3F0ifm" value="Report as error:" />
         </node>
-        <node concept="27S6Sx" id="ah8HpWh3HE" role="3EZMnx">
-          <ref role="1NtTu8" to="3idh:7LZ1KAVSF$p" resolve="reportError" />
+        <node concept="2yq9I_" id="2OqT3QDLqHu" role="3EZMnx">
+          <ref role="225u1j" to="3idh:7LZ1KAVSF$p" resolve="reportError" />
+          <node concept="1563Vb" id="2OqT3QDLu9h" role="1563LE">
+            <property role="1563UK" value="[ ]" />
+            <property role="1563Ve" value="[x]" />
+          </node>
         </node>
       </node>
       <node concept="3F0ifn" id="7LZ1KAVUha4" role="3EZMnx" />
@@ -311,7 +323,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="269xudmuUl0">
-    <ref role="1XX52x" to="3idh:ah8HpWiuVV" resolve="DeprecationType" />
+    <ref role="1XX52x" to="3idh:ah8HpWiuVV" resolve="DeprecatedConceptResult" />
     <node concept="3EZMnI" id="269xudmuUl5" role="2wV5jI">
       <node concept="1iCGBv" id="269xudmyFHw" role="3EZMnx">
         <ref role="1NtTu8" to="3idh:269xudmyve3" resolve="concept" />
@@ -362,16 +374,21 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3F0ifn" id="4Qg0JGq$G3d" role="3EZMnx">
-        <property role="3F0ifm" value="Show nodes " />
+      <node concept="3F0ifn" id="2OqT3QDKmT1" role="3EZMnx">
+        <property role="3F0ifm" value="Display nodes" />
       </node>
-      <node concept="27S6Sx" id="4Qg0JGq$dZw" role="3EZMnx">
-        <ref role="1NtTu8" to="3idh:4Qg0JGq$dC$" resolve="isNodesDisplayed" />
-        <node concept="ljvvj" id="4Qg0JGq$e3S" role="3F10Kt">
+      <node concept="2yq9I_" id="2OqT3QDKmyy" role="3EZMnx">
+        <ref role="225u1j" to="3idh:4Qg0JGq$dC$" resolve="displayNodes" />
+        <node concept="1563Vb" id="2OqT3QDLuqm" role="1563LE">
+          <property role="1563UK" value="[ ]" />
+          <property role="1563Ve" value="[x]" />
+        </node>
+      </node>
+      <node concept="3XFhqQ" id="4Qg0JGq$ehY" role="3EZMnx">
+        <node concept="pVoyu" id="2OqT3QDKmVD" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3XFhqQ" id="4Qg0JGq$ehY" role="3EZMnx" />
       <node concept="3F2HdR" id="269xudmuUlc" role="3EZMnx">
         <ref role="1NtTu8" to="3idh:3imng2mTc_W" resolve="deprecatedNodes" />
         <node concept="2iRkQZ" id="269xudmuUlh" role="2czzBx" />
@@ -381,7 +398,7 @@
               <node concept="2OqwBi" id="4Qg0JGq$e$V" role="3clFbG">
                 <node concept="pncrf" id="4Qg0JGq$eoi" role="2Oq$k0" />
                 <node concept="3TrcHB" id="4Qg0JGq$eLI" role="2OqNvi">
-                  <ref role="3TsBF5" to="3idh:4Qg0JGq$dC$" resolve="isNodesDisplayed" />
+                  <ref role="3TsBF5" to="3idh:4Qg0JGq$dC$" resolve="displayNodes" />
                 </node>
               </node>
             </node>

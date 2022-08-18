@@ -700,7 +700,7 @@
                         <property role="TrG5h" value="deprecatedTypes" />
                         <node concept="A3Dl8" id="45IuY9nfeb3" role="1tU5fm">
                           <node concept="3Tqbb2" id="45IuY9nfeb6" role="A3Ik2">
-                            <ref role="ehGHo" to="3idh:ah8HpWiuVV" resolve="DeprecationType" />
+                            <ref role="ehGHo" to="3idh:ah8HpWiuVV" resolve="DeprecatedConceptResult" />
                           </node>
                         </node>
                         <node concept="2OqwBi" id="45IuY9nfedN" role="33vP2m">
@@ -763,7 +763,7 @@
                                 <node concept="3cpWs6" id="45IuY9nfeeb" role="3cqZAp">
                                   <node concept="2pJPEk" id="45IuY9nfeec" role="3cqZAk">
                                     <node concept="2pJPED" id="45IuY9nfeed" role="2pJPEn">
-                                      <ref role="2pJxaS" to="3idh:ah8HpWiuVV" resolve="DeprecationType" />
+                                      <ref role="2pJxaS" to="3idh:ah8HpWiuVV" resolve="DeprecatedConceptResult" />
                                       <node concept="2pIpSj" id="45IuY9nfeee" role="2pJxcM">
                                         <ref role="2pIpSl" to="3idh:269xudmyve3" resolve="concept" />
                                         <node concept="36biLy" id="45IuY9nfeef" role="28nt2d">
