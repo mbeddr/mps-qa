@@ -6,8 +6,6 @@
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
-    <import index="e4tq" ref="r:d1664c60-f6de-4b25-a874-54417df516ea(jetbrains.mps.ide.vcs.modelmetadata.structure)" />
-    <import index="3xdn" ref="r:935ba0ee-7291-4caa-a807-d76e8fc69391(jetbrains.mps.lang.smodel.query.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -102,7 +100,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="deprecatedType" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="ah8HpWiuVV" resolve="DeprecationType" />
+      <ref role="20lvS9" node="ah8HpWiuVV" resolve="DeprecatedConceptResult" />
     </node>
     <node concept="1TJgyi" id="3imng2mXeQS" role="1TKVEl">
       <property role="IQ2nx" value="3789318393592868280" />
@@ -112,7 +110,7 @@
   </node>
   <node concept="1TIwiD" id="ah8HpWiuVV">
     <property role="EcuMT" value="184967364302466811" />
-    <property role="TrG5h" value="DeprecationType" />
+    <property role="TrG5h" value="DeprecatedConceptResult" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="269xudmyve3" role="1TKVEi">
       <property role="IQ2ns" value="2416609886516933507" />
@@ -128,7 +126,7 @@
     </node>
     <node concept="1TJgyi" id="4Qg0JGq$dC$" role="1TKVEl">
       <property role="IQ2nx" value="5588970415072533028" />
-      <property role="TrG5h" value="isNodesDisplayed" />
+      <property role="TrG5h" value="displayNodes" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
