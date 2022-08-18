@@ -8,6 +8,9 @@
   <imports>
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="bdtf" ref="r:e88510c3-3006-4599-af71-400329cef2ea(org.mpsqa.deprecated.intentions)" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <import index="28m1" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time(JDK/)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -32,6 +35,9 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
+      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -50,6 +56,7 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
@@ -84,6 +91,7 @@
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
+      <concept id="7992060018732187438" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatementAnnotation" flags="ng" index="AMVWg" />
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
@@ -115,6 +123,9 @@
       </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
+      <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
+        <child id="1145404616321" name="leftExpression" index="2JrQYb" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
@@ -124,6 +135,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -347,6 +361,106 @@
       </node>
     </node>
     <node concept="2tJIrI" id="3h5$iQ9r_69" role="jymVt" />
+  </node>
+  <node concept="18kY7G" id="ah8HpWh1_K">
+    <property role="TrG5h" value="check_DeprecatedNodesFinder" />
+    <node concept="3clFbS" id="ah8HpWh1_L" role="18ibNy">
+      <node concept="3clFbJ" id="ah8HpWhRmx" role="3cqZAp">
+        <node concept="3clFbS" id="ah8HpWhRmz" role="3clFbx">
+          <node concept="3cpWs6" id="ah8HpWhRJa" role="3cqZAp" />
+        </node>
+        <node concept="3fqX7Q" id="ah8HpWhRFu" role="3clFbw">
+          <node concept="2OqwBi" id="ah8HpWhRFw" role="3fr31v">
+            <node concept="1YBJjd" id="ah8HpWhRFx" role="2Oq$k0">
+              <ref role="1YBMHb" node="ah8HpWh1JR" resolve="finder" />
+            </node>
+            <node concept="3TrcHB" id="ah8HpWhRFy" role="2OqNvi">
+              <ref role="3TsBF5" to="3idh:7LZ1KAVSF$p" resolve="reportError" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="ah8HpWhRJd" role="3cqZAp" />
+      <node concept="3cpWs8" id="7LZ1KAVTPJf" role="3cqZAp">
+        <node concept="3cpWsn" id="7LZ1KAVTPJg" role="3cpWs9">
+          <property role="TrG5h" value="date" />
+          <node concept="3uibUv" id="7LZ1KAVTPC0" role="1tU5fm">
+            <ref role="3uigEE" to="28m1:~LocalDate" resolve="LocalDate" />
+          </node>
+          <node concept="2YIFZM" id="3dqUbgQpJes" role="33vP2m">
+            <ref role="1Pybhc" to="bdtf:3dqUbgQpGix" resolve="DeprecationDateComputingUtils" />
+            <ref role="37wK5l" to="bdtf:7LZ1KAVT5ch" resolve="doParseDate" />
+            <node concept="2OqwBi" id="7LZ1KAVTPJi" role="37wK5m">
+              <node concept="1YBJjd" id="45IuY9n8sLW" role="2Oq$k0">
+                <ref role="1YBMHb" node="ah8HpWh1JR" resolve="finder" />
+              </node>
+              <node concept="3TrcHB" id="7LZ1KAVTPJk" role="2OqNvi">
+                <ref role="3TsBF5" to="3idh:7LZ1KAVSF$l" resolve="deprecatedBefore" />
+              </node>
+            </node>
+            <node concept="10M0yZ" id="3dqUbgQpGLf" role="37wK5m">
+              <ref role="1PxDUh" to="bdtf:3dqUbgQpGix" resolve="DeprecationDateComputingUtils" />
+              <ref role="3cqZAo" to="bdtf:7LZ1KAVSYH4" resolve="pattern1" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cpWs8" id="45IuY9n8txb" role="3cqZAp">
+        <node concept="3cpWsn" id="45IuY9n8txc" role="3cpWs9">
+          <property role="TrG5h" value="project" />
+          <node concept="3uibUv" id="45IuY9n8twE" role="1tU5fm">
+            <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+          </node>
+          <node concept="2YIFZM" id="45IuY9n8txd" role="33vP2m">
+            <ref role="37wK5l" to="z1c3:~SModuleOperations.getProjectForModule(org.jetbrains.mps.openapi.module.SModule)" resolve="getProjectForModule" />
+            <ref role="1Pybhc" to="z1c3:~SModuleOperations" resolve="SModuleOperations" />
+            <node concept="2OqwBi" id="45IuY9n8txe" role="37wK5m">
+              <node concept="liA8E" id="45IuY9n8txf" role="2OqNvi">
+                <ref role="37wK5l" to="mhbf:~SModel.getModule()" resolve="getModule" />
+              </node>
+              <node concept="2JrnkZ" id="45IuY9n8txg" role="2Oq$k0">
+                <node concept="2OqwBi" id="45IuY9n8txh" role="2JrQYb">
+                  <node concept="1YBJjd" id="45IuY9n8txi" role="2Oq$k0">
+                    <ref role="1YBMHb" node="ah8HpWh1JR" resolve="finder" />
+                  </node>
+                  <node concept="I4A8Y" id="45IuY9n8txj" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="45IuY9n8tBm" role="3cqZAp" />
+      <node concept="3clFbJ" id="ah8HpWhKTt" role="3cqZAp">
+        <node concept="2YIFZM" id="45IuY9n8e$$" role="3clFbw">
+          <ref role="37wK5l" to="bdtf:45IuY9n8bn5" resolve="isSomethingDeprecated" />
+          <ref role="1Pybhc" to="bdtf:7LZ1KAVSSeM" resolve="DeprecationFacade" />
+          <node concept="37vLTw" id="45IuY9n8tE8" role="37wK5m">
+            <ref role="3cqZAo" node="45IuY9n8txc" resolve="project" />
+          </node>
+          <node concept="37vLTw" id="45IuY9n8sOw" role="37wK5m">
+            <ref role="3cqZAo" node="7LZ1KAVTPJg" resolve="date" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="ah8HpWhKTv" role="3clFbx">
+          <node concept="2MkqsV" id="ah8HpWhOs_" role="3cqZAp">
+            <node concept="Xl_RD" id="ah8HpWhOsL" role="2MkJ7o">
+              <property role="Xl_RC" value="Deprecated nodes found in the project!" />
+            </node>
+            <node concept="1YBJjd" id="ah8HpWhOtw" role="1urrMF">
+              <ref role="1YBMHb" node="ah8HpWh1JR" resolve="finder" />
+            </node>
+            <node concept="AMVWg" id="dIZf5trg$i" role="lGtFl">
+              <property role="TrG5h" value="DeprecatedNodesExist" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="ah8HpWh1JR" role="1YuTPh">
+      <property role="TrG5h" value="finder" />
+      <ref role="1YaFvo" to="3idh:7LZ1KAVSF$k" resolve="DeprecatedNodesFinder" />
+    </node>
   </node>
 </model>
 

@@ -50,12 +50,12 @@
     <property role="34LRSv" value="deprecated code finder" />
     <property role="R4oN_" value="finds deprecated code" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="7mZvE$BcOjY" role="1TKVEi">
-      <property role="IQ2ns" value="8484639487961548030" />
+    <node concept="1TJgyj" id="3imng2mT8pi" role="1TKVEi">
+      <property role="IQ2ns" value="3789318393591793234" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="deprecatedResults" />
+      <property role="20kJfa" value="modelsContainingDeprecated" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="7LZ1KAVUTVU" resolve="DeprecatedNodeResult" />
+      <ref role="20lvS9" node="3imng2mT8pl" resolve="DeprecatedModelResult" />
     </node>
     <node concept="1TJgyi" id="7LZ1KAVSF$l" role="1TKVEl">
       <property role="IQ2nx" value="8970896721133615381" />
@@ -75,11 +75,6 @@
     <property role="EcuMT" value="8970896721134198522" />
     <property role="TrG5h" value="DeprecatedNodeResult" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="7LZ1KAVUTVX" role="1TKVEl">
-      <property role="IQ2nx" value="8970896721134198525" />
-      <property role="TrG5h" value="description" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
     <node concept="1TJgyj" id="7LZ1KAVUTVV" role="1TKVEi">
       <property role="IQ2ns" value="8970896721134198523" />
       <property role="20kJfa" value="node" />
@@ -94,6 +89,45 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3h5$iQ9qIoH" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3imng2mT8pl">
+    <property role="EcuMT" value="3789318393591793237" />
+    <property role="TrG5h" value="DeprecatedModelResult" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="ah8HpWiuVW" role="1TKVEi">
+      <property role="IQ2ns" value="184967364302466812" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="deprecatedType" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="ah8HpWiuVV" resolve="DeprecatedConceptResult" />
+    </node>
+    <node concept="1TJgyi" id="3imng2mXeQS" role="1TKVEl">
+      <property role="IQ2nx" value="3789318393592868280" />
+      <property role="TrG5h" value="modelName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="ah8HpWiuVV">
+    <property role="EcuMT" value="184967364302466811" />
+    <property role="TrG5h" value="DeprecatedConceptResult" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="269xudmyve3" role="1TKVEi">
+      <property role="IQ2ns" value="2416609886516933507" />
+      <property role="20kJfa" value="concept" />
+      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    </node>
+    <node concept="1TJgyj" id="3imng2mTc_W" role="1TKVEi">
+      <property role="IQ2ns" value="3789318393591810428" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="deprecatedNodes" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="7LZ1KAVUTVU" resolve="DeprecatedNodeResult" />
+    </node>
+    <node concept="1TJgyi" id="4Qg0JGq$dC$" role="1TKVEl">
+      <property role="IQ2nx" value="5588970415072533028" />
+      <property role="TrG5h" value="displayNodes" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
 </model>
