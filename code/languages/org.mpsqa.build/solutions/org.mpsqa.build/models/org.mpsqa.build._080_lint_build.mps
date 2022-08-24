@@ -408,6 +408,16 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
           </node>
         </node>
+        <node concept="1SiIV0" id="7hx0FZiVBzs" role="3bR37C">
+          <node concept="3bR9La" id="7hx0FZiVBzt" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7hx0FZiVBzu" role="3bR37C">
+          <node concept="3bR9La" id="7hx0FZiVBzv" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6Lg8" resolve="jetbrains.mps.runtime" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="55IIr" id="3dqUbgQmcy$" role="auvoZ" />
