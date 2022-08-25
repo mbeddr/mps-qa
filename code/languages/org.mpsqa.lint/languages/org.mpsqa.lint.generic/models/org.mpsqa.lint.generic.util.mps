@@ -606,7 +606,7 @@
                   <node concept="liA8E" id="2dSiT1hPky0" role="2OqNvi">
                     <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String)" resolve="replaceAll" />
                     <node concept="Xl_RD" id="2dSiT1hPk$T" role="37wK5m">
-                      <property role="Xl_RC" value="." />
+                      <property role="Xl_RC" value="\\." />
                     </node>
                     <node concept="Xl_RD" id="2dSiT1hPkHa" role="37wK5m">
                       <property role="Xl_RC" value="_" />
