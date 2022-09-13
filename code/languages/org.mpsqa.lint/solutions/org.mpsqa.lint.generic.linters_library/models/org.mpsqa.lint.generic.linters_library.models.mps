@@ -131,11 +131,6 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
-        <child id="5721587534047265374" name="message" index="9lYJi" />
-      </concept>
-    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
@@ -147,18 +142,8 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
-      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
-        <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
-      </concept>
-      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
-        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
@@ -387,72 +372,6 @@
                               </node>
                               <node concept="liA8E" id="6gY6GEDvFw9" role="2OqNvi">
                                 <ref role="37wK5l" to="mhbf:~SModelName.getValue()" resolve="getValue" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="2xdQw9" id="6gY6GEDvak0" role="3cqZAp">
-                      <node concept="3cpWs3" id="6gY6GEDvayS" role="9lYJi">
-                        <node concept="Xl_RD" id="6gY6GEDvak2" role="3uHU7B">
-                          <property role="Xl_RC" value=" ---&gt;&gt;&gt; " />
-                        </node>
-                        <node concept="37vLTw" id="6gY6GEDvjWF" role="3uHU7w">
-                          <ref role="3cqZAo" node="6gY6GEDvjWx" resolve="directoryName" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="1X3_iC" id="6gY6GEDvaZo" role="lGtFl">
-                      <property role="3V$3am" value="statement" />
-                      <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                      <node concept="3clFbF" id="6gY6GEDv7W8" role="8Wnug">
-                        <node concept="2OqwBi" id="6gY6GEDv7W9" role="3clFbG">
-                          <node concept="37vLTw" id="6gY6GEDv7Wa" role="2Oq$k0">
-                            <ref role="3cqZAo" node="6gY6GEDv7VN" resolve="res" />
-                          </node>
-                          <node concept="TSZUe" id="6gY6GEDv7Wb" role="2OqNvi">
-                            <node concept="3cpWs3" id="6gY6GEDv7Wc" role="25WWJ7">
-                              <node concept="Xl_RD" id="6gY6GEDv7Wd" role="3uHU7w">
-                                <property role="Xl_RC" value="' does not have file-per-root persistency." />
-                              </node>
-                              <node concept="3cpWs3" id="6gY6GEDv7We" role="3uHU7B">
-                                <node concept="2OqwBi" id="6gY6GEDv7Wf" role="3uHU7w">
-                                  <node concept="2OqwBi" id="6gY6GEDv7Wg" role="2Oq$k0">
-                                    <node concept="2GrUjf" id="6gY6GEDv7Wh" role="2Oq$k0">
-                                      <ref role="2Gs0qQ" node="6gY6GEDv7VW" resolve="m" />
-                                    </node>
-                                    <node concept="13u695" id="6gY6GEDv7Wi" role="2OqNvi" />
-                                  </node>
-                                  <node concept="3TrcHB" id="6gY6GEDv7Wj" role="2OqNvi">
-                                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                                  </node>
-                                </node>
-                                <node concept="3cpWs3" id="6gY6GEDv7Wk" role="3uHU7B">
-                                  <node concept="3cpWs3" id="6gY6GEDv7Wl" role="3uHU7B">
-                                    <node concept="Xl_RD" id="6gY6GEDv7Wm" role="3uHU7B">
-                                      <property role="Xl_RC" value="model named '" />
-                                    </node>
-                                    <node concept="2OqwBi" id="6gY6GEDv7Wn" role="3uHU7w">
-                                      <node concept="2OqwBi" id="6gY6GEDv7Wo" role="2Oq$k0">
-                                        <node concept="2JrnkZ" id="6gY6GEDv7Wp" role="2Oq$k0">
-                                          <node concept="2GrUjf" id="6gY6GEDv7Wq" role="2JrQYb">
-                                            <ref role="2Gs0qQ" node="6gY6GEDv7VW" resolve="m" />
-                                          </node>
-                                        </node>
-                                        <node concept="liA8E" id="6gY6GEDv7Wr" role="2OqNvi">
-                                          <ref role="37wK5l" to="mhbf:~SModel.getName()" resolve="getName" />
-                                        </node>
-                                      </node>
-                                      <node concept="liA8E" id="6gY6GEDv7Ws" role="2OqNvi">
-                                        <ref role="37wK5l" to="mhbf:~SModelName.getValue()" resolve="getValue" />
-                                      </node>
-                                    </node>
-                                  </node>
-                                  <node concept="Xl_RD" id="6gY6GEDv7Wt" role="3uHU7w">
-                                    <property role="Xl_RC" value="' from module '" />
-                                  </node>
-                                </node>
                               </node>
                             </node>
                           </node>
