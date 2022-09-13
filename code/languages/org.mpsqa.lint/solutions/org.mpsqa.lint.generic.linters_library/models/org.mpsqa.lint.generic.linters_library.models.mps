@@ -1275,8 +1275,35 @@
                         </node>
                         <node concept="TSZUe" id="7hx0FZiTnKQ" role="2OqNvi">
                           <node concept="3cpWs3" id="7hx0FZiUP4e" role="25WWJ7">
-                            <node concept="37vLTw" id="7hx0FZiUPpZ" role="3uHU7w">
-                              <ref role="3cqZAo" node="7hx0FZiUN$k" resolve="unusedModelReferences" />
+                            <node concept="2OqwBi" id="4WO8F5N0F2i" role="3uHU7w">
+                              <node concept="37vLTw" id="7hx0FZiUPpZ" role="2Oq$k0">
+                                <ref role="3cqZAo" node="7hx0FZiUN$k" resolve="unusedModelReferences" />
+                              </node>
+                              <node concept="3$u5V9" id="4WO8F5N0Fuu" role="2OqNvi">
+                                <node concept="1bVj0M" id="4WO8F5N0Fuw" role="23t8la">
+                                  <node concept="3clFbS" id="4WO8F5N0Fux" role="1bW5cS">
+                                    <node concept="3clFbF" id="4WO8F5N0FCQ" role="3cqZAp">
+                                      <node concept="2OqwBi" id="4WO8F5N0Gfo" role="3clFbG">
+                                        <node concept="2OqwBi" id="4WO8F5N0FP$" role="2Oq$k0">
+                                          <node concept="37vLTw" id="4WO8F5N0FCP" role="2Oq$k0">
+                                            <ref role="3cqZAo" node="4WO8F5N0Fuy" resolve="it" />
+                                          </node>
+                                          <node concept="liA8E" id="4WO8F5N0G0d" role="2OqNvi">
+                                            <ref role="37wK5l" to="mhbf:~SModel.getName()" resolve="getName" />
+                                          </node>
+                                        </node>
+                                        <node concept="liA8E" id="4WO8F5N0GsO" role="2OqNvi">
+                                          <ref role="37wK5l" to="mhbf:~SModelName.getLongName()" resolve="getLongName" />
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="Rh6nW" id="4WO8F5N0Fuy" role="1bW2Oz">
+                                    <property role="TrG5h" value="it" />
+                                    <node concept="2jxLKc" id="4WO8F5N0Fuz" role="1tU5fm" />
+                                  </node>
+                                </node>
+                              </node>
                             </node>
                             <node concept="3cpWs3" id="7hx0FZiTnKR" role="3uHU7B">
                               <node concept="3cpWs3" id="7hx0FZiTnKT" role="3uHU7B">
