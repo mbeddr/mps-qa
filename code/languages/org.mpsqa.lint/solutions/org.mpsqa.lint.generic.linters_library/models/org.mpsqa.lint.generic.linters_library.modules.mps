@@ -1138,8 +1138,30 @@
                             </node>
                             <node concept="TSZUe" id="7hx0FZiTnKQ" role="2OqNvi">
                               <node concept="3cpWs3" id="7hx0FZiUP4e" role="25WWJ7">
-                                <node concept="37vLTw" id="7hx0FZiUPpZ" role="3uHU7w">
-                                  <ref role="3cqZAo" node="7hx0FZiUN$k" resolve="unusedModules" />
+                                <node concept="2OqwBi" id="4WO8F5N13TC" role="3uHU7w">
+                                  <node concept="37vLTw" id="7hx0FZiUPpZ" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="7hx0FZiUN$k" resolve="unusedModules" />
+                                  </node>
+                                  <node concept="3$u5V9" id="4WO8F5N14fb" role="2OqNvi">
+                                    <node concept="1bVj0M" id="4WO8F5N14fd" role="23t8la">
+                                      <node concept="3clFbS" id="4WO8F5N14fe" role="1bW5cS">
+                                        <node concept="3clFbF" id="4WO8F5N14oc" role="3cqZAp">
+                                          <node concept="2OqwBi" id="4WO8F5N14$z" role="3clFbG">
+                                            <node concept="37vLTw" id="4WO8F5N14ob" role="2Oq$k0">
+                                              <ref role="3cqZAo" node="4WO8F5N14ff" resolve="it" />
+                                            </node>
+                                            <node concept="liA8E" id="4WO8F5N14NW" role="2OqNvi">
+                                              <ref role="37wK5l" to="lui2:~SModule.getModuleName()" resolve="getModuleName" />
+                                            </node>
+                                          </node>
+                                        </node>
+                                      </node>
+                                      <node concept="Rh6nW" id="4WO8F5N14ff" role="1bW2Oz">
+                                        <property role="TrG5h" value="it" />
+                                        <node concept="2jxLKc" id="4WO8F5N14fg" role="1tU5fm" />
+                                      </node>
+                                    </node>
+                                  </node>
                                 </node>
                                 <node concept="3cpWs3" id="7hx0FZiTnKR" role="3uHU7B">
                                   <node concept="3cpWs3" id="7hx0FZiTnL0" role="3uHU7B">
