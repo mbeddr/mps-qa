@@ -306,6 +306,11 @@
             <ref role="3bR37D" node="3PN66LDqBZd" resolve="org.mpsqa.mutant" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5Lgg1tGN0Vp" role="3bR37C">
+          <node concept="3bR9La" id="5Lgg1tGN0Vq" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:3qkjbZn808a" resolve="jetbrains.mps.lang.constraints.rules.runtime" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="3PN66LDqBZb" role="2G$12L">
         <property role="BnDLt" value="true" />
