@@ -4,17 +4,19 @@
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
-    <import index="pdwk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.core.aspects.constraints.rules.kinds(MPS.Core/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
-    <import index="o99v" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.core.aspects.constraints.rules(MPS.Core/)" />
     <import index="ykok" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.constraints(MPS.Core/)" />
     <import index="j809" ref="aaaaf3e2-decf-4e97-bf80-9109eab759ee/java:jetbrains.mps.core.aspects.feedback.messages(jetbrains.mps.lang.feedback.problem.legacy-constraints/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="o99v" ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee/java:jetbrains.mps.core.aspects.constraints.rules(jetbrains.mps.lang.constraints.rules.runtime/)" />
+    <import index="pdwk" ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee/java:jetbrains.mps.core.aspects.constraints.rules.kinds(jetbrains.mps.lang.constraints.rules.runtime/)" />
+    <import index="o99w" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.core.aspects.constraints.rules(MPS.Core/)" />
+    <import index="pdwl" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.core.aspects.constraints.rules.kinds(MPS.Core/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
@@ -85,7 +87,6 @@
       </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
-        <child id="1109201940907" name="parameter" index="11_B2D" />
       </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
@@ -121,6 +122,10 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7">
+        <property id="8575328350543493365" name="message" index="huDt6" />
+        <property id="2423417345669755629" name="filter" index="1eyWvh" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -161,22 +166,16 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="4VtLjdspBqd" role="3cqZAp">
-          <node concept="3cpWsn" id="4VtLjdspBqe" role="3cpWs9">
+        <node concept="3cpWs8" id="5Lgg1tGH4pM" role="3cqZAp">
+          <node concept="3cpWsn" id="5Lgg1tGH4pN" role="3cpWs9">
             <property role="TrG5h" value="canBeParentFailingRules" />
-            <node concept="3uibUv" id="4VtLjdspBjf" role="1tU5fm">
+            <node concept="3uibUv" id="5Lgg1tGGZho" role="1tU5fm">
               <ref role="3uigEE" to="33ny:~List" resolve="List" />
-              <node concept="3uibUv" id="4VtLjdspBjm" role="11_B2D">
-                <ref role="3uigEE" to="o99v:~Rule" resolve="Rule" />
-                <node concept="3uibUv" id="4VtLjdspBjn" role="11_B2D">
-                  <ref role="3uigEE" to="pdwk:~ContainmentContext" resolve="ContainmentContext" />
-                </node>
-              </node>
             </node>
-            <node concept="2YIFZM" id="4VtLjdspBqf" role="33vP2m">
+            <node concept="2YIFZM" id="5Lgg1tGH4pO" role="33vP2m">
               <ref role="37wK5l" to="ykok:~ConstraintsCanBeFacade.checkCanBeParent(jetbrains.mps.core.aspects.constraints.rules.kinds.ContainmentContext)" resolve="checkCanBeParent" />
               <ref role="1Pybhc" to="ykok:~ConstraintsCanBeFacade" resolve="ConstraintsCanBeFacade" />
-              <node concept="37vLTw" id="4VtLjdspBqg" role="37wK5m">
+              <node concept="37vLTw" id="5Lgg1tGH4pP" role="37wK5m">
                 <ref role="3cqZAo" node="4VtLjdspz10" resolve="cc" />
               </node>
             </node>
@@ -193,7 +192,7 @@
           <node concept="3fqX7Q" id="4VtLjdspDbu" role="3clFbw">
             <node concept="2OqwBi" id="4VtLjdspDbw" role="3fr31v">
               <node concept="37vLTw" id="4VtLjdspDbx" role="2Oq$k0">
-                <ref role="3cqZAo" node="4VtLjdspBqe" resolve="canBeParentFailingRules" />
+                <ref role="3cqZAo" node="5Lgg1tGH4pN" resolve="canBeParentFailingRules" />
               </node>
               <node concept="liA8E" id="4VtLjdspDby" role="2OqNvi">
                 <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
@@ -201,22 +200,16 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="4VtLjdspE8h" role="3cqZAp">
-          <node concept="3cpWsn" id="4VtLjdspE8i" role="3cpWs9">
+        <node concept="3cpWs8" id="5Lgg1tGH6lD" role="3cqZAp">
+          <node concept="3cpWsn" id="5Lgg1tGH6lE" role="3cpWs9">
             <property role="TrG5h" value="canBeChildFailingRules" />
-            <node concept="3uibUv" id="4VtLjdspE8j" role="1tU5fm">
+            <node concept="3uibUv" id="5Lgg1tGH69D" role="1tU5fm">
               <ref role="3uigEE" to="33ny:~List" resolve="List" />
-              <node concept="3uibUv" id="4VtLjdspE8k" role="11_B2D">
-                <ref role="3uigEE" to="o99v:~Rule" resolve="Rule" />
-                <node concept="3uibUv" id="4VtLjdspE8l" role="11_B2D">
-                  <ref role="3uigEE" to="pdwk:~ContainmentContext" resolve="ContainmentContext" />
-                </node>
-              </node>
             </node>
-            <node concept="2YIFZM" id="4VtLjdspE8m" role="33vP2m">
+            <node concept="2YIFZM" id="5Lgg1tGH6lF" role="33vP2m">
               <ref role="1Pybhc" to="ykok:~ConstraintsCanBeFacade" resolve="ConstraintsCanBeFacade" />
               <ref role="37wK5l" to="ykok:~ConstraintsCanBeFacade.checkCanBeChild(jetbrains.mps.core.aspects.constraints.rules.kinds.ContainmentContext)" resolve="checkCanBeChild" />
-              <node concept="37vLTw" id="4VtLjdspE8n" role="37wK5m">
+              <node concept="37vLTw" id="5Lgg1tGH6lG" role="37wK5m">
                 <ref role="3cqZAo" node="4VtLjdspz10" resolve="cc" />
               </node>
             </node>
@@ -233,7 +226,7 @@
           <node concept="3fqX7Q" id="4VtLjdspE8s" role="3clFbw">
             <node concept="2OqwBi" id="4VtLjdspE8t" role="3fr31v">
               <node concept="37vLTw" id="4VtLjdspE8u" role="2Oq$k0">
-                <ref role="3cqZAo" node="4VtLjdspE8i" resolve="canBeChildFailingRules" />
+                <ref role="3cqZAo" node="5Lgg1tGH6lE" resolve="canBeChildFailingRules" />
               </node>
               <node concept="liA8E" id="4VtLjdspE8v" role="2OqNvi">
                 <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
@@ -295,22 +288,16 @@
                 </node>
               </node>
             </node>
-            <node concept="3cpWs8" id="5VJWClHvcGg" role="3cqZAp">
-              <node concept="3cpWsn" id="5VJWClHvcGh" role="3cpWs9">
+            <node concept="3cpWs8" id="5Lgg1tGH7FX" role="3cqZAp">
+              <node concept="3cpWsn" id="5Lgg1tGH7FY" role="3cpWs9">
                 <property role="TrG5h" value="canBeAncestorFailingRules" />
-                <node concept="3uibUv" id="5VJWClHvcGi" role="1tU5fm">
+                <node concept="3uibUv" id="5Lgg1tGH2Bu" role="1tU5fm">
                   <ref role="3uigEE" to="33ny:~List" resolve="List" />
-                  <node concept="3uibUv" id="5VJWClHvcGj" role="11_B2D">
-                    <ref role="3uigEE" to="o99v:~Rule" resolve="Rule" />
-                    <node concept="3uibUv" id="5VJWClHvcGk" role="11_B2D">
-                      <ref role="3uigEE" to="pdwk:~CanBeAncestorContext" resolve="CanBeAncestorContext" />
-                    </node>
-                  </node>
                 </node>
-                <node concept="2YIFZM" id="5VJWClHvcGl" role="33vP2m">
+                <node concept="2YIFZM" id="5Lgg1tGH7FZ" role="33vP2m">
                   <ref role="37wK5l" to="ykok:~ConstraintsCanBeFacade.checkCanBeAncestor(jetbrains.mps.core.aspects.constraints.rules.kinds.CanBeAncestorContext)" resolve="checkCanBeAncestor" />
                   <ref role="1Pybhc" to="ykok:~ConstraintsCanBeFacade" resolve="ConstraintsCanBeFacade" />
-                  <node concept="37vLTw" id="5VJWClHvcGm" role="37wK5m">
+                  <node concept="37vLTw" id="5Lgg1tGH7G0" role="37wK5m">
                     <ref role="3cqZAo" node="5VJWClHvcG4" resolve="cbac" />
                   </node>
                 </node>
@@ -327,7 +314,7 @@
               <node concept="3fqX7Q" id="5VJWClHvcGr" role="3clFbw">
                 <node concept="2OqwBi" id="5VJWClHvcGs" role="3fr31v">
                   <node concept="37vLTw" id="5VJWClHvcGt" role="2Oq$k0">
-                    <ref role="3cqZAo" node="5VJWClHvcGh" resolve="canBeAncestorFailingRules" />
+                    <ref role="3cqZAo" node="5Lgg1tGH7FY" resolve="canBeAncestorFailingRules" />
                   </node>
                   <node concept="liA8E" id="5VJWClHvcGu" role="2OqNvi">
                     <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
@@ -414,16 +401,24 @@
                 </node>
               </node>
             </node>
-            <node concept="3cpWs8" id="5VJWClHvfc6" role="3cqZAp">
-              <node concept="3cpWsn" id="5VJWClHvfc7" role="3cpWs9">
-                <property role="TrG5h" value="propertyValueFailingRules" />
-                <node concept="3uibUv" id="5VJWClHvfc8" role="1tU5fm">
+            <node concept="3cpWs8" id="5Lgg1tGH9hR" role="3cqZAp">
+              <node concept="15s5l7" id="5Lgg1tGHdOt" role="lGtFl">
+                <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Error: FailingPropertyConstraintContext is not a subtype of ?no classifier?&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/5875805516898273487,r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/5977092449933510825]&quot;;" />
+                <property role="huDt6" value="Error: FailingPropertyConstraintContext is not a subtype of ?no classifier?" />
+              </node>
+              <node concept="15s5l7" id="5Lgg1tGHdC_" role="lGtFl">
+                <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Error: Incompatible method signature&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/2234318170389157992]&quot;;" />
+                <property role="huDt6" value="Error: Incompatible method signature" />
+              </node>
+              <node concept="3cpWsn" id="5Lgg1tGH9hS" role="3cpWs9">
+                <property role="TrG5h" value="checkPropertyValue" />
+                <node concept="3uibUv" id="5Lgg1tGGZgL" role="1tU5fm">
                   <ref role="3uigEE" to="33ny:~List" resolve="List" />
                 </node>
-                <node concept="2YIFZM" id="5VJWClHvfca" role="33vP2m">
+                <node concept="2YIFZM" id="5Lgg1tGH9hT" role="33vP2m">
                   <ref role="37wK5l" to="ykok:~ConstraintsChildAndPropFacade.checkPropertyValue(jetbrains.mps.core.aspects.feedback.messages.FailingPropertyConstraintContext)" resolve="checkPropertyValue" />
                   <ref role="1Pybhc" to="ykok:~ConstraintsChildAndPropFacade" resolve="ConstraintsChildAndPropFacade" />
-                  <node concept="37vLTw" id="5VJWClHvfcb" role="37wK5m">
+                  <node concept="37vLTw" id="5Lgg1tGH9hU" role="37wK5m">
                     <ref role="3cqZAo" node="5VJWClHvfbZ" resolve="fpcc" />
                   </node>
                 </node>
@@ -440,7 +435,7 @@
               <node concept="3fqX7Q" id="5VJWClHvfcg" role="3clFbw">
                 <node concept="2OqwBi" id="5VJWClHvfch" role="3fr31v">
                   <node concept="37vLTw" id="5VJWClHvfci" role="2Oq$k0">
-                    <ref role="3cqZAo" node="5VJWClHvfc7" resolve="propertyValueFailingRules" />
+                    <ref role="3cqZAo" node="5Lgg1tGH9hS" resolve="checkPropertyValue" />
                   </node>
                   <node concept="liA8E" id="5VJWClHvfcj" role="2OqNvi">
                     <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
