@@ -671,7 +671,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="6gY6GEDtXSW" role="2OqNvi">
-                          <ref role="37wK5l" to="mhbf:~SModelName.getLongName()" resolve="getLongName" />
+                          <ref role="37wK5l" to="mhbf:~SModelName.getValue()" resolve="getValue" />
                         </node>
                       </node>
                       <node concept="liA8E" id="6gY6GEDu64d" role="2OqNvi">
