@@ -9,6 +9,7 @@
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
+    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
   </languages>
   <imports>
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
@@ -231,6 +232,13 @@
       </concept>
       <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
         <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+    </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
+        <property id="6332851714983843871" name="severity" index="2xdLsb" />
+        <child id="5721587534047265374" name="message" index="9lYJi" />
+        <child id="5721587534047265375" name="throwable" index="9lYJj" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -526,14 +534,13 @@
               </node>
             </node>
             <node concept="3clFbS" id="584dPWt1NW7" role="1zc67A">
-              <node concept="3clFbF" id="584dPWt1RL6" role="3cqZAp">
-                <node concept="2OqwBi" id="584dPWt1RTx" role="3clFbG">
-                  <node concept="37vLTw" id="584dPWt1RL5" role="2Oq$k0">
-                    <ref role="3cqZAo" node="584dPWt1NW5" resolve="e" />
-                  </node>
-                  <node concept="liA8E" id="584dPWt1S74" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
-                  </node>
+              <node concept="2xdQw9" id="5Xtc3TAGgtE" role="3cqZAp">
+                <property role="2xdLsb" value="gZ5fh_4/error" />
+                <node concept="Xl_RD" id="5Xtc3TAGgtG" role="9lYJi">
+                  <property role="Xl_RC" value="Exception thrown while loading the execution data" />
+                </node>
+                <node concept="37vLTw" id="5Xtc3TAGzkm" role="9lYJj">
+                  <ref role="3cqZAo" node="584dPWt1NW5" resolve="e" />
                 </node>
               </node>
             </node>
