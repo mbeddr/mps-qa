@@ -12,8 +12,8 @@
     <import index="t6h5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang.reflect(JDK/)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="a1af" ref="r:839ac015-7de1-49f3-ac8f-8d7c6d47259d(org.mpsqa.lint.generic.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="a1af" ref="r:839ac015-7de1-49f3-ac8f-8d7c6d47259d(org.mpsqa.lint.generic.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -97,7 +97,12 @@
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
+      <concept id="1068581242867" name="jetbrains.mps.baseLanguage.structure.LongType" flags="in" index="3cpWsb" />
+      <concept id="1068581242869" name="jetbrains.mps.baseLanguage.structure.MinusExpression" flags="nn" index="3cpWsd" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
+        <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -138,6 +143,12 @@
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
         <reference id="1116615189566" name="classifier" index="3VsUkX" />
+      </concept>
+    </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
+        <property id="6332851714983843871" name="severity" index="2xdLsb" />
+        <child id="5721587534047265374" name="message" index="9lYJi" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -226,15 +237,75 @@
             </node>
           </node>
           <node concept="3clFbS" id="2dSiT1hQr4w" role="1zxBo7">
+            <node concept="3cpWs8" id="4aEqBbbDeMc" role="3cqZAp">
+              <node concept="3cpWsn" id="4aEqBbbDeMf" role="3cpWs9">
+                <property role="TrG5h" value="initialTime" />
+                <node concept="3cpWsb" id="4aEqBbbDeMa" role="1tU5fm" />
+                <node concept="2YIFZM" id="4aEqBbbDhcv" role="33vP2m">
+                  <ref role="37wK5l" to="wyt6:~System.currentTimeMillis()" resolve="currentTimeMillis" />
+                  <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="4aEqBbbDeCo" role="3cqZAp">
+              <node concept="3cpWsn" id="4aEqBbbDeCp" role="3cpWs9">
+                <property role="TrG5h" value="doCheck" />
+                <node concept="_YKpA" id="4aEqBbbDelJ" role="1tU5fm">
+                  <node concept="17QB3L" id="4aEqBbbDelM" role="_ZDj9" />
+                </node>
+                <node concept="1rXfSq" id="4aEqBbbDeCq" role="33vP2m">
+                  <ref role="37wK5l" node="2dSiT1hQole" resolve="doCheck" />
+                  <node concept="37vLTw" id="4aEqBbbDeCr" role="37wK5m">
+                    <ref role="3cqZAo" node="y1G8y6ad_X" resolve="mcc" />
+                  </node>
+                  <node concept="37vLTw" id="4aEqBbbDeCs" role="37wK5m">
+                    <ref role="3cqZAo" node="6gY6GEDtKzD" resolve="proj" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2xdQw9" id="4aEqBbbDfeq" role="3cqZAp">
+              <property role="2xdLsb" value="h1akgim/info" />
+              <node concept="3cpWs3" id="4aEqBbbDicJ" role="9lYJi">
+                <node concept="Xl_RD" id="4aEqBbbDiiZ" role="3uHU7w">
+                  <property role="Xl_RC" value=" ms" />
+                </node>
+                <node concept="3cpWs3" id="4aEqBbbDgTG" role="3uHU7B">
+                  <node concept="3cpWs3" id="4aEqBbbDgrW" role="3uHU7B">
+                    <node concept="3cpWs3" id="4aEqBbbDfJJ" role="3uHU7B">
+                      <node concept="Xl_RD" id="4aEqBbbDfes" role="3uHU7B">
+                        <property role="Xl_RC" value="'" />
+                      </node>
+                      <node concept="2OqwBi" id="4aEqBbbDg4q" role="3uHU7w">
+                        <node concept="37vLTw" id="4aEqBbbDfNX" role="2Oq$k0">
+                          <ref role="3cqZAo" node="y1G8y6ad_X" resolve="mcc" />
+                        </node>
+                        <node concept="3TrcHB" id="4aEqBbbDgkP" role="2OqNvi">
+                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="Xl_RD" id="4aEqBbbDgwQ" role="3uHU7w">
+                      <property role="Xl_RC" value="' execution time: " />
+                    </node>
+                  </node>
+                  <node concept="1eOMI4" id="4aEqBbbDgZ2" role="3uHU7w">
+                    <node concept="3cpWsd" id="4aEqBbbDi1p" role="1eOMHV">
+                      <node concept="37vLTw" id="4aEqBbbDi6K" role="3uHU7w">
+                        <ref role="3cqZAo" node="4aEqBbbDeMf" resolve="initialTime" />
+                      </node>
+                      <node concept="2YIFZM" id="4aEqBbbDhof" role="3uHU7B">
+                        <ref role="37wK5l" to="wyt6:~System.currentTimeMillis()" resolve="currentTimeMillis" />
+                        <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3cpWs6" id="2dSiT1hQr4x" role="3cqZAp">
-              <node concept="1rXfSq" id="2dSiT1hQr4y" role="3cqZAk">
-                <ref role="37wK5l" node="2dSiT1hQole" resolve="doCheck" />
-                <node concept="37vLTw" id="2dSiT1hQr4z" role="37wK5m">
-                  <ref role="3cqZAo" node="y1G8y6ad_X" resolve="mcc" />
-                </node>
-                <node concept="37vLTw" id="6gY6GEDtKHa" role="37wK5m">
-                  <ref role="3cqZAo" node="6gY6GEDtKzD" resolve="proj" />
-                </node>
+              <node concept="37vLTw" id="4aEqBbbDeCt" role="3cqZAk">
+                <ref role="3cqZAo" node="4aEqBbbDeCp" resolve="doCheck" />
               </node>
             </node>
           </node>
