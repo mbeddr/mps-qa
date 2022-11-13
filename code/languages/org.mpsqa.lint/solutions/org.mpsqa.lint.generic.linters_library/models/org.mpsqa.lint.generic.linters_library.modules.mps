@@ -184,6 +184,7 @@
         <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
       <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
         <child id="1201186121363" name="typeParameter" index="2Ghqu4" />
@@ -2697,6 +2698,18 @@
           <property role="3oM_SC" value="modules" />
         </node>
         <node concept="3oM_SD" id="4aEqBbb$6Qk" role="1PaTwD">
+          <property role="3oM_SC" value="from" />
+        </node>
+        <node concept="3oM_SD" id="4aEqBbbDcmF" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="4aEqBbbDcna" role="1PaTwD">
+          <property role="3oM_SC" value="current" />
+        </node>
+        <node concept="3oM_SD" id="4aEqBbbDcnF" role="1PaTwD">
+          <property role="3oM_SC" value="project" />
+        </node>
+        <node concept="3oM_SD" id="4aEqBbbDcoe" role="1PaTwD">
           <property role="3oM_SC" value="which" />
         </node>
         <node concept="3oM_SD" id="4aEqBbb$6Qu" role="1PaTwD">
@@ -2874,11 +2887,40 @@
                     </node>
                   </node>
                 </node>
+                <node concept="3cpWs8" id="4aEqBbbCGKY" role="3cqZAp">
+                  <node concept="3cpWsn" id="4aEqBbbCGKZ" role="3cpWs9">
+                    <property role="TrG5h" value="modulesInProject" />
+                    <node concept="2hMVRd" id="4aEqBbbCMEL" role="1tU5fm">
+                      <node concept="3uibUv" id="4aEqBbbCMEN" role="2hN53Y">
+                        <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+                      </node>
+                    </node>
+                    <node concept="2ShNRf" id="4aEqBbbCJP9" role="33vP2m">
+                      <node concept="2i4dXS" id="4aEqBbbCK_6" role="2ShVmc">
+                        <node concept="3uibUv" id="4aEqBbbCLr5" role="HW$YZ">
+                          <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="4aEqBbbCNwx" role="3cqZAp">
+                  <node concept="2OqwBi" id="4aEqBbbCO5Z" role="3clFbG">
+                    <node concept="37vLTw" id="4aEqBbbCNwv" role="2Oq$k0">
+                      <ref role="3cqZAo" node="4aEqBbbCGKZ" resolve="modulesInProject" />
+                    </node>
+                    <node concept="X8dFx" id="4aEqBbbCOw2" role="2OqNvi">
+                      <node concept="EzsRk" id="4aEqBbbCP5b" role="25WWJ7" />
+                    </node>
+                  </node>
+                </node>
                 <node concept="2Gpval" id="4aEqBbb$5LB" role="3cqZAp">
                   <node concept="2GrKxI" id="4aEqBbb$5LC" role="2Gsz3X">
                     <property role="TrG5h" value="module" />
                   </node>
-                  <node concept="EzsRk" id="4aEqBbb$5LD" role="2GsD0m" />
+                  <node concept="37vLTw" id="4aEqBbbCGL1" role="2GsD0m">
+                    <ref role="3cqZAo" node="4aEqBbbCGKZ" resolve="modulesInProject" />
+                  </node>
                   <node concept="3clFbS" id="4aEqBbb$5LE" role="2LFqv$">
                     <node concept="3cpWs8" id="4aEqBbb$aPB" role="3cqZAp">
                       <node concept="3cpWsn" id="4aEqBbb$aPC" role="3cpWs9">
@@ -2917,17 +2959,40 @@
                         <property role="TrG5h" value="dep" />
                       </node>
                       <node concept="3clFbS" id="4aEqBbb$5LL" role="2LFqv$">
-                        <node concept="3clFbJ" id="4aEqBbb$5LM" role="3cqZAp">
-                          <node concept="3y3z36" id="4aEqBbb$6VQ" role="3clFbw">
-                            <node concept="2OqwBi" id="4aEqBbb$5LP" role="3uHU7B">
-                              <node concept="2GrUjf" id="4aEqBbb$5LQ" role="2Oq$k0">
+                        <node concept="3cpWs8" id="4aEqBbbCQKT" role="3cqZAp">
+                          <node concept="3cpWsn" id="4aEqBbbCQKU" role="3cpWs9">
+                            <property role="TrG5h" value="target" />
+                            <node concept="3uibUv" id="4aEqBbbCQHE" role="1tU5fm">
+                              <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+                            </node>
+                            <node concept="2OqwBi" id="4aEqBbbCQKV" role="33vP2m">
+                              <node concept="2GrUjf" id="4aEqBbbCQKW" role="2Oq$k0">
                                 <ref role="2Gs0qQ" node="4aEqBbb$5LK" resolve="dep" />
                               </node>
-                              <node concept="liA8E" id="4aEqBbb$5LR" role="2OqNvi">
+                              <node concept="liA8E" id="4aEqBbbCQKX" role="2OqNvi">
                                 <ref role="37wK5l" to="lui2:~SDependency.getTarget()" resolve="getTarget" />
                               </node>
                             </node>
-                            <node concept="10Nm6u" id="4aEqBbb$5LO" role="3uHU7w" />
+                          </node>
+                        </node>
+                        <node concept="3clFbJ" id="4aEqBbb$5LM" role="3cqZAp">
+                          <node concept="1Wc70l" id="4aEqBbbCPQi" role="3clFbw">
+                            <node concept="2OqwBi" id="4aEqBbbCQsg" role="3uHU7w">
+                              <node concept="37vLTw" id="4aEqBbbCQhg" role="2Oq$k0">
+                                <ref role="3cqZAo" node="4aEqBbbCGKZ" resolve="modulesInProject" />
+                              </node>
+                              <node concept="3JPx81" id="4aEqBbbCQFL" role="2OqNvi">
+                                <node concept="37vLTw" id="4aEqBbbCRgh" role="25WWJ7">
+                                  <ref role="3cqZAo" node="4aEqBbbCQKU" resolve="target" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="3y3z36" id="4aEqBbb$6VQ" role="3uHU7B">
+                              <node concept="37vLTw" id="4aEqBbbCQKY" role="3uHU7B">
+                                <ref role="3cqZAo" node="4aEqBbbCQKU" resolve="target" />
+                              </node>
+                              <node concept="10Nm6u" id="4aEqBbb$5LO" role="3uHU7w" />
+                            </node>
                           </node>
                           <node concept="3clFbS" id="4aEqBbb$5LS" role="3clFbx">
                             <node concept="3clFbF" id="4aEqBbb$dFB" role="3cqZAp">
@@ -2936,13 +3001,8 @@
                                   <ref role="3cqZAo" node="4aEqBbb$aPC" resolve="currentDependencies" />
                                 </node>
                                 <node concept="TSZUe" id="4aEqBbb$gld" role="2OqNvi">
-                                  <node concept="2OqwBi" id="4aEqBbb$gwR" role="25WWJ7">
-                                    <node concept="2GrUjf" id="4aEqBbb$goi" role="2Oq$k0">
-                                      <ref role="2Gs0qQ" node="4aEqBbb$5LK" resolve="dep" />
-                                    </node>
-                                    <node concept="liA8E" id="4aEqBbb$gXp" role="2OqNvi">
-                                      <ref role="37wK5l" to="lui2:~SDependency.getTarget()" resolve="getTarget" />
-                                    </node>
+                                  <node concept="37vLTw" id="4aEqBbbCQKZ" role="25WWJ7">
+                                    <ref role="3cqZAo" node="4aEqBbbCQKU" resolve="target" />
                                   </node>
                                 </node>
                               </node>
