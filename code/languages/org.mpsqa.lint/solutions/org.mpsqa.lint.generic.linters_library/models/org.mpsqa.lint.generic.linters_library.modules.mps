@@ -55,6 +55,10 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
+        <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
+        <reference id="1144432896254" name="enumClass" index="1Px2BO" />
+      </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
@@ -1230,6 +1234,53 @@
                               </node>
                               <node concept="liA8E" id="72dZnKNaf$9" role="2OqNvi">
                                 <ref role="37wK5l" to="w0gx:~Dependency.getModuleRef()" resolve="getModuleRef" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbJ" id="2$amis13lko" role="3cqZAp">
+                          <node concept="3clFbS" id="2$amis13lkq" role="3clFbx">
+                            <node concept="3SKdUt" id="2$amis13vPu" role="3cqZAp">
+                              <node concept="1PaTwC" id="2$amis13vPv" role="1aUNEU">
+                                <node concept="3oM_SD" id="2$amis13vUk" role="1PaTwD">
+                                  <property role="3oM_SC" value="we" />
+                                </node>
+                                <node concept="3oM_SD" id="2$amis13vVm" role="1PaTwD">
+                                  <property role="3oM_SC" value="assume" />
+                                </node>
+                                <node concept="3oM_SD" id="2$amis13vVE" role="1PaTwD">
+                                  <property role="3oM_SC" value="that" />
+                                </node>
+                                <node concept="3oM_SD" id="2$amis13vVV" role="1PaTwD">
+                                  <property role="3oM_SC" value="*all*" />
+                                </node>
+                                <node concept="3oM_SD" id="2$amis13vWn" role="1PaTwD">
+                                  <property role="3oM_SC" value="DESIGN" />
+                                </node>
+                                <node concept="3oM_SD" id="2$amis13vUy" role="1PaTwD">
+                                  <property role="3oM_SC" value="dependencies" />
+                                </node>
+                                <node concept="3oM_SD" id="2$amis13vUZ" role="1PaTwD">
+                                  <property role="3oM_SC" value="are" />
+                                </node>
+                                <node concept="3oM_SD" id="2$amis13vVb" role="1PaTwD">
+                                  <property role="3oM_SC" value="needed" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="3N13vt" id="2$amis13vFU" role="3cqZAp" />
+                          </node>
+                          <node concept="3clFbC" id="2$amis13us4" role="3clFbw">
+                            <node concept="Rm8GO" id="2$amis13vht" role="3uHU7w">
+                              <ref role="Rm8GQ" to="lui2:~SDependencyScope.DESIGN" resolve="DESIGN" />
+                              <ref role="1Px2BO" to="lui2:~SDependencyScope" resolve="SDependencyScope" />
+                            </node>
+                            <node concept="2OqwBi" id="2$amis13pOV" role="3uHU7B">
+                              <node concept="2GrUjf" id="2$amis13p$k" role="2Oq$k0">
+                                <ref role="2Gs0qQ" node="7hx0FZiWhuz" resolve="dep" />
+                              </node>
+                              <node concept="liA8E" id="2$amis13qUO" role="2OqNvi">
+                                <ref role="37wK5l" to="w0gx:~Dependency.getScope()" resolve="getScope" />
                               </node>
                             </node>
                           </node>
