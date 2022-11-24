@@ -69,6 +69,11 @@
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="checkable script" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="5N7gA6ZntKi" role="1TKVEl">
+      <property role="IQ2nx" value="6685385159444651026" />
+      <property role="TrG5h" value="skipEvaluation" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="2dSiT1hKFVo" role="1TKVEi">
       <property role="IQ2ns" value="2555875871751847640" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -142,6 +147,11 @@
     <property role="TrG5h" value="ResultEntry" />
     <property role="3GE5qa" value="previous_results" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5N7gA6ZnK1S" role="1TKVEi">
+      <property role="IQ2ns" value="6685385159444725880" />
+      <property role="20kJfa" value="resultNode" />
+      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    </node>
     <node concept="1TJgyi" id="6gY6GEDvQYT" role="1TKVEl">
       <property role="IQ2nx" value="7223240310078271417" />
       <property role="TrG5h" value="result" />
@@ -164,6 +174,12 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="6gY6GEDvQYS" resolve="ResultEntry" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="5N7gA6ZnO4y">
+    <property role="EcuMT" value="6685385159444742434" />
+    <property role="TrG5h" value="CheckingFunctionWithReference" />
+    <property role="34LRSv" value="checking function with node reference" />
+    <ref role="1TJDcQ" node="2dSiT1hKTOi" resolve="CheckingFunction" />
   </node>
 </model>
 

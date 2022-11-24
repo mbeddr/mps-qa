@@ -149,9 +149,6 @@
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
-      <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
-        <child id="1151688676805" name="elementType" index="_ZDj9" />
-      </concept>
       <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
         <child id="1153944400369" name="variable" index="2Gsz3X" />
         <child id="1153944424730" name="inputSequence" index="2GsD0m" />
@@ -160,11 +157,15 @@
       <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
-      <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
-        <child id="1237721435807" name="elementType" index="HW$YZ" />
-      </concept>
-      <concept id="1227008614712" name="jetbrains.mps.baseLanguage.collections.structure.LinkedListCreator" flags="nn" index="2Jqq0_" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
+      <concept id="1197683403723" name="jetbrains.mps.baseLanguage.collections.structure.MapType" flags="in" index="3rvAFt">
+        <child id="1197683466920" name="keyType" index="3rvQeY" />
+        <child id="1197683475734" name="valueType" index="3rvSg0" />
+      </concept>
+      <concept id="1197686869805" name="jetbrains.mps.baseLanguage.collections.structure.HashMapCreator" flags="nn" index="3rGOSV">
+        <child id="1197687026896" name="keyType" index="3rHrn6" />
+        <child id="1197687035757" name="valueType" index="3rHtpV" />
+      </concept>
       <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
     </language>
   </registry>
@@ -175,9 +176,6 @@
       <node concept="3cpWs8" id="6gY6GEDxZdK" role="3cqZAp">
         <node concept="3cpWsn" id="6gY6GEDxZdL" role="3cpWs9">
           <property role="TrG5h" value="resultsFromCheck" />
-          <node concept="_YKpA" id="6gY6GEDxQON" role="1tU5fm">
-            <node concept="17QB3L" id="6gY6GEDxQOQ" role="_ZDj9" />
-          </node>
           <node concept="2YIFZM" id="6gY6GEDxZdM" role="33vP2m">
             <ref role="37wK5l" node="6gY6GEDvR$Z" resolve="checkScript" />
             <ref role="1Pybhc" node="6gY6GEDvRz4" resolve="CheckingFacade" />
@@ -185,16 +183,21 @@
               <ref role="1YBMHb" node="2dSiT1hL2_K" resolve="checkableScript" />
             </node>
           </node>
+          <node concept="3rvAFt" id="3QoR82YbGAc" role="1tU5fm">
+            <node concept="17QB3L" id="3QoR82YbGAd" role="3rvQeY" />
+            <node concept="3Tqbb2" id="3QoR82YbGAe" role="3rvSg0" />
+          </node>
         </node>
       </node>
       <node concept="3cpWs8" id="2dSiT1hLkDC" role="3cqZAp">
         <node concept="3cpWsn" id="2dSiT1hLkDD" role="3cpWs9">
           <property role="TrG5h" value="results" />
-          <node concept="_YKpA" id="2dSiT1hLlIx" role="1tU5fm">
-            <node concept="17QB3L" id="2dSiT1hLlIy" role="_ZDj9" />
-          </node>
           <node concept="37vLTw" id="6gY6GEDxZdO" role="33vP2m">
             <ref role="3cqZAo" node="6gY6GEDxZdL" resolve="resultsFromCheck" />
+          </node>
+          <node concept="3rvAFt" id="3QoR82YbGHu" role="1tU5fm">
+            <node concept="17QB3L" id="3QoR82YbGHv" role="3rvQeY" />
+            <node concept="3Tqbb2" id="3QoR82YbGHw" role="3rvSg0" />
           </node>
         </node>
       </node>
@@ -329,9 +332,6 @@
       <node concept="3cpWs8" id="6gY6GEDxSHb" role="3cqZAp">
         <node concept="3cpWsn" id="6gY6GEDxSHc" role="3cpWs9">
           <property role="TrG5h" value="resultsFromCheck" />
-          <node concept="_YKpA" id="6gY6GEDxSGH" role="1tU5fm">
-            <node concept="17QB3L" id="6gY6GEDxSGK" role="_ZDj9" />
-          </node>
           <node concept="2YIFZM" id="6gY6GEDxSHd" role="33vP2m">
             <ref role="37wK5l" node="6gY6GEDvSMB" resolve="checkScriptReference" />
             <ref role="1Pybhc" node="6gY6GEDvRz4" resolve="CheckingFacade" />
@@ -339,16 +339,21 @@
               <ref role="1YBMHb" node="3ibIDIkmjX4" resolve="reuseCheckableScript" />
             </node>
           </node>
+          <node concept="3rvAFt" id="3QoR82YdFYj" role="1tU5fm">
+            <node concept="17QB3L" id="3QoR82YdFYk" role="3rvQeY" />
+            <node concept="3Tqbb2" id="3QoR82YdFYl" role="3rvSg0" />
+          </node>
         </node>
       </node>
       <node concept="3cpWs8" id="6gY6GEDxQPl" role="3cqZAp">
         <node concept="3cpWsn" id="6gY6GEDxQPm" role="3cpWs9">
           <property role="TrG5h" value="results" />
-          <node concept="_YKpA" id="6gY6GEDxQPn" role="1tU5fm">
-            <node concept="17QB3L" id="6gY6GEDxQPo" role="_ZDj9" />
-          </node>
           <node concept="37vLTw" id="6gY6GEDxTuH" role="33vP2m">
             <ref role="3cqZAo" node="6gY6GEDxSHc" resolve="resultsFromCheck" />
+          </node>
+          <node concept="3rvAFt" id="3QoR82YdGq8" role="1tU5fm">
+            <node concept="17QB3L" id="3QoR82YdGq9" role="3rvQeY" />
+            <node concept="3Tqbb2" id="3QoR82YdGqa" role="3rvSg0" />
           </node>
         </node>
       </node>
@@ -607,37 +612,39 @@
                 </node>
               </node>
             </node>
-            <node concept="3cpWs6" id="6gY6GEDvS5n" role="3cqZAp">
-              <node concept="2YIFZM" id="6gY6GEDvRAA" role="3cqZAk">
+            <node concept="3cpWs6" id="5$32d6GuHWd" role="3cqZAp">
+              <node concept="2YIFZM" id="5$32d6GuHWe" role="3cqZAk">
                 <ref role="1Pybhc" to="qqy:y1G8y6adzS" resolve="CheckingUtil" />
                 <ref role="37wK5l" to="qqy:y1G8y6ad_x" resolve="check" />
-                <node concept="37vLTw" id="6gY6GEDvScf" role="37wK5m">
+                <node concept="37vLTw" id="5$32d6GuHWf" role="37wK5m">
                   <ref role="3cqZAo" node="6gY6GEDvR_$" resolve="cs" />
                 </node>
-                <node concept="37vLTw" id="6gY6GEDvRAC" role="37wK5m">
+                <node concept="37vLTw" id="5$32d6GuHWg" role="37wK5m">
                   <ref role="3cqZAo" node="6gY6GEDvRAu" resolve="proj" />
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="6gY6GEDvSfS" role="3cqZAp">
-          <node concept="2ShNRf" id="6gY6GEDvSfO" role="3clFbG">
-            <node concept="2Jqq0_" id="6gY6GEDvSvc" role="2ShVmc">
-              <node concept="17QB3L" id="6gY6GEDvSIe" role="HW$YZ" />
+        <node concept="3cpWs6" id="3QoR82Yblk9" role="3cqZAp">
+          <node concept="2ShNRf" id="3QoR82YblnZ" role="3cqZAk">
+            <node concept="3rGOSV" id="3QoR82YblnC" role="2ShVmc">
+              <node concept="17QB3L" id="3QoR82YblnD" role="3rHrn6" />
+              <node concept="3Tqbb2" id="3QoR82YblnE" role="3rHtpV" />
             </node>
           </node>
         </node>
       </node>
       <node concept="3Tm1VV" id="6gY6GEDvR$l" role="1B3o_S" />
-      <node concept="_YKpA" id="6gY6GEDvR$J" role="3clF45">
-        <node concept="17QB3L" id="6gY6GEDvR$W" role="_ZDj9" />
-      </node>
       <node concept="37vLTG" id="6gY6GEDvR_$" role="3clF46">
         <property role="TrG5h" value="cs" />
         <node concept="3Tqbb2" id="6gY6GEDvR_z" role="1tU5fm">
           <ref role="ehGHo" to="a1af:2dSiT1hKD8P" resolve="CheckableScript" />
         </node>
+      </node>
+      <node concept="3rvAFt" id="3QoR82YaUNp" role="3clF45">
+        <node concept="17QB3L" id="3QoR82YaUNq" role="3rvQeY" />
+        <node concept="3Tqbb2" id="3QoR82YaUNr" role="3rvSg0" />
       </node>
     </node>
     <node concept="2tJIrI" id="6gY6GEDvSQF" role="jymVt" />
@@ -696,23 +703,25 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="6gY6GEDvSMT" role="3cqZAp">
-          <node concept="2ShNRf" id="6gY6GEDvSMU" role="3clFbG">
-            <node concept="2Jqq0_" id="6gY6GEDvSMV" role="2ShVmc">
-              <node concept="17QB3L" id="6gY6GEDvSMW" role="HW$YZ" />
+        <node concept="3cpWs6" id="3QoR82Yblqx" role="3cqZAp">
+          <node concept="2ShNRf" id="3QoR82Yblqy" role="3cqZAk">
+            <node concept="3rGOSV" id="3QoR82Yblqz" role="2ShVmc">
+              <node concept="17QB3L" id="3QoR82Yblq$" role="3rHrn6" />
+              <node concept="3Tqbb2" id="3QoR82Yblq_" role="3rHtpV" />
             </node>
           </node>
         </node>
       </node>
       <node concept="3Tm1VV" id="6gY6GEDvSMX" role="1B3o_S" />
-      <node concept="_YKpA" id="6gY6GEDvSMY" role="3clF45">
-        <node concept="17QB3L" id="6gY6GEDvSMZ" role="_ZDj9" />
-      </node>
       <node concept="37vLTG" id="6gY6GEDvSN0" role="3clF46">
         <property role="TrG5h" value="rcs" />
         <node concept="3Tqbb2" id="6gY6GEDvSN1" role="1tU5fm">
           <ref role="ehGHo" to="a1af:3ibIDIklSMn" resolve="ReuseCheckableScript" />
         </node>
+      </node>
+      <node concept="3rvAFt" id="3QoR82YblzY" role="3clF45">
+        <node concept="17QB3L" id="3QoR82YblzZ" role="3rvQeY" />
+        <node concept="3Tqbb2" id="3QoR82Ybl$0" role="3rvSg0" />
       </node>
     </node>
     <node concept="2tJIrI" id="6gY6GEDvSKA" role="jymVt" />
