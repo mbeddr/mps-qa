@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:654c665e-d426-4acf-8be1-49f83baabbb4(org.mpsqa.lint.generic.behavior)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
@@ -448,8 +449,8 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs6" id="3QoR82Yd1u9" role="3cqZAp">
-          <node concept="37vLTw" id="3QoR82Yd1wo" role="3cqZAk">
+        <node concept="3cpWs6" id="2jljQR4zMOC" role="3cqZAp">
+          <node concept="37vLTw" id="2jljQR4zMRj" role="3cqZAk">
             <ref role="3cqZAo" node="6gY6GEDxe0Z" resolve="violations" />
           </node>
         </node>

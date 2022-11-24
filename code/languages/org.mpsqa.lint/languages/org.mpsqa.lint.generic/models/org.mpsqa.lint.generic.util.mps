@@ -2,7 +2,6 @@
 <model ref="r:baac1a2f-1e52-45fa-95c5-02a3dfae441c(org.mpsqa.lint.generic.util)">
   <persistence version="9" />
   <languages>
-    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -13,8 +12,8 @@
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="a1af" ref="r:839ac015-7de1-49f3-ac8f-8d7c6d47259d(org.mpsqa.lint.generic.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="a1af" ref="r:839ac015-7de1-49f3-ac8f-8d7c6d47259d(org.mpsqa.lint.generic.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -103,6 +102,8 @@
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
+      <concept id="1068581242867" name="jetbrains.mps.baseLanguage.structure.LongType" flags="in" index="3cpWsb" />
+      <concept id="1068581242869" name="jetbrains.mps.baseLanguage.structure.MinusExpression" flags="nn" index="3cpWsd" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
@@ -153,6 +154,12 @@
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
+      </concept>
+    </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
+        <property id="6332851714983843871" name="severity" index="2xdLsb" />
+        <child id="5721587534047265374" name="message" index="9lYJi" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -267,15 +274,76 @@
             </node>
           </node>
           <node concept="3clFbS" id="2dSiT1hQr4w" role="1zxBo7">
+            <node concept="3cpWs8" id="4aEqBbbDeMc" role="3cqZAp">
+              <node concept="3cpWsn" id="4aEqBbbDeMf" role="3cpWs9">
+                <property role="TrG5h" value="initialTime" />
+                <node concept="3cpWsb" id="4aEqBbbDeMa" role="1tU5fm" />
+                <node concept="2YIFZM" id="4aEqBbbDhcv" role="33vP2m">
+                  <ref role="37wK5l" to="wyt6:~System.currentTimeMillis()" resolve="currentTimeMillis" />
+                  <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="4aEqBbbDeCo" role="3cqZAp">
+              <node concept="3cpWsn" id="4aEqBbbDeCp" role="3cpWs9">
+                <property role="TrG5h" value="doCheck" />
+                <node concept="1rXfSq" id="4aEqBbbDeCq" role="33vP2m">
+                  <ref role="37wK5l" node="2dSiT1hQole" resolve="doCheck" />
+                  <node concept="37vLTw" id="4aEqBbbDeCr" role="37wK5m">
+                    <ref role="3cqZAo" node="y1G8y6ad_X" resolve="mcc" />
+                  </node>
+                  <node concept="37vLTw" id="4aEqBbbDeCs" role="37wK5m">
+                    <ref role="3cqZAo" node="6gY6GEDtKzD" resolve="proj" />
+                  </node>
+                </node>
+                <node concept="3rvAFt" id="2jljQR4$8yE" role="1tU5fm">
+                  <node concept="17QB3L" id="2jljQR4$8yF" role="3rvQeY" />
+                  <node concept="3Tqbb2" id="2jljQR4$8yG" role="3rvSg0" />
+                </node>
+              </node>
+            </node>
+            <node concept="2xdQw9" id="4aEqBbbDfeq" role="3cqZAp">
+              <property role="2xdLsb" value="h1akgim/info" />
+              <node concept="3cpWs3" id="4aEqBbbDicJ" role="9lYJi">
+                <node concept="Xl_RD" id="4aEqBbbDiiZ" role="3uHU7w">
+                  <property role="Xl_RC" value=" ms" />
+                </node>
+                <node concept="3cpWs3" id="4aEqBbbDgTG" role="3uHU7B">
+                  <node concept="3cpWs3" id="4aEqBbbDgrW" role="3uHU7B">
+                    <node concept="3cpWs3" id="4aEqBbbDfJJ" role="3uHU7B">
+                      <node concept="Xl_RD" id="4aEqBbbDfes" role="3uHU7B">
+                        <property role="Xl_RC" value="'" />
+                      </node>
+                      <node concept="2OqwBi" id="4aEqBbbDg4q" role="3uHU7w">
+                        <node concept="37vLTw" id="4aEqBbbDfNX" role="2Oq$k0">
+                          <ref role="3cqZAo" node="y1G8y6ad_X" resolve="mcc" />
+                        </node>
+                        <node concept="3TrcHB" id="4aEqBbbDgkP" role="2OqNvi">
+                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="Xl_RD" id="4aEqBbbDgwQ" role="3uHU7w">
+                      <property role="Xl_RC" value="' execution time: " />
+                    </node>
+                  </node>
+                  <node concept="1eOMI4" id="4aEqBbbDgZ2" role="3uHU7w">
+                    <node concept="3cpWsd" id="4aEqBbbDi1p" role="1eOMHV">
+                      <node concept="37vLTw" id="4aEqBbbDi6K" role="3uHU7w">
+                        <ref role="3cqZAo" node="4aEqBbbDeMf" resolve="initialTime" />
+                      </node>
+                      <node concept="2YIFZM" id="4aEqBbbDhof" role="3uHU7B">
+                        <ref role="37wK5l" to="wyt6:~System.currentTimeMillis()" resolve="currentTimeMillis" />
+                        <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3cpWs6" id="2dSiT1hQr4x" role="3cqZAp">
-              <node concept="1rXfSq" id="2dSiT1hQr4y" role="3cqZAk">
-                <ref role="37wK5l" node="2dSiT1hQole" resolve="doCheck" />
-                <node concept="37vLTw" id="2dSiT1hQr4z" role="37wK5m">
-                  <ref role="3cqZAo" node="y1G8y6ad_X" resolve="mcc" />
-                </node>
-                <node concept="37vLTw" id="6gY6GEDtKHa" role="37wK5m">
-                  <ref role="3cqZAo" node="6gY6GEDtKzD" resolve="proj" />
-                </node>
+              <node concept="37vLTw" id="4aEqBbbDeCt" role="3cqZAk">
+                <ref role="3cqZAo" node="4aEqBbbDeCp" resolve="doCheck" />
               </node>
             </node>
           </node>
@@ -719,7 +787,7 @@
                   <node concept="liA8E" id="2dSiT1hPky0" role="2OqNvi">
                     <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String)" resolve="replaceAll" />
                     <node concept="Xl_RD" id="2dSiT1hPk$T" role="37wK5m">
-                      <property role="Xl_RC" value="." />
+                      <property role="Xl_RC" value="\\." />
                     </node>
                     <node concept="Xl_RD" id="2dSiT1hPkHa" role="37wK5m">
                       <property role="Xl_RC" value="_" />

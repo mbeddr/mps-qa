@@ -308,11 +308,6 @@
         <node concept="1yeLz9" id="3ywQ_KXEkYf" role="1TViLv">
           <property role="TrG5h" value="org.mpsqa.lint.generic.generator" />
           <property role="3LESm3" value="63d1f8cf-e65e-4d00-bcfa-f196ad4419ca" />
-          <node concept="1SiIV0" id="3ywQ_KXEkYg" role="3bR37C">
-            <node concept="3bR9La" id="3ywQ_KXEkYh" role="1SiIV1">
-              <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
-            </node>
-          </node>
           <node concept="1SiIV0" id="3ywQ_KXEkYi" role="3bR37C">
             <node concept="3bR9La" id="3ywQ_KXEkYj" role="1SiIV1">
               <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
@@ -406,6 +401,80 @@
         <node concept="1SiIV0" id="6gY6GED$S$5" role="3bR37C">
           <node concept="3bR9La" id="6gY6GED$S$6" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3$9W3co6GAc" role="3bR37C">
+          <node concept="3bR9La" id="3$9W3co6GAd" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtA" id="51obkXDz7OB" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="org.mpsqa.lint.mps_lang.linters_library" />
+        <property role="3LESm3" value="12a40499-ed72-4b23-9437-358c4217c97b" />
+        <node concept="398BVA" id="51obkXDz7PK" role="3LF7KH">
+          <ref role="398BVh" node="3dqUbgQmcyv" resolve="mpsqa.lint.home" />
+          <node concept="2Ry0Ak" id="51obkXDz7PQ" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="51obkXDz7PV" role="2Ry0An">
+              <property role="2Ry0Am" value="org.mpsqa.lint.mps_lang.linters_library" />
+              <node concept="2Ry0Ak" id="51obkXDz7Q0" role="2Ry0An">
+                <property role="2Ry0Am" value="org.mpsqa.lint.mps_lang.linters_library.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="51obkXDz7Q_" role="3bR37C">
+          <node concept="3bR9La" id="51obkXDz7QA" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="51obkXDz7QB" role="3bR37C">
+          <node concept="3bR9La" id="51obkXDz7QC" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="51obkXDz7QD" role="3bR37C">
+          <node concept="3bR9La" id="51obkXDz7QE" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="51obkXDz7QF" role="3bR37C">
+          <node concept="3bR9La" id="51obkXDz7QG" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L9O" resolve="jetbrains.mps.lang.smodel" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="51obkXDz7QH" role="3bR37C">
+          <node concept="3bR9La" id="51obkXDz7QI" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L4p" resolve="jetbrains.mps.lang.behavior" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="51obkXDz7QU" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="51obkXDz7QV" role="1HemKq">
+            <node concept="398BVA" id="51obkXDz7QJ" role="3LXTmr">
+              <ref role="398BVh" node="3dqUbgQmcyv" resolve="mpsqa.lint.home" />
+              <node concept="2Ry0Ak" id="51obkXDz7QK" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="51obkXDz7QL" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.lint.mps_lang.linters_library" />
+                  <node concept="2Ry0Ak" id="51obkXDz7QM" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="51obkXDz7QW" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4aEqBbbvhbu" role="3bR37C">
+          <node concept="3bR9La" id="4aEqBbbvhbv" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L6C" resolve="jetbrains.mps.lang.generator" />
           </node>
         </node>
       </node>

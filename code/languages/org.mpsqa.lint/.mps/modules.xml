@@ -5,6 +5,7 @@
       <modulePath path="$PROJECT_DIR$/languages/org.mpsqa.lint.generic/org.mpsqa.lint.generic.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.lint.generic.linters_library/org.mpsqa.lint.generic.linters_library.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.lint.generic.sandbox/org.mpsqa.lint.generic.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.lint.mps_lang.linters_library/org.mpsqa.lint.mps_lang.linters_library.msd" folder="" />
     </projectModules>
   </component>
 </project>
