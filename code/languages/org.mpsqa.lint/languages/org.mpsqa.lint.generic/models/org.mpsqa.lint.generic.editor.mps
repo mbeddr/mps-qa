@@ -9,6 +9,7 @@
   <imports>
     <import index="kqrb" ref="r:608506d3-3472-4b1d-929c-779e49cabb27(org.mpsqa.lint.generic.typesystem)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
+    <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
     <import index="a1af" ref="r:839ac015-7de1-49f3-ac8f-8d7c6d47259d(org.mpsqa.lint.generic.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="b659" ref="r:654c665e-d426-4acf-8be1-49f83baabbb4(org.mpsqa.lint.generic.behavior)" implicit="true" />
@@ -157,6 +158,10 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
+      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
+        <reference id="1107535924139" name="classifier" index="3uigEE" />
+        <child id="1109201940907" name="parameter" index="11_B2D" />
+      </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
@@ -201,12 +206,11 @@
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
+        <child id="1151688676805" name="elementType" index="_ZDj9" />
+      </concept>
       <concept id="1227022210526" name="jetbrains.mps.baseLanguage.collections.structure.ClearAllElementsOperation" flags="nn" index="2Kehj3" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
-      <concept id="1197683403723" name="jetbrains.mps.baseLanguage.collections.structure.MapType" flags="in" index="3rvAFt">
-        <child id="1197683466920" name="keyType" index="3rvQeY" />
-        <child id="1197683475734" name="valueType" index="3rvSg0" />
-      </concept>
       <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
     </language>
   </registry>
@@ -386,9 +390,12 @@
                         <ref role="1M0zk5" node="6gY6GEDw2YP" resolve="cs" />
                       </node>
                     </node>
-                    <node concept="3rvAFt" id="3QoR82Ye2PT" role="1tU5fm">
-                      <node concept="17QB3L" id="3QoR82Ye2PU" role="3rvQeY" />
-                      <node concept="3Tqbb2" id="3QoR82Ye2PV" role="3rvSg0" />
+                    <node concept="_YKpA" id="7Jrb4Zs_P33" role="1tU5fm">
+                      <node concept="3uibUv" id="7Jrb4Zs_P34" role="_ZDj9">
+                        <ref role="3uigEE" to="zn9m:~Pair" resolve="Pair" />
+                        <node concept="17QB3L" id="7Jrb4Zs_P35" role="11_B2D" />
+                        <node concept="3Tqbb2" id="7Jrb4Zs_P36" role="11_B2D" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -423,9 +430,12 @@
                         <ref role="1M0zk5" node="6gY6GEDwKFc" resolve="rcs" />
                       </node>
                     </node>
-                    <node concept="3rvAFt" id="3QoR82YaUNp" role="1tU5fm">
-                      <node concept="17QB3L" id="3QoR82YaUNq" role="3rvQeY" />
-                      <node concept="3Tqbb2" id="3QoR82YaUNr" role="3rvSg0" />
+                    <node concept="_YKpA" id="7Jrb4ZsyOoJ" role="1tU5fm">
+                      <node concept="3uibUv" id="7Jrb4ZsyOoK" role="_ZDj9">
+                        <ref role="3uigEE" to="zn9m:~Pair" resolve="Pair" />
+                        <node concept="17QB3L" id="7Jrb4ZsyOoL" role="11_B2D" />
+                        <node concept="3Tqbb2" id="7Jrb4ZsyOoM" role="11_B2D" />
+                      </node>
                     </node>
                   </node>
                 </node>
