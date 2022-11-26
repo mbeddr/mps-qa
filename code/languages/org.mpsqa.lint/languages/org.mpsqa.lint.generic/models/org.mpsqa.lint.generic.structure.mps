@@ -147,14 +147,19 @@
     <property role="TrG5h" value="ResultEntry" />
     <property role="3GE5qa" value="previous_results" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="5N7gA6ZnK1S" role="1TKVEi">
-      <property role="IQ2ns" value="6685385159444725880" />
-      <property role="20kJfa" value="resultNode" />
-      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    </node>
     <node concept="1TJgyi" id="6gY6GEDvQYT" role="1TKVEl">
       <property role="IQ2nx" value="7223240310078271417" />
       <property role="TrG5h" value="result" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="78RogMCGEW7" role="1TKVEl">
+      <property role="IQ2nx" value="8230153551040655111" />
+      <property role="TrG5h" value="resultNodeModelId" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="78RogMCGEUf" role="1TKVEl">
+      <property role="IQ2nx" value="8230153551040654991" />
+      <property role="TrG5h" value="resultNodeId" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
