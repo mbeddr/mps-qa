@@ -175,11 +175,5 @@
       <ref role="20lvS9" node="6gY6GEDvQYS" resolve="ResultEntry" />
     </node>
   </node>
-  <node concept="1TIwiD" id="5N7gA6ZnO4y">
-    <property role="EcuMT" value="6685385159444742434" />
-    <property role="TrG5h" value="CheckingFunctionWithReference" />
-    <property role="34LRSv" value="checking function with node reference" />
-    <ref role="1TJDcQ" node="2dSiT1hKTOi" resolve="CheckingFunction" />
-  </node>
 </model>
 

@@ -32,6 +32,9 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1197029447546" name="jetbrains.mps.baseLanguage.structure.FieldReferenceOperation" flags="nn" index="2OwXpG">
+        <reference id="1197029500499" name="fieldDeclaration" index="2Oxat5" />
+      </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
@@ -251,15 +254,25 @@
         <node concept="3clFbS" id="6gY6GEDv4vD" role="2LFqv$">
           <node concept="2MkqsV" id="6gY6GEDv4vE" role="3cqZAp">
             <node concept="3cpWs3" id="6gY6GEDv4vF" role="2MkJ7o">
-              <node concept="2GrUjf" id="6gY6GEDv4vG" role="3uHU7w">
-                <ref role="2Gs0qQ" node="6gY6GEDv4vB" resolve="res" />
+              <node concept="2OqwBi" id="78RogMCFqzG" role="3uHU7w">
+                <node concept="2GrUjf" id="6gY6GEDv4vG" role="2Oq$k0">
+                  <ref role="2Gs0qQ" node="6gY6GEDv4vB" resolve="res" />
+                </node>
+                <node concept="2OwXpG" id="78RogMCFr36" role="2OqNvi">
+                  <ref role="2Oxat5" to="zn9m:~Pair.first" resolve="first" />
+                </node>
               </node>
               <node concept="Xl_RD" id="6gY6GEDv4vH" role="3uHU7B">
                 <property role="Xl_RC" value="errors found: " />
               </node>
             </node>
-            <node concept="1YBJjd" id="6gY6GEDv4vI" role="1urrMF">
-              <ref role="1YBMHb" node="2dSiT1hL2_K" resolve="checkableScript" />
+            <node concept="2OqwBi" id="78RogMCFrUl" role="1urrMF">
+              <node concept="2GrUjf" id="78RogMCFrlg" role="2Oq$k0">
+                <ref role="2Gs0qQ" node="6gY6GEDv4vB" resolve="res" />
+              </node>
+              <node concept="2OwXpG" id="78RogMCFsqw" role="2OqNvi">
+                <ref role="2Oxat5" to="zn9m:~Pair.second" resolve="second" />
+              </node>
             </node>
           </node>
         </node>
@@ -413,15 +426,25 @@
         <node concept="3clFbS" id="6gY6GEDv42v" role="2LFqv$">
           <node concept="2MkqsV" id="3ibIDIkmkcp" role="3cqZAp">
             <node concept="3cpWs3" id="3ibIDIkmkcq" role="2MkJ7o">
-              <node concept="2GrUjf" id="6gY6GEDv4mE" role="3uHU7w">
-                <ref role="2Gs0qQ" node="6gY6GEDv42r" resolve="res" />
+              <node concept="2OqwBi" id="78RogMCFt1P" role="3uHU7w">
+                <node concept="2GrUjf" id="6gY6GEDv4mE" role="2Oq$k0">
+                  <ref role="2Gs0qQ" node="6gY6GEDv42r" resolve="res" />
+                </node>
+                <node concept="2OwXpG" id="78RogMCFtxu" role="2OqNvi">
+                  <ref role="2Oxat5" to="zn9m:~Pair.first" resolve="first" />
+                </node>
               </node>
               <node concept="Xl_RD" id="3ibIDIkmkcs" role="3uHU7B">
                 <property role="Xl_RC" value="errors found: " />
               </node>
             </node>
-            <node concept="1YBJjd" id="3ibIDIkmkct" role="1urrMF">
-              <ref role="1YBMHb" node="3ibIDIkmjX4" resolve="reuseCheckableScript" />
+            <node concept="2OqwBi" id="78RogMCFua3" role="1urrMF">
+              <node concept="2GrUjf" id="78RogMCFtVd" role="2Oq$k0">
+                <ref role="2Gs0qQ" node="6gY6GEDv42r" resolve="res" />
+              </node>
+              <node concept="2OwXpG" id="78RogMCFuEe" role="2OqNvi">
+                <ref role="2Oxat5" to="zn9m:~Pair.second" resolve="second" />
+              </node>
             </node>
           </node>
         </node>
