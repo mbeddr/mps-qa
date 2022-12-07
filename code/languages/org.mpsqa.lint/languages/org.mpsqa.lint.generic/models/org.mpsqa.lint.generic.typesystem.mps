@@ -15,7 +15,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
     <import index="b659" ref="r:654c665e-d426-4acf-8be1-49f83baabbb4(org.mpsqa.lint.generic.behavior)" />
-    <import index="a1af" ref="r:839ac015-7de1-49f3-ac8f-8d7c6d47259d(org.mpsqa.lint.generic.structure)" implicit="true" />
+    <import index="a1af" ref="r:839ac015-7de1-49f3-ac8f-8d7c6d47259d(org.mpsqa.lint.generic.structure)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -683,6 +683,9 @@
                 <node concept="37vLTw" id="5$32d6GuHWg" role="37wK5m">
                   <ref role="3cqZAo" node="6gY6GEDvRAu" resolve="proj" />
                 </node>
+                <node concept="37vLTw" id="38klfj4HbDt" role="37wK5m">
+                  <ref role="3cqZAo" node="6gY6GEDvR_$" resolve="cs" />
+                </node>
               </node>
             </node>
           </node>
@@ -765,6 +768,9 @@
                 </node>
                 <node concept="37vLTw" id="6gY6GEDvTJ7" role="37wK5m">
                   <ref role="3cqZAo" node="6gY6GEDvTIV" resolve="proj" />
+                </node>
+                <node concept="37vLTw" id="38klfj4HcjI" role="37wK5m">
+                  <ref role="3cqZAo" node="6gY6GEDvSN0" resolve="rcs" />
                 </node>
               </node>
             </node>
