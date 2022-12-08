@@ -4,8 +4,6 @@ name: MPS-QA_CI
 on: [push, pull_request]
 
 env:
-  MPS_VER: "2020.3"
-  GITHUB_ACTOR: ${{ github.actor }}
   GITHUB_TOKEN: ${{ secrets.MPSQA_GITHUB_PKG_REGISTRY }}
 
 jobs:
@@ -17,10 +15,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Set up Gradle
-      run: |
-        chmod +x ./gradlew
-        
     - name: Setup headless environment
       run: |
         Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
@@ -30,17 +24,6 @@ jobs:
       with:
         java-version: 11  
         
-#    - name: Build MPS-QA
-#      uses: gradle/gradle-build-action@v1.3.3
-#      with: 
-#        arguments: build_allInOne_package -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
-#        wrapper-cache-enabled: true
-#        dependencies-cache-enabled: true
-#        dependencies-cache-key: gradle/dependency-locks/**
-#        dependencies-cache-exact: true
-#        configuration-cache-enabled: true
-#        gradle-executable: /home/runner/work/mps-qa/mps-qa/gradlew
-
     - name: Build MPS-QA and Publish to Github Maven
       uses: gradle/gradle-build-action@v1.3.3
       with: 
@@ -50,7 +33,6 @@ jobs:
         dependencies-cache-key: gradle/dependency-locks/**
         dependencies-cache-exact: true
         configuration-cache-enabled: true
-        gradle-executable: /home/runner/work/mps-qa/mps-qa/gradlew
 
     - name: Archive distribution
       uses: actions/upload-artifact@v2
