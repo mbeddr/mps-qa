@@ -30,7 +30,7 @@
     <language id="6c101563-ba1f-458d-b298-a75634941e0c" name="org.mpsqa.arch">
       <concept id="7834852478394622225" name="org.mpsqa.arch.structure.ModuleComponent" flags="ng" index="mXxR0">
         <child id="7834852478394622226" name="module" index="mXxR3" />
-        <child id="1681028404306313079" name="dependendsOn" index="1Rkc$q" />
+        <child id="1681028404306313079" name="dependsOn" index="1Rkc$q" />
       </concept>
       <concept id="7834852478394604726" name="org.mpsqa.arch.structure.ComponentDependency" flags="ng" index="mXA1B">
         <child id="7834852478394761713" name="dependsOn" index="mXvOw" />
