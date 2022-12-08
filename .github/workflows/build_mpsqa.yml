@@ -25,7 +25,7 @@ jobs:
         java-version: 11  
         
     - name: Build MPS-QA and Publish to Github Maven
-      uses: gradle/gradle-build-action@v1.3.3
+      uses: gradle/gradle-build-action@v2
       with: 
         arguments: publish -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
         wrapper-cache-enabled: true
