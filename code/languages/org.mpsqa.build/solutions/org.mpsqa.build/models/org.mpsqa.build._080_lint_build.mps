@@ -364,6 +364,11 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
           </node>
         </node>
+        <node concept="1SiIV0" id="ST9rMmXyC6" role="3bR37C">
+          <node concept="3bR9La" id="ST9rMmXyC7" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6Lh7" resolve="jetbrains.mps.typesystemEngine" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="3ywQ_KXEkYC" role="2G$12L">
         <property role="BnDLt" value="true" />

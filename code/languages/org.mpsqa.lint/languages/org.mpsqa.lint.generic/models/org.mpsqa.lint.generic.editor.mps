@@ -227,6 +227,9 @@
       <node concept="18a60v" id="6gY6GEDxQjQ" role="3EZMnx">
         <node concept="VPM3Z" id="6gY6GEDxQjS" role="3F10Kt" />
       </node>
+      <node concept="PMmxH" id="ST9rMmWucc" role="3EZMnx">
+        <ref role="PMmxG" node="ST9rMmWg4s" resolve="SeverityLevelEditorComponent" />
+      </node>
       <node concept="PMmxH" id="6gY6GEDxQkS" role="3EZMnx">
         <ref role="PMmxG" node="6gY6GEDwP_H" resolve="EnableDeltaChecks" />
       </node>
@@ -331,6 +334,9 @@
           </node>
         </node>
         <node concept="2iRfu4" id="3ibIDIklSNJ" role="2iSdaV" />
+      </node>
+      <node concept="PMmxH" id="ST9rMmWgg8" role="3EZMnx">
+        <ref role="PMmxG" node="ST9rMmWg4s" resolve="SeverityLevelEditorComponent" />
       </node>
       <node concept="PMmxH" id="6gY6GEDxQlu" role="3EZMnx">
         <ref role="PMmxG" node="6gY6GEDwP_H" resolve="EnableDeltaChecks" />
@@ -747,6 +753,21 @@
       <node concept="3F0A7n" id="78RogMCKx0I" role="3EZMnx">
         <ref role="1NtTu8" to="a1af:78RogMCGEUf" resolve="resultNodeId" />
       </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="ST9rMmWg4s">
+    <property role="TrG5h" value="SeverityLevelEditorComponent" />
+    <ref role="1XX52x" to="a1af:ST9rMmWg3T" resolve="ISeverityLevelAwareChecker" />
+    <node concept="3EZMnI" id="ST9rMmWgft" role="2wV5jI">
+      <node concept="VPM3Z" id="ST9rMmWgfu" role="3F10Kt" />
+      <node concept="3XFhqQ" id="ST9rMmWgfv" role="3EZMnx" />
+      <node concept="3F0ifn" id="ST9rMmWgfw" role="3EZMnx">
+        <property role="3F0ifm" value="Report findings as:" />
+      </node>
+      <node concept="3F0A7n" id="ST9rMmWgfx" role="3EZMnx">
+        <ref role="1NtTu8" to="a1af:ST9rMmWgfD" resolve="reportLevel" />
+      </node>
+      <node concept="2iRfu4" id="ST9rMmWgfy" role="2iSdaV" />
     </node>
   </node>
 </model>
