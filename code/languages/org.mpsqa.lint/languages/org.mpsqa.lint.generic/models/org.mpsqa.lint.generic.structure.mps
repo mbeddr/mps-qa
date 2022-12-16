@@ -25,6 +25,16 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="3348158742936976480" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ng" index="25R33">
+        <property id="1421157252384165432" name="memberId" index="3tVfz5" />
+      </concept>
+      <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
+        <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
+        <child id="3348158742936976577" name="members" index="25R1y" />
+      </concept>
+      <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
+        <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -73,6 +83,11 @@
       <property role="IQ2nx" value="6685385159444651026" />
       <property role="TrG5h" value="skipEvaluation" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="1c_Dn$lNzde" role="1TKVEl">
+      <property role="IQ2nx" value="1379690800334385998" />
+      <property role="TrG5h" value="reportLevel" />
+      <ref role="AX2Wp" node="1c_Dn$lNzd5" resolve="EReportSeverityLevel" />
     </node>
     <node concept="1TJgyj" id="2dSiT1hKFVo" role="1TKVEi">
       <property role="IQ2ns" value="2555875871751847640" />
@@ -141,6 +156,11 @@
         </node>
       </node>
     </node>
+    <node concept="1TJgyi" id="1c_Dn$lP6D5" role="1TKVEl">
+      <property role="IQ2nx" value="1379690800334793285" />
+      <property role="TrG5h" value="reportLevel" />
+      <ref role="AX2Wp" node="1c_Dn$lNzd5" resolve="EReportSeverityLevel" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6gY6GEDvQYS">
     <property role="EcuMT" value="7223240310078271416" />
@@ -178,6 +198,23 @@
       <property role="20kJfa" value="violations" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="6gY6GEDvQYS" resolve="ResultEntry" />
+    </node>
+  </node>
+  <node concept="25R3W" id="1c_Dn$lNzd5">
+    <property role="3F6X1D" value="1379690800334385989" />
+    <property role="TrG5h" value="EReportSeverityLevel" />
+    <ref role="1H5jkz" node="1c_Dn$lNzd6" resolve="ERROR" />
+    <node concept="25R33" id="1c_Dn$lNzd6" role="25R1y">
+      <property role="3tVfz5" value="1379690800334385990" />
+      <property role="TrG5h" value="ERROR" />
+    </node>
+    <node concept="25R33" id="1c_Dn$lNzd7" role="25R1y">
+      <property role="3tVfz5" value="1379690800334385991" />
+      <property role="TrG5h" value="WARNING" />
+    </node>
+    <node concept="25R33" id="1c_Dn$lNzda" role="25R1y">
+      <property role="3tVfz5" value="1379690800334385994" />
+      <property role="TrG5h" value="INFO" />
     </node>
   </node>
 </model>

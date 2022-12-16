@@ -227,6 +227,17 @@
       <node concept="18a60v" id="6gY6GEDxQjQ" role="3EZMnx">
         <node concept="VPM3Z" id="6gY6GEDxQjS" role="3F10Kt" />
       </node>
+      <node concept="3EZMnI" id="1c_Dn$lN_pQ" role="3EZMnx">
+        <node concept="VPM3Z" id="1c_Dn$lN_pS" role="3F10Kt" />
+        <node concept="3XFhqQ" id="1c_Dn$lN_s7" role="3EZMnx" />
+        <node concept="3F0ifn" id="1c_Dn$lN_sd" role="3EZMnx">
+          <property role="3F0ifm" value="Report findings as:" />
+        </node>
+        <node concept="3F0A7n" id="1c_Dn$lN_sr" role="3EZMnx">
+          <ref role="1NtTu8" to="a1af:1c_Dn$lNzde" resolve="reportLevel" />
+        </node>
+        <node concept="2iRfu4" id="1c_Dn$lN_pV" role="2iSdaV" />
+      </node>
       <node concept="PMmxH" id="6gY6GEDxQkS" role="3EZMnx">
         <ref role="PMmxG" node="6gY6GEDwP_H" resolve="EnableDeltaChecks" />
       </node>
@@ -331,6 +342,17 @@
           </node>
         </node>
         <node concept="2iRfu4" id="3ibIDIklSNJ" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="1c_Dn$lPNfS" role="3EZMnx">
+        <node concept="VPM3Z" id="1c_Dn$lPNfU" role="3F10Kt" />
+        <node concept="3XFhqQ" id="1c_Dn$lPNgn" role="3EZMnx" />
+        <node concept="3F0ifn" id="1c_Dn$lPNrd" role="3EZMnx">
+          <property role="3F0ifm" value="Report findings as:" />
+        </node>
+        <node concept="3F0A7n" id="1c_Dn$lPNrl" role="3EZMnx">
+          <ref role="1NtTu8" to="a1af:1c_Dn$lP6D5" resolve="reportLevel" />
+        </node>
+        <node concept="2iRfu4" id="1c_Dn$lPNfX" role="2iSdaV" />
       </node>
       <node concept="PMmxH" id="6gY6GEDxQlu" role="3EZMnx">
         <ref role="PMmxG" node="6gY6GEDwP_H" resolve="EnableDeltaChecks" />
