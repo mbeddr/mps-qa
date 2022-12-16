@@ -84,11 +84,6 @@
       <property role="TrG5h" value="skipEvaluation" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
-    <node concept="1TJgyi" id="1c_Dn$lNzde" role="1TKVEl">
-      <property role="IQ2nx" value="1379690800334385998" />
-      <property role="TrG5h" value="reportLevel" />
-      <ref role="AX2Wp" node="1c_Dn$lNzd5" resolve="EReportSeverityLevel" />
-    </node>
     <node concept="1TJgyj" id="2dSiT1hKFVo" role="1TKVEi">
       <property role="IQ2ns" value="2555875871751847640" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -106,6 +101,9 @@
     </node>
     <node concept="PrWs8" id="6gY6GEDxQkP" role="PzmwI">
       <ref role="PrY4T" node="6gY6GEDvQYV" resolve="ILinterResultsContainer" />
+    </node>
+    <node concept="PrWs8" id="ST9rMmWg3Y" role="PzmwI">
+      <ref role="PrY4T" node="ST9rMmWg3T" resolve="ISeverityLevelAwareChecker" />
     </node>
     <node concept="1irR5M" id="2dSiT1hKS3v" role="rwd14">
       <property role="2$rrk2" value="1" />
@@ -147,6 +145,9 @@
     <node concept="PrWs8" id="6gY6GEDxQl8" role="PzmwI">
       <ref role="PrY4T" node="6gY6GEDvQYV" resolve="ILinterResultsContainer" />
     </node>
+    <node concept="PrWs8" id="ST9rMmWg3U" role="PzmwI">
+      <ref role="PrY4T" node="ST9rMmWg3T" resolve="ISeverityLevelAwareChecker" />
+    </node>
     <node concept="1irR5M" id="3ibIDIkmpeS" role="rwd14">
       <property role="2$rrk2" value="2" />
       <node concept="1irPie" id="3ibIDIkmpeW" role="1irR9h">
@@ -155,11 +156,6 @@
           <property role="3PKj8l" value="FF9999" />
         </node>
       </node>
-    </node>
-    <node concept="1TJgyi" id="1c_Dn$lP6D5" role="1TKVEl">
-      <property role="IQ2nx" value="1379690800334793285" />
-      <property role="TrG5h" value="reportLevel" />
-      <ref role="AX2Wp" node="1c_Dn$lNzd5" resolve="EReportSeverityLevel" />
     </node>
   </node>
   <node concept="1TIwiD" id="6gY6GEDvQYS">
@@ -215,6 +211,15 @@
     <node concept="25R33" id="1c_Dn$lNzda" role="25R1y">
       <property role="3tVfz5" value="1379690800334385994" />
       <property role="TrG5h" value="INFO" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="ST9rMmWg3T">
+    <property role="EcuMT" value="1024891882119954681" />
+    <property role="TrG5h" value="ISeverityLevelAwareChecker" />
+    <node concept="1TJgyi" id="ST9rMmWgfD" role="1TKVEl">
+      <property role="IQ2nx" value="1024891882119955433" />
+      <property role="TrG5h" value="reportLevel" />
+      <ref role="AX2Wp" node="1c_Dn$lNzd5" resolve="EReportSeverityLevel" />
     </node>
   </node>
 </model>
