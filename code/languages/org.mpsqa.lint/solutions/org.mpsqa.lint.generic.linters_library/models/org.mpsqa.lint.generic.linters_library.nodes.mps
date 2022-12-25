@@ -27,6 +27,7 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
+    <import index="unno" ref="r:61e3d524-8c49-4491-b5e3-f6d6e9364527(jetbrains.mps.util)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -46,6 +47,9 @@
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -557,6 +561,19 @@
                         </node>
                         <node concept="3clFbJ" id="1WMZ_AZ2ZlO" role="3cqZAp">
                           <node concept="3clFbS" id="1WMZ_AZ2ZlQ" role="3clFbx">
+                            <node concept="3cpWs8" id="1WMZ_AZ3yAd" role="3cqZAp">
+                              <node concept="3cpWsn" id="1WMZ_AZ3yAe" role="3cpWs9">
+                                <property role="TrG5h" value="targetResolveInfo" />
+                                <node concept="17QB3L" id="1WMZ_AZ3yG1" role="1tU5fm" />
+                                <node concept="2YIFZM" id="1WMZ_AZ3yAf" role="33vP2m">
+                                  <ref role="37wK5l" to="unno:5T4fSAVTi9j" resolve="getResolveInfo" />
+                                  <ref role="1Pybhc" to="unno:1NYD3hytmTa" resolve="SNodeOperations" />
+                                  <node concept="37vLTw" id="1WMZ_AZ3yAg" role="37wK5m">
+                                    <ref role="3cqZAo" node="1WMZ_AZ2YNL" resolve="target" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
                             <node concept="3clFbJ" id="1WMZ_AZ30Au" role="3cqZAp">
                               <node concept="3clFbS" id="1WMZ_AZ30Aw" role="3clFbx">
                                 <node concept="3cpWs8" id="1WMZ_AZ30kQ" role="3cqZAp">
@@ -633,18 +650,8 @@
                               </node>
                               <node concept="3fqX7Q" id="1WMZ_AZ31e7" role="3clFbw">
                                 <node concept="2OqwBi" id="1WMZ_AZ31e9" role="3fr31v">
-                                  <node concept="2OqwBi" id="1WMZ_AZ31ea" role="2Oq$k0">
-                                    <node concept="1PxgMI" id="1WMZ_AZ31eb" role="2Oq$k0">
-                                      <node concept="chp4Y" id="1WMZ_AZ31ec" role="3oSUPX">
-                                        <ref role="cht4Q" to="tpck:h0TrEE$" resolve="INamedConcept" />
-                                      </node>
-                                      <node concept="37vLTw" id="1WMZ_AZ31ed" role="1m5AlR">
-                                        <ref role="3cqZAo" node="1WMZ_AZ2YNL" resolve="target" />
-                                      </node>
-                                    </node>
-                                    <node concept="3TrcHB" id="1WMZ_AZ31ee" role="2OqNvi">
-                                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                                    </node>
+                                  <node concept="37vLTw" id="1WMZ_AZ3yOf" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="1WMZ_AZ3yAe" resolve="targetResolveInfo" />
                                   </node>
                                   <node concept="liA8E" id="1WMZ_AZ31ef" role="2OqNvi">
                                     <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
