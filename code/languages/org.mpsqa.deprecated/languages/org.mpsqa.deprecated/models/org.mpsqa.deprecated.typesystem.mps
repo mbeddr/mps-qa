@@ -11,7 +11,7 @@
     <import index="bdtf" ref="r:e88510c3-3006-4599-af71-400329cef2ea(org.mpsqa.deprecated.intentions)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="28m1" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time(JDK/)" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="3idh" ref="r:aa500632-603e-417c-bfa3-e659894cddd2(org.mpsqa.deprecated.structure)" implicit="true" />
@@ -129,6 +129,9 @@
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
+      </concept>
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
@@ -460,6 +463,58 @@
     <node concept="1YaCAy" id="ah8HpWh1JR" role="1YuTPh">
       <property role="TrG5h" value="finder" />
       <ref role="1YaFvo" to="3idh:7LZ1KAVSF$k" resolve="DeprecatedNodesFinder" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="pFzydTDP_p">
+    <property role="TrG5h" value="check_DeprecatedConceptsFinder" />
+    <node concept="3clFbS" id="pFzydTDP_q" role="18ibNy">
+      <node concept="3clFbJ" id="pFzydTDP_r" role="3cqZAp">
+        <node concept="3clFbS" id="pFzydTDP_s" role="3clFbx">
+          <node concept="3cpWs6" id="pFzydTDP_t" role="3cqZAp" />
+        </node>
+        <node concept="3fqX7Q" id="pFzydTDP_u" role="3clFbw">
+          <node concept="2OqwBi" id="pFzydTDP_v" role="3fr31v">
+            <node concept="1YBJjd" id="pFzydTDP_w" role="2Oq$k0">
+              <ref role="1YBMHb" node="pFzydTDP_Z" resolve="deprecatedConceptsFinder" />
+            </node>
+            <node concept="3TrcHB" id="pFzydTDP_x" role="2OqNvi">
+              <ref role="3TsBF5" to="3idh:pFzydTDN9Z" resolve="reportError" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="pFzydTDP_y" role="3cqZAp" />
+      <node concept="2Gpval" id="pFzydTERsh" role="3cqZAp">
+        <node concept="2GrKxI" id="pFzydTERsj" role="2Gsz3X">
+          <property role="TrG5h" value="dnr" />
+        </node>
+        <node concept="2YIFZM" id="pFzydTERwc" role="2GsD0m">
+          <ref role="37wK5l" to="bdtf:pFzydTEDrp" resolve="findDeprecatedConceptsOrLinks" />
+          <ref role="1Pybhc" to="bdtf:pFzydTEDkd" resolve="DeprecatedConceptsOrLinksFinder" />
+          <node concept="1YBJjd" id="pFzydTERyx" role="37wK5m">
+            <ref role="1YBMHb" node="pFzydTDP_Z" resolve="deprecatedConceptsFinder" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="pFzydTERsn" role="2LFqv$">
+          <node concept="2MkqsV" id="pFzydTDSMA" role="3cqZAp">
+            <node concept="Xl_RD" id="pFzydTDSMP" role="2MkJ7o">
+              <property role="Xl_RC" value="Deprecated concept/link found in project" />
+            </node>
+            <node concept="2OqwBi" id="pFzydTGPjz" role="1urrMF">
+              <node concept="2GrUjf" id="pFzydTESlx" role="2Oq$k0">
+                <ref role="2Gs0qQ" node="pFzydTERsj" resolve="dnr" />
+              </node>
+              <node concept="3TrEf2" id="pFzydTGPth" role="2OqNvi">
+                <ref role="3Tt5mk" to="3idh:7LZ1KAVUTVV" resolve="node" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="pFzydTDP_Z" role="1YuTPh">
+      <property role="TrG5h" value="deprecatedConceptsFinder" />
+      <ref role="1YaFvo" to="3idh:pFzydTDN94" resolve="DeprecatedConceptsFinder" />
     </node>
   </node>
 </model>

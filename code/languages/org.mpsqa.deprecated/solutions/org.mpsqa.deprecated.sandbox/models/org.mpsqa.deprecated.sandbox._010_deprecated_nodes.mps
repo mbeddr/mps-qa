@@ -11,6 +11,9 @@
       <concept id="8970896721133615380" name="org.mpsqa.deprecated.structure.DeprecatedNodesFinder" flags="ng" index="37BrSt">
         <property id="8970896721133615381" name="deprecatedBefore" index="37BrSs" />
       </concept>
+      <concept id="462619669751607876" name="org.mpsqa.deprecated.structure.DeprecatedConceptsFinder" flags="ng" index="1ZNbLB">
+        <property id="462619669751607877" name="deprecatedBefore" index="1ZNbLA" />
+      </concept>
     </language>
     <language id="4964867e-90b8-4a58-b13e-6cd7893d620f" name="org.mpsqa.deprecated.example_lan">
       <concept id="3700525904542116822" name="org.mpsqa.deprecated.example_lan.structure.DeprecatedLinkExample" flags="ng" index="51Wdy">
@@ -70,6 +73,11 @@
     <property role="3GE5qa" value="examples" />
     <property role="TrG5h" value="_020_node with deprecated superconcept property _1" />
     <property role="mth13" value="123" />
+  </node>
+  <node concept="1ZNbLB" id="pFzydTE1Y7">
+    <property role="3GE5qa" value="examples" />
+    <property role="TrG5h" value="_000_deprecated_concept_finder" />
+    <property role="1ZNbLA" value="2022-12-26" />
   </node>
 </model>
 
