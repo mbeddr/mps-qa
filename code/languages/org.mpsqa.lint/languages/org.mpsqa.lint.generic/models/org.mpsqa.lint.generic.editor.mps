@@ -16,6 +16,7 @@
     <import index="b659" ref="r:654c665e-d426-4acf-8be1-49f83baabbb4(org.mpsqa.lint.generic.behavior)" />
     <import index="a1af" ref="r:839ac015-7de1-49f3-ac8f-8d7c6d47259d(org.mpsqa.lint.generic.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -72,6 +73,9 @@
       <concept id="7597241200646296619" name="jetbrains.mps.lang.editor.structure.QueryFunction_SNode" flags="in" index="3k4GqP" />
       <concept id="7597241200646296617" name="jetbrains.mps.lang.editor.structure.NavigatableNodeStyleClassItem" flags="ln" index="3k4GqR">
         <child id="7597241200646296618" name="functionNode" index="3k4GqO" />
+      </concept>
+      <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
+        <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
@@ -304,6 +308,9 @@
         </node>
       </node>
       <node concept="3F0ifn" id="2dSiT1hKHl3" role="3EZMnx" />
+      <node concept="PMmxH" id="6HKgezStXZK" role="3EZMnx">
+        <ref role="PMmxG" node="6HKgezStUP2" resolve="AdditionalParametersValuesEditorComponent" />
+      </node>
       <node concept="3F0ifn" id="2dSiT1hKHlE" role="3EZMnx">
         <property role="3F0ifm" value="Logic:" />
       </node>
@@ -312,8 +319,15 @@
       </node>
       <node concept="2iRkQZ" id="2dSiT1hKHk8" role="2iSdaV" />
     </node>
-    <node concept="PMmxH" id="4WO8F5MSKCY" role="6VMZX">
-      <ref role="PMmxG" node="4WO8F5MS$Lz" resolve="FoundViolationsEditor" />
+    <node concept="3EZMnI" id="6HKgezSu3U9" role="6VMZX">
+      <node concept="PMmxH" id="6HKgezSu3Y2" role="3EZMnx">
+        <ref role="PMmxG" node="6HKgezStUQy" resolve="AdditionalParametersDefinitionEditorComponent" />
+      </node>
+      <node concept="3F0ifn" id="6HKgezSu3Y5" role="3EZMnx" />
+      <node concept="2iRkQZ" id="6HKgezSu3Ua" role="2iSdaV" />
+      <node concept="PMmxH" id="4WO8F5MSKCY" role="3EZMnx">
+        <ref role="PMmxG" node="4WO8F5MS$Lz" resolve="FoundViolationsEditor" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="3ibIDIklSNg">
@@ -345,7 +359,7 @@
       <node concept="3EZMnI" id="3ibIDIklTPN" role="3EZMnx">
         <node concept="2iRfu4" id="3ibIDIklTPO" role="2iSdaV" />
         <node concept="3F0ifn" id="3ibIDIklTQ9" role="3EZMnx">
-          <property role="3F0ifm" value="Explanation:" />
+          <property role="3F0ifm" value="Documentation" />
         </node>
         <node concept="1iCGBv" id="3ibIDIklTPt" role="3EZMnx">
           <ref role="1NtTu8" to="a1af:3ibIDIklSMM" resolve="script" />
@@ -367,6 +381,9 @@
         </node>
       </node>
       <node concept="3F0ifn" id="6gY6GEDyTRb" role="3EZMnx" />
+      <node concept="PMmxH" id="pFzydTCfd0" role="3EZMnx">
+        <ref role="PMmxG" node="6HKgezStUP2" resolve="AdditionalParametersValuesEditorComponent" />
+      </node>
       <node concept="18a60v" id="6gY6GEDyO_b" role="3EZMnx">
         <node concept="VPM3Z" id="6gY6GEDyO_d" role="3F10Kt" />
       </node>
@@ -768,6 +785,115 @@
         <ref role="1NtTu8" to="a1af:ST9rMmWgfD" resolve="reportLevel" />
       </node>
       <node concept="2iRfu4" id="ST9rMmWgfy" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6HKgezStPY4">
+    <property role="3GE5qa" value="params" />
+    <ref role="1XX52x" to="a1af:6HKgezStPXU" resolve="CheckableScriptParameterRef" />
+    <node concept="1iCGBv" id="6HKgezStPY9" role="2wV5jI">
+      <ref role="1NtTu8" to="a1af:6HKgezStPXV" resolve="par" />
+      <node concept="1sVBvm" id="6HKgezStPYb" role="1sWHZn">
+        <node concept="3F0A7n" id="6HKgezStPYl" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="6HKgezStUP2">
+    <property role="3GE5qa" value="params" />
+    <property role="TrG5h" value="AdditionalParametersValuesEditorComponent" />
+    <ref role="1XX52x" to="a1af:6HKgezStPXI" resolve="IScriptsParametersAware" />
+    <node concept="3EZMnI" id="6HKgezStUP4" role="2wV5jI">
+      <node concept="3F0ifn" id="6HKgezStUPb" role="3EZMnx">
+        <property role="3F0ifm" value="Parameters values:" />
+      </node>
+      <node concept="3EZMnI" id="6HKgezStUPh" role="3EZMnx">
+        <node concept="VPM3Z" id="6HKgezStUPj" role="3F10Kt" />
+        <node concept="3XFhqQ" id="6HKgezStUPs" role="3EZMnx" />
+        <node concept="3F2HdR" id="6HKgezStUPy" role="3EZMnx">
+          <ref role="1NtTu8" to="a1af:6HKgezStUOR" resolve="parValues" />
+          <node concept="2iRkQZ" id="6HKgezStUP_" role="2czzBx" />
+          <node concept="VPM3Z" id="6HKgezStUPA" role="3F10Kt" />
+        </node>
+        <node concept="2iRfu4" id="6HKgezStUPm" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="pFzydTD6yF" role="3EZMnx" />
+      <node concept="2iRkQZ" id="6HKgezStUP7" role="2iSdaV" />
+      <node concept="pkWqt" id="pFzydTBSRH" role="pqm2j">
+        <node concept="3clFbS" id="pFzydTBSRI" role="2VODD2">
+          <node concept="3clFbF" id="pFzydTBSS5" role="3cqZAp">
+            <node concept="2OqwBi" id="pFzydTBV43" role="3clFbG">
+              <node concept="2OqwBi" id="pFzydTBT7l" role="2Oq$k0">
+                <node concept="pncrf" id="pFzydTCeEa" role="2Oq$k0" />
+                <node concept="2qgKlT" id="pFzydTCeYh" role="2OqNvi">
+                  <ref role="37wK5l" to="b659:pFzydTBO9w" resolve="getParameters" />
+                </node>
+              </node>
+              <node concept="3GX2aA" id="pFzydTBXmR" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6HKgezStUPM">
+    <property role="3GE5qa" value="params" />
+    <ref role="1XX52x" to="a1af:6HKgezStPXR" resolve="ParamValue" />
+    <node concept="3EZMnI" id="6HKgezStUPO" role="2wV5jI">
+      <node concept="3F1sOY" id="6HKgezStUPY" role="3EZMnx">
+        <ref role="1NtTu8" to="a1af:6HKgezStUPV" resolve="paramRef" />
+      </node>
+      <node concept="3F0ifn" id="6HKgezStUQ4" role="3EZMnx">
+        <property role="3F0ifm" value="=" />
+      </node>
+      <node concept="3F1sOY" id="6HKgezStUQi" role="3EZMnx">
+        <ref role="1NtTu8" to="a1af:6HKgezStPXS" resolve="exp" />
+      </node>
+      <node concept="3F0ifn" id="6HKgezStUQs" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+        <ref role="1k5W1q" to="tpen:hFDgi_W" resolve="Semicolon" />
+      </node>
+      <node concept="2iRfu4" id="6HKgezStUPR" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="6HKgezStUQy">
+    <property role="3GE5qa" value="params" />
+    <property role="TrG5h" value="AdditionalParametersDefinitionEditorComponent" />
+    <ref role="1XX52x" to="a1af:2dSiT1hKD8P" resolve="CheckableScript" />
+    <node concept="3EZMnI" id="6HKgezStUQz" role="2wV5jI">
+      <node concept="3F0ifn" id="6HKgezStUQ$" role="3EZMnx">
+        <property role="3F0ifm" value="Parameters:" />
+      </node>
+      <node concept="3EZMnI" id="6HKgezStUQ_" role="3EZMnx">
+        <node concept="VPM3Z" id="6HKgezStUQA" role="3F10Kt" />
+        <node concept="3XFhqQ" id="6HKgezStUQB" role="3EZMnx" />
+        <node concept="3F2HdR" id="6HKgezStUQC" role="3EZMnx">
+          <ref role="1NtTu8" to="a1af:6HKgezStO7e" resolve="additionalParameters" />
+          <node concept="2iRkQZ" id="6HKgezStUQD" role="2czzBx" />
+          <node concept="VPM3Z" id="6HKgezStUQE" role="3F10Kt" />
+        </node>
+        <node concept="2iRfu4" id="6HKgezStUQF" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="pFzydTBSRz" role="3EZMnx" />
+      <node concept="2iRkQZ" id="6HKgezStUQG" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6HKgezSuyXx">
+    <property role="3GE5qa" value="params" />
+    <ref role="1XX52x" to="a1af:6HKgezStO7d" resolve="CheckableScriptParameter" />
+    <node concept="3EZMnI" id="6HKgezSuyXz" role="2wV5jI">
+      <node concept="3F1sOY" id="6HKgezSuyXE" role="3EZMnx">
+        <ref role="1NtTu8" to="a1af:6HKgezStPXG" resolve="tpe" />
+      </node>
+      <node concept="3F0A7n" id="6HKgezSuyXO" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="pFzydTDfVL" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+        <ref role="1k5W1q" to="tpen:hFDgi_W" resolve="Semicolon" />
+      </node>
+      <node concept="2iRfu4" id="6HKgezSuyXA" role="2iSdaV" />
     </node>
   </node>
 </model>

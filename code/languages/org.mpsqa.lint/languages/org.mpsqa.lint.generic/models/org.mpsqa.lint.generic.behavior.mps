@@ -163,6 +163,9 @@
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
+      <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
+        <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
+      </concept>
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
@@ -178,6 +181,9 @@
       </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
+      </concept>
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
@@ -1027,6 +1033,76 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="78RogMCHOcW" role="1B3o_S" />
+  </node>
+  <node concept="13h7C7" id="pFzydTBO9l">
+    <property role="3GE5qa" value="params" />
+    <ref role="13h7C2" to="a1af:6HKgezStPXI" resolve="IScriptsParametersAware" />
+    <node concept="13hLZK" id="pFzydTBO9m" role="13h7CW">
+      <node concept="3clFbS" id="pFzydTBO9n" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="pFzydTBO9w" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getParameters" />
+      <node concept="3Tm1VV" id="pFzydTBO9x" role="1B3o_S" />
+      <node concept="2I9FWS" id="pFzydTBO9K" role="3clF45">
+        <ref role="2I9WkF" to="a1af:6HKgezStO7d" resolve="CheckableScriptParameter" />
+      </node>
+      <node concept="3clFbS" id="pFzydTBO9z" role="3clF47" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="pFzydTBOaz">
+    <ref role="13h7C2" to="a1af:2dSiT1hKD8P" resolve="CheckableScript" />
+    <node concept="13hLZK" id="pFzydTBOa$" role="13h7CW">
+      <node concept="3clFbS" id="pFzydTBOa_" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="pFzydTBOaI" role="13h7CS">
+      <property role="TrG5h" value="getParameters" />
+      <ref role="13i0hy" node="pFzydTBO9w" resolve="getParameters" />
+      <node concept="3Tm1VV" id="pFzydTBOaJ" role="1B3o_S" />
+      <node concept="3clFbS" id="pFzydTBOaM" role="3clF47">
+        <node concept="3clFbF" id="pFzydTBOb1" role="3cqZAp">
+          <node concept="2OqwBi" id="pFzydTBOn5" role="3clFbG">
+            <node concept="13iPFW" id="pFzydTBOb0" role="2Oq$k0" />
+            <node concept="3Tsc0h" id="pFzydTBOzT" role="2OqNvi">
+              <ref role="3TtcxE" to="a1af:6HKgezStO7e" resolve="additionalParameters" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2I9FWS" id="pFzydTBOaN" role="3clF45">
+        <ref role="2I9WkF" to="a1af:6HKgezStO7d" resolve="CheckableScriptParameter" />
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="pFzydTBOIq">
+    <ref role="13h7C2" to="a1af:3ibIDIklSMn" resolve="ReuseCheckableScript" />
+    <node concept="13hLZK" id="pFzydTBOIr" role="13h7CW">
+      <node concept="3clFbS" id="pFzydTBOIs" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="pFzydTBOI_" role="13h7CS">
+      <property role="TrG5h" value="getParameters" />
+      <ref role="13i0hy" node="pFzydTBO9w" resolve="getParameters" />
+      <node concept="3Tm1VV" id="pFzydTBOIA" role="1B3o_S" />
+      <node concept="3clFbS" id="pFzydTBOID" role="3clF47">
+        <node concept="3clFbF" id="pFzydTBOIS" role="3cqZAp">
+          <node concept="2OqwBi" id="pFzydTBPdg" role="3clFbG">
+            <node concept="2OqwBi" id="pFzydTBOUW" role="2Oq$k0">
+              <node concept="13iPFW" id="pFzydTBOIR" role="2Oq$k0" />
+              <node concept="3TrEf2" id="pFzydTBP7K" role="2OqNvi">
+                <ref role="3Tt5mk" to="a1af:3ibIDIklSMM" resolve="script" />
+              </node>
+            </node>
+            <node concept="3Tsc0h" id="pFzydTBPwr" role="2OqNvi">
+              <ref role="3TtcxE" to="a1af:6HKgezStO7e" resolve="additionalParameters" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2I9FWS" id="pFzydTBOIE" role="3clF45">
+        <ref role="2I9WkF" to="a1af:6HKgezStO7d" resolve="CheckableScriptParameter" />
+      </node>
+    </node>
   </node>
 </model>
 

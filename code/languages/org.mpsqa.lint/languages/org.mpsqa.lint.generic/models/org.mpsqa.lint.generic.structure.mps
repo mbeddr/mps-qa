@@ -96,6 +96,13 @@
       <property role="20kJfa" value="checkingClosure" />
       <ref role="20lvS9" node="2dSiT1hKTOi" resolve="CheckingFunction" />
     </node>
+    <node concept="1TJgyj" id="6HKgezStO7e" role="1TKVEi">
+      <property role="IQ2ns" value="7741759128795038158" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="additionalParameters" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6HKgezStO7d" resolve="CheckableScriptParameter" />
+    </node>
     <node concept="PrWs8" id="2dSiT1hKHk1" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -104,6 +111,9 @@
     </node>
     <node concept="PrWs8" id="ST9rMmWg3Y" role="PzmwI">
       <ref role="PrY4T" node="ST9rMmWg3T" resolve="ISeverityLevelAwareChecker" />
+    </node>
+    <node concept="PrWs8" id="6HKgezStPXJ" role="PzmwI">
+      <ref role="PrY4T" node="6HKgezStPXI" resolve="IScriptsParametersAware" />
     </node>
     <node concept="1irR5M" id="2dSiT1hKS3v" role="rwd14">
       <property role="2$rrk2" value="1" />
@@ -147,6 +157,9 @@
     </node>
     <node concept="PrWs8" id="ST9rMmWg3U" role="PzmwI">
       <ref role="PrY4T" node="ST9rMmWg3T" resolve="ISeverityLevelAwareChecker" />
+    </node>
+    <node concept="PrWs8" id="pFzydTBOIl" role="PzmwI">
+      <ref role="PrY4T" node="6HKgezStPXI" resolve="IScriptsParametersAware" />
     </node>
     <node concept="1irR5M" id="3ibIDIkmpeS" role="rwd14">
       <property role="2$rrk2" value="2" />
@@ -220,6 +233,65 @@
       <property role="IQ2nx" value="1024891882119955433" />
       <property role="TrG5h" value="reportLevel" />
       <ref role="AX2Wp" node="1c_Dn$lNzd5" resolve="EReportSeverityLevel" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6HKgezStO7d">
+    <property role="EcuMT" value="7741759128795038157" />
+    <property role="TrG5h" value="CheckableScriptParameter" />
+    <property role="3GE5qa" value="params" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6HKgezStO7i" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="6HKgezStPXG" role="1TKVEi">
+      <property role="IQ2ns" value="7741759128795045740" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="tpe" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="tpee:fz3vP1H" resolve="Type" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6HKgezStPXI">
+    <property role="EcuMT" value="7741759128795045742" />
+    <property role="3GE5qa" value="params" />
+    <property role="TrG5h" value="IScriptsParametersAware" />
+    <node concept="1TJgyj" id="6HKgezStUOR" role="1TKVEi">
+      <property role="IQ2ns" value="7741759128795065655" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="parValues" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6HKgezStPXR" resolve="ParamValue" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6HKgezStPXR">
+    <property role="EcuMT" value="7741759128795045751" />
+    <property role="3GE5qa" value="params" />
+    <property role="TrG5h" value="ParamValue" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6HKgezStPXS" role="1TKVEi">
+      <property role="IQ2ns" value="7741759128795045752" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="exp" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="6HKgezStUPV" role="1TKVEi">
+      <property role="IQ2ns" value="7741759128795065723" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="paramRef" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6HKgezStPXU" resolve="CheckableScriptParameterRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6HKgezStPXU">
+    <property role="EcuMT" value="7741759128795045754" />
+    <property role="3GE5qa" value="params" />
+    <property role="TrG5h" value="CheckableScriptParameterRef" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="6HKgezStPXV" role="1TKVEi">
+      <property role="IQ2ns" value="7741759128795045755" />
+      <property role="20kJfa" value="par" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6HKgezStO7d" resolve="CheckableScriptParameter" />
     </node>
   </node>
 </model>
