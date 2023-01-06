@@ -210,7 +210,7 @@
     </language>
   </registry>
   <node concept="1MIHA_" id="2dSiT1hKT_t">
-    <property role="TrG5h" value="modules_and_file_system_layout_consistencyw" />
+    <property role="TrG5h" value="modules_and_file_system_layout_consistency" />
     <node concept="1MIXq2" id="2dSiT1hL2tl" role="14J5yK">
       <node concept="3clFbS" id="2dSiT1hL2tm" role="2VODD2">
         <node concept="3cpWs8" id="2dSiT1hLwVf" role="3cqZAp">

@@ -214,16 +214,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="6HKgezSvi52" role="3cqZAp" />
-        <node concept="2xdQw9" id="6HKgezSyZxQ" role="3cqZAp">
-          <node concept="3cpWs3" id="6HKgezSz1oq" role="9lYJi">
-            <node concept="2j1LYi" id="6HKgezSz1N1" role="3uHU7w">
-              <ref role="2j1LYj" node="pFzydTBLXy" resolve="sizeInKb" />
-            </node>
-            <node concept="Xl_RD" id="6HKgezSyZxS" role="3uHU7B">
-              <property role="Xl_RC" value="sizeInKb=" />
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="6HKgezSvg6v" role="3cqZAp">
           <node concept="3cpWsn" id="6HKgezSvg6w" role="3cpWs9">
             <property role="TrG5h" value="projectFile" />
