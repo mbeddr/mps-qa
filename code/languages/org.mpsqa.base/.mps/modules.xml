@@ -3,6 +3,7 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.base.lib/org.mpsqa.base.lib.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.base.utils/org.mpsqa.base.utils.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.treemap.lib/org.mpsqa.treemap.lib.msd" folder="" />
     </projectModules>
   </component>
