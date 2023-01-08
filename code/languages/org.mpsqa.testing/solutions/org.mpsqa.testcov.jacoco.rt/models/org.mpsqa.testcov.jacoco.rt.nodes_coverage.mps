@@ -30,6 +30,9 @@
     <import index="hmqo" ref="79c13063-8a7d-4070-aaba-966b36d6e0c4/java:org.apache.commons.io.filefilter(org.mpsqa.base.lib/)" />
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
     <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
+    <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
+    <import index="fa97" ref="r:0ece47ac-49ff-49e3-bfbe-a5dc43a59a38(org.mpsqa.base.utils.notifications)" />
+    <import index="fnpx" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.notification(MPS.IDEA/)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -68,6 +71,10 @@
       </concept>
       <concept id="1197029447546" name="jetbrains.mps.baseLanguage.structure.FieldReferenceOperation" flags="nn" index="2OwXpG">
         <reference id="1197029500499" name="fieldDeclaration" index="2Oxat5" />
+      </concept>
+      <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
+        <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
+        <reference id="1144432896254" name="enumClass" index="1Px2BO" />
       </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
@@ -1082,6 +1089,60 @@
         <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
       </node>
       <node concept="3clFbS" id="3uTLX9ZEiti" role="3clF47">
+        <node concept="3clFbJ" id="3bB518eRQrw" role="3cqZAp">
+          <node concept="3clFbS" id="3bB518eRQry" role="3clFbx">
+            <node concept="3cpWs8" id="zudvsqcqSX" role="3cqZAp">
+              <node concept="3cpWsn" id="zudvsqcqT0" role="3cpWs9">
+                <property role="TrG5h" value="msg" />
+                <node concept="17QB3L" id="zudvsqcqSV" role="1tU5fm" />
+                <node concept="3cpWs3" id="zudvsqcsLL" role="33vP2m">
+                  <node concept="Xl_RD" id="zudvsqcsLM" role="3uHU7w">
+                    <property role="Xl_RC" value="\n\n Please read the documentation how to use the javaagent jacoco." />
+                  </node>
+                  <node concept="3cpWs3" id="zudvsqcsLN" role="3uHU7B">
+                    <node concept="Xl_RD" id="zudvsqcsLO" role="3uHU7B">
+                      <property role="Xl_RC" value="File containing execution data was NOT found!\n" />
+                    </node>
+                    <node concept="2OqwBi" id="zudvsqcsLP" role="3uHU7w">
+                      <node concept="37vLTw" id="zudvsqcsLQ" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3uTLX9ZEin9" resolve="executionDataFile" />
+                      </node>
+                      <node concept="liA8E" id="zudvsqcsLR" role="2OqNvi">
+                        <ref role="37wK5l" to="guwi:~File.getAbsolutePath()" resolve="getAbsolutePath" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="zudvsqcjvM" role="3cqZAp">
+              <node concept="2YIFZM" id="zudvsqcmkl" role="3clFbG">
+                <ref role="37wK5l" to="fa97:xCk$O6mi_h" resolve="showNotification" />
+                <ref role="1Pybhc" to="fa97:696iakqzmI" resolve="MpsQaNotificationUtils" />
+                <node concept="Xl_RD" id="zudvsqcnaq" role="37wK5m">
+                  <property role="Xl_RC" value="ERROR" />
+                </node>
+                <node concept="37vLTw" id="zudvsqcukr" role="37wK5m">
+                  <ref role="3cqZAo" node="zudvsqcqT0" resolve="msg" />
+                </node>
+                <node concept="Rm8GO" id="zudvsqcxOF" role="37wK5m">
+                  <ref role="Rm8GQ" to="fnpx:~NotificationType.ERROR" resolve="ERROR" />
+                  <ref role="1Px2BO" to="fnpx:~NotificationType" resolve="NotificationType" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="3bB518eRUpL" role="3clFbw">
+            <node concept="2OqwBi" id="3bB518eRUpN" role="3fr31v">
+              <node concept="37vLTw" id="3bB518eRUpO" role="2Oq$k0">
+                <ref role="3cqZAo" node="3uTLX9ZEin9" resolve="executionDataFile" />
+              </node>
+              <node concept="liA8E" id="3bB518eRUpP" role="2OqNvi">
+                <ref role="37wK5l" to="guwi:~File.exists()" resolve="exists" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="3uTLX9ZEitj" role="3cqZAp">
           <node concept="37vLTI" id="3uTLX9ZEitk" role="3clFbG">
             <node concept="37vLTw" id="3uTLX9ZEitl" role="37vLTJ">
