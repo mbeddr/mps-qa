@@ -51,6 +51,7 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -96,11 +97,13 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
         <child id="1163668914799" name="condition" index="3K4Cdx" />
         <child id="1163668922816" name="ifTrue" index="3K4E3e" />
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="40ab19e9-751a-4433-b645-0e65160e58a0" name="org.mpsqa.lint.generic">
       <concept id="2555875871752198907" name="org.mpsqa.lint.generic.structure.ConceptFunctionParameter_MPSProject" flags="ng" index="1MG55F" />
@@ -648,15 +651,31 @@
                                   </node>
                                 </node>
                               </node>
-                              <node concept="3fqX7Q" id="1WMZ_AZ31e7" role="3clFbw">
-                                <node concept="2OqwBi" id="1WMZ_AZ31e9" role="3fr31v">
-                                  <node concept="37vLTw" id="1WMZ_AZ3yOf" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="1WMZ_AZ3yAe" resolve="targetResolveInfo" />
-                                  </node>
-                                  <node concept="liA8E" id="1WMZ_AZ31ef" role="2OqNvi">
-                                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
-                                    <node concept="37vLTw" id="1WMZ_AZ31eg" role="37wK5m">
+                              <node concept="1Wc70l" id="1AV$r8EXARs" role="3clFbw">
+                                <node concept="1Wc70l" id="1AV$r8EXBW3" role="3uHU7B">
+                                  <node concept="3y3z36" id="1AV$r8EXBZq" role="3uHU7w">
+                                    <node concept="10Nm6u" id="1AV$r8EXC18" role="3uHU7w" />
+                                    <node concept="37vLTw" id="1AV$r8EXBXG" role="3uHU7B">
                                       <ref role="3cqZAo" node="1WMZ_AZ2XU5" resolve="referenceResolveInfo" />
+                                    </node>
+                                  </node>
+                                  <node concept="3y3z36" id="1AV$r8EXBGu" role="3uHU7B">
+                                    <node concept="37vLTw" id="1AV$r8EXBpz" role="3uHU7B">
+                                      <ref role="3cqZAo" node="1WMZ_AZ3yAe" resolve="targetResolveInfo" />
+                                    </node>
+                                    <node concept="10Nm6u" id="1AV$r8EXBUw" role="3uHU7w" />
+                                  </node>
+                                </node>
+                                <node concept="3fqX7Q" id="1WMZ_AZ31e7" role="3uHU7w">
+                                  <node concept="2OqwBi" id="1WMZ_AZ31e9" role="3fr31v">
+                                    <node concept="37vLTw" id="1WMZ_AZ3yOf" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="1WMZ_AZ3yAe" resolve="targetResolveInfo" />
+                                    </node>
+                                    <node concept="liA8E" id="1WMZ_AZ31ef" role="2OqNvi">
+                                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
+                                      <node concept="37vLTw" id="1WMZ_AZ31eg" role="37wK5m">
+                                        <ref role="3cqZAo" node="1WMZ_AZ2XU5" resolve="referenceResolveInfo" />
+                                      </node>
                                     </node>
                                   </node>
                                 </node>
