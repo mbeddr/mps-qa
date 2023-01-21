@@ -130,5 +130,32 @@
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
+  <node concept="1TIwiD" id="pFzydTDN94">
+    <property role="EcuMT" value="462619669751607876" />
+    <property role="TrG5h" value="DeprecatedConceptsFinder" />
+    <property role="19KtqR" value="true" />
+    <property role="34LRSv" value="deprecated concepts/links finder" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="pFzydTDN97" role="1TKVEi">
+      <property role="IQ2ns" value="462619669751607879" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="result" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="7LZ1KAVUTVU" resolve="DeprecatedNodeResult" />
+    </node>
+    <node concept="1TJgyi" id="pFzydTDN95" role="1TKVEl">
+      <property role="IQ2nx" value="462619669751607877" />
+      <property role="TrG5h" value="deprecatedBefore" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="pFzydTDN9Z" role="1TKVEl">
+      <property role="IQ2nx" value="462619669751607935" />
+      <property role="TrG5h" value="reportError" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="PrWs8" id="pFzydTDN9X" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
 </model>
 

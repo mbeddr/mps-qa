@@ -446,5 +446,88 @@
       <node concept="l2Vlx" id="269xudmuUl8" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="pFzydTDN99">
+    <ref role="1XX52x" to="3idh:pFzydTDN94" resolve="DeprecatedConceptsFinder" />
+    <node concept="3EZMnI" id="pFzydTDN9b" role="2wV5jI">
+      <node concept="3F0ifn" id="pFzydTDN9c" role="3EZMnx">
+        <property role="3F0ifm" value="Deprecated concepts/links/properties finder:" />
+      </node>
+      <node concept="3F0A7n" id="pFzydTDN9d" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="pFzydTDN9e" role="3EZMnx">
+        <node concept="pVoyu" id="pFzydTDN9f" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3XFhqQ" id="pFzydTDN9g" role="3EZMnx">
+        <node concept="pVoyu" id="pFzydTDN9h" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="pFzydTDN9i" role="3EZMnx">
+        <property role="3F0ifm" value="deprecated before:" />
+      </node>
+      <node concept="3F0A7n" id="pFzydTDN9j" role="3EZMnx">
+        <ref role="1NtTu8" to="3idh:pFzydTDN95" resolve="deprecatedBefore" />
+      </node>
+      <node concept="3F0ifn" id="pFzydTDN9k" role="3EZMnx">
+        <property role="3F0ifm" value="(yyyy-mm-dd)" />
+        <node concept="VechU" id="pFzydTDN9l" role="3F10Kt">
+          <property role="Vb096" value="fLJRk5A/lightGray" />
+        </node>
+      </node>
+      <node concept="3XFhqQ" id="pFzydTDN9m" role="3EZMnx">
+        <node concept="pVoyu" id="pFzydTDN9n" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="2yq9I_" id="pFzydTDN9o" role="3EZMnx">
+        <ref role="225u1j" to="3idh:pFzydTDN9Z" resolve="reportError" />
+        <node concept="1563Vb" id="pFzydTDN9p" role="1563LE">
+          <property role="1563UK" value="[ ]" />
+          <property role="1563Ve" value="[x]" />
+        </node>
+        <node concept="3F0ifn" id="pFzydTDN9q" role="2fqkNU">
+          <property role="3F0ifm" value="report as error" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="pFzydTDN9r" role="3EZMnx">
+        <node concept="pVoyu" id="pFzydTDN9s" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="pFzydTH2Vw" role="3EZMnx">
+        <property role="3F0ifm" value="[Identifies concepts/links/properties with DeprecatedNodeAnnotaiton with 'build' set before a certain date.]" />
+        <node concept="pVoyu" id="pFzydTH2Vx" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="VechU" id="pFzydTH2WS" role="3F10Kt">
+          <property role="Vb096" value="fLJRk5_/gray" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="pFzydTH2VW" role="3EZMnx">
+        <node concept="pVoyu" id="pFzydTH2VX" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="pFzydTDN9t" role="3EZMnx">
+        <property role="3F0ifm" value="Deprecated concepts/links/properties:" />
+        <node concept="pVoyu" id="pFzydTDN9u" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3XFhqQ" id="pFzydTDN9v" role="3EZMnx">
+        <node concept="pVoyu" id="pFzydTDN9w" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="pFzydTDN9x" role="3EZMnx">
+        <ref role="1NtTu8" to="3idh:pFzydTDN97" resolve="result" />
+        <node concept="2iRkQZ" id="pFzydTDN9y" role="2czzBx" />
+      </node>
+      <node concept="l2Vlx" id="pFzydTDN9z" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

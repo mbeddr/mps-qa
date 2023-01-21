@@ -25,6 +25,16 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="3348158742936976480" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ng" index="25R33">
+        <property id="1421157252384165432" name="memberId" index="3tVfz5" />
+      </concept>
+      <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
+        <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
+        <child id="3348158742936976577" name="members" index="25R1y" />
+      </concept>
+      <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
+        <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -86,11 +96,24 @@
       <property role="20kJfa" value="checkingClosure" />
       <ref role="20lvS9" node="2dSiT1hKTOi" resolve="CheckingFunction" />
     </node>
+    <node concept="1TJgyj" id="6HKgezStO7e" role="1TKVEi">
+      <property role="IQ2ns" value="7741759128795038158" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="additionalParameters" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6HKgezStO7d" resolve="CheckableScriptParameter" />
+    </node>
     <node concept="PrWs8" id="2dSiT1hKHk1" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
     <node concept="PrWs8" id="6gY6GEDxQkP" role="PzmwI">
       <ref role="PrY4T" node="6gY6GEDvQYV" resolve="ILinterResultsContainer" />
+    </node>
+    <node concept="PrWs8" id="ST9rMmWg3Y" role="PzmwI">
+      <ref role="PrY4T" node="ST9rMmWg3T" resolve="ISeverityLevelAwareChecker" />
+    </node>
+    <node concept="PrWs8" id="6HKgezStPXJ" role="PzmwI">
+      <ref role="PrY4T" node="6HKgezStPXI" resolve="IScriptsParametersAware" />
     </node>
     <node concept="1irR5M" id="2dSiT1hKS3v" role="rwd14">
       <property role="2$rrk2" value="1" />
@@ -131,6 +154,12 @@
     </node>
     <node concept="PrWs8" id="6gY6GEDxQl8" role="PzmwI">
       <ref role="PrY4T" node="6gY6GEDvQYV" resolve="ILinterResultsContainer" />
+    </node>
+    <node concept="PrWs8" id="ST9rMmWg3U" role="PzmwI">
+      <ref role="PrY4T" node="ST9rMmWg3T" resolve="ISeverityLevelAwareChecker" />
+    </node>
+    <node concept="PrWs8" id="pFzydTBOIl" role="PzmwI">
+      <ref role="PrY4T" node="6HKgezStPXI" resolve="IScriptsParametersAware" />
     </node>
     <node concept="1irR5M" id="3ibIDIkmpeS" role="rwd14">
       <property role="2$rrk2" value="2" />
@@ -178,6 +207,91 @@
       <property role="20kJfa" value="violations" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="6gY6GEDvQYS" resolve="ResultEntry" />
+    </node>
+  </node>
+  <node concept="25R3W" id="1c_Dn$lNzd5">
+    <property role="3F6X1D" value="1379690800334385989" />
+    <property role="TrG5h" value="EReportSeverityLevel" />
+    <ref role="1H5jkz" node="1c_Dn$lNzd6" resolve="ERROR" />
+    <node concept="25R33" id="1c_Dn$lNzd6" role="25R1y">
+      <property role="3tVfz5" value="1379690800334385990" />
+      <property role="TrG5h" value="ERROR" />
+    </node>
+    <node concept="25R33" id="1c_Dn$lNzd7" role="25R1y">
+      <property role="3tVfz5" value="1379690800334385991" />
+      <property role="TrG5h" value="WARNING" />
+    </node>
+    <node concept="25R33" id="1c_Dn$lNzda" role="25R1y">
+      <property role="3tVfz5" value="1379690800334385994" />
+      <property role="TrG5h" value="INFO" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="ST9rMmWg3T">
+    <property role="EcuMT" value="1024891882119954681" />
+    <property role="TrG5h" value="ISeverityLevelAwareChecker" />
+    <node concept="1TJgyi" id="ST9rMmWgfD" role="1TKVEl">
+      <property role="IQ2nx" value="1024891882119955433" />
+      <property role="TrG5h" value="reportLevel" />
+      <ref role="AX2Wp" node="1c_Dn$lNzd5" resolve="EReportSeverityLevel" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6HKgezStO7d">
+    <property role="EcuMT" value="7741759128795038157" />
+    <property role="TrG5h" value="CheckableScriptParameter" />
+    <property role="3GE5qa" value="params" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6HKgezStO7i" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="6HKgezStPXG" role="1TKVEi">
+      <property role="IQ2ns" value="7741759128795045740" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="tpe" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="tpee:fz3vP1H" resolve="Type" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6HKgezStPXI">
+    <property role="EcuMT" value="7741759128795045742" />
+    <property role="3GE5qa" value="params" />
+    <property role="TrG5h" value="IScriptsParametersAware" />
+    <node concept="1TJgyj" id="6HKgezStUOR" role="1TKVEi">
+      <property role="IQ2ns" value="7741759128795065655" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="parValues" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6HKgezStPXR" resolve="ParamValue" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6HKgezStPXR">
+    <property role="EcuMT" value="7741759128795045751" />
+    <property role="3GE5qa" value="params" />
+    <property role="TrG5h" value="ParamValue" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6HKgezStPXS" role="1TKVEi">
+      <property role="IQ2ns" value="7741759128795045752" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="exp" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="6HKgezStUPV" role="1TKVEi">
+      <property role="IQ2ns" value="7741759128795065723" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="paramRef" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6HKgezStPXU" resolve="CheckableScriptParameterRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6HKgezStPXU">
+    <property role="EcuMT" value="7741759128795045754" />
+    <property role="3GE5qa" value="params" />
+    <property role="TrG5h" value="CheckableScriptParameterRef" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="6HKgezStPXV" role="1TKVEi">
+      <property role="IQ2ns" value="7741759128795045755" />
+      <property role="20kJfa" value="par" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6HKgezStO7d" resolve="CheckableScriptParameter" />
     </node>
   </node>
 </model>

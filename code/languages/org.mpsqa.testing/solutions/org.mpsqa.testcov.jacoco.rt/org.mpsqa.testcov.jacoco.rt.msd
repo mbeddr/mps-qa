@@ -56,6 +56,7 @@
     <dependency reexport="false">79c13063-8a7d-4070-aaba-966b36d6e0c4(org.mpsqa.base.lib)</dependency>
     <dependency reexport="false">56f134c7-a829-428d-9119-715369c69768(org.mpsqa.treemap.lib)</dependency>
     <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
+    <dependency reexport="false">3867cfe1-8589-4ef1-9b3c-48b17d473edf(org.mpsqa.base.utils)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="11" />
@@ -84,6 +85,7 @@
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="79c13063-8a7d-4070-aaba-966b36d6e0c4(org.mpsqa.base.lib)" version="0" />
+    <module reference="3867cfe1-8589-4ef1-9b3c-48b17d473edf(org.mpsqa.base.utils)" version="0" />
     <module reference="998f9a96-8397-4ccb-acfb-d98f854aae12(org.mpsqa.testcov.jacoco.rt)" version="0" />
     <module reference="56f134c7-a829-428d-9119-715369c69768(org.mpsqa.treemap.lib)" version="0" />
   </dependencyVersions>

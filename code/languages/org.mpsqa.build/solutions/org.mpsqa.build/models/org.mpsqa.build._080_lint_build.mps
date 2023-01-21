@@ -219,7 +219,6 @@
       <node concept="1E1JtD" id="3dqUbgQmcyL" role="2G$12L">
         <property role="TrG5h" value="org.mpsqa.lint.generic" />
         <property role="3LESm3" value="40ab19e9-751a-4433-b645-0e65160e58a0" />
-        <property role="BnDLt" value="true" />
         <node concept="398BVA" id="3dqUbgQmcyV" role="3LF7KH">
           <ref role="398BVh" node="3dqUbgQmcyv" resolve="mpsqa.lint.home" />
           <node concept="2Ry0Ak" id="3dqUbgQmczh" role="iGT6I">
@@ -364,9 +363,18 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
           </node>
         </node>
+        <node concept="1SiIV0" id="ST9rMmXyC6" role="3bR37C">
+          <node concept="3bR9La" id="ST9rMmXyC7" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6Lh7" resolve="jetbrains.mps.typesystemEngine" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4lfwJVEBWf$" role="3bR37C">
+          <node concept="3bR9La" id="4lfwJVEBWf_" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:4SM2EuqHUPF" resolve="jetbrains.mps.lang.modelapi" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="3ywQ_KXEkYC" role="2G$12L">
-        <property role="BnDLt" value="true" />
         <property role="TrG5h" value="org.mpsqa.lint.generic.linters_library" />
         <property role="3LESm3" value="a86f8e91-0c59-4691-a7ce-49b7e2c7c3a9" />
         <node concept="398BVA" id="3ywQ_KXEkYG" role="3LF7KH">
@@ -436,6 +444,16 @@
         <node concept="1SiIV0" id="FwejNQA_55" role="3bR37C">
           <node concept="3bR9La" id="FwejNQA_56" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:7Kfy9QB6Lg8" resolve="jetbrains.mps.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="pFzydTDMLB" role="3bR37C">
+          <node concept="3bR9La" id="pFzydTDMLC" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4lfwJVEBWfY" role="3bR37C">
+          <node concept="3bR9La" id="4lfwJVEBWfZ" role="1SiIV1">
+            <ref role="3bR37D" node="3dqUbgQmcyL" resolve="org.mpsqa.lint.generic" />
           </node>
         </node>
       </node>
