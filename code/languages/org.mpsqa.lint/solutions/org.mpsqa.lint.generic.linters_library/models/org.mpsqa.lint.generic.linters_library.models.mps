@@ -4,12 +4,10 @@
   <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="40ab19e9-751a-4433-b645-0e65160e58a0" name="org.mpsqa.lint.generic" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="1a8554c4-eb84-43ba-8c34-6f0d90c6e75a" name="jetbrains.mps.lang.smodel.query" version="3" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
-    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
   </languages>
@@ -131,6 +129,7 @@
       </concept>
       <concept id="2555875871752198907" name="org.mpsqa.lint.generic.structure.ConceptFunctionParameter_MPSProject" flags="ng" index="1MG55F" />
       <concept id="2555875871751836213" name="org.mpsqa.lint.generic.structure.CheckableScript" flags="ng" index="1MIHA_">
+        <property id="6685385159444651026" name="skipEvaluation" index="3zADTN" />
         <child id="1716492013482699988" name="checkingClosure" index="14J5yK" />
         <child id="2555875871751847640" name="explanation" index="1MIJl8" />
       </concept>
@@ -479,6 +478,7 @@
   </node>
   <node concept="1MIHA_" id="6gY6GEDu_aA">
     <property role="TrG5h" value="models_with_no_file_per_root_persistency" />
+    <property role="3zADTN" value="true" />
     <node concept="1MIXq2" id="6gY6GEDu_aB" role="14J5yK">
       <node concept="3clFbS" id="6gY6GEDu_aC" role="2VODD2">
         <node concept="3cpWs8" id="6gY6GEDu_aD" role="3cqZAp">
@@ -1732,6 +1732,7 @@
   </node>
   <node concept="1MIHA_" id="72dZnKNcjFf">
     <property role="TrG5h" value="models_with_non_devkits_as_used_languages" />
+    <property role="3zADTN" value="true" />
     <node concept="1Pa9Pv" id="72dZnKNcjZw" role="1MIJl8">
       <node concept="1PaTwC" id="72dZnKNcjZx" role="1PaQFQ">
         <node concept="3oM_SD" id="72dZnKNck0G" role="1PaTwD">
