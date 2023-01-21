@@ -75,11 +75,11 @@ ext.dependencyRepositories = [
 ]
 
 // Dependency versions
-ext.mpsVersion =  '2021.2.+'
+ext.mpsVersion =  '2021.3.+'
 
 // Project versions
 ext.major = '2021'
-ext.minor = '2'
+ext.minor = '3'
 
 if (ciBuild) {
     String branch = GitBasedVersioning.gitBranch
