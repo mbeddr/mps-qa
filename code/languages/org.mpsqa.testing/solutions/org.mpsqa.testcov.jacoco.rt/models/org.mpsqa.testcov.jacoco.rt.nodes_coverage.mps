@@ -1125,8 +1125,8 @@
                 <node concept="37vLTw" id="zudvsqcukr" role="37wK5m">
                   <ref role="3cqZAo" node="zudvsqcqT0" resolve="msg" />
                 </node>
-                <node concept="Rm8GO" id="zudvsqcxOF" role="37wK5m">
-                  <ref role="Rm8GQ" to="fnpx:~NotificationType.ERROR" resolve="ERROR" />
+                <node concept="Rm8GO" id="3VL$S3TMPiz" role="37wK5m">
+                  <ref role="Rm8GQ" to="fnpx:~NotificationType.INFORMATION" resolve="INFORMATION" />
                   <ref role="1Px2BO" to="fnpx:~NotificationType" resolve="NotificationType" />
                 </node>
               </node>
