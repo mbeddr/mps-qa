@@ -223,6 +223,20 @@
         </node>
         <node concept="2iRfu4" id="6MUZd5UjaEc" role="2iSdaV" />
       </node>
+      <node concept="3EZMnI" id="5enppyYDaX3" role="3EZMnx">
+        <node concept="VPM3Z" id="5enppyYDaX5" role="3F10Kt" />
+        <node concept="3XFhqQ" id="5enppyYDaZv" role="3EZMnx" />
+        <node concept="3F0ifn" id="5enppyYDaX7" role="3EZMnx">
+          <property role="3F0ifm" value="report error when not all project languages are considered:" />
+          <node concept="VechU" id="5enppyYDaZ$" role="3F10Kt">
+            <property role="Vb096" value="fLJRk5B/darkGray" />
+          </node>
+        </node>
+        <node concept="3F0A7n" id="5enppyYDaZn" role="3EZMnx">
+          <ref role="1NtTu8" to="ryx8:5enppyYDa$n" resolve="reportErrorWhenNotAllProjectLanguagesAreConsidered" />
+        </node>
+        <node concept="2iRfu4" id="5enppyYDaX8" role="2iSdaV" />
+      </node>
       <node concept="1HlG4h" id="10aXpfQd97g" role="3EZMnx">
         <node concept="1HfYo3" id="10aXpfQd97i" role="1HlULh">
           <node concept="3TQlhw" id="10aXpfQd97k" role="1Hhtcw">
