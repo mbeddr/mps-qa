@@ -67,6 +67,11 @@
     <node concept="PrWs8" id="58jxdNSqZqI" role="PzmwI">
       <ref role="PrY4T" node="6MUZd5UjGNW" resolve="IComponentLike" />
     </node>
+    <node concept="1TJgyi" id="5enppyYDa$n" role="1TKVEl">
+      <property role="IQ2nx" value="6023394733339224343" />
+      <property role="TrG5h" value="reportErrorWhenNotAllProjectLanguagesAreConsidered" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6MUZd5Uj9vB">
     <property role="EcuMT" value="7834852478394603495" />
