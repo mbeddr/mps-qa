@@ -73,6 +73,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
@@ -98,6 +101,11 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
+      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
+        <child id="1163668914799" name="condition" index="3K4Cdx" />
+        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
+        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
+      </concept>
       <concept id="1082113931046" name="jetbrains.mps.baseLanguage.structure.ContinueStatement" flags="nn" index="3N13vt" />
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="8356039341262087992" name="line" index="1aUNEU" />
@@ -1665,28 +1673,84 @@
         <node concept="3clFbS" id="5enppyYDbwF" role="3clFbx">
           <node concept="3cpWs8" id="5enppyYEK_H" role="3cqZAp">
             <node concept="3cpWsn" id="5enppyYEK_I" role="3cpWs9">
-              <property role="TrG5h" value="projectLanguagesNotPartOfArchitectureDescription" />
+              <property role="TrG5h" value="projectModulesNotPartOfArchitectureDescription" />
               <node concept="2hMVRd" id="5enppyYEK__" role="1tU5fm">
                 <node concept="3uibUv" id="5enppyYEK_C" role="2hN53Y">
                   <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
                 </node>
               </node>
               <node concept="2YIFZM" id="5enppyYEK_J" role="33vP2m">
-                <ref role="37wK5l" to="u41u:5enppyYDSMQ" resolve="getProjectLanguagesNotPartOfArchitectureDescription" />
+                <ref role="37wK5l" to="u41u:5enppyYDSMQ" resolve="getProjectModulesNotPartOfArchitectureDescription" />
                 <ref role="1Pybhc" to="u41u:5enppyYCuym" resolve="ArchitectureUtils" />
                 <node concept="1YBJjd" id="5enppyYEK_K" role="37wK5m">
                   <ref role="1YBMHb" node="10aXpfQh8sm" resolve="archSpecification" />
+                </node>
+                <node concept="3clFbT" id="48uyNAv7PUs" role="37wK5m">
+                  <property role="3clFbU" value="true" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="48uyNAv837X" role="3cqZAp">
+            <node concept="3clFbS" id="48uyNAv837Z" role="3clFbx">
+              <node concept="3clFbF" id="48uyNAv84RV" role="3cqZAp">
+                <node concept="2OqwBi" id="48uyNAv85rW" role="3clFbG">
+                  <node concept="37vLTw" id="48uyNAv84RT" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5enppyYEK_I" resolve="projectModulesNotPartOfArchitectureDescription" />
+                  </node>
+                  <node concept="X8dFx" id="48uyNAv862A" role="2OqNvi">
+                    <node concept="2YIFZM" id="48uyNAv86Ol" role="25WWJ7">
+                      <ref role="37wK5l" to="u41u:5enppyYDSMQ" resolve="getProjectModulesNotPartOfArchitectureDescription" />
+                      <ref role="1Pybhc" to="u41u:5enppyYCuym" resolve="ArchitectureUtils" />
+                      <node concept="1YBJjd" id="48uyNAv86Om" role="37wK5m">
+                        <ref role="1YBMHb" node="10aXpfQh8sm" resolve="archSpecification" />
+                      </node>
+                      <node concept="3clFbT" id="48uyNAv88NT" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3fqX7Q" id="48uyNAv84_L" role="3clFbw">
+              <node concept="2OqwBi" id="48uyNAv84_N" role="3fr31v">
+                <node concept="1YBJjd" id="48uyNAv84_O" role="2Oq$k0">
+                  <ref role="1YBMHb" node="10aXpfQh8sm" resolve="archSpecification" />
+                </node>
+                <node concept="3TrcHB" id="48uyNAv84_P" role="2OqNvi">
+                  <ref role="3TsBF5" to="ryx8:48uyNAv6UZR" resolve="considerOnlyLanguages" />
                 </node>
               </node>
             </node>
           </node>
           <node concept="3clFbJ" id="5enppyYEKX4" role="3cqZAp">
             <node concept="3clFbS" id="5enppyYEKX6" role="3clFbx">
+              <node concept="3cpWs8" id="48uyNAv89dF" role="3cqZAp">
+                <node concept="3cpWsn" id="48uyNAv89dI" role="3cpWs9">
+                  <property role="TrG5h" value="prefix" />
+                  <node concept="17QB3L" id="48uyNAv89dD" role="1tU5fm" />
+                  <node concept="3K4zz7" id="48uyNAv8aWW" role="33vP2m">
+                    <node concept="Xl_RD" id="48uyNAv8bzR" role="3K4E3e">
+                      <property role="Xl_RC" value="Languages" />
+                    </node>
+                    <node concept="Xl_RD" id="48uyNAv8b$S" role="3K4GZi">
+                      <property role="Xl_RC" value="Modules" />
+                    </node>
+                    <node concept="2OqwBi" id="48uyNAv89p3" role="3K4Cdx">
+                      <node concept="1YBJjd" id="48uyNAv89et" role="2Oq$k0">
+                        <ref role="1YBMHb" node="10aXpfQh8sm" resolve="archSpecification" />
+                      </node>
+                      <node concept="3TrcHB" id="48uyNAv8aAG" role="2OqNvi">
+                        <ref role="3TsBF5" to="ryx8:48uyNAv6UZR" resolve="considerOnlyLanguages" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="2MkqsV" id="5enppyYEMne" role="3cqZAp">
                 <node concept="3cpWs3" id="5enppyYEMEE" role="2MkJ7o">
                   <node concept="2OqwBi" id="5enppyYENjv" role="3uHU7w">
                     <node concept="37vLTw" id="5enppyYEMEW" role="2Oq$k0">
-                      <ref role="3cqZAo" node="5enppyYEK_I" resolve="projectLanguagesNotPartOfArchitectureDescription" />
+                      <ref role="3cqZAo" node="5enppyYEK_I" resolve="projectModulesNotPartOfArchitectureDescription" />
                     </node>
                     <node concept="3$u5V9" id="5enppyYENUg" role="2OqNvi">
                       <node concept="1bVj0M" id="5enppyYENUi" role="23t8la">
@@ -1709,21 +1773,26 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="Xl_RD" id="5enppyYEMnt" role="3uHU7B">
-                    <property role="Xl_RC" value="Languages exist in project BUT are NOT part of the architecture specification: " />
+                  <node concept="3cpWs3" id="48uyNAv8cdW" role="3uHU7B">
+                    <node concept="37vLTw" id="48uyNAv8dhf" role="3uHU7B">
+                      <ref role="3cqZAo" node="48uyNAv89dI" resolve="prefix" />
+                    </node>
+                    <node concept="Xl_RD" id="5enppyYEMnt" role="3uHU7w">
+                      <property role="Xl_RC" value=" exist in project BUT are NOT part of the architecture specification: " />
+                    </node>
                   </node>
                 </node>
                 <node concept="1YBJjd" id="5enppyYEOC0" role="1urrMF">
                   <ref role="1YBMHb" node="10aXpfQh8sm" resolve="archSpecification" />
                 </node>
                 <node concept="AMVWg" id="5enppyYFxOF" role="lGtFl">
-                  <property role="TrG5h" value="incomplete_spec" />
+                  <property role="TrG5h" value="incomplete_spec_of_languages" />
                 </node>
               </node>
             </node>
             <node concept="2OqwBi" id="5enppyYELKc" role="3clFbw">
               <node concept="37vLTw" id="5enppyYEL4Z" role="2Oq$k0">
-                <ref role="3cqZAo" node="5enppyYEK_I" resolve="projectLanguagesNotPartOfArchitectureDescription" />
+                <ref role="3cqZAo" node="5enppyYEK_I" resolve="projectModulesNotPartOfArchitectureDescription" />
               </node>
               <node concept="3GX2aA" id="5enppyYEMmS" role="2OqNvi" />
             </node>
@@ -1734,7 +1803,7 @@
             <ref role="1YBMHb" node="10aXpfQh8sm" resolve="archSpecification" />
           </node>
           <node concept="3TrcHB" id="5enppyYDckv" role="2OqNvi">
-            <ref role="3TsBF5" to="ryx8:5enppyYDa$n" resolve="reportErrorWhenNotAllProjectLanguagesAreConsidered" />
+            <ref role="3TsBF5" to="ryx8:5enppyYDa$n" resolve="reportErrorWhenNotAllProjectModulesAreConsidered" />
           </node>
         </node>
       </node>

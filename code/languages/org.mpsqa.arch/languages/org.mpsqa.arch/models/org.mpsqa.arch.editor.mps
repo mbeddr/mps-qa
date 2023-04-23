@@ -227,15 +227,29 @@
         <node concept="VPM3Z" id="5enppyYDaX5" role="3F10Kt" />
         <node concept="3XFhqQ" id="5enppyYDaZv" role="3EZMnx" />
         <node concept="3F0ifn" id="5enppyYDaX7" role="3EZMnx">
-          <property role="3F0ifm" value="report error when not all project languages are considered:" />
+          <property role="3F0ifm" value="report error when not all project modules are considered:" />
           <node concept="VechU" id="5enppyYDaZ$" role="3F10Kt">
             <property role="Vb096" value="fLJRk5B/darkGray" />
           </node>
         </node>
         <node concept="3F0A7n" id="5enppyYDaZn" role="3EZMnx">
-          <ref role="1NtTu8" to="ryx8:5enppyYDa$n" resolve="reportErrorWhenNotAllProjectLanguagesAreConsidered" />
+          <ref role="1NtTu8" to="ryx8:5enppyYDa$n" resolve="reportErrorWhenNotAllProjectModulesAreConsidered" />
         </node>
         <node concept="2iRfu4" id="5enppyYDaX8" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="48uyNAv6Voh" role="3EZMnx">
+        <node concept="VPM3Z" id="48uyNAv6Voi" role="3F10Kt" />
+        <node concept="3XFhqQ" id="48uyNAv6Voj" role="3EZMnx" />
+        <node concept="3F0ifn" id="48uyNAv6Vok" role="3EZMnx">
+          <property role="3F0ifm" value="consider only languages:" />
+          <node concept="VechU" id="48uyNAv6Vol" role="3F10Kt">
+            <property role="Vb096" value="fLJRk5B/darkGray" />
+          </node>
+        </node>
+        <node concept="3F0A7n" id="48uyNAv6Vom" role="3EZMnx">
+          <ref role="1NtTu8" to="ryx8:48uyNAv6UZR" resolve="considerOnlyLanguages" />
+        </node>
+        <node concept="2iRfu4" id="48uyNAv6Von" role="2iSdaV" />
       </node>
       <node concept="1HlG4h" id="10aXpfQd97g" role="3EZMnx">
         <node concept="1HfYo3" id="10aXpfQd97i" role="1HlULh">
