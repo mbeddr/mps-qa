@@ -339,14 +339,68 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="3Koqcp7RDKR" role="3bR37C">
-          <node concept="3bR9La" id="3Koqcp7RDKS" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:7YI57w6K0rx" resolve="jetbrains.mps.lang.smodel#1139186730696" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="3Koqcp7RDKT" role="3bR37C">
           <node concept="3bR9La" id="3Koqcp7RDKU" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:7Kfy9QB6Lg8" resolve="jetbrains.mps.runtime" />
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtD" id="1aX3ezKAshF" role="2G$12L">
+        <property role="TrG5h" value="org.mpsqa.invisible_models" />
+        <property role="3LESm3" value="f87d0612-ec25-46e5-819a-31e58229407e" />
+        <property role="BnDLt" value="true" />
+        <node concept="398BVA" id="1aX3ezKAsiw" role="3LF7KH">
+          <ref role="398BVh" node="1YSnQiVh0x7" resolve="mpsqa.unused.home" />
+          <node concept="2Ry0Ak" id="1aX3ezKAsiA" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="1aX3ezKAsiF" role="2Ry0An">
+              <property role="2Ry0Am" value="org.mpsqa.invisible_models" />
+              <node concept="2Ry0Ak" id="1aX3ezKAsiK" role="2Ry0An">
+                <property role="2Ry0Am" value="org.mpsqa.invisible_models.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1aX3ezKAsja" role="3bR37C">
+          <node concept="3bR9La" id="1aX3ezKAsjb" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1aX3ezKAsjc" role="3bR37C">
+          <node concept="3bR9La" id="1aX3ezKAsjd" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1aX3ezKAsje" role="3bR37C">
+          <node concept="3bR9La" id="1aX3ezKAsjf" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1aX3ezKAsjg" role="3bR37C">
+          <node concept="3bR9La" id="1aX3ezKAsjh" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="1aX3ezKAsjt" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="1aX3ezKAsju" role="1HemKq">
+            <node concept="398BVA" id="1aX3ezKAsji" role="3LXTmr">
+              <ref role="398BVh" node="1YSnQiVh0x7" resolve="mpsqa.unused.home" />
+              <node concept="2Ry0Ak" id="1aX3ezKAsjj" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="1aX3ezKAsjk" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.invisible_models" />
+                  <node concept="2Ry0Ak" id="1aX3ezKAsjl" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="1aX3ezKAsjv" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
           </node>
         </node>
       </node>
