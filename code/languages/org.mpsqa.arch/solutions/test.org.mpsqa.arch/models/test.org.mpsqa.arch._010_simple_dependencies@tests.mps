@@ -236,6 +236,62 @@
         </node>
       </node>
     </node>
+    <node concept="1qefOq" id="1KHvhQesd2E" role="1SKRRt">
+      <node concept="mXAGR" id="1KHvhQesd2F" role="1qenE9">
+        <property role="TrG5h" value="_050_imbricated_two_levels" />
+        <node concept="mXAGQ" id="1KHvhQesd2G" role="mXAGU">
+          <property role="TrG5h" value="first" />
+          <node concept="mXA1B" id="1KHvhQesd2H" role="mXAiC">
+            <node concept="mXAj4" id="1KHvhQesd2I" role="mXvOw">
+              <ref role="mXAj7" node="1KHvhQesd2O" resolve="arch.baselang" />
+            </node>
+            <node concept="mXAj4" id="71rkVd9bvOM" role="mXvOw">
+              <ref role="mXAj7" node="1KHvhQesd5r" resolve="second.first" />
+            </node>
+          </node>
+          <node concept="Z9REq" id="1KHvhQesd4V" role="mXAiC" />
+          <node concept="mXAGQ" id="1KHvhQesd4v" role="mXAiC">
+            <property role="TrG5h" value="first_first" />
+            <node concept="mXA1B" id="1KHvhQesd58" role="mXAiC">
+              <node concept="mXAj4" id="1KHvhQesd5e" role="mXvOw">
+                <ref role="mXAj7" node="1KHvhQesd2O" resolve="arch.baselang" />
+              </node>
+            </node>
+            <node concept="mXxR0" id="1KHvhQesd2J" role="mXAiC">
+              <property role="Z2I3b" value="arch.ext" />
+              <node concept="37shsh" id="1KHvhQesd2K" role="mXxR3">
+                <node concept="1dCxOk" id="1KHvhQesd2L" role="37shsm">
+                  <property role="1XweGW" value="9e2430af-289d-4254-9192-096b6a0cdea0" />
+                  <property role="1XxBO9" value="test.org.mpsqa.arch.ext" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="Z9REq" id="1KHvhQesd2M" role="mXAGU" />
+        <node concept="mXAGQ" id="1KHvhQesd2N" role="mXAGU">
+          <property role="TrG5h" value="second" />
+          <node concept="Z9REq" id="1KHvhQesd5g" role="mXAiC" />
+          <node concept="mXAGQ" id="1KHvhQesd5r" role="mXAiC">
+            <property role="TrG5h" value="second.first" />
+            <node concept="mXxR0" id="1KHvhQesd2O" role="mXAiC">
+              <property role="Z2I3b" value="arch.baselang" />
+              <node concept="37shsh" id="1KHvhQesd2P" role="mXxR3">
+                <node concept="1dCxOk" id="1KHvhQesd2Q" role="37shsm">
+                  <property role="1XweGW" value="bcaa03af-4226-4b43-a0ed-7ecc5d6748d9" />
+                  <property role="1XxBO9" value="test.org.mpsqa.arch.baselang" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="7CXmI" id="1KHvhQesd2R" role="lGtFl">
+          <node concept="7OXhh" id="1KHvhQesd2S" role="7EUXB">
+            <property role="GvXf4" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
