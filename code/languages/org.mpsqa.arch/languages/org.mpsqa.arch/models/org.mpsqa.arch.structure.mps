@@ -69,7 +69,12 @@
     </node>
     <node concept="1TJgyi" id="5enppyYDa$n" role="1TKVEl">
       <property role="IQ2nx" value="6023394733339224343" />
-      <property role="TrG5h" value="reportErrorWhenNotAllProjectLanguagesAreConsidered" />
+      <property role="TrG5h" value="reportErrorWhenNotAllProjectModulesAreConsidered" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="48uyNAv6UZR" role="1TKVEl">
+      <property role="IQ2nx" value="4764398535403352055" />
+      <property role="TrG5h" value="considerOnlyLanguages" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
