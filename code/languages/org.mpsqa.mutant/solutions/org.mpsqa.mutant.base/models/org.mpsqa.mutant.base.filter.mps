@@ -1191,5 +1191,32 @@
     </node>
     <node concept="3Tm1VV" id="4DkAay7VR79" role="1B3o_S" />
   </node>
+  <node concept="312cEu" id="2Y3G5n6qRp6">
+    <property role="TrG5h" value="NoFilter" />
+    <node concept="2tJIrI" id="2Y3G5n6qRGS" role="jymVt" />
+    <node concept="3Tm1VV" id="2Y3G5n6qRp7" role="1B3o_S" />
+    <node concept="3uibUv" id="2Y3G5n6qRxF" role="EKbjA">
+      <ref role="3uigEE" node="4DkAay7VR78" resolve="IMutantsFilter" />
+    </node>
+    <node concept="3clFb_" id="2Y3G5n6qRyV" role="jymVt">
+      <property role="TrG5h" value="filterRootNodes" />
+      <node concept="3Tm1VV" id="2Y3G5n6qRyX" role="1B3o_S" />
+      <node concept="2I9FWS" id="2Y3G5n6qRyY" role="3clF45" />
+      <node concept="37vLTG" id="2Y3G5n6qRyZ" role="3clF46">
+        <property role="TrG5h" value="roots" />
+        <node concept="2I9FWS" id="2Y3G5n6qRz0" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="2Y3G5n6qRz1" role="3clF47">
+        <node concept="3clFbF" id="2Y3G5n6qRK1" role="3cqZAp">
+          <node concept="37vLTw" id="2Y3G5n6qRK0" role="3clFbG">
+            <ref role="3cqZAo" node="2Y3G5n6qRyZ" resolve="roots" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="2Y3G5n6qRz2" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+  </node>
 </model>
 
