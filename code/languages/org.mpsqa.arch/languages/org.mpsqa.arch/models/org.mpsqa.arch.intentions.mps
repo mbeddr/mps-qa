@@ -418,7 +418,7 @@
             </node>
           </node>
           <node concept="2YIFZM" id="5enppyYD8xa" role="2GsD0m">
-            <ref role="37wK5l" to="u41u:5enppyYCuMW" resolve="getProjectLanguagesNotPartOfArchitectureDescription" />
+            <ref role="37wK5l" to="u41u:5enppyYCuMW" resolve="getProjectModulesNotPartOfArchitectureDescription" />
             <ref role="1Pybhc" to="u41u:5enppyYCuym" resolve="ArchitectureUtils" />
             <node concept="37vLTw" id="5enppyYD8xb" role="37wK5m">
               <ref role="3cqZAo" node="72dZnKNhsj6" resolve="project" />

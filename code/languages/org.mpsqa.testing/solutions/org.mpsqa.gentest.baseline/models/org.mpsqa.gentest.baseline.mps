@@ -482,7 +482,7 @@
             <node concept="2OqwBi" id="7cLvrVTV6ry" role="33vP2m">
               <node concept="2OqwBi" id="7cLvrVTV5P2" role="2Oq$k0">
                 <node concept="37vLTw" id="7cLvrVTV7GN" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7cLvrVTV7GC" resolve="facet" />
+                  <ref role="3cqZAo" node="7cLvrVTV7GC" resolve="generationTargetFacet" />
                 </node>
                 <node concept="liA8E" id="7cLvrVTV5Pd" role="2OqNvi">
                   <ref role="37wK5l" to="b0pz:~GenerationTargetFacet.getOutputLocation(org.jetbrains.mps.openapi.model.SModel)" resolve="getOutputLocation" />
