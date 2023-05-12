@@ -96,7 +96,7 @@ if (ciBuild) {
     version = "$major.$minor-SNAPSHOT"
 }
 
-ext.publishingRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
+ext.publishingRepository = 'https://artifacts.itemis.cloud/repository/maven-mps'
 
 
 configurations {
