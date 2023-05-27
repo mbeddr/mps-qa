@@ -410,17 +410,6 @@
         </node>
         <node concept="IWg2L" id="6gY6GEDvUUc" role="IWgqQ">
           <node concept="3clFbS" id="6gY6GEDvUUd" role="2VODD2">
-            <node concept="3clFbF" id="6gY6GEDvV1W" role="3cqZAp">
-              <node concept="2OqwBi" id="6gY6GEDvWGd" role="3clFbG">
-                <node concept="2OqwBi" id="6gY6GEDvV9A" role="2Oq$k0">
-                  <node concept="7Obwk" id="6gY6GEDvV1V" role="2Oq$k0" />
-                  <node concept="3Tsc0h" id="6gY6GEDvVk7" role="2OqNvi">
-                    <ref role="3TtcxE" to="a1af:6gY6GEDvQYW" resolve="violations" />
-                  </node>
-                </node>
-                <node concept="2Kehj3" id="6gY6GEDvYHF" role="2OqNvi" />
-              </node>
-            </node>
             <node concept="Jncv_" id="6gY6GEDw2YJ" role="3cqZAp">
               <ref role="JncvD" to="a1af:2dSiT1hKD8P" resolve="CheckableScript" />
               <node concept="7Obwk" id="6gY6GEDw57D" role="JncvB" />
