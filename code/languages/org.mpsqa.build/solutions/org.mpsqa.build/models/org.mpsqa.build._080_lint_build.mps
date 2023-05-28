@@ -211,6 +211,9 @@
       <node concept="m$_yC" id="7QzWuw5nGg2" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:5HVSRHdVm9a" resolve="jetbrains.mps.build" />
       </node>
+      <node concept="m$_yC" id="4Wm$DJ9mpUP" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:4k71ibbLe59" resolve="com.intellij.modules.mps" />
+      </node>
       <node concept="3_J27D" id="3dqUbgQmcyK" role="m_cZH">
         <node concept="3Mxwew" id="3dqUbgQmcyU" role="3MwsjC">
           <property role="3MwjfP" value="org.mpsqa.lint" />
@@ -454,6 +457,11 @@
             <ref role="3bR37D" node="3dqUbgQmcyL" resolve="org.mpsqa.lint.generic" />
           </node>
         </node>
+        <node concept="1SiIV0" id="4Wm$DJ9mpSF" role="3bR37C">
+          <node concept="3bR9La" id="4Wm$DJ9mpSG" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:2eDSGe9d1q1" resolve="MPS.Workbench" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="51obkXDz7OB" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -536,6 +544,31 @@
         <node concept="1SiIV0" id="7QzWuw5nGfj" role="3bR37C">
           <node concept="3bR9La" id="7QzWuw5nGfk" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:7pdFgzxlDoA" resolve="jetbrains.mps.build" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4Wm$DJ9mpSS" role="3bR37C">
+          <node concept="3bR9La" id="4Wm$DJ9mpST" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4Wm$DJ9mpSU" role="3bR37C">
+          <node concept="3bR9La" id="4Wm$DJ9mpSV" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6Lh7" resolve="jetbrains.mps.typesystemEngine" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4Wm$DJ9mpSW" role="3bR37C">
+          <node concept="3bR9La" id="4Wm$DJ9mpSX" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:44LXwdzyvTi" resolve="Annotations" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4Wm$DJ9mpSY" role="3bR37C">
+          <node concept="3bR9La" id="4Wm$DJ9mpSZ" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4Wm$DJ9mpT0" role="3bR37C">
+          <node concept="3bR9La" id="4Wm$DJ9mpT1" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
           </node>
         </node>
       </node>
