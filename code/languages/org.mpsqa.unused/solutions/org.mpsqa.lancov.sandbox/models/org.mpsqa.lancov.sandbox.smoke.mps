@@ -49,9 +49,6 @@
   </node>
   <node concept="2$Z$qA" id="1YSnQiVj2BA">
     <property role="TrG5h" value="_020_unused_concepts_fields" />
-    <node concept="DPeqC" id="1YSnQiVj2BB" role="2$Z$qz">
-      <property role="DO2bU" value="org.mpsqa.lancov" />
-    </node>
     <node concept="DQmja" id="1YSnQiVj2BD" role="2$Z$qx" />
     <node concept="DP21r" id="1YSnQiVj2BF" role="2$Z$qy" />
     <node concept="2$RV1A" id="1YSnQiVqPfR" role="2$RV0n" />
@@ -59,6 +56,7 @@
     <node concept="2$RV1B" id="1YSnQiVqPg4" role="2$RV0n" />
     <node concept="2$RV1x" id="1YSnQiVqPge" role="2$RV0n" />
     <node concept="2$RV1y" id="1YSnQiVqPgq" role="2$RV0n" />
+    <node concept="DPeqC" id="5sP83eD2gsY" role="2$Z$qz" />
   </node>
 </model>
 
