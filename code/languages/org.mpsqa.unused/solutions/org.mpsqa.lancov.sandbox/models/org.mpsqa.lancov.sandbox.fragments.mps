@@ -38,6 +38,24 @@
       <concept id="1783071917355796139" name="org.mpsqa.lancov.fragments.structure.PropertyDeclarationRef" flags="ng" index="Eijzt">
         <reference id="1783071917355796140" name="propertyDeclaration" index="Eijzq" />
       </concept>
+      <concept id="8017542580523641072" name="org.mpsqa.lancov.fragments.structure.ReusablePropertiesValuesList" flags="ng" index="3$Uy2f">
+        <child id="8017542580523641075" name="propertiesValues" index="3$Uy2c" />
+      </concept>
+      <concept id="8017542580523641213" name="org.mpsqa.lancov.fragments.structure.ReusablePropertyValueRef" flags="ng" index="3$Uy42">
+        <reference id="8017542580523641214" name="propertyValue" index="3$Uy41" />
+      </concept>
+      <concept id="8017542580523641141" name="org.mpsqa.lancov.fragments.structure.ReusablePropertyValue" flags="ng" index="3$Uy5a">
+        <child id="8017542580523641142" name="propertyValue" index="3$Uy59" />
+      </concept>
+      <concept id="8017542580523354204" name="org.mpsqa.lancov.fragments.structure.LanguageFragmentChecker" flags="ng" index="3$Vs0z">
+        <child id="8017542580523354207" name="scope" index="3$Vs0w" />
+        <child id="8017542580523354205" name="productionRules" index="3$Vs0y" />
+        <child id="8017542580523384792" name="postprocessor" index="3$VzuB" />
+      </concept>
+    </language>
+    <language id="002cdcf0-8d3c-425b-9439-321fd2830b63" name="org.mpsqa.lancov">
+      <concept id="6722866822386305946" name="org.mpsqa.lancov.structure.SaveNodesInModel" flags="ng" index="DP21r" />
+      <concept id="6722866822386093835" name="org.mpsqa.lancov.structure.LancovProjectScope" flags="ng" index="DQmja" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -46,7 +64,7 @@
     </language>
   </registry>
   <node concept="Ei9Kv" id="1yYJBoMYwOW">
-    <property role="TrG5h" value="test" />
+    <property role="TrG5h" value="language_fragment _definition" />
     <node concept="Ei9K6" id="1yYJBoMYwOX" role="Ei9Ko">
       <property role="TrG5h" value="language_fragment_root" />
       <ref role="Ei9N5" to="b0y:1yYJBoMXy9D" resolve="LanguageFragmentDefinition" />
@@ -54,8 +72,8 @@
         <node concept="Eijzt" id="1yYJBoMYwP1" role="EijyQ">
           <ref role="Eijzq" to="tpck:h0TrG11" resolve="name" />
         </node>
-        <node concept="EhbcP" id="1yYJBoMYJKd" role="EijyO">
-          <property role="EhbcK" value=".*" />
+        <node concept="3$Uy42" id="6X427YbFJfP" role="EijyO">
+          <ref role="3$Uy41" node="6X427YbFJfL" resolve="identifier" />
         </node>
       </node>
       <node concept="EhSHI" id="6X427YbEn0_" role="Ehb3Z">
@@ -82,6 +100,23 @@
         <node concept="EhSHF" id="6T2biBFY7fh" role="EhSHH">
           <ref role="EhSHC" to="b0y:1yYJBoMXyaN" resolve="root" />
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3$Vs0z" id="6X427YbFjEt">
+    <property role="TrG5h" value="checker" />
+    <node concept="25HSN5" id="6X427YbFjEu" role="3$Vs0y">
+      <ref role="25HSN4" node="1yYJBoMYwOX" resolve="language_fragment_root" />
+    </node>
+    <node concept="DQmja" id="6X427YbFuP1" role="3$Vs0w" />
+    <node concept="DP21r" id="6X427YbFuP3" role="3$VzuB" />
+  </node>
+  <node concept="3$Uy2f" id="6X427YbFJfK">
+    <property role="TrG5h" value="reusable_properties_values" />
+    <node concept="3$Uy5a" id="6X427YbFJfL" role="3$Uy2c">
+      <property role="TrG5h" value="identifier" />
+      <node concept="EhbcP" id="6X427YbFJfN" role="3$Uy59">
+        <property role="EhbcK" value="[a-zA-Z_][a-zA-Z_0-9]+" />
       </node>
     </node>
   </node>

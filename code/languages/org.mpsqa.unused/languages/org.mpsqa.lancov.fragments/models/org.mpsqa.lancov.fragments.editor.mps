@@ -220,7 +220,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1yYJBoMYwP8">
-    <property role="3GE5qa" value="properties" />
+    <property role="3GE5qa" value="properties.values" />
     <ref role="1XX52x" to="b0y:1yYJBoMYwP3" resolve="RegexStringPropertyValue" />
     <node concept="3F0A7n" id="1yYJBoMYwPd" role="2wV5jI">
       <ref role="1NtTu8" to="b0y:1yYJBoMYwP6" resolve="regex" />
@@ -430,6 +430,114 @@
       <ref role="1NtTu8" to="b0y:6T2biBFXq7H" resolve="productionRule" />
       <node concept="1sVBvm" id="6T2biBFXq7U" role="1sWHZn">
         <node concept="3F0A7n" id="6T2biBFXq81" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6X427YbEy1_">
+    <property role="3GE5qa" value="checker" />
+    <ref role="1XX52x" to="b0y:6X427YbEsxs" resolve="LanguageFragmentChecker" />
+    <node concept="3EZMnI" id="6X427YbEy1B" role="2wV5jI">
+      <node concept="3EZMnI" id="6X427YbEy1I" role="3EZMnx">
+        <node concept="VPM3Z" id="6X427YbEy1K" role="3F10Kt" />
+        <node concept="3F0ifn" id="6X427YbEy1S" role="3EZMnx">
+          <property role="3F0ifm" value="language fragment checker configuration:" />
+        </node>
+        <node concept="3F0A7n" id="6X427YbEy22" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="2iRfu4" id="6X427YbEy1N" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="6X427YbEy26" role="3EZMnx" />
+      <node concept="3F0ifn" id="6X427YbEy2d" role="3EZMnx">
+        <property role="3F0ifm" value="Production rules:" />
+      </node>
+      <node concept="3EZMnI" id="6X427YbEy2u" role="3EZMnx">
+        <node concept="VPM3Z" id="6X427YbEy2w" role="3F10Kt" />
+        <node concept="3XFhqQ" id="6X427YbEy2J" role="3EZMnx" />
+        <node concept="3F2HdR" id="6X427YbEy2P" role="3EZMnx">
+          <ref role="1NtTu8" to="b0y:6X427YbEsxt" resolve="productionRules" />
+          <node concept="2iRkQZ" id="6X427YbEy2V" role="2czzBx" />
+        </node>
+        <node concept="2iRfu4" id="6X427YbEy2z" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="6X427YbEy2Y" role="3EZMnx">
+        <property role="3F0ifm" value="Scope:" />
+      </node>
+      <node concept="3EZMnI" id="6X427YbEy3S" role="3EZMnx">
+        <node concept="VPM3Z" id="6X427YbEy3T" role="3F10Kt" />
+        <node concept="3XFhqQ" id="6X427YbEy3U" role="3EZMnx" />
+        <node concept="3F2HdR" id="6X427YbEy3V" role="3EZMnx">
+          <ref role="1NtTu8" to="b0y:6X427YbEsxv" resolve="scope" />
+          <node concept="2iRkQZ" id="6X427YbEy3W" role="2czzBx" />
+        </node>
+        <node concept="2iRfu4" id="6X427YbEy3X" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="6X427YbE$0u" role="3EZMnx">
+        <node concept="2iRfu4" id="6X427YbE$0v" role="2iSdaV" />
+        <node concept="3F0ifn" id="6X427YbEzZs" role="3EZMnx">
+          <property role="3F0ifm" value="Postprocessor" />
+        </node>
+        <node concept="3F1sOY" id="6X427YbE$0V" role="3EZMnx">
+          <ref role="1NtTu8" to="b0y:6X427YbEzZo" resolve="postprocessor" />
+        </node>
+      </node>
+      <node concept="2iRkQZ" id="6X427YbEy1E" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6X427YbFyzP">
+    <property role="3GE5qa" value="properties.values.reusable" />
+    <ref role="1XX52x" to="b0y:6X427YbFyzK" resolve="ReusablePropertiesValuesList" />
+    <node concept="3EZMnI" id="6X427YbFyzR" role="2wV5jI">
+      <node concept="3EZMnI" id="6X427YbFyzY" role="3EZMnx">
+        <node concept="VPM3Z" id="6X427YbFy$0" role="3F10Kt" />
+        <node concept="3F0ifn" id="6X427YbFy$8" role="3EZMnx">
+          <property role="3F0ifm" value="reusable properties list:" />
+        </node>
+        <node concept="3F0A7n" id="6X427YbFy$i" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="2iRfu4" id="6X427YbFy$3" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="6X427YbFy$m" role="3EZMnx" />
+      <node concept="3F2HdR" id="6X427YbFy_M" role="3EZMnx">
+        <ref role="1NtTu8" to="b0y:6X427YbFyzN" resolve="propertiesValues" />
+        <node concept="2iRkQZ" id="6X427YbFy_O" role="2czzBx" />
+      </node>
+      <node concept="2iRkQZ" id="6X427YbFyzU" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6X427YbFy$U">
+    <property role="3GE5qa" value="properties.values.reusable" />
+    <ref role="1XX52x" to="b0y:6X427YbFy$P" resolve="ReusablePropertyValue" />
+    <node concept="3EZMnI" id="6X427YbFy$W" role="2wV5jI">
+      <node concept="3F0ifn" id="6X427YbFy_3" role="3EZMnx">
+        <property role="3F0ifm" value="reusable property value:" />
+      </node>
+      <node concept="3F0A7n" id="6X427YbFy_d" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="6X427YbFy_l" role="3EZMnx">
+        <property role="3F0ifm" value="--" />
+      </node>
+      <node concept="3F1sOY" id="6X427YbFy_v" role="3EZMnx">
+        <ref role="1NtTu8" to="b0y:6X427YbFy$Q" resolve="propertyValue" />
+      </node>
+      <node concept="3F0ifn" id="6X427YbFy_F" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+      </node>
+      <node concept="2iRfu4" id="6X427YbFy$Z" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6X427YbFyA0">
+    <property role="3GE5qa" value="properties.values.reusable" />
+    <ref role="1XX52x" to="b0y:6X427YbFy_X" resolve="ReusablePropertyValueRef" />
+    <node concept="1iCGBv" id="6X427YbFyA2" role="2wV5jI">
+      <ref role="1NtTu8" to="b0y:6X427YbFy_Y" resolve="propertyValue" />
+      <node concept="1sVBvm" id="6X427YbFyA4" role="1sWHZn">
+        <node concept="3F0A7n" id="6X427YbFyAb" role="2wV5jI">
           <property role="1Intyy" value="true" />
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
