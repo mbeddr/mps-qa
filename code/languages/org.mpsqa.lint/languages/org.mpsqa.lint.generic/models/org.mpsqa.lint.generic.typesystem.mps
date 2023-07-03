@@ -1188,32 +1188,6 @@
                 <node concept="9aQIb" id="3EZAxM2IXNb" role="9aQIa">
                   <node concept="3clFbS" id="3EZAxM2IXNc" role="9aQI4">
                     <node concept="Dpp1Q" id="3EZAxM2IXOc" role="3cqZAp">
-                      <node concept="3Cnw8n" id="3EZAxM2IXOd" role="1urrFz">
-                        <property role="ARO6o" value="true" />
-                        <ref role="QpYPw" node="19GnlsUm1t6" resolve="QuickFixInvoker" />
-                        <node concept="3CnSsL" id="3EZAxM2IXOe" role="3Coj4f">
-                          <ref role="QkamJ" node="3ghOW5H_mDZ" resolve="location" />
-                          <node concept="2OqwBi" id="3EZAxM2IXOf" role="3CoRuB">
-                            <node concept="37vLTw" id="3EZAxM2IXOg" role="2Oq$k0">
-                              <ref role="3cqZAo" node="ST9rMmWlmc" resolve="res" />
-                            </node>
-                            <node concept="2sxana" id="3EZAxM2IXOh" role="2OqNvi">
-                              <ref role="2sxfKC" to="qqy:3ghOW5H_ihW" resolve="location" />
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="3CnSsL" id="3EZAxM2IXOi" role="3Coj4f">
-                          <ref role="QkamJ" node="19GnlsUm1tp" resolve="quickfixPtr" />
-                          <node concept="2OqwBi" id="3EZAxM2IXOj" role="3CoRuB">
-                            <node concept="37vLTw" id="3EZAxM2IXOk" role="2Oq$k0">
-                              <ref role="3cqZAo" node="ST9rMmWlmc" resolve="res" />
-                            </node>
-                            <node concept="2sxana" id="3EZAxM2IXOl" role="2OqNvi">
-                              <ref role="2sxfKC" to="qqy:19GnlsUkK_C" resolve="quickfix" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
                       <node concept="2OqwBi" id="3EZAxM2IXOr" role="1urrMF">
                         <node concept="37vLTw" id="3EZAxM2IXOs" role="2Oq$k0">
                           <ref role="3cqZAo" node="ST9rMmWlmc" resolve="res" />
