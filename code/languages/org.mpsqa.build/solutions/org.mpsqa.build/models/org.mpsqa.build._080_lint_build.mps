@@ -379,6 +379,65 @@
             <ref role="3bR37D" to="ffeo:4SM2EuqHUPF" resolve="jetbrains.mps.lang.modelapi" />
           </node>
         </node>
+        <node concept="1SiIV0" id="3ghOW5HWiHk" role="3bR37C">
+          <node concept="1Busua" id="3ghOW5HWiHl" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:7Kfy9QB6Lc2" resolve="jetbrains.mps.lang.typesystem" />
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtD" id="3ghOW5HWiKq" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="org.mpsqa.lint.generic.linters_library.quickfixes" />
+        <property role="3LESm3" value="c1c2284f-2e54-4b21-aab1-16ba0415fcab" />
+        <node concept="398BVA" id="3ghOW5HWiMx" role="3LF7KH">
+          <ref role="398BVh" node="3dqUbgQmcyv" resolve="mpsqa.lint.home" />
+          <node concept="2Ry0Ak" id="3ghOW5HWiMy" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="3ghOW5HWiMz" role="2Ry0An">
+              <property role="2Ry0Am" value="org.mpsqa.lint.generic.linters_library.quickfixes" />
+              <node concept="2Ry0Ak" id="3ghOW5HWiMD" role="2Ry0An">
+                <property role="2Ry0Am" value="org.mpsqa.lint.generic.linters_library.quickfixes.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3ghOW5HWiN3" role="3bR37C">
+          <node concept="3bR9La" id="3ghOW5HWiN4" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3ghOW5HWiN5" role="3bR37C">
+          <node concept="3bR9La" id="3ghOW5HWiN6" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3ghOW5HWiN7" role="3bR37C">
+          <node concept="3bR9La" id="3ghOW5HWiN8" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="3ghOW5HWiNk" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="3ghOW5HWiNl" role="1HemKq">
+            <node concept="398BVA" id="3ghOW5HWiN9" role="3LXTmr">
+              <ref role="398BVh" node="3dqUbgQmcyv" resolve="mpsqa.lint.home" />
+              <node concept="2Ry0Ak" id="3ghOW5HWiNa" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="3ghOW5HWiNb" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.lint.generic.linters_library.quickfixes" />
+                  <node concept="2Ry0Ak" id="3ghOW5HWiNc" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="3ghOW5HWiNm" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="3ywQ_KXEkYC" role="2G$12L">
         <property role="TrG5h" value="org.mpsqa.lint.generic.linters_library" />
@@ -460,6 +519,11 @@
         <node concept="1SiIV0" id="4Wm$DJ9mpSF" role="3bR37C">
           <node concept="3bR9La" id="4Wm$DJ9mpSG" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:2eDSGe9d1q1" resolve="MPS.Workbench" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3ghOW5HWiOC" role="3bR37C">
+          <node concept="3bR9La" id="3ghOW5HWiOD" role="1SiIV1">
+            <ref role="3bR37D" node="3ghOW5HWiKq" resolve="org.mpsqa.lint.generic.linters_library.quickfixes" />
           </node>
         </node>
       </node>
