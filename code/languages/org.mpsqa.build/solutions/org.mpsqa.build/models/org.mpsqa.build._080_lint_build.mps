@@ -576,6 +576,21 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
           </node>
         </node>
+        <node concept="1SiIV0" id="3rV$6T85e2m" role="3bR37C">
+          <node concept="3bR9La" id="3rV$6T85e2n" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6Lc2" resolve="jetbrains.mps.lang.typesystem" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3rV$6T85e2o" role="3bR37C">
+          <node concept="3bR9La" id="3rV$6T85e2p" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L4x" resolve="jetbrains.mps.lang.constraints" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3rV$6T85e2q" role="3bR37C">
+          <node concept="3bR9La" id="3rV$6T85e2r" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:3qkjbZn8c2m" resolve="jetbrains.mps.lang.feedback.context" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="55IIr" id="3dqUbgQmcy$" role="auvoZ" />
