@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:59e2876f-999a-4af1-8c54-345ff89e1fb6(org.mpsqa.lint.mps_lang.linters_library.checking_rule_aspect)">
+<model ref="r:59e2876f-999a-4af1-8c54-345ff89e1fb6(org.mpsqa.lint.mps_lang.linters_library.typesystem_aspect)">
   <persistence version="9" />
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
