@@ -225,12 +225,10 @@ publishing {
 		maven {
 			name = "GitHubPackages"
 			url = uri("https://maven.pkg.github.com/mbeddr/mps-qa")
-			if(project.hasProperty("gpr.token")) {
-				credentials {
-					username = project.findProperty("gpr.user")
-					password = project.findProperty("gpr.token")
-				}
-			}
+            credentials {
+                username = project.findProperty("github_username") ?: System.getenv("GITHUB_ACTOR")
+                password = project.findProperty("github_token") ?: System.getenv("GITHUB_TOKEN")
+            }
 		}
     }
     publications {
