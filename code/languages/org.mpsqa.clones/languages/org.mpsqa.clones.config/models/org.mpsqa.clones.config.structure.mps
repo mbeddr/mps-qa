@@ -72,35 +72,35 @@
       <property role="IQ2ns" value="3373285491508535697" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="scope" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="2VgkkwRm66t" resolve="CloneDetectionScopeBase" />
     </node>
     <node concept="1TJgyj" id="1GhTetdWNt7" role="1TKVEi">
       <property role="IQ2ns" value="1950591795724498759" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="consideredModules" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2VgkkwRqN5V" resolve="IIgnoreElement" />
     </node>
     <node concept="1TJgyj" id="7vLq_hstMma" role="1TKVEi">
       <property role="IQ2ns" value="8642806070461801866" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="ignoredModules" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2VgkkwRqN5V" resolve="IIgnoreElement" />
     </node>
     <node concept="1TJgyj" id="7vLq_hstMmd" role="1TKVEi">
       <property role="IQ2ns" value="8642806070461801869" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="ignoredModels" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2VgkkwRqN5V" resolve="IIgnoreElement" />
     </node>
     <node concept="1TJgyj" id="GBiWXwJuSz" role="1TKVEi">
       <property role="IQ2ns" value="803694412562296355" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="ignoredConcepts" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2VgkkwRqN5V" resolve="IIgnoreElement" />
     </node>
     <node concept="PrWs8" id="7vLq_hstL0g" role="PzmwI">
@@ -113,7 +113,6 @@
       <property role="IQ2ns" value="7342432778946760608" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="postprocessor" />
-      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="6n_zVnCdQPg" resolve="IClonesPostprocessor" />
     </node>
     <node concept="1TJgyi" id="6dJ4vxiQa_1" role="1TKVEl">
