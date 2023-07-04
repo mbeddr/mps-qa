@@ -156,11 +156,23 @@ task configureJava {
     }
 }
 
+// All MPS tasks depend on configureJava and resolveMps
+tasks.withType(RunAntScript).configureEach {
+    dependsOn(configureJava, resolveMps)
+}
+
 task build_allScripts(type: BuildLanguages, dependsOn: [resolveMps, configureJava]) {
     script "$buildDir/scripts/build_all_scripts.xml"
 }
 
-task build_base_languages(type: BuildLanguages, dependsOn: [build_allScripts]) {
+// All other MPS tasks depend on build_allScripts
+tasks.withType(RunAntScript).configureEach {
+    if (it != build_allScripts) {
+        it.dependsOn(build_allScripts)
+    }
+}
+
+task build_base_languages(type: BuildLanguages) {
     script "$buildDir/scripts/build-base-languages.xml"
 }
 
@@ -211,14 +223,17 @@ task package_mpsqa(type: Zip, dependsOn: build_allInOne_package) {
 }
 
 task run_clones_headless(type: TestLanguages, dependsOn: build_clones_languages) {
-    description "Will execute all tests from command line"
+    description "Will execute clones tests from command line"
     print "mpsqa.home = " + rootDir;
 	script new File("$buildDir/scripts/build-clones-headless-detector.xml")
 }
 
-check.dependsOn run_clones_headless
+task test_lint(type: TestLanguages, dependsOn: build_lint_analysis_languages) {
+    description "Will execute lint tests from command line"
+    script "$buildDir/scripts/build-lint-tests.xml"
+}
 
-assemble.dependsOn run_clones_headless
+check.dependsOn run_clones_headless, test_lint
 
 publishing {
     repositories {

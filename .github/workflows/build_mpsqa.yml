@@ -27,7 +27,7 @@ jobs:
     - name: Build MPS-QA and Publish to Github Maven
       uses: gradle/gradle-build-action@v2
       with: 
-        arguments: publish
+        arguments: build publish
         wrapper-cache-enabled: true
         dependencies-cache-enabled: true
         dependencies-cache-key: gradle/dependency-locks/**
