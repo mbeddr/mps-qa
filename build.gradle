@@ -93,7 +93,6 @@ dependencies {
 }
 
 repositories {
-    mavenLocal()
     for (repoUrl in project.dependencyRepositories) {
         maven {
             url repoUrl
