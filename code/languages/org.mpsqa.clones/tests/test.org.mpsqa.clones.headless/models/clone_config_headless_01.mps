@@ -18,14 +18,10 @@
         <property id="7164965290409240908" name="minimalNumberOfSiblings" index="LHVyO" />
         <property id="7164965290409240897" name="minimalSuffixSize" index="LHVyT" />
         <property id="7164965290409240901" name="maximalSuffixSize" index="LHVyX" />
-        <child id="7342432778946760608" name="postprocessor" index="2dEW0l" />
         <child id="3373285491508535697" name="scope" index="py33p" />
         <child id="8642806070461801866" name="ignoredModules" index="Fx$Zu" />
         <child id="1950591795724498759" name="consideredModules" index="1mSHew" />
         <child id="803694412562296355" name="ignoredConcepts" index="1FAEnG" />
-      </concept>
-      <concept id="1268924532562219296" name="org.mpsqa.clones.config.structure.NewClonesFilter" flags="ng" index="2VIB43">
-        <property id="1268924532562219297" name="path" index="2VIB42" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -64,9 +60,6 @@
       <property role="Fx$Zl" value=".*lib" />
     </node>
     <node concept="py32F" id="7YZJmepzrg1" role="py33p" />
-    <node concept="2VIB43" id="wcbKZIZ4mX" role="2dEW0l">
-      <property role="2VIB42" value="d:/clones.xml" />
-    </node>
   </node>
 </model>
 
