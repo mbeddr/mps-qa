@@ -141,7 +141,7 @@
         </node>
       </node>
       <node concept="m$_yB" id="fm3v0X36N2" role="m$_yh">
-        <ref role="m$_yA" node="5Xjjs0Nf2r4" />
+        <ref role="m$_yA" node="5Xjjs0Nf2r4" resolve="org.mpsqa.build" />
       </node>
       <node concept="m$_yC" id="fm3v0X36N4" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:5HVSRHdVm9a" resolve="jetbrains.mps.build" />

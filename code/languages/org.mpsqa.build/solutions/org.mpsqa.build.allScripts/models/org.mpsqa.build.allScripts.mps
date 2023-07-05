@@ -309,6 +309,71 @@
     <node concept="2igEWh" id="3GDqItDloKJ" role="1hWBAP">
       <property role="3UIfUI" value="1024" />
     </node>
+    <node concept="1E1JtA" id="2WwuhUZ3iEo" role="3989C9">
+      <property role="BnDLt" value="true" />
+      <property role="TrG5h" value="org.mpsqa.lint.build" />
+      <property role="3LESm3" value="a89565e6-84af-4e8f-ad86-d4a45e3387fe" />
+      <node concept="55IIr" id="2WwuhUZ3iEq" role="3LF7KH">
+        <node concept="2Ry0Ak" id="2WwuhUZ3iFu" role="iGT6I">
+          <property role="2Ry0Am" value="code" />
+          <node concept="2Ry0Ak" id="2WwuhUZ3iFz" role="2Ry0An">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="2WwuhUZ3iFC" role="2Ry0An">
+              <property role="2Ry0Am" value="org.mpsqa.lint" />
+              <node concept="2Ry0Ak" id="2WwuhUZ3iFH" role="2Ry0An">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="2WwuhUZ3iFM" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.lint.build" />
+                  <node concept="2Ry0Ak" id="2WwuhUZ3iFR" role="2Ry0An">
+                    <property role="2Ry0Am" value="org.mpsqa.lint.build.msd" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1SiIV0" id="2WwuhUZ3iGe" role="3bR37C">
+        <node concept="3bR9La" id="2WwuhUZ3iGf" role="1SiIV1">
+          <ref role="3bR37D" node="5Xjjs0Nf2r4" resolve="org.mpsqa.build" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="2WwuhUZ3iGg" role="3bR37C">
+        <node concept="3bR9La" id="2WwuhUZ3iGh" role="1SiIV1">
+          <ref role="3bR37D" to="ffeo:78GwwOvB3tw" resolve="jetbrains.mps.ide.build" />
+        </node>
+      </node>
+      <node concept="1BupzO" id="2WwuhUZ3iGp" role="3bR31x">
+        <property role="3ZfqAx" value="models" />
+        <property role="1Hdu6h" value="true" />
+        <property role="1HemKv" value="true" />
+        <node concept="3LXTmp" id="2WwuhUZ3iGq" role="1HemKq">
+          <node concept="55IIr" id="2WwuhUZ3iGi" role="3LXTmr">
+            <node concept="2Ry0Ak" id="2WwuhUZ3iGj" role="iGT6I">
+              <property role="2Ry0Am" value="code" />
+              <node concept="2Ry0Ak" id="2WwuhUZ3iGk" role="2Ry0An">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="2WwuhUZ3iGl" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.lint" />
+                  <node concept="2Ry0Ak" id="2WwuhUZ3iGm" role="2Ry0An">
+                    <property role="2Ry0Am" value="solutions" />
+                    <node concept="2Ry0Ak" id="2WwuhUZ3iGn" role="2Ry0An">
+                      <property role="2Ry0Am" value="org.mpsqa.lint.build" />
+                      <node concept="2Ry0Ak" id="2WwuhUZ3iGo" role="2Ry0An">
+                        <property role="2Ry0Am" value="models" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3qWCbU" id="2WwuhUZ3iGr" role="3LXTna">
+            <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
