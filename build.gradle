@@ -245,6 +245,16 @@ publishing {
                 password = project.findProperty("github_token") ?: System.getenv("GITHUB_TOKEN")
             }
 		}
+        if (project.hasProperty("artifacts.itemis.cloud.user") && project.hasProperty("artifacts.itemis.cloud.pw")) {
+            maven {
+                name = "ItemisNexus"
+                url =  uri("https://artifacts.itemis.cloud/repository/maven-mps-releases")
+                    credentials {
+                        username = project.findProperty("artifacts.itemis.cloud.user")
+                        password = project.findProperty("artifacts.itemis.cloud.pw")
+                    }
+            }
+        }
     }
     publications {
         MPSQA(MavenPublication) {
