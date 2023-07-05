@@ -120,7 +120,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.org.mpsqa.build" />
+  <target name="compileJava" depends="java.compile.org.mpsqa.build, java.compile.org.mpsqa.lint.build, java.compile.org.mpsqa.clones.build" />
   
   <target name="processResources" />
   
@@ -223,6 +223,8 @@
       <library file="${artifacts.mps}/languages/xml/jetbrains.mps.core.xml.jar" />
       <chunk>
         <module file="${mpsqa.build.home}/solutions/org.mpsqa.build/org.mpsqa.build.msd" />
+        <module file="${mpsqa.home}/code/languages/org.mpsqa.clones/solutions/org.mpsqa.clones.build/org.mpsqa.clones.build.msd" />
+        <module file="${mpsqa.home}/code/languages/org.mpsqa.lint/solutions/org.mpsqa.lint.build/org.mpsqa.lint.build.msd" />
       </chunk>
       <jvmargs>
         <arg value="-ea" />
@@ -250,7 +252,33 @@
     </javac>
   </target>
   
+  <target name="java.compile.org.mpsqa.lint.build" depends="java.compile.org.mpsqa.build">
+    <mkdir dir="${mpsqa.home}/code/languages/org.mpsqa.lint/solutions/org.mpsqa.lint.build/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/org.mpsqa.lint.build" />
+    <javac destdir="${build.tmp}/java/out/org.mpsqa.lint.build" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${mpsqa.home}/code/languages/org.mpsqa.lint/solutions/org.mpsqa.lint.build/source_gen" />
+      </src>
+      <classpath path="${build.tmp}/java/out/org.mpsqa.build" />
+    </javac>
+  </target>
+  
+  <target name="java.compile.org.mpsqa.clones.build" depends="java.compile.org.mpsqa.build">
+    <mkdir dir="${mpsqa.home}/code/languages/org.mpsqa.clones/solutions/org.mpsqa.clones.build/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/org.mpsqa.clones.build" />
+    <javac destdir="${build.tmp}/java/out/org.mpsqa.clones.build" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${mpsqa.home}/code/languages/org.mpsqa.clones/solutions/org.mpsqa.clones.build/source_gen" />
+      </src>
+      <classpath path="${build.tmp}/java/out/org.mpsqa.build" />
+    </javac>
+  </target>
+  
   <target name="cleanSources">
     <delete dir="${mpsqa.build.home}/solutions/org.mpsqa.build/source_gen" />
+    <delete dir="${mpsqa.home}/code/languages/org.mpsqa.clones/solutions/org.mpsqa.clones.build/source_gen" />
+    <delete dir="${mpsqa.home}/code/languages/org.mpsqa.lint/solutions/org.mpsqa.lint.build/source_gen" />
   </target>
 </project>

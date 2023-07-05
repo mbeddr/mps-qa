@@ -1,26 +1,7 @@
 import de.itemis.mps.gradle.*
 
-//will pull the groovy classes/types from nexus to the classpath
-buildscript {
-    repositories {
-        mavenCentral()
-        def githubRepos = ["https://maven.pkg.github.com/mbeddr/*"]
-        for (def repo in githubRepos) {
-            maven {
-                url = uri(repo)
-                credentials {
-                    username = project.findProperty("github_username") ?: System.getenv("GITHUB_ACTOR")
-                    password = project.findProperty("github_token") ?: System.getenv("GITHUB_TOKEN")
-                }
-            }
-        }
-    }
-    dependencies {
-        classpath 'de.itemis.mps:mps-gradle-plugin:1.16.+'
-    }
-}
-
 plugins {
+    id 'de.itemis.mps.gradle.common' version '1.17.+'
     id 'base'
     id 'maven-publish'
     id 'co.riiid.gradle' version '0.4.2'
@@ -44,7 +25,7 @@ if (System.env.CI != null && System.env.CI.toBoolean()) {
 }
 
 // Detect jdk location, required to start ant with tools.jar on classpath otherwise javac and tests will fail
-def jdk_home
+String jdk_home
 
 if (ext.has('java11_home')) {
     jdk_home = ext.get('java11_home')
@@ -112,7 +93,6 @@ dependencies {
 }
 
 repositories {
-    mavenLocal()
     for (repoUrl in project.dependencyRepositories) {
         maven {
             url repoUrl
@@ -176,11 +156,23 @@ task configureJava {
     }
 }
 
+// All MPS tasks depend on configureJava and resolveMps
+tasks.withType(RunAntScript).configureEach {
+    dependsOn(configureJava, resolveMps)
+}
+
 task build_allScripts(type: BuildLanguages, dependsOn: [resolveMps, configureJava]) {
     script "$buildDir/scripts/build_all_scripts.xml"
 }
 
-task build_base_languages(type: BuildLanguages, dependsOn: [build_allScripts]) {
+// All other MPS tasks depend on build_allScripts
+tasks.withType(RunAntScript).configureEach {
+    if (it != build_allScripts) {
+        it.dependsOn(build_allScripts)
+    }
+}
+
+task build_base_languages(type: BuildLanguages) {
     script "$buildDir/scripts/build-base-languages.xml"
 }
 
@@ -231,26 +223,27 @@ task package_mpsqa(type: Zip, dependsOn: build_allInOne_package) {
 }
 
 task run_clones_headless(type: TestLanguages, dependsOn: build_clones_languages) {
-    description "Will execute all tests from command line"
+    description "Will execute clones tests from command line"
     print "mpsqa.home = " + rootDir;
 	script new File("$buildDir/scripts/build-clones-headless-detector.xml")
 }
 
-check.dependsOn run_clones_headless
+task test_lint(type: TestLanguages, dependsOn: build_lint_analysis_languages) {
+    description "Will execute lint tests from command line"
+    script "$buildDir/scripts/build-lint-tests.xml"
+}
 
-assemble.dependsOn run_clones_headless
+check.dependsOn run_clones_headless, test_lint
 
 publishing {
     repositories {
 		maven {
 			name = "GitHubPackages"
 			url = uri("https://maven.pkg.github.com/mbeddr/mps-qa")
-			if(project.hasProperty("gpr.token")) {
-				credentials {
-					username = project.findProperty("gpr.user")
-					password = project.findProperty("gpr.token")
-				}
-			}
+            credentials {
+                username = project.findProperty("github_username") ?: System.getenv("GITHUB_ACTOR")
+                password = project.findProperty("github_token") ?: System.getenv("GITHUB_TOKEN")
+            }
 		}
     }
     publications {

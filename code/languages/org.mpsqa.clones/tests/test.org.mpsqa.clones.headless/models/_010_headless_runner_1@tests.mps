@@ -7,6 +7,7 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="5" />
     <use id="56cfcf05-92e4-4822-8126-2ea0e0cece6b" name="org.mpsqa.clones.config" version="0" />
+    <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
   </languages>
   <imports>
     <import index="f4mj" ref="r:87c69567-b194-437c-b9e6-0ce2770f06d2(org.mpsqa.clones.config.pluginSolution.utils)" />
@@ -82,12 +83,6 @@
       </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
-      </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
-      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
     </language>
     <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
@@ -195,19 +190,9 @@
           </node>
         </node>
         <node concept="3clFbH" id="2KLGrfl1HUW" role="3cqZAp" />
-        <node concept="3SKdUt" id="2KLGrfl1HUX" role="3cqZAp">
-          <node concept="3SKdUq" id="2KLGrfl1HUY" role="3SKWNk">
-            <property role="3SKdUp" value="if the clones detection config has as postprocessor the &quot;filtering of new clones w.r.t. baseline&quot;, then our test " />
-          </node>
-        </node>
-        <node concept="3SKdUt" id="2KLGrfl1HUZ" role="3cqZAp">
-          <node concept="3SKdUq" id="2KLGrfl1HV0" role="3SKWNk">
-            <property role="3SKdUp" value="will fail if new clones are detected " />
-          </node>
-        </node>
         <node concept="3vlDli" id="2KLGrfl1HV1" role="3cqZAp">
           <node concept="3cmrfG" id="2KLGrfl1HV2" role="3tpDZB">
-            <property role="3cmrfH" value="0" />
+            <property role="3cmrfH" value="1" />
           </node>
           <node concept="2OqwBi" id="2KLGrfl1HV3" role="3tpDZA">
             <node concept="37vLTw" id="2KLGrfl1HV4" role="2Oq$k0">
