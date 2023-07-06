@@ -306,6 +306,9 @@
       </concept>
       <concept id="1227008614712" name="jetbrains.mps.baseLanguage.collections.structure.LinkedListCreator" flags="nn" index="2Jqq0_" />
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
+      <concept id="1205679737078" name="jetbrains.mps.baseLanguage.collections.structure.SortOperation" flags="nn" index="2S7cBI">
+        <child id="1205679832066" name="ascending" index="2S7zOq" />
+      </concept>
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1160666733551" name="jetbrains.mps.baseLanguage.collections.structure.AddAllElementsOperation" flags="nn" index="X8dFx" />
@@ -3543,8 +3546,33 @@
                     </node>
                     <node concept="TSZUe" id="4aEqBbb$AbA" role="2OqNvi">
                       <node concept="3cpWs3" id="4aEqBbb$Bh8" role="25WWJ7">
-                        <node concept="37vLTw" id="4aEqBbb$ByH" role="3uHU7w">
-                          <ref role="3cqZAo" node="4aEqBbbBtsv" resolve="crtPath" />
+                        <node concept="2OqwBi" id="5sL_q4g2vJz" role="3uHU7w">
+                          <node concept="37vLTw" id="4aEqBbb$ByH" role="2Oq$k0">
+                            <ref role="3cqZAo" node="4aEqBbbBtsv" resolve="crtPath" />
+                          </node>
+                          <node concept="2S7cBI" id="5sL_q4g2x9x" role="2OqNvi">
+                            <node concept="1bVj0M" id="5sL_q4g2x9z" role="23t8la">
+                              <node concept="3clFbS" id="5sL_q4g2x9$" role="1bW5cS">
+                                <node concept="3clFbF" id="5sL_q4g2yW$" role="3cqZAp">
+                                  <node concept="2OqwBi" id="5sL_q4g2zD7" role="3clFbG">
+                                    <node concept="37vLTw" id="5sL_q4g2yWz" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="5sL_q4g2x9_" resolve="it" />
+                                    </node>
+                                    <node concept="liA8E" id="5sL_q4g2_hZ" role="2OqNvi">
+                                      <ref role="37wK5l" to="lui2:~SModule.getModuleName()" resolve="getModuleName" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="Rh6nW" id="5sL_q4g2x9_" role="1bW2Oz">
+                                <property role="TrG5h" value="it" />
+                                <node concept="2jxLKc" id="5sL_q4g2x9A" role="1tU5fm" />
+                              </node>
+                            </node>
+                            <node concept="1nlBCl" id="5sL_q4g2x9B" role="2S7zOq">
+                              <property role="3clFbU" value="true" />
+                            </node>
+                          </node>
                         </node>
                         <node concept="Xl_RD" id="4aEqBbb$Apd" role="3uHU7B">
                           <property role="Xl_RC" value="cyclic dependency found " />
