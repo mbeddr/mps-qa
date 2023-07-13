@@ -158,7 +158,7 @@
         <ref role="2j1LYj" node="53wV48CwXEq" resolve="timeBoundInMillis" />
       </node>
       <node concept="3cmrfG" id="6wZqgFKWo14" role="2j1LYg">
-        <property role="3cmrfH" value="10000" />
+        <property role="3cmrfH" value="100000" />
       </node>
     </node>
     <node concept="2j1K4_" id="53wV48CwXEm" role="2j1K4A">
@@ -590,15 +590,15 @@
     <property role="TrG5h" value="slow_checking_of_models" />
     <node concept="2j1LYv" id="2xFKNLWB3BJ" role="2j1YRv">
       <node concept="2j1LYi" id="2xFKNLWB3BK" role="2j1YQj">
-        <ref role="2j1LYj" node="2xFKNLWB3BS" resolve="moduleNameSubstring" />
+        <ref role="2j1LYj" node="2xFKNLWB3BS" resolve="moduleNameRegex" />
       </node>
       <node concept="Xl_RD" id="2xFKNLWB3BL" role="2j1LYg">
-        <property role="Xl_RC" value="generic.sandbox" />
+        <property role="Xl_RC" value=".*generic.*sandbox$" />
       </node>
     </node>
     <node concept="2j1LYv" id="2xFKNLWB3BM" role="2j1YRv">
       <node concept="2j1LYi" id="2xFKNLWB3BN" role="2j1YQj">
-        <ref role="2j1LYj" node="2xFKNLWB3BU" resolve="modelNameSubstring" />
+        <ref role="2j1LYj" node="2xFKNLWB3BU" resolve="modelNameRegex" />
       </node>
       <node concept="Xl_RD" id="2xFKNLWB3BO" role="2j1LYg" />
     </node>
@@ -606,16 +606,16 @@
       <node concept="2j1LYi" id="2xFKNLWB3BQ" role="2j1YQj">
         <ref role="2j1LYj" node="2xFKNLWB3BW" resolve="timeBoundInMillis" />
       </node>
-      <node concept="3cmrfG" id="2xFKNLWB3BR" role="2j1LYg">
-        <property role="3cmrfH" value="5000" />
+      <node concept="3cmrfG" id="6o7R8_BRuzv" role="2j1LYg">
+        <property role="3cmrfH" value="0" />
       </node>
     </node>
     <node concept="2j1K4_" id="2xFKNLWB3BS" role="2j1K4A">
-      <property role="TrG5h" value="moduleNameSubstring" />
+      <property role="TrG5h" value="moduleNameRegex" />
       <node concept="17QB3L" id="2xFKNLWB3BT" role="2j1LY4" />
     </node>
     <node concept="2j1K4_" id="2xFKNLWB3BU" role="2j1K4A">
-      <property role="TrG5h" value="modelNameSubstring" />
+      <property role="TrG5h" value="modelNameRegex" />
       <node concept="17QB3L" id="2xFKNLWB3BV" role="2j1LY4" />
     </node>
     <node concept="2j1K4_" id="2xFKNLWB3BW" role="2j1K4A">
@@ -675,8 +675,8 @@
         </node>
       </node>
       <node concept="1PaTwC" id="2xFKNLWB3Cr" role="1PaQFQ">
-        <node concept="3oM_SD" id="2xFKNLWB3Cs" role="1PaTwD">
-          <property role="3oM_SC" value="moduleNameSubstring" />
+        <node concept="3oM_SD" id="6o7R8_BquPx" role="1PaTwD">
+          <property role="3oM_SC" value="moduleNameRegex" />
         </node>
         <node concept="3oM_SD" id="2xFKNLWB3Ct" role="1PaTwD">
           <property role="3oM_SC" value="-" />
@@ -805,8 +805,8 @@
         </node>
       </node>
       <node concept="1PaTwC" id="2xFKNLWB3D7" role="1PaQFQ">
-        <node concept="3oM_SD" id="2xFKNLWB3D8" role="1PaTwD">
-          <property role="3oM_SC" value="modelNameSubstring" />
+        <node concept="3oM_SD" id="6o7R8_BquPY" role="1PaTwD">
+          <property role="3oM_SC" value="modelNameRegex" />
         </node>
         <node concept="3oM_SD" id="2xFKNLWB3D9" role="1PaTwD">
           <property role="3oM_SC" value="-" />
@@ -995,16 +995,16 @@
             </node>
             <node concept="3clFbF" id="2xFKNLWB3Ei" role="3cqZAp">
               <node concept="2YIFZM" id="2xFKNLWBCwy" role="3clFbG">
-                <ref role="37wK5l" to="teko:2xFKNLWAMpw" resolve="profileSingleModel" />
+                <ref role="37wK5l" to="teko:2xFKNLWAMpw" resolve="profileModels" />
                 <ref role="1Pybhc" to="teko:2xFKNLW_V2v" resolve="TypesystemPerformanceUtils" />
                 <node concept="37vLTw" id="2xFKNLWBCwz" role="37wK5m">
                   <ref role="3cqZAo" node="2xFKNLWB3Ee" resolve="models" />
                 </node>
                 <node concept="2j1LYi" id="2xFKNLWBCw$" role="37wK5m">
-                  <ref role="2j1LYj" node="2xFKNLWB3BU" resolve="modelNameSubstring" />
+                  <ref role="2j1LYj" node="2xFKNLWB3BU" resolve="modelNameRegex" />
                 </node>
                 <node concept="2j1LYi" id="2xFKNLWBCw_" role="37wK5m">
-                  <ref role="2j1LYj" node="2xFKNLWB3BS" resolve="moduleNameSubstring" />
+                  <ref role="2j1LYj" node="2xFKNLWB3BS" resolve="moduleNameRegex" />
                 </node>
                 <node concept="1MG55F" id="2xFKNLWBCwA" role="37wK5m" />
                 <node concept="2j1LYi" id="2xFKNLWBCwB" role="37wK5m">
@@ -1030,10 +1030,10 @@
     <property role="TrG5h" value="slow_checking_of_modules" />
     <node concept="2j1LYv" id="2xFKNLWBBJk" role="2j1YRv">
       <node concept="2j1LYi" id="2xFKNLWBBJl" role="2j1YQj">
-        <ref role="2j1LYj" node="2xFKNLWBBJt" resolve="moduleNameSubstring" />
+        <ref role="2j1LYj" node="2xFKNLWBBJt" resolve="moduleNameRegex" />
       </node>
       <node concept="Xl_RD" id="2xFKNLWBBJm" role="2j1LYg">
-        <property role="Xl_RC" value="generic.sandbox" />
+        <property role="Xl_RC" value=".*generic.sandbox$" />
       </node>
     </node>
     <node concept="2j1LYv" id="2xFKNLWBBJq" role="2j1YRv">
@@ -1045,7 +1045,7 @@
       </node>
     </node>
     <node concept="2j1K4_" id="2xFKNLWBBJt" role="2j1K4A">
-      <property role="TrG5h" value="moduleNameSubstring" />
+      <property role="TrG5h" value="moduleNameRegex" />
       <node concept="17QB3L" id="2xFKNLWBBJu" role="2j1LY4" />
     </node>
     <node concept="2j1K4_" id="2xFKNLWBBJx" role="2j1K4A">
@@ -1106,7 +1106,7 @@
       </node>
       <node concept="1PaTwC" id="2xFKNLWBBJQ" role="1PaQFQ">
         <node concept="3oM_SD" id="2xFKNLWBBJR" role="1PaTwD">
-          <property role="3oM_SC" value="moduleNameSubstring" />
+          <property role="3oM_SC" value="moduleNameRegex" />
         </node>
         <node concept="3oM_SD" id="2xFKNLWBBJS" role="1PaTwD">
           <property role="3oM_SC" value="-" />
@@ -1297,13 +1297,13 @@
             </node>
             <node concept="3clFbF" id="2xFKNLWBBLH" role="3cqZAp">
               <node concept="2YIFZM" id="2xFKNLWC59B" role="3clFbG">
-                <ref role="37wK5l" to="teko:2xFKNLWBFAd" resolve="profileSingleModule" />
+                <ref role="37wK5l" to="teko:2xFKNLWBFAd" resolve="profileModules" />
                 <ref role="1Pybhc" to="teko:2xFKNLW_V2v" resolve="TypesystemPerformanceUtils" />
                 <node concept="37vLTw" id="2xFKNLWC59C" role="37wK5m">
                   <ref role="3cqZAo" node="2xFKNLWBCJl" resolve="modules" />
                 </node>
                 <node concept="2j1LYi" id="2xFKNLWC59E" role="37wK5m">
-                  <ref role="2j1LYj" node="2xFKNLWBBJt" resolve="moduleNameSubstring" />
+                  <ref role="2j1LYj" node="2xFKNLWBBJt" resolve="moduleNameRegex" />
                 </node>
                 <node concept="1MG55F" id="2xFKNLWC59F" role="37wK5m" />
                 <node concept="2j1LYi" id="2xFKNLWC59G" role="37wK5m">
