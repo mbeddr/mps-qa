@@ -214,6 +214,9 @@
       <node concept="m$_yC" id="4Wm$DJ9mpUP" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbLe59" resolve="com.intellij.modules.mps" />
       </node>
+      <node concept="m$_yC" id="30a3800NyCh" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:5lGJ4Taqfsl" resolve="jetbrains.mps.ide.modelchecker" />
+      </node>
       <node concept="3_J27D" id="3dqUbgQmcyK" role="m_cZH">
         <node concept="3Mxwew" id="3dqUbgQmcyU" role="3MwsjC">
           <property role="3MwjfP" value="org.mpsqa.lint" />
@@ -653,6 +656,11 @@
         <node concept="1SiIV0" id="3rV$6T85e2q" role="3bR37C">
           <node concept="3bR9La" id="3rV$6T85e2r" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:3qkjbZn8c2m" resolve="jetbrains.mps.lang.feedback.context" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="30a3800NyBu" role="3bR37C">
+          <node concept="3bR9La" id="30a3800NyBv" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:4IP11oWmB07" resolve="jetbrains.mps.ide.modelchecker.platform" />
           </node>
         </node>
       </node>
