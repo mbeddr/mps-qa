@@ -258,6 +258,13 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
+      </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
@@ -1115,19 +1122,29 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="zudvsqcjvM" role="3cqZAp">
-              <node concept="2YIFZM" id="zudvsqcmkl" role="3clFbG">
-                <ref role="37wK5l" to="fa97:xCk$O6mi_h" resolve="showNotification" />
-                <ref role="1Pybhc" to="fa97:696iakqzmI" resolve="MpsQaNotificationUtils" />
-                <node concept="Xl_RD" id="zudvsqcnaq" role="37wK5m">
-                  <property role="Xl_RC" value="ERROR" />
-                </node>
-                <node concept="37vLTw" id="zudvsqcukr" role="37wK5m">
-                  <ref role="3cqZAo" node="zudvsqcqT0" resolve="msg" />
-                </node>
-                <node concept="Rm8GO" id="zudvsqcxOF" role="37wK5m">
-                  <ref role="Rm8GQ" to="fnpx:~NotificationType.ERROR" resolve="ERROR" />
-                  <ref role="1Px2BO" to="fnpx:~NotificationType" resolve="NotificationType" />
+            <node concept="2xdQw9" id="6_CuJsRDnMx" role="3cqZAp">
+              <property role="2xdLsb" value="h1akgim/info" />
+              <node concept="37vLTw" id="6_CuJsRDq3L" role="9lYJi">
+                <ref role="3cqZAo" node="zudvsqcqT0" resolve="msg" />
+              </node>
+            </node>
+            <node concept="1X3_iC" id="6_CuJsRDr2e" role="lGtFl">
+              <property role="3V$3am" value="statement" />
+              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+              <node concept="3clFbF" id="zudvsqcjvM" role="8Wnug">
+                <node concept="2YIFZM" id="zudvsqcmkl" role="3clFbG">
+                  <ref role="37wK5l" to="fa97:xCk$O6mi_h" resolve="showNotification" />
+                  <ref role="1Pybhc" to="fa97:696iakqzmI" resolve="MpsQaNotificationUtils" />
+                  <node concept="Xl_RD" id="zudvsqcnaq" role="37wK5m">
+                    <property role="Xl_RC" value="Info" />
+                  </node>
+                  <node concept="37vLTw" id="zudvsqcukr" role="37wK5m">
+                    <ref role="3cqZAo" node="zudvsqcqT0" resolve="msg" />
+                  </node>
+                  <node concept="Rm8GO" id="3VL$S3TMPiz" role="37wK5m">
+                    <ref role="Rm8GQ" to="fnpx:~NotificationType.INFORMATION" resolve="INFORMATION" />
+                    <ref role="1Px2BO" to="fnpx:~NotificationType" resolve="NotificationType" />
+                  </node>
                 </node>
               </node>
             </node>

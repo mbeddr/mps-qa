@@ -27,7 +27,7 @@ jobs:
     - name: Build MPS-QA and Publish to Github Maven
       uses: gradle/gradle-build-action@v2
       with: 
-        arguments: publish -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
+        arguments: publish -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }} -Partifacts.itemis.cloud.user=${{secrets.ARTIFACTS_ITEMIS_CLOUD_USER}} -Partifacts.itemis.cloud.pw=${{secrets.ARTIFACTS_ITEMIS_CLOUD_PW}}
         wrapper-cache-enabled: true
         dependencies-cache-enabled: true
         dependencies-cache-key: gradle/dependency-locks/**

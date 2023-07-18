@@ -2,8 +2,14 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/org.mpsqa.invisible_models.test_lang/org.mpsqa.invisible_models.test_lang.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.mpsqa.invisible_models/org.mpsqa.invisible_models.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.mpsqa.lancov.fragments.test_lang/org.mpsqa.lancov.fragments.test_lang.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.mpsqa.lancov.fragments/org.mpsqa.lancov.fragments.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.mpsqa.lancov/org.mpsqa.lancov.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.invisible_models.sandbox/org.mpsqa.invisible_models.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.lancov.sandbox/org.mpsqa.lancov.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/test.org.mpsqa.lancov.fragments/test.org.mpsqa.lancov.fragments.msd" folder="" />
     </projectModules>
   </component>
 </project>
