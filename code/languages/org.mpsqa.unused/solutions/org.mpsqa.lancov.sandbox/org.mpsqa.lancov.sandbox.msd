@@ -14,10 +14,12 @@
   <dependencies>
     <dependency reexport="false">c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)</dependency>
     <dependency reexport="false">002cdcf0-8d3c-425b-9439-321fd2830b63(org.mpsqa.lancov)</dependency>
+    <dependency reexport="false">2868a16c-e0f6-4b7e-9206-98cafebbd971(org.mpsqa.lancov.fragments)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
     <language slang="l:002cdcf0-8d3c-425b-9439-321fd2830b63:org.mpsqa.lancov" version="0" />
+    <language slang="l:2868a16c-e0f6-4b7e-9206-98cafebbd971:org.mpsqa.lancov.fragments" version="0" />
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
@@ -29,6 +31,7 @@
     <module reference="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" version="0" />
     <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
     <module reference="002cdcf0-8d3c-425b-9439-321fd2830b63(org.mpsqa.lancov)" version="0" />
+    <module reference="2868a16c-e0f6-4b7e-9206-98cafebbd971(org.mpsqa.lancov.fragments)" version="0" />
     <module reference="d3311aaf-b6d8-43b0-8b44-2eb0c9599b1e(org.mpsqa.lancov.sandbox)" version="0" />
   </dependencyVersions>
 </solution>

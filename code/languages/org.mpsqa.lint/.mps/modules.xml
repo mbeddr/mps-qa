@@ -2,6 +2,7 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/org.mpsqa.lint.generic.linters_library.quickfixes/org.mpsqa.lint.generic.linters_library.quickfixes.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.mpsqa.lint.generic/org.mpsqa.lint.generic.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.lint.generic.linters_library/org.mpsqa.lint.generic.linters_library.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.lint.generic.sandbox/org.mpsqa.lint.generic.sandbox.msd" folder="" />
