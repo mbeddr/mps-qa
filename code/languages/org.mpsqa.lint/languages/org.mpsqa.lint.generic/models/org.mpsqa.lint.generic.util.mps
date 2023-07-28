@@ -17,6 +17,7 @@
     <import index="dvox" ref="r:9dfd3567-3b1f-4edb-85a0-3981ca2bfd8c(jetbrains.mps.lang.modelapi.structure)" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="z1c4" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="xlb7" ref="r:cf42fd0a-68d2-493b-8b77-961658617704(jetbrains.mps.lang.modelapi.behavior)" implicit="true" />
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" implicit="true" />
@@ -677,7 +678,7 @@
         <node concept="3clFbF" id="2dSiT1hNGPi" role="3cqZAp">
           <node concept="37vLTI" id="2dSiT1hNHTy" role="3clFbG">
             <node concept="3VsKOn" id="2dSiT1hNIBE" role="37vLTx">
-              <ref role="3VsUkX" to="z1c3:~Project" resolve="Project" />
+              <ref role="3VsUkX" to="z1c4:~MPSProject" resolve="MPSProject" />
             </node>
             <node concept="AH0OO" id="2dSiT1hNH9u" role="37vLTJ">
               <node concept="3cmrfG" id="2dSiT1hNHrc" role="AHEQo">
