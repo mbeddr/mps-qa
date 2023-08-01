@@ -403,6 +403,22 @@
             </node>
           </node>
         </node>
+        <node concept="3rtmxn" id="1xhLENuUZOE" role="3bR31x">
+          <node concept="3LXTmp" id="1xhLENuUZOF" role="3rtmxm">
+            <node concept="398BVA" id="1xhLENuUZOG" role="3LXTmr">
+              <ref role="398BVh" node="1YSnQiVh0x7" resolve="mpsqa.unused.home" />
+              <node concept="2Ry0Ak" id="1xhLENuUZOH" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="1xhLENuUZOI" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.invisible_models" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="1xhLENuUZOK" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="6X427YbFJhj" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -479,6 +495,22 @@
             </node>
             <node concept="3qWCbU" id="6X427YbFJjG" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="1xhLENuUZOd" role="3bR31x">
+          <node concept="3LXTmp" id="1xhLENuUZOe" role="3rtmxm">
+            <node concept="398BVA" id="1xhLENuUZOf" role="3LXTmr">
+              <ref role="398BVh" node="1YSnQiVh0x7" resolve="mpsqa.unused.home" />
+              <node concept="2Ry0Ak" id="1xhLENuUZOg" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="1xhLENuUZOh" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.lancov.fragments" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="1xhLENuUZOj" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
             </node>
           </node>
         </node>

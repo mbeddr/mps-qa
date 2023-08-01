@@ -73,7 +73,7 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1yYJBoMXyaN" role="1TKVEi">
       <property role="IQ2ns" value="1783071917355705011" />
-      <property role="20kJfa" value="root" />
+      <property role="20kJfa" value="concept" />
       <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
     </node>
     <node concept="1TJgyj" id="1yYJBoMXSqB" role="1TKVEi">

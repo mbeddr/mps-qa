@@ -232,7 +232,7 @@
                 <ref role="3cqZAo" node="6T2biBFXnwZ" resolve="prod" />
               </node>
               <node concept="3TrEf2" id="6T2biBFXpjz" role="2OqNvi">
-                <ref role="3Tt5mk" to="b0y:1yYJBoMXyaN" resolve="root" />
+                <ref role="3Tt5mk" to="b0y:1yYJBoMXyaN" resolve="concept" />
               </node>
             </node>
           </node>
@@ -1345,7 +1345,7 @@
                                     <ref role="2Gs0qQ" node="6X427YbELYQ" resolve="rule" />
                                   </node>
                                   <node concept="3TrEf2" id="6X427YbEO6T" role="2OqNvi">
-                                    <ref role="3Tt5mk" to="b0y:1yYJBoMXyaN" resolve="root" />
+                                    <ref role="3Tt5mk" to="b0y:1yYJBoMXyaN" resolve="concept" />
                                   </node>
                                 </node>
                                 <node concept="1rGIog" id="6X427YbEO6U" role="2OqNvi" />

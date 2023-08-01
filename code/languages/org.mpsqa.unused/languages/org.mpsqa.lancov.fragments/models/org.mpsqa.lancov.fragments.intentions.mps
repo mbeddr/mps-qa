@@ -170,7 +170,7 @@
       <node concept="3clFbS" id="6X427YbE$14" role="2VODD2">
         <node concept="3clFbF" id="6X427YbE$64" role="3cqZAp">
           <node concept="Xl_RD" id="6X427YbE$63" role="3clFbG">
-            <property role="Xl_RC" value="Check Language Fragment" />
+            <property role="Xl_RC" value="Check Language Fragment Conformance" />
           </node>
         </node>
       </node>

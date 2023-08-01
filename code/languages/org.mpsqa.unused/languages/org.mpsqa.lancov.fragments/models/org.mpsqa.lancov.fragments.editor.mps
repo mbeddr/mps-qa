@@ -245,13 +245,13 @@
         <node concept="3XFhqQ" id="1yYJBoMZIby" role="3EZMnx" />
         <node concept="VPM3Z" id="1yYJBoMZHYQ" role="3F10Kt" />
         <node concept="3F0ifn" id="1yYJBoMZHYR" role="3EZMnx">
-          <property role="3F0ifm" value="for root:" />
+          <property role="3F0ifm" value="for concept:" />
           <node concept="VechU" id="1yYJBoMZIc1" role="3F10Kt">
             <property role="Vb096" value="g1_qVrt/darkMagenta" />
           </node>
         </node>
         <node concept="1iCGBv" id="1yYJBoMZIbK" role="3EZMnx">
-          <ref role="1NtTu8" to="b0y:1yYJBoMXyaN" resolve="root" />
+          <ref role="1NtTu8" to="b0y:1yYJBoMXyaN" resolve="concept" />
           <node concept="1sVBvm" id="1yYJBoMZIbM" role="1sWHZn">
             <node concept="3F0A7n" id="1yYJBoMZIbY" role="2wV5jI">
               <property role="1Intyy" value="true" />
@@ -291,7 +291,7 @@
                   <node concept="2OqwBi" id="1yYJBoMYXI3" role="2Oq$k0">
                     <node concept="pncrf" id="1yYJBoMYXI4" role="2Oq$k0" />
                     <node concept="3TrEf2" id="1yYJBoMYXI5" role="2OqNvi">
-                      <ref role="3Tt5mk" to="b0y:1yYJBoMXyaN" resolve="root" />
+                      <ref role="3Tt5mk" to="b0y:1yYJBoMXyaN" resolve="concept" />
                     </node>
                   </node>
                   <node concept="2qgKlT" id="1yYJBoMZfnn" role="2OqNvi">
@@ -338,7 +338,7 @@
                     <node concept="2OqwBi" id="6T2biBFYwGi" role="2Oq$k0">
                       <node concept="pncrf" id="6T2biBFYwGj" role="2Oq$k0" />
                       <node concept="3TrEf2" id="6T2biBFYwGk" role="2OqNvi">
-                        <ref role="3Tt5mk" to="b0y:1yYJBoMXyaN" resolve="root" />
+                        <ref role="3Tt5mk" to="b0y:1yYJBoMXyaN" resolve="concept" />
                       </node>
                     </node>
                     <node concept="2qgKlT" id="6T2biBFYwGl" role="2OqNvi">
@@ -374,7 +374,7 @@
                   <node concept="2OqwBi" id="1yYJBoMYY1j" role="2Oq$k0">
                     <node concept="pncrf" id="1yYJBoMYY0R" role="2Oq$k0" />
                     <node concept="3TrEf2" id="1yYJBoMYY3K" role="2OqNvi">
-                      <ref role="3Tt5mk" to="b0y:1yYJBoMXyaN" resolve="root" />
+                      <ref role="3Tt5mk" to="b0y:1yYJBoMXyaN" resolve="concept" />
                     </node>
                   </node>
                   <node concept="2qgKlT" id="1yYJBoMYYkl" role="2OqNvi">
@@ -450,6 +450,13 @@
         </node>
         <node concept="2iRfu4" id="6X427YbEy1N" role="2iSdaV" />
       </node>
+      <node concept="3F0ifn" id="1xhLENuV0xA" role="3EZMnx" />
+      <node concept="3F0ifn" id="1xhLENuV0yR" role="3EZMnx">
+        <property role="3F0ifm" value="[checks if in the specified scope only models conforming to this language fragment definition are used]" />
+        <node concept="VechU" id="1xhLENuV0zj" role="3F10Kt">
+          <property role="Vb096" value="fLJRk5_/gray" />
+        </node>
+      </node>
       <node concept="3F0ifn" id="6X427YbEy26" role="3EZMnx" />
       <node concept="3F0ifn" id="6X427YbEy2d" role="3EZMnx">
         <property role="3F0ifm" value="Production rules:" />
@@ -478,11 +485,16 @@
       <node concept="3EZMnI" id="6X427YbE$0u" role="3EZMnx">
         <node concept="2iRfu4" id="6X427YbE$0v" role="2iSdaV" />
         <node concept="3F0ifn" id="6X427YbEzZs" role="3EZMnx">
-          <property role="3F0ifm" value="Postprocessor" />
+          <property role="3F0ifm" value="Postprocessor:" />
         </node>
+      </node>
+      <node concept="3EZMnI" id="2I1MOHlX530" role="3EZMnx">
+        <node concept="VPM3Z" id="2I1MOHlX532" role="3F10Kt" />
+        <node concept="3XFhqQ" id="2I1MOHlX54k" role="3EZMnx" />
         <node concept="3F1sOY" id="6X427YbE$0V" role="3EZMnx">
           <ref role="1NtTu8" to="b0y:6X427YbEzZo" resolve="postprocessor" />
         </node>
+        <node concept="2iRfu4" id="2I1MOHlX535" role="2iSdaV" />
       </node>
       <node concept="2iRkQZ" id="6X427YbEy1E" role="2iSdaV" />
     </node>
