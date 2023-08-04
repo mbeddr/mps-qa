@@ -324,11 +324,6 @@
               <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
             </node>
           </node>
-          <node concept="1SiIV0" id="3ywQ_KXEkYk" role="3bR37C">
-            <node concept="3bR9La" id="3ywQ_KXEkYl" role="1SiIV1">
-              <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
-            </node>
-          </node>
           <node concept="1BupzO" id="3ywQ_KXEkYz" role="3bR31x">
             <property role="3ZfqAx" value="generator/templates" />
             <property role="1Hdu6h" value="true" />
@@ -354,15 +349,15 @@
               </node>
             </node>
           </node>
+          <node concept="1SiIV0" id="1UFFkMN1f2M" role="3bR37C">
+            <node concept="3bR9La" id="1UFFkMN1f2N" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="FwejNQA_4B" role="3bR37C">
           <node concept="3bR9La" id="FwejNQA_4C" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="FwejNQA_4D" role="3bR37C">
-          <node concept="3bR9La" id="FwejNQA_4E" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6L9O" resolve="jetbrains.mps.lang.smodel" />
           </node>
         </node>
         <node concept="1SiIV0" id="78RogMCKJgM" role="3bR37C">
@@ -385,14 +380,9 @@
             <ref role="3bR37D" to="ffeo:4SM2EuqHUPF" resolve="jetbrains.mps.lang.modelapi" />
           </node>
         </node>
-        <node concept="1SiIV0" id="3ghOW5HWiHk" role="3bR37C">
-          <node concept="1Busua" id="3ghOW5HWiHl" role="1SiIV1">
-            <ref role="1Busuk" to="ffeo:7Kfy9QB6Lc2" resolve="jetbrains.mps.lang.typesystem" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1fl9pUYNIKA" role="3bR37C">
-          <node concept="Rbm2T" id="1fl9pUYNIKB" role="1SiIV1">
-            <ref role="1E1Vl2" to="ffeo:7Kfy9QB6L0h" resolve="jetbrains.mps.baseLanguage.collections" />
+        <node concept="1SiIV0" id="1UFFkMN1f2K" role="3bR37C">
+          <node concept="Rbm2T" id="1UFFkMN1f2L" role="1SiIV1">
+            <ref role="1E1Vl2" to="ffeo:7Kfy9QB6L9O" resolve="jetbrains.mps.lang.smodel" />
           </node>
         </node>
       </node>
