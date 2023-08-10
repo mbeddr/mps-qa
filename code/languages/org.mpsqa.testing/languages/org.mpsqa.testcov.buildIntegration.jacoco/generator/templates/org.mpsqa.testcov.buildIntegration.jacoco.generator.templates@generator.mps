@@ -4020,6 +4020,64 @@
         </node>
       </node>
     </node>
+    <node concept="3aamgX" id="8yV3Pc6vNY" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="km3i:4EqSY0I2WoZ" resolve="CoverageOf_CustomGroup" />
+      <node concept="gft3U" id="8yV3Pc6w$2" role="1lVwrX">
+        <node concept="2pNNFK" id="8yV3Pc6w$8" role="gfFT$">
+          <property role="2pNNFO" value="group" />
+          <node concept="2pNNFK" id="8yV3Pc6wG_" role="3o6s8t">
+            <property role="2pNNFO" value="group" />
+            <property role="qg3DV" value="true" />
+            <node concept="1WS0z7" id="8yV3Pc6wOf" role="lGtFl">
+              <node concept="3JmXsc" id="8yV3Pc6wOi" role="3Jn$fo">
+                <node concept="3clFbS" id="8yV3Pc6wOj" role="2VODD2">
+                  <node concept="3clFbF" id="8yV3Pc6wOp" role="3cqZAp">
+                    <node concept="2OqwBi" id="8yV3Pc6wOk" role="3clFbG">
+                      <node concept="3Tsc0h" id="8yV3Pc6wOn" role="2OqNvi">
+                        <ref role="3TtcxE" to="km3i:4EqSY0I2Wp6" resolve="contents" />
+                      </node>
+                      <node concept="30H73N" id="8yV3Pc6wOo" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="1sPUBX" id="8yV3Pc6wOc" role="lGtFl">
+              <ref role="v9R2y" node="3NbSlfvXYgV" resolve="switch_JacocoGroup" />
+              <node concept="v3LJS" id="8yV3Pc6wVw" role="v9R3O">
+                <ref role="v3LJV" node="3NbSlfvZqa5" resolve="currentProject" />
+              </node>
+              <node concept="v3LJS" id="8yV3Pc6x1q" role="v9R3O">
+                <ref role="v3LJV" node="3NbSlfvXYh8" resolve="depHelper" />
+              </node>
+            </node>
+          </node>
+          <node concept="2pNUuL" id="8yV3Pc6w$c" role="2pNNFR">
+            <property role="2pNUuO" value="name" />
+            <node concept="2pMdtt" id="8yV3Pc6w$d" role="2pMdts">
+              <property role="2pMdty" value="name" />
+              <node concept="17Uvod" id="8yV3Pc6w$g" role="lGtFl">
+                <property role="2qtEX9" value="text" />
+                <property role="P4ACc" value="479c7a8c-02f9-43b5-9139-d910cb22f298/6666499814681541919/6666499814681541920" />
+                <node concept="3zFVjK" id="8yV3Pc6w$j" role="3zH0cK">
+                  <node concept="3clFbS" id="8yV3Pc6w$k" role="2VODD2">
+                    <node concept="3clFbF" id="8yV3Pc6w$q" role="3cqZAp">
+                      <node concept="2OqwBi" id="8yV3Pc6w$l" role="3clFbG">
+                        <node concept="3TrcHB" id="8yV3Pc6w$o" role="2OqNvi">
+                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                        </node>
+                        <node concept="30H73N" id="8yV3Pc6w$p" role="2Oq$k0" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="3aamgX" id="3NbSlfw8DFY" role="3aUrZf">
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="5tjl:3X9rC2XzJdM" resolve="BuildMps_TestModule" />
