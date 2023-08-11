@@ -230,9 +230,9 @@ task test_lint(type: TestLanguages, dependsOn: build_lint_analysis_languages) {
     script "$buildDir/scripts/build-lint-tests.xml"
 }
 
-check.dependsOn run_clones_headless
+check.dependsOn(tasks.withType(TestLanguages))
 
-assemble.dependsOn run_clones_headless
+assemble.dependsOn(tasks.withType(BuildLanguages))
 
 publishing {
     repositories {
