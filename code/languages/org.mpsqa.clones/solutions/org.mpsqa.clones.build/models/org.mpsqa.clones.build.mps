@@ -20,7 +20,9 @@
       <concept id="4560297596904469362" name="jetbrains.mps.build.mps.tests.structure.BuildMps_TestModule" flags="nn" index="22LTRM">
         <reference id="4560297596904469363" name="module" index="22LTRN" />
       </concept>
-      <concept id="6593674873639474400" name="jetbrains.mps.build.mps.tests.structure.BuildMps_TestModules_Options" flags="ng" index="24cAiW" />
+      <concept id="6593674873639474400" name="jetbrains.mps.build.mps.tests.structure.BuildMps_TestModules_Options" flags="ng" index="24cAiW">
+        <child id="6593674873639478221" name="haltonfailure" index="24c_eh" />
+      </concept>
       <concept id="4005526075820600484" name="jetbrains.mps.build.mps.tests.structure.BuildModuleTestsPlugin" flags="ng" index="1gjT0q" />
     </language>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
@@ -336,7 +338,13 @@
       <node concept="22LTRM" id="1GhTetdBYvk" role="22LTRK">
         <ref role="22LTRN" node="2JVMSZMFYb5" resolve="test.org.mpsqa.clones.headless" />
       </node>
-      <node concept="24cAiW" id="1GhTetdClxk" role="24cAkG" />
+      <node concept="24cAiW" id="1GhTetdClxk" role="24cAkG">
+        <node concept="NbPM2" id="2WwuhUZ5YOQ" role="24c_eh">
+          <node concept="3Mxwew" id="2WwuhUZ5YOP" role="3MwsjC">
+            <property role="3MwjfP" value="true" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
