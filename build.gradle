@@ -219,10 +219,9 @@ task package_mpsqa(type: Zip, dependsOn: build_allInOne_package) {
     include 'org.mpsqa.allInOne/**'
 }
 
-task run_clones_headless(type: TestLanguages, dependsOn: build_clones_languages) {
+task test_clones(type: TestLanguages, dependsOn: build_clones_languages) {
     description "Will execute clones tests from command line"
-    print "mpsqa.home = " + rootDir;
-	script new File("$buildDir/scripts/build-clones-headless-detector.xml")
+	script new File("$buildDir/scripts/test-clones.xml")
 }
 
 task test_lint(type: TestLanguages, dependsOn: build_lint_analysis_languages) {
