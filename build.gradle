@@ -293,6 +293,6 @@ task cleanMps(type: Delete) {
 
 clean.dependsOn cleanMps
 
-defaultTasks 'build_allInOne_package'
+defaultTasks 'build'
 
 task rebuild(dependsOn:[clean, build_allInOne_package])
