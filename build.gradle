@@ -177,6 +177,12 @@ task build_testing_languages(type: BuildLanguages, dependsOn: [build_base_langua
     script "$buildDir/scripts/build-testing-languages.xml"
 }
 
+task test_testing(type: TestLanguages, dependsOn: [build_testing_languages]) {
+    // MPS build language generator is confused about the basedir of the generated script so we set it manually
+    scriptArgs = ["-Dbasedir=${file('code/languages/org.mpsqa.testing')}"]
+    script "$buildDir/scripts/test-testing.xml"
+}
+
 task build_clones_languages(type: BuildLanguages, dependsOn: [build_base_languages]) {
     script "$buildDir/scripts/build-clones-languages.xml"
 }

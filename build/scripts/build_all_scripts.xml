@@ -51,7 +51,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.org.mpsqa.build.allScripts, java.compile.org.mpsqa.build, java.compile.org.mpsqa.clones.build, java.compile.org.mpsqa.lint.build" />
+  <target name="compileJava" depends="java.compile.org.mpsqa.build.allScripts, java.compile.org.mpsqa.build, java.compile.org.mpsqa.clones.build, java.compile.org.mpsqa.lint.build, java.compile.org.mpsqa.testing.tests.build" />
   
   <target name="processResources" />
   
@@ -156,6 +156,7 @@
         <module file="${basedir}/code/languages/org.mpsqa.build/solutions/org.mpsqa.build.allScripts/org.mpsqa.build.allScripts.msd" />
         <module file="${basedir}/code/languages/org.mpsqa.clones/solutions/org.mpsqa.clones.build/org.mpsqa.clones.build.msd" />
         <module file="${basedir}/code/languages/org.mpsqa.lint/solutions/org.mpsqa.lint.build/org.mpsqa.lint.build.msd" />
+        <module file="${basedir}/code/languages/org.mpsqa.testing/solutions/org.mpsqa.testing.tests.build/org.mpsqa.testing.tests.build.msd" />
       </chunk>
       <jvmargs>
         <arg value="-ea" />
@@ -217,10 +218,23 @@
     </javac>
   </target>
   
+  <target name="java.compile.org.mpsqa.testing.tests.build" depends="java.compile.org.mpsqa.build">
+    <mkdir dir="${basedir}/code/languages/org.mpsqa.testing/solutions/org.mpsqa.testing.tests.build/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/org.mpsqa.testing.tests.build" />
+    <javac destdir="${build.tmp}/java/out/org.mpsqa.testing.tests.build" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/code/languages/org.mpsqa.testing/solutions/org.mpsqa.testing.tests.build/source_gen" />
+      </src>
+      <classpath path="${build.tmp}/java/out/org.mpsqa.build" />
+    </javac>
+  </target>
+  
   <target name="cleanSources">
     <delete dir="${basedir}/code/languages/org.mpsqa.build/solutions/org.mpsqa.build/source_gen" />
     <delete dir="${basedir}/code/languages/org.mpsqa.build/solutions/org.mpsqa.build.allScripts/source_gen" />
     <delete dir="${basedir}/code/languages/org.mpsqa.clones/solutions/org.mpsqa.clones.build/source_gen" />
     <delete dir="${basedir}/code/languages/org.mpsqa.lint/solutions/org.mpsqa.lint.build/source_gen" />
+    <delete dir="${basedir}/code/languages/org.mpsqa.testing/solutions/org.mpsqa.testing.tests.build/source_gen" />
   </target>
 </project>
