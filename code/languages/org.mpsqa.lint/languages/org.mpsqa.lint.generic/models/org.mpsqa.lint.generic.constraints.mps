@@ -23,15 +23,28 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
+      </concept>
+      <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1068580123160" name="condition" index="3clFbw" />
+        <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
+        <child id="1068581517676" name="expression" index="3cqZAk" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
@@ -91,15 +104,36 @@
       <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
       <node concept="Eqf_E" id="3ibIDIklSQ2" role="EtsB7">
         <node concept="3clFbS" id="3ibIDIklSQ3" role="2VODD2">
-          <node concept="3clFbF" id="3ibIDIklSVG" role="3cqZAp">
-            <node concept="2OqwBi" id="3ibIDIklTxk" role="3clFbG">
-              <node concept="2OqwBi" id="3ibIDIklT8I" role="2Oq$k0">
-                <node concept="EsrRn" id="3ibIDIklSVF" role="2Oq$k0" />
-                <node concept="3TrEf2" id="3ibIDIklTjF" role="2OqNvi">
-                  <ref role="3Tt5mk" to="a1af:3ibIDIklSMM" resolve="script" />
+          <node concept="3clFbJ" id="4zoES75CMTQ" role="3cqZAp">
+            <node concept="3clFbS" id="4zoES75CMTS" role="3clFbx">
+              <node concept="3cpWs6" id="4zoES75CPI_" role="3cqZAp">
+                <node concept="2OqwBi" id="4zoES75CPYA" role="3cqZAk">
+                  <node concept="2OqwBi" id="4zoES75CPYB" role="2Oq$k0">
+                    <node concept="EsrRn" id="4zoES75CPYC" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="4zoES75CPYD" role="2OqNvi">
+                      <ref role="3Tt5mk" to="a1af:3ibIDIklSMM" resolve="script" />
+                    </node>
+                  </node>
+                  <node concept="3TrcHB" id="4zoES75CPYE" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
                 </node>
               </node>
-              <node concept="3TrcHB" id="3ibIDIklTHY" role="2OqNvi">
+            </node>
+            <node concept="3clFbC" id="4zoES75CPvw" role="3clFbw">
+              <node concept="10Nm6u" id="4zoES75CPHA" role="3uHU7w" />
+              <node concept="2OqwBi" id="4zoES75CNnq" role="3uHU7B">
+                <node concept="EsrRn" id="4zoES75CN4p" role="2Oq$k0" />
+                <node concept="3TrcHB" id="4zoES75CNK4" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="3ibIDIklSVG" role="3cqZAp">
+            <node concept="2OqwBi" id="3ibIDIklT8I" role="3clFbG">
+              <node concept="EsrRn" id="3ibIDIklSVF" role="2Oq$k0" />
+              <node concept="3TrcHB" id="4zoES75CR2C" role="2OqNvi">
                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
               </node>
             </node>
