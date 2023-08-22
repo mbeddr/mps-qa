@@ -125,6 +125,9 @@
         <child id="8276990574886367508" name="body" index="1zxBo7" />
       </concept>
       <concept id="1082113931046" name="jetbrains.mps.baseLanguage.structure.ContinueStatement" flags="nn" index="3N13vt" />
+      <concept id="1200397529627" name="jetbrains.mps.baseLanguage.structure.CharConstant" flags="nn" index="1Xhbcc">
+        <property id="1200397540847" name="charConstant" index="1XhdNS" />
+      </concept>
     </language>
     <language id="40ab19e9-751a-4433-b645-0e65160e58a0" name="org.mpsqa.lint.generic">
       <concept id="7741759128795038157" name="org.mpsqa.lint.generic.structure.CheckableScriptParameter" flags="ng" index="2j1K4_">
@@ -791,35 +794,51 @@
                                   <node concept="Xl_RD" id="6HKgezSw0Ik" role="3uHU7B">
                                     <property role="Xl_RC" value="file '" />
                                   </node>
-                                  <node concept="2OqwBi" id="4zoES75HB_c" role="3uHU7w">
-                                    <node concept="liA8E" id="4zoES75HE4O" role="2OqNvi">
-                                      <ref role="37wK5l" to="eoo2:~Path.relativize(java.nio.file.Path)" resolve="relativize" />
-                                      <node concept="2GrUjf" id="4zoES75I6Gc" role="37wK5m">
-                                        <ref role="2Gs0qQ" node="6HKgezSvwqF" resolve="p" />
-                                      </node>
-                                    </node>
-                                    <node concept="2OqwBi" id="4zoES75I4H5" role="2Oq$k0">
-                                      <node concept="2ShNRf" id="4zoES75I4H6" role="2Oq$k0">
-                                        <node concept="1pGfFk" id="4zoES75I4H7" role="2ShVmc">
-                                          <property role="373rjd" value="true" />
-                                          <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-                                          <node concept="37vLTw" id="4zoES75I4H8" role="37wK5m">
-                                            <ref role="3cqZAo" node="6HKgezSvh5b" resolve="directoryContainingProject" />
+                                  <node concept="2OqwBi" id="7AhcwybAMmh" role="3uHU7w">
+                                    <node concept="2OqwBi" id="7AhcwybAHpK" role="2Oq$k0">
+                                      <node concept="2OqwBi" id="4zoES75HB_c" role="2Oq$k0">
+                                        <node concept="liA8E" id="4zoES75HE4O" role="2OqNvi">
+                                          <ref role="37wK5l" to="eoo2:~Path.relativize(java.nio.file.Path)" resolve="relativize" />
+                                          <node concept="2GrUjf" id="4zoES75I6Gc" role="37wK5m">
+                                            <ref role="2Gs0qQ" node="6HKgezSvwqF" resolve="p" />
+                                          </node>
+                                        </node>
+                                        <node concept="2OqwBi" id="4zoES75I4H5" role="2Oq$k0">
+                                          <node concept="2ShNRf" id="4zoES75I4H6" role="2Oq$k0">
+                                            <node concept="1pGfFk" id="4zoES75I4H7" role="2ShVmc">
+                                              <property role="373rjd" value="true" />
+                                              <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                                              <node concept="37vLTw" id="4zoES75I4H8" role="37wK5m">
+                                                <ref role="3cqZAo" node="6HKgezSvh5b" resolve="directoryContainingProject" />
+                                              </node>
+                                            </node>
+                                          </node>
+                                          <node concept="liA8E" id="4zoES75I4H9" role="2OqNvi">
+                                            <ref role="37wK5l" to="guwi:~File.toPath()" resolve="toPath" />
                                           </node>
                                         </node>
                                       </node>
-                                      <node concept="liA8E" id="4zoES75I4H9" role="2OqNvi">
-                                        <ref role="37wK5l" to="guwi:~File.toPath()" resolve="toPath" />
+                                      <node concept="liA8E" id="7AhcwybALmh" role="2OqNvi">
+                                        <ref role="37wK5l" to="eoo2:~Path.toString()" resolve="toString" />
+                                      </node>
+                                    </node>
+                                    <node concept="liA8E" id="7AhcwybAOct" role="2OqNvi">
+                                      <ref role="37wK5l" to="wyt6:~String.replace(char,char)" resolve="replace" />
+                                      <node concept="1Xhbcc" id="7AhcwybAP6E" role="37wK5m">
+                                        <property role="1XhdNS" value="\\" />
+                                      </node>
+                                      <node concept="1Xhbcc" id="7AhcwybARGF" role="37wK5m">
+                                        <property role="1XhdNS" value="/" />
                                       </node>
                                     </node>
                                   </node>
                                 </node>
                                 <node concept="Xl_RD" id="6HKgezSw7hB" role="3uHU7w">
-                                  <property role="Xl_RC" value="' has size " />
+                                  <property role="Xl_RC" value="' has size bigger than " />
                                 </node>
                               </node>
-                              <node concept="37vLTw" id="6HKgezSwa6I" role="3uHU7w">
-                                <ref role="3cqZAo" node="6HKgezSvRSY" resolve="crtSizeInKb" />
+                              <node concept="2j1LYi" id="7AhcwybAGdN" role="3uHU7w">
+                                <ref role="2j1LYj" node="pFzydTBLXy" resolve="sizeInKb" />
                               </node>
                             </node>
                           </node>
