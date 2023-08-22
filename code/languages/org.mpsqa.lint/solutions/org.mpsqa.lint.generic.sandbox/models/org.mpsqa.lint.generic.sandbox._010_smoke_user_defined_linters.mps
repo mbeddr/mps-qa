@@ -61,6 +61,9 @@
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ng" index="366HgL">
+        <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
+      </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
@@ -104,6 +107,7 @@
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
         <child id="4972241301747169160" name="typeArgument" index="3PaCim" />
       </concept>
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
         <child id="1109201940907" name="parameter" index="11_B2D" />
@@ -565,7 +569,7 @@
     </node>
   </node>
   <node concept="1MIHA_" id="6HKgezSuyWk">
-    <property role="TrG5h" value="maximum_file_size" />
+    <property role="TrG5h" value="maximum_file_size_in_project_directory" />
     <node concept="2j1K4_" id="pFzydTBLXy" role="2j1K4A">
       <property role="TrG5h" value="sizeInKb" />
       <node concept="10Oyi0" id="pFzydTBMtK" role="2j1LY4" />
@@ -586,16 +590,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="6HKgezSvi52" role="3cqZAp" />
-        <node concept="2xdQw9" id="6HKgezSyZxQ" role="3cqZAp">
-          <node concept="3cpWs3" id="6HKgezSz1oq" role="9lYJi">
-            <node concept="2j1LYi" id="6HKgezSz1N1" role="3uHU7w">
-              <ref role="2j1LYj" node="pFzydTBLXy" resolve="sizeInKb" />
-            </node>
-            <node concept="Xl_RD" id="6HKgezSyZxS" role="3uHU7B">
-              <property role="Xl_RC" value="sizeInKb=" />
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="6HKgezSvg6v" role="3cqZAp">
           <node concept="3cpWsn" id="6HKgezSvg6w" role="3cpWs9">
             <property role="TrG5h" value="projectFile" />
@@ -797,17 +791,26 @@
                                   <node concept="Xl_RD" id="6HKgezSw0Ik" role="3uHU7B">
                                     <property role="Xl_RC" value="file '" />
                                   </node>
-                                  <node concept="2OqwBi" id="6HKgezSw58n" role="3uHU7w">
-                                    <node concept="2OqwBi" id="6HKgezSw3oC" role="2Oq$k0">
-                                      <node concept="2GrUjf" id="6HKgezSw2Og" role="2Oq$k0">
+                                  <node concept="2OqwBi" id="4zoES75HB_c" role="3uHU7w">
+                                    <node concept="liA8E" id="4zoES75HE4O" role="2OqNvi">
+                                      <ref role="37wK5l" to="eoo2:~Path.relativize(java.nio.file.Path)" resolve="relativize" />
+                                      <node concept="2GrUjf" id="4zoES75I6Gc" role="37wK5m">
                                         <ref role="2Gs0qQ" node="6HKgezSvwqF" resolve="p" />
                                       </node>
-                                      <node concept="liA8E" id="6HKgezSw4r8" role="2OqNvi">
-                                        <ref role="37wK5l" to="eoo2:~Path.toFile()" resolve="toFile" />
-                                      </node>
                                     </node>
-                                    <node concept="liA8E" id="6HKgezSw65S" role="2OqNvi">
-                                      <ref role="37wK5l" to="guwi:~File.getAbsolutePath()" resolve="getAbsolutePath" />
+                                    <node concept="2OqwBi" id="4zoES75I4H5" role="2Oq$k0">
+                                      <node concept="2ShNRf" id="4zoES75I4H6" role="2Oq$k0">
+                                        <node concept="1pGfFk" id="4zoES75I4H7" role="2ShVmc">
+                                          <property role="373rjd" value="true" />
+                                          <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                                          <node concept="37vLTw" id="4zoES75I4H8" role="37wK5m">
+                                            <ref role="3cqZAo" node="6HKgezSvh5b" resolve="directoryContainingProject" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                      <node concept="liA8E" id="4zoES75I4H9" role="2OqNvi">
+                                        <ref role="37wK5l" to="guwi:~File.toPath()" resolve="toPath" />
+                                      </node>
                                     </node>
                                   </node>
                                 </node>
@@ -850,7 +853,7 @@
         <ref role="2j1LYj" node="pFzydTBLXy" resolve="sizeInKb" />
       </node>
       <node concept="3cmrfG" id="6HKgezSuHzQ" role="2j1LYg">
-        <property role="3cmrfH" value="100000" />
+        <property role="3cmrfH" value="10000" />
       </node>
     </node>
     <node concept="1Pa9Pv" id="pFzydTBO0g" role="1MIJl8">
