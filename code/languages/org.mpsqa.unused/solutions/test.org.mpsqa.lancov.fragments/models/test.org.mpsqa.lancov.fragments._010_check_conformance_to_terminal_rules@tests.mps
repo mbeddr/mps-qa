@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:9423baf1-89ce-4166-a603-1a8774746e47(test.org.mpsqa.lancov.fragments._010_terminal_rules@tests)">
+<model ref="r:9423baf1-89ce-4166-a603-1a8774746e47(test.org.mpsqa.lancov.fragments._010_check_conformance_to_terminal_rules@tests)">
   <persistence version="9" />
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
@@ -108,7 +108,7 @@
         <child id="1783071917355906331" name="link" index="EhSHH" />
       </concept>
       <concept id="1783071917355704944" name="org.mpsqa.lancov.fragments.structure.ProductionRule" flags="ng" index="Ei9K6">
-        <reference id="1783071917355705011" name="root" index="Ei9N5" />
+        <reference id="1783071917355705011" name="concept" index="Ei9N5" />
         <child id="1783071917355961993" name="links" index="Ehb3Z" />
         <child id="1783071917355796135" name="properties" index="Eijzh" />
       </concept>

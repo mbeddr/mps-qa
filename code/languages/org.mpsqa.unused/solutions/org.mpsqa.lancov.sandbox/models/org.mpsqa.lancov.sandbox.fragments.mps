@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="2868a16c-e0f6-4b7e-9206-98cafebbd971" name="org.mpsqa.lancov.fragments" version="-1" />
+    <use id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi" version="0" />
   </languages>
   <imports>
     <import index="b0y" ref="r:e8eef5a7-1126-443f-a70f-fba73bad06ed(org.mpsqa.lancov.fragments.structure)" />
@@ -24,7 +25,7 @@
         <child id="1783071917355906331" name="link" index="EhSHH" />
       </concept>
       <concept id="1783071917355704944" name="org.mpsqa.lancov.fragments.structure.ProductionRule" flags="ng" index="Ei9K6">
-        <reference id="1783071917355705011" name="root" index="Ei9N5" />
+        <reference id="1783071917355705011" name="concept" index="Ei9N5" />
         <child id="1783071917355961993" name="links" index="Ehb3Z" />
         <child id="1783071917355796135" name="properties" index="Eijzh" />
       </concept>
@@ -64,7 +65,7 @@
     </language>
   </registry>
   <node concept="Ei9Kv" id="1yYJBoMYwOW">
-    <property role="TrG5h" value="language_fragment _definition" />
+    <property role="TrG5h" value="language_fragment_definition" />
     <node concept="Ei9K6" id="1yYJBoMYwOX" role="Ei9Ko">
       <property role="TrG5h" value="language_fragment_root" />
       <ref role="Ei9N5" to="b0y:1yYJBoMXy9D" resolve="LanguageFragmentDefinition" />
@@ -108,15 +109,15 @@
     <node concept="25HSN5" id="6X427YbFjEu" role="3$Vs0y">
       <ref role="25HSN4" node="1yYJBoMYwOX" resolve="language_fragment_root" />
     </node>
-    <node concept="DQmja" id="6X427YbFuP1" role="3$Vs0w" />
     <node concept="DP21r" id="6X427YbFuP3" role="3$VzuB" />
+    <node concept="DQmja" id="7AhcwybzfNp" role="3$Vs0w" />
   </node>
   <node concept="3$Uy2f" id="6X427YbFJfK">
     <property role="TrG5h" value="reusable_properties_values" />
     <node concept="3$Uy5a" id="6X427YbFJfL" role="3$Uy2c">
       <property role="TrG5h" value="identifier" />
       <node concept="EhbcP" id="6X427YbFJfN" role="3$Uy59">
-        <property role="EhbcK" value="[a-zA-Z_][a-zA-Z_0-9]+" />
+        <property role="EhbcK" value="aa[a-zA-Z_][a-zA-Z_0-9]+" />
       </node>
     </node>
   </node>

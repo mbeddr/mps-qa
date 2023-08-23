@@ -344,6 +344,11 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6Lg8" resolve="jetbrains.mps.runtime" />
           </node>
         </node>
+        <node concept="1SiIV0" id="7AhcwybHINF" role="3bR37C">
+          <node concept="3bR9La" id="7AhcwybHING" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:4SM2EuqHUPF" resolve="jetbrains.mps.lang.modelapi" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="1aX3ezKAshF" role="2G$12L">
         <property role="TrG5h" value="org.mpsqa.invisible_models" />

@@ -18,6 +18,7 @@
   </dependencies>
   <languageVersions>
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
+    <language slang="l:446c26eb-2b7b-4bf0-9b35-f83fa582753e:jetbrains.mps.lang.modelapi" version="0" />
     <language slang="l:002cdcf0-8d3c-425b-9439-321fd2830b63:org.mpsqa.lancov" version="0" />
     <language slang="l:2868a16c-e0f6-4b7e-9206-98cafebbd971:org.mpsqa.lancov.fragments" version="0" />
   </languageVersions>
