@@ -527,6 +527,16 @@
             <ref role="3bR37D" node="3ghOW5HWiKq" resolve="org.mpsqa.lint.generic.linters_library.quickfixes" />
           </node>
         </node>
+        <node concept="1SiIV0" id="1NOhArAYtvx" role="3bR37C">
+          <node concept="3bR9La" id="1NOhArAYtvy" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:44LXwdzyvTi" resolve="Annotations" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1NOhArAYtvz" role="3bR37C">
+          <node concept="3bR9La" id="1NOhArAYtv$" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:4IP11oWmB07" resolve="jetbrains.mps.ide.modelchecker.platform" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="51obkXDz7OB" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -659,6 +669,11 @@
         <node concept="1SiIV0" id="30a3800NyBu" role="3bR37C">
           <node concept="3bR9La" id="30a3800NyBv" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:4IP11oWmB07" resolve="jetbrains.mps.ide.modelchecker.platform" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1NOhArAYtvK" role="3bR37C">
+          <node concept="3bR9La" id="1NOhArAYtvL" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LgV" resolve="jetbrains.mps.make.runtime" />
           </node>
         </node>
       </node>
