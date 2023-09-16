@@ -42,7 +42,7 @@
     <ref role="2wR3oD" to="wpu7:2dSiT1hKT_t" resolve="modules_and_file_system_layout_consistency" />
   </node>
   <node concept="2wR3oc" id="6HKgezS$0_n">
-    <ref role="2wR3oD" to="kv3i:6HKgezSuyWk" resolve="maximum_file_size" />
+    <ref role="2wR3oD" to="kv3i:6HKgezSuyWk" resolve="maximum_file_size_in_project_directory" />
     <node concept="2j1LYv" id="pFzydTDpMW" role="2j1YRv">
       <node concept="2j1LYi" id="pFzydTDpMX" role="2j1YQj">
         <ref role="2j1LYj" to="kv3i:pFzydTBLXy" resolve="sizeInKb" />
@@ -55,7 +55,7 @@
   <node concept="2wR3oc" id="4zoES75DMX2">
     <property role="TrG5h" value="maximum_file_size_WARNING" />
     <property role="2oM2pl" value="1c_Dn$lNzd7/WARNING" />
-    <ref role="2wR3oD" to="kv3i:6HKgezSuyWk" resolve="maximum_file_size" />
+    <ref role="2wR3oD" to="kv3i:6HKgezSuyWk" resolve="maximum_file_size_in_project_directory" />
     <node concept="2j1LYv" id="4zoES75DMX3" role="2j1YRv">
       <node concept="2j1LYi" id="4zoES75DMX4" role="2j1YQj">
         <ref role="2j1LYj" to="kv3i:pFzydTBLXy" resolve="sizeInKb" />
