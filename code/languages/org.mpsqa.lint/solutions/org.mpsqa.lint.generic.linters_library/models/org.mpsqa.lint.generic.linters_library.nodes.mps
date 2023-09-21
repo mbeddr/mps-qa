@@ -1599,44 +1599,39 @@
                           <node concept="3cpWsn" id="3bllPAaXzZd" role="3cpWs9">
                             <property role="TrG5h" value="msg" />
                             <node concept="17QB3L" id="3bllPAaXzZe" role="1tU5fm" />
-                            <node concept="3cpWs3" id="3bllPAaXFBA" role="33vP2m">
-                              <node concept="37vLTw" id="3bllPAaXGIn" role="3uHU7w">
-                                <ref role="3cqZAo" node="3bllPAaXFM_" resolve="currentNumberOfDescendants" />
+                            <node concept="3cpWs3" id="3bllPAaXzZf" role="33vP2m">
+                              <node concept="3cpWs3" id="3bllPAaXzZg" role="3uHU7B">
+                                <node concept="3cpWs3" id="3bllPAaXzZh" role="3uHU7B">
+                                  <node concept="3cpWs3" id="3bllPAaXzZi" role="3uHU7B">
+                                    <node concept="37vLTw" id="3bllPAaXzZj" role="3uHU7w">
+                                      <ref role="3cqZAo" node="3bllPAaXzYV" resolve="rootNodeName" />
+                                    </node>
+                                    <node concept="Xl_RD" id="3bllPAaXzZk" role="3uHU7B">
+                                      <property role="Xl_RC" value="root node '" />
+                                    </node>
+                                  </node>
+                                  <node concept="Xl_RD" id="3bllPAaXzZl" role="3uHU7w">
+                                    <property role="Xl_RC" value="' from model '" />
+                                  </node>
+                                </node>
+                                <node concept="2OqwBi" id="3bllPAaXzZm" role="3uHU7w">
+                                  <node concept="2OqwBi" id="3bllPAaXzZn" role="2Oq$k0">
+                                    <node concept="2JrnkZ" id="3bllPAaXzZo" role="2Oq$k0">
+                                      <node concept="2GrUjf" id="3bllPAaXzZp" role="2JrQYb">
+                                        <ref role="2Gs0qQ" node="3bllPAaXzYJ" resolve="m" />
+                                      </node>
+                                    </node>
+                                    <node concept="liA8E" id="3bllPAaXzZq" role="2OqNvi">
+                                      <ref role="37wK5l" to="mhbf:~SModel.getName()" resolve="getName" />
+                                    </node>
+                                  </node>
+                                  <node concept="liA8E" id="3bllPAaXzZr" role="2OqNvi">
+                                    <ref role="37wK5l" to="mhbf:~SModelName.getValue()" resolve="getValue" />
+                                  </node>
+                                </node>
                               </node>
-                              <node concept="3cpWs3" id="3bllPAaXzZf" role="3uHU7B">
-                                <node concept="3cpWs3" id="3bllPAaXzZg" role="3uHU7B">
-                                  <node concept="3cpWs3" id="3bllPAaXzZh" role="3uHU7B">
-                                    <node concept="3cpWs3" id="3bllPAaXzZi" role="3uHU7B">
-                                      <node concept="37vLTw" id="3bllPAaXzZj" role="3uHU7w">
-                                        <ref role="3cqZAo" node="3bllPAaXzYV" resolve="rootNodeName" />
-                                      </node>
-                                      <node concept="Xl_RD" id="3bllPAaXzZk" role="3uHU7B">
-                                        <property role="Xl_RC" value="root node '" />
-                                      </node>
-                                    </node>
-                                    <node concept="Xl_RD" id="3bllPAaXzZl" role="3uHU7w">
-                                      <property role="Xl_RC" value="' from model '" />
-                                    </node>
-                                  </node>
-                                  <node concept="2OqwBi" id="3bllPAaXzZm" role="3uHU7w">
-                                    <node concept="2OqwBi" id="3bllPAaXzZn" role="2Oq$k0">
-                                      <node concept="2JrnkZ" id="3bllPAaXzZo" role="2Oq$k0">
-                                        <node concept="2GrUjf" id="3bllPAaXzZp" role="2JrQYb">
-                                          <ref role="2Gs0qQ" node="3bllPAaXzYJ" resolve="m" />
-                                        </node>
-                                      </node>
-                                      <node concept="liA8E" id="3bllPAaXzZq" role="2OqNvi">
-                                        <ref role="37wK5l" to="mhbf:~SModel.getName()" resolve="getName" />
-                                      </node>
-                                    </node>
-                                    <node concept="liA8E" id="3bllPAaXzZr" role="2OqNvi">
-                                      <ref role="37wK5l" to="mhbf:~SModelName.getValue()" resolve="getValue" />
-                                    </node>
-                                  </node>
-                                </node>
-                                <node concept="Xl_RD" id="3bllPAaXzZs" role="3uHU7w">
-                                  <property role="Xl_RC" value="' has too many descendants " />
-                                </node>
+                              <node concept="Xl_RD" id="3bllPAaXzZs" role="3uHU7w">
+                                <property role="Xl_RC" value="' has too many descendants" />
                               </node>
                             </node>
                           </node>
