@@ -1490,7 +1490,7 @@
             <node concept="2ShNRf" id="4EqSY0IG7bH" role="3clFbG">
               <node concept="1pGfFk" id="4EqSY0IG9zq" role="2ShVmc">
                 <property role="373rjd" value="true" />
-                <ref role="37wK5l" node="4EqSY0IG8TV" resolve="Pattern" />
+                <ref role="37wK5l" node="4EqSY0IG8TV" resolve="GithubCodeownersRepository.Pattern" />
                 <node concept="2OqwBi" id="4EqSY0IGffT" role="37wK5m">
                   <node concept="37vLTw" id="4EqSY0IGf5T" role="2Oq$k0">
                     <ref role="3cqZAo" node="4EqSY0IG6p_" resolve="text" />
@@ -1522,7 +1522,7 @@
         </node>
         <node concept="3Tm6S6" id="2KsA7NZmqd5" role="1B3o_S" />
         <node concept="3uibUv" id="4EqSY0IG6eT" role="3clF45">
-          <ref role="3uigEE" node="4EqSY0IG42S" resolve="Pattern" />
+          <ref role="3uigEE" node="4EqSY0IG42S" resolve="GithubCodeownersRepository.Pattern" />
         </node>
         <node concept="37vLTG" id="4EqSY0IG6p_" role="3clF46">
           <property role="TrG5h" value="text" />
@@ -1566,7 +1566,7 @@
               </node>
             </node>
             <node concept="37vLTw" id="4EqSY0IGfSp" role="3clFbw">
-              <ref role="3cqZAo" node="4EqSY0IGeoo" resolve="rooted" />
+              <ref role="3cqZAo" node="4EqSY0IGeoo" resolve="anchoredToRoot" />
             </node>
           </node>
           <node concept="3clFbH" id="4EqSY0IG5M2" role="3cqZAp" />
@@ -1663,7 +1663,7 @@
         <property role="TrG5h" value="pattern" />
         <property role="3TUv4t" value="true" />
         <node concept="3uibUv" id="4EqSY0IGj35" role="1tU5fm">
-          <ref role="3uigEE" node="4EqSY0IG42S" resolve="Pattern" />
+          <ref role="3uigEE" node="4EqSY0IG42S" resolve="GithubCodeownersRepository.Pattern" />
         </node>
         <node concept="3Tm6S6" id="4EqSY0IGBXT" role="1B3o_S" />
       </node>
@@ -1711,7 +1711,7 @@
         <node concept="37vLTG" id="4EqSY0Hth_9" role="3clF46">
           <property role="TrG5h" value="pattern" />
           <node concept="3uibUv" id="4EqSY0IGhNZ" role="1tU5fm">
-            <ref role="3uigEE" node="4EqSY0IG42S" resolve="Pattern" />
+            <ref role="3uigEE" node="4EqSY0IG42S" resolve="GithubCodeownersRepository.Pattern" />
           </node>
         </node>
         <node concept="37vLTG" id="4EqSY0Hth_m" role="3clF46">
@@ -1776,7 +1776,7 @@
         <node concept="3Tm1VV" id="4EqSY0IvKAF" role="1B3o_S" />
         <node concept="17QB3L" id="4EqSY0IvL8p" role="3clF45" />
         <node concept="2AHcQZ" id="4EqSY0IvMJf" role="2AJF6D">
-          <ref role="2AI5Lk" to="wyt6:~Override" />
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
         </node>
       </node>
     </node>
@@ -1787,7 +1787,7 @@
       <node concept="3Tm6S6" id="2KsA7NZmv4u" role="1B3o_S" />
       <node concept="_YKpA" id="4EqSY0HthTX" role="1tU5fm">
         <node concept="3uibUv" id="4EqSY0HthV9" role="_ZDj9">
-          <ref role="3uigEE" node="4EqSY0Htg7$" resolve="Entry" />
+          <ref role="3uigEE" node="4EqSY0Htg7$" resolve="GithubCodeownersRepository.Entry" />
         </node>
       </node>
     </node>
@@ -1814,7 +1814,7 @@
         <property role="TrG5h" value="entries" />
         <node concept="_YKpA" id="4EqSY0HvFo6" role="1tU5fm">
           <node concept="3uibUv" id="4EqSY0HvFo7" role="_ZDj9">
-            <ref role="3uigEE" node="4EqSY0Htg7$" resolve="Entry" />
+            <ref role="3uigEE" node="4EqSY0Htg7$" resolve="GithubCodeownersRepository.Entry" />
           </node>
         </node>
       </node>
@@ -1855,11 +1855,11 @@
           <node concept="3cpWsn" id="4EqSY0Hy1SQ" role="3cpWs9">
             <property role="TrG5h" value="matching" />
             <node concept="3uibUv" id="4EqSY0Hy1IL" role="1tU5fm">
-              <ref role="3uigEE" node="4EqSY0Htg7$" resolve="Entry" />
+              <ref role="3uigEE" node="4EqSY0Htg7$" resolve="GithubCodeownersRepository.Entry" />
             </node>
             <node concept="2OqwBi" id="4EqSY0Hy1SR" role="33vP2m">
               <node concept="37vLTw" id="4EqSY0Hy1SS" role="2Oq$k0">
-                <ref role="3cqZAo" node="4EqSY0HsPn2" resolve="reverseEntries" />
+                <ref role="3cqZAo" node="4EqSY0HsPn2" resolve="entries" />
               </node>
               <node concept="1zesIP" id="4EqSY0Hy1ST" role="2OqNvi">
                 <node concept="1bVj0M" id="4EqSY0Hy1SU" role="23t8la">
@@ -1950,13 +1950,13 @@
             <property role="TrG5h" value="entries" />
             <node concept="_YKpA" id="4EqSY0HwoWs" role="1tU5fm">
               <node concept="3uibUv" id="4EqSY0HwpdL" role="_ZDj9">
-                <ref role="3uigEE" node="4EqSY0Htg7$" resolve="Entry" />
+                <ref role="3uigEE" node="4EqSY0Htg7$" resolve="GithubCodeownersRepository.Entry" />
               </node>
             </node>
             <node concept="2ShNRf" id="4EqSY0Hwq1u" role="33vP2m">
               <node concept="Tc6Ow" id="4EqSY0HwrB8" role="2ShVmc">
                 <node concept="3uibUv" id="4EqSY0HwrJX" role="HW$YZ">
-                  <ref role="3uigEE" node="4EqSY0Htg7$" resolve="Entry" />
+                  <ref role="3uigEE" node="4EqSY0Htg7$" resolve="GithubCodeownersRepository.Entry" />
                 </node>
               </node>
             </node>
@@ -2080,10 +2080,10 @@
                   <node concept="2ShNRf" id="4EqSY0HwvRc" role="25WWJ7">
                     <node concept="1pGfFk" id="4EqSY0HwwNf" role="2ShVmc">
                       <property role="373rjd" value="true" />
-                      <ref role="37wK5l" node="4EqSY0Hth_2" resolve="Entry" />
+                      <ref role="37wK5l" node="4EqSY0Hth_2" resolve="GithubCodeownersRepository.Entry" />
                       <node concept="2YIFZM" id="4EqSY0IGEGr" role="37wK5m">
                         <ref role="37wK5l" node="4EqSY0IG6fY" resolve="fromString" />
-                        <ref role="1Pybhc" node="4EqSY0IG42S" resolve="Pattern" />
+                        <ref role="1Pybhc" node="4EqSY0IG42S" resolve="GithubCodeownersRepository.Pattern" />
                         <node concept="AH0OO" id="4EqSY0IGJK9" role="37wK5m">
                           <node concept="3cmrfG" id="4EqSY0IGKiX" role="AHEQo">
                             <property role="3cmrfH" value="0" />
@@ -2149,7 +2149,7 @@
           <node concept="2ShNRf" id="4EqSY0HwSsN" role="3cqZAk">
             <node concept="1pGfFk" id="4EqSY0HwU8M" role="2ShVmc">
               <property role="373rjd" value="true" />
-              <ref role="37wK5l" node="4EqSY0HvFo0" resolve="PathOwners" />
+              <ref role="37wK5l" node="4EqSY0HvFo0" resolve="GithubCodeownersRepository" />
               <node concept="37vLTw" id="4EqSY0HwUpn" role="37wK5m">
                 <ref role="3cqZAo" node="4EqSY0HwoWz" resolve="entries" />
               </node>
@@ -2446,7 +2446,7 @@
         <node concept="3clFbH" id="2KsA7NZnLTO" role="3cqZAp" />
         <node concept="3cpWs6" id="2KsA7NZnLTP" role="3cqZAp">
           <node concept="1rXfSq" id="2KsA7NZnLTQ" role="3cqZAk">
-            <ref role="37wK5l" node="2KsA7NZnLTV" />
+            <ref role="37wK5l" node="2KsA7NZnLTV" resolve="toRepoRelativePath" />
             <node concept="2YIFZM" id="2KsA7NZnLTR" role="37wK5m">
               <ref role="1Pybhc" to="eoo2:~Paths" resolve="Paths" />
               <ref role="37wK5l" to="eoo2:~Paths.get(java.lang.String,java.lang.String...)" resolve="get" />
@@ -2603,7 +2603,7 @@
                   </node>
                 </node>
                 <node concept="37vLTw" id="4EqSY0IU6TA" role="37vLTJ">
-                  <ref role="3cqZAo" node="4EqSY0IU6Du" resolve="readFrom" />
+                  <ref role="3cqZAo" node="4EqSY0IU6Du" resolve="pathOwners" />
                 </node>
               </node>
             </node>
@@ -2670,7 +2670,7 @@
             <ref role="1Pybhc" to="eoo2:~Paths" resolve="Paths" />
             <node concept="2OqwBi" id="2KsA7NZnV0T" role="37wK5m">
               <node concept="37vLTw" id="2KsA7NZnV0Y" role="2Oq$k0">
-                <ref role="3cqZAo" node="2KsA7NZnV0W" resolve="repoRoot" />
+                <ref role="3cqZAo" node="2KsA7NZnV0W" resolve="file" />
               </node>
               <node concept="liA8E" id="2KsA7NZnV0V" role="2OqNvi">
                 <ref role="37wK5l" to="3ju5:~IFile.getPath()" resolve="getPath" />
