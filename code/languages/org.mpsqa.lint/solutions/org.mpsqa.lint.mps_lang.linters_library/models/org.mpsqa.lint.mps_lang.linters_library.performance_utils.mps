@@ -587,7 +587,6 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="6o7R8__uliY" role="3cqZAp" />
             <node concept="3cpWs8" id="2xFKNLWAQJk" role="3cqZAp">
               <node concept="3cpWsn" id="2xFKNLWAQJn" role="3cpWs9">
                 <property role="TrG5h" value="start" />
@@ -937,7 +936,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="53wV48CwXGY" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
+                      <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
                       <node concept="37vLTw" id="2xFKNLWA5dR" role="37wK5m">
                         <ref role="3cqZAo" node="2xFKNLWA1Hy" resolve="moduleNameSubstring" />
                       </node>
@@ -960,7 +959,7 @@
                       <node concept="LkI2h" id="53wV48CwXH8" role="2OqNvi" />
                     </node>
                     <node concept="liA8E" id="53wV48CwXH9" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
+                      <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
                       <node concept="37vLTw" id="2xFKNLWA4UC" role="37wK5m">
                         <ref role="3cqZAo" node="2xFKNLWA24e" resolve="modelNameSubstring" />
                       </node>

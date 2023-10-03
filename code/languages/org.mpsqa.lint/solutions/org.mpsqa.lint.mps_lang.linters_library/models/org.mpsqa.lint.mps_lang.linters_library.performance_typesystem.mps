@@ -81,6 +81,7 @@
       </concept>
       <concept id="2555875871752198907" name="org.mpsqa.lint.generic.structure.ConceptFunctionParameter_MPSProject" flags="ng" index="1MG55F" />
       <concept id="2555875871751836213" name="org.mpsqa.lint.generic.structure.CheckableScript" flags="ng" index="1MIHA_">
+        <property id="6685385159444651026" name="skipEvaluation" index="3zADTN" />
         <child id="7741759128795038158" name="additionalParameters" index="2j1K4A" />
         <child id="1716492013482699988" name="checkingClosure" index="14J5yK" />
         <child id="2555875871751847640" name="explanation" index="1MIJl8" />
@@ -579,6 +580,7 @@
   </node>
   <node concept="1MIHA_" id="2xFKNLWB3BI">
     <property role="TrG5h" value="slow_checking_of_models" />
+    <property role="3zADTN" value="true" />
     <node concept="2j1LYv" id="2xFKNLWB3BJ" role="2j1YRv">
       <node concept="2j1LYi" id="2xFKNLWB3BK" role="2j1YQj">
         <ref role="2j1LYj" node="2xFKNLWB3BS" resolve="moduleNameRegex" />
@@ -666,14 +668,14 @@
         </node>
       </node>
       <node concept="1PaTwC" id="2xFKNLWB3Cr" role="1PaQFQ">
-        <node concept="3oM_SD" id="6o7R8_BquPx" role="1PaTwD">
+        <node concept="3oM_SD" id="47tbZooKZbP" role="1PaTwD">
           <property role="3oM_SC" value="moduleNameRegex" />
         </node>
         <node concept="3oM_SD" id="2xFKNLWB3Ct" role="1PaTwD">
           <property role="3oM_SC" value="-" />
         </node>
         <node concept="3oM_SD" id="2xFKNLWB3Cu" role="1PaTwD">
-          <property role="3oM_SC" value="substring" />
+          <property role="3oM_SC" value="regex" />
         </node>
         <node concept="3oM_SD" id="2xFKNLWB3Cv" role="1PaTwD">
           <property role="3oM_SC" value="of" />
@@ -694,19 +696,22 @@
           <property role="3oM_SC" value="the" />
         </node>
         <node concept="3oM_SD" id="2xFKNLWB3C_" role="1PaTwD">
-          <property role="3oM_SC" value="root" />
+          <property role="3oM_SC" value="models" />
         </node>
-        <node concept="3oM_SD" id="2xFKNLWB3CA" role="1PaTwD">
-          <property role="3oM_SC" value="nodes" />
+        <node concept="3oM_SD" id="47tbZooKZc4" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
         </node>
-        <node concept="3oM_SD" id="2xFKNLWB3CB" role="1PaTwD">
-          <property role="3oM_SC" value="will" />
-        </node>
-        <node concept="3oM_SD" id="2xFKNLWB3CC" role="1PaTwD">
+        <node concept="3oM_SD" id="47tbZooKZck" role="1PaTwD">
           <property role="3oM_SC" value="be" />
         </node>
-        <node concept="3oM_SD" id="2xFKNLWB3CD" role="1PaTwD">
-          <property role="3oM_SC" value="tested" />
+        <node concept="3oM_SD" id="47tbZooKZc_" role="1PaTwD">
+          <property role="3oM_SC" value="checked" />
+        </node>
+        <node concept="3oM_SD" id="47tbZooKZcR" role="1PaTwD">
+          <property role="3oM_SC" value="are" />
+        </node>
+        <node concept="3oM_SD" id="47tbZooKZek" role="1PaTwD">
+          <property role="3oM_SC" value="located" />
         </node>
       </node>
       <node concept="1PaTwC" id="2xFKNLWB3CE" role="1PaQFQ">
@@ -803,7 +808,7 @@
           <property role="3oM_SC" value="-" />
         </node>
         <node concept="3oM_SD" id="2xFKNLWB3Da" role="1PaTwD">
-          <property role="3oM_SC" value="substring" />
+          <property role="3oM_SC" value="regex" />
         </node>
         <node concept="3oM_SD" id="2xFKNLWB3Db" role="1PaTwD">
           <property role="3oM_SC" value="of" />
@@ -817,26 +822,17 @@
         <node concept="3oM_SD" id="2xFKNLWB3De" role="1PaTwD">
           <property role="3oM_SC" value="name" />
         </node>
-        <node concept="3oM_SD" id="2xFKNLWB3Df" role="1PaTwD">
-          <property role="3oM_SC" value="where" />
+        <node concept="3oM_SD" id="47tbZooKZeM" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
         </node>
-        <node concept="3oM_SD" id="2xFKNLWB3Dg" role="1PaTwD">
-          <property role="3oM_SC" value="the" />
+        <node concept="3oM_SD" id="47tbZooKZeZ" role="1PaTwD">
+          <property role="3oM_SC" value="check" />
         </node>
-        <node concept="3oM_SD" id="2xFKNLWB3Dh" role="1PaTwD">
-          <property role="3oM_SC" value="root" />
+        <node concept="3oM_SD" id="47tbZooKZfd" role="1PaTwD">
+          <property role="3oM_SC" value="for" />
         </node>
-        <node concept="3oM_SD" id="2xFKNLWB3Di" role="1PaTwD">
-          <property role="3oM_SC" value="nodes" />
-        </node>
-        <node concept="3oM_SD" id="2xFKNLWB3Dj" role="1PaTwD">
-          <property role="3oM_SC" value="will" />
-        </node>
-        <node concept="3oM_SD" id="2xFKNLWB3Dk" role="1PaTwD">
-          <property role="3oM_SC" value="be" />
-        </node>
-        <node concept="3oM_SD" id="2xFKNLWB3Dl" role="1PaTwD">
-          <property role="3oM_SC" value="tested" />
+        <node concept="3oM_SD" id="47tbZooKZfG" role="1PaTwD">
+          <property role="3oM_SC" value="performance" />
         </node>
       </node>
       <node concept="1PaTwC" id="2xFKNLWB3Dm" role="1PaQFQ">
@@ -991,11 +987,11 @@
                 <node concept="37vLTw" id="2xFKNLWBCwz" role="37wK5m">
                   <ref role="3cqZAo" node="2xFKNLWB3Ee" resolve="models" />
                 </node>
-                <node concept="2j1LYi" id="2xFKNLWBCw$" role="37wK5m">
-                  <ref role="2j1LYj" node="2xFKNLWB3BU" resolve="modelNameRegex" />
-                </node>
                 <node concept="2j1LYi" id="2xFKNLWBCw_" role="37wK5m">
                   <ref role="2j1LYj" node="2xFKNLWB3BS" resolve="moduleNameRegex" />
+                </node>
+                <node concept="2j1LYi" id="2xFKNLWBCw$" role="37wK5m">
+                  <ref role="2j1LYj" node="2xFKNLWB3BU" resolve="modelNameRegex" />
                 </node>
                 <node concept="1MG55F" id="2xFKNLWBCwA" role="37wK5m" />
                 <node concept="2j1LYi" id="2xFKNLWBCwB" role="37wK5m">
