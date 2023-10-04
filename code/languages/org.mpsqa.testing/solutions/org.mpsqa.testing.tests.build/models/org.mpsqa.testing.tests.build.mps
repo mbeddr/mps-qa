@@ -127,7 +127,7 @@
     <node concept="22LTRH" id="2WwuhUZ0zLN" role="1hWBAP">
       <property role="TrG5h" value="org.mpsqa.testing.tests" />
       <node concept="22LTRF" id="2WwuhUZ0zLQ" role="22LTRK">
-        <ref role="22LTRG" node="2WwuhUZ0znn" resolve="tests" />
+        <ref role="22LTRG" node="2WwuhUZ0znn" resolve="group.tests" />
       </node>
       <node concept="24cAiW" id="5DtatEId8al" role="24cAkG">
         <node concept="NbPM2" id="5DtatEId8aq" role="24c_eh">
@@ -257,7 +257,7 @@
           <property role="1HemKv" value="true" />
           <node concept="3LXTmp" id="2WwuhUZ2KtM" role="1HemKq">
             <node concept="398BVA" id="2WwuhUZ2Ktz" role="3LXTmr">
-              <ref role="398BVh" node="2WwuhUZ2Ktn" resolve="testing.home" />
+              <ref role="398BVh" node="2WwuhUZ2Ktn" resolve="basedir" />
               <node concept="2Ry0Ak" id="2WwuhUZ2Kt$" role="iGT6I">
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="2WwuhUZ2Kt_" role="2Ry0An">
@@ -344,7 +344,7 @@
           <property role="1HemKv" value="true" />
           <node concept="3LXTmp" id="2WwuhUZ2Ku3" role="1HemKq">
             <node concept="398BVA" id="2WwuhUZ2KtO" role="3LXTmr">
-              <ref role="398BVh" node="2WwuhUZ2Ktn" resolve="testing.home" />
+              <ref role="398BVh" node="2WwuhUZ2Ktn" resolve="basedir" />
               <node concept="2Ry0Ak" id="2WwuhUZ2KtP" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
                 <node concept="2Ry0Ak" id="2WwuhUZ2KtQ" role="2Ry0An">
