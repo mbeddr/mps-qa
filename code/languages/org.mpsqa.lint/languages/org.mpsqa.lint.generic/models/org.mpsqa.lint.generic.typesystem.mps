@@ -18,6 +18,7 @@
     <import index="b659" ref="r:654c665e-d426-4acf-8be1-49f83baabbb4(org.mpsqa.lint.generic.behavior)" />
     <import index="a1af" ref="r:839ac015-7de1-49f3-ac8f-8d7c6d47259d(org.mpsqa.lint.generic.structure)" />
     <import index="tpd5" ref="r:00000000-0000-4000-0000-011c895902b5(jetbrains.mps.lang.typesystem.dependencies)" />
+    <import index="z1c4" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
   </imports>
@@ -144,6 +145,9 @@
         <child id="1144231408325" name="iteration" index="1Dwrff" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+      <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
+        <reference id="1116615189566" name="classifier" index="3VsUkX" />
+      </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
@@ -737,8 +741,16 @@
                 <node concept="37vLTw" id="pFzydTCpas" role="37wK5m">
                   <ref role="3cqZAo" node="6gY6GEDvR_$" resolve="cs" />
                 </node>
-                <node concept="37vLTw" id="5$32d6GuHWg" role="37wK5m">
-                  <ref role="3cqZAo" node="6gY6GEDvRAu" resolve="proj" />
+                <node concept="2OqwBi" id="1q_CqGK$HIi" role="37wK5m">
+                  <node concept="37vLTw" id="5$32d6GuHWg" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6gY6GEDvRAu" resolve="proj" />
+                  </node>
+                  <node concept="liA8E" id="1q_CqGK$I56" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getComponent(java.lang.Class)" resolve="getComponent" />
+                    <node concept="3VsKOn" id="1q_CqGK$Ijr" role="37wK5m">
+                      <ref role="3VsUkX" to="z1c4:~MPSProject" resolve="MPSProject" />
+                    </node>
+                  </node>
                 </node>
                 <node concept="37vLTw" id="38klfj4HbDt" role="37wK5m">
                   <ref role="3cqZAo" node="6gY6GEDvR_$" resolve="cs" />
@@ -826,8 +838,16 @@
                 <node concept="37vLTw" id="pFzydTCpjQ" role="37wK5m">
                   <ref role="3cqZAo" node="6gY6GEDvSN0" resolve="rcs" />
                 </node>
-                <node concept="37vLTw" id="6gY6GEDvTJ7" role="37wK5m">
-                  <ref role="3cqZAo" node="6gY6GEDvTIV" resolve="proj" />
+                <node concept="2OqwBi" id="1q_CqGK$IB7" role="37wK5m">
+                  <node concept="37vLTw" id="1q_CqGK$IB8" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6gY6GEDvTIV" resolve="proj" />
+                  </node>
+                  <node concept="liA8E" id="1q_CqGK$IB9" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getComponent(java.lang.Class)" resolve="getComponent" />
+                    <node concept="3VsKOn" id="1q_CqGK$IBa" role="37wK5m">
+                      <ref role="3VsUkX" to="z1c4:~MPSProject" resolve="MPSProject" />
+                    </node>
+                  </node>
                 </node>
                 <node concept="37vLTw" id="38klfj4HcjI" role="37wK5m">
                   <ref role="3cqZAo" node="6gY6GEDvSN0" resolve="rcs" />

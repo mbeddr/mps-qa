@@ -53,14 +53,15 @@ ext.jdk_home = jdk_home
 
 ext.dependencyRepositories = [
         'https://maven.pkg.github.com/mbeddr/*',
+        'https://artifacts.itemis.cloud/repository/maven-mps/'
 ]
 
 // Dependency versions
-ext.mpsVersion =  '2022.2'
+ext.mpsVersion =  '2022.3'
 
 // Project versions
 ext.major = '2022'
-ext.minor = '2'
+ext.minor = '3'
 
 if (ciBuild) {
     String branch = GitBasedVersioning.gitBranch
