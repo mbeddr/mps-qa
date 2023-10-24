@@ -477,7 +477,7 @@
           <node concept="3clFbS" id="6gY6GEDvUUb" role="2VODD2">
             <node concept="3clFbF" id="6gY6GEDvUYW" role="3cqZAp">
               <node concept="Xl_RD" id="6gY6GEDvUYV" role="3clFbG">
-                <property role="Xl_RC" value="Save Currently Found Violations" />
+                <property role="Xl_RC" value="Re-Check and Save Currently Found Violations" />
               </node>
             </node>
           </node>
