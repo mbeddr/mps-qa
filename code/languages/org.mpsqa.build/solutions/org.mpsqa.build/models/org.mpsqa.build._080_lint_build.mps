@@ -231,6 +231,7 @@
       <node concept="1E1JtD" id="3dqUbgQmcyL" role="2G$12L">
         <property role="TrG5h" value="org.mpsqa.lint.generic" />
         <property role="3LESm3" value="40ab19e9-751a-4433-b645-0e65160e58a0" />
+        <property role="BnDLt" value="true" />
         <node concept="398BVA" id="3dqUbgQmcyV" role="3LF7KH">
           <ref role="398BVh" node="3dqUbgQmcyv" resolve="mpsqa.lint.home" />
           <node concept="2Ry0Ak" id="3dqUbgQmczh" role="iGT6I">
@@ -294,11 +295,6 @@
         <node concept="1SiIV0" id="3dqUbgQuc8$" role="3bR37C">
           <node concept="3bR9La" id="3dqUbgQuc8_" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3ywQ_KXEkXU" role="3bR37C">
-          <node concept="3bR9La" id="3ywQ_KXEkXV" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:3HV74$ebibC" resolve="jetbrains.mps.lang.text" />
           </node>
         </node>
         <node concept="1SiIV0" id="3ywQ_KXEkXW" role="3bR37C">
@@ -383,6 +379,16 @@
         <node concept="1SiIV0" id="1UFFkMN1f2K" role="3bR37C">
           <node concept="Rbm2T" id="1UFFkMN1f2L" role="1SiIV1">
             <ref role="1E1Vl2" to="ffeo:7Kfy9QB6L9O" resolve="jetbrains.mps.lang.smodel" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="9oKOt4tatY" role="3bR37C">
+          <node concept="3bR9La" id="9oKOt4tatZ" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="9oKOt4taub" role="3bR37C">
+          <node concept="1Busua" id="9oKOt4tauc" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:3HV74$ebibC" resolve="jetbrains.mps.lang.text" />
           </node>
         </node>
       </node>

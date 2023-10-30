@@ -300,5 +300,36 @@
       <ref role="20lvS9" node="6HKgezStO7d" resolve="CheckableScriptParameter" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2Y3G5n6NAqs">
+    <property role="EcuMT" value="3423774024185833116" />
+    <property role="TrG5h" value="NodeReferenceWord" />
+    <property role="3GE5qa" value="documentation" />
+    <property role="34LRSv" value="@node-ref" />
+    <ref role="1TJDcQ" to="zqge:8D0iRqSPVB" resolve="TextElement" />
+    <node concept="1TJgyj" id="2Y3G5n6ObkL" role="1TKVEi">
+      <property role="IQ2ns" value="3423774024185984305" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="fullyQualifiedReference" />
+      <ref role="20lvS9" node="2Y3G5n6NAqC" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2Y3G5n6NAqC">
+    <property role="EcuMT" value="3423774024185833128" />
+    <property role="3GE5qa" value="documentation" />
+    <property role="TrG5h" value="NamedFullyQualifiedNodeReference" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2Y3G5n6NAqK" role="1TKVEi">
+      <property role="IQ2ns" value="3423774024185833136" />
+      <property role="20kJfa" value="node" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="2Y3G5n6NAqM" role="1TKVEi">
+      <property role="IQ2ns" value="3423774024185833138" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="subPath" />
+      <ref role="20lvS9" node="2Y3G5n6NAqC" resolve="NamedFullyQualifiedNodeReference" />
+    </node>
+  </node>
 </model>
 

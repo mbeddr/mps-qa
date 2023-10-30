@@ -92,6 +92,12 @@
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="40ab19e9-751a-4433-b645-0e65160e58a0" name="org.mpsqa.lint.generic">
+      <concept id="3423774024185833116" name="org.mpsqa.lint.generic.structure.NodeReferenceWord" flags="ng" index="3Djtr9">
+        <child id="3423774024185984305" name="fullyQualifiedReference" index="3DkKl$" />
+      </concept>
+      <concept id="3423774024185833128" name="org.mpsqa.lint.generic.structure.NamedFullyQualifiedNodeReference" flags="ng" index="3DjtrX">
+        <reference id="3423774024185833136" name="node" index="3Djtr_" />
+      </concept>
       <concept id="2555875871752198907" name="org.mpsqa.lint.generic.structure.ConceptFunctionParameter_MPSProject" flags="ng" index="1MG55F" />
       <concept id="2555875871751836213" name="org.mpsqa.lint.generic.structure.CheckableScript" flags="ng" index="1MIHA_">
         <child id="1716492013482699988" name="checkingClosure" index="14J5yK" />
@@ -891,7 +897,47 @@
           <property role="3oM_SC" value="are" />
         </node>
         <node concept="3oM_SD" id="3bllPAaPLKE" role="1PaTwD">
-          <property role="3oM_SC" value="empty." />
+          <property role="3oM_SC" value="empty" />
+        </node>
+        <node concept="3oM_SD" id="9oKOt4qQ4l" role="1PaTwD">
+          <property role="3oM_SC" value="-" />
+        </node>
+        <node concept="3oM_SD" id="9oKOt4qQ4u" role="1PaTwD">
+          <property role="3oM_SC" value="i.e." />
+        </node>
+        <node concept="3oM_SD" id="9oKOt4qQ4C" role="1PaTwD">
+          <property role="3oM_SC" value="searches" />
+        </node>
+        <node concept="3oM_SD" id="9oKOt4qQ4N" role="1PaTwD">
+          <property role="3oM_SC" value="for" />
+        </node>
+        <node concept="3oM_SD" id="9oKOt4qQ4Z" role="1PaTwD">
+          <property role="3oM_SC" value="instances" />
+        </node>
+        <node concept="3oM_SD" id="9oKOt4rx4n" role="1PaTwD">
+          <property role="3oM_SC" value="of" />
+        </node>
+      </node>
+      <node concept="1PaTwC" id="9oKOt4qQ2Y" role="1PaQFQ">
+        <node concept="3Djtr9" id="9oKOt4qQ5S" role="1PaTwD">
+          <node concept="3DjtrX" id="9oKOt4qQ64" role="3DkKl$">
+            <ref role="3Djtr_" to="1i04:hP3h7Gq" resolve="ConceptBehavior" />
+          </node>
+        </node>
+        <node concept="3oM_SD" id="9oKOt4trtV" role="1PaTwD">
+          <property role="3oM_SC" value="which" />
+        </node>
+        <node concept="3oM_SD" id="9oKOt4trtZ" role="1PaTwD">
+          <property role="3oM_SC" value="do" />
+        </node>
+        <node concept="3oM_SD" id="9oKOt4tru4" role="1PaTwD">
+          <property role="3oM_SC" value="not" />
+        </node>
+        <node concept="3oM_SD" id="9oKOt4trua" role="1PaTwD">
+          <property role="3oM_SC" value="have" />
+        </node>
+        <node concept="3oM_SD" id="9oKOt4truh" role="1PaTwD">
+          <property role="3oM_SC" value="descendants." />
         </node>
       </node>
     </node>
