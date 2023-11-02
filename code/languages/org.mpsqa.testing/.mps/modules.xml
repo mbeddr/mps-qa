@@ -2,11 +2,15 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/org.mpsqa.testcov.buildIntegration.jacoco.codeowners/org.mpsqa.testcov.buildIntegration.jacoco.codeowners.mpl" folder="buildIntegration" />
       <modulePath path="$PROJECT_DIR$/languages/org.mpsqa.testcov.buildIntegration.jacoco/org.mpsqa.testcov.buildIntegration.jacoco.mpl" folder="buildIntegration" />
+      <modulePath path="$PROJECT_DIR$/languages/org.mpsqa.testcov.buildIntegration.testutils/org.mpsqa.testcov.buildIntegration.testutils.mpl" folder="buildIntegration.tests" />
       <modulePath path="$PROJECT_DIR$/languages/org.mpsqa.testcov.jacoco/org.mpsqa.testcov.jacoco.mpl" folder="testcov" />
       <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.gentest.baseline/org.mpsqa.gentest.baseline.msd" folder="gentest" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.testcov.buildIntegration.jacoco.codeowners.tests/org.mpsqa.testcov.buildIntegration.jacoco.codeowners.tests.msd" folder="buildIntegration.tests" />
       <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.testcov.jacoco.rt/org.mpsqa.testcov.jacoco.rt.msd" folder="testcov" />
       <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.testcov.jacoco.sandbox/org.mpsqa.testcov.jacoco.sandbox.msd" folder="testcov" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.testing.tests.build/org.mpsqa.testing.tests.build.msd" folder="_build" />
     </projectModules>
   </component>
 </project>
