@@ -1942,7 +1942,7 @@
                         <node concept="TSZUe" id="72dZnKNcJ8F" role="2OqNvi">
                           <node concept="3cpWs3" id="7xmr7AyUHKQ" role="25WWJ7">
                             <node concept="Xl_RD" id="7xmr7AyUIQy" role="3uHU7w">
-                              <property role="Xl_RC" value=" - please remove these languages in the model properties" />
+                              <property role="Xl_RC" value=" - please remove these languages from the model properties" />
                             </node>
                             <node concept="3cpWs3" id="72dZnKNfS22" role="3uHU7B">
                               <node concept="3cpWs3" id="72dZnKNcJ8I" role="3uHU7B">
