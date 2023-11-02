@@ -5087,19 +5087,14 @@
                   <node concept="3cpWsn" id="4Wm$DJ9k$1I" role="3cpWs9">
                     <property role="TrG5h" value="moduleFile" />
                     <node concept="3uibUv" id="4Wm$DJ9kzVm" role="1tU5fm">
-                      <ref role="3uigEE" to="guwi:~File" resolve="File" />
+                      <ref role="3uigEE" to="3ju5:~IFile" resolve="IFile" />
                     </node>
-                    <node concept="2ShNRf" id="4Wm$DJ9k$1J" role="33vP2m">
-                      <node concept="1pGfFk" id="4Wm$DJ9k$1K" role="2ShVmc">
-                        <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-                        <node concept="2OqwBi" id="4Wm$DJ9k$1L" role="37wK5m">
-                          <node concept="2GrUjf" id="4Wm$DJ9k$1M" role="2Oq$k0">
-                            <ref role="2Gs0qQ" node="4Wm$DJ9hQM6" resolve="m" />
-                          </node>
-                          <node concept="liA8E" id="4Wm$DJ9k$1N" role="2OqNvi">
-                            <ref role="37wK5l" to="y8s3:~ModulePath.getPath()" resolve="getPath" />
-                          </node>
-                        </node>
+                    <node concept="2OqwBi" id="5_tEjp$tKvN" role="33vP2m">
+                      <node concept="2GrUjf" id="5_tEjp$tKdv" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="4Wm$DJ9hQM6" resolve="m" />
+                      </node>
+                      <node concept="liA8E" id="5_tEjp$tN6W" role="2OqNvi">
+                        <ref role="37wK5l" to="y8s3:~ModulePath.getFile()" resolve="getFile" />
                       </node>
                     </node>
                   </node>
@@ -5119,7 +5114,7 @@
                                   <ref role="3cqZAo" node="4Wm$DJ9k$1I" resolve="moduleFile" />
                                 </node>
                                 <node concept="liA8E" id="4Wm$DJ9kC0o" role="2OqNvi">
-                                  <ref role="37wK5l" to="guwi:~File.getAbsolutePath()" resolve="getAbsolutePath" />
+                                  <ref role="37wK5l" to="3ju5:~IFile.getPath()" resolve="getPath" />
                                 </node>
                               </node>
                               <node concept="Xl_RD" id="4Wm$DJ9hQMN" role="3uHU7B">
@@ -5140,23 +5135,28 @@
                         <ref role="3cqZAo" node="4Wm$DJ9k$1I" resolve="moduleFile" />
                       </node>
                       <node concept="liA8E" id="4Wm$DJ9k_i$" role="2OqNvi">
-                        <ref role="37wK5l" to="guwi:~File.exists()" resolve="exists" />
+                        <ref role="37wK5l" to="3ju5:~IFile.exists()" resolve="exists" />
                       </node>
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="2OqwBi" id="4Wm$DJ9kp$H" role="2GsD0m">
-                <node concept="1eOMI4" id="4Wm$DJ9kp$I" role="2Oq$k0">
-                  <node concept="10QFUN" id="4Wm$DJ9kp$J" role="1eOMHV">
-                    <node concept="1MG55F" id="4Wm$DJ9kp$K" role="10QFUP" />
-                    <node concept="3uibUv" id="4Wm$DJ9kp$L" role="10QFUM">
-                      <ref role="3uigEE" to="z1c5:~StandaloneMPSProject" resolve="StandaloneMPSProject" />
+              <node concept="2OqwBi" id="5_tEjp$tIz9" role="2GsD0m">
+                <node concept="2OqwBi" id="4Wm$DJ9kp$H" role="2Oq$k0">
+                  <node concept="1eOMI4" id="4Wm$DJ9kp$I" role="2Oq$k0">
+                    <node concept="10QFUN" id="4Wm$DJ9kp$J" role="1eOMHV">
+                      <node concept="1MG55F" id="4Wm$DJ9kp$K" role="10QFUP" />
+                      <node concept="3uibUv" id="4Wm$DJ9kp$L" role="10QFUM">
+                        <ref role="3uigEE" to="z1c5:~StandaloneMPSProject" resolve="StandaloneMPSProject" />
+                      </node>
                     </node>
                   </node>
+                  <node concept="liA8E" id="4Wm$DJ9kp$M" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c5:~StandaloneMPSProject.getProjectDescriptor()" resolve="getProjectDescriptor" />
+                  </node>
                 </node>
-                <node concept="liA8E" id="4Wm$DJ9kp$M" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c5:~StandaloneMPSProject.getAllModulePaths()" resolve="getAllModulePaths" />
+                <node concept="liA8E" id="5_tEjp$tIVe" role="2OqNvi">
+                  <ref role="37wK5l" to="y8s3:~ProjectDescriptor.getModulePaths()" resolve="getModulePaths" />
                 </node>
               </node>
             </node>
