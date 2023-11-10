@@ -2171,7 +2171,7 @@
                                 <node concept="2OqwBi" id="6g2MV4s7FbQ" role="33vP2m">
                                   <node concept="2ShNRf" id="6g2MV4s7FbR" role="2Oq$k0">
                                     <node concept="1pGfFk" id="6g2MV4s7FbS" role="2ShVmc">
-                                      <ref role="37wK5l" to="o3n2:5DY7s5F2Pa1" resolve="MacroContext" />
+                                      <ref role="37wK5l" to="o3n2:5DY7s5F2Pa1" resolve="MacroHelper.MacroContext" />
                                       <node concept="37vLTw" id="6g2MV4s7UGl" role="37wK5m">
                                         <ref role="3cqZAo" node="6g2MV4s7TUx" resolve="project" />
                                       </node>
@@ -2319,7 +2319,7 @@
                                 <node concept="2OqwBi" id="38ougpFqJNJ" role="33vP2m">
                                   <node concept="2ShNRf" id="38ougpFqJNK" role="2Oq$k0">
                                     <node concept="1pGfFk" id="38ougpFqJNL" role="2ShVmc">
-                                      <ref role="37wK5l" to="o3n2:5DY7s5F2Pa1" resolve="MacroContext" />
+                                      <ref role="37wK5l" to="o3n2:5DY7s5F2Pa1" resolve="MacroHelper.MacroContext" />
                                       <node concept="37vLTw" id="38ougpFqLAy" role="37wK5m">
                                         <ref role="3cqZAo" node="38ougpFqL9I" resolve="project" />
                                       </node>
@@ -3814,7 +3814,7 @@
                   <property role="2pNNFO" value="structure" />
                   <property role="qg3DV" value="true" />
                   <node concept="5jKBG" id="4gcSlUzIx_z" role="lGtFl">
-                    <ref role="v9R2y" node="4gcSlUzIx_Z" resolve="reduce_Report" />
+                    <ref role="v9R2y" node="4gcSlUzIx_Z" resolve="reduce_Aspect2ReportStructure" />
                   </node>
                 </node>
                 <node concept="3o6iSG" id="3ZE65pun$lk" role="3o6s8t" />
@@ -4185,7 +4185,7 @@
                         <property role="Xl_RC" value="L" />
                       </node>
                       <node concept="37vLTw" id="5vbAvmZ3Hcp" role="37vLTJ">
-                        <ref role="3cqZAo" node="5vbAvmZ3GQj" resolve="prefix" />
+                        <ref role="3cqZAo" node="5vbAvmZ3GQj" resolve="abbrev" />
                       </node>
                     </node>
                   </node>
@@ -4214,7 +4214,7 @@
                           <property role="Xl_RC" value="S" />
                         </node>
                         <node concept="37vLTw" id="5vbAvmZ3Ipe" role="37vLTJ">
-                          <ref role="3cqZAo" node="5vbAvmZ3GQj" resolve="prefix" />
+                          <ref role="3cqZAo" node="5vbAvmZ3GQj" resolve="abbrev" />
                         </node>
                       </node>
                     </node>
@@ -4236,7 +4236,7 @@
                           <property role="Xl_RC" value="G" />
                         </node>
                         <node concept="37vLTw" id="5vbAvmZ3JUS" role="37vLTJ">
-                          <ref role="3cqZAo" node="5vbAvmZ3GQj" resolve="prefix" />
+                          <ref role="3cqZAo" node="5vbAvmZ3GQj" resolve="abbrev" />
                         </node>
                       </node>
                     </node>
@@ -4250,7 +4250,7 @@
                           <property role="Xl_RC" value="?" />
                         </node>
                         <node concept="37vLTw" id="5vbAvmZ3R27" role="37vLTJ">
-                          <ref role="3cqZAo" node="5vbAvmZ3GQj" resolve="prefix" />
+                          <ref role="3cqZAo" node="5vbAvmZ3GQj" resolve="abbrev" />
                         </node>
                       </node>
                     </node>
@@ -5166,7 +5166,7 @@
               </node>
             </node>
             <node concept="1sPUBX" id="5YqpEAJWraP" role="lGtFl">
-              <ref role="v9R2y" node="5YqpEAJWrab" resolve="switch_JacocoGroup" />
+              <ref role="v9R2y" node="5YqpEAJWrab" resolve="switch_CoverageOf2JacocoGroup" />
               <node concept="v3LJS" id="5YqpEAJWraQ" role="v9R3O">
                 <ref role="v3LJV" node="5YqpEAJWrac" resolve="currentProject" />
               </node>
@@ -5234,7 +5234,7 @@
               </node>
             </node>
             <node concept="1sPUBX" id="5YqpEAJWrbg" role="lGtFl">
-              <ref role="v9R2y" node="5YqpEAJWrab" resolve="switch_JacocoGroup" />
+              <ref role="v9R2y" node="5YqpEAJWrab" resolve="switch_CoverageOf2JacocoGroup" />
               <node concept="v3LJS" id="5YqpEAJWrbh" role="v9R3O">
                 <ref role="v3LJV" node="5YqpEAJWrac" resolve="currentProject" />
               </node>
