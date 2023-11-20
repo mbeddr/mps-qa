@@ -889,16 +889,11 @@
                                         </node>
                                         <node concept="3fqX7Q" id="UvPwwleo5d" role="3clFbw">
                                           <node concept="2OqwBi" id="UvPwwleo5f" role="3fr31v">
-                                            <node concept="2OqwBi" id="UvPwwleo5g" role="2Oq$k0">
-                                              <node concept="37vLTw" id="UvPwwleo5h" role="2Oq$k0">
-                                                <ref role="3cqZAo" node="UvPwwldjn0" resolve="file" />
-                                              </node>
-                                              <node concept="liA8E" id="UvPwwleo5i" role="2OqNvi">
-                                                <ref role="37wK5l" to="eoo2:~Path.toFile()" resolve="toFile" />
-                                              </node>
+                                            <node concept="37vLTw" id="3HZlqXuTtXW" role="2Oq$k0">
+                                              <ref role="3cqZAo" node="UvPwwldjn2" resolve="attrs" />
                                             </node>
                                             <node concept="liA8E" id="UvPwwleo5j" role="2OqNvi">
-                                              <ref role="37wK5l" to="guwi:~File.isDirectory()" resolve="isDirectory" />
+                                              <ref role="37wK5l" to="4qvk:~BasicFileAttributes.isDirectory()" resolve="isDirectory" />
                                             </node>
                                           </node>
                                         </node>
