@@ -405,17 +405,12 @@
                                 <node concept="3cmrfG" id="6HKgezSvRT0" role="3uHU7w">
                                   <property role="3cmrfH" value="1024" />
                                 </node>
-                                <node concept="2OqwBi" id="6HKgezSvRT1" role="3uHU7B">
-                                  <node concept="2OqwBi" id="6HKgezSvRT2" role="2Oq$k0">
-                                    <node concept="37vLTw" id="1NOhArATu84" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="1NOhArATk0z" resolve="file" />
-                                    </node>
-                                    <node concept="liA8E" id="6HKgezSvRT4" role="2OqNvi">
-                                      <ref role="37wK5l" to="eoo2:~Path.toFile()" resolve="toFile" />
-                                    </node>
+                                <node concept="2OqwBi" id="3HZlqXuCsyR" role="3uHU7B">
+                                  <node concept="37vLTw" id="3HZlqXuCsbx" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="1NOhArATk0_" resolve="attrs" />
                                   </node>
-                                  <node concept="liA8E" id="6HKgezSvRT5" role="2OqNvi">
-                                    <ref role="37wK5l" to="guwi:~File.length()" resolve="length" />
+                                  <node concept="liA8E" id="3HZlqXuCtle" role="2OqNvi">
+                                    <ref role="37wK5l" to="4qvk:~BasicFileAttributes.size()" resolve="size" />
                                   </node>
                                 </node>
                               </node>
