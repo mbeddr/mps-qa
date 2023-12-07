@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="org.mpsqa.lancov.sandbox" uuid="d3311aaf-b6d8-43b0-8b44-2eb0c9599b1e" moduleVersion="0" compileInMPS="true">
+<solution name="org.mpsqa.lancov.sandbox" uuid="d3311aaf-b6d8-43b0-8b44-2eb0c9599b1e" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -10,7 +10,6 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <sourcePath />
   <dependencies>
     <dependency reexport="false">c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)</dependency>
     <dependency reexport="false">002cdcf0-8d3c-425b-9439-321fd2830b63(org.mpsqa.lancov)</dependency>
