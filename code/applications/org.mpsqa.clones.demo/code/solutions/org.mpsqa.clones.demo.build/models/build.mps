@@ -9,6 +9,7 @@
   <imports>
     <import index="c9zv" ref="r:c9eae771-f543-4d3e-89a7-0f86ee2dae52(org.mpsqa.clones.build)" />
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
+    <import index="5g2w" ref="r:eecfcc09-6fb4-4fd4-bb99-b3d1712ec5a4(org.mpsqa.build._030_clones_build)" implicit="true" />
   </imports>
   <registry>
     <language id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests">
@@ -152,7 +153,7 @@
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
       <node concept="m$_yC" id="1GhTetdABhp" role="m$_yJ">
-        <ref role="m$_y1" to="c9zv:2JVMSZMFXh0" resolve="org.mpsqa.clones" />
+        <ref role="m$_y1" to="5g2w:2JVMSZMFXh0" resolve="org.mpsqa.clones" />
       </node>
       <node concept="3_J27D" id="2JVMSZMFY9r" role="m_cZH">
         <node concept="3Mxwew" id="2JVMSZMFY9s" role="3MwsjC">
@@ -166,7 +167,7 @@
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="org.mpsqa.clones.demo.config" />
         <property role="3LESm3" value="c234a129-76f4-4c3c-8e00-1d5d820ac2f6" />
-        <property role="aoJFB" value="sources and tests" />
+        <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
         <node concept="3rtmxn" id="1GhTetdABhv" role="3bR31x">
           <node concept="3LXTmp" id="1GhTetdABhw" role="3rtmxm">
             <node concept="398BVA" id="1GhTetdABhx" role="3LXTmr">
@@ -203,7 +204,7 @@
         </node>
         <node concept="1SiIV0" id="6dJ4vxiUcX$" role="3bR37C">
           <node concept="3bR9La" id="6dJ4vxiUcX_" role="1SiIV1">
-            <ref role="3bR37D" to="c9zv:2JVMSZMFXgA" resolve="org.mpsqa.clones.core" />
+            <ref role="3bR37D" to="5g2w:2JVMSZMFXgA" resolve="org.mpsqa.clones.core" />
           </node>
         </node>
         <node concept="1SiIV0" id="6dJ4vxiUcXA" role="3bR37C">
@@ -218,7 +219,7 @@
         </node>
         <node concept="1SiIV0" id="6dJ4vxiUcXE" role="3bR37C">
           <node concept="3bR9La" id="6dJ4vxiUcXF" role="1SiIV1">
-            <ref role="3bR37D" to="c9zv:2JVMSZMFXgS" resolve="org.mpsqa.clones.config.pluginSolution" />
+            <ref role="3bR37D" to="5g2w:2JVMSZMFXgS" resolve="org.mpsqa.clones.config.pluginSolution" />
           </node>
         </node>
       </node>
@@ -230,7 +231,7 @@
       </node>
     </node>
     <node concept="2sgV4H" id="6dJ4vxiTR6z" role="1l3spa">
-      <ref role="1l3spb" to="c9zv:2JVMSZMFXgi" resolve="org.mpsqa.clones" />
+      <ref role="1l3spb" to="c9zv:2JVMSZMFXJP" resolve="org.mpsqa.clones.headless" />
       <node concept="398BVA" id="6dJ4vxiUhxa" role="2JcizS">
         <ref role="398BVh" node="1GhTetdB0o4" resolve="mps_home" />
       </node>
