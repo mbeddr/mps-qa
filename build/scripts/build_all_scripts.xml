@@ -3,7 +3,7 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/org.mpsqa.allScripts" />
   <property name="build.layout" location="${build.dir}/artifacts/org.mpsqa.allScripts" />
-  <property name="mps.home" location="${basedir}/../../../MPS_2020_3_5" />
+  <property name="mps.home" location="" />
   <property name="mpsqa.home" location="${basedir}/../.." />
   <property name="mpsqa.build.home" location="${mpsqa.home}/code/languages/org.mpsqa.build" />
   <property name="artifacts.mps" location="${mps.home}" />

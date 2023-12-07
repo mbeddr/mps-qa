@@ -9,6 +9,7 @@
   <imports>
     <import index="c9zv" ref="r:c9eae771-f543-4d3e-89a7-0f86ee2dae52(org.mpsqa.clones.build)" />
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
+    <import index="2tou" ref="r:18bebd8f-6332-4ffd-b628-cc9dad4ef421(org.mpsqa.build._010_base_build)" />
     <import index="5g2w" ref="r:eecfcc09-6fb4-4fd4-bb99-b3d1712ec5a4(org.mpsqa.build._030_clones_build)" implicit="true" />
   </imports>
   <registry>
@@ -109,6 +110,12 @@
       </concept>
       <concept id="763829979718664966" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleResources" flags="ng" index="3rtmxn">
         <child id="763829979718664967" name="files" index="3rtmxm" />
+      </concept>
+      <concept id="4278635856200817744" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleModelRoot" flags="ng" index="1BupzO">
+        <property id="8137134783396907368" name="convert2binary" index="1Hdu6h" />
+        <property id="8137134783396676838" name="extracted" index="1HemKv" />
+        <property id="2889113830911481881" name="deployFolderName" index="3ZfqAx" />
+        <child id="8137134783396676835" name="location" index="1HemKq" />
       </concept>
       <concept id="3189788309731840247" name="jetbrains.mps.build.mps.structure.BuildMps_Solution" flags="ng" index="1E1JtA">
         <property id="269707337715731330" name="sourcesKind" index="aoJFB" />
@@ -222,6 +229,31 @@
             <ref role="3bR37D" to="5g2w:2JVMSZMFXgS" resolve="org.mpsqa.clones.config.pluginSolution" />
           </node>
         </node>
+        <node concept="1BupzO" id="7j9WyvhwngV" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="7j9WyvhwngW" role="1HemKq">
+            <node concept="398BVA" id="7j9WyvhwngL" role="3LXTmr">
+              <ref role="398BVh" node="1GhTetdB0oc" resolve="mpsqa.clones.detection.home" />
+              <node concept="2Ry0Ak" id="7j9WyvhwngM" role="iGT6I">
+                <property role="2Ry0Am" value="code" />
+                <node concept="2Ry0Ak" id="7j9WyvhwngN" role="2Ry0An">
+                  <property role="2Ry0Am" value="solutions" />
+                  <node concept="2Ry0Ak" id="7j9WyvhwngO" role="2Ry0An">
+                    <property role="2Ry0Am" value="org.mpsqa.clones.demo.config" />
+                    <node concept="2Ry0Ak" id="7j9WyvhwngP" role="2Ry0An">
+                      <property role="2Ry0Am" value="models" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="7j9WyvhwngX" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2sgV4H" id="2JVMSZMFY8e" role="1l3spa">
@@ -236,34 +268,11 @@
         <ref role="398BVh" node="1GhTetdB0o4" resolve="mps_home" />
       </node>
     </node>
+    <node concept="2sgV4H" id="7j9WyvhwmK6" role="1l3spa">
+      <ref role="1l3spb" to="2tou:7C9PHv6FBIG" resolve="org.mpsqa.base" />
+    </node>
     <node concept="398rNT" id="1GhTetdB0o4" role="1l3spd">
       <property role="TrG5h" value="mps_home" />
-      <node concept="55IIr" id="1GhTetdB0o5" role="398pKh">
-        <node concept="2Ry0Ak" id="1GhTetdB0o6" role="iGT6I">
-          <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="1GhTetdB0o7" role="2Ry0An">
-            <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="1GhTetdB0o8" role="2Ry0An">
-              <property role="2Ry0Am" value=".." />
-              <node concept="2Ry0Ak" id="1GhTetdB0o9" role="2Ry0An">
-                <property role="2Ry0Am" value=".." />
-                <node concept="2Ry0Ak" id="1GhTetdBQO4" role="2Ry0An">
-                  <property role="2Ry0Am" value=".." />
-                  <node concept="2Ry0Ak" id="6dJ4vxiTQkY" role="2Ry0An">
-                    <property role="2Ry0Am" value=".." />
-                    <node concept="2Ry0Ak" id="6dJ4vxiTQxP" role="2Ry0An">
-                      <property role="2Ry0Am" value=".." />
-                      <node concept="2Ry0Ak" id="6dJ4vxiUhxf" role="2Ry0An">
-                        <property role="2Ry0Am" value="MPS_2018_3_7_esd_devel_clones_detection" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="398rNT" id="1GhTetdB0oc" role="1l3spd">
       <property role="TrG5h" value="mpsqa.clones.detection.home" />

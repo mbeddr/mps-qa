@@ -32,7 +32,6 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
-      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
@@ -145,7 +144,7 @@
             </node>
             <node concept="2ShNRf" id="xCk$O6mj3r" role="33vP2m">
               <node concept="1pGfFk" id="xCk$O6mj3O" role="2ShVmc">
-                <ref role="37wK5l" to="fnpx:~Notification.&lt;init&gt;(java.lang.String,java.lang.String,java.lang.String,com.intellij.notification.NotificationType,com.intellij.notification.NotificationListener)" resolve="Notification" />
+                <ref role="37wK5l" to="fnpx:~Notification.&lt;init&gt;(java.lang.String,java.lang.String,java.lang.String,com.intellij.notification.NotificationType)" resolve="Notification" />
                 <node concept="2OqwBi" id="xCk$O6mjh0" role="37wK5m">
                   <node concept="37vLTw" id="zudvsqcbpf" role="2Oq$k0">
                     <ref role="3cqZAo" node="71GfFl7hN$8" resolve="mpsqaBalloonGroup" />
@@ -163,7 +162,6 @@
                 <node concept="37vLTw" id="xCk$O6mjA0" role="37wK5m">
                   <ref role="3cqZAo" node="xCk$O6mjqq" resolve="type" />
                 </node>
-                <node concept="10Nm6u" id="xCk$O6mj3X" role="37wK5m" />
               </node>
             </node>
           </node>

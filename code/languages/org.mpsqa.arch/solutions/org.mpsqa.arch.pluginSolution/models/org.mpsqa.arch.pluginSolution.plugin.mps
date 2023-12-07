@@ -29,6 +29,7 @@
     <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
     <import index="r791" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.text(JDK/)" />
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
+    <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
@@ -469,18 +470,33 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="1Nl9e7Dzzni" role="3cqZAp">
-          <node concept="2YIFZM" id="1Nl9e7DzzrI" role="3clFbG">
-            <ref role="37wK5l" node="1Nl9e7Dzqh4" resolve="displayPlantUml" />
-            <ref role="1Pybhc" node="1Nl9e7Dzq0d" resolve="PlantUMLToolStarter" />
-            <node concept="2OqwBi" id="1Nl9e7DzzIK" role="37wK5m">
-              <node concept="2WthIp" id="1Nl9e7DzzsT" role="2Oq$k0" />
-              <node concept="1DTwFV" id="1Nl9e7DzzYh" role="2OqNvi">
-                <ref role="2WH_rO" node="1tkdAPw5qGO" resolve="proj" />
-              </node>
+        <node concept="3clFbF" id="7j9WyvhatFp" role="3cqZAp">
+          <node concept="2OqwBi" id="7j9WyvhaupY" role="3clFbG">
+            <node concept="2YIFZM" id="7j9WyvhatLd" role="2Oq$k0">
+              <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
+              <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
             </node>
-            <node concept="37vLTw" id="1Nl9e7Dz$1W" role="37wK5m">
-              <ref role="3cqZAo" node="1tkdAPw5gL_" resolve="source" />
+            <node concept="liA8E" id="7j9WyvhawCA" role="2OqNvi">
+              <ref role="37wK5l" to="bd8o:~Application.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
+              <node concept="1bVj0M" id="7j9WyvhawDT" role="37wK5m">
+                <node concept="3clFbS" id="7j9WyvhawDW" role="1bW5cS">
+                  <node concept="3clFbF" id="1Nl9e7Dzzni" role="3cqZAp">
+                    <node concept="2YIFZM" id="1Nl9e7DzzrI" role="3clFbG">
+                      <ref role="37wK5l" node="1Nl9e7Dzqh4" resolve="displayPlantUml" />
+                      <ref role="1Pybhc" node="1Nl9e7Dzq0d" resolve="PlantUMLToolStarter" />
+                      <node concept="2OqwBi" id="1Nl9e7DzzIK" role="37wK5m">
+                        <node concept="2WthIp" id="1Nl9e7DzzsT" role="2Oq$k0" />
+                        <node concept="1DTwFV" id="1Nl9e7DzzYh" role="2OqNvi">
+                          <ref role="2WH_rO" node="1tkdAPw5qGO" resolve="proj" />
+                        </node>
+                      </node>
+                      <node concept="37vLTw" id="1Nl9e7Dz$1W" role="37wK5m">
+                        <ref role="3cqZAo" node="1tkdAPw5gL_" resolve="source" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -3125,18 +3141,33 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="1Nl9e7Dz$jV" role="3cqZAp">
-          <node concept="2YIFZM" id="1Nl9e7Dz$jW" role="3clFbG">
-            <ref role="37wK5l" node="1Nl9e7Dzqh4" resolve="displayPlantUml" />
-            <ref role="1Pybhc" node="1Nl9e7Dzq0d" resolve="PlantUMLToolStarter" />
-            <node concept="2OqwBi" id="1Nl9e7Dz$jX" role="37wK5m">
-              <node concept="2WthIp" id="1Nl9e7Dz$jY" role="2Oq$k0" />
-              <node concept="1DTwFV" id="1Nl9e7Dz$jZ" role="2OqNvi">
-                <ref role="2WH_rO" node="1Nl9e7Dz$k5" resolve="proj" />
-              </node>
+        <node concept="3clFbF" id="7j9WyvhaxaL" role="3cqZAp">
+          <node concept="2OqwBi" id="7j9WyvhaxTp" role="3clFbG">
+            <node concept="2YIFZM" id="7j9WyvhaxgC" role="2Oq$k0">
+              <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
+              <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
             </node>
-            <node concept="37vLTw" id="1Nl9e7Dz$k0" role="37wK5m">
-              <ref role="3cqZAo" node="1Nl9e7Dz$jJ" resolve="source" />
+            <node concept="liA8E" id="7j9WyvhayuG" role="2OqNvi">
+              <ref role="37wK5l" to="bd8o:~Application.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
+              <node concept="1bVj0M" id="7j9WyvhayvZ" role="37wK5m">
+                <node concept="3clFbS" id="7j9Wyvhayw2" role="1bW5cS">
+                  <node concept="3clFbF" id="1Nl9e7Dz$jV" role="3cqZAp">
+                    <node concept="2YIFZM" id="1Nl9e7Dz$jW" role="3clFbG">
+                      <ref role="37wK5l" node="1Nl9e7Dzqh4" resolve="displayPlantUml" />
+                      <ref role="1Pybhc" node="1Nl9e7Dzq0d" resolve="PlantUMLToolStarter" />
+                      <node concept="2OqwBi" id="1Nl9e7Dz$jX" role="37wK5m">
+                        <node concept="2WthIp" id="1Nl9e7Dz$jY" role="2Oq$k0" />
+                        <node concept="1DTwFV" id="1Nl9e7Dz$jZ" role="2OqNvi">
+                          <ref role="2WH_rO" node="1Nl9e7Dz$k5" resolve="proj" />
+                        </node>
+                      </node>
+                      <node concept="37vLTw" id="1Nl9e7Dz$k0" role="37wK5m">
+                        <ref role="3cqZAo" node="1Nl9e7Dz$jJ" resolve="source" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>

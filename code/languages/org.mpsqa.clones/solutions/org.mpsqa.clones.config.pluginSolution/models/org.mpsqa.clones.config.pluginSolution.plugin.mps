@@ -167,7 +167,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -183,12 +182,6 @@
     <property role="TrG5h" value="CheckClonesForConfig" />
     <property role="2uzpH1" value="Detect Clones for Configuration" />
     <property role="1rBW0U" value="true" />
-    <node concept="2S4$dB" id="7WP_sw5xafg" role="1NuT2Z">
-      <property role="TrG5h" value="model" />
-      <node concept="3Tm6S6" id="7WP_sw5xafh" role="1B3o_S" />
-      <node concept="1oajcY" id="7WP_sw5xafi" role="1oa70y" />
-      <node concept="H_c77" id="7WP_sw5x5x4" role="1tU5fm" />
-    </node>
     <node concept="1DS2jV" id="7WP_sw5xcoC" role="1NuT2Z">
       <property role="TrG5h" value="project" />
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
