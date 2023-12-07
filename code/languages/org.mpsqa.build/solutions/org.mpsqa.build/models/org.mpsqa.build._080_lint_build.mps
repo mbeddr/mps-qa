@@ -677,14 +677,9 @@
             <ref role="3bR37D" to="ffeo:4IP11oWmB07" resolve="jetbrains.mps.ide.modelchecker.platform" />
           </node>
         </node>
-        <node concept="1SiIV0" id="1NOhArAYtvK" role="3bR37C">
-          <node concept="3bR9La" id="1NOhArAYtvL" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6LgV" resolve="jetbrains.mps.make.runtime" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3$WIIviqHH" role="3bR37C">
-          <node concept="3bR9La" id="3$WIIviqHI" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:3qkjbZn808a" resolve="jetbrains.mps.lang.constraints.rules.runtime" />
+        <node concept="1SiIV0" id="4lmpEOOAhiH" role="3bR37C">
+          <node concept="3bR9La" id="4lmpEOOAhiI" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7pdFgzxlDoP" resolve="jetbrains.mps.build.mps" />
           </node>
         </node>
       </node>
