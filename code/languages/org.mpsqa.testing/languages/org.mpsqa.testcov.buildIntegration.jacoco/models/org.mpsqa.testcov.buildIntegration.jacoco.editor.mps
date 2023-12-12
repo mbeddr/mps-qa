@@ -12,6 +12,7 @@
     <import index="o2va" ref="r:00f69407-23a8-49a2-a236-9e89a32679aa(jetbrains.mps.build.editor)" />
     <import index="5tjl" ref="r:5315d75f-2eea-4bf2-899f-f3d94810cea5(jetbrains.mps.build.mps.tests.structure)" />
     <import index="ljzu" ref="r:6f104b69-0cfd-4b06-895f-bc1a1b43170f(jetbrains.mps.build.mps.tests.editor)" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -251,6 +252,31 @@
         </node>
       </node>
       <node concept="l2Vlx" id="4BvAvMowwrV" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4EqSY0I842B">
+    <ref role="1XX52x" to="km3i:4EqSY0I2WoZ" resolve="CoverageOf_CustomGroup" />
+    <node concept="3EZMnI" id="4EqSY0I842D" role="2wV5jI">
+      <node concept="PMmxH" id="4EqSY0I842Q" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="3F0A7n" id="4EqSY0I8435" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <node concept="ljvvj" id="4EqSY0I843h" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="4EqSY0I843y" role="3EZMnx">
+        <ref role="1NtTu8" to="km3i:4EqSY0I2Wp6" resolve="contents" />
+        <node concept="l2Vlx" id="4EqSY0I843$" role="2czzBx" />
+        <node concept="lj46D" id="4EqSY0I843O" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pj6Ft" id="4EqSY0I843S" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="4EqSY0I842G" role="2iSdaV" />
     </node>
   </node>
 </model>

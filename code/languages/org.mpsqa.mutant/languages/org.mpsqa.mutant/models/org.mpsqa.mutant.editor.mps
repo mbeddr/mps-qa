@@ -253,5 +253,12 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="2Y3G5n6qRRV">
+    <property role="3GE5qa" value="filter" />
+    <ref role="1XX52x" to="2yhq:2Y3G5n6qRRU" resolve="NoFilter" />
+    <node concept="3F0ifn" id="2Y3G5n6qRRX" role="2wV5jI">
+      <property role="3F0ifm" value="no filter (accept all generated nodes)" />
+    </node>
+  </node>
 </model>
 

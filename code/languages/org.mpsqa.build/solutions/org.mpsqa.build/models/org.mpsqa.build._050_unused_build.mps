@@ -352,6 +352,11 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6Lg8" resolve="jetbrains.mps.runtime" />
           </node>
         </node>
+        <node concept="1SiIV0" id="7AhcwybHINF" role="3bR37C">
+          <node concept="3bR9La" id="7AhcwybHING" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:4SM2EuqHUPF" resolve="jetbrains.mps.lang.modelapi" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="1aX3ezKAshF" role="2G$12L">
         <property role="TrG5h" value="org.mpsqa.invisible_models" />
@@ -408,6 +413,117 @@
             </node>
             <node concept="3qWCbU" id="1aX3ezKAsjv" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="1xhLENuUZOE" role="3bR31x">
+          <node concept="3LXTmp" id="1xhLENuUZOF" role="3rtmxm">
+            <node concept="398BVA" id="1xhLENuUZOG" role="3LXTmr">
+              <ref role="398BVh" node="1YSnQiVh0x7" resolve="mpsqa.unused.home" />
+              <node concept="2Ry0Ak" id="1xhLENuUZOH" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="1xhLENuUZOI" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.invisible_models" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="1xhLENuUZOK" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtD" id="6X427YbFJhj" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="org.mpsqa.lancov.fragments" />
+        <property role="3LESm3" value="2868a16c-e0f6-4b7e-9206-98cafebbd971" />
+        <node concept="398BVA" id="6X427YbFJiq" role="3LF7KH">
+          <ref role="398BVh" node="1YSnQiVh0x7" resolve="mpsqa.unused.home" />
+          <node concept="2Ry0Ak" id="6X427YbFJiw" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="6X427YbFJi_" role="2Ry0An">
+              <property role="2Ry0Am" value="org.mpsqa.lancov.fragments" />
+              <node concept="2Ry0Ak" id="6X427YbFJiE" role="2Ry0An">
+                <property role="2Ry0Am" value="org.mpsqa.lancov.fragments.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6X427YbFJjf" role="3bR37C">
+          <node concept="3bR9La" id="6X427YbFJjg" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6X427YbFJjh" role="3bR37C">
+          <node concept="3bR9La" id="6X427YbFJji" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6X427YbFJjj" role="3bR37C">
+          <node concept="3bR9La" id="6X427YbFJjk" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6X427YbFJjl" role="3bR37C">
+          <node concept="3bR9La" id="6X427YbFJjm" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6X427YbFJjn" role="3bR37C">
+          <node concept="3bR9La" id="6X427YbFJjo" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L9O" resolve="jetbrains.mps.lang.smodel" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6X427YbFJjp" role="3bR37C">
+          <node concept="3bR9La" id="6X427YbFJjq" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6X427YbFJjr" role="3bR37C">
+          <node concept="3bR9La" id="6X427YbFJjs" role="1SiIV1">
+            <ref role="3bR37D" node="1YSnQiVh0AN" resolve="org.mpsqa.lancov" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6X427YbFJjt" role="3bR37C">
+          <node concept="3bR9La" id="6X427YbFJju" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="6X427YbFJjE" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="6X427YbFJjF" role="1HemKq">
+            <node concept="398BVA" id="6X427YbFJjv" role="3LXTmr">
+              <ref role="398BVh" node="1YSnQiVh0x7" resolve="mpsqa.unused.home" />
+              <node concept="2Ry0Ak" id="6X427YbFJjw" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="6X427YbFJjx" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.lancov.fragments" />
+                  <node concept="2Ry0Ak" id="6X427YbFJjy" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="6X427YbFJjG" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="1xhLENuUZOd" role="3bR31x">
+          <node concept="3LXTmp" id="1xhLENuUZOe" role="3rtmxm">
+            <node concept="398BVA" id="1xhLENuUZOf" role="3LXTmr">
+              <ref role="398BVh" node="1YSnQiVh0x7" resolve="mpsqa.unused.home" />
+              <node concept="2Ry0Ak" id="1xhLENuUZOg" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="1xhLENuUZOh" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.lancov.fragments" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="1xhLENuUZOj" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
             </node>
           </node>
         </node>
