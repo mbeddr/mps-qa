@@ -18,6 +18,10 @@
         <reference id="5617550519002745380" name="script" index="1l3spb" />
         <child id="4129895186893471026" name="artifacts" index="2JcizS" />
       </concept>
+      <concept id="927724900262033858" name="jetbrains.mps.build.structure.BuildSource_JavaOptions" flags="ng" index="2_Ic$z">
+        <property id="927724900262033861" name="generateDebugInfo" index="2_Ic$$" />
+        <property id="927724900262033862" name="copyResources" index="2_Ic$B" />
+      </concept>
       <concept id="4380385936562003279" name="jetbrains.mps.build.structure.BuildString" flags="ng" index="NbPM2">
         <child id="4903714810883783243" name="parts" index="3MwsjC" />
       </concept>
@@ -173,6 +177,10 @@
       <node concept="398BVA" id="3GDqItDloJd" role="2JcizS">
         <ref role="398BVh" node="7C9PHv6FBIK" resolve="mps.home" />
       </node>
+    </node>
+    <node concept="2_Ic$z" id="6mB3DwRKeQg" role="3989C9">
+      <property role="2_Ic$$" value="true" />
+      <property role="2_Ic$B" value="true" />
     </node>
     <node concept="m$_wf" id="fm3v0X36My" role="3989C9">
       <property role="m$_wk" value="org.mpsqa.build" />
