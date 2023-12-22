@@ -8,7 +8,7 @@
       <sourceRoot location="." />
     </modelRoot>
     <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="plantuml-epl-1.2023.13.jar" />
+      <sourceRoot location="plantuml-asl-1.2023.13.jar" />
     </modelRoot>
   </models>
   <facets>
@@ -17,7 +17,7 @@
     </facet>
   </facets>
   <stubModelEntries>
-    <stubModelEntry path="${module}/lib/plantuml-epl-1.2023.13.jar" />
+    <stubModelEntry path="${module}/lib/plantuml-asl-1.2023.13.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>

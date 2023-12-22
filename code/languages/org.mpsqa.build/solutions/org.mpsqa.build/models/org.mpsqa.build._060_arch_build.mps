@@ -202,8 +202,8 @@
                 <property role="2Ry0Am" value="org.mpsqa.arch.pluginSolution" />
                 <node concept="2Ry0Ak" id="50Wzfz4sDIC" role="2Ry0An">
                   <property role="2Ry0Am" value="lib" />
-                  <node concept="2Ry0Ak" id="4Zex1q$69zF" role="2Ry0An">
-                    <property role="2Ry0Am" value="plantuml-epl-1.2023.13.jar" />
+                  <node concept="2Ry0Ak" id="7PMJ7Uztwp3" role="2Ry0An">
+                    <property role="2Ry0Am" value="plantuml-asl-1.2023.13.jar" />
                   </node>
                 </node>
               </node>
@@ -444,8 +444,8 @@
                   <property role="2Ry0Am" value="org.mpsqa.arch.pluginSolution" />
                   <node concept="2Ry0Ak" id="6ST145H7UsV" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="6ST145H7UsW" role="2Ry0An">
-                      <property role="2Ry0Am" value="plantuml-epl-1.2023.13.jar" />
+                    <node concept="2Ry0Ak" id="7PMJ7UztwOq" role="2Ry0An">
+                      <property role="2Ry0Am" value="plantuml-asl-1.2023.13.jar" />
                     </node>
                   </node>
                 </node>
