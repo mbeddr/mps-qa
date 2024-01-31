@@ -350,15 +350,15 @@
     </node>
     <node concept="22LTRH" id="2JVMSZMFYqK" role="1hWBAP">
       <property role="TrG5h" value="clones tests" />
-      <node concept="22LTRF" id="5DtatEIcXsZ" role="22LTRK">
-        <ref role="22LTRG" node="2JVMSZMFYb4" resolve="group.tests" />
-      </node>
       <node concept="24cAiW" id="1GhTetdClxk" role="24cAkG">
         <node concept="NbPM2" id="2WwuhUZ5YOQ" role="24c_eh">
           <node concept="3Mxwew" id="2WwuhUZ5YOP" role="3MwsjC">
             <property role="3MwjfP" value="true" />
           </node>
         </node>
+      </node>
+      <node concept="22LTRF" id="5DtatEIcXsZ" role="22LTRK">
+        <ref role="22LTRG" node="2JVMSZMFYb4" resolve="group.tests" />
       </node>
     </node>
   </node>

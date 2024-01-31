@@ -23,6 +23,10 @@
         <reference id="5617550519002745380" name="script" index="1l3spb" />
         <child id="4129895186893471026" name="artifacts" index="2JcizS" />
       </concept>
+      <concept id="927724900262033858" name="jetbrains.mps.build.structure.BuildSource_JavaOptions" flags="ng" index="2_Ic$z">
+        <property id="927724900262033861" name="generateDebugInfo" index="2_Ic$$" />
+        <property id="927724900262033862" name="copyResources" index="2_Ic$B" />
+      </concept>
       <concept id="4380385936562003279" name="jetbrains.mps.build.structure.BuildString" flags="ng" index="NbPM2">
         <child id="4903714810883783243" name="parts" index="3MwsjC" />
       </concept>
@@ -198,8 +202,8 @@
                 <property role="2Ry0Am" value="org.mpsqa.arch.pluginSolution" />
                 <node concept="2Ry0Ak" id="50Wzfz4sDIC" role="2Ry0An">
                   <property role="2Ry0Am" value="lib" />
-                  <node concept="2Ry0Ak" id="1$4Qbt$B9yr" role="2Ry0An">
-                    <property role="2Ry0Am" value="plantuml-1.2022.6.jar" />
+                  <node concept="2Ry0Ak" id="7PMJ7Uztwp3" role="2Ry0An">
+                    <property role="2Ry0Am" value="plantuml-asl-1.2023.13.jar" />
                   </node>
                 </node>
               </node>
@@ -207,6 +211,10 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="2_Ic$z" id="6mB3DwRKeQg" role="3989C9">
+      <property role="2_Ic$$" value="true" />
+      <property role="2_Ic$B" value="true" />
     </node>
     <node concept="m$_wf" id="50Wzfz4shz8" role="3989C9">
       <property role="m$_wk" value="org.mpsqa.arch" />
@@ -388,25 +396,6 @@
             <ref role="3bR37D" node="50Wzfz4shzn" resolve="org.mpsqa.arch" />
           </node>
         </node>
-        <node concept="1SiIV0" id="50Wzfz4sh_t" role="3bR37C">
-          <node concept="1BurEX" id="50Wzfz4sh_u" role="1SiIV1">
-            <node concept="398BVA" id="50Wzfz4sh_g" role="1BurEY">
-              <ref role="398BVh" node="50Wzfz4shz5" resolve="mpsqa.arch.home" />
-              <node concept="2Ry0Ak" id="50Wzfz4sh_h" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="50Wzfz4sh_i" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.mpsqa.arch.pluginSolution" />
-                  <node concept="2Ry0Ak" id="50Wzfz4sh_j" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="1$4Qbt$B9z4" role="2Ry0An">
-                      <property role="2Ry0Am" value="plantuml-1.2022.6.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="1BupzO" id="50Wzfz4sh_E" role="3bR31x">
           <property role="3ZfqAx" value="models" />
           <property role="1Hdu6h" value="true" />
@@ -442,6 +431,25 @@
             </node>
             <node concept="3qWCbU" id="1$4Qbt$B9zq" role="3LXTna">
               <property role="3qWCbO" value="icons/**" />
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6ST145H7Ut5" role="3bR37C">
+          <node concept="1BurEX" id="6ST145H7Ut6" role="1SiIV1">
+            <node concept="398BVA" id="6ST145H7UsS" role="1BurEY">
+              <ref role="398BVh" node="50Wzfz4shz5" resolve="mpsqa.arch.home" />
+              <node concept="2Ry0Ak" id="6ST145H7UsT" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="6ST145H7UsU" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.arch.pluginSolution" />
+                  <node concept="2Ry0Ak" id="6ST145H7UsV" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="7PMJ7UztwOq" role="2Ry0An">
+                      <property role="2Ry0Am" value="plantuml-asl-1.2023.13.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>

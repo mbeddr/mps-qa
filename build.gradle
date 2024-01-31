@@ -9,7 +9,7 @@ plugins {
 
 apply plugin: 'download-jbr'
 
-ext.jbrVers = '11_0_10-b1145.96'
+ext.jbrVers = '17.0.6-b469.82'
 
 downloadJbr {
     jbrVersion = jbrVers
@@ -56,11 +56,11 @@ ext.dependencyRepositories = [
 ]
 
 // Dependency versions
-ext.mpsVersion =  '2021.3.+'
+ext.mpsVersion =  '2022.2.2'
 
 // Project versions
-ext.major = '2021'
-ext.minor = '3'
+ext.major = '2022'
+ext.minor = '2'
 
 if (ciBuild) {
     String branch = GitBasedVersioning.gitBranch
