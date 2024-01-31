@@ -10,3 +10,5 @@ jobs:
     uses: specificlanguages/cascading-merge/.github/workflows/workflow.yml@v1
     with:
       branch_prefix: maintenance/MPS-
+      merge_prefix: merge/MPS-
+      update_from_base: false
