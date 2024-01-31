@@ -2,7 +2,7 @@
 <model ref="r:9423baf1-89ce-4166-a603-1a8774746e47(test.org.mpsqa.lancov.fragments._010_check_conformance_to_terminal_rules@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="3b62794b-a04f-4b9f-bffb-9bc93bd0c0c3" name="org.mpsqa.lancov.fragments.test_lang" version="-1" />
     <use id="2868a16c-e0f6-4b7e-9206-98cafebbd971" name="org.mpsqa.lancov.fragments" version="0" />
@@ -18,6 +18,7 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
@@ -67,7 +68,7 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -137,7 +138,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -147,6 +148,7 @@
   </node>
   <node concept="1lH9Xt" id="6T2biBFYdHR">
     <property role="TrG5h" value="_010_TestAuthor_CheckPropertiesConformance" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="6T2biBFYodS" role="1SL9yI">
       <property role="TrG5h" value="testSimpleAuthor_PASS" />
       <node concept="3cqZAl" id="6T2biBFYodT" role="3clF45" />
@@ -361,6 +363,7 @@
   </node>
   <node concept="1lH9Xt" id="6X427Yb$avG">
     <property role="TrG5h" value="_020_TestAuthorList_CheckContainmentLinksConformance" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="6X427Yb$avH" role="1SL9yI">
       <property role="TrG5h" value="testLibraryWithNoEntity_PASS" />
       <node concept="3cqZAl" id="6X427Yb$avI" role="3clF45" />
@@ -677,6 +680,7 @@
   </node>
   <node concept="1lH9Xt" id="6X427YbAVbS">
     <property role="TrG5h" value="_030_TestBook_CheckReferenceLinksConformance" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="6X427YbAVbT" role="1SL9yI">
       <property role="TrG5h" value="testMainAuthorMandatory_PASS" />
       <node concept="3cqZAl" id="6X427YbAVbU" role="3clF45" />

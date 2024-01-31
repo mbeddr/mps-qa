@@ -59,7 +59,7 @@
       <concept id="6722866822386093835" name="org.mpsqa.lancov.structure.LancovProjectScope" flags="ng" index="DQmja" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -99,7 +99,7 @@
       </node>
       <node concept="EhSHI" id="1yYJBoN0dEl" role="Ehb3Z">
         <node concept="EhSHF" id="6T2biBFY7fh" role="EhSHH">
-          <ref role="EhSHC" to="b0y:1yYJBoMXyaN" resolve="root" />
+          <ref role="EhSHC" to="b0y:1yYJBoMXyaN" resolve="concept" />
         </node>
       </node>
     </node>

@@ -68,7 +68,7 @@
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
-      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ng" index="366HgL">
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ngI" index="366HgL">
         <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
@@ -111,7 +111,7 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -128,7 +128,7 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
@@ -157,7 +157,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -378,7 +378,7 @@
                         <property role="TrG5h" value="myDependency" />
                       </node>
                       <node concept="37vLTw" id="1Ke2sdki$_D" role="2GsD0m">
-                        <ref role="3cqZAo" node="1Ke2sdki$__" resolve="set" />
+                        <ref role="3cqZAo" node="1Ke2sdki$__" resolve="myDependencies" />
                       </node>
                       <node concept="3clFbS" id="1Ke2sdkixji" role="2LFqv$">
                         <node concept="2Gpval" id="1Ke2sdkixUr" role="3cqZAp">
@@ -387,7 +387,7 @@
                           </node>
                           <node concept="3EllGN" id="1Ke2sdkiyog" role="2GsD0m">
                             <node concept="2GrUjf" id="1Ke2sdkiyt4" role="3ElVtu">
-                              <ref role="2Gs0qQ" node="1Ke2sdkixje" resolve="dep" />
+                              <ref role="2Gs0qQ" node="1Ke2sdkixje" resolve="myDependency" />
                             </node>
                             <node concept="37vLTw" id="1Ke2sdkiyk0" role="3ElQJh">
                               <ref role="3cqZAo" node="1Ke2sdkigJb" resolve="plugin2Dependencies" />
@@ -538,7 +538,7 @@
             <property role="TrG5h" value="plugin" />
           </node>
           <node concept="37vLTw" id="2xFKNLWBFAo" role="2GsD0m">
-            <ref role="3cqZAo" node="2xFKNLWBFBU" resolve="modules" />
+            <ref role="3cqZAo" node="2xFKNLWBFBU" resolve="plugins" />
           </node>
           <node concept="3clFbS" id="2xFKNLWBFAp" role="2LFqv$">
             <node concept="3clFbJ" id="1Ke2sdkjmxr" role="3cqZAp">
@@ -583,7 +583,7 @@
                         <ref role="2Gs0qQ" node="2xFKNLWBFAn" resolve="plugin" />
                       </node>
                       <node concept="37vLTw" id="1Ke2sdkj$Sy" role="3ElQJh">
-                        <ref role="3cqZAo" node="1Ke2sdkjeiX" resolve="currentDirectDependencies" />
+                        <ref role="3cqZAo" node="1Ke2sdkjeiX" resolve="directDependencies" />
                       </node>
                     </node>
                   </node>
@@ -596,7 +596,7 @@
                       <ref role="3cqZAo" node="1Ke2sdkjwXS" resolve="myDependencies" />
                     </node>
                     <node concept="37vLTw" id="1Ke2sdkkrIz" role="37wK5m">
-                      <ref role="3cqZAo" node="1Ke2sdkjeiX" resolve="currentDirectDependencies" />
+                      <ref role="3cqZAo" node="1Ke2sdkjeiX" resolve="directDependencies" />
                     </node>
                   </node>
                 </node>
@@ -605,7 +605,7 @@
                 <node concept="2OqwBi" id="1Ke2sdkjvUd" role="3fr31v">
                   <node concept="2OqwBi" id="1Ke2sdkjvUe" role="2Oq$k0">
                     <node concept="37vLTw" id="1Ke2sdkjvUf" role="2Oq$k0">
-                      <ref role="3cqZAo" node="1Ke2sdkjeiX" resolve="currentDirectDependencies" />
+                      <ref role="3cqZAo" node="1Ke2sdkjeiX" resolve="directDependencies" />
                     </node>
                     <node concept="3lbrtF" id="1Ke2sdkjvUg" role="2OqNvi" />
                   </node>

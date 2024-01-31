@@ -58,7 +58,7 @@
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
-      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
+      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ngI" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
       <concept id="1095950406618" name="jetbrains.mps.baseLanguage.structure.DivExpression" flags="nn" index="FJ1c_" />
@@ -160,7 +160,7 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -183,7 +183,7 @@
         <child id="8276990574895933173" name="catchBody" index="1zc67A" />
         <child id="8276990574895933172" name="throwable" index="1zc67B" />
       </concept>
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="nn" index="3J1_TO">
@@ -267,7 +267,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -619,7 +619,7 @@
                                 <property role="3cmrfH" value="0" />
                               </node>
                               <node concept="37vLTw" id="584dPWt2ekb" role="1LFl5Q">
-                                <ref role="3cqZAo" node="1vMaDkEkZnz" />
+                                <ref role="3cqZAo" node="1vMaDkEkZnz" resolve="it" />
                               </node>
                             </node>
                           </node>
@@ -699,7 +699,7 @@
                                   </node>
                                   <node concept="2OqwBi" id="584dPWt6QA0" role="1LFl5Q">
                                     <node concept="37vLTw" id="584dPWt6QA1" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="1vMaDkEkZn_" />
+                                      <ref role="3cqZAo" node="1vMaDkEkZn_" resolve="it" />
                                     </node>
                                     <node concept="3AY5_j" id="584dPWt6QA2" role="2OqNvi" />
                                   </node>
@@ -1142,7 +1142,7 @@
                   <node concept="1Y3b0j" id="16s82eEzxUM" role="YeSDq">
                     <property role="2bfB8j" value="true" />
                     <ref role="1Y3XeK" to="t49a:~SplitSquarified" resolve="SplitSquarified" />
-                    <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+                    <ref role="37wK5l" to="t49a:~SplitSquarified.&lt;init&gt;()" resolve="SplitSquarified" />
                     <node concept="3Tm1VV" id="16s82eEzxUN" role="1B3o_S" />
                     <node concept="3clFb_" id="16s82eEz$jO" role="jymVt">
                       <property role="TrG5h" value="sortVector" />

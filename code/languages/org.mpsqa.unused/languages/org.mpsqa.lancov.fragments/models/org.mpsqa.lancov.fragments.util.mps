@@ -39,7 +39,7 @@
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
-      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
+      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ngI" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
@@ -83,7 +83,7 @@
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
-      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ng" index="366HgL">
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ngI" index="366HgL">
         <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
@@ -142,7 +142,7 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -164,7 +164,7 @@
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1081855346303" name="jetbrains.mps.baseLanguage.structure.BreakStatement" flags="nn" index="3zACq4" />
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1163670490218" name="jetbrains.mps.baseLanguage.structure.SwitchStatement" flags="nn" index="3KaCP$">
@@ -181,6 +181,7 @@
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
@@ -265,7 +266,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -303,7 +304,6 @@
         <child id="1237721435808" name="initValue" index="HW$Y0" />
         <child id="1237721435807" name="elementType" index="HW$YZ" />
       </concept>
-      <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1160666733551" name="jetbrains.mps.baseLanguage.collections.structure.AddAllElementsOperation" flags="nn" index="X8dFx" />
@@ -1222,7 +1222,7 @@
                   <node concept="3cpWsn" id="6X427YbAm_p" role="3cpWs9">
                     <property role="TrG5h" value="res" />
                     <node concept="3uibUv" id="6X427YbAmss" role="1tU5fm">
-                      <ref role="3uigEE" node="6T2biBFXn$r" resolve="Result" />
+                      <ref role="3uigEE" node="6T2biBFXn$r" resolve="ConformanceChecker.Result" />
                     </node>
                     <node concept="10Nm6u" id="7AhcwybPiVa" role="33vP2m" />
                   </node>
@@ -1510,7 +1510,7 @@
                 <property role="TrG5h" value="conformanceResults" />
                 <node concept="_YKpA" id="6X427YbEVuw" role="1tU5fm">
                   <node concept="3uibUv" id="6X427YbEVuz" role="_ZDj9">
-                    <ref role="3uigEE" node="6T2biBFXn$r" resolve="Result" />
+                    <ref role="3uigEE" node="6T2biBFXn$r" resolve="ConformanceChecker.Result" />
                   </node>
                 </node>
                 <node concept="2YIFZM" id="6X427YbEVwu" role="33vP2m">
@@ -1644,13 +1644,13 @@
             <property role="TrG5h" value="res" />
             <node concept="_YKpA" id="6X427YbEHzR" role="1tU5fm">
               <node concept="3uibUv" id="6X427YbEH$N" role="_ZDj9">
-                <ref role="3uigEE" node="6T2biBFXn$r" resolve="Result" />
+                <ref role="3uigEE" node="6T2biBFXn$r" resolve="ConformanceChecker.Result" />
               </node>
             </node>
             <node concept="2ShNRf" id="6X427YbEHCi" role="33vP2m">
               <node concept="Tc6Ow" id="6X427YbEHU7" role="2ShVmc">
                 <node concept="3uibUv" id="6X427YbELWI" role="HW$YZ">
-                  <ref role="3uigEE" node="6T2biBFXn$r" resolve="Result" />
+                  <ref role="3uigEE" node="6T2biBFXn$r" resolve="ConformanceChecker.Result" />
                 </node>
               </node>
             </node>
@@ -1702,7 +1702,7 @@
                   <node concept="3cpWsn" id="6X427YbEOHI" role="3cpWs9">
                     <property role="TrG5h" value="checkConformance" />
                     <node concept="3uibUv" id="6X427YbEOH2" role="1tU5fm">
-                      <ref role="3uigEE" node="6T2biBFXn$r" resolve="Result" />
+                      <ref role="3uigEE" node="6T2biBFXn$r" resolve="ConformanceChecker.Result" />
                     </node>
                     <node concept="2YIFZM" id="6X427YbEOHJ" role="33vP2m">
                       <ref role="37wK5l" node="6T2biBFXnwy" resolve="checkConformance" />
@@ -1741,7 +1741,7 @@
       <node concept="3Tm6S6" id="7Ahcwyb_ipx" role="1B3o_S" />
       <node concept="_YKpA" id="6X427YbEHya" role="3clF45">
         <node concept="3uibUv" id="6X427YbEHyb" role="_ZDj9">
-          <ref role="3uigEE" node="6T2biBFXn$r" resolve="Result" />
+          <ref role="3uigEE" node="6T2biBFXn$r" resolve="ConformanceChecker.Result" />
         </node>
       </node>
       <node concept="37vLTG" id="6X427YbEGXr" role="3clF46">
@@ -1846,7 +1846,7 @@
           <node concept="2OqwBi" id="7AhcwybDEoS" role="3clFbG">
             <node concept="10M0yZ" id="7AhcwybDDU0" role="2Oq$k0">
               <ref role="3cqZAo" node="7AhcwybAxWo" resolve="production2Cardinality" />
-              <ref role="1PxDUh" node="7Ahcwyb_ESw" resolve="ConverageChecker" />
+              <ref role="1PxDUh" node="7Ahcwyb_ESw" resolve="CoverageChecker" />
             </node>
             <node concept="1yHZxX" id="7AhcwybDFDt" role="2OqNvi" />
           </node>
@@ -2085,7 +2085,7 @@
                   <node concept="3clFbF" id="7AhcwybGQJD" role="3cqZAp">
                     <node concept="2OqwBi" id="7AhcwybGQJE" role="3clFbG">
                       <node concept="37vLTw" id="7AhcwybGQJF" role="2Oq$k0">
-                        <ref role="3cqZAo" node="7AhcwybGQJJ" resolve="it" />
+                        <ref role="3cqZAo" node="7MpFXKo5X67" />
                       </node>
                       <node concept="2Rf3mk" id="7AhcwybGQJG" role="2OqNvi">
                         <node concept="1xMEDy" id="7AhcwybGQJH" role="1xVPHs">
@@ -2097,9 +2097,9 @@
                     </node>
                   </node>
                 </node>
-                <node concept="Rh6nW" id="7AhcwybGQJJ" role="1bW2Oz">
+                <node concept="gl6BB" id="7MpFXKo5X67" role="1bW2Oz">
                   <property role="TrG5h" value="it" />
-                  <node concept="2jxLKc" id="7AhcwybGQJK" role="1tU5fm" />
+                  <node concept="2jxLKc" id="7MpFXKo5X68" role="1tU5fm" />
                 </node>
               </node>
             </node>
@@ -2110,7 +2110,7 @@
                 <property role="TrG5h" value="collectedCardinalities" />
                 <node concept="2hMVRd" id="7AhcwybGQJO" role="1tU5fm">
                   <node concept="3uibUv" id="7AhcwybGQJP" role="2hN53Y">
-                    <ref role="3uigEE" node="7AhcwybB$jU" resolve="Cardinality" />
+                    <ref role="3uigEE" node="7AhcwybB$jU" resolve="CoverageChecker.Cardinality" />
                   </node>
                 </node>
                 <node concept="3EllGN" id="7AhcwybGQJQ" role="33vP2m">
@@ -2296,7 +2296,7 @@
                       <property role="TrG5h" value="collectedCardinalitiesCopy" />
                       <node concept="_YKpA" id="7AhcwybGQL2" role="1tU5fm">
                         <node concept="3uibUv" id="7AhcwybGQL3" role="_ZDj9">
-                          <ref role="3uigEE" node="7AhcwybB$jU" resolve="Cardinality" />
+                          <ref role="3uigEE" node="7AhcwybB$jU" resolve="CoverageChecker.Cardinality" />
                         </node>
                       </node>
                       <node concept="2OqwBi" id="7AhcwybGQL4" role="33vP2m">
@@ -2309,13 +2309,13 @@
                               <node concept="3clFbS" id="7AhcwybGQL9" role="1bW5cS">
                                 <node concept="3clFbF" id="7AhcwybGQLa" role="3cqZAp">
                                   <node concept="37vLTw" id="7AhcwybGQLb" role="3clFbG">
-                                    <ref role="3cqZAo" node="7AhcwybGQLc" resolve="it" />
+                                    <ref role="3cqZAo" node="7MpFXKo5X69" />
                                   </node>
                                 </node>
                               </node>
-                              <node concept="Rh6nW" id="7AhcwybGQLc" role="1bW2Oz">
+                              <node concept="gl6BB" id="7MpFXKo5X69" role="1bW2Oz">
                                 <property role="TrG5h" value="it" />
-                                <node concept="2jxLKc" id="7AhcwybGQLd" role="1tU5fm" />
+                                <node concept="2jxLKc" id="7MpFXKo5X6a" role="1tU5fm" />
                               </node>
                             </node>
                           </node>
@@ -2431,7 +2431,7 @@
                       <property role="TrG5h" value="collectedCardinalitiesCopy" />
                       <node concept="_YKpA" id="7AhcwybGQLV" role="1tU5fm">
                         <node concept="3uibUv" id="7AhcwybGQLW" role="_ZDj9">
-                          <ref role="3uigEE" node="7AhcwybB$jU" resolve="Cardinality" />
+                          <ref role="3uigEE" node="7AhcwybB$jU" resolve="CoverageChecker.Cardinality" />
                         </node>
                       </node>
                       <node concept="2OqwBi" id="7AhcwybGQLX" role="33vP2m">
@@ -2444,13 +2444,13 @@
                               <node concept="3clFbS" id="7AhcwybGQM2" role="1bW5cS">
                                 <node concept="3clFbF" id="7AhcwybGQM3" role="3cqZAp">
                                   <node concept="37vLTw" id="7AhcwybGQM4" role="3clFbG">
-                                    <ref role="3cqZAo" node="7AhcwybGQM5" resolve="it" />
+                                    <ref role="3cqZAo" node="7MpFXKo5X6b" />
                                   </node>
                                 </node>
                               </node>
-                              <node concept="Rh6nW" id="7AhcwybGQM5" role="1bW2Oz">
+                              <node concept="gl6BB" id="7MpFXKo5X6b" role="1bW2Oz">
                                 <property role="TrG5h" value="it" />
-                                <node concept="2jxLKc" id="7AhcwybGQM6" role="1tU5fm" />
+                                <node concept="2jxLKc" id="7MpFXKo5X6c" role="1tU5fm" />
                               </node>
                             </node>
                           </node>
@@ -2558,7 +2558,7 @@
                             <node concept="2OqwBi" id="7AhcwybGQMO" role="3uHU7B">
                               <node concept="2OqwBi" id="7AhcwybGQMP" role="2Oq$k0">
                                 <node concept="37vLTw" id="7AhcwybGQMQ" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="7AhcwybGQMV" resolve="it" />
+                                  <ref role="3cqZAo" node="7MpFXKo5X6d" />
                                 </node>
                                 <node concept="3TrEf2" id="7AhcwybGQMR" role="2OqNvi">
                                   <ref role="3Tt5mk" to="b0y:6T2biBFXq7H" resolve="productionRule" />
@@ -2575,9 +2575,9 @@
                         <property role="TrG5h" value="s" />
                         <node concept="17QB3L" id="7AhcwybGQMU" role="1tU5fm" />
                       </node>
-                      <node concept="Rh6nW" id="7AhcwybGQMV" role="1bW2Oz">
+                      <node concept="gl6BB" id="7MpFXKo5X6d" role="1bW2Oz">
                         <property role="TrG5h" value="it" />
-                        <node concept="2jxLKc" id="7AhcwybGQMW" role="1tU5fm" />
+                        <node concept="2jxLKc" id="7MpFXKo5X6e" role="1tU5fm" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="7AhcwybGQMX" role="1MDeny">
@@ -2761,7 +2761,7 @@
         </node>
         <node concept="2hMVRd" id="7AhcwybBOFx" role="3rvSg0">
           <node concept="3uibUv" id="7AhcwybBOUc" role="2hN53Y">
-            <ref role="3uigEE" node="7AhcwybB$jU" resolve="Cardinality" />
+            <ref role="3uigEE" node="7AhcwybB$jU" resolve="CoverageChecker.Cardinality" />
           </node>
         </node>
       </node>
@@ -2772,7 +2772,7 @@
           </node>
           <node concept="2hMVRd" id="7AhcwybBPaJ" role="3rHtpV">
             <node concept="3uibUv" id="7AhcwybBPpM" role="2hN53Y">
-              <ref role="3uigEE" node="7AhcwybB$jU" resolve="Cardinality" />
+              <ref role="3uigEE" node="7AhcwybB$jU" resolve="CoverageChecker.Cardinality" />
             </node>
           </node>
         </node>
@@ -3093,12 +3093,12 @@
             <property role="TrG5h" value="myCardinalities" />
             <node concept="2hMVRd" id="7AhcwybCpWR" role="1tU5fm">
               <node concept="3uibUv" id="7AhcwybCpWU" role="2hN53Y">
-                <ref role="3uigEE" node="7AhcwybB$jU" resolve="Cardinality" />
+                <ref role="3uigEE" node="7AhcwybB$jU" resolve="CoverageChecker.Cardinality" />
               </node>
             </node>
             <node concept="3EllGN" id="7AhcwybCq8M" role="33vP2m">
               <node concept="37vLTw" id="7AhcwybCq8N" role="3ElVtu">
-                <ref role="3cqZAo" node="7AhcwybCp8N" resolve="rule" />
+                <ref role="3cqZAo" node="7AhcwybCp8N" resolve="link2Production" />
               </node>
               <node concept="37vLTw" id="7AhcwybCq8O" role="3ElQJh">
                 <ref role="3cqZAo" node="7AhcwybAxWo" resolve="production2Cardinality" />
@@ -3113,7 +3113,7 @@
                 <node concept="2ShNRf" id="7AhcwybCuMU" role="37vLTx">
                   <node concept="2i4dXS" id="7AhcwybCvEF" role="2ShVmc">
                     <node concept="3uibUv" id="7AhcwybCvT3" role="HW$YZ">
-                      <ref role="3uigEE" node="7AhcwybB$jU" resolve="Cardinality" />
+                      <ref role="3uigEE" node="7AhcwybB$jU" resolve="CoverageChecker.Cardinality" />
                     </node>
                   </node>
                 </node>
@@ -3200,7 +3200,7 @@
                   <node concept="2ShNRf" id="7AhcwybCByO" role="25WWJ7">
                     <node concept="1pGfFk" id="7AhcwybCCJM" role="2ShVmc">
                       <property role="373rjd" value="true" />
-                      <ref role="37wK5l" node="7AhcwybBBfo" resolve="Cardinality" />
+                      <ref role="37wK5l" node="7AhcwybBBfo" resolve="CoverageChecker.Cardinality" />
                       <node concept="37vLTw" id="7AhcwybCCU6" role="37wK5m">
                         <ref role="3cqZAo" node="7AhcwybCphM" resolve="card" />
                       </node>
@@ -3230,12 +3230,12 @@
     <node concept="Wx3nA" id="7AhcwybBQCA" role="jymVt">
       <property role="TrG5h" value="CARDINALITY_ZERO" />
       <node concept="3uibUv" id="7AhcwybBRAL" role="1tU5fm">
-        <ref role="3uigEE" node="7AhcwybB$jU" resolve="Cardinality" />
+        <ref role="3uigEE" node="7AhcwybB$jU" resolve="CoverageChecker.Cardinality" />
       </node>
       <node concept="2ShNRf" id="7AhcwybBRQg" role="33vP2m">
         <node concept="1pGfFk" id="7AhcwybBSGn" role="2ShVmc">
           <property role="373rjd" value="true" />
-          <ref role="37wK5l" node="7AhcwybBBfo" resolve="Cardinality" />
+          <ref role="37wK5l" node="7AhcwybBBfo" resolve="CoverageChecker.Cardinality" />
           <node concept="3cmrfG" id="7AhcwybBSKY" role="37wK5m">
             <property role="3cmrfH" value="0" />
           </node>
@@ -3245,12 +3245,12 @@
     <node concept="Wx3nA" id="7AhcwybBSQk" role="jymVt">
       <property role="TrG5h" value="CARDINALITY_ONE" />
       <node concept="3uibUv" id="7AhcwybBSQm" role="1tU5fm">
-        <ref role="3uigEE" node="7AhcwybB$jU" resolve="Cardinality" />
+        <ref role="3uigEE" node="7AhcwybB$jU" resolve="CoverageChecker.Cardinality" />
       </node>
       <node concept="2ShNRf" id="7AhcwybBSQn" role="33vP2m">
         <node concept="1pGfFk" id="7AhcwybBSQo" role="2ShVmc">
           <property role="373rjd" value="true" />
-          <ref role="37wK5l" node="7AhcwybBBfo" resolve="Cardinality" />
+          <ref role="37wK5l" node="7AhcwybBBfo" resolve="CoverageChecker.Cardinality" />
           <node concept="3cmrfG" id="7AhcwybBTP7" role="37wK5m">
             <property role="3cmrfH" value="1" />
           </node>
@@ -3313,7 +3313,7 @@
                   <node concept="1eOMI4" id="7AhcwybBH1S" role="2Oq$k0">
                     <node concept="10QFUN" id="7AhcwybBH1P" role="1eOMHV">
                       <node concept="3uibUv" id="7AhcwybBHbe" role="10QFUM">
-                        <ref role="3uigEE" node="7AhcwybB$jU" resolve="Cardinality" />
+                        <ref role="3uigEE" node="7AhcwybB$jU" resolve="CoverageChecker.Cardinality" />
                       </node>
                       <node concept="37vLTw" id="7AhcwybBHhg" role="10QFUP">
                         <ref role="3cqZAo" node="7AhcwybBCL0" resolve="obj" />
@@ -3327,7 +3327,7 @@
               </node>
               <node concept="2ZW3vV" id="7AhcwybBGoV" role="3uHU7B">
                 <node concept="3uibUv" id="7AhcwybBG$3" role="2ZW6by">
-                  <ref role="3uigEE" node="7AhcwybB$jU" resolve="Cardinality" />
+                  <ref role="3uigEE" node="7AhcwybB$jU" resolve="CoverageChecker.Cardinality" />
                 </node>
                 <node concept="37vLTw" id="7AhcwybBGgZ" role="2ZW6bz">
                   <ref role="3cqZAo" node="7AhcwybBCL0" resolve="obj" />
@@ -3337,7 +3337,7 @@
           </node>
         </node>
         <node concept="2AHcQZ" id="7AhcwybBCL3" role="2AJF6D">
-          <ref role="2AI5Lk" to="wyt6:~Override" />
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
         </node>
       </node>
       <node concept="2tJIrI" id="7AhcwybBKxo" role="jymVt" />
@@ -3353,7 +3353,7 @@
           </node>
         </node>
         <node concept="2AHcQZ" id="7AhcwybBKBD" role="2AJF6D">
-          <ref role="2AI5Lk" to="wyt6:~Override" />
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
         </node>
       </node>
       <node concept="2tJIrI" id="7AhcwybBBbN" role="jymVt" />

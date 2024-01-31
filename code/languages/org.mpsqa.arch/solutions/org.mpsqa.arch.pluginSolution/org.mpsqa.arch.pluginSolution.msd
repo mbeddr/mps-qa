@@ -1,26 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="org.mpsqa.arch.pluginSolution" uuid="96212ac2-423f-4cfb-b211-b58d0546b6bf" moduleVersion="0">
   <models>
-    <modelRoot contentPath="${module}" type="default">
+    <modelRoot type="default" contentPath="${module}">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot contentPath="${module}/lib/plantuml-1.2022.6.jar!/" type="java_classes">
-      <sourceRoot location="." />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
+    <modelRoot type="java_classes" contentPath="${module}/lib">
       <sourceRoot location="plantuml-asl-1.2023.13.jar" />
     </modelRoot>
   </models>
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="yes">
       <classes generated="true" path="${module}/classes_gen" />
-      <library location="${module}/lib/plantuml-1.2022.6.jar" />
+      <library location="${module}/lib/plantuml-asl-1.2023.13.jar" />
+      <library location="${module}/lib/plantuml-asl-1.2023.13.jar" />
     </facet>
   </facets>
   <stubModelEntries>
     <stubModelEntry path="${module}/lib/plantuml-asl-1.2023.13.jar" />
   </stubModelEntries>
-  <sourcePath />
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">6c101563-ba1f-458d-b298-a75634941e0c(org.mpsqa.arch)</dependency>

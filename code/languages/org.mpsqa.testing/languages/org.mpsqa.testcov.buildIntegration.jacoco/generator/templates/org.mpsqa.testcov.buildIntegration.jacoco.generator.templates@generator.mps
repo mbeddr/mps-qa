@@ -596,7 +596,7 @@
                             </node>
                             <node concept="2OqwBi" id="32pgWhTkdxU" role="3uHU7B">
                               <node concept="37vLTw" id="32pgWhTkdhT" role="2Oq$k0">
-                                <ref role="3cqZAo" node="1vMaDkEkZn5" />
+                                <ref role="3cqZAo" node="1vMaDkEkZn5" resolve="it" />
                               </node>
                               <node concept="3TrcHB" id="32pgWhTkdX2" role="2OqNvi">
                                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
@@ -3504,7 +3504,7 @@
                                         <ref role="37wK5l" to="7f1d:3X9rC2XzJij" resolve="getModules" />
                                       </node>
                                       <node concept="37vLTw" id="4F_fjXJZvXD" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="1vMaDkEkZnn" />
+                                        <ref role="3cqZAo" node="1vMaDkEkZnn" resolve="it" />
                                       </node>
                                     </node>
                                   </node>
@@ -4533,7 +4533,7 @@
                                                 <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                                 <node concept="2OqwBi" id="3NbSlfvYgYz" role="37wK5m">
                                                   <node concept="37vLTw" id="3NbSlfvYgY$" role="2Oq$k0">
-                                                    <ref role="3cqZAo" node="1vMaDkEkZnp" />
+                                                    <ref role="3cqZAo" node="1vMaDkEkZnp" resolve="it" />
                                                   </node>
                                                   <node concept="3TrcHB" id="3NbSlfvYgY_" role="2OqNvi">
                                                     <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
