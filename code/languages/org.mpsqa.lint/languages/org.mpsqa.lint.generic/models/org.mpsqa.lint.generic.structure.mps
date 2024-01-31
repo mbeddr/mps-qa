@@ -310,7 +310,7 @@
       <property role="IQ2ns" value="3423774024185984305" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="fullyQualifiedReference" />
-      <ref role="20lvS9" node="2Y3G5n6NAqC" />
+      <ref role="20lvS9" node="2Y3G5n6NAqC" resolve="NamedFullyQualifiedNodeReference" />
     </node>
   </node>
   <node concept="1TIwiD" id="2Y3G5n6NAqC">
