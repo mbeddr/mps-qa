@@ -924,7 +924,7 @@
                   <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
                 </node>
                 <node concept="2YIFZM" id="6gY6GEDvRAw" role="33vP2m">
-                  <ref role="37wK5l" node="1fyC0RHInUp" resolve="getMPSProjectFrom" />
+                  <ref role="37wK5l" node="1fyC0RHInUp" resolve="getMPSProjectToCheck" />
                   <ref role="1Pybhc" node="3h5$iQ9r_5B" resolve="ProjectFindingUtils" />
                 </node>
               </node>
@@ -1001,7 +1001,7 @@
                   <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
                 </node>
                 <node concept="2YIFZM" id="6gY6GEDvTIX" role="33vP2m">
-                  <ref role="37wK5l" node="1fyC0RHInUp" resolve="getMPSProjectFrom" />
+                  <ref role="37wK5l" node="1fyC0RHInUp" resolve="getMPSProjectToCheck" />
                   <ref role="1Pybhc" node="3h5$iQ9r_5B" resolve="ProjectFindingUtils" />
                 </node>
               </node>
