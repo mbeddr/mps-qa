@@ -80,15 +80,15 @@
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="checkable script" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="19GnlsUgLJm" role="1TKVEi">
-      <property role="IQ2ns" value="1327538619388468182" />
-      <property role="20kJfa" value="quickfix" />
-      <ref role="20lvS9" to="tpd4:hGQ5zx_" resolve="TypesystemQuickFix" />
-    </node>
     <node concept="1TJgyi" id="5N7gA6ZntKi" role="1TKVEl">
       <property role="IQ2nx" value="6685385159444651026" />
       <property role="TrG5h" value="skipEvaluation" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyj" id="19GnlsUgLJm" role="1TKVEi">
+      <property role="IQ2ns" value="1327538619388468182" />
+      <property role="20kJfa" value="quickfix" />
+      <ref role="20lvS9" to="tpd4:hGQ5zx_" resolve="TypesystemQuickFix" />
     </node>
     <node concept="1TJgyj" id="2dSiT1hKFVo" role="1TKVEi">
       <property role="IQ2ns" value="2555875871751847640" />

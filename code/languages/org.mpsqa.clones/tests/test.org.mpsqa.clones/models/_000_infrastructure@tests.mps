@@ -5,7 +5,7 @@
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
   </languages>
@@ -101,7 +101,7 @@
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -113,7 +113,7 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
@@ -145,8 +145,12 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7">
+        <property id="8575328350543493365" name="message" index="huDt6" />
+        <property id="2423417345669755629" name="filter" index="1eyWvh" />
       </concept>
     </language>
   </registry>
@@ -328,6 +332,10 @@
         <node concept="2tJIrI" id="4elAKXiq8DM" role="jymVt" />
         <node concept="312cEg" id="4elAKXiq8Eo" role="jymVt">
           <property role="TrG5h" value="a1" />
+          <node concept="15s5l7" id="7j9Wyvhu0wU" role="lGtFl">
+            <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Field is never used&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/7581428506283755675]&quot;;" />
+            <property role="huDt6" value="Warning: Field is never used" />
+          </node>
           <node concept="17QB3L" id="4elAKXiq8Ea" role="1tU5fm" />
           <node concept="Xl_RD" id="4elAKXiq8EO" role="33vP2m">
             <property role="Xl_RC" value="something" />
@@ -338,6 +346,10 @@
         </node>
         <node concept="312cEg" id="4elAKXiq8FC" role="jymVt">
           <property role="TrG5h" value="a2" />
+          <node concept="15s5l7" id="7j9Wyvhu0z0" role="lGtFl">
+            <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Field is never used&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/7581428506283755675]&quot;;" />
+            <property role="huDt6" value="Warning: Field is never used" />
+          </node>
           <node concept="17QB3L" id="4elAKXiq8FD" role="1tU5fm" />
           <node concept="Xl_RD" id="4elAKXiq8FE" role="33vP2m">
             <property role="Xl_RC" value="something1" />
@@ -348,6 +360,10 @@
         </node>
         <node concept="312cEg" id="4elAKXiqb1T" role="jymVt">
           <property role="TrG5h" value="a3" />
+          <node concept="15s5l7" id="7j9Wyvhu0_6" role="lGtFl">
+            <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Field is never used&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/7581428506283755675]&quot;;" />
+            <property role="huDt6" value="Warning: Field is never used" />
+          </node>
           <node concept="17QB3L" id="4elAKXiqb1U" role="1tU5fm" />
           <node concept="3cpWs3" id="4elAKXiqbh0" role="33vP2m">
             <node concept="3cmrfG" id="4elAKXiqbhf" role="3uHU7w">
@@ -364,6 +380,10 @@
         <node concept="2tJIrI" id="4elAKXiq8Fq" role="jymVt" />
         <node concept="3clFb_" id="4elAKXiqfkC" role="jymVt">
           <property role="TrG5h" value="meth" />
+          <node concept="15s5l7" id="7j9Wyvhu0Bm" role="lGtFl">
+            <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Package protected method meth():void is never used&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/7938578788781949884]&quot;;" />
+            <property role="huDt6" value="Warning: Package protected method meth():void is never used" />
+          </node>
           <node concept="3clFbS" id="4elAKXiqfkF" role="3clF47">
             <node concept="9aQIb" id="4elAKXiqflp" role="3cqZAp">
               <node concept="3clFbS" id="4elAKXiqflq" role="9aQI4">

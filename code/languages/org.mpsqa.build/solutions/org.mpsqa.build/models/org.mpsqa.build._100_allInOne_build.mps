@@ -123,6 +123,83 @@
     <property role="TrG5h" value="org.mpsqa.allInOne" />
     <property role="2DA0ip" value="../../../../../build/scripts" />
     <property role="turDy" value="build-allInOne-package.xml" />
+    <node concept="2sgV4H" id="3PN66LDqBUy" role="1l3spa">
+      <ref role="1l3spb" to="2tou:7C9PHv6FBIG" resolve="org.mpsqa.base" />
+    </node>
+    <node concept="2sgV4H" id="3PN66LDqBWI" role="1l3spa">
+      <ref role="1l3spb" to="hx16:2JVMSZMFXgi" resolve="org.mpsqa.testing" />
+    </node>
+    <node concept="2sgV4H" id="3PN66LDqBWU" role="1l3spa">
+      <ref role="1l3spb" to="5g2w:2JVMSZMFXgi" resolve="org.mpsqa.clones" />
+    </node>
+    <node concept="2sgV4H" id="3PN66LDrQD5" role="1l3spa">
+      <ref role="1l3spb" to="c8rw:3PN66LDqBYN" resolve="org.mpsqa.mutant" />
+    </node>
+    <node concept="2sgV4H" id="1YSnQiVh0BS" role="1l3spa">
+      <ref role="1l3spb" to="m9y5:1YSnQiVh0x1" resolve="org.mpsqa.unused" />
+    </node>
+    <node concept="2sgV4H" id="50Wzfz4shAi" role="1l3spa">
+      <ref role="1l3spb" to="kzun:50Wzfz4shyZ" resolve="org.mpsqa.arch" />
+    </node>
+    <node concept="2sgV4H" id="3iPLLpkCtam" role="1l3spa">
+      <ref role="1l3spb" to="91f2:3dqUbgQmcyp" resolve="org.mpsqa.deprecated" />
+    </node>
+    <node concept="2sgV4H" id="3ywQ_KXElck" role="1l3spa">
+      <ref role="1l3spb" to="390y:3dqUbgQmcyp" resolve="org.mpsqa.lint" />
+    </node>
+    <node concept="10PD9b" id="3PN66LDqBUz" role="10PD9s" />
+    <node concept="3b7kt6" id="3PN66LDqBU$" role="10PD9s" />
+    <node concept="398rNT" id="3PN66LDqBU_" role="1l3spd">
+      <property role="TrG5h" value="mpsqa.home" />
+      <node concept="55IIr" id="3PN66LDqBUH" role="398pKh">
+        <node concept="2Ry0Ak" id="3PN66LDqBUW" role="iGT6I">
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="3PN66LDqBVC" role="2Ry0An">
+            <property role="2Ry0Am" value=".." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="3PN66LDqBUA" role="1l3spd">
+      <property role="TrG5h" value="mps.home" />
+    </node>
+    <node concept="2sgV4H" id="3PN66LDqBUC" role="1l3spa">
+      <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
+      <node concept="398BVA" id="3PN66LDqBUK" role="2JcizS">
+        <ref role="398BVh" node="3PN66LDqBUA" resolve="mps.home" />
+      </node>
+    </node>
+    <node concept="1l3spV" id="3PN66LDqBUD" role="1l3spN">
+      <node concept="m$_wl" id="fm3v0X36Nn" role="39821P">
+        <ref role="m_rDy" node="fm3v0X36My" resolve="org.mpsqa.build" />
+        <node concept="pUk6x" id="fm3v0X36Nt" role="pUk7w" />
+      </node>
+      <node concept="3_I8Xc" id="3PN66LDqBYx" role="39821P">
+        <ref role="3_I8Xa" to="2tou:7C9PHv6FBJ6" resolve="org.mpsqa.base" />
+      </node>
+      <node concept="3_I8Xc" id="3PN66LDqBYA" role="39821P">
+        <ref role="3_I8Xa" to="hx16:2JVMSZMFXhf" resolve="org.mpsqa.testing" />
+      </node>
+      <node concept="3_I8Xc" id="3PN66LDqBYI" role="39821P">
+        <ref role="3_I8Xa" to="5g2w:2JVMSZMFXhf" resolve="org.mpsqa.clones" />
+      </node>
+      <node concept="3_I8Xc" id="3PN66LDrQC$" role="39821P">
+        <ref role="3_I8Xa" to="c8rw:3PN66LDqBZi" resolve="org.mpsqa.mutant" />
+      </node>
+      <node concept="3_I8Xc" id="1YSnQiVh0C1" role="39821P">
+        <ref role="3_I8Xa" to="m9y5:1YSnQiVh0xw" resolve="org.mpsqa.unused" />
+      </node>
+      <node concept="3_I8Xc" id="50Wzfz4shA1" role="39821P">
+        <ref role="3_I8Xa" to="kzun:50Wzfz4shzg" resolve="org.mpsqa.arch" />
+      </node>
+      <node concept="3_I8Xc" id="3iPLLpkCtaF" role="39821P">
+        <ref role="3_I8Xa" to="91f2:3dqUbgQmcyE" resolve="org.mpsqa.deprecated" />
+      </node>
+      <node concept="3_I8Xc" id="3ywQ_KXElbX" role="39821P">
+        <ref role="3_I8Xa" to="390y:3dqUbgQmcyE" resolve="org.mpsqa.lint" />
+      </node>
+    </node>
+    <node concept="55IIr" id="3PN66LDqBUG" role="auvoZ" />
     <node concept="m$_wf" id="fm3v0X36My" role="3989C9">
       <property role="m$_wk" value="org.mpsqa.build" />
       <node concept="3_J27D" id="fm3v0X36M$" role="m$_yQ">
@@ -209,97 +286,6 @@
         </node>
       </node>
     </node>
-    <node concept="2sgV4H" id="3PN66LDqBUy" role="1l3spa">
-      <ref role="1l3spb" to="2tou:7C9PHv6FBIG" resolve="org.mpsqa.base" />
-    </node>
-    <node concept="2sgV4H" id="3PN66LDqBWI" role="1l3spa">
-      <ref role="1l3spb" to="hx16:2JVMSZMFXgi" resolve="org.mpsqa.testing" />
-    </node>
-    <node concept="2sgV4H" id="3PN66LDqBWU" role="1l3spa">
-      <ref role="1l3spb" to="5g2w:2JVMSZMFXgi" resolve="org.mpsqa.clones" />
-    </node>
-    <node concept="2sgV4H" id="3PN66LDrQD5" role="1l3spa">
-      <ref role="1l3spb" to="c8rw:3PN66LDqBYN" resolve="org.mpsqa.mutant" />
-    </node>
-    <node concept="2sgV4H" id="1YSnQiVh0BS" role="1l3spa">
-      <ref role="1l3spb" to="m9y5:1YSnQiVh0x1" resolve="org.mpsqa.unused" />
-    </node>
-    <node concept="2sgV4H" id="50Wzfz4shAi" role="1l3spa">
-      <ref role="1l3spb" to="kzun:50Wzfz4shyZ" resolve="org.mpsqa.arch" />
-    </node>
-    <node concept="2sgV4H" id="3iPLLpkCtam" role="1l3spa">
-      <ref role="1l3spb" to="91f2:3dqUbgQmcyp" resolve="org.mpsqa.deprecated" />
-    </node>
-    <node concept="2sgV4H" id="3ywQ_KXElck" role="1l3spa">
-      <ref role="1l3spb" to="390y:3dqUbgQmcyp" resolve="org.mpsqa.lint" />
-    </node>
-    <node concept="10PD9b" id="3PN66LDqBUz" role="10PD9s" />
-    <node concept="3b7kt6" id="3PN66LDqBU$" role="10PD9s" />
-    <node concept="398rNT" id="3PN66LDqBU_" role="1l3spd">
-      <property role="TrG5h" value="mpsqa.home" />
-      <node concept="55IIr" id="3PN66LDqBUH" role="398pKh">
-        <node concept="2Ry0Ak" id="3PN66LDqBUW" role="iGT6I">
-          <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="3PN66LDqBVC" role="2Ry0An">
-            <property role="2Ry0Am" value=".." />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="398rNT" id="3PN66LDqBUA" role="1l3spd">
-      <property role="TrG5h" value="mps.home" />
-      <node concept="55IIr" id="3PN66LDqBUI" role="398pKh">
-        <node concept="2Ry0Ak" id="3PN66LDqBUX" role="iGT6I">
-          <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="3PN66LDqBVD" role="2Ry0An">
-            <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="3PN66LDqBWg" role="2Ry0An">
-              <property role="2Ry0Am" value=".." />
-              <node concept="2Ry0Ak" id="3PN66LDqBWo" role="2Ry0An">
-                <property role="2Ry0Am" value="MPS_2019_3_4" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2sgV4H" id="3PN66LDqBUC" role="1l3spa">
-      <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
-      <node concept="398BVA" id="3PN66LDqBUK" role="2JcizS">
-        <ref role="398BVh" node="3PN66LDqBUA" resolve="mps.home" />
-      </node>
-    </node>
-    <node concept="1l3spV" id="3PN66LDqBUD" role="1l3spN">
-      <node concept="m$_wl" id="fm3v0X36Nn" role="39821P">
-        <ref role="m_rDy" node="fm3v0X36My" resolve="org.mpsqa.build" />
-        <node concept="pUk6x" id="fm3v0X36Nt" role="pUk7w" />
-      </node>
-      <node concept="3_I8Xc" id="3PN66LDqBYx" role="39821P">
-        <ref role="3_I8Xa" to="2tou:7C9PHv6FBJ6" resolve="org.mpsqa.base" />
-      </node>
-      <node concept="3_I8Xc" id="3PN66LDqBYA" role="39821P">
-        <ref role="3_I8Xa" to="hx16:2JVMSZMFXhf" resolve="org.mpsqa.testing" />
-      </node>
-      <node concept="3_I8Xc" id="3PN66LDqBYI" role="39821P">
-        <ref role="3_I8Xa" to="5g2w:2JVMSZMFXhf" resolve="org.mpsqa.clones" />
-      </node>
-      <node concept="3_I8Xc" id="3PN66LDrQC$" role="39821P">
-        <ref role="3_I8Xa" to="c8rw:3PN66LDqBZi" resolve="org.mpsqa.mutant" />
-      </node>
-      <node concept="3_I8Xc" id="1YSnQiVh0C1" role="39821P">
-        <ref role="3_I8Xa" to="m9y5:1YSnQiVh0xw" resolve="org.mpsqa.unused" />
-      </node>
-      <node concept="3_I8Xc" id="50Wzfz4shA1" role="39821P">
-        <ref role="3_I8Xa" to="kzun:50Wzfz4shzg" resolve="org.mpsqa.arch" />
-      </node>
-      <node concept="3_I8Xc" id="3iPLLpkCtaF" role="39821P">
-        <ref role="3_I8Xa" to="91f2:3dqUbgQmcyE" resolve="org.mpsqa.deprecated" />
-      </node>
-      <node concept="3_I8Xc" id="3ywQ_KXElbX" role="39821P">
-        <ref role="3_I8Xa" to="390y:3dqUbgQmcyE" resolve="org.mpsqa.lint" />
-      </node>
-    </node>
-    <node concept="55IIr" id="3PN66LDqBUG" role="auvoZ" />
   </node>
 </model>
 

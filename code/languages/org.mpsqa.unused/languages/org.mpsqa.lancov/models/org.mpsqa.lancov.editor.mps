@@ -486,6 +486,7 @@
           </node>
         </node>
       </node>
+      <node concept="2iRkQZ" id="5PcqW5OBE1B" role="2iSdaV" />
       <node concept="3F0ifn" id="1xhLENuVESy" role="3EZMnx">
         <property role="3F0ifm" value="SUCCESS - no violations have been found" />
         <node concept="pkWqt" id="1xhLENuVEZA" role="pqm2j">
@@ -507,7 +508,6 @@
           <property role="Vb096" value="fLwANPr/green" />
         </node>
       </node>
-      <node concept="2iRkQZ" id="5PcqW5OBE1B" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="1YSnQiVhJv1">
@@ -760,13 +760,6 @@
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
-  <node concept="24kQdi" id="7AhcwybyuCP">
-    <property role="3GE5qa" value="search_scope" />
-    <ref role="1XX52x" to="7ouc:5PcqW5O_3wA" resolve="LancovScopeBase" />
-    <node concept="PMmxH" id="7AhcwybyuDZ" role="2wV5jI">
-      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-    </node>
-  </node>
   <node concept="24kQdi" id="7AhcwybyuNz">
     <property role="3GE5qa" value="search_scope" />
     <ref role="1XX52x" to="7ouc:7AhcwybyuGh" resolve="LancovSolutionScope" />
@@ -889,6 +882,13 @@
         </node>
       </node>
       <node concept="2iRfu4" id="7AhcwybyuP8" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7AhcwybyuCP">
+    <property role="3GE5qa" value="search_scope" />
+    <ref role="1XX52x" to="7ouc:5PcqW5O_3wA" resolve="LancovScopeBase" />
+    <node concept="PMmxH" id="7AhcwybyuDZ" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
 </model>
