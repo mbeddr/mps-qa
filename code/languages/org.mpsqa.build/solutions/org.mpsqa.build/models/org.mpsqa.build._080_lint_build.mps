@@ -222,16 +222,16 @@
       <node concept="m$_yC" id="7QzWuw5nGg2" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:5HVSRHdVm9a" resolve="jetbrains.mps.build" />
       </node>
+      <node concept="3_J27D" id="3dqUbgQmcyK" role="m_cZH">
+        <node concept="3Mxwew" id="3dqUbgQmcyU" role="3MwsjC">
+          <property role="3MwjfP" value="org.mpsqa.lint" />
+        </node>
+      </node>
       <node concept="m$_yC" id="4Wm$DJ9mpUP" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbLe59" resolve="com.intellij.modules.mps" />
       </node>
       <node concept="m$_yC" id="30a3800NyCh" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:5lGJ4Taqfsl" resolve="jetbrains.mps.ide.modelchecker" />
-      </node>
-      <node concept="3_J27D" id="3dqUbgQmcyK" role="m_cZH">
-        <node concept="3Mxwew" id="3dqUbgQmcyU" role="3MwsjC">
-          <property role="3MwjfP" value="org.mpsqa.lint" />
-        </node>
       </node>
     </node>
     <node concept="2G$12M" id="3dqUbgQmcyz" role="3989C9">
@@ -328,6 +328,11 @@
               <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
             </node>
           </node>
+          <node concept="1SiIV0" id="1UFFkMN1f2M" role="3bR37C">
+            <node concept="3bR9La" id="1q_CqGKAxbk" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
+            </node>
+          </node>
           <node concept="1BupzO" id="3ywQ_KXEkYz" role="3bR31x">
             <property role="3ZfqAx" value="generator/templates" />
             <property role="1Hdu6h" value="true" />
@@ -351,11 +356,6 @@
               <node concept="3qWCbU" id="3ywQ_KXEkY_" role="3LXTna">
                 <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
               </node>
-            </node>
-          </node>
-          <node concept="1SiIV0" id="1UFFkMN1f2M" role="3bR37C">
-            <node concept="3bR9La" id="1UFFkMN1f2N" role="1SiIV1">
-              <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
             </node>
           </node>
         </node>
