@@ -22,6 +22,10 @@
         <reference id="5617550519002745380" name="script" index="1l3spb" />
         <child id="4129895186893471026" name="artifacts" index="2JcizS" />
       </concept>
+      <concept id="927724900262033858" name="jetbrains.mps.build.structure.BuildSource_JavaOptions" flags="ng" index="2_Ic$z">
+        <property id="927724900262033861" name="generateDebugInfo" index="2_Ic$$" />
+        <property id="927724900262033862" name="copyResources" index="2_Ic$B" />
+      </concept>
       <concept id="4380385936562003279" name="jetbrains.mps.build.structure.BuildString" flags="ng" index="NbPM2">
         <child id="4903714810883783243" name="parts" index="3MwsjC" />
       </concept>
@@ -277,6 +281,10 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="2_Ic$z" id="6mB3DwRKeQg" role="3989C9">
+      <property role="2_Ic$$" value="true" />
+      <property role="2_Ic$B" value="true" />
     </node>
     <node concept="m$_wf" id="2JVMSZMFXh0" role="3989C9">
       <property role="m$_wk" value="org.mpsqa.testing" />
@@ -830,6 +838,130 @@
         <node concept="1SiIV0" id="30QItL_9RY6" role="3bR37C">
           <node concept="3bR9La" id="30QItL_9RY7" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtD" id="2WwuhUZ0zvN" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="org.mpsqa.testcov.buildIntegration.jacoco.codeowners" />
+        <property role="3LESm3" value="3be36eef-aa7f-4d50-b822-761869f0be1c" />
+        <node concept="398BVA" id="2WwuhUZ0zzY" role="3LF7KH">
+          <ref role="398BVh" node="2JVMSZMFXgq" resolve="mpsqa.testing.home" />
+          <node concept="2Ry0Ak" id="2WwuhUZ0z_f" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="2WwuhUZ0zAv" role="2Ry0An">
+              <property role="2Ry0Am" value="org.mpsqa.testcov.buildIntegration.jacoco.codeowners" />
+              <node concept="2Ry0Ak" id="2WwuhUZ0zCU" role="2Ry0An">
+                <property role="2Ry0Am" value="org.mpsqa.testcov.buildIntegration.jacoco.codeowners.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2WwuhUZ0zGo" role="3bR37C">
+          <node concept="3bR9La" id="2WwuhUZ0zGp" role="1SiIV1">
+            <ref role="3bR37D" node="5rJPecpKpCx" resolve="org.mpsqa.testcov.buildIntegration.jacoco" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2WwuhUZ0zGq" role="3bR37C">
+          <node concept="3bR9La" id="2WwuhUZ0zGr" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7pdFgzxlDoP" resolve="jetbrains.mps.build.mps" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="2WwuhUZ0zGB" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="2WwuhUZ0zGC" role="1HemKq">
+            <node concept="398BVA" id="2WwuhUZ0zGs" role="3LXTmr">
+              <ref role="398BVh" node="2JVMSZMFXgq" resolve="mpsqa.testing.home" />
+              <node concept="2Ry0Ak" id="2WwuhUZ0zGt" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="2WwuhUZ0zGu" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.testcov.buildIntegration.jacoco.codeowners" />
+                  <node concept="2Ry0Ak" id="2WwuhUZ0zGv" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="2WwuhUZ0zGD" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2WwuhUZ0zGE" role="3bR37C">
+          <node concept="1Busua" id="2WwuhUZ0zGF" role="1SiIV1">
+            <ref role="1Busuk" node="5rJPecpKpCx" resolve="org.mpsqa.testcov.buildIntegration.jacoco" />
+          </node>
+        </node>
+        <node concept="1yeLz9" id="2WwuhUZ0zGG" role="1TViLv">
+          <property role="TrG5h" value="org.mpsqa.testcov.buildIntegration.jacoco.codeowners.generator" />
+          <property role="3LESm3" value="c0525783-d855-4073-a824-553a78a3961e" />
+          <node concept="1SiIV0" id="2WwuhUZ0zGH" role="3bR37C">
+            <node concept="3bR9La" id="2WwuhUZ0zGI" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="2WwuhUZ0zGJ" role="3bR37C">
+            <node concept="3bR9La" id="2WwuhUZ0zGK" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="2WwuhUZ0zGL" role="3bR37C">
+            <node concept="3bR9La" id="2WwuhUZ0zGM" role="1SiIV1">
+              <ref role="3bR37D" node="5rJPecpKpCx" resolve="org.mpsqa.testcov.buildIntegration.jacoco" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="2WwuhUZ0zGN" role="3bR37C">
+            <node concept="3bR9La" id="2WwuhUZ0zGO" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="2WwuhUZ0zGP" role="3bR37C">
+            <node concept="3bR9La" id="2WwuhUZ0zGQ" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:7pdFgzxlDoP" resolve="jetbrains.mps.build.mps" />
+            </node>
+          </node>
+          <node concept="1BupzO" id="2WwuhUZ0zH4" role="3bR31x">
+            <property role="3ZfqAx" value="generator/templates" />
+            <property role="1Hdu6h" value="true" />
+            <property role="1HemKv" value="true" />
+            <node concept="3LXTmp" id="2WwuhUZ0zH5" role="1HemKq">
+              <node concept="398BVA" id="2WwuhUZ0zGR" role="3LXTmr">
+                <ref role="398BVh" node="2JVMSZMFXgq" resolve="mpsqa.testing.home" />
+                <node concept="2Ry0Ak" id="2WwuhUZ0zGS" role="iGT6I">
+                  <property role="2Ry0Am" value="languages" />
+                  <node concept="2Ry0Ak" id="2WwuhUZ0zGT" role="2Ry0An">
+                    <property role="2Ry0Am" value="org.mpsqa.testcov.buildIntegration.jacoco.codeowners" />
+                    <node concept="2Ry0Ak" id="2WwuhUZ0zGU" role="2Ry0An">
+                      <property role="2Ry0Am" value="generator" />
+                      <node concept="2Ry0Ak" id="2WwuhUZ0zGV" role="2Ry0An">
+                        <property role="2Ry0Am" value="templates" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3qWCbU" id="2WwuhUZ0zH6" role="3LXTna">
+                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="2WwuhUZ0zJs" role="3bR31x">
+          <node concept="3LXTmp" id="2WwuhUZ0zJt" role="3rtmxm">
+            <node concept="398BVA" id="2WwuhUZ0zJu" role="3LXTmr">
+              <ref role="398BVh" node="2JVMSZMFXgq" resolve="mpsqa.testing.home" />
+              <node concept="2Ry0Ak" id="2WwuhUZ0zJv" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="2WwuhUZ0zJw" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.testcov.buildIntegration.jacoco.codeowners" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="2WwuhUZ0zJy" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
           </node>
         </node>
       </node>

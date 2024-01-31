@@ -8,6 +8,7 @@
   <imports>
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="dvox" ref="r:9dfd3567-3b1f-4edb-85a0-3981ca2bfd8c(jetbrains.mps.lang.modelapi.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -257,6 +258,20 @@
     <property role="TrG5h" value="UnusedMultipleCardinalityChildren" />
     <property role="34LRSv" value="unused multiple cardinality of children" />
     <ref role="1TJDcQ" node="1YSnQiVpYVO" resolve="UnusedFieldsAnalysisBase" />
+  </node>
+  <node concept="1TIwiD" id="7AhcwybyuGh">
+    <property role="EcuMT" value="8759837762494524177" />
+    <property role="TrG5h" value="LancovSolutionScope" />
+    <property role="34LRSv" value="solution" />
+    <property role="R4oN_" value="the scope" />
+    <property role="3GE5qa" value="search_scope" />
+    <ref role="1TJDcQ" node="5PcqW5O_3wA" resolve="LancovScopeBase" />
+    <node concept="1TJgyj" id="7AhcwybyuK2" role="1TKVEi">
+      <property role="IQ2ns" value="8759837762494524418" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="ptr" />
+      <ref role="20lvS9" to="dvox:k2ZBl8Cedx" resolve="ModulePointer" />
+    </node>
   </node>
 </model>
 

@@ -92,9 +92,6 @@ if (project.hasProperty("MPS_PATHS_SELECTOR")) {
 }
 */
 
-ext.publishingRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
-
-
 configurations {
     mps
     // includes also junit tasks support

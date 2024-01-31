@@ -57,7 +57,7 @@
   <node concept="51Wdy" id="3dqUbgQqrOG">
     <property role="TrG5h" value="_040_node with deprecated reference link" />
     <property role="3GE5qa" value="examples" />
-    <ref role="51WiC" node="3dqUbgQnkTl" resolve="target-link-1" />
+    <ref role="51WiC" node="3dqUbgQnkTl" />
   </node>
   <node concept="5cojB" id="3dqUbgQsWGc">
     <property role="3GE5qa" value="examples" />

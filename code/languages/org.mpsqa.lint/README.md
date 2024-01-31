@@ -16,6 +16,7 @@ These conventions *are not* part of the language definitions due to several reas
    3. specify the logic of the linter (as a closure returning a list of violations)
    3. specify concrete values of parameters
    4. specify if the linter provokes an (model checking) error, warning or info
+   5. add a quick fix that is invoked when pressing "Perform Quick fixes" in the model checker tool (optional)
 3. Re-use an existing linter by creating a root node ```reuse checkable script```
    1. refer to the linter definition
    2. if the referenced linter has parameter, provide concrete values for those parameters
