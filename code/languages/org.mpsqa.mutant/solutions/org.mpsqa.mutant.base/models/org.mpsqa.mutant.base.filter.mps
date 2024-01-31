@@ -43,7 +43,7 @@
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
-      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ngI" index="2AJDlI">
+      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
@@ -135,7 +135,7 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -157,7 +157,7 @@
         <child id="8276990574895933173" name="catchBody" index="1zc67A" />
         <child id="8276990574895933172" name="throwable" index="1zc67B" />
       </concept>
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1107796713796" name="jetbrains.mps.baseLanguage.structure.Interface" flags="ig" index="3HP615" />
@@ -218,7 +218,7 @@
       <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -1180,6 +1180,33 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="4DkAay7VR79" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="2Y3G5n6qRp6">
+    <property role="TrG5h" value="NoFilter" />
+    <node concept="2tJIrI" id="2Y3G5n6qRGS" role="jymVt" />
+    <node concept="3Tm1VV" id="2Y3G5n6qRp7" role="1B3o_S" />
+    <node concept="3uibUv" id="2Y3G5n6qRxF" role="EKbjA">
+      <ref role="3uigEE" node="4DkAay7VR78" resolve="IMutantsFilter" />
+    </node>
+    <node concept="3clFb_" id="2Y3G5n6qRyV" role="jymVt">
+      <property role="TrG5h" value="filterRootNodes" />
+      <node concept="3Tm1VV" id="2Y3G5n6qRyX" role="1B3o_S" />
+      <node concept="2I9FWS" id="2Y3G5n6qRyY" role="3clF45" />
+      <node concept="37vLTG" id="2Y3G5n6qRyZ" role="3clF46">
+        <property role="TrG5h" value="roots" />
+        <node concept="2I9FWS" id="2Y3G5n6qRz0" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="2Y3G5n6qRz1" role="3clF47">
+        <node concept="3clFbF" id="2Y3G5n6qRK1" role="3cqZAp">
+          <node concept="37vLTw" id="2Y3G5n6qRK0" role="3clFbG">
+            <ref role="3cqZAo" node="2Y3G5n6qRyZ" resolve="roots" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="2Y3G5n6qRz2" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
   </node>
 </model>
 

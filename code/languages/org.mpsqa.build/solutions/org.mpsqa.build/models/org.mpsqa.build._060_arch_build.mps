@@ -23,6 +23,10 @@
         <reference id="5617550519002745380" name="script" index="1l3spb" />
         <child id="4129895186893471026" name="artifacts" index="2JcizS" />
       </concept>
+      <concept id="927724900262033858" name="jetbrains.mps.build.structure.BuildSource_JavaOptions" flags="ng" index="2_Ic$z">
+        <property id="927724900262033861" name="generateDebugInfo" index="2_Ic$$" />
+        <property id="927724900262033862" name="copyResources" index="2_Ic$B" />
+      </concept>
       <concept id="4380385936562003279" name="jetbrains.mps.build.structure.BuildString" flags="ng" index="NbPM2">
         <child id="4903714810883783243" name="parts" index="3MwsjC" />
       </concept>
@@ -52,7 +56,7 @@
       <concept id="8654221991637384182" name="jetbrains.mps.build.structure.BuildFileIncludesSelector" flags="ng" index="3qWCbU">
         <property id="8654221991637384184" name="pattern" index="3qWCbO" />
       </concept>
-      <concept id="4701820937132344003" name="jetbrains.mps.build.structure.BuildLayout_Container" flags="ngI" index="1y1bJS">
+      <concept id="4701820937132344003" name="jetbrains.mps.build.structure.BuildLayout_Container" flags="ng" index="1y1bJS">
         <child id="7389400916848037006" name="children" index="39821P" />
       </concept>
       <concept id="841011766566059607" name="jetbrains.mps.build.structure.BuildStringNotEmpty" flags="ng" index="3_J27D" />
@@ -65,7 +69,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -184,8 +188,8 @@
                 <property role="2Ry0Am" value="org.mpsqa.arch.pluginSolution" />
                 <node concept="2Ry0Ak" id="50Wzfz4sDIC" role="2Ry0An">
                   <property role="2Ry0Am" value="lib" />
-                  <node concept="2Ry0Ak" id="1$4Qbt$B9yr" role="2Ry0An">
-                    <property role="2Ry0Am" value="plantuml-1.2022.6.jar" />
+                  <node concept="2Ry0Ak" id="7PMJ7Uztwp3" role="2Ry0An">
+                    <property role="2Ry0Am" value="plantuml-asl-1.2023.13.jar" />
                   </node>
                 </node>
               </node>
@@ -193,6 +197,10 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="2_Ic$z" id="6mB3DwRKeQg" role="3989C9">
+      <property role="2_Ic$$" value="true" />
+      <property role="2_Ic$B" value="true" />
     </node>
     <node concept="m$_wf" id="50Wzfz4shz8" role="3989C9">
       <property role="m$_wk" value="org.mpsqa.arch" />
@@ -374,18 +382,18 @@
             <ref role="3bR37D" node="50Wzfz4shzn" resolve="org.mpsqa.arch" />
           </node>
         </node>
-        <node concept="1SiIV0" id="50Wzfz4sh_t" role="3bR37C">
-          <node concept="1BurEX" id="50Wzfz4sh_u" role="1SiIV1">
-            <node concept="398BVA" id="50Wzfz4sh_g" role="1BurEY">
+        <node concept="1SiIV0" id="6ST145H7Ut5" role="3bR37C">
+          <node concept="1BurEX" id="6ST145H7Ut6" role="1SiIV1">
+            <node concept="398BVA" id="6ST145H7UsS" role="1BurEY">
               <ref role="398BVh" node="50Wzfz4shz5" resolve="mpsqa.arch.home" />
-              <node concept="2Ry0Ak" id="50Wzfz4sh_h" role="iGT6I">
+              <node concept="2Ry0Ak" id="6ST145H7UsT" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="50Wzfz4sh_i" role="2Ry0An">
+                <node concept="2Ry0Ak" id="6ST145H7UsU" role="2Ry0An">
                   <property role="2Ry0Am" value="org.mpsqa.arch.pluginSolution" />
-                  <node concept="2Ry0Ak" id="50Wzfz4sh_j" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="6ST145H7UsV" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="1$4Qbt$B9z4" role="2Ry0An">
-                      <property role="2Ry0Am" value="plantuml-1.2022.6.jar" />
+                    <node concept="2Ry0Ak" id="7PMJ7UztwOq" role="2Ry0An">
+                      <property role="2Ry0Am" value="plantuml-asl-1.2023.13.jar" />
                     </node>
                   </node>
                 </node>

@@ -19,6 +19,10 @@
         <reference id="5617550519002745380" name="script" index="1l3spb" />
         <child id="4129895186893471026" name="artifacts" index="2JcizS" />
       </concept>
+      <concept id="927724900262033858" name="jetbrains.mps.build.structure.BuildSource_JavaOptions" flags="ng" index="2_Ic$z">
+        <property id="927724900262033861" name="generateDebugInfo" index="2_Ic$$" />
+        <property id="927724900262033862" name="copyResources" index="2_Ic$B" />
+      </concept>
       <concept id="4380385936562003279" name="jetbrains.mps.build.structure.BuildString" flags="ng" index="NbPM2">
         <child id="4903714810883783243" name="parts" index="3MwsjC" />
       </concept>
@@ -184,6 +188,10 @@
         <node concept="pUk6x" id="52XWqlKvt_S" role="pUk7w" />
       </node>
     </node>
+    <node concept="2_Ic$z" id="6mB3DwRKeQg" role="3989C9">
+      <property role="2_Ic$$" value="true" />
+      <property role="2_Ic$B" value="true" />
+    </node>
     <node concept="m$_wf" id="2JVMSZMFXh0" role="3989C9">
       <property role="m$_wk" value="org.mpsqa.clones" />
       <node concept="3_J27D" id="2JVMSZMFXh1" role="m$_yQ">
@@ -259,24 +267,24 @@
             <ref role="3bR37D" to="2tou:7C9PHv6FBJ1" resolve="org.mpsqa.base.lib" />
           </node>
         </node>
-        <node concept="1BupzO" id="7j9Wyvhv8Nj" role="3bR31x">
+        <node concept="1BupzO" id="5DtatEIcVY4" role="3bR31x">
           <property role="3ZfqAx" value="models" />
           <property role="1Hdu6h" value="true" />
           <property role="1HemKv" value="true" />
-          <node concept="3LXTmp" id="7j9Wyvhv8Nk" role="1HemKq">
-            <node concept="398BVA" id="7j9Wyvhv8N8" role="3LXTmr">
+          <node concept="3LXTmp" id="5DtatEIcVY5" role="1HemKq">
+            <node concept="398BVA" id="5DtatEIcVXT" role="3LXTmr">
               <ref role="398BVh" node="2JVMSZMFXgq" resolve="mpsqa.clones.home" />
-              <node concept="2Ry0Ak" id="7j9Wyvhv8N9" role="iGT6I">
+              <node concept="2Ry0Ak" id="5DtatEIcVXU" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="7j9Wyvhv8Na" role="2Ry0An">
+                <node concept="2Ry0Ak" id="5DtatEIcVXV" role="2Ry0An">
                   <property role="2Ry0Am" value="org.mpsqa.clones.core" />
-                  <node concept="2Ry0Ak" id="7j9Wyvhv8Nb" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="5DtatEIcVXW" role="2Ry0An">
                     <property role="2Ry0Am" value="models" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3qWCbU" id="7j9Wyvhv8Nl" role="3LXTna">
+            <node concept="3qWCbU" id="5DtatEIcVY6" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
@@ -359,24 +367,73 @@
             </node>
           </node>
         </node>
-        <node concept="1BupzO" id="7j9Wyvhv8Nx" role="3bR31x">
+        <node concept="1BupzO" id="5DtatEIcVYi" role="3bR31x">
           <property role="3ZfqAx" value="models" />
           <property role="1Hdu6h" value="true" />
           <property role="1HemKv" value="true" />
-          <node concept="3LXTmp" id="7j9Wyvhv8Ny" role="1HemKq">
-            <node concept="398BVA" id="7j9Wyvhv8Nm" role="3LXTmr">
+          <node concept="3LXTmp" id="5DtatEIcVYj" role="1HemKq">
+            <node concept="398BVA" id="5DtatEIcVY7" role="3LXTmr">
               <ref role="398BVh" node="2JVMSZMFXgq" resolve="mpsqa.clones.home" />
-              <node concept="2Ry0Ak" id="7j9Wyvhv8Nn" role="iGT6I">
+              <node concept="2Ry0Ak" id="5DtatEIcVY8" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="7j9Wyvhv8No" role="2Ry0An">
+                <node concept="2Ry0Ak" id="5DtatEIcVY9" role="2Ry0An">
                   <property role="2Ry0Am" value="org.mpsqa.clones.pluginSolution" />
-                  <node concept="2Ry0Ak" id="7j9Wyvhv8Np" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="5DtatEIcVYa" role="2Ry0An">
                     <property role="2Ry0Am" value="models" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3qWCbU" id="7j9Wyvhv8Nz" role="3LXTna">
+            <node concept="3qWCbU" id="5DtatEIcVYk" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtA" id="5DtatEIcVVY" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="org.mpsqa.clones.java.pluginSolution" />
+        <property role="3LESm3" value="8c28db4d-2bb8-4f5a-91e6-1a90a7def21a" />
+        <node concept="398BVA" id="5DtatEIcVXB" role="3LF7KH">
+          <ref role="398BVh" node="2JVMSZMFXgq" resolve="mpsqa.clones.home" />
+          <node concept="2Ry0Ak" id="5DtatEIcVXH" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="5DtatEIcVXM" role="2Ry0An">
+              <property role="2Ry0Am" value="org.mpsqa.clones.java.pluginSolution" />
+              <node concept="2Ry0Ak" id="5DtatEIcVXR" role="2Ry0An">
+                <property role="2Ry0Am" value="org.mpsqa.clones.java.pluginSolution.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5DtatEIcVYl" role="3bR37C">
+          <node concept="3bR9La" id="5DtatEIcVYm" role="1SiIV1">
+            <ref role="3bR37D" node="2JVMSZMFXgA" resolve="org.mpsqa.clones.core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5DtatEIcVYn" role="3bR37C">
+          <node concept="3bR9La" id="5DtatEIcVYo" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="5DtatEIcVY$" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="5DtatEIcVY_" role="1HemKq">
+            <node concept="398BVA" id="5DtatEIcVYp" role="3LXTmr">
+              <ref role="398BVh" node="2JVMSZMFXgq" resolve="mpsqa.clones.home" />
+              <node concept="2Ry0Ak" id="5DtatEIcVYq" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="5DtatEIcVYr" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.clones.java.pluginSolution" />
+                  <node concept="2Ry0Ak" id="5DtatEIcVYs" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="5DtatEIcVYA" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
@@ -449,24 +506,24 @@
             </node>
           </node>
         </node>
-        <node concept="1BupzO" id="7j9Wyvhv8NJ" role="3bR31x">
+        <node concept="1BupzO" id="5DtatEIcVYM" role="3bR31x">
           <property role="3ZfqAx" value="models" />
           <property role="1Hdu6h" value="true" />
           <property role="1HemKv" value="true" />
-          <node concept="3LXTmp" id="7j9Wyvhv8NK" role="1HemKq">
-            <node concept="398BVA" id="7j9Wyvhv8N$" role="3LXTmr">
+          <node concept="3LXTmp" id="5DtatEIcVYN" role="1HemKq">
+            <node concept="398BVA" id="5DtatEIcVYB" role="3LXTmr">
               <ref role="398BVh" node="2JVMSZMFXgq" resolve="mpsqa.clones.home" />
-              <node concept="2Ry0Ak" id="7j9Wyvhv8N_" role="iGT6I">
+              <node concept="2Ry0Ak" id="5DtatEIcVYC" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="7j9Wyvhv8NA" role="2Ry0An">
+                <node concept="2Ry0Ak" id="5DtatEIcVYD" role="2Ry0An">
                   <property role="2Ry0Am" value="org.mpsqa.clones.config.pluginSolution" />
-                  <node concept="2Ry0Ak" id="7j9Wyvhv8NB" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="5DtatEIcVYE" role="2Ry0An">
                     <property role="2Ry0Am" value="models" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3qWCbU" id="7j9Wyvhv8NL" role="3LXTna">
+            <node concept="3qWCbU" id="5DtatEIcVYO" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
@@ -519,24 +576,24 @@
             <ref role="3bR37D" node="2JVMSZMFXgA" resolve="org.mpsqa.clones.core" />
           </node>
         </node>
-        <node concept="1BupzO" id="7j9Wyvhv8NX" role="3bR31x">
+        <node concept="1BupzO" id="5DtatEIcVZ0" role="3bR31x">
           <property role="3ZfqAx" value="models" />
           <property role="1Hdu6h" value="true" />
           <property role="1HemKv" value="true" />
-          <node concept="3LXTmp" id="7j9Wyvhv8NY" role="1HemKq">
-            <node concept="398BVA" id="7j9Wyvhv8NM" role="3LXTmr">
+          <node concept="3LXTmp" id="5DtatEIcVZ1" role="1HemKq">
+            <node concept="398BVA" id="5DtatEIcVYP" role="3LXTmr">
               <ref role="398BVh" node="2JVMSZMFXgq" resolve="mpsqa.clones.home" />
-              <node concept="2Ry0Ak" id="7j9Wyvhv8NN" role="iGT6I">
+              <node concept="2Ry0Ak" id="5DtatEIcVYQ" role="iGT6I">
                 <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="7j9Wyvhv8NO" role="2Ry0An">
+                <node concept="2Ry0Ak" id="5DtatEIcVYR" role="2Ry0An">
                   <property role="2Ry0Am" value="org.mpsqa.clones.config" />
-                  <node concept="2Ry0Ak" id="7j9Wyvhv8NP" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="5DtatEIcVYS" role="2Ry0An">
                     <property role="2Ry0Am" value="models" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3qWCbU" id="7j9Wyvhv8NZ" role="3LXTna">
+            <node concept="3qWCbU" id="5DtatEIcVZ2" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>

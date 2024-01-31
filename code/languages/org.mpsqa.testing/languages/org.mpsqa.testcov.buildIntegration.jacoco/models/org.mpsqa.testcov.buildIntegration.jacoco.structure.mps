@@ -171,5 +171,21 @@
       </node>
     </node>
   </node>
+  <node concept="1TIwiD" id="4EqSY0I2WoZ">
+    <property role="EcuMT" value="5375859657204811327" />
+    <property role="TrG5h" value="CoverageOf_CustomGroup" />
+    <property role="34LRSv" value="custom group" />
+    <ref role="1TJDcQ" node="65fUPtD3WWf" resolve="CoverageOf" />
+    <node concept="1TJgyj" id="4EqSY0I2Wp6" role="1TKVEi">
+      <property role="IQ2ns" value="5375859657204811334" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="contents" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="65fUPtD3WWf" resolve="CoverageOf" />
+    </node>
+    <node concept="PrWs8" id="4EqSY0I842U" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
 </model>
 

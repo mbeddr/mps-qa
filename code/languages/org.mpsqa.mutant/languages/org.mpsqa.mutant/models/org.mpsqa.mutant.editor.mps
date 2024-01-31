@@ -49,7 +49,7 @@
         <property id="1073389577007" name="text" index="3F0ifm" />
       </concept>
       <concept id="1073389658414" name="jetbrains.mps.lang.editor.structure.CellModel_Property" flags="sg" stub="730538219796134133" index="3F0A7n" />
-      <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ngI" index="3F0Thp">
+      <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
       <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
@@ -251,6 +251,13 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="2Y3G5n6qRRV">
+    <property role="3GE5qa" value="filter" />
+    <ref role="1XX52x" to="2yhq:2Y3G5n6qRRU" resolve="NoFilter" />
+    <node concept="3F0ifn" id="2Y3G5n6qRRX" role="2wV5jI">
+      <property role="3F0ifm" value="no filter (accept all generated nodes)" />
     </node>
   </node>
 </model>

@@ -78,9 +78,6 @@ if (ciBuild) {
     version = "$major.$minor-SNAPSHOT"
 }
 
-ext.publishingRepository = 'https://artifacts.itemis.cloud/repository/maven-mps'
-
-
 configurations {
     mps
     languageLibs
@@ -181,6 +178,12 @@ task build_testing_languages(type: BuildLanguages, dependsOn: [build_base_langua
     script "$buildDir/scripts/build-testing-languages.xml"
 }
 
+task test_testing(type: TestLanguages, dependsOn: [build_testing_languages]) {
+    // MPS build language generator is confused about the basedir of the generated script so we set it manually
+    scriptArgs = ["-Dbasedir=${file('code/languages/org.mpsqa.testing')}"]
+    script "$buildDir/scripts/test-testing.xml"
+}
+
 task build_clones_languages(type: BuildLanguages, dependsOn: [build_base_languages]) {
     script "$buildDir/scripts/build-clones-languages.xml"
 }
@@ -223,10 +226,9 @@ task package_mpsqa(type: Zip, dependsOn: build_allInOne_package) {
     include 'org.mpsqa.allInOne/**'
 }
 
-task run_clones_headless(type: TestLanguages, dependsOn: build_clones_languages) {
+task test_clones(type: TestLanguages, dependsOn: build_clones_languages) {
     description "Will execute clones tests from command line"
-    print "mpsqa.home = " + rootDir;
-	script new File("$buildDir/scripts/build-clones-headless-detector.xml")
+	script new File("$buildDir/scripts/test-clones.xml")
 }
 
 task test_lint(type: TestLanguages, dependsOn: build_lint_analysis_languages) {
@@ -234,7 +236,9 @@ task test_lint(type: TestLanguages, dependsOn: build_lint_analysis_languages) {
     script "$buildDir/scripts/build-lint-tests.xml"
 }
 
-check.dependsOn run_clones_headless, test_lint
+check.dependsOn(tasks.withType(TestLanguages))
+
+assemble.dependsOn(tasks.withType(BuildLanguages))
 
 publishing {
     repositories {
@@ -290,6 +294,6 @@ task cleanMps(type: Delete) {
 
 clean.dependsOn cleanMps
 
-defaultTasks 'build_allInOne_package'
+defaultTasks 'build'
 
 task rebuild(dependsOn:[clean, build_allInOne_package])

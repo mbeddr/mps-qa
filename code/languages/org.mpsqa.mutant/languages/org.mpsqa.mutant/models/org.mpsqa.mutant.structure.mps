@@ -50,7 +50,7 @@
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -181,6 +181,13 @@
     <property role="EcuMT" value="6123802055088443151" />
     <property role="TrG5h" value="UndevelopedNode" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="2Y3G5n6qRRU">
+    <property role="EcuMT" value="3423774024179351034" />
+    <property role="3GE5qa" value="filter" />
+    <property role="TrG5h" value="NoFilter" />
+    <property role="34LRSv" value="no filter" />
+    <ref role="1TJDcQ" node="4DkAay7VR6L" resolve="AbstractMutantsFilter" />
   </node>
 </model>
 

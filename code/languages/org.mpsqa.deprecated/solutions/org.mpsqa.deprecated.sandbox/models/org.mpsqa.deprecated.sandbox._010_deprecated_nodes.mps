@@ -34,7 +34,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -57,7 +57,7 @@
   <node concept="51Wdy" id="3dqUbgQqrOG">
     <property role="TrG5h" value="_040_node with deprecated reference link" />
     <property role="3GE5qa" value="examples" />
-    <ref role="51WiC" node="3dqUbgQnkTl" resolve="target-link-1" />
+    <ref role="51WiC" node="3dqUbgQnkTl" />
   </node>
   <node concept="5cojB" id="3dqUbgQsWGc">
     <property role="3GE5qa" value="examples" />

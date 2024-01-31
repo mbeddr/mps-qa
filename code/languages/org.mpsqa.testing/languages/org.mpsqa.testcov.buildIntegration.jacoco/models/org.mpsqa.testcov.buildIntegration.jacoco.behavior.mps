@@ -186,6 +186,7 @@
       <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
+      <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1201792049884" name="jetbrains.mps.baseLanguage.collections.structure.TranslateOperation" flags="nn" index="3goQfb" />
     </language>
   </registry>
@@ -348,7 +349,7 @@
                   <node concept="3clFbF" id="5rJPecpIbFy" role="3cqZAp">
                     <node concept="2OqwBi" id="5rJPecpIbFz" role="3clFbG">
                       <node concept="37vLTw" id="5rJPecpIbF$" role="2Oq$k0">
-                        <ref role="3cqZAo" node="1vMaDkEkZn2" />
+                        <ref role="3cqZAo" node="1vMaDkEkZn2" resolve="it" />
                       </node>
                       <node concept="2qgKlT" id="5rJPecpIbF_" role="2OqNvi">
                         <ref role="37wK5l" node="ZOtJPkfDhS" resolve="getModules" />
@@ -623,6 +624,54 @@
       </node>
       <node concept="A3Dl8" id="4BvAvMowKJJ" role="3clF45">
         <node concept="3Tqbb2" id="4BvAvMowKJK" role="A3Ik2">
+          <ref role="ehGHo" to="kdzh:4zCbl23cpcc" resolve="BuildMps_Module" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="4EqSY0I844p">
+    <ref role="13h7C2" to="km3i:4EqSY0I2WoZ" resolve="CoverageOf_CustomGroup" />
+    <node concept="13hLZK" id="4EqSY0I844q" role="13h7CW">
+      <node concept="3clFbS" id="4EqSY0I844r" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="4EqSY0I844$" role="13h7CS">
+      <property role="TrG5h" value="getModules" />
+      <ref role="13i0hy" node="ZOtJPkfDhS" resolve="getModules" />
+      <node concept="3Tm1VV" id="4EqSY0I844_" role="1B3o_S" />
+      <node concept="3clFbS" id="4EqSY0I844H" role="3clF47">
+        <node concept="3cpWs6" id="4EqSY0I849Q" role="3cqZAp">
+          <node concept="2OqwBi" id="4EqSY0I87a2" role="3cqZAk">
+            <node concept="2OqwBi" id="4EqSY0I85lQ" role="2Oq$k0">
+              <node concept="13iPFW" id="4EqSY0I85g9" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="4EqSY0I85uY" role="2OqNvi">
+                <ref role="3TtcxE" to="km3i:4EqSY0I2Wp6" resolve="contents" />
+              </node>
+            </node>
+            <node concept="3goQfb" id="4EqSY0I88HD" role="2OqNvi">
+              <node concept="1bVj0M" id="4EqSY0I88HF" role="23t8la">
+                <node concept="3clFbS" id="4EqSY0I88HG" role="1bW5cS">
+                  <node concept="3clFbF" id="4EqSY0I88LS" role="3cqZAp">
+                    <node concept="2OqwBi" id="4EqSY0I88Yu" role="3clFbG">
+                      <node concept="37vLTw" id="4EqSY0I88LR" role="2Oq$k0">
+                        <ref role="3cqZAo" node="4EqSY0I88HH" resolve="it" />
+                      </node>
+                      <node concept="2qgKlT" id="4EqSY0I89wS" role="2OqNvi">
+                        <ref role="37wK5l" node="ZOtJPkfDhS" resolve="getModules" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="Rh6nW" id="4EqSY0I88HH" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="2jxLKc" id="4EqSY0I88HI" role="1tU5fm" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="4EqSY0I844I" role="3clF45">
+        <node concept="3Tqbb2" id="4EqSY0I844J" role="A3Ik2">
           <ref role="ehGHo" to="kdzh:4zCbl23cpcc" resolve="BuildMps_Module" />
         </node>
       </node>

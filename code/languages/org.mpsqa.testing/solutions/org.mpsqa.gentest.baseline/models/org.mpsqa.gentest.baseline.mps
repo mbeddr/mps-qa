@@ -1513,7 +1513,7 @@
                       <node concept="2OqwBi" id="5mQCqLmwVHW" role="3clFbG">
                         <node concept="2OqwBi" id="5mQCqLmwVIa" role="2Oq$k0">
                           <node concept="37vLTw" id="5mQCqLmwVIq" role="2Oq$k0">
-                            <ref role="3cqZAo" node="1vMaDkEkZnr" />
+                            <ref role="3cqZAo" node="1vMaDkEkZnr" resolve="fileA" />
                           </node>
                           <node concept="liA8E" id="5mQCqLmwVIr" role="2OqNvi">
                             <ref role="37wK5l" to="guwi:~File.getName()" resolve="getName" />
@@ -1523,7 +1523,7 @@
                           <ref role="37wK5l" to="wyt6:~String.compareTo(java.lang.String)" resolve="compareTo" />
                           <node concept="2OqwBi" id="5mQCqLmwVIs" role="37wK5m">
                             <node concept="37vLTw" id="5mQCqLmwVIC" role="2Oq$k0">
-                              <ref role="3cqZAo" node="1vMaDkEkZnt" />
+                              <ref role="3cqZAo" node="1vMaDkEkZnt" resolve="fileB" />
                             </node>
                             <node concept="liA8E" id="5mQCqLmwVID" role="2OqNvi">
                               <ref role="37wK5l" to="guwi:~File.getName()" resolve="getName" />
