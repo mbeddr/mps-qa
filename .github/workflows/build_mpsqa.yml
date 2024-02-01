@@ -1,7 +1,7 @@
 
 name: MPS-QA_CI
 
-on: [push, pull_request]
+on: [push, pull_request, workflow_dispatch]
 
 env:
   GITHUB_TOKEN: ${{ secrets.MPSQA_GITHUB_PKG_REGISTRY }}
