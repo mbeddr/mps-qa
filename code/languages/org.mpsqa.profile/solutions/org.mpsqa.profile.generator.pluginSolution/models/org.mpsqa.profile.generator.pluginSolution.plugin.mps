@@ -3,17 +3,16 @@
   <persistence version="9" />
   <languages>
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="73736c50-f124-433b-b789-2828a15a0adc" name="jetbrains.mps.baseLanguage.collections.trove" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
   </languages>
   <imports>
     <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
-    <import index="ap4t" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator(MPS.Core/)" />
     <import index="yyf4" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.util(MPS.OpenAPI/)" />
     <import index="yo81" ref="r:4ea5a78b-cb8a-4831-b227-f7860a22491d(jetbrains.mps.make.resources)" />
     <import index="drpk" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.make(MPS.Platform/)" />
@@ -38,6 +37,7 @@
     <import index="g3l6" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.model(MPS.Core/)" />
     <import index="xlb7" ref="r:cf42fd0a-68d2-493b-8b77-961658617704(jetbrains.mps.lang.modelapi.behavior)" />
     <import index="dvox" ref="r:9dfd3567-3b1f-4edb-85a0-3981ca2bfd8c(jetbrains.mps.lang.modelapi.structure)" />
+    <import index="ap4t" ref="215c4c45-ba99-49f5-9ab7-4b6901a63cfd/java:jetbrains.mps.generator(MPS.Generator/)" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
   </imports>
   <registry>
@@ -192,7 +192,6 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
-      <concept id="1208623485264" name="jetbrains.mps.baseLanguage.structure.AbstractOperation" flags="nn" index="1B$H19" />
       <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="nn" index="3J1_TO">
         <child id="8276990574886367510" name="catchClause" index="1zxBo5" />
         <child id="8276990574886367508" name="body" index="1zxBo7" />
@@ -724,21 +723,18 @@
                                         <node concept="2xdQw9" id="4yfIbkeJDac" role="3cqZAp">
                                           <property role="2xdLsb" value="gZ5fh_4/error" />
                                           <node concept="3cpWs3" id="4yfIbkeJFfq" role="9lYJi">
-                                            <node concept="2OqwBi" id="4yfIbkeKJGe" role="3uHU7w">
-                                              <node concept="2YIFZM" id="4yfIbkeJIex" role="2Oq$k0">
-                                                <ref role="37wK5l" node="4yfIbkeJ9eV" resolve="plan" />
-                                                <ref role="1Pybhc" node="4yfIbkeGBMq" resolve="GenerationTracerUtils" />
-                                                <node concept="37vLTw" id="4yfIbkeJLRx" role="37wK5m">
-                                                  <ref role="3cqZAo" node="4yfIbkeJKn8" resolve="inputModel" />
-                                                </node>
-                                                <node concept="37vLTw" id="4yfIbkeJPmr" role="37wK5m">
-                                                  <ref role="3cqZAo" node="4yfIbkeGUtx" resolve="repo" />
-                                                </node>
-                                                <node concept="3cmrfG" id="4yfIbkeJQub" role="37wK5m">
-                                                  <property role="3cmrfH" value="1" />
-                                                </node>
+                                            <node concept="2YIFZM" id="4yfIbkeJIex" role="3uHU7w">
+                                              <ref role="37wK5l" node="4yfIbkeJ9eV" resolve="plan" />
+                                              <ref role="1Pybhc" node="4yfIbkeGBMq" resolve="GenerationTracerUtils" />
+                                              <node concept="37vLTw" id="4yfIbkeJLRx" role="37wK5m">
+                                                <ref role="3cqZAo" node="4yfIbkeJKn8" resolve="inputModel" />
                                               </node>
-                                              <node concept="1B$H19" id="4yfIbkeKJGp" role="2OqNvi" />
+                                              <node concept="37vLTw" id="4yfIbkeJPmr" role="37wK5m">
+                                                <ref role="3cqZAo" node="4yfIbkeGUtx" resolve="repo" />
+                                              </node>
+                                              <node concept="3cmrfG" id="4yfIbkeJQub" role="37wK5m">
+                                                <property role="3cmrfH" value="1" />
+                                              </node>
                                             </node>
                                             <node concept="Xl_RD" id="4yfIbkeJDae" role="3uHU7B">
                                               <property role="Xl_RC" value="stps " />
