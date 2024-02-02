@@ -3072,7 +3072,7 @@
                         </node>
                         <node concept="2OqwBi" id="6WYDruH6k7V" role="33vP2m">
                           <node concept="37vLTw" id="6WYDruH6EwO" role="2Oq$k0">
-                            <ref role="3cqZAo" node="6WYDruH6EwK" resolve="instance" />
+                            <ref role="3cqZAo" node="6WYDruH6EwK" resolve="languageRegistry" />
                           </node>
                           <node concept="liA8E" id="6WYDruH6k7Y" role="2OqNvi">
                             <ref role="37wK5l" to="vndm:~LanguageRegistry.getLanguage(org.jetbrains.mps.openapi.language.SLanguage)" resolve="getLanguage" />

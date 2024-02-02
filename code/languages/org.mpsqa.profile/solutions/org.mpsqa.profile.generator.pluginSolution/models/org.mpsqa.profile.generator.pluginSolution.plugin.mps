@@ -192,7 +192,6 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
-      <concept id="1208623485264" name="jetbrains.mps.baseLanguage.structure.AbstractOperation" flags="nn" index="1B$H19" />
       <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="nn" index="3J1_TO">
         <child id="8276990574886367510" name="catchClause" index="1zxBo5" />
         <child id="8276990574886367508" name="body" index="1zxBo7" />
@@ -724,21 +723,18 @@
                                         <node concept="2xdQw9" id="4yfIbkeJDac" role="3cqZAp">
                                           <property role="2xdLsb" value="gZ5fh_4/error" />
                                           <node concept="3cpWs3" id="4yfIbkeJFfq" role="9lYJi">
-                                            <node concept="2OqwBi" id="4yfIbkeKJGe" role="3uHU7w">
-                                              <node concept="2YIFZM" id="4yfIbkeJIex" role="2Oq$k0">
-                                                <ref role="37wK5l" node="4yfIbkeJ9eV" resolve="plan" />
-                                                <ref role="1Pybhc" node="4yfIbkeGBMq" resolve="GenerationTracerUtils" />
-                                                <node concept="37vLTw" id="4yfIbkeJLRx" role="37wK5m">
-                                                  <ref role="3cqZAo" node="4yfIbkeJKn8" resolve="inputModel" />
-                                                </node>
-                                                <node concept="37vLTw" id="4yfIbkeJPmr" role="37wK5m">
-                                                  <ref role="3cqZAo" node="4yfIbkeGUtx" resolve="repo" />
-                                                </node>
-                                                <node concept="3cmrfG" id="4yfIbkeJQub" role="37wK5m">
-                                                  <property role="3cmrfH" value="1" />
-                                                </node>
+                                            <node concept="2YIFZM" id="4yfIbkeJIex" role="3uHU7w">
+                                              <ref role="37wK5l" node="4yfIbkeJ9eV" resolve="plan" />
+                                              <ref role="1Pybhc" node="4yfIbkeGBMq" resolve="GenerationTracerUtils" />
+                                              <node concept="37vLTw" id="4yfIbkeJLRx" role="37wK5m">
+                                                <ref role="3cqZAo" node="4yfIbkeJKn8" resolve="inputModel" />
                                               </node>
-                                              <node concept="1B$H19" id="4yfIbkeKJGp" role="2OqNvi" />
+                                              <node concept="37vLTw" id="4yfIbkeJPmr" role="37wK5m">
+                                                <ref role="3cqZAo" node="4yfIbkeGUtx" resolve="repo" />
+                                              </node>
+                                              <node concept="3cmrfG" id="4yfIbkeJQub" role="37wK5m">
+                                                <property role="3cmrfH" value="1" />
+                                              </node>
                                             </node>
                                             <node concept="Xl_RD" id="4yfIbkeJDae" role="3uHU7B">
                                               <property role="Xl_RC" value="stps " />

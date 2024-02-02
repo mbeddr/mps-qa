@@ -99,7 +99,7 @@
       </node>
       <node concept="EhSHI" id="1yYJBoN0dEl" role="Ehb3Z">
         <node concept="EhSHF" id="6T2biBFY7fh" role="EhSHH">
-          <ref role="EhSHC" to="b0y:1yYJBoMXyaN" resolve="root" />
+          <ref role="EhSHC" to="b0y:1yYJBoMXyaN" resolve="concept" />
         </node>
       </node>
     </node>
