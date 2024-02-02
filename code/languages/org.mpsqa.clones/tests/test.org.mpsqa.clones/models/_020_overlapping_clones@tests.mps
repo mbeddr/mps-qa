@@ -2,7 +2,7 @@
 <model ref="r:8adceaa9-7768-4497-aa0f-fda6fdac3b15(test.org.mpsqa.clones._020_overlapping_clones@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
   </languages>
@@ -19,6 +19,7 @@
       </concept>
       <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
@@ -105,6 +106,7 @@
   </registry>
   <node concept="1lH9Xt" id="5YQNmM9b6pe">
     <property role="TrG5h" value="_020_overlapping_clones" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="5YQNmM9b6pg" role="1SL9yI">
       <property role="TrG5h" value="_010_ignore_overlapping" />
       <node concept="3cqZAl" id="5YQNmM9b6pj" role="3clF45" />
