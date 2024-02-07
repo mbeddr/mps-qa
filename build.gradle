@@ -159,53 +159,76 @@ tasks.withType(RunAntScript).configureEach {
     dependsOn(configureJava, resolveMps)
 }
 
-task build_allScripts(type: BuildLanguages, dependsOn: [resolveMps, configureJava]) {
+def build_allScripts_unpatched = tasks.register('build_allScripts_unpatched', BuildLanguages) {
     script "$buildDir/scripts/build_all_scripts.xml"
+}
+
+// Patch JNA path in generated build scripts until https://github.com/JetBrains/MPS/pull/71 is fixed
+def patch_allScripts = tasks.register('patch_allScripts', Copy) {
+    dependsOn build_allScripts_unpatched
+    from 'build/scripts'
+    into 'build/patched-scripts'
+
+    def isAarch64 = System.getProperty('os.arch') == 'aarch64'
+    def jnaArch = isAarch64 ? 'aarch64' : 'amd64'
+
+    filter {
+        it.replace('"-Djna.boot.library.path=${artifacts.mps}/lib/jna"',
+                '"-Djna.boot.library.path=${artifacts.mps}/lib/jna/' + jnaArch + '"')
+    }
+}
+
+task build_allScripts {
+    dependsOn patch_allScripts
+}
+
+File scriptFile(String name) {
+    file("$buildDir/patched-scripts/$name")
 }
 
 // All other MPS tasks depend on build_allScripts
 tasks.withType(RunAntScript).configureEach {
-    if (it != build_allScripts) {
+    if (it.name != build_allScripts_unpatched.name) {
         it.dependsOn(build_allScripts)
     }
 }
 
 task build_base_languages(type: BuildLanguages) {
-    script "$buildDir/scripts/build-base-languages.xml"
+    script scriptFile('build-base-languages.xml')
 }
 
 task build_testing_languages(type: BuildLanguages, dependsOn: [build_base_languages]) {
-    script "$buildDir/scripts/build-testing-languages.xml"
+    script scriptFile('build-testing-languages.xml')
 }
 
 task test_testing(type: TestLanguages, dependsOn: [build_testing_languages]) {
     // MPS build language generator is confused about the basedir of the generated script so we set it manually
     scriptArgs = ["-Dbasedir=${file('code/languages/org.mpsqa.testing')}"]
-    script "$buildDir/scripts/test-testing.xml"
+    script scriptFile("test-testing.xml")
 }
 
 task build_clones_languages(type: BuildLanguages, dependsOn: [build_base_languages]) {
-    script "$buildDir/scripts/build-clones-languages.xml"
+    script scriptFile("build-clones-languages.xml")
 }
 
 task build_mutant_languages(type: BuildLanguages, dependsOn: []) {
-    script "$buildDir/scripts/build-mutant-languages.xml"
+    script scriptFile("build-mutant-languages.xml")
 }
 
 task build_unused_languages(type: BuildLanguages, dependsOn: []) {
-    script "$buildDir/scripts/build-unused-languages-analysis.xml"
+    script scriptFile("build-unused-languages-analysis.xml")
 }
 
 task build_arch_languages(type: BuildLanguages, dependsOn: []) {
-    script "$buildDir/scripts/build-arch-analysis-languages.xml"
+    script scriptFile("build-arch-analysis-languages.xml")
 }
 
 task build_deprecation_analysis_languages(type: BuildLanguages, dependsOn: []) {
-    script "$buildDir/scripts/build-deprecated-analysis-languages.xml"
+    script scriptFile("build-deprecated-analysis-languages.xml")
 }
 
 task build_lint_analysis_languages(type: BuildLanguages, dependsOn: []) {
-    script "$buildDir/scripts/build-lint-analysis-languages.xml"
+    script scriptFile("build-lint-analysis-languages.xml")
 }
 
 task build_allInOne_package(type: BuildLanguages, dependsOn: [build_allScripts]) {
@@ -217,7 +240,7 @@ task build_allInOne_package(type: BuildLanguages, dependsOn: [build_allScripts])
     dependsOn 'build_arch_languages'
 	dependsOn 'build_deprecation_analysis_languages'
 	dependsOn 'build_lint_analysis_languages'    
-    script "$buildDir/scripts/build-allInOne-package.xml"
+    script scriptFile("build-allInOne-package.xml")
 }
 
 task package_mpsqa(type: Zip, dependsOn: build_allInOne_package) {
@@ -228,12 +251,12 @@ task package_mpsqa(type: Zip, dependsOn: build_allInOne_package) {
 
 task test_clones(type: TestLanguages, dependsOn: build_clones_languages) {
     description "Will execute clones tests from command line"
-	script new File("$buildDir/scripts/test-clones.xml")
+	script scriptFile("test-clones.xml")
 }
 
 task test_lint(type: TestLanguages, dependsOn: build_lint_analysis_languages) {
     description "Will execute lint tests from command line"
-    script "$buildDir/scripts/build-lint-tests.xml"
+    script scriptFile("build-lint-tests.xml")
 }
 
 check.dependsOn(tasks.withType(TestLanguages))
