@@ -240,6 +240,19 @@ task test_lint(type: TestLanguages, dependsOn: build_lint_analysis_languages) {
     script "$buildDir/scripts/build-lint-tests.xml"
 }
 
+tasks.register('check_lint', MpsCheck) {
+    dependsOn(resolveMps)
+
+    dependsOn(build_lint_analysis_languages)
+    projectLocation = file('code/languages/org.mpsqa.lint')
+    mpsHome = mpsHomeDir
+
+    folderMacros.put('mpsqa.home', rootProject.layout.projectDirectory)
+
+    pluginRoots.add(layout.dir(provider { new File(mpsHomeDir, 'plugins/mps-console') }))
+    pluginRoots.add(layout.dir(provider { new File(mpsHomeDir, 'plugins/mps-modelchecker') }))
+}
+
 check.dependsOn(tasks.withType(TestLanguages))
 
 assemble.dependsOn(tasks.withType(BuildLanguages))
