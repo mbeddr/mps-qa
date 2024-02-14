@@ -301,3 +301,21 @@ clean.dependsOn cleanMps
 defaultTasks 'build'
 
 task rebuild(dependsOn:[clean, build_allInOne_package])
+
+tasks.register('migrate', MpsMigrate) {
+    dependsOn(resolveMps, 'downloadJbr', 'build_all_languages')
+    javaExecutable = layout.file(
+            tasks.named('downloadJbr', DownloadJbrForPlatform).map {it.javaExecutable })
+
+    haltOnPrecheckFailure = true
+    haltOnDependencyError = true
+
+    mpsHome = mpsHomeDir
+
+    folderMacros.put('mpsqa.home', layout.projectDirectory)
+
+    projectDirectories.from({ file('code/languages').listFiles({ File file -> file.directory } as FileFilter) })
+
+    pluginRoots.from(new File(mpsHomeDir, 'plugins/mps-build'))
+    pluginRoots.from(new File(mpsHomeDir, 'plugins/mps-console'))
+}
