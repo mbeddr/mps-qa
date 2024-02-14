@@ -208,15 +208,19 @@ task build_lint_analysis_languages(type: BuildLanguages, dependsOn: []) {
     script "$buildDir/scripts/build-lint-analysis-languages.xml"
 }
 
-task build_allInOne_package(type: BuildLanguages, dependsOn: [build_allScripts]) {
+tasks.register('build_all_languages') {
     dependsOn 'build_base_languages'
     dependsOn 'build_testing_languages'
     dependsOn 'build_clones_languages'
     dependsOn 'build_mutant_languages'
     dependsOn 'build_unused_languages'
     dependsOn 'build_arch_languages'
-	dependsOn 'build_deprecation_analysis_languages'
-	dependsOn 'build_lint_analysis_languages'    
+    dependsOn 'build_deprecation_analysis_languages'
+    dependsOn 'build_lint_analysis_languages'
+}
+
+task build_allInOne_package(type: BuildLanguages, dependsOn: [build_allScripts]) {
+    dependsOn 'build_all_languages'
     script "$buildDir/scripts/build-allInOne-package.xml"
 }
 
