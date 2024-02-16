@@ -10,7 +10,7 @@ plugins {
     id 'co.riiid.gradle' version '0.4.2'
 }
 
-ext.jbrVers = '17.0.3-b469.32'
+ext.jbrVers = '17.0.6-b653.34'
 
 downloadJbr {
     jbrVersion = jbrVers
@@ -58,7 +58,7 @@ ext.dependencyRepositories = [
 ]
 
 // Dependency versions
-ext.mpsVersion =  '2022.3'
+ext.mpsVersion =  '2022.3.1'
 
 // Project versions
 ext.major = '2022'
