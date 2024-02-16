@@ -925,7 +925,7 @@
                     <property role="373rjd" value="true" />
                     <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;(java.lang.String)" resolve="JButton" />
                     <node concept="37vLTw" id="6dX6nirZPUs" role="37wK5m">
-                      <ref role="3cqZAo" node="6dX6nirZPUm" resolve="string" />
+                      <ref role="3cqZAo" node="6dX6nirZPUm" resolve="label" />
                     </node>
                   </node>
                 </node>
@@ -944,7 +944,7 @@
                         <property role="2bfB8j" value="true" />
                         <property role="373rjd" value="true" />
                         <ref role="1Y3XeK" to="hyam:~ActionListener" resolve="ActionListener" />
-                        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
+                        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                         <node concept="3Tm1VV" id="6dX6nirXMWo" role="1B3o_S" />
                         <node concept="3clFb_" id="6dX6nirXMWA" role="jymVt">
                           <property role="TrG5h" value="actionPerformed" />
@@ -991,7 +991,7 @@
                             </node>
                           </node>
                           <node concept="2AHcQZ" id="6dX6nirXMWI" role="2AJF6D">
-                            <ref role="2AI5Lk" to="wyt6:~Override" />
+                            <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                           </node>
                         </node>
                       </node>
