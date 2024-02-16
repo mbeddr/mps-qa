@@ -208,7 +208,14 @@ task build_lint_analysis_languages(type: BuildLanguages, dependsOn: []) {
     script "$buildDir/scripts/build-lint-analysis-languages.xml"
 }
 
-tasks.register('build_all_languages') {
+task build_sandboxes(type: BuildLanguages) {
+    dependsOn 'build_base_languages'
+    dependsOn 'build_unused_languages'
+
+    script "$buildDir/scripts/build-sandboxes.xml"
+}
+
+tasks.register('build_main_languages') {
     dependsOn 'build_base_languages'
     dependsOn 'build_testing_languages'
     dependsOn 'build_clones_languages'
@@ -219,8 +226,14 @@ tasks.register('build_all_languages') {
     dependsOn 'build_lint_analysis_languages'
 }
 
+tasks.register('build_all_languages') {
+    dependsOn 'build_main_languages'
+
+    dependsOn 'build_sandboxes'
+}
+
 task build_allInOne_package(type: BuildLanguages, dependsOn: [build_allScripts]) {
-    dependsOn 'build_all_languages'
+    dependsOn 'build_main_languages'
     script "$buildDir/scripts/build-allInOne-package.xml"
 }
 
