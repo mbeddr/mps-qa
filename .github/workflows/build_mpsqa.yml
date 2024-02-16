@@ -1,7 +1,19 @@
 
 name: MPS-QA_CI
 
-on: [push, pull_request, workflow_dispatch]
+on:
+  push:
+    branches:
+      - master
+      - 'maintenance/*'
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: Whether to publish the build result to Maven repositories
+        type: boolean
+        default: false
+        required: false
 
 env:
   GITHUB_TOKEN: ${{ secrets.MPSQA_GITHUB_PKG_REGISTRY }}
@@ -24,10 +36,39 @@ jobs:
       with:
         java-version: 11  
         
-    - name: Build MPS-QA and Publish to Github Maven
+    - name: Build MPS-QA and migrate
       uses: gradle/gradle-build-action@v2
       with: 
-        arguments: build publish -Partifacts.itemis.cloud.user=${{secrets.ARTIFACTS_ITEMIS_CLOUD_USER}} -Partifacts.itemis.cloud.pw=${{secrets.ARTIFACTS_ITEMIS_CLOUD_PW}}
+        arguments: >
+          build migrate
+          -Partifacts.itemis.cloud.user=${{secrets.ARTIFACTS_ITEMIS_CLOUD_USER}}
+          -Partifacts.itemis.cloud.pw=${{secrets.ARTIFACTS_ITEMIS_CLOUD_PW}}
+        wrapper-cache-enabled: true
+        dependencies-cache-enabled: true
+        dependencies-cache-key: gradle/dependency-locks/**
+        dependencies-cache-exact: true
+        configuration-cache-enabled: true
+
+    - name: Check for no dirty files after build and migration
+      run: |
+        if [[ -n $(git status --porcelain | head --lines=1) ]]
+        then
+          echo "Dirty files detected after build/migration, run './gradlew migrate' and/or update .gitignore to fix:"
+          git status
+          exit 1
+        fi
+
+    - name: Publish
+      uses: gradle/gradle-build-action@v2
+
+      # Only publish on push (to maintenance or master) or when explicitly requested
+      if: ${{ github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.publish == 'true') }}
+
+      with:
+        arguments: >
+          publish -x build_allInOne_package
+          -Partifacts.itemis.cloud.user=${{secrets.ARTIFACTS_ITEMIS_CLOUD_USER}}
+          -Partifacts.itemis.cloud.pw=${{secrets.ARTIFACTS_ITEMIS_CLOUD_PW}}
         wrapper-cache-enabled: true
         dependencies-cache-enabled: true
         dependencies-cache-key: gradle/dependency-locks/**
@@ -37,5 +78,5 @@ jobs:
     - name: Archive distribution
       uses: actions/upload-artifact@v2
       with:
-        name: mpsqa-distribution-2020.3-${{ steps.time.outputs.time }}
-        path: build/artifacts/org.mpsqa.allInOne/org.mpsqa.allInOne.zip
+        name: org.mpsqa.allInOne
+        path: build/artifacts/org.mpsqa.allInOne/
