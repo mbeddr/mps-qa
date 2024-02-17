@@ -12,13 +12,8 @@
     <facet type="java" compile="mps" classes="mps" ext="yes">
       <classes generated="true" path="${module}/classes_gen" />
       <library location="${module}/lib/plantuml-asl-1.2023.13.jar" />
-      <library location="${module}/lib/plantuml-asl-1.2023.13.jar" />
-      <library location="${module}/lib/plantuml-asl-1.2023.13.jar" />
     </facet>
   </facets>
-  <stubModelEntries>
-    <stubModelEntry path="${module}/lib/plantuml-asl-1.2023.13.jar" />
-  </stubModelEntries>
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">6c101563-ba1f-458d-b298-a75634941e0c(org.mpsqa.arch)</dependency>
