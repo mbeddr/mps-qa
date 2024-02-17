@@ -316,7 +316,7 @@
                               </node>
                               <node concept="2OqwBi" id="5nCCIAzzT8v" role="1m5AlR">
                                 <node concept="37vLTw" id="5nCCIAzzT8w" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="1vMaDkEg7Qe" />
+                                  <ref role="3cqZAo" node="1vMaDkEg7Qe" resolve="it" />
                                 </node>
                                 <node concept="3TrEf2" id="5nCCIAzzT8x" role="2OqNvi">
                                   <ref role="3Tt5mk" to="tp25:34EJa6aIpny" resolve="languageId" />

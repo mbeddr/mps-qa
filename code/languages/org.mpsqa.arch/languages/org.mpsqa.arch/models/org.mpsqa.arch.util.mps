@@ -222,7 +222,7 @@
                         <node concept="2OqwBi" id="72dZnKNhsjz" role="2Oq$k0">
                           <node concept="2OqwBi" id="72dZnKNhsj$" role="2Oq$k0">
                             <node concept="37vLTw" id="72dZnKNhsj_" role="2Oq$k0">
-                              <ref role="3cqZAo" node="1vMaDkDXckk" />
+                              <ref role="3cqZAo" node="1vMaDkDXckk" resolve="it" />
                             </node>
                             <node concept="3TrEf2" id="72dZnKNhsjA" role="2OqNvi">
                               <ref role="3Tt5mk" to="tp25:1t9FffgebJ_" resolve="moduleId" />

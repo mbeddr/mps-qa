@@ -290,7 +290,7 @@
                             </node>
                             <node concept="2OqwBi" id="45IuY9nk6pI" role="3uHU7B">
                               <node concept="37vLTw" id="3dqUbgQtrOl" role="2Oq$k0">
-                                <ref role="3cqZAo" node="1vMaDkE5o0n" />
+                                <ref role="3cqZAo" node="1vMaDkE5o0n" resolve="it" />
                               </node>
                               <node concept="3TrcHB" id="45IuY9nk6Il" role="2OqNvi">
                                 <ref role="3TsBF5" to="3idh:3imng2mXeQS" resolve="modelName" />

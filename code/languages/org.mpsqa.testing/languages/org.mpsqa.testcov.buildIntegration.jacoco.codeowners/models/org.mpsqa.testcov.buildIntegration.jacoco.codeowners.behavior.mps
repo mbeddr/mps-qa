@@ -115,7 +115,7 @@
                   <node concept="3clFbF" id="4EqSY0JUW3t" role="3cqZAp">
                     <node concept="2OqwBi" id="4EqSY0JUWf1" role="3clFbG">
                       <node concept="37vLTw" id="4EqSY0JUW3s" role="2Oq$k0">
-                        <ref role="3cqZAo" node="7MpFXKo9gyv" />
+                        <ref role="3cqZAo" node="7MpFXKo9gyv" resolve="it" />
                       </node>
                       <node concept="2qgKlT" id="4EqSY0JUWvC" role="2OqNvi">
                         <ref role="37wK5l" to="jvez:ZOtJPkfDhS" resolve="getModules" />

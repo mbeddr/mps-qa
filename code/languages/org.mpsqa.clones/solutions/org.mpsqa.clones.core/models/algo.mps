@@ -2129,7 +2129,7 @@
                       <node concept="liA8E" id="7vLq_hsvnpW" role="2OqNvi">
                         <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
                         <node concept="37vLTw" id="7vLq_hsvnxW" role="37wK5m">
-                          <ref role="3cqZAo" node="1vMaDkEpJWo" />
+                          <ref role="3cqZAo" node="1vMaDkEpJWo" resolve="it" />
                         </node>
                       </node>
                     </node>
@@ -2186,7 +2186,7 @@
                       <node concept="liA8E" id="1GhTetdWR8c" role="2OqNvi">
                         <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
                         <node concept="37vLTw" id="1GhTetdWR8d" role="37wK5m">
-                          <ref role="3cqZAo" node="1vMaDkEpJWq" />
+                          <ref role="3cqZAo" node="1vMaDkEpJWq" resolve="it" />
                         </node>
                       </node>
                     </node>
@@ -2228,7 +2228,7 @@
                       <node concept="liA8E" id="7vLq_hsvnHw" role="2OqNvi">
                         <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
                         <node concept="37vLTw" id="7vLq_hsvnHx" role="37wK5m">
-                          <ref role="3cqZAo" node="1vMaDkEpJWs" />
+                          <ref role="3cqZAo" node="1vMaDkEpJWs" resolve="it" />
                         </node>
                       </node>
                     </node>
@@ -2270,7 +2270,7 @@
                       <node concept="liA8E" id="GBiWXwJcra" role="2OqNvi">
                         <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
                         <node concept="37vLTw" id="GBiWXwJcrb" role="37wK5m">
-                          <ref role="3cqZAo" node="1vMaDkEpJWu" />
+                          <ref role="3cqZAo" node="1vMaDkEpJWu" resolve="it" />
                         </node>
                       </node>
                     </node>

@@ -13,6 +13,7 @@
       <classes generated="true" path="${module}/classes_gen" />
       <library location="${module}/lib/plantuml-asl-1.2023.13.jar" />
       <library location="${module}/lib/plantuml-asl-1.2023.13.jar" />
+      <library location="${module}/lib/plantuml-asl-1.2023.13.jar" />
     </facet>
   </facets>
   <stubModelEntries>
