@@ -378,7 +378,7 @@
                         <property role="TrG5h" value="myDependency" />
                       </node>
                       <node concept="37vLTw" id="1Ke2sdki$_D" role="2GsD0m">
-                        <ref role="3cqZAo" node="1Ke2sdki$__" resolve="set" />
+                        <ref role="3cqZAo" node="1Ke2sdki$__" resolve="myDependencies" />
                       </node>
                       <node concept="3clFbS" id="1Ke2sdkixji" role="2LFqv$">
                         <node concept="2Gpval" id="1Ke2sdkixUr" role="3cqZAp">
@@ -387,7 +387,7 @@
                           </node>
                           <node concept="3EllGN" id="1Ke2sdkiyog" role="2GsD0m">
                             <node concept="2GrUjf" id="1Ke2sdkiyt4" role="3ElVtu">
-                              <ref role="2Gs0qQ" node="1Ke2sdkixje" resolve="dep" />
+                              <ref role="2Gs0qQ" node="1Ke2sdkixje" resolve="myDependency" />
                             </node>
                             <node concept="37vLTw" id="1Ke2sdkiyk0" role="3ElQJh">
                               <ref role="3cqZAo" node="1Ke2sdkigJb" resolve="plugin2Dependencies" />
@@ -538,7 +538,7 @@
             <property role="TrG5h" value="plugin" />
           </node>
           <node concept="37vLTw" id="2xFKNLWBFAo" role="2GsD0m">
-            <ref role="3cqZAo" node="2xFKNLWBFBU" resolve="modules" />
+            <ref role="3cqZAo" node="2xFKNLWBFBU" resolve="plugins" />
           </node>
           <node concept="3clFbS" id="2xFKNLWBFAp" role="2LFqv$">
             <node concept="3clFbJ" id="1Ke2sdkjmxr" role="3cqZAp">
@@ -583,7 +583,7 @@
                         <ref role="2Gs0qQ" node="2xFKNLWBFAn" resolve="plugin" />
                       </node>
                       <node concept="37vLTw" id="1Ke2sdkj$Sy" role="3ElQJh">
-                        <ref role="3cqZAo" node="1Ke2sdkjeiX" resolve="currentDirectDependencies" />
+                        <ref role="3cqZAo" node="1Ke2sdkjeiX" resolve="directDependencies" />
                       </node>
                     </node>
                   </node>
@@ -596,7 +596,7 @@
                       <ref role="3cqZAo" node="1Ke2sdkjwXS" resolve="myDependencies" />
                     </node>
                     <node concept="37vLTw" id="1Ke2sdkkrIz" role="37wK5m">
-                      <ref role="3cqZAo" node="1Ke2sdkjeiX" resolve="currentDirectDependencies" />
+                      <ref role="3cqZAo" node="1Ke2sdkjeiX" resolve="directDependencies" />
                     </node>
                   </node>
                 </node>
@@ -605,7 +605,7 @@
                 <node concept="2OqwBi" id="1Ke2sdkjvUd" role="3fr31v">
                   <node concept="2OqwBi" id="1Ke2sdkjvUe" role="2Oq$k0">
                     <node concept="37vLTw" id="1Ke2sdkjvUf" role="2Oq$k0">
-                      <ref role="3cqZAo" node="1Ke2sdkjeiX" resolve="currentDirectDependencies" />
+                      <ref role="3cqZAo" node="1Ke2sdkjeiX" resolve="directDependencies" />
                     </node>
                     <node concept="3lbrtF" id="1Ke2sdkjvUg" role="2OqNvi" />
                   </node>
