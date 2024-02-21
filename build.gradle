@@ -1,15 +1,16 @@
 import de.itemis.mps.gradle.*
+import de.itemis.mps.gradle.downloadJBR.*
+import de.itemis.mps.gradle.tasks.*
 
 plugins {
-    id 'de.itemis.mps.gradle.common' version '1.17.+'
+    id 'de.itemis.mps.gradle.common' version '1.23.+'
+    id 'download-jbr' version '1.23.+'
     id 'base'
     id 'maven-publish'
     id 'co.riiid.gradle' version '0.4.2'
 }
 
-apply plugin: 'download-jbr'
-
-ext.jbrVers = '17.0.3-b469.32'
+ext.jbrVers = '17.0.6-b653.34'
 
 downloadJbr {
     jbrVersion = jbrVers
@@ -57,7 +58,7 @@ ext.dependencyRepositories = [
 ]
 
 // Dependency versions
-ext.mpsVersion =  '2022.3'
+ext.mpsVersion =  '2022.3.1'
 
 // Project versions
 ext.major = '2022'
@@ -231,15 +232,32 @@ task build_lint_analysis_languages(type: BuildLanguages, dependsOn: []) {
     script scriptFile("build-lint-analysis-languages.xml")
 }
 
-task build_allInOne_package(type: BuildLanguages, dependsOn: [build_allScripts]) {
+task build_sandboxes(type: BuildLanguages) {
+    dependsOn 'build_base_languages'
+    dependsOn 'build_unused_languages'
+
+    script "$buildDir/scripts/build-sandboxes.xml"
+}
+
+tasks.register('build_main_languages') {
     dependsOn 'build_base_languages'
     dependsOn 'build_testing_languages'
     dependsOn 'build_clones_languages'
     dependsOn 'build_mutant_languages'
     dependsOn 'build_unused_languages'
     dependsOn 'build_arch_languages'
-	dependsOn 'build_deprecation_analysis_languages'
-	dependsOn 'build_lint_analysis_languages'    
+    dependsOn 'build_deprecation_analysis_languages'
+    dependsOn 'build_lint_analysis_languages'
+}
+
+tasks.register('build_all_languages') {
+    dependsOn 'build_main_languages'
+
+    dependsOn 'build_sandboxes'
+}
+
+task build_allInOne_package(type: BuildLanguages, dependsOn: [build_allScripts]) {
+    dependsOn 'build_main_languages'
     script scriptFile("build-allInOne-package.xml")
 }
 
@@ -257,6 +275,19 @@ task test_clones(type: TestLanguages, dependsOn: build_clones_languages) {
 task test_lint(type: TestLanguages, dependsOn: build_lint_analysis_languages) {
     description "Will execute lint tests from command line"
     script scriptFile("build-lint-tests.xml")
+}
+
+tasks.register('check_lint', MpsCheck) {
+    dependsOn(resolveMps)
+
+    dependsOn(build_lint_analysis_languages)
+    projectLocation = file('code/languages/org.mpsqa.lint')
+    mpsHome = mpsHomeDir
+
+    folderMacros.put('mpsqa.home', rootProject.layout.projectDirectory)
+
+    pluginRoots.add(layout.dir(provider { new File(mpsHomeDir, 'plugins/mps-console') }))
+    pluginRoots.add(layout.dir(provider { new File(mpsHomeDir, 'plugins/mps-modelchecker') }))
 }
 
 check.dependsOn(tasks.withType(TestLanguages))
@@ -320,3 +351,21 @@ clean.dependsOn cleanMps
 defaultTasks 'build'
 
 task rebuild(dependsOn:[clean, build_allInOne_package])
+
+tasks.register('migrate', MpsMigrate) {
+    dependsOn(resolveMps, 'downloadJbr', 'build_all_languages')
+    javaExecutable = layout.file(
+            tasks.named('downloadJbr', DownloadJbrForPlatform).map {it.javaExecutable })
+
+    haltOnPrecheckFailure = true
+    haltOnDependencyError = true
+
+    mpsHome = mpsHomeDir
+
+    folderMacros.put('mpsqa.home', layout.projectDirectory)
+
+    projectDirectories.from({ file('code/languages').listFiles({ File file -> file.directory } as FileFilter) })
+
+    pluginRoots.from(new File(mpsHomeDir, 'plugins/mps-build'))
+    pluginRoots.from(new File(mpsHomeDir, 'plugins/mps-console'))
+}
