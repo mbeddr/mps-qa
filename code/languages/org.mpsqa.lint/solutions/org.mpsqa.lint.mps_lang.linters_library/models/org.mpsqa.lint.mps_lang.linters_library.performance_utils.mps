@@ -31,8 +31,8 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="tjjq" ref="9e98f4e2-decf-4e97-bf80-9109e8b759aa/java:jetbrains.mps.core.context(jetbrains.mps.lang.feedback.context/)" />
     <import index="ze1i" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.runtime(MPS.Core/)" />
-    <import index="pdwk" ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee/java:jetbrains.mps.core.aspects.constraints.rules.kinds(jetbrains.mps.lang.constraints.rules.runtime/)" />
     <import index="ykol" ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee/java:jetbrains.mps.smodel.constraints(jetbrains.mps.lang.constraints.rules.runtime/)" />
+    <import index="pdwk" ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee/java:jetbrains.mps.core.aspects.constraints.rules.kinds(jetbrains.mps.lang.constraints.rules.runtime/)" />
     <import index="o99v" ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee/java:jetbrains.mps.core.aspects.constraints.rules(jetbrains.mps.lang.constraints.rules.runtime/)" implicit="true" />
   </imports>
   <registry>
@@ -1711,7 +1711,7 @@
                       <node concept="2OqwBi" id="4VtLjdspAFH" role="33vP2m">
                         <node concept="2ShNRf" id="4VtLjdspz4M" role="2Oq$k0">
                           <node concept="1pGfFk" id="x5N8BMCuzX" role="2ShVmc">
-                            <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.&lt;init&gt;()" resolve="Builder" />
+                            <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.&lt;init&gt;()" resolve="ContainmentContext.Builder" />
                           </node>
                         </node>
                         <node concept="liA8E" id="4VtLjdspALu" role="2OqNvi">
@@ -1789,7 +1789,7 @@
                           <node concept="2OqwBi" id="5VJWClHvcG8" role="2Oq$k0">
                             <node concept="2ShNRf" id="5VJWClHvcG9" role="2Oq$k0">
                               <node concept="1pGfFk" id="x5N8BMCuzV" role="2ShVmc">
-                                <ref role="37wK5l" to="pdwk:~CanBeAncestorContext$Builder.&lt;init&gt;()" resolve="Builder" />
+                                <ref role="37wK5l" to="pdwk:~CanBeAncestorContext$Builder.&lt;init&gt;()" resolve="CanBeAncestorContext.Builder" />
                               </node>
                             </node>
                             <node concept="liA8E" id="5VJWClHvcGb" role="2OqNvi">
@@ -1951,3 +1951,4 @@
     <node concept="3Tm1VV" id="2xFKNLW_V2w" role="1B3o_S" />
   </node>
 </model>
+

@@ -3,6 +3,7 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.build.allScripts/org.mpsqa.build.allScripts.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.build.sandboxes/org.mpsqa.build.sandboxes.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.build/org.mpsqa.build.msd" folder="" />
     </projectModules>
   </component>

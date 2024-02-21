@@ -312,7 +312,7 @@
                               <node concept="3clFbF" id="4EqSY0I690w" role="3cqZAp">
                                 <node concept="2OqwBi" id="4EqSY0I690x" role="3clFbG">
                                   <node concept="37vLTw" id="4EqSY0I690y" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="7MpFXKo9gyy" />
+                                    <ref role="3cqZAo" node="7MpFXKo9gyy" resolve="it" />
                                   </node>
                                   <node concept="2qgKlT" id="4EqSY0I690z" role="2OqNvi">
                                     <ref role="37wK5l" to="jvez:ZOtJPkfDhS" resolve="getModules" />

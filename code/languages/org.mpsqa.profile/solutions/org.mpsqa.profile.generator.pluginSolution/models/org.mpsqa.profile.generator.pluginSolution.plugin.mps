@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:2ebc2b6d-fb12-4a7b-9d08-3ab667ed8bbb(org.mpsqa.profile.generator.pluginSolution.plugin)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="73736c50-f124-433b-b789-2828a15a0adc" name="jetbrains.mps.baseLanguage.collections.trove" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
   </languages>
   <imports>
     <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
-    <import index="ap4t" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator(MPS.Core/)" />
     <import index="yyf4" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.util(MPS.OpenAPI/)" />
     <import index="yo81" ref="r:4ea5a78b-cb8a-4831-b227-f7860a22491d(jetbrains.mps.make.resources)" />
     <import index="drpk" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.make(MPS.Platform/)" />
@@ -38,7 +38,7 @@
     <import index="g3l6" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.model(MPS.Core/)" />
     <import index="xlb7" ref="r:cf42fd0a-68d2-493b-8b77-961658617704(jetbrains.mps.lang.modelapi.behavior)" />
     <import index="dvox" ref="r:9dfd3567-3b1f-4edb-85a0-3981ca2bfd8c(jetbrains.mps.lang.modelapi.structure)" />
-    <import index="ap4u" ref="215c4c45-ba99-49f5-9ab7-4b6901a63cfd/java:jetbrains.mps.generator(MPS.Generator/)" />
+    <import index="ap4t" ref="215c4c45-ba99-49f5-9ab7-4b6901a63cfd/java:jetbrains.mps.generator(MPS.Generator/)" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
   </imports>
   <registry>
@@ -155,6 +155,9 @@
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
@@ -432,13 +435,13 @@
                                   <node concept="3cpWsn" id="1a21HWddwJe" role="3cpWs9">
                                     <property role="TrG5h" value="tmp" />
                                     <node concept="3uibUv" id="1a21HWddwJf" role="1tU5fm">
-                                      <ref role="3uigEE" to="ap4u:~TransientModelsProvider" resolve="TransientModelsProvider" />
+                                      <ref role="3uigEE" to="ap4t:~TransientModelsProvider" resolve="TransientModelsProvider" />
                                     </node>
                                     <node concept="2OqwBi" id="1a21HWddwJg" role="33vP2m">
                                       <node concept="liA8E" id="1a21HWddwJh" role="2OqNvi">
                                         <ref role="37wK5l" to="z1c4:~MPSProject.getComponent(java.lang.Class)" resolve="getComponent" />
                                         <node concept="3VsKOn" id="1a21HWddwJi" role="37wK5m">
-                                          <ref role="3VsUkX" to="ap4u:~TransientModelsProvider" resolve="TransientModelsProvider" />
+                                          <ref role="3VsUkX" to="ap4t:~TransientModelsProvider" resolve="TransientModelsProvider" />
                                         </node>
                                       </node>
                                       <node concept="2OqwBi" id="1a21HWdeKxW" role="2Oq$k0">
@@ -459,7 +462,7 @@
                                       <ref role="3cqZAo" node="1a21HWddwJe" resolve="tmp" />
                                     </node>
                                     <node concept="liA8E" id="4yfIbkeuQQs" role="2OqNvi">
-                                      <ref role="37wK5l" to="ap4u:~TransientModelsProvider.getModules()" resolve="getModules" />
+                                      <ref role="37wK5l" to="ap4t:~TransientModelsProvider.getModules()" resolve="getModules" />
                                     </node>
                                   </node>
                                   <node concept="3clFbS" id="4yfIbkeuPLq" role="2LFqv$">
@@ -540,15 +543,15 @@
                                                     <node concept="1eOMI4" id="4yfIbkeAOCq" role="2Oq$k0">
                                                       <node concept="10QFUN" id="4yfIbkeAOCr" role="1eOMHV">
                                                         <node concept="3uibUv" id="4yfIbkeAOCs" role="10QFUM">
-                                                          <ref role="3uigEE" to="ap4u:~TransientModelsModule$TransientSModelDescriptor" resolve="TransientModelsModule.TransientSModelDescriptor" />
+                                                          <ref role="3uigEE" to="ap4t:~TransientModelsModule$TransientSModelDescriptor" resolve="TransientModelsModule.TransientSModelDescriptor" />
                                                         </node>
                                                         <node concept="37vLTw" id="4yfIbkeAOCt" role="10QFUP">
-                                                          <ref role="3cqZAo" node="72Evr10hRJx" />
+                                                          <ref role="3cqZAo" node="72Evr10hRJx" resolve="it" />
                                                         </node>
                                                       </node>
                                                     </node>
                                                     <node concept="liA8E" id="4yfIbkeAOCu" role="2OqNvi">
-                                                      <ref role="37wK5l" to="ap4u:~TransientModelsModule$TransientSModelDescriptor.getBranchSerial()" resolve="getBranchSerial" />
+                                                      <ref role="37wK5l" to="ap4t:~TransientModelsModule$TransientSModelDescriptor.getBranchSerial()" resolve="getBranchSerial" />
                                                     </node>
                                                   </node>
                                                 </node>
@@ -588,12 +591,12 @@
                                           <node concept="3cpWsn" id="4yfIbke$r$2" role="3cpWs9">
                                             <property role="TrG5h" value="tsmd" />
                                             <node concept="3uibUv" id="4yfIbke$r$3" role="1tU5fm">
-                                              <ref role="3uigEE" to="ap4u:~TransientModelsModule$TransientSModelDescriptor" resolve="TransientModelsModule.TransientSModelDescriptor" />
+                                              <ref role="3uigEE" to="ap4t:~TransientModelsModule$TransientSModelDescriptor" resolve="TransientModelsModule.TransientSModelDescriptor" />
                                             </node>
                                             <node concept="1eOMI4" id="4yfIbke$srR" role="33vP2m">
                                               <node concept="10QFUN" id="4yfIbke$srO" role="1eOMHV">
                                                 <node concept="3uibUv" id="4yfIbke$srT" role="10QFUM">
-                                                  <ref role="3uigEE" to="ap4u:~TransientModelsModule$TransientSModelDescriptor" resolve="TransientModelsModule.TransientSModelDescriptor" />
+                                                  <ref role="3uigEE" to="ap4t:~TransientModelsModule$TransientSModelDescriptor" resolve="TransientModelsModule.TransientSModelDescriptor" />
                                                 </node>
                                                 <node concept="2GrUjf" id="4yfIbke$sKJ" role="10QFUP">
                                                   <ref role="2Gs0qQ" node="4yfIbkeuRbI" resolve="model" />
@@ -625,7 +628,7 @@
                                                     <ref role="3cqZAo" node="4yfIbke$r$2" resolve="tsmd" />
                                                   </node>
                                                   <node concept="liA8E" id="4yfIbke$wsH" role="2OqNvi">
-                                                    <ref role="37wK5l" to="ap4u:~TransientModelsModule$TransientSModelDescriptor.getBranchSerial()" resolve="getBranchSerial" />
+                                                    <ref role="37wK5l" to="ap4t:~TransientModelsModule$TransientSModelDescriptor.getBranchSerial()" resolve="getBranchSerial" />
                                                   </node>
                                                 </node>
                                                 <node concept="3cpWs3" id="4yfIbkev24z" role="3uHU7B">
@@ -679,14 +682,14 @@
                                           <node concept="3cpWsn" id="4yfIbkeGScc" role="3cpWs9">
                                             <property role="TrG5h" value="trace" />
                                             <node concept="3uibUv" id="4yfIbkeGRYf" role="1tU5fm">
-                                              <ref role="3uigEE" to="ap4u:~GenerationTrace" resolve="GenerationTrace" />
+                                              <ref role="3uigEE" to="ap4t:~GenerationTrace" resolve="GenerationTrace" />
                                             </node>
                                             <node concept="2OqwBi" id="4yfIbkeGScd" role="33vP2m">
                                               <node concept="2GrUjf" id="4yfIbkeGSce" role="2Oq$k0">
                                                 <ref role="2Gs0qQ" node="4yfIbkeuPLm" resolve="module" />
                                               </node>
                                               <node concept="liA8E" id="4yfIbkeGScf" role="2OqNvi">
-                                                <ref role="37wK5l" to="ap4u:~TransientModelsModule.getTrace(org.jetbrains.mps.openapi.model.SModelReference)" resolve="getTrace" />
+                                                <ref role="37wK5l" to="ap4t:~TransientModelsModule.getTrace(org.jetbrains.mps.openapi.model.SModelReference)" resolve="getTrace" />
                                                 <node concept="2OqwBi" id="4yfIbkeGScg" role="37wK5m">
                                                   <node concept="2GrUjf" id="4yfIbkeGSch" role="2Oq$k0">
                                                     <ref role="2Gs0qQ" node="4yfIbkeuRbI" resolve="model" />
@@ -717,6 +720,27 @@
                                             </node>
                                             <node concept="Xl_RD" id="4yfIbkeF9A8" role="3uHU7B">
                                               <property role="Xl_RC" value="trace " />
+                                            </node>
+                                          </node>
+                                        </node>
+                                        <node concept="2xdQw9" id="4yfIbkeJDac" role="3cqZAp">
+                                          <property role="2xdLsb" value="gZ5fh_4/error" />
+                                          <node concept="3cpWs3" id="4yfIbkeJFfq" role="9lYJi">
+                                            <node concept="Xl_RD" id="4yfIbkeJDae" role="3uHU7B">
+                                              <property role="Xl_RC" value="stps " />
+                                            </node>
+                                            <node concept="2YIFZM" id="4yfIbkeJIex" role="3uHU7w">
+                                              <ref role="37wK5l" node="4yfIbkeJ9eV" resolve="plan" />
+                                              <ref role="1Pybhc" node="4yfIbkeGBMq" resolve="GenerationTracerUtils" />
+                                              <node concept="37vLTw" id="4yfIbkeJLRx" role="37wK5m">
+                                                <ref role="3cqZAo" node="4yfIbkeJKn8" resolve="inputModel" />
+                                              </node>
+                                              <node concept="37vLTw" id="4yfIbkeJPmr" role="37wK5m">
+                                                <ref role="3cqZAo" node="4yfIbkeGUtx" resolve="repo" />
+                                              </node>
+                                              <node concept="3cmrfG" id="4yfIbkeJQub" role="37wK5m">
+                                                <property role="3cmrfH" value="1" />
+                                              </node>
                                             </node>
                                           </node>
                                         </node>
@@ -1072,7 +1096,7 @@
                   <ref role="3cqZAo" node="4yfIbkeGDyi" resolve="tr" />
                 </node>
                 <node concept="liA8E" id="4yfIbkeGEfr" role="2OqNvi">
-                  <ref role="37wK5l" to="ap4u:~GenerationTrace.walkBackward(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.generator.GenerationTrace$Visitor)" resolve="walkBackward" />
+                  <ref role="37wK5l" to="ap4t:~GenerationTrace.walkBackward(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.generator.GenerationTrace$Visitor)" resolve="walkBackward" />
                   <node concept="2GrUjf" id="4yfIbkeGEgv" role="37wK5m">
                     <ref role="2Gs0qQ" node="4yfIbkeGDMI" resolve="root" />
                   </node>
@@ -1080,7 +1104,7 @@
                     <node concept="YeOm9" id="4yfIbkeGERU" role="2ShVmc">
                       <node concept="1Y3b0j" id="4yfIbkeGERX" role="YeSDq">
                         <property role="2bfB8j" value="true" />
-                        <ref role="1Y3XeK" to="ap4u:~GenerationTrace$Visitor" resolve="GenerationTrace.Visitor" />
+                        <ref role="1Y3XeK" to="ap4t:~GenerationTrace$Visitor" resolve="GenerationTrace.Visitor" />
                         <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                         <node concept="3Tm1VV" id="4yfIbkeGERY" role="1B3o_S" />
                         <node concept="3clFb_" id="4yfIbkeGES3" role="jymVt">
@@ -1232,7 +1256,7 @@
       <node concept="37vLTG" id="4yfIbkeGDyi" role="3clF46">
         <property role="TrG5h" value="tr" />
         <node concept="3uibUv" id="4yfIbkeGDyh" role="1tU5fm">
-          <ref role="3uigEE" to="ap4u:~GenerationTrace" resolve="GenerationTrace" />
+          <ref role="3uigEE" to="ap4t:~GenerationTrace" resolve="GenerationTrace" />
         </node>
       </node>
       <node concept="37vLTG" id="4yfIbkeGDz1" role="3clF46">
@@ -1326,11 +1350,11 @@
           <node concept="3cpWsn" id="6qPDHM9$r9C" role="3cpWs9">
             <property role="TrG5h" value="gpExtractor" />
             <node concept="3uibUv" id="6qPDHM9$r9D" role="1tU5fm">
-              <ref role="3uigEE" to="ap4u:~GenPlanExtractor" resolve="GenPlanExtractor" />
+              <ref role="3uigEE" to="ap4t:~GenPlanExtractor" resolve="GenPlanExtractor" />
             </node>
             <node concept="2ShNRf" id="6qPDHM9$rrl" role="33vP2m">
               <node concept="1pGfFk" id="6qPDHM9$_QV" role="2ShVmc">
-                <ref role="37wK5l" to="ap4u:~GenPlanExtractor.&lt;init&gt;(org.jetbrains.mps.openapi.module.SRepository,jetbrains.mps.messages.IMessageHandler)" resolve="GenPlanExtractor" />
+                <ref role="37wK5l" to="ap4t:~GenPlanExtractor.&lt;init&gt;(org.jetbrains.mps.openapi.module.SRepository,jetbrains.mps.messages.IMessageHandler)" resolve="GenPlanExtractor" />
                 <node concept="37vLTw" id="6qPDHM9$B9y" role="37wK5m">
                   <ref role="3cqZAo" node="4yfIbkeJ9JO" resolve="repo" />
                 </node>
@@ -1345,14 +1369,14 @@
           <node concept="3cpWsn" id="4yfIbkeJpU5" role="3cpWs9">
             <property role="TrG5h" value="plan" />
             <node concept="3uibUv" id="4yfIbkeJpEx" role="1tU5fm">
-              <ref role="3uigEE" to="ap4u:~ModelGenerationPlan" resolve="ModelGenerationPlan" />
+              <ref role="3uigEE" to="ap4t:~ModelGenerationPlan" resolve="ModelGenerationPlan" />
             </node>
             <node concept="2OqwBi" id="4yfIbkeJpU6" role="33vP2m">
               <node concept="37vLTw" id="4yfIbkeJpU7" role="2Oq$k0">
                 <ref role="3cqZAo" node="6qPDHM9$r9C" resolve="gpExtractor" />
               </node>
               <node concept="liA8E" id="4yfIbkeJpU8" role="2OqNvi">
-                <ref role="37wK5l" to="ap4u:~GenPlanExtractor.getPlan(org.jetbrains.mps.openapi.model.SModel)" resolve="getPlan" />
+                <ref role="37wK5l" to="ap4t:~GenPlanExtractor.getPlan(org.jetbrains.mps.openapi.model.SModel)" resolve="getPlan" />
                 <node concept="37vLTw" id="4yfIbkeJpU9" role="37wK5m">
                   <ref role="3cqZAo" node="4yfIbkeJprJ" resolve="m" />
                 </node>
@@ -1367,7 +1391,7 @@
                 <ref role="3cqZAo" node="4yfIbkeJpU5" resolve="plan" />
               </node>
               <node concept="liA8E" id="4yfIbkeJ_uj" role="2OqNvi">
-                <ref role="37wK5l" to="ap4u:~ModelGenerationPlan.getSteps()" resolve="getSteps" />
+                <ref role="37wK5l" to="ap4t:~ModelGenerationPlan.getSteps()" resolve="getSteps" />
               </node>
             </node>
             <node concept="liA8E" id="4yfIbkeJ_uk" role="2OqNvi">
@@ -1381,7 +1405,7 @@
       </node>
       <node concept="3Tm1VV" id="4yfIbkeJ8XH" role="1B3o_S" />
       <node concept="3uibUv" id="4yfIbkeJ_4V" role="3clF45">
-        <ref role="3uigEE" to="ap4u:~ModelGenerationPlan$Step" resolve="ModelGenerationPlan.Step" />
+        <ref role="3uigEE" to="ap4t:~ModelGenerationPlan$Step" resolve="ModelGenerationPlan.Step" />
       </node>
       <node concept="37vLTG" id="4yfIbkeJ9JO" role="3clF46">
         <property role="TrG5h" value="repo" />

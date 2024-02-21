@@ -256,7 +256,7 @@
                         <node concept="2OqwBi" id="4rmIzFjf1gB" role="2Oq$k0">
                           <node concept="2OqwBi" id="4rmIzFjeXAB" role="2Oq$k0">
                             <node concept="37vLTw" id="4rmIzFjeXAC" role="2Oq$k0">
-                              <ref role="3cqZAo" node="1vMaDkDXck4" />
+                              <ref role="3cqZAo" node="1vMaDkDXck4" resolve="it" />
                             </node>
                             <node concept="3TrEf2" id="4rmIzFjf149" role="2OqNvi">
                               <ref role="3Tt5mk" to="tp25:1t9FffgebJ_" resolve="moduleId" />
