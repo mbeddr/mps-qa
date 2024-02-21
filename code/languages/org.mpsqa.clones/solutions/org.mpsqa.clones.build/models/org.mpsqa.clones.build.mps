@@ -144,23 +144,6 @@
     </node>
     <node concept="398rNT" id="1GhTetdB0o4" role="1l3spd">
       <property role="TrG5h" value="mps.home" />
-      <node concept="55IIr" id="1GhTetdB0o5" role="398pKh">
-        <node concept="2Ry0Ak" id="1GhTetdB0o6" role="iGT6I">
-          <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="1GhTetdB0o7" role="2Ry0An">
-            <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="1GhTetdB0o8" role="2Ry0An">
-              <property role="2Ry0Am" value=".." />
-              <node concept="2Ry0Ak" id="1GhTetdB0o9" role="2Ry0An">
-                <property role="2Ry0Am" value=".." />
-                <node concept="2Ry0Ak" id="52XWqlKvtCw" role="2Ry0An">
-                  <property role="2Ry0Am" value="MPS_2019_3" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="398rNT" id="1GhTetdB0oc" role="1l3spd">
       <property role="TrG5h" value="mpsqa.clones.home" />

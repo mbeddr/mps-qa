@@ -5,7 +5,7 @@
   <languages>
     <use id="40ab19e9-751a-4433-b645-0e65160e58a0" name="org.mpsqa.lint.generic" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
@@ -95,6 +95,7 @@
       <concept id="2555875871751904530" name="org.mpsqa.lint.generic.structure.CheckingFunction" flags="ig" index="1MIXq2" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
@@ -267,7 +268,7 @@
                       <node concept="3clFbF" id="4lfwJVE_54H" role="3cqZAp">
                         <node concept="2OqwBi" id="4lfwJVE_54I" role="3clFbG">
                           <node concept="37vLTw" id="4lfwJVE_54J" role="2Oq$k0">
-                            <ref role="3cqZAo" node="4lfwJVE_54L" resolve="it" />
+                            <ref role="3cqZAo" node="1vMaDkE80pz" resolve="it" />
                           </node>
                           <node concept="3TrEf2" id="4lfwJVE_54K" role="2OqNvi">
                             <ref role="3Tt5mk" to="a1af:3ibIDIklSMM" resolve="script" />
@@ -275,9 +276,9 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="Rh6nW" id="4lfwJVE_54L" role="1bW2Oz">
+                    <node concept="gl6BB" id="1vMaDkE80pz" role="1bW2Oz">
                       <property role="TrG5h" value="it" />
-                      <node concept="2jxLKc" id="4lfwJVE_54M" role="1tU5fm" />
+                      <node concept="2jxLKc" id="1vMaDkE80p$" role="1tU5fm" />
                     </node>
                   </node>
                 </node>

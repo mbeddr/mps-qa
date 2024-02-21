@@ -26,7 +26,7 @@
   <path id="path.mps.ant.path">
     <pathelement location="${artifacts.mps}/lib/ant/lib/ant-mps.jar" />
     <fileset dir="${artifacts.mps}/lib">
-      <include name="util.jar" />
+      <include name="util-8.jar" />
     </fileset>
   </path>
   
@@ -50,7 +50,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.org.mpsqa.build.allScripts, java.compile.org.mpsqa.build, java.compile.org.mpsqa.build.sandboxes, java.compile.org.mpsqa.clones.build, java.compile.org.mpsqa.lint.build, java.compile.org.mpsqa.testing.tests.build" />
+  <target name="compileJava" depends="java.compile.org.mpsqa.build.allScripts, java.compile.org.mpsqa.build, java.compile.org.mpsqa.build.sandboxes, java.compile.org.mpsqa.clones.build, java.compile.org.mpsqa.lint.build" />
   
   <target name="processResources" />
   
@@ -137,6 +137,7 @@
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.dataFlow.runtime.jar" />
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.findUsages.runtime.jar" />
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.behavior.api.jar" />
+      <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.constraints.rules.runtime.jar" />
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.feedback.context.jar" />
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.feedback.problem.legacy-constraints.jar" />
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.feedback.problem.rt.jar" />
@@ -246,21 +247,6 @@
     </javac>
     <copy todir="${build.tmp}/java/out/org.mpsqa.lint.build">
       <fileset dir="${basedir}/code/languages/org.mpsqa.lint/solutions/org.mpsqa.lint.build/source_gen" excludes="**/*.java" />
-    </copy>
-  </target>
-  
-  <target name="java.compile.org.mpsqa.testing.tests.build" depends="java.compile.org.mpsqa.build">
-    <mkdir dir="${basedir}/code/languages/org.mpsqa.testing/solutions/org.mpsqa.testing.tests.build/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/org.mpsqa.testing.tests.build" />
-    <javac destdir="${build.tmp}/java/out/org.mpsqa.testing.tests.build" fork="false" encoding="utf8" includeantruntime="false" debug="true">
-      <compilerarg value="-Xlint:none" />
-      <src>
-        <path location="${basedir}/code/languages/org.mpsqa.testing/solutions/org.mpsqa.testing.tests.build/source_gen" />
-      </src>
-      <classpath path="${build.tmp}/java/out/org.mpsqa.build" />
-    </javac>
-    <copy todir="${build.tmp}/java/out/org.mpsqa.testing.tests.build">
-      <fileset dir="${basedir}/code/languages/org.mpsqa.testing/solutions/org.mpsqa.testing.tests.build/source_gen" excludes="**/*.java" />
     </copy>
   </target>
   

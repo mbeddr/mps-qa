@@ -900,12 +900,17 @@
                                   <node concept="Xl_RD" id="6wZqgFKVtmO" role="37wK5m">
                                     <property role="Xl_RC" value="" />
                                   </node>
-                                  <node concept="2OqwBi" id="6wZqgFKVtmP" role="37wK5m">
-                                    <node concept="37vLTw" id="6wZqgFKVtmY" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="6wZqgFKVtlS" resolve="action" />
+                                  <node concept="2OqwBi" id="2wDnBzAzDA8" role="37wK5m">
+                                    <node concept="2OqwBi" id="6wZqgFKVtmP" role="2Oq$k0">
+                                      <node concept="37vLTw" id="6wZqgFKVtmY" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="6wZqgFKVtlS" resolve="action" />
+                                      </node>
+                                      <node concept="liA8E" id="6wZqgFKVtmZ" role="2OqNvi">
+                                        <ref role="37wK5l" to="qkt:~AnAction.getTemplatePresentation()" resolve="getTemplatePresentation" />
+                                      </node>
                                     </node>
-                                    <node concept="liA8E" id="6wZqgFKVtmZ" role="2OqNvi">
-                                      <ref role="37wK5l" to="qkt:~AnAction.getTemplatePresentation()" resolve="getTemplatePresentation" />
+                                    <node concept="liA8E" id="2wDnBzAzFNZ" role="2OqNvi">
+                                      <ref role="37wK5l" to="qkt:~Presentation.clone()" resolve="clone" />
                                     </node>
                                   </node>
                                   <node concept="2YIFZM" id="6wZqgFKVtmQ" role="37wK5m">

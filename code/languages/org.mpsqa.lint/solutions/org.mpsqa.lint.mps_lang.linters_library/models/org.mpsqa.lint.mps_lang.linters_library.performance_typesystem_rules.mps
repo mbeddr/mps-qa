@@ -501,7 +501,7 @@
                             <ref role="3cqZAo" node="7E22LggeI20" resolve="myLanguage" />
                           </node>
                           <node concept="liA8E" id="7E22LggeKxs" role="2OqNvi">
-                            <ref role="37wK5l" to="j8aq:~ReloadableModule.getClassLoader0()" resolve="getClassLoader0" />
+                            <ref role="37wK5l" to="j8aq:~ReloadableModule.getClassLoader()" resolve="getClassLoader" />
                           </node>
                         </node>
                       </node>
