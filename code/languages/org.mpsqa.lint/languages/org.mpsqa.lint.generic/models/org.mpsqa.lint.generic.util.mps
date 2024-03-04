@@ -397,7 +397,9 @@
                                       </node>
                                       <node concept="2r$n1x" id="3ghOW5HShAh" role="2r_Bvh">
                                         <ref role="2r$qp6" node="3ghOW5HS78o" resolve="node" />
-                                        <node concept="10Nm6u" id="3ghOW5HShRt" role="2r_lH1" />
+                                        <node concept="37vLTw" id="pZynZgZMd2" role="2r_lH1">
+                                          <ref role="3cqZAo" node="y1G8y6ad_X" resolve="script" />
+                                        </node>
                                       </node>
                                       <node concept="2r$n1x" id="3ghOW5H_V8n" role="2r_Bvh">
                                         <ref role="2r$qp6" node="3ghOW5H_ihW" resolve="location" />
@@ -445,28 +447,6 @@
                                   <node concept="37vLTw" id="4qEpl_D951o" role="37wK5m">
                                     <ref role="3cqZAo" node="38klfj4Had0" resolve="defaultNodeToReportErrors" />
                                   </node>
-                                </node>
-                              </node>
-                            </node>
-                            <node concept="3clFbF" id="4qEpl_D8PPD" role="3cqZAp">
-                              <node concept="37vLTI" id="4qEpl_D8PPF" role="3clFbG">
-                                <node concept="1rXfSq" id="4aEqBbbDeCq" role="37vLTx">
-                                  <ref role="37wK5l" node="2dSiT1hQole" resolve="doCheck" />
-                                  <node concept="37vLTw" id="4aEqBbbDeCr" role="37wK5m">
-                                    <ref role="3cqZAo" node="y1G8y6ad_X" resolve="script" />
-                                  </node>
-                                  <node concept="37vLTw" id="pFzydTCmkv" role="37wK5m">
-                                    <ref role="3cqZAo" node="pFzydTClZI" resolve="scriptParameterValues" />
-                                  </node>
-                                  <node concept="37vLTw" id="4aEqBbbDeCs" role="37wK5m">
-                                    <ref role="3cqZAo" node="6gY6GEDtKzD" resolve="proj" />
-                                  </node>
-                                  <node concept="37vLTw" id="38klfj4HaIA" role="37wK5m">
-                                    <ref role="3cqZAo" node="38klfj4Had0" resolve="defaultNodeToReportErrors" />
-                                  </node>
-                                </node>
-                                <node concept="37vLTw" id="4qEpl_D8PPJ" role="37vLTJ">
-                                  <ref role="3cqZAo" node="4aEqBbbDeCp" resolve="doCheck" />
                                 </node>
                               </node>
                             </node>
