@@ -74,6 +74,9 @@
       <concept id="5253498789149585690" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyOnModule" flags="ng" index="3bR9La">
         <reference id="5253498789149547705" name="module" index="3bR37D" />
       </concept>
+      <concept id="763829979718664966" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleResources" flags="ng" index="3rtmxn">
+        <child id="763829979718664967" name="files" index="3rtmxm" />
+      </concept>
       <concept id="4278635856200817744" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleModelRoot" flags="ng" index="1BupzO">
         <property id="8137134783396907368" name="convert2binary" index="1Hdu6h" />
         <property id="8137134783396676838" name="extracted" index="1HemKv" />
@@ -188,6 +191,30 @@
           </node>
         </node>
       </node>
+      <node concept="3rtmxn" id="46QW9mm7Jaw" role="3bR31x">
+        <node concept="3LXTmp" id="46QW9mm7Jax" role="3rtmxm">
+          <node concept="3qWCbU" id="46QW9mm7Jay" role="3LXTna">
+            <property role="3qWCbO" value="icons/**, resources/**" />
+          </node>
+          <node concept="55IIr" id="46QW9mm7Jaz" role="3LXTmr">
+            <node concept="2Ry0Ak" id="46QW9mm7Ja$" role="iGT6I">
+              <property role="2Ry0Am" value="code" />
+              <node concept="2Ry0Ak" id="46QW9mm7Ja_" role="2Ry0An">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="46QW9mm7JaA" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.build" />
+                  <node concept="2Ry0Ak" id="46QW9mm7JaB" role="2Ry0An">
+                    <property role="2Ry0Am" value="solutions" />
+                    <node concept="2Ry0Ak" id="46QW9mm7JaC" role="2Ry0An">
+                      <property role="2Ry0Am" value="org.mpsqa.build.allScripts" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1E1JtA" id="5Xjjs0Nf2r4" role="3989C9">
       <property role="TrG5h" value="org.mpsqa.build" />
@@ -241,6 +268,30 @@
                   <property role="2Ry0Am" value="org.mpsqa.build" />
                   <node concept="2Ry0Ak" id="2WwuhUZ0AUw" role="2Ry0An">
                     <property role="2Ry0Am" value="org.mpsqa.build.msd" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3rtmxn" id="46QW9mm7JaE" role="3bR31x">
+        <node concept="3LXTmp" id="46QW9mm7JaF" role="3rtmxm">
+          <node concept="3qWCbU" id="46QW9mm7JaG" role="3LXTna">
+            <property role="3qWCbO" value="icons/**, resources/**" />
+          </node>
+          <node concept="55IIr" id="46QW9mm7JaH" role="3LXTmr">
+            <node concept="2Ry0Ak" id="46QW9mm7JaI" role="iGT6I">
+              <property role="2Ry0Am" value="code" />
+              <node concept="2Ry0Ak" id="46QW9mm7JaJ" role="2Ry0An">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="46QW9mm7JaK" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.build" />
+                  <node concept="2Ry0Ak" id="46QW9mm7JaL" role="2Ry0An">
+                    <property role="2Ry0Am" value="solutions" />
+                    <node concept="2Ry0Ak" id="46QW9mm7JaM" role="2Ry0An">
+                      <property role="2Ry0Am" value="org.mpsqa.build" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -316,6 +367,30 @@
           </node>
         </node>
       </node>
+      <node concept="3rtmxn" id="46QW9mm7JaO" role="3bR31x">
+        <node concept="3LXTmp" id="46QW9mm7JaP" role="3rtmxm">
+          <node concept="3qWCbU" id="46QW9mm7JaQ" role="3LXTna">
+            <property role="3qWCbO" value="icons/**, resources/**" />
+          </node>
+          <node concept="55IIr" id="46QW9mm7JaR" role="3LXTmr">
+            <node concept="2Ry0Ak" id="46QW9mm7JaS" role="iGT6I">
+              <property role="2Ry0Am" value="code" />
+              <node concept="2Ry0Ak" id="46QW9mm7JaT" role="2Ry0An">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="46QW9mm7JaU" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.build" />
+                  <node concept="2Ry0Ak" id="46QW9mm7JaV" role="2Ry0An">
+                    <property role="2Ry0Am" value="solutions" />
+                    <node concept="2Ry0Ak" id="46QW9mm7JaW" role="2Ry0An">
+                      <property role="2Ry0Am" value="org.mpsqa.build.sandboxes" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1E1JtA" id="2WwuhUZ0zPP" role="3989C9">
       <property role="BnDLt" value="true" />
@@ -378,6 +453,30 @@
           </node>
           <node concept="3qWCbU" id="2WwuhUZ0AW$" role="3LXTna">
             <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+          </node>
+        </node>
+      </node>
+      <node concept="3rtmxn" id="46QW9mm7JaY" role="3bR31x">
+        <node concept="3LXTmp" id="46QW9mm7JaZ" role="3rtmxm">
+          <node concept="3qWCbU" id="46QW9mm7Jb0" role="3LXTna">
+            <property role="3qWCbO" value="icons/**, resources/**" />
+          </node>
+          <node concept="55IIr" id="46QW9mm7Jb1" role="3LXTmr">
+            <node concept="2Ry0Ak" id="46QW9mm7Jb2" role="iGT6I">
+              <property role="2Ry0Am" value="code" />
+              <node concept="2Ry0Ak" id="46QW9mm7Jb3" role="2Ry0An">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="46QW9mm7Jb4" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.clones" />
+                  <node concept="2Ry0Ak" id="46QW9mm7Jb5" role="2Ry0An">
+                    <property role="2Ry0Am" value="solutions" />
+                    <node concept="2Ry0Ak" id="46QW9mm7Jb6" role="2Ry0An">
+                      <property role="2Ry0Am" value="org.mpsqa.clones.build" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -446,6 +545,30 @@
           </node>
         </node>
       </node>
+      <node concept="3rtmxn" id="46QW9mm7Jb8" role="3bR31x">
+        <node concept="3LXTmp" id="46QW9mm7Jb9" role="3rtmxm">
+          <node concept="3qWCbU" id="46QW9mm7Jba" role="3LXTna">
+            <property role="3qWCbO" value="icons/**, resources/**" />
+          </node>
+          <node concept="55IIr" id="46QW9mm7Jbb" role="3LXTmr">
+            <node concept="2Ry0Ak" id="46QW9mm7Jbc" role="iGT6I">
+              <property role="2Ry0Am" value="code" />
+              <node concept="2Ry0Ak" id="46QW9mm7Jbd" role="2Ry0An">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="46QW9mm7Jbe" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.lint" />
+                  <node concept="2Ry0Ak" id="46QW9mm7Jbf" role="2Ry0An">
+                    <property role="2Ry0Am" value="solutions" />
+                    <node concept="2Ry0Ak" id="46QW9mm7Jbg" role="2Ry0An">
+                      <property role="2Ry0Am" value="org.mpsqa.lint.build" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1E1JtA" id="2WwuhUZ0zTl" role="3989C9">
       <property role="BnDLt" value="true" />
@@ -508,6 +631,30 @@
           </node>
           <node concept="3qWCbU" id="2WwuhUZ0AWH" role="3LXTna">
             <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+          </node>
+        </node>
+      </node>
+      <node concept="3rtmxn" id="46QW9mm7Jbi" role="3bR31x">
+        <node concept="3LXTmp" id="46QW9mm7Jbj" role="3rtmxm">
+          <node concept="3qWCbU" id="46QW9mm7Jbk" role="3LXTna">
+            <property role="3qWCbO" value="icons/**, resources/**" />
+          </node>
+          <node concept="55IIr" id="46QW9mm7Jbl" role="3LXTmr">
+            <node concept="2Ry0Ak" id="46QW9mm7Jbm" role="iGT6I">
+              <property role="2Ry0Am" value="code" />
+              <node concept="2Ry0Ak" id="46QW9mm7Jbn" role="2Ry0An">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="46QW9mm7Jbo" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.testing" />
+                  <node concept="2Ry0Ak" id="46QW9mm7Jbp" role="2Ry0An">
+                    <property role="2Ry0Am" value="solutions" />
+                    <node concept="2Ry0Ak" id="46QW9mm7Jbq" role="2Ry0An">
+                      <property role="2Ry0Am" value="org.mpsqa.testing.tests.build" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>

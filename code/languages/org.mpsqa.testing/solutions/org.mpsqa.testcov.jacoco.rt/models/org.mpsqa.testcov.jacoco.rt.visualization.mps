@@ -196,12 +196,8 @@
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
       <concept id="1082113931046" name="jetbrains.mps.baseLanguage.structure.ContinueStatement" flags="nn" index="3N13vt" />
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="8356039341262087992" name="line" index="1aUNEU" />
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -1126,8 +1122,58 @@
         </node>
         <node concept="3clFbH" id="16s82eE_RK6" role="3cqZAp" />
         <node concept="3SKdUt" id="16s82eE_VfO" role="3cqZAp">
-          <node concept="3SKdUq" id="16s82eE_VfQ" role="3SKWNk">
-            <property role="3SKdUp" value="we need this in order to speed-up the sorting of nodes - original implementation uses Bubble-Sort !!!" />
+          <node concept="1PaTwC" id="46QW9mm7J2k" role="1aUNEU">
+            <node concept="3oM_SD" id="46QW9mm7J2l" role="1PaTwD">
+              <property role="3oM_SC" value="we" />
+            </node>
+            <node concept="3oM_SD" id="46QW9mm7J2m" role="1PaTwD">
+              <property role="3oM_SC" value="need" />
+            </node>
+            <node concept="3oM_SD" id="46QW9mm7J2n" role="1PaTwD">
+              <property role="3oM_SC" value="this" />
+            </node>
+            <node concept="3oM_SD" id="46QW9mm7J2o" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="46QW9mm7J2p" role="1PaTwD">
+              <property role="3oM_SC" value="order" />
+            </node>
+            <node concept="3oM_SD" id="46QW9mm7J2q" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="46QW9mm7J2r" role="1PaTwD">
+              <property role="3oM_SC" value="speed-up" />
+            </node>
+            <node concept="3oM_SD" id="46QW9mm7J2s" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="46QW9mm7J2t" role="1PaTwD">
+              <property role="3oM_SC" value="sorting" />
+            </node>
+            <node concept="3oM_SD" id="46QW9mm7J2u" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="46QW9mm7J2v" role="1PaTwD">
+              <property role="3oM_SC" value="nodes" />
+            </node>
+            <node concept="3oM_SD" id="46QW9mm7J2w" role="1PaTwD">
+              <property role="3oM_SC" value="-" />
+            </node>
+            <node concept="3oM_SD" id="46QW9mm7J2x" role="1PaTwD">
+              <property role="3oM_SC" value="original" />
+            </node>
+            <node concept="3oM_SD" id="46QW9mm7J2y" role="1PaTwD">
+              <property role="3oM_SC" value="implementation" />
+            </node>
+            <node concept="3oM_SD" id="46QW9mm7J2z" role="1PaTwD">
+              <property role="3oM_SC" value="uses" />
+            </node>
+            <node concept="3oM_SD" id="46QW9mm7J2$" role="1PaTwD">
+              <property role="3oM_SC" value="Bubble-Sort" />
+            </node>
+            <node concept="3oM_SD" id="46QW9mm7J2_" role="1PaTwD">
+              <property role="3oM_SC" value="!!!" />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="16s82eEzoXq" role="3cqZAp">

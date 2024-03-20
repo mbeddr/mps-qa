@@ -229,7 +229,7 @@
           <node concept="2OqwBi" id="1GhTetdTTi$" role="ukAjM">
             <node concept="1jxXqW" id="1GhTetdTTi_" role="2Oq$k0" />
             <node concept="liA8E" id="1GhTetdTTiA" role="2OqNvi">
-              <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+              <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
             </node>
           </node>
         </node>
@@ -307,7 +307,7 @@
           <node concept="2OqwBi" id="1GhTetdTWCr" role="ukAjM">
             <node concept="1jxXqW" id="1GhTetdTWu0" role="2Oq$k0" />
             <node concept="liA8E" id="1GhTetdTXCQ" role="2OqNvi">
-              <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+              <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
             </node>
           </node>
         </node>
@@ -385,7 +385,7 @@
                           <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                         </node>
                         <node concept="liA8E" id="4elAKXiqGTF" role="2OqNvi">
-                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                           <node concept="Xl_RD" id="4elAKXiqGTG" role="37wK5m">
                             <property role="Xl_RC" value="something_1" />
                           </node>
@@ -409,7 +409,7 @@
                       <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                     </node>
                     <node concept="liA8E" id="E3aAvrCmH2" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                       <node concept="Xl_RD" id="E3aAvrCmH3" role="37wK5m">
                         <property role="Xl_RC" value="something else_1" />
                       </node>
@@ -423,7 +423,7 @@
                       <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                     </node>
                     <node concept="liA8E" id="E3aAvrEm4j" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                       <node concept="Xl_RD" id="E3aAvrEm4k" role="37wK5m">
                         <property role="Xl_RC" value="something else else_1" />
                       </node>
@@ -456,7 +456,7 @@
                           <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                         </node>
                         <node concept="liA8E" id="E3aAvrCrVM" role="2OqNvi">
-                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                           <node concept="Xl_RD" id="E3aAvrCrVN" role="37wK5m">
                             <property role="Xl_RC" value="something_2" />
                           </node>
@@ -480,7 +480,7 @@
                       <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                     </node>
                     <node concept="liA8E" id="4elAKXiqfBV" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                       <node concept="Xl_RD" id="4elAKXiqfBW" role="37wK5m">
                         <property role="Xl_RC" value="something else_2" />
                       </node>
@@ -494,7 +494,7 @@
                       <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                     </node>
                     <node concept="liA8E" id="4elAKXiqfC0" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                       <node concept="Xl_RD" id="4elAKXiqfC1" role="37wK5m">
                         <property role="Xl_RC" value="something else else_2" />
                       </node>

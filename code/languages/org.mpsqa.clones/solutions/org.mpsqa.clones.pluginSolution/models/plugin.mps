@@ -269,7 +269,7 @@
   <node concept="sEfby" id="7WP_sw5r_62">
     <property role="TrG5h" value="ClonesOverviewViewer" />
     <property role="2XNbzY" value="Clones Overview Viewer" />
-    <property role="2bmUCM" value="RIGHT" />
+    <property role="2bmUCM" value="2aGS$UDXOxV/RIGHT" />
     <node concept="2XrIbr" id="7WP_sw5x34O" role="2XNbBy">
       <property role="TrG5h" value="setClones" />
       <node concept="3cqZAl" id="7WP_sw5x3lA" role="3clF45" />
@@ -354,7 +354,7 @@
                 <ref role="37wK5l" to="kyr3:7WP_sw5s1HY" resolve="ClonesOverviewPanel" />
                 <node concept="2YIFZM" id="7WP_sw5wZ4d" role="37wK5m">
                   <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
-                  <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProject(com.intellij.openapi.project.Project):jetbrains.mps.project.MPSProject" resolve="fromIdeaProject" />
+                  <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProject(com.intellij.openapi.project.Project)" resolve="fromIdeaProject" />
                   <node concept="2xqhHp" id="7WP_sw5x2tS" role="37wK5m" />
                 </node>
               </node>
@@ -397,7 +397,7 @@
             </node>
             <node concept="2YIFZM" id="7WP_sw5xgmj" role="33vP2m">
               <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
-              <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProject(com.intellij.openapi.project.Project):jetbrains.mps.project.MPSProject" resolve="fromIdeaProject" />
+              <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProject(com.intellij.openapi.project.Project)" resolve="fromIdeaProject" />
               <node concept="2OqwBi" id="7WP_sw5xgmk" role="37wK5m">
                 <node concept="2WthIp" id="7WP_sw5xgml" role="2Oq$k0" />
                 <node concept="1DTwFV" id="7WP_sw5xgmm" role="2OqNvi">
@@ -410,7 +410,7 @@
         <node concept="3clFbJ" id="1oYl8FfqyLH" role="3cqZAp">
           <node concept="3clFbS" id="1oYl8FfqyLI" role="3clFbx">
             <node concept="2xdQw9" id="1oYl8FfqyLJ" role="3cqZAp">
-              <property role="2xdLsb" value="error" />
+              <property role="2xdLsb" value="gZ5fh_4/error" />
               <node concept="Xl_RD" id="1oYl8FfqyLK" role="9lYJi">
                 <property role="Xl_RC" value="could not get the MPSProject object" />
               </node>
@@ -504,7 +504,7 @@
             </node>
             <node concept="2YIFZM" id="7WP_sw5_SsD" role="33vP2m">
               <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
-              <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProject(com.intellij.openapi.project.Project):jetbrains.mps.project.MPSProject" resolve="fromIdeaProject" />
+              <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProject(com.intellij.openapi.project.Project)" resolve="fromIdeaProject" />
               <node concept="2OqwBi" id="7WP_sw5_SsE" role="37wK5m">
                 <node concept="2WthIp" id="7WP_sw5_SsF" role="2Oq$k0" />
                 <node concept="1DTwFV" id="7WP_sw5_SsG" role="2OqNvi">
@@ -517,7 +517,7 @@
         <node concept="3clFbJ" id="1oYl8Ffqp1d" role="3cqZAp">
           <node concept="3clFbS" id="1oYl8Ffqp1f" role="3clFbx">
             <node concept="2xdQw9" id="1oYl8FfqycI" role="3cqZAp">
-              <property role="2xdLsb" value="error" />
+              <property role="2xdLsb" value="gZ5fh_4/error" />
               <node concept="Xl_RD" id="1oYl8FfqycK" role="9lYJi">
                 <property role="Xl_RC" value="could not get the MPSProject object" />
               </node>
@@ -549,7 +549,6 @@
   <node concept="sEfby" id="E3aAvrKKGx">
     <property role="TrG5h" value="ClonesDetailsViewer" />
     <property role="2XNbzY" value="Clone Details Viewer" />
-    <property role="2bmUCM" value="BOTTOM" />
     <node concept="2XrIbr" id="E3aAvrKKGy" role="2XNbBy">
       <property role="TrG5h" value="setClones" />
       <node concept="3cqZAl" id="E3aAvrKKGz" role="3clF45" />
@@ -611,7 +610,7 @@
                 <ref role="37wK5l" to="kyr3:E3aAvrKgH_" resolve="ClonesDetailsPanel" />
                 <node concept="2YIFZM" id="E3aAvrKKH0" role="37wK5m">
                   <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
-                  <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProject(com.intellij.openapi.project.Project):jetbrains.mps.project.MPSProject" resolve="fromIdeaProject" />
+                  <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProject(com.intellij.openapi.project.Project)" resolve="fromIdeaProject" />
                   <node concept="2xqhHp" id="E3aAvrKKH1" role="37wK5m" />
                 </node>
               </node>
@@ -671,7 +670,7 @@
               <ref role="3cqZAo" node="E3aAvrKTm4" resolve="cdv" />
             </node>
             <node concept="liA8E" id="E3aAvrNCif" role="2OqNvi">
-              <ref role="37wK5l" to="71xd:~BaseTool.openToolLater(boolean):void" resolve="openToolLater" />
+              <ref role="37wK5l" to="71xd:~BaseTool.openToolLater(boolean)" resolve="openToolLater" />
               <node concept="3clFbT" id="E3aAvrNCoe" role="37wK5m">
                 <property role="3clFbU" value="true" />
               </node>
@@ -699,7 +698,6 @@
   <node concept="sEfby" id="5Dw7oA60$CB">
     <property role="TrG5h" value="ClonesTreemapViewer" />
     <property role="2XNbzY" value="Clone Treemap Viewer" />
-    <property role="2bmUCM" value="BOTTOM" />
     <node concept="2XrIbr" id="5Dw7oA60$CC" role="2XNbBy">
       <property role="TrG5h" value="setClones" />
       <node concept="3cqZAl" id="5Dw7oA60$CD" role="3clF45" />
@@ -773,7 +771,7 @@
               <ref role="3cqZAo" node="4elAKXis8gO" resolve="scrollPane" />
             </node>
             <node concept="liA8E" id="4elAKXis9tL" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~JScrollPane.setHorizontalScrollBarPolicy(int):void" resolve="setHorizontalScrollBarPolicy" />
+              <ref role="37wK5l" to="dxuu:~JScrollPane.setHorizontalScrollBarPolicy(int)" resolve="setHorizontalScrollBarPolicy" />
               <node concept="10M0yZ" id="4elAKXis9tM" role="37wK5m">
                 <ref role="1PxDUh" to="dxuu:~JScrollPane" resolve="JScrollPane" />
                 <ref role="3cqZAo" to="dxuu:~ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED" resolve="HORIZONTAL_SCROLLBAR_AS_NEEDED" />
@@ -787,7 +785,7 @@
               <ref role="3cqZAo" node="4elAKXis8gO" resolve="scrollPane" />
             </node>
             <node concept="liA8E" id="4elAKXisadF" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~JScrollPane.setVerticalScrollBarPolicy(int):void" resolve="setVerticalScrollBarPolicy" />
+              <ref role="37wK5l" to="dxuu:~JScrollPane.setVerticalScrollBarPolicy(int)" resolve="setVerticalScrollBarPolicy" />
               <node concept="10M0yZ" id="4elAKXisMhS" role="37wK5m">
                 <ref role="3cqZAo" to="dxuu:~ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS" resolve="VERTICAL_SCROLLBAR_ALWAYS" />
                 <ref role="1PxDUh" to="dxuu:~JScrollPane" resolve="JScrollPane" />
@@ -801,7 +799,7 @@
               <ref role="3cqZAo" node="4elAKXis8gO" resolve="scrollPane" />
             </node>
             <node concept="liA8E" id="4elAKXis9JU" role="2OqNvi">
-              <ref role="37wK5l" to="z60i:~Component.setBounds(int,int,int,int):void" resolve="setBounds" />
+              <ref role="37wK5l" to="z60i:~Component.setBounds(int,int,int,int)" resolve="setBounds" />
               <node concept="3cmrfG" id="4elAKXis9JV" role="37wK5m">
                 <property role="3cmrfH" value="50" />
               </node>
@@ -833,7 +831,7 @@
                 <ref role="37wK5l" to="8tkk:5Dw7oA61kp6" resolve="ClonesTreemapPanel" />
                 <node concept="2YIFZM" id="5Dw7oA60$D5" role="37wK5m">
                   <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
-                  <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProject(com.intellij.openapi.project.Project):jetbrains.mps.project.MPSProject" resolve="fromIdeaProject" />
+                  <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProject(com.intellij.openapi.project.Project)" resolve="fromIdeaProject" />
                   <node concept="2xqhHp" id="5Dw7oA60$D6" role="37wK5m" />
                 </node>
               </node>
@@ -980,7 +978,7 @@
       <property role="TrG5h" value="runClonesDetector" />
       <node concept="3clFbS" id="1oYl8Ffq4td" role="3clF47">
         <node concept="RRSsy" id="wcbKZJ4C3R" role="3cqZAp">
-          <property role="RRSoG" value="info" />
+          <property role="RRSoG" value="h1akgim/info" />
           <node concept="3cpWs3" id="wcbKZJ4CAL" role="RRSoy">
             <node concept="37vLTw" id="wcbKZJ4CLW" role="3uHU7w">
               <ref role="3cqZAo" node="1oYl8Ffq4i$" resolve="lastSettings" />
@@ -1001,7 +999,7 @@
                 <ref role="3cqZAo" node="1oYl8Ffq5$W" resolve="project" />
               </node>
               <node concept="liA8E" id="1oYl8FfqV46" role="2OqNvi">
-                <ref role="37wK5l" to="z1c4:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                <ref role="37wK5l" to="z1c4:~Project.getRepository()" resolve="getRepository" />
               </node>
             </node>
           </node>
@@ -1162,7 +1160,7 @@
               <ref role="3cqZAo" node="6dWFC76UvXw" resolve="pma" />
             </node>
             <node concept="liA8E" id="7vLq_hssg$B" role="2OqNvi">
-              <ref role="37wK5l" to="mk90:~ProgressMonitorBase.done():void" resolve="done" />
+              <ref role="37wK5l" to="mk90:~ProgressMonitorBase.done()" resolve="done" />
             </node>
           </node>
         </node>
@@ -1209,7 +1207,7 @@
                   <ref role="3cqZAo" node="1oYl8FfqRO8" resolve="cv" />
                 </node>
                 <node concept="liA8E" id="7WP_sw5xmV7" role="2OqNvi">
-                  <ref role="37wK5l" to="71xd:~BaseTool.openToolLater(boolean):void" resolve="openToolLater" />
+                  <ref role="37wK5l" to="71xd:~BaseTool.openToolLater(boolean)" resolve="openToolLater" />
                   <node concept="3clFbT" id="7WP_sw5xmYE" role="37wK5m">
                     <property role="3clFbU" value="true" />
                   </node>
@@ -1335,7 +1333,7 @@
                       <ref role="3cqZAo" node="6dWFC76Wp_w" resolve="mpsProject" />
                     </node>
                     <node concept="liA8E" id="6dWFC76Wp6U" role="2OqNvi">
-                      <ref role="37wK5l" to="z1c3:~MPSProject.getProject():com.intellij.openapi.project.Project" resolve="getProject" />
+                      <ref role="37wK5l" to="z1c3:~MPSProject.getProject()" resolve="getProject" />
                     </node>
                   </node>
                   <node concept="Xl_RD" id="6dWFC76Wp6V" role="37wK5m">
@@ -1353,10 +1351,10 @@
           <node concept="2OqwBi" id="6dWFC76Wp6Y" role="3clFbG">
             <node concept="2YIFZM" id="6dWFC76Wp6Z" role="2Oq$k0">
               <ref role="1Pybhc" to="xygl:~ProgressManager" resolve="ProgressManager" />
-              <ref role="37wK5l" to="xygl:~ProgressManager.getInstance():com.intellij.openapi.progress.ProgressManager" resolve="getInstance" />
+              <ref role="37wK5l" to="xygl:~ProgressManager.getInstance()" resolve="getInstance" />
             </node>
             <node concept="liA8E" id="6dWFC76Wp70" role="2OqNvi">
-              <ref role="37wK5l" to="xygl:~ProgressManager.run(com.intellij.openapi.progress.Task):void" resolve="run" />
+              <ref role="37wK5l" to="xygl:~ProgressManager.run(com.intellij.openapi.progress.Task)" resolve="run" />
               <node concept="37vLTw" id="6dWFC76Wp71" role="37wK5m">
                 <ref role="3cqZAo" node="6dWFC76Wp6_" resolve="task" />
               </node>
@@ -1447,7 +1445,7 @@
                       <ref role="3cqZAo" node="1oYl8Ffq5JR" resolve="lastProject" />
                     </node>
                     <node concept="liA8E" id="6dWFC76Wr1j" role="2OqNvi">
-                      <ref role="37wK5l" to="z1c3:~MPSProject.getProject():com.intellij.openapi.project.Project" resolve="getProject" />
+                      <ref role="37wK5l" to="z1c3:~MPSProject.getProject()" resolve="getProject" />
                     </node>
                   </node>
                   <node concept="Xl_RD" id="6dWFC76Wr1k" role="37wK5m">
@@ -1465,10 +1463,10 @@
           <node concept="2OqwBi" id="6dWFC76Wr1n" role="3clFbG">
             <node concept="2YIFZM" id="6dWFC76Wr1o" role="2Oq$k0">
               <ref role="1Pybhc" to="xygl:~ProgressManager" resolve="ProgressManager" />
-              <ref role="37wK5l" to="xygl:~ProgressManager.getInstance():com.intellij.openapi.progress.ProgressManager" resolve="getInstance" />
+              <ref role="37wK5l" to="xygl:~ProgressManager.getInstance()" resolve="getInstance" />
             </node>
             <node concept="liA8E" id="6dWFC76Wr1p" role="2OqNvi">
-              <ref role="37wK5l" to="xygl:~ProgressManager.run(com.intellij.openapi.progress.Task):void" resolve="run" />
+              <ref role="37wK5l" to="xygl:~ProgressManager.run(com.intellij.openapi.progress.Task)" resolve="run" />
               <node concept="37vLTw" id="6dWFC76Wr1q" role="37wK5m">
                 <ref role="3cqZAo" node="6dWFC76Wr0Y" resolve="task" />
               </node>
@@ -1540,7 +1538,7 @@
                     <ref role="3cqZAo" node="4vC8GjwZp3J" resolve="project" />
                   </node>
                   <node concept="liA8E" id="4vC8GjwZzvY" role="2OqNvi">
-                    <ref role="37wK5l" to="z1c4:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                    <ref role="37wK5l" to="z1c4:~Project.getRepository()" resolve="getRepository" />
                   </node>
                 </node>
               </node>
@@ -1569,7 +1567,7 @@
               <ref role="3cqZAo" node="4vC8GjwZoHR" resolve="ctv" />
             </node>
             <node concept="liA8E" id="4vC8GjwZoIa" role="2OqNvi">
-              <ref role="37wK5l" to="71xd:~BaseTool.openToolLater(boolean):void" resolve="openToolLater" />
+              <ref role="37wK5l" to="71xd:~BaseTool.openToolLater(boolean)" resolve="openToolLater" />
               <node concept="3clFbT" id="4vC8GjwZoIb" role="37wK5m">
                 <property role="3clFbU" value="true" />
               </node>

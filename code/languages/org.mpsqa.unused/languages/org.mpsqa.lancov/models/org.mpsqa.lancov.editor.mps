@@ -253,7 +253,7 @@
         <node concept="3F0ifn" id="640xwjo$i_7" role="3EZMnx">
           <property role="3F0ifm" value="call an intention (ALT+Enter) on this current node" />
           <node concept="VechU" id="640xwjo$i_8" role="3F10Kt">
-            <property role="Vb096" value="gray" />
+            <property role="Vb096" value="fLJRk5_/gray" />
           </node>
         </node>
         <node concept="3F0ifn" id="640xwjo$i$U" role="3EZMnx" />
@@ -263,25 +263,25 @@
         <node concept="3F0ifn" id="6dJ4vxiQBTa" role="3EZMnx">
           <property role="3F0ifm" value="treshold: the minimum number of instances we expect for a concept in order NOT to consider it as &quot;dead&quot;" />
           <node concept="VechU" id="6dJ4vxiQBT$" role="3F10Kt">
-            <property role="Vb096" value="gray" />
+            <property role="Vb096" value="fLJRk5_/gray" />
           </node>
         </node>
         <node concept="3F0ifn" id="5PcqW5OBmee" role="3EZMnx">
           <property role="3F0ifm" value="analysis scope: which concepts should be searched" />
           <node concept="VechU" id="5PcqW5OBmef" role="3F10Kt">
-            <property role="Vb096" value="gray" />
+            <property role="Vb096" value="fLJRk5_/gray" />
           </node>
         </node>
         <node concept="3F0ifn" id="5PcqW5OBbBe" role="3EZMnx">
           <property role="3F0ifm" value="search scope: where to search for instances of concepts (e.g. in a set of modules, current project, global)" />
           <node concept="VechU" id="5PcqW5OBbBf" role="3F10Kt">
-            <property role="Vb096" value="gray" />
+            <property role="Vb096" value="fLJRk5_/gray" />
           </node>
         </node>
         <node concept="3F0ifn" id="6dJ4vxiQBTb" role="3EZMnx">
           <property role="3F0ifm" value="postproccessor: what to do with identified nodes (e.g. save references into model, write in a file, typesystem error)" />
           <node concept="VechU" id="6dJ4vxiQBTC" role="3F10Kt">
-            <property role="Vb096" value="gray" />
+            <property role="Vb096" value="fLJRk5_/gray" />
           </node>
         </node>
         <node concept="2iRkQZ" id="1GhTetdXFIN" role="2iSdaV" />
@@ -535,67 +535,67 @@
         <node concept="3F0ifn" id="1YSnQiVhJvJ" role="3EZMnx">
           <property role="3F0ifm" value="this analysis aims to identify the fields of concepts which are not instantiated" />
           <node concept="VechU" id="1YSnQiVhJvK" role="3F10Kt">
-            <property role="Vb096" value="gray" />
+            <property role="Vb096" value="fLJRk5_/gray" />
           </node>
         </node>
         <node concept="3F0ifn" id="1YSnQiVhJAT" role="3EZMnx">
           <property role="3F0ifm" value="   - properties" />
           <node concept="VechU" id="1YSnQiVhJAU" role="3F10Kt">
-            <property role="Vb096" value="gray" />
+            <property role="Vb096" value="fLJRk5_/gray" />
           </node>
         </node>
         <node concept="3F0ifn" id="1YSnQiVhJJ8" role="3EZMnx">
           <property role="3F0ifm" value="      - boolean properties for which all concept instances have TRUE or FALSE value" />
           <node concept="VechU" id="1YSnQiVhJJ9" role="3F10Kt">
-            <property role="Vb096" value="gray" />
+            <property role="Vb096" value="fLJRk5_/gray" />
           </node>
         </node>
         <node concept="3F0ifn" id="1YSnQiVhJKI" role="3EZMnx">
           <property role="3F0ifm" value="      - integer properties for which all concept instances have only one value" />
           <node concept="VechU" id="1YSnQiVhJKJ" role="3F10Kt">
-            <property role="Vb096" value="gray" />
+            <property role="Vb096" value="fLJRk5_/gray" />
           </node>
         </node>
         <node concept="3F0ifn" id="1YSnQiVhJMs" role="3EZMnx">
           <property role="3F0ifm" value="      - string properties for which all concept instances have only one value" />
           <node concept="VechU" id="1YSnQiVhJMt" role="3F10Kt">
-            <property role="Vb096" value="gray" />
+            <property role="Vb096" value="fLJRk5_/gray" />
           </node>
         </node>
         <node concept="3F0ifn" id="1YSnQiVhKd$" role="3EZMnx">
           <property role="3F0ifm" value="      - enumeration properties for which all concept instances do not cover all possible values" />
           <node concept="VechU" id="1YSnQiVhKd_" role="3F10Kt">
-            <property role="Vb096" value="gray" />
+            <property role="Vb096" value="fLJRk5_/gray" />
           </node>
         </node>
         <node concept="3F0ifn" id="1YSnQiVhJDn" role="3EZMnx">
           <property role="3F0ifm" value="   - children" />
           <node concept="VechU" id="1YSnQiVhJDo" role="3F10Kt">
-            <property role="Vb096" value="gray" />
+            <property role="Vb096" value="fLJRk5_/gray" />
           </node>
         </node>
         <node concept="3F0ifn" id="1YSnQiVhJRZ" role="3EZMnx">
           <property role="3F0ifm" value="      - with cardinality 0..1 or 0..n for which all concept instances have no child in this role " />
           <node concept="VechU" id="1YSnQiVhJS0" role="3F10Kt">
-            <property role="Vb096" value="gray" />
+            <property role="Vb096" value="fLJRk5_/gray" />
           </node>
         </node>
         <node concept="3F0ifn" id="1YSnQiVhJTX" role="3EZMnx">
           <property role="3F0ifm" value="      - with cardinality 1..n or 0..n for which all concept instances have one child in this role " />
           <node concept="VechU" id="1YSnQiVhJTY" role="3F10Kt">
-            <property role="Vb096" value="gray" />
+            <property role="Vb096" value="fLJRk5_/gray" />
           </node>
         </node>
         <node concept="3F0ifn" id="1YSnQiVhJW3" role="3EZMnx">
           <property role="3F0ifm" value="   - references" />
           <node concept="VechU" id="1YSnQiVhJW4" role="3F10Kt">
-            <property role="Vb096" value="gray" />
+            <property role="Vb096" value="fLJRk5_/gray" />
           </node>
         </node>
         <node concept="3F0ifn" id="1YSnQiVhK4H" role="3EZMnx">
           <property role="3F0ifm" value="      - with cardinality 0..1 for which all concept instances have no reference in this role " />
           <node concept="VechU" id="1YSnQiVhK4I" role="3F10Kt">
-            <property role="Vb096" value="gray" />
+            <property role="Vb096" value="fLJRk5_/gray" />
           </node>
         </node>
         <node concept="3F0ifn" id="1YSnQiVhJ$F" role="3EZMnx" />
@@ -605,7 +605,7 @@
         <node concept="3F0ifn" id="1YSnQiVhJzC" role="3EZMnx">
           <property role="3F0ifm" value="call an intention (ALT+Enter) on this current node" />
           <node concept="VechU" id="1YSnQiVhJzD" role="3F10Kt">
-            <property role="Vb096" value="gray" />
+            <property role="Vb096" value="fLJRk5_/gray" />
           </node>
         </node>
         <node concept="3F0ifn" id="1YSnQiVhJvL" role="3EZMnx" />
@@ -615,25 +615,25 @@
         <node concept="3F0ifn" id="1YSnQiVhJvN" role="3EZMnx">
           <property role="3F0ifm" value="treshold: the minimum number of instances we expect for a concept in order NOT to consider it as &quot;dead&quot;" />
           <node concept="VechU" id="1YSnQiVhJvO" role="3F10Kt">
-            <property role="Vb096" value="gray" />
+            <property role="Vb096" value="fLJRk5_/gray" />
           </node>
         </node>
         <node concept="3F0ifn" id="1YSnQiVhJvP" role="3EZMnx">
           <property role="3F0ifm" value="analysis scope: which concepts should be searched" />
           <node concept="VechU" id="1YSnQiVhJvQ" role="3F10Kt">
-            <property role="Vb096" value="gray" />
+            <property role="Vb096" value="fLJRk5_/gray" />
           </node>
         </node>
         <node concept="3F0ifn" id="1YSnQiVhJvR" role="3EZMnx">
           <property role="3F0ifm" value="search scope: where to search for instances of concepts (e.g. in a set of modules, current project, global)" />
           <node concept="VechU" id="1YSnQiVhJvS" role="3F10Kt">
-            <property role="Vb096" value="gray" />
+            <property role="Vb096" value="fLJRk5_/gray" />
           </node>
         </node>
         <node concept="3F0ifn" id="1YSnQiVhJvT" role="3EZMnx">
           <property role="3F0ifm" value="postproccessor: what to do with identified nodes (e.g. save references into model, write in a file, typesystem error)" />
           <node concept="VechU" id="1YSnQiVhJvU" role="3F10Kt">
-            <property role="Vb096" value="gray" />
+            <property role="Vb096" value="fLJRk5_/gray" />
           </node>
         </node>
         <node concept="2iRkQZ" id="1YSnQiVhJvV" role="2iSdaV" />

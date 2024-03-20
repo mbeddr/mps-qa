@@ -210,6 +210,25 @@
           </node>
         </node>
       </node>
+      <node concept="3rtmxn" id="46QW9mm7Jbv" role="3bR31x">
+        <node concept="3LXTmp" id="46QW9mm7Jbw" role="3rtmxm">
+          <node concept="3qWCbU" id="46QW9mm7Jbx" role="3LXTna">
+            <property role="3qWCbO" value="icons/**, resources/**" />
+          </node>
+          <node concept="398BVA" id="46QW9mm7Jby" role="3LXTmr">
+            <ref role="398BVh" node="57r710zgQhu" resolve="languages" />
+            <node concept="2Ry0Ak" id="46QW9mm7Jbz" role="iGT6I">
+              <property role="2Ry0Am" value="org.mpsqa.mutant" />
+              <node concept="2Ry0Ak" id="46QW9mm7Jb$" role="2Ry0An">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="46QW9mm7Jb_" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.mutant.demolang" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1E1JtD" id="57r710zgDbF" role="3989C9">
       <property role="BnDLt" value="true" />
@@ -414,6 +433,25 @@
             </node>
             <node concept="3qWCbU" id="57r710zh2LN" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3rtmxn" id="46QW9mm7JbB" role="3bR31x">
+        <node concept="3LXTmp" id="46QW9mm7JbC" role="3rtmxm">
+          <node concept="3qWCbU" id="46QW9mm7JbD" role="3LXTna">
+            <property role="3qWCbO" value="icons/**, resources/**" />
+          </node>
+          <node concept="398BVA" id="46QW9mm7JbE" role="3LXTmr">
+            <ref role="398BVh" node="57r710zgQhu" resolve="languages" />
+            <node concept="2Ry0Ak" id="46QW9mm7JbF" role="iGT6I">
+              <property role="2Ry0Am" value="org.mpsqa.deprecated" />
+              <node concept="2Ry0Ak" id="46QW9mm7JbG" role="2Ry0An">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="46QW9mm7JbH" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.deprecated.example_lan" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
