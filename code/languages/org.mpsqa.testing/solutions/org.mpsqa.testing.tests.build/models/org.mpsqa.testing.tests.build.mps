@@ -365,6 +365,21 @@
             <ref role="3bR37D" to="hx16:2WwuhUZ0zGG" resolve="org.mpsqa.testcov.buildIntegration.jacoco.codeowners.generator" />
           </node>
         </node>
+        <node concept="3rtmxn" id="46QW9mm7Jai" role="3bR31x">
+          <node concept="3LXTmp" id="46QW9mm7Jaj" role="3rtmxm">
+            <node concept="3qWCbU" id="46QW9mm7Jak" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="55IIr" id="46QW9mm7Jal" role="3LXTmr">
+              <node concept="2Ry0Ak" id="46QW9mm7Jam" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="46QW9mm7Jan" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.testcov.buildIntegration.jacoco.codeowners.tests" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>

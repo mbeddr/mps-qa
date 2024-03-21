@@ -378,6 +378,22 @@
             <ref role="3bR37D" to="2tou:7C9PHv6FBJ1" resolve="org.mpsqa.base.lib" />
           </node>
         </node>
+        <node concept="3rtmxn" id="46QW9mm7JcV" role="3bR31x">
+          <node concept="3LXTmp" id="46QW9mm7JcW" role="3rtmxm">
+            <node concept="3qWCbU" id="46QW9mm7JcX" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="46QW9mm7JcY" role="3LXTmr">
+              <ref role="398BVh" node="2JVMSZMFXgq" resolve="mpsqa.testing.home" />
+              <node concept="2Ry0Ak" id="46QW9mm7JcZ" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="46QW9mm7Jd0" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.gentest.baseline" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="67NgLmjPxB5" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -575,6 +591,22 @@
         <node concept="1SiIV0" id="zudvsqcLIG" role="3bR37C">
           <node concept="3bR9La" id="zudvsqcLIH" role="1SiIV1">
             <ref role="3bR37D" to="2tou:zudvsqcgIl" resolve="org.mpsqa.base.utils" />
+          </node>
+        </node>
+        <node concept="3rtmxn" id="46QW9mm7Jd2" role="3bR31x">
+          <node concept="3LXTmp" id="46QW9mm7Jd3" role="3rtmxm">
+            <node concept="3qWCbU" id="46QW9mm7Jd4" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="46QW9mm7Jd5" role="3LXTmr">
+              <ref role="398BVh" node="2JVMSZMFXgq" resolve="mpsqa.testing.home" />
+              <node concept="2Ry0Ak" id="46QW9mm7Jd6" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="46QW9mm7Jd7" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.testcov.jacoco.rt" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>

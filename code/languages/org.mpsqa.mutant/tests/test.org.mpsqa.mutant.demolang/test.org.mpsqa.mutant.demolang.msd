@@ -9,6 +9,7 @@
     <facet type="java" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
+    <facet type="tests" />
   </facets>
   <dependencies>
     <dependency reexport="false">3313ed27-e24e-4f1d-81b0-b1b57775ffac(org.mpsqa.mutant.demolang)</dependency>

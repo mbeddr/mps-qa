@@ -2316,8 +2316,10 @@
                                       </node>
                                       <node concept="2pJxcG" id="1YSnQiVpNaw" role="2pJxcM">
                                         <ref role="2pJxcJ" to="7ouc:1YSnQiVjV0N" resolve="explanation" />
-                                        <node concept="Xl_RD" id="1YSnQiVpNaz" role="28ntcv">
-                                          <property role="Xl_RC" value="no concept instance with cardinality higher than 1 found" />
+                                        <node concept="WxPPo" id="46QW9mm7OCY" role="28ntcv">
+                                          <node concept="Xl_RD" id="1YSnQiVpNaz" role="WxPPp">
+                                            <property role="Xl_RC" value="no concept instance with cardinality higher than 1 found" />
+                                          </node>
                                         </node>
                                       </node>
                                     </node>

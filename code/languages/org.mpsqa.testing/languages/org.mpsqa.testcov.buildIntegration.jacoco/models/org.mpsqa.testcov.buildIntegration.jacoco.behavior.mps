@@ -186,7 +186,6 @@
       <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
-      <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1201792049884" name="jetbrains.mps.baseLanguage.collections.structure.TranslateOperation" flags="nn" index="3goQfb" />
     </language>
   </registry>
@@ -653,7 +652,7 @@
                   <node concept="3clFbF" id="4EqSY0I88LS" role="3cqZAp">
                     <node concept="2OqwBi" id="4EqSY0I88Yu" role="3clFbG">
                       <node concept="37vLTw" id="4EqSY0I88LR" role="2Oq$k0">
-                        <ref role="3cqZAo" node="4EqSY0I88HH" resolve="it" />
+                        <ref role="3cqZAo" node="6T$NbgWHF4W" resolve="it" />
                       </node>
                       <node concept="2qgKlT" id="4EqSY0I89wS" role="2OqNvi">
                         <ref role="37wK5l" node="ZOtJPkfDhS" resolve="getModules" />
@@ -661,9 +660,9 @@
                     </node>
                   </node>
                 </node>
-                <node concept="Rh6nW" id="4EqSY0I88HH" role="1bW2Oz">
+                <node concept="gl6BB" id="6T$NbgWHF4W" role="1bW2Oz">
                   <property role="TrG5h" value="it" />
-                  <node concept="2jxLKc" id="4EqSY0I88HI" role="1tU5fm" />
+                  <node concept="2jxLKc" id="6T$NbgWHF4X" role="1tU5fm" />
                 </node>
               </node>
             </node>

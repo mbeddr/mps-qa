@@ -120,7 +120,7 @@
             <node concept="2OqwBi" id="5YQNmM9b6pM" role="33vP2m">
               <node concept="1jxXqW" id="5YQNmM9b6q1" role="2Oq$k0" />
               <node concept="liA8E" id="5YQNmM9b6q2" role="2OqNvi">
-                <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
               </node>
             </node>
           </node>

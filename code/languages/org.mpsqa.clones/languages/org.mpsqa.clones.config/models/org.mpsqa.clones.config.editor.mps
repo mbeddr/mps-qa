@@ -161,13 +161,13 @@
         <node concept="3F0ifn" id="6dJ4vxiQBTa" role="3EZMnx">
           <property role="3F0ifm" value="minimal/maximal suffix size - minimal/maximal depth of a node to be considered part of a clone" />
           <node concept="VechU" id="6dJ4vxiQBT$" role="3F10Kt">
-            <property role="Vb096" value="gray" />
+            <property role="Vb096" value="fLJRk5_/gray" />
           </node>
         </node>
         <node concept="3F0ifn" id="6dJ4vxiQBTb" role="3EZMnx">
           <property role="3F0ifm" value="minimal number of siblings - minimal number of sibling nodes of a clone (similar to 'number of lines')" />
           <node concept="VechU" id="6dJ4vxiQBTC" role="3F10Kt">
-            <property role="Vb096" value="gray" />
+            <property role="Vb096" value="fLJRk5_/gray" />
           </node>
         </node>
         <node concept="2iRkQZ" id="1GhTetdXFIN" role="2iSdaV" />
@@ -233,13 +233,13 @@
         <node concept="3F0ifn" id="6dJ4vxiQBNT" role="3EZMnx">
           <property role="3F0ifm" value="If considered modules is not empty, then we take all modules with matching names and then filter out the modules whose names match the ignored modules." />
           <node concept="VechU" id="6dJ4vxiQBNU" role="3F10Kt">
-            <property role="Vb096" value="gray" />
+            <property role="Vb096" value="fLJRk5_/gray" />
           </node>
         </node>
         <node concept="3F0ifn" id="6dJ4vxiQBNV" role="3EZMnx">
           <property role="3F0ifm" value="If considered modules is empty, then we take all modules from scope and then filter out the modules whose names match the ignored modules." />
           <node concept="VechU" id="6dJ4vxiQBNW" role="3F10Kt">
-            <property role="Vb096" value="gray" />
+            <property role="Vb096" value="fLJRk5_/gray" />
           </node>
         </node>
         <node concept="2iRkQZ" id="6dJ4vxiQBNX" role="2iSdaV" />
@@ -258,7 +258,7 @@
           <node concept="3F0ifn" id="1GhTetdXIsN" role="2czzBI">
             <property role="3F0ifm" value="all modules in scope" />
             <node concept="VechU" id="1GhTetdXNNL" role="3F10Kt">
-              <property role="Vb096" value="lightGray" />
+              <property role="Vb096" value="fLJRk5A/lightGray" />
             </node>
           </node>
         </node>
@@ -278,7 +278,7 @@
           <node concept="3F0ifn" id="1GhTetdXNNv" role="2czzBI">
             <property role="3F0ifm" value="no module is ignored" />
             <node concept="VechU" id="1GhTetdXNNI" role="3F10Kt">
-              <property role="Vb096" value="lightGray" />
+              <property role="Vb096" value="fLJRk5A/lightGray" />
             </node>
           </node>
         </node>
@@ -298,7 +298,7 @@
           <node concept="3F0ifn" id="1GhTetdXNNy" role="2czzBI">
             <property role="3F0ifm" value="no model is ignored" />
             <node concept="VechU" id="1GhTetdXNNF" role="3F10Kt">
-              <property role="Vb096" value="lightGray" />
+              <property role="Vb096" value="fLJRk5A/lightGray" />
             </node>
           </node>
         </node>
@@ -318,7 +318,7 @@
           <node concept="3F0ifn" id="1GhTetdXNN_" role="2czzBI">
             <property role="3F0ifm" value="no concept is ignored" />
             <node concept="VechU" id="1GhTetdXNNC" role="3F10Kt">
-              <property role="Vb096" value="lightGray" />
+              <property role="Vb096" value="fLJRk5A/lightGray" />
             </node>
           </node>
         </node>
@@ -363,7 +363,7 @@
       <node concept="3F0ifn" id="1GhTetdXIt5" role="3EZMnx">
         <property role="3F0ifm" value="(regex)" />
         <node concept="VechU" id="1GhTetdXL87" role="3F10Kt">
-          <property role="Vb096" value="gray" />
+          <property role="Vb096" value="fLJRk5_/gray" />
         </node>
       </node>
     </node>
@@ -414,7 +414,7 @@
                 <ref role="3cqZAo" node="4vctr_xUKaj" resolve="context" />
               </node>
               <node concept="liA8E" id="4vctr_xULPZ" role="2OqNvi">
-                <ref role="37wK5l" to="cj4x:~EditorContext.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
               </node>
             </node>
           </node>
@@ -439,7 +439,7 @@
       <node concept="3F0A7n" id="2VgkkwRqN6x" role="3EZMnx">
         <ref role="1NtTu8" to="mpzi:2VgkkwRqN63" resolve="val" />
         <node concept="VechU" id="2VgkkwRqN6B" role="3F10Kt">
-          <property role="Vb096" value="gray" />
+          <property role="Vb096" value="fLJRk5_/gray" />
         </node>
       </node>
       <node concept="3F0ifn" id="2VgkkwRqPcP" role="3EZMnx">

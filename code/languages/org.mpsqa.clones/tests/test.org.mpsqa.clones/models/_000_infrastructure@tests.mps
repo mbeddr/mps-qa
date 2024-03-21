@@ -233,7 +233,7 @@
           <node concept="2OqwBi" id="1GhTetdTTi$" role="ukAjM">
             <node concept="1jxXqW" id="1GhTetdTTi_" role="2Oq$k0" />
             <node concept="liA8E" id="1GhTetdTTiA" role="2OqNvi">
-              <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+              <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
             </node>
           </node>
         </node>
@@ -311,7 +311,7 @@
           <node concept="2OqwBi" id="1GhTetdTWCr" role="ukAjM">
             <node concept="1jxXqW" id="1GhTetdTWu0" role="2Oq$k0" />
             <node concept="liA8E" id="1GhTetdTXCQ" role="2OqNvi">
-              <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+              <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
             </node>
           </node>
         </node>
@@ -332,10 +332,6 @@
         <node concept="2tJIrI" id="4elAKXiq8DM" role="jymVt" />
         <node concept="312cEg" id="4elAKXiq8Eo" role="jymVt">
           <property role="TrG5h" value="a1" />
-          <node concept="15s5l7" id="7j9Wyvhu0wU" role="lGtFl">
-            <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Field is never used&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/7581428506283755675]&quot;;" />
-            <property role="huDt6" value="Warning: Field is never used" />
-          </node>
           <node concept="17QB3L" id="4elAKXiq8Ea" role="1tU5fm" />
           <node concept="Xl_RD" id="4elAKXiq8EO" role="33vP2m">
             <property role="Xl_RC" value="something" />
@@ -343,13 +339,13 @@
               <property role="TrG5h" value="l1" />
             </node>
           </node>
-        </node>
-        <node concept="312cEg" id="4elAKXiq8FC" role="jymVt">
-          <property role="TrG5h" value="a2" />
-          <node concept="15s5l7" id="7j9Wyvhu0z0" role="lGtFl">
+          <node concept="15s5l7" id="7j9Wyvhu0wU" role="lGtFl">
             <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Field is never used&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/7581428506283755675]&quot;;" />
             <property role="huDt6" value="Warning: Field is never used" />
           </node>
+        </node>
+        <node concept="312cEg" id="4elAKXiq8FC" role="jymVt">
+          <property role="TrG5h" value="a2" />
           <node concept="17QB3L" id="4elAKXiq8FD" role="1tU5fm" />
           <node concept="Xl_RD" id="4elAKXiq8FE" role="33vP2m">
             <property role="Xl_RC" value="something1" />
@@ -357,13 +353,13 @@
               <property role="TrG5h" value="l2" />
             </node>
           </node>
-        </node>
-        <node concept="312cEg" id="4elAKXiqb1T" role="jymVt">
-          <property role="TrG5h" value="a3" />
-          <node concept="15s5l7" id="7j9Wyvhu0_6" role="lGtFl">
+          <node concept="15s5l7" id="7j9Wyvhu0z0" role="lGtFl">
             <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Field is never used&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/7581428506283755675]&quot;;" />
             <property role="huDt6" value="Warning: Field is never used" />
           </node>
+        </node>
+        <node concept="312cEg" id="4elAKXiqb1T" role="jymVt">
+          <property role="TrG5h" value="a3" />
           <node concept="17QB3L" id="4elAKXiqb1U" role="1tU5fm" />
           <node concept="3cpWs3" id="4elAKXiqbh0" role="33vP2m">
             <node concept="3cmrfG" id="4elAKXiqbhf" role="3uHU7w">
@@ -376,14 +372,14 @@
               <property role="TrG5h" value="l3" />
             </node>
           </node>
+          <node concept="15s5l7" id="7j9Wyvhu0_6" role="lGtFl">
+            <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Field is never used&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/7581428506283755675]&quot;;" />
+            <property role="huDt6" value="Warning: Field is never used" />
+          </node>
         </node>
         <node concept="2tJIrI" id="4elAKXiq8Fq" role="jymVt" />
         <node concept="3clFb_" id="4elAKXiqfkC" role="jymVt">
           <property role="TrG5h" value="meth" />
-          <node concept="15s5l7" id="7j9Wyvhu0Bm" role="lGtFl">
-            <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Package protected method meth():void is never used&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/7938578788781949884]&quot;;" />
-            <property role="huDt6" value="Warning: Package protected method meth():void is never used" />
-          </node>
           <node concept="3clFbS" id="4elAKXiqfkF" role="3clF47">
             <node concept="9aQIb" id="4elAKXiqflp" role="3cqZAp">
               <node concept="3clFbS" id="4elAKXiqflq" role="9aQI4">
@@ -405,7 +401,7 @@
                           <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                         </node>
                         <node concept="liA8E" id="4elAKXiqGTF" role="2OqNvi">
-                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                           <node concept="Xl_RD" id="4elAKXiqGTG" role="37wK5m">
                             <property role="Xl_RC" value="something_1" />
                           </node>
@@ -429,7 +425,7 @@
                       <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                     </node>
                     <node concept="liA8E" id="E3aAvrCmH2" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                       <node concept="Xl_RD" id="E3aAvrCmH3" role="37wK5m">
                         <property role="Xl_RC" value="something else_1" />
                       </node>
@@ -443,7 +439,7 @@
                       <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                     </node>
                     <node concept="liA8E" id="E3aAvrEm4j" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                       <node concept="Xl_RD" id="E3aAvrEm4k" role="37wK5m">
                         <property role="Xl_RC" value="something else else_1" />
                       </node>
@@ -476,7 +472,7 @@
                           <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                         </node>
                         <node concept="liA8E" id="E3aAvrCrVM" role="2OqNvi">
-                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                           <node concept="Xl_RD" id="E3aAvrCrVN" role="37wK5m">
                             <property role="Xl_RC" value="something_2" />
                           </node>
@@ -500,7 +496,7 @@
                       <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                     </node>
                     <node concept="liA8E" id="4elAKXiqfBV" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                       <node concept="Xl_RD" id="4elAKXiqfBW" role="37wK5m">
                         <property role="Xl_RC" value="something else_2" />
                       </node>
@@ -514,7 +510,7 @@
                       <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                     </node>
                     <node concept="liA8E" id="4elAKXiqfC0" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                       <node concept="Xl_RD" id="4elAKXiqfC1" role="37wK5m">
                         <property role="Xl_RC" value="something else else_2" />
                       </node>
@@ -529,6 +525,10 @@
             <node concept="3clFbH" id="4elAKXiqfxx" role="3cqZAp" />
           </node>
           <node concept="3cqZAl" id="4elAKXiqfkc" role="3clF45" />
+          <node concept="15s5l7" id="7j9Wyvhu0Bm" role="lGtFl">
+            <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Package protected method meth():void is never used&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/7938578788781949884]&quot;;" />
+            <property role="huDt6" value="Warning: Package protected method meth():void is never used" />
+          </node>
         </node>
         <node concept="3Tm1VV" id="4elAKXiq8Dx" role="1B3o_S" />
       </node>

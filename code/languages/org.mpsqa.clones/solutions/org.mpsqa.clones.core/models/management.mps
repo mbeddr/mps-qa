@@ -334,7 +334,7 @@
                 <ref role="3cqZAo" node="6n_zVnCdU4H" resolve="path" />
               </node>
               <node concept="liA8E" id="wcbKZJ3_Zf" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+                <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String)" resolve="replaceAll" />
                 <node concept="Xl_RD" id="wcbKZJ3_Zg" role="37wK5m">
                   <property role="Xl_RC" value="\\\\" />
                 </node>
@@ -354,11 +354,11 @@
             <node concept="17QB3L" id="6dJ4vxiSVHv" role="1tU5fm" />
             <node concept="2OqwBi" id="6dJ4vxiSVy$" role="33vP2m">
               <node concept="2YIFZM" id="6dJ4vxiSVy_" role="2Oq$k0">
-                <ref role="37wK5l" to="18ew:~MacrosFactory.getGlobal():jetbrains.mps.util.MacroHelper" resolve="getGlobal" />
+                <ref role="37wK5l" to="18ew:~MacrosFactory.getGlobal()" resolve="getGlobal" />
                 <ref role="1Pybhc" to="18ew:~MacrosFactory" resolve="MacrosFactory" />
               </node>
               <node concept="liA8E" id="6dJ4vxiSVyA" role="2OqNvi">
-                <ref role="37wK5l" to="18ew:~MacroHelper.expandPath(java.lang.String):java.lang.String" resolve="expandPath" />
+                <ref role="37wK5l" to="18ew:~MacroHelper.expandPath(java.lang.String)" resolve="expandPath" />
                 <node concept="37vLTw" id="6dJ4vxiSVyB" role="37wK5m">
                   <ref role="3cqZAo" node="6n_zVnCdU4H" resolve="path" />
                 </node>
@@ -444,7 +444,7 @@
             </node>
             <node concept="2YIFZM" id="16s82eEomIq" role="33vP2m">
               <ref role="1Pybhc" to="vpqd:~DocumentBuilderFactory" resolve="DocumentBuilderFactory" />
-              <ref role="37wK5l" to="vpqd:~DocumentBuilderFactory.newInstance():javax.xml.parsers.DocumentBuilderFactory" resolve="newInstance" />
+              <ref role="37wK5l" to="vpqd:~DocumentBuilderFactory.newInstance()" resolve="newInstance" />
             </node>
           </node>
         </node>
@@ -1072,7 +1072,7 @@
                 <ref role="3cqZAo" node="6n_zVnCvTNR" resolve="path" />
               </node>
               <node concept="liA8E" id="wcbKZJ3_AD" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+                <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String)" resolve="replaceAll" />
                 <node concept="Xl_RD" id="wcbKZJ3_AE" role="37wK5m">
                   <property role="Xl_RC" value="\\\\" />
                 </node>
@@ -1093,10 +1093,10 @@
             <node concept="2OqwBi" id="6dJ4vxiT2g9" role="33vP2m">
               <node concept="2YIFZM" id="6dJ4vxiT2ga" role="2Oq$k0">
                 <ref role="1Pybhc" to="18ew:~MacrosFactory" resolve="MacrosFactory" />
-                <ref role="37wK5l" to="18ew:~MacrosFactory.getGlobal():jetbrains.mps.util.MacroHelper" resolve="getGlobal" />
+                <ref role="37wK5l" to="18ew:~MacrosFactory.getGlobal()" resolve="getGlobal" />
               </node>
               <node concept="liA8E" id="6dJ4vxiT2gb" role="2OqNvi">
-                <ref role="37wK5l" to="18ew:~MacroHelper.expandPath(java.lang.String):java.lang.String" resolve="expandPath" />
+                <ref role="37wK5l" to="18ew:~MacroHelper.expandPath(java.lang.String)" resolve="expandPath" />
                 <node concept="37vLTw" id="6dJ4vxiT2gc" role="37wK5m">
                   <ref role="3cqZAo" node="6n_zVnCvTNR" resolve="path" />
                 </node>
@@ -1194,7 +1194,7 @@
                     <ref role="3uigEE" to="vpqd:~DocumentBuilderFactory" resolve="DocumentBuilderFactory" />
                   </node>
                   <node concept="2YIFZM" id="16s82eEmQsh" role="33vP2m">
-                    <ref role="37wK5l" to="vpqd:~DocumentBuilderFactory.newInstance():javax.xml.parsers.DocumentBuilderFactory" resolve="newInstance" />
+                    <ref role="37wK5l" to="vpqd:~DocumentBuilderFactory.newInstance()" resolve="newInstance" />
                     <ref role="1Pybhc" to="vpqd:~DocumentBuilderFactory" resolve="DocumentBuilderFactory" />
                   </node>
                 </node>
@@ -1956,7 +1956,7 @@
                           <ref role="2Gs0qQ" node="7Ol$bN7M_sP" resolve="crtModule" />
                         </node>
                         <node concept="liA8E" id="16s82eEs1hm" role="2OqNvi">
-                          <ref role="37wK5l" to="lui2:~SModule.getModuleName():java.lang.String" resolve="getModuleName" />
+                          <ref role="37wK5l" to="lui2:~SModule.getModuleName()" resolve="getModuleName" />
                         </node>
                       </node>
                       <node concept="2OqwBi" id="16s82eEs1hn" role="37wK5m">
@@ -1965,11 +1965,11 @@
                             <ref role="2Gs0qQ" node="7Ol$bN7M_tk" resolve="crtModel" />
                           </node>
                           <node concept="liA8E" id="16s82eEs1hq" role="2OqNvi">
-                            <ref role="37wK5l" to="mhbf:~SModel.getName():org.jetbrains.mps.openapi.model.SModelName" resolve="getName" />
+                            <ref role="37wK5l" to="mhbf:~SModel.getName()" resolve="getName" />
                           </node>
                         </node>
                         <node concept="liA8E" id="16s82eEs1hr" role="2OqNvi">
-                          <ref role="37wK5l" to="mhbf:~SModelName.getLongName():java.lang.String" resolve="getLongName" />
+                          <ref role="37wK5l" to="mhbf:~SModelName.getLongName()" resolve="getLongName" />
                         </node>
                       </node>
                     </node>
@@ -2046,7 +2046,7 @@
                   <ref role="2Gs0qQ" node="7Ol$bN7M_sP" resolve="crtModule" />
                 </node>
                 <node concept="liA8E" id="7Ol$bN7M_tB" role="2OqNvi">
-                  <ref role="37wK5l" to="lui2:~SModule.getModels():java.lang.Iterable" resolve="getModels" />
+                  <ref role="37wK5l" to="lui2:~SModule.getModels()" resolve="getModels" />
                 </node>
               </node>
             </node>
@@ -2056,7 +2056,7 @@
               <ref role="3cqZAo" node="7Ol$bN7M$mM" resolve="repo" />
             </node>
             <node concept="liA8E" id="7Ol$bN7M_t6" role="2OqNvi">
-              <ref role="37wK5l" to="lui2:~SRepository.getModules():java.lang.Iterable" resolve="getModules" />
+              <ref role="37wK5l" to="lui2:~SRepository.getModules()" resolve="getModules" />
             </node>
           </node>
         </node>
@@ -2183,11 +2183,11 @@
                             </node>
                           </node>
                           <node concept="liA8E" id="6R7Q$YvcJaU" role="2OqNvi">
-                            <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                            <ref role="37wK5l" to="mhbf:~SNode.getNodeId()" resolve="getNodeId" />
                           </node>
                         </node>
                         <node concept="liA8E" id="6R7Q$YvcVsb" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                          <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
                         </node>
                       </node>
                       <node concept="37vLTw" id="6R7Q$YvcyWO" role="3ElQJh">
@@ -2263,7 +2263,7 @@
                 <ref role="3cqZAo" node="16s82eE58lr" resolve="path" />
               </node>
               <node concept="liA8E" id="wcbKZJ3$ME" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+                <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String)" resolve="replaceAll" />
                 <node concept="Xl_RD" id="wcbKZJ3$Pw" role="37wK5m">
                   <property role="Xl_RC" value="\\\\" />
                 </node>
@@ -2284,10 +2284,10 @@
             <node concept="2OqwBi" id="6dJ4vxiSXK5" role="33vP2m">
               <node concept="2YIFZM" id="6dJ4vxiSXK6" role="2Oq$k0">
                 <ref role="1Pybhc" to="18ew:~MacrosFactory" resolve="MacrosFactory" />
-                <ref role="37wK5l" to="18ew:~MacrosFactory.getGlobal():jetbrains.mps.util.MacroHelper" resolve="getGlobal" />
+                <ref role="37wK5l" to="18ew:~MacrosFactory.getGlobal()" resolve="getGlobal" />
               </node>
               <node concept="liA8E" id="6dJ4vxiSXK7" role="2OqNvi">
-                <ref role="37wK5l" to="18ew:~MacroHelper.expandPath(java.lang.String):java.lang.String" resolve="expandPath" />
+                <ref role="37wK5l" to="18ew:~MacroHelper.expandPath(java.lang.String)" resolve="expandPath" />
                 <node concept="37vLTw" id="6dJ4vxiSXK8" role="37wK5m">
                   <ref role="3cqZAo" node="16s82eE58lr" resolve="path" />
                 </node>
@@ -2368,7 +2368,7 @@
                     <ref role="3cqZAo" node="16s82eE58lg" resolve="myFile" />
                   </node>
                   <node concept="liA8E" id="6dJ4vxiT7nh" role="2OqNvi">
-                    <ref role="37wK5l" to="guwi:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
+                    <ref role="37wK5l" to="guwi:~File.getAbsolutePath()" resolve="getAbsolutePath" />
                   </node>
                 </node>
               </node>
@@ -2512,11 +2512,11 @@
                         <ref role="3cqZAo" node="16s82eE58lg" resolve="myFile" />
                       </node>
                       <node concept="liA8E" id="wcbKZIZqBu" role="2OqNvi">
-                        <ref role="37wK5l" to="guwi:~File.getName():java.lang.String" resolve="getName" />
+                        <ref role="37wK5l" to="guwi:~File.getName()" resolve="getName" />
                       </node>
                     </node>
                     <node concept="liA8E" id="wcbKZIZqBv" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.substring(int,int):java.lang.String" resolve="substring" />
+                      <ref role="37wK5l" to="wyt6:~String.substring(int,int)" resolve="substring" />
                       <node concept="3cmrfG" id="wcbKZIZqBw" role="37wK5m">
                         <property role="3cmrfH" value="0" />
                       </node>
@@ -2527,11 +2527,11 @@
                               <ref role="3cqZAo" node="16s82eE58lg" resolve="myFile" />
                             </node>
                             <node concept="liA8E" id="wcbKZIZqBA" role="2OqNvi">
-                              <ref role="37wK5l" to="guwi:~File.getName():java.lang.String" resolve="getName" />
+                              <ref role="37wK5l" to="guwi:~File.getName()" resolve="getName" />
                             </node>
                           </node>
                           <node concept="liA8E" id="wcbKZIZqBB" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
+                            <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
                           </node>
                         </node>
                         <node concept="3cmrfG" id="wcbKZIZtHR" role="3uHU7w">
@@ -2557,7 +2557,7 @@
                         <ref role="3cqZAo" node="16s82eE58lg" resolve="myFile" />
                       </node>
                       <node concept="liA8E" id="wcbKZJ1a5q" role="2OqNvi">
-                        <ref role="37wK5l" to="guwi:~File.getParent():java.lang.String" resolve="getParent" />
+                        <ref role="37wK5l" to="guwi:~File.getParent()" resolve="getParent" />
                       </node>
                     </node>
                     <node concept="10M0yZ" id="wcbKZJ1a5r" role="3uHU7w">
@@ -2641,11 +2641,11 @@
                         <ref role="3cqZAo" node="16s82eE58lg" resolve="myFile" />
                       </node>
                       <node concept="liA8E" id="wcbKZJwedG" role="2OqNvi">
-                        <ref role="37wK5l" to="guwi:~File.getName():java.lang.String" resolve="getName" />
+                        <ref role="37wK5l" to="guwi:~File.getName()" resolve="getName" />
                       </node>
                     </node>
                     <node concept="liA8E" id="wcbKZJwedH" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.substring(int,int):java.lang.String" resolve="substring" />
+                      <ref role="37wK5l" to="wyt6:~String.substring(int,int)" resolve="substring" />
                       <node concept="3cmrfG" id="wcbKZJwedI" role="37wK5m">
                         <property role="3cmrfH" value="0" />
                       </node>
@@ -2656,11 +2656,11 @@
                               <ref role="3cqZAo" node="16s82eE58lg" resolve="myFile" />
                             </node>
                             <node concept="liA8E" id="wcbKZJwedN" role="2OqNvi">
-                              <ref role="37wK5l" to="guwi:~File.getName():java.lang.String" resolve="getName" />
+                              <ref role="37wK5l" to="guwi:~File.getName()" resolve="getName" />
                             </node>
                           </node>
                           <node concept="liA8E" id="wcbKZJwedO" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
+                            <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
                           </node>
                         </node>
                         <node concept="3cmrfG" id="wcbKZJwedP" role="3uHU7w">
@@ -2686,7 +2686,7 @@
                         <ref role="3cqZAo" node="16s82eE58lg" resolve="myFile" />
                       </node>
                       <node concept="liA8E" id="wcbKZJwedY" role="2OqNvi">
-                        <ref role="37wK5l" to="guwi:~File.getParent():java.lang.String" resolve="getParent" />
+                        <ref role="37wK5l" to="guwi:~File.getParent()" resolve="getParent" />
                       </node>
                     </node>
                     <node concept="10M0yZ" id="wcbKZJwedZ" role="3uHU7w">

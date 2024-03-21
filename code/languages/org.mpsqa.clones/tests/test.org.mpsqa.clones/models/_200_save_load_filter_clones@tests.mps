@@ -160,7 +160,7 @@
             <node concept="2OqwBi" id="16s82eEm5Ge" role="33vP2m">
               <node concept="1jxXqW" id="16s82eEm5Gl" role="2Oq$k0" />
               <node concept="liA8E" id="16s82eEm5Gm" role="2OqNvi">
-                <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
               </node>
             </node>
           </node>
@@ -227,7 +227,7 @@
             <property role="TrG5h" value="tempDir" />
             <node concept="17QB3L" id="16s82eEmiQD" role="1tU5fm" />
             <node concept="2YIFZM" id="16s82eEmiLl" role="33vP2m">
-              <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+              <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String)" resolve="getProperty" />
               <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
               <node concept="Xl_RD" id="16s82eEmiLm" role="37wK5m">
                 <property role="Xl_RC" value="java.io.tmpdir" />

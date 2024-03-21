@@ -6,9 +6,10 @@
     </modelRoot>
   </models>
   <facets>
-    <facet type="java">
+    <facet type="java" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
+    <facet type="tests" />
   </facets>
   <dependencies>
     <dependency reexport="false">3b62794b-a04f-4b9f-bffb-9bc93bd0c0c3(org.mpsqa.lancov.fragments.test_lang)</dependency>

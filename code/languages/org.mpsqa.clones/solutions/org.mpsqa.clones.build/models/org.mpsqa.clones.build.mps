@@ -329,6 +329,22 @@
             </node>
           </node>
         </node>
+        <node concept="3rtmxn" id="46QW9mm84U2" role="3bR31x">
+          <node concept="3LXTmp" id="46QW9mm84U3" role="3rtmxm">
+            <node concept="3qWCbU" id="46QW9mm84U4" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="46QW9mm84U5" role="3LXTmr">
+              <ref role="398BVh" node="1GhTetdB0oc" resolve="mpsqa.clones.home" />
+              <node concept="2Ry0Ak" id="46QW9mm84U6" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="46QW9mm84U7" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.org.mpsqa.clones" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="22LTRH" id="2JVMSZMFYqK" role="1hWBAP">

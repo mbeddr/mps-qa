@@ -103,6 +103,9 @@
       <concept id="5253498789149585690" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyOnModule" flags="ng" index="3bR9La">
         <reference id="5253498789149547705" name="module" index="3bR37D" />
       </concept>
+      <concept id="763829979718664966" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleResources" flags="ng" index="3rtmxn">
+        <child id="763829979718664967" name="files" index="3rtmxm" />
+      </concept>
       <concept id="4278635856200817744" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleModelRoot" flags="ng" index="1BupzO">
         <property id="8137134783396907368" name="convert2binary" index="1Hdu6h" />
         <property id="8137134783396676838" name="extracted" index="1HemKv" />
@@ -302,6 +305,22 @@
             <ref role="3bR37D" to="ffeo:3qkjbZn808a" resolve="jetbrains.mps.lang.constraints.rules.runtime" />
           </node>
         </node>
+        <node concept="3rtmxn" id="46QW9mm7JcA" role="3bR31x">
+          <node concept="3LXTmp" id="46QW9mm7JcB" role="3rtmxm">
+            <node concept="3qWCbU" id="46QW9mm7JcC" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="46QW9mm7JcD" role="3LXTmr">
+              <ref role="398BVh" node="3PN66LDqBYT" resolve="mpsqa.mutant.home" />
+              <node concept="2Ry0Ak" id="46QW9mm7JcE" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="46QW9mm7JcF" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.mutant.base" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="3PN66LDqBZb" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -338,6 +357,22 @@
             </node>
             <node concept="3qWCbU" id="3PN66LDrCv1" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="46QW9mm7JcH" role="3bR31x">
+          <node concept="3LXTmp" id="46QW9mm7JcI" role="3rtmxm">
+            <node concept="3qWCbU" id="46QW9mm7JcJ" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="46QW9mm7JcK" role="3LXTmr">
+              <ref role="398BVh" node="3PN66LDqBYT" resolve="mpsqa.mutant.home" />
+              <node concept="2Ry0Ak" id="46QW9mm7JcL" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="46QW9mm7JcM" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.mutant.pluginSolution" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -402,6 +437,22 @@
             </node>
             <node concept="3qWCbU" id="3PN66LDrCwX" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="46QW9mm7JcO" role="3bR31x">
+          <node concept="3LXTmp" id="46QW9mm7JcP" role="3rtmxm">
+            <node concept="3qWCbU" id="46QW9mm7JcQ" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="46QW9mm7JcR" role="3LXTmr">
+              <ref role="398BVh" node="3PN66LDqBYT" resolve="mpsqa.mutant.home" />
+              <node concept="2Ry0Ak" id="46QW9mm7JcS" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="46QW9mm7JcT" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.mutant" />
+                </node>
+              </node>
             </node>
           </node>
         </node>

@@ -93,6 +93,13 @@
       <property role="TrG5h" value="meth1" />
       <node concept="3clFbS" id="5dW8pSK6xti" role="3clF47">
         <node concept="3cpWs8" id="5dW8pSK6y2p" role="3cqZAp">
+          <node concept="3cpWsn" id="5dW8pSK6y2s" role="3cpWs9">
+            <property role="TrG5h" value="a" />
+            <node concept="10Oyi0" id="5dW8pSK6y2n" role="1tU5fm" />
+            <node concept="3cmrfG" id="5dW8pSK6y7D" role="33vP2m">
+              <property role="3cmrfH" value="42" />
+            </node>
+          </node>
           <node concept="15s5l7" id="7j9Wyvhu3jT" role="lGtFl">
             <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Variable 'a' initializer is redundant&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/963887337804010668]&quot;;" />
             <property role="huDt6" value="Warning: Variable 'a' initializer is redundant" />
@@ -100,13 +107,6 @@
           <node concept="15s5l7" id="7j9Wyvhu1e_" role="lGtFl">
             <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Unused variable&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/4056233746948448436]&quot;;" />
             <property role="huDt6" value="Warning: Unused variable" />
-          </node>
-          <node concept="3cpWsn" id="5dW8pSK6y2s" role="3cpWs9">
-            <property role="TrG5h" value="a" />
-            <node concept="10Oyi0" id="5dW8pSK6y2n" role="1tU5fm" />
-            <node concept="3cmrfG" id="5dW8pSK6y7D" role="33vP2m">
-              <property role="3cmrfH" value="42" />
-            </node>
           </node>
         </node>
         <node concept="3clFbF" id="5dW8pSK6xtT" role="3cqZAp">
@@ -116,7 +116,7 @@
               <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
             </node>
             <node concept="liA8E" id="5dW8pSK6xtS" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="Xl_RD" id="5dW8pSK6xGm" role="37wK5m">
                 <property role="Xl_RC" value="something" />
               </node>
@@ -130,7 +130,7 @@
               <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
             </node>
             <node concept="liA8E" id="5dW8pSK6yVY" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="Xl_RD" id="5dW8pSK6z0F" role="37wK5m">
                 <property role="Xl_RC" value="something else" />
               </node>
@@ -144,7 +144,7 @@
               <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
             </node>
             <node concept="liA8E" id="5dW8pSK6$2q" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="Xl_RD" id="5dW8pSK6$2r" role="37wK5m">
                 <property role="Xl_RC" value="yet another thing" />
               </node>
@@ -160,6 +160,13 @@
       <property role="TrG5h" value="meth2" />
       <node concept="3clFbS" id="5dW8pSK6_4h" role="3clF47">
         <node concept="3cpWs8" id="5dW8pSK6_4i" role="3cqZAp">
+          <node concept="3cpWsn" id="5dW8pSK6_4j" role="3cpWs9">
+            <property role="TrG5h" value="a" />
+            <node concept="10Oyi0" id="5dW8pSK6_4k" role="1tU5fm" />
+            <node concept="3cmrfG" id="5dW8pSK6_4l" role="33vP2m">
+              <property role="3cmrfH" value="42" />
+            </node>
+          </node>
           <node concept="15s5l7" id="7j9Wyvhu2mM" role="lGtFl">
             <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Unused variable&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/4056233746948448436]&quot;;" />
             <property role="huDt6" value="Warning: Unused variable" />
@@ -167,13 +174,6 @@
           <node concept="15s5l7" id="7j9Wyvhu1pG" role="lGtFl">
             <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Variable 'a' initializer is redundant&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/963887337804010668]&quot;;" />
             <property role="huDt6" value="Warning: Variable 'a' initializer is redundant" />
-          </node>
-          <node concept="3cpWsn" id="5dW8pSK6_4j" role="3cpWs9">
-            <property role="TrG5h" value="a" />
-            <node concept="10Oyi0" id="5dW8pSK6_4k" role="1tU5fm" />
-            <node concept="3cmrfG" id="5dW8pSK6_4l" role="33vP2m">
-              <property role="3cmrfH" value="42" />
-            </node>
           </node>
         </node>
         <node concept="3clFbF" id="5dW8pSK6_4m" role="3cqZAp">
@@ -183,7 +183,7 @@
               <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
             </node>
             <node concept="liA8E" id="5dW8pSK6_4p" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="Xl_RD" id="5dW8pSK6_4q" role="37wK5m">
                 <property role="Xl_RC" value="something" />
               </node>
@@ -197,7 +197,7 @@
               <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
             </node>
             <node concept="liA8E" id="5dW8pSK6_4u" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="Xl_RD" id="5dW8pSK6_4v" role="37wK5m">
                 <property role="Xl_RC" value="something else" />
               </node>
@@ -211,7 +211,7 @@
               <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
             </node>
             <node concept="liA8E" id="5dW8pSK6_4z" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="Xl_RD" id="5dW8pSK6_4$" role="37wK5m">
                 <property role="Xl_RC" value="yet another thing" />
               </node>
@@ -244,7 +244,7 @@
                   <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                 </node>
                 <node concept="liA8E" id="E3aAvrCmGX" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                   <node concept="Xl_RD" id="E3aAvrCmGY" role="37wK5m">
                     <property role="Xl_RC" value="something_1" />
                   </node>
@@ -268,7 +268,7 @@
               <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
             </node>
             <node concept="liA8E" id="E3aAvrCmH2" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="Xl_RD" id="E3aAvrCmH3" role="37wK5m">
                 <property role="Xl_RC" value="something else_1" />
               </node>
@@ -282,7 +282,7 @@
               <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
             </node>
             <node concept="liA8E" id="E3aAvrEm4j" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="Xl_RD" id="E3aAvrEm4k" role="37wK5m">
                 <property role="Xl_RC" value="something else else_1" />
               </node>
@@ -315,7 +315,7 @@
                   <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                 </node>
                 <node concept="liA8E" id="E3aAvrCrVM" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                   <node concept="Xl_RD" id="E3aAvrCrVN" role="37wK5m">
                     <property role="Xl_RC" value="something_2" />
                   </node>
@@ -339,7 +339,7 @@
               <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
             </node>
             <node concept="liA8E" id="E3aAvrCrVU" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="Xl_RD" id="E3aAvrCrVV" role="37wK5m">
                 <property role="Xl_RC" value="something else_2" />
               </node>
@@ -353,7 +353,7 @@
               <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
             </node>
             <node concept="liA8E" id="E3aAvrElK$" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="Xl_RD" id="E3aAvrElK_" role="37wK5m">
                 <property role="Xl_RC" value="something else else_2" />
               </node>
