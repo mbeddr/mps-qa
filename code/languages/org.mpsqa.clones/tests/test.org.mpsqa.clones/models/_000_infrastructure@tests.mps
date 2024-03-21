@@ -5,7 +5,7 @@
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
   </languages>
@@ -147,6 +147,10 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7">
+        <property id="8575328350543493365" name="message" index="huDt6" />
+        <property id="2423417345669755629" name="filter" index="1eyWvh" />
       </concept>
     </language>
   </registry>
@@ -335,6 +339,10 @@
               <property role="TrG5h" value="l1" />
             </node>
           </node>
+          <node concept="15s5l7" id="7j9Wyvhu0wU" role="lGtFl">
+            <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Field is never used&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/7581428506283755675]&quot;;" />
+            <property role="huDt6" value="Warning: Field is never used" />
+          </node>
         </node>
         <node concept="312cEg" id="4elAKXiq8FC" role="jymVt">
           <property role="TrG5h" value="a2" />
@@ -344,6 +352,10 @@
             <node concept="3xLA65" id="4elAKXiq8IN" role="lGtFl">
               <property role="TrG5h" value="l2" />
             </node>
+          </node>
+          <node concept="15s5l7" id="7j9Wyvhu0z0" role="lGtFl">
+            <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Field is never used&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/7581428506283755675]&quot;;" />
+            <property role="huDt6" value="Warning: Field is never used" />
           </node>
         </node>
         <node concept="312cEg" id="4elAKXiqb1T" role="jymVt">
@@ -359,6 +371,10 @@
             <node concept="3xLA65" id="4elAKXiqbsX" role="lGtFl">
               <property role="TrG5h" value="l3" />
             </node>
+          </node>
+          <node concept="15s5l7" id="7j9Wyvhu0_6" role="lGtFl">
+            <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Field is never used&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/7581428506283755675]&quot;;" />
+            <property role="huDt6" value="Warning: Field is never used" />
           </node>
         </node>
         <node concept="2tJIrI" id="4elAKXiq8Fq" role="jymVt" />
@@ -509,6 +525,10 @@
             <node concept="3clFbH" id="4elAKXiqfxx" role="3cqZAp" />
           </node>
           <node concept="3cqZAl" id="4elAKXiqfkc" role="3clF45" />
+          <node concept="15s5l7" id="7j9Wyvhu0Bm" role="lGtFl">
+            <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Package protected method meth():void is never used&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/7938578788781949884]&quot;;" />
+            <property role="huDt6" value="Warning: Package protected method meth():void is never used" />
+          </node>
         </node>
         <node concept="3Tm1VV" id="4elAKXiq8Dx" role="1B3o_S" />
       </node>

@@ -270,14 +270,6 @@
         <property role="3cmrfH" value="500" />
       </node>
     </node>
-    <node concept="2j1LYv" id="2ZPTSaphb1g" role="2j1YRv">
-      <node concept="2j1LYi" id="2ZPTSaphb1h" role="2j1YQj">
-        <ref role="2j1LYj" node="2ZPTSaphajQ" resolve="maximumWaitTimeInMillis" />
-      </node>
-      <node concept="3cmrfG" id="2ZPTSaphb96" role="2j1LYg">
-        <property role="3cmrfH" value="10000" />
-      </node>
-    </node>
     <node concept="2j1K4_" id="6wZqgFKVthT" role="2j1K4A">
       <property role="TrG5h" value="moduleNameSubstring" />
       <node concept="17QB3L" id="6wZqgFKVti4" role="2j1LY4" />
@@ -289,10 +281,6 @@
     <node concept="2j1K4_" id="6wZqgFKVthV" role="2j1K4A">
       <property role="TrG5h" value="timeBoundInMillis" />
       <node concept="10Oyi0" id="6wZqgFKVti6" role="2j1LY4" />
-    </node>
-    <node concept="2j1K4_" id="2ZPTSaphajQ" role="2j1K4A">
-      <property role="TrG5h" value="maximumWaitTimeInMillis" />
-      <node concept="10Oyi0" id="2ZPTSaphaoO" role="2j1LY4" />
     </node>
     <node concept="1Pa9Pv" id="6wZqgFKVthW" role="1MIJl8">
       <node concept="1PaTwC" id="6wZqgFKVti7" role="1PaQFQ">
@@ -973,12 +961,17 @@
                                   <node concept="Xl_RD" id="6wZqgFKVtmO" role="37wK5m">
                                     <property role="Xl_RC" value="" />
                                   </node>
-                                  <node concept="2OqwBi" id="6wZqgFKVtmP" role="37wK5m">
-                                    <node concept="37vLTw" id="6wZqgFKVtmY" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="6wZqgFKVtlS" resolve="action" />
+                                  <node concept="2OqwBi" id="2wDnBzAzDA8" role="37wK5m">
+                                    <node concept="2OqwBi" id="6wZqgFKVtmP" role="2Oq$k0">
+                                      <node concept="37vLTw" id="6wZqgFKVtmY" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="6wZqgFKVtlS" resolve="action" />
+                                      </node>
+                                      <node concept="liA8E" id="6wZqgFKVtmZ" role="2OqNvi">
+                                        <ref role="37wK5l" to="qkt:~AnAction.getTemplatePresentation()" resolve="getTemplatePresentation" />
+                                      </node>
                                     </node>
-                                    <node concept="liA8E" id="6wZqgFKVtmZ" role="2OqNvi">
-                                      <ref role="37wK5l" to="qkt:~AnAction.getTemplatePresentation()" resolve="getTemplatePresentation" />
+                                    <node concept="liA8E" id="2wDnBzAzFNZ" role="2OqNvi">
+                                      <ref role="37wK5l" to="qkt:~Presentation.clone()" resolve="clone" />
                                     </node>
                                   </node>
                                   <node concept="2YIFZM" id="6wZqgFKVtmQ" role="37wK5m">
@@ -1099,11 +1092,11 @@
                         <node concept="3clFbS" id="6wZqgFKVtll" role="1zc67A">
                           <node concept="3clFbF" id="6wZqgFKVtlJ" role="3cqZAp">
                             <node concept="37vLTI" id="6wZqgFKVtm2" role="3clFbG">
-                              <node concept="2j1LYi" id="2ZPTSaphcvB" role="37vLTx">
-                                <ref role="2j1LYj" node="2ZPTSaphajQ" resolve="maximumWaitTimeInMillis" />
-                              </node>
                               <node concept="37vLTw" id="6wZqgFKVtmv" role="37vLTJ">
                                 <ref role="3cqZAo" node="6wZqgFKVtkY" resolve="elapsedTime" />
+                              </node>
+                              <node concept="2j1LYi" id="2ZPTSaphcvB" role="37vLTx">
+                                <ref role="2j1LYj" node="2ZPTSaphajQ" resolve="maximumWaitTimeInMillis" />
                               </node>
                             </node>
                           </node>
@@ -1282,6 +1275,18 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="2j1LYv" id="2ZPTSaphb1g" role="2j1YRv">
+      <node concept="2j1LYi" id="2ZPTSaphb1h" role="2j1YQj">
+        <ref role="2j1LYj" node="2ZPTSaphajQ" resolve="maximumWaitTimeInMillis" />
+      </node>
+      <node concept="3cmrfG" id="2ZPTSaphb96" role="2j1LYg">
+        <property role="3cmrfH" value="10000" />
+      </node>
+    </node>
+    <node concept="2j1K4_" id="2ZPTSaphajQ" role="2j1K4A">
+      <property role="TrG5h" value="maximumWaitTimeInMillis" />
+      <node concept="10Oyi0" id="2ZPTSaphaoO" role="2j1LY4" />
     </node>
   </node>
 </model>

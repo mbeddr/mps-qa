@@ -2,7 +2,7 @@
 <model ref="r:25548f5d-0136-4f75-9ca1-c4b4d92849fc(org.mpsqa.clones.config.pluginSolution.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="5" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="6" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
@@ -34,6 +34,7 @@
       </concept>
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
         <property id="1205250923097" name="caption" index="2uzpH1" />
+        <property id="4692598989365753297" name="updateInBackground" index="1rBW0U" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
         <child id="1217413222820" name="parameter" index="1NuT2Z" />
         <child id="8976425910813834639" name="icon" index="3Uehp1" />
@@ -166,7 +167,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -181,12 +181,7 @@
   <node concept="sE7Ow" id="7WP_sw5x5wE">
     <property role="TrG5h" value="CheckClonesForConfig" />
     <property role="2uzpH1" value="Detect Clones for Configuration" />
-    <node concept="2S4$dB" id="7WP_sw5xafg" role="1NuT2Z">
-      <property role="TrG5h" value="model" />
-      <node concept="3Tm6S6" id="7WP_sw5xafh" role="1B3o_S" />
-      <node concept="1oajcY" id="7WP_sw5xafi" role="1oa70y" />
-      <node concept="H_c77" id="7WP_sw5x5x4" role="1tU5fm" />
-    </node>
+    <property role="1rBW0U" value="true" />
     <node concept="1DS2jV" id="7WP_sw5xcoC" role="1NuT2Z">
       <property role="TrG5h" value="project" />
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />

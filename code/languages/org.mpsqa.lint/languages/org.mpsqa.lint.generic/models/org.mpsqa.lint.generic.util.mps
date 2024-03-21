@@ -15,10 +15,10 @@
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="dvox" ref="r:9dfd3567-3b1f-4edb-85a0-3981ca2bfd8c(jetbrains.mps.lang.modelapi.structure)" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="z1c4" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
     <import index="j8aq" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.module(MPS.Core/)" />
+    <import index="z1c4" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
     <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="xlb7" ref="r:cf42fd0a-68d2-493b-8b77-961658617704(jetbrains.mps.lang.modelapi.behavior)" implicit="true" />
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" implicit="true" />
@@ -1286,10 +1286,10 @@
             </node>
           </node>
           <node concept="3clFbC" id="y1G8y68DR$" role="3clFbw">
+            <node concept="10Nm6u" id="y1G8y68DVD" role="3uHU7w" />
             <node concept="37vLTw" id="y1G8y68DKU" role="3uHU7B">
               <ref role="3cqZAo" node="y1G8y68Dl0" resolve="result" />
             </node>
-            <node concept="10Nm6u" id="y1G8y68DVD" role="3uHU7w" />
           </node>
         </node>
         <node concept="3clFbJ" id="2a68iKLFfl8" role="3cqZAp">
@@ -1770,6 +1770,7 @@
         <ref role="3uigEE" to="wyt6:~ClassNotFoundException" resolve="ClassNotFoundException" />
       </node>
     </node>
+    <node concept="3Tm1VV" id="y1G8y6adzT" role="1B3o_S" />
     <node concept="2tJIrI" id="19GnlsUjUOk" role="jymVt" />
     <node concept="2YIFZL" id="19GnlsUjVOY" role="jymVt">
       <property role="TrG5h" value="invokeMethod" />
@@ -1877,7 +1878,6 @@
         <ref role="3uigEE" to="wyt6:~IllegalAccessException" resolve="IllegalAccessException" />
       </node>
     </node>
-    <node concept="3Tm1VV" id="y1G8y6adzT" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="y1G8y67AP7">
     <property role="TrG5h" value="NamingUtils" />
