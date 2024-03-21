@@ -17,6 +17,7 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
@@ -98,6 +99,7 @@
   </registry>
   <node concept="1lH9Xt" id="4jd8IzHyHXF">
     <property role="TrG5h" value="CastsToNodeTest" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="4jd8IzHyOoo" role="1SL9yI">
       <property role="TrG5h" value="casts" />
       <node concept="3cqZAl" id="4jd8IzHyOop" role="3clF45" />
