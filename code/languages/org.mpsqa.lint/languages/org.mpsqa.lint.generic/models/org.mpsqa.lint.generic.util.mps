@@ -5,7 +5,6 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="3qmy" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.classloading(MPS.Core/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="t6h5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang.reflect(JDK/)" />
@@ -16,10 +15,10 @@
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="dvox" ref="r:9dfd3567-3b1f-4edb-85a0-3981ca2bfd8c(jetbrains.mps.lang.modelapi.structure)" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
-    <import index="j8aq" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.module(MPS.Core/)" />
-    <import index="z1c4" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
-    <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="z1c4" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
+    <import index="j8aq" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.module(MPS.Core/)" />
+    <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="xlb7" ref="r:cf42fd0a-68d2-493b-8b77-961658617704(jetbrains.mps.lang.modelapi.behavior)" implicit="true" />
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" implicit="true" />
@@ -397,7 +396,9 @@
                                       </node>
                                       <node concept="2r$n1x" id="3ghOW5HShAh" role="2r_Bvh">
                                         <ref role="2r$qp6" node="3ghOW5HS78o" resolve="node" />
-                                        <node concept="10Nm6u" id="3ghOW5HShRt" role="2r_lH1" />
+                                        <node concept="37vLTw" id="pZynZgZMd2" role="2r_lH1">
+                                          <ref role="3cqZAo" node="y1G8y6ad_X" resolve="script" />
+                                        </node>
                                       </node>
                                       <node concept="2r$n1x" id="3ghOW5H_V8n" role="2r_Bvh">
                                         <ref role="2r$qp6" node="3ghOW5H_ihW" resolve="location" />
@@ -445,28 +446,6 @@
                                   <node concept="37vLTw" id="4qEpl_D951o" role="37wK5m">
                                     <ref role="3cqZAo" node="38klfj4Had0" resolve="defaultNodeToReportErrors" />
                                   </node>
-                                </node>
-                              </node>
-                            </node>
-                            <node concept="3clFbF" id="4qEpl_D8PPD" role="3cqZAp">
-                              <node concept="37vLTI" id="4qEpl_D8PPF" role="3clFbG">
-                                <node concept="1rXfSq" id="4aEqBbbDeCq" role="37vLTx">
-                                  <ref role="37wK5l" node="2dSiT1hQole" resolve="doCheck" />
-                                  <node concept="37vLTw" id="4aEqBbbDeCr" role="37wK5m">
-                                    <ref role="3cqZAo" node="y1G8y6ad_X" resolve="script" />
-                                  </node>
-                                  <node concept="37vLTw" id="pFzydTCmkv" role="37wK5m">
-                                    <ref role="3cqZAo" node="pFzydTClZI" resolve="scriptParameterValues" />
-                                  </node>
-                                  <node concept="37vLTw" id="4aEqBbbDeCs" role="37wK5m">
-                                    <ref role="3cqZAo" node="6gY6GEDtKzD" resolve="proj" />
-                                  </node>
-                                  <node concept="37vLTw" id="38klfj4HaIA" role="37wK5m">
-                                    <ref role="3cqZAo" node="38klfj4Had0" resolve="defaultNodeToReportErrors" />
-                                  </node>
-                                </node>
-                                <node concept="37vLTw" id="4qEpl_D8PPJ" role="37vLTJ">
-                                  <ref role="3cqZAo" node="4aEqBbbDeCp" resolve="doCheck" />
                                 </node>
                               </node>
                             </node>
@@ -1307,10 +1286,10 @@
             </node>
           </node>
           <node concept="3clFbC" id="y1G8y68DR$" role="3clFbw">
-            <node concept="10Nm6u" id="y1G8y68DVD" role="3uHU7w" />
             <node concept="37vLTw" id="y1G8y68DKU" role="3uHU7B">
               <ref role="3cqZAo" node="y1G8y68Dl0" resolve="result" />
             </node>
+            <node concept="10Nm6u" id="y1G8y68DVD" role="3uHU7w" />
           </node>
         </node>
         <node concept="3clFbJ" id="2a68iKLFfl8" role="3cqZAp">
@@ -1791,7 +1770,6 @@
         <ref role="3uigEE" to="wyt6:~ClassNotFoundException" resolve="ClassNotFoundException" />
       </node>
     </node>
-    <node concept="3Tm1VV" id="y1G8y6adzT" role="1B3o_S" />
     <node concept="2tJIrI" id="19GnlsUjUOk" role="jymVt" />
     <node concept="2YIFZL" id="19GnlsUjVOY" role="jymVt">
       <property role="TrG5h" value="invokeMethod" />
@@ -1899,6 +1877,7 @@
         <ref role="3uigEE" to="wyt6:~IllegalAccessException" resolve="IllegalAccessException" />
       </node>
     </node>
+    <node concept="3Tm1VV" id="y1G8y6adzT" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="y1G8y67AP7">
     <property role="TrG5h" value="NamingUtils" />

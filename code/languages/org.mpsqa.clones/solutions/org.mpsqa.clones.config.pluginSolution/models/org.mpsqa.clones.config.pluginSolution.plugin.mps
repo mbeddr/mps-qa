@@ -211,7 +211,7 @@
             </node>
             <node concept="2YIFZM" id="7WP_sw5xgmj" role="33vP2m">
               <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
-              <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProject(com.intellij.openapi.project.Project):jetbrains.mps.project.MPSProject" resolve="fromIdeaProject" />
+              <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProject(com.intellij.openapi.project.Project)" resolve="fromIdeaProject" />
               <node concept="2OqwBi" id="7WP_sw5xgmk" role="37wK5m">
                 <node concept="2WthIp" id="7WP_sw5xgml" role="2Oq$k0" />
                 <node concept="1DTwFV" id="7WP_sw5xgmm" role="2OqNvi">
@@ -263,11 +263,11 @@
         <node concept="3clFbF" id="2VgkkwRpz_S" role="3cqZAp">
           <node concept="2OqwBi" id="2VgkkwRp$0_" role="3clFbG">
             <node concept="2YIFZM" id="2VgkkwRpzTt" role="2Oq$k0">
-              <ref role="37wK5l" to="xygl:~ProgressManager.getInstance():com.intellij.openapi.progress.ProgressManager" resolve="getInstance" />
+              <ref role="37wK5l" to="xygl:~ProgressManager.getInstance()" resolve="getInstance" />
               <ref role="1Pybhc" to="xygl:~ProgressManager" resolve="ProgressManager" />
             </node>
             <node concept="liA8E" id="2VgkkwRp$bn" role="2OqNvi">
-              <ref role="37wK5l" to="xygl:~ProgressManager.run(com.intellij.openapi.progress.Task):void" resolve="run" />
+              <ref role="37wK5l" to="xygl:~ProgressManager.run(com.intellij.openapi.progress.Task)" resolve="run" />
               <node concept="2ShNRf" id="2VgkkwRp$ck" role="37wK5m">
                 <node concept="YeOm9" id="2VgkkwRp$B3" role="2ShVmc">
                   <node concept="1Y3b0j" id="2VgkkwRp$B6" role="YeSDq">
@@ -328,7 +328,7 @@
                         <ref role="3cqZAo" node="7WP_sw5xgmi" resolve="proj" />
                       </node>
                       <node concept="liA8E" id="2VgkkwRpHWg" role="2OqNvi">
-                        <ref role="37wK5l" to="z1c3:~MPSProject.getProject():com.intellij.openapi.project.Project" resolve="getProject" />
+                        <ref role="37wK5l" to="z1c3:~MPSProject.getProject()" resolve="getProject" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="2VgkkwRpE5r" role="37wK5m">

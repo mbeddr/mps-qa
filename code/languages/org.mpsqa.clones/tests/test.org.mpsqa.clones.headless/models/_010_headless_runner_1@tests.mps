@@ -150,7 +150,7 @@
                 <node concept="2OqwBi" id="2KLGrfl1HUJ" role="Vysub">
                   <node concept="1jxXqW" id="2KLGrfl1HUK" role="2Oq$k0" />
                   <node concept="liA8E" id="2KLGrfl1HUL" role="2OqNvi">
-                    <ref role="37wK5l" to="z1c4:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                    <ref role="37wK5l" to="z1c4:~Project.getRepository()" resolve="getRepository" />
                   </node>
                 </node>
               </node>

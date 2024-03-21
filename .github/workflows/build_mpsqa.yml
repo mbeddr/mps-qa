@@ -40,7 +40,7 @@ jobs:
       uses: gradle/gradle-build-action@v2
       with: 
         arguments: >
-          build migrate
+          build migrate rerunMigrations
           -Partifacts.itemis.cloud.user=${{secrets.ARTIFACTS_ITEMIS_CLOUD_USER}}
           -Partifacts.itemis.cloud.pw=${{secrets.ARTIFACTS_ITEMIS_CLOUD_PW}}
         wrapper-cache-enabled: true
