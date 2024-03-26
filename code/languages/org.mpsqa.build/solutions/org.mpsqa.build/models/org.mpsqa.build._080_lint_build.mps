@@ -583,6 +583,16 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="dV78QUgFZv" role="3bR37C">
+          <node concept="3bR9La" id="dV78QUgFZw" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:2eDSGe9d1pJ" resolve="jetbrains.mps.lang.plugin.standalone" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="dV78QUh1hw" role="3bR37C">
+          <node concept="3bR9La" id="dV78QUh1hx" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L4X" resolve="jetbrains.mps.lang.editor" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="51obkXDz7OB" role="2G$12L">
         <property role="BnDLt" value="true" />
