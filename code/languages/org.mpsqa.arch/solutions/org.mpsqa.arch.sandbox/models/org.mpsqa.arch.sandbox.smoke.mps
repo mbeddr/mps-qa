@@ -66,12 +66,7 @@
           </node>
         </node>
         <node concept="mXA1B" id="7qAQSsiFxd" role="1Rkc$q">
-          <node concept="mXAj4" id="7qAQSsiFxf" role="mXvOw">
-            <ref role="mXAj7" node="1tkdAPw1fXp" resolve="Ant" />
-          </node>
-        </node>
-        <node concept="mXA1B" id="7qAQSsiFyp" role="1Rkc$q">
-          <node concept="mXAj4" id="7qAQSsiFyt" role="mXvOw">
+          <node concept="mXAj4" id="1XeVdf85oR_" role="mXvOw">
             <ref role="mXAj7" node="7qAQSsiFxK" resolve="JDK" />
           </node>
         </node>
@@ -89,6 +84,11 @@
     </node>
     <node concept="mXAGQ" id="1tkdAPw1fXe" role="mXAGU">
       <property role="TrG5h" value="first_layer" />
+      <node concept="mXA1B" id="1XeVdf8advS" role="mXAiC">
+        <node concept="mXAj4" id="1XeVdf8adw2" role="mXvOw">
+          <ref role="mXAj7" node="7qAQSsiFxK" resolve="JDK" />
+        </node>
+      </node>
       <node concept="mXxR0" id="1tkdAPw1fXp" role="mXAiC">
         <node concept="37shsh" id="1tkdAPw1fXr" role="mXxR3">
           <node concept="1dCxOk" id="1tkdAPw1fXy" role="37shsm">
@@ -109,7 +109,6 @@
           </node>
         </node>
       </node>
-      <node concept="mXA1B" id="1tkdAPw1fXG" role="mXAiC" />
     </node>
     <node concept="mXAGQ" id="7qAQSsiFxw" role="mXAGU">
       <property role="TrG5h" value="java_sdk" />
