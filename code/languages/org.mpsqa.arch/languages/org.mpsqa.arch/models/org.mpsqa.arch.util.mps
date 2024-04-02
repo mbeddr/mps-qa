@@ -764,7 +764,7 @@
                 <ref role="3cqZAo" node="1XeVdf85C1Y" resolve="componentRef" />
               </node>
               <node concept="37vLTw" id="1XeVdf8hj5G" role="3ElQJh">
-                <ref role="3cqZAo" node="1XeVdf8hfuh" resolve="couplingStrength" />
+                <ref role="3cqZAo" node="1XeVdf8hfuh" resolve="referencedNodesList" />
               </node>
             </node>
           </node>
@@ -773,7 +773,7 @@
           <node concept="3y3z36" id="1XeVdf8hiuy" role="3clFbw">
             <node concept="10Nm6u" id="1XeVdf8hj11" role="3uHU7w" />
             <node concept="37vLTw" id="1XeVdf8hj5H" role="3uHU7B">
-              <ref role="3cqZAo" node="1XeVdf8hj5D" resolve="integer" />
+              <ref role="3cqZAo" node="1XeVdf8hj5D" resolve="coupling" />
             </node>
           </node>
           <node concept="3clFbS" id="1XeVdf8hfrO" role="3clFbx">
@@ -812,14 +812,14 @@
                 <ref role="3cqZAo" node="1XeVdf85C1Y" resolve="componentRef" />
               </node>
               <node concept="37vLTw" id="1XeVdf8hjWU" role="3ElQJh">
-                <ref role="3cqZAo" node="1XeVdf8hfuh" resolve="couplingStrength" />
+                <ref role="3cqZAo" node="1XeVdf8hfuh" resolve="referencedNodesList" />
               </node>
             </node>
           </node>
         </node>
         <node concept="3clFbF" id="1XeVdf8hjqw" role="3cqZAp">
           <node concept="37vLTw" id="1XeVdf8hjEF" role="3clFbG">
-            <ref role="3cqZAo" node="1XeVdf8hjEC" resolve="doComputeDependencyStrength" />
+            <ref role="3cqZAo" node="1XeVdf8hjEC" resolve="myReferencedNodes" />
           </node>
         </node>
       </node>
@@ -1012,7 +1012,7 @@
                     </node>
                     <node concept="3JPx81" id="1XeVdf8h2q6" role="2OqNvi">
                       <node concept="37vLTw" id="1XeVdf8iN$R" role="25WWJ7">
-                        <ref role="3cqZAo" node="1XeVdf8iN$N" resolve="node" />
+                        <ref role="3cqZAo" node="1XeVdf8iN$N" resolve="ref" />
                       </node>
                     </node>
                   </node>
@@ -1037,7 +1037,7 @@
         </node>
         <node concept="3clFbF" id="1XeVdf8h2qe" role="3cqZAp">
           <node concept="37vLTw" id="1XeVdf8h2qf" role="3clFbG">
-            <ref role="3cqZAo" node="1XeVdf8h2pQ" resolve="count" />
+            <ref role="3cqZAo" node="1XeVdf8h2pQ" resolve="myReferencedNodes" />
           </node>
         </node>
       </node>
@@ -1086,14 +1086,14 @@
                   <node concept="3clFbF" id="1XeVdf8hCMF" role="3cqZAp">
                     <node concept="37vLTI" id="1XeVdf8hEN$" role="3clFbG">
                       <node concept="37vLTw" id="1XeVdf8hEUo" role="37vLTx">
-                        <ref role="3cqZAo" node="1XeVdf8hCvG" resolve="dependencyStrength" />
+                        <ref role="3cqZAo" node="1XeVdf8hCvG" resolve="referencedNodes" />
                       </node>
                       <node concept="3EllGN" id="1XeVdf8hDjQ" role="37vLTJ">
                         <node concept="37vLTw" id="1XeVdf8hD$d" role="3ElVtu">
                           <ref role="3cqZAo" node="1XeVdf8hChb" resolve="it" />
                         </node>
                         <node concept="37vLTw" id="1XeVdf8hCMD" role="3ElQJh">
-                          <ref role="3cqZAo" node="1XeVdf8hfuh" resolve="couplingStrength" />
+                          <ref role="3cqZAo" node="1XeVdf8hfuh" resolve="referencedNodesList" />
                         </node>
                       </node>
                     </node>

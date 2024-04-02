@@ -262,7 +262,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="19GnlsUj05o" role="2OqNvi">
-                  <ref role="37wK5l" to="w1kc:~SReference.setResolveInfo(java.lang.String)" resolve="setResolveInfo" />
+                  <ref role="37wK5l" to="w1kc:~StaticReference.setResolveInfo(java.lang.String)" resolve="setResolveInfo" />
                   <node concept="37vLTw" id="19GnlsUj05p" role="37wK5m">
                     <ref role="3cqZAo" node="19GnlsUj05e" resolve="newResolveInfo" />
                   </node>
