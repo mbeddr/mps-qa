@@ -458,7 +458,7 @@
                 <node concept="3EllGN" id="1XeVdf8hoSW" role="3uHU7B">
                   <node concept="pncrf" id="1XeVdf8hpgz" role="3ElVtu" />
                   <node concept="10M0yZ" id="1XeVdf8homC" role="3ElQJh">
-                    <ref role="3cqZAo" to="u41u:1XeVdf8hfuh" resolve="couplingStrength" />
+                    <ref role="3cqZAo" to="u41u:1XeVdf8hfuh" resolve="referencedNodesList" />
                     <ref role="1PxDUh" to="u41u:1XeVdf85BSu" resolve="DependencyStrengthUtils" />
                   </node>
                 </node>
