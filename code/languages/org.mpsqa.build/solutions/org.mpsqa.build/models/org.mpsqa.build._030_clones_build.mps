@@ -172,21 +172,6 @@
         </node>
       </node>
     </node>
-    <node concept="398rNT" id="34utZfVcg95" role="1l3spd">
-      <property role="TrG5h" value="dependencies.mpsqa.base" />
-      <node concept="398BVA" id="34utZfVcgdj" role="398pKh">
-        <ref role="398BVh" node="1GhTetdAZXl" resolve="mpsqa.home" />
-        <node concept="2Ry0Ak" id="34utZfVcgdk" role="iGT6I">
-          <property role="2Ry0Am" value="build" />
-          <node concept="2Ry0Ak" id="34utZfVcgdl" role="2Ry0An">
-            <property role="2Ry0Am" value="artifacts" />
-            <node concept="2Ry0Ak" id="34utZfVcgdm" role="2Ry0An">
-              <property role="2Ry0Am" value="org.mpsqa.base" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="2sgV4H" id="2JVMSZMFXgm" role="1l3spa">
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
       <node concept="398BVA" id="2JVMSZMFXgn" role="2JcizS">
@@ -195,8 +180,17 @@
     </node>
     <node concept="2sgV4H" id="7C9PHv6FDQo" role="1l3spa">
       <ref role="1l3spb" to="2tou:7C9PHv6FBIG" resolve="org.mpsqa.base" />
-      <node concept="398BVA" id="67NgLmjV$iW" role="2JcizS">
-        <ref role="398BVh" node="34utZfVcg95" resolve="dependencies.mpsqa.base" />
+      <node concept="398BVA" id="32O483pN5Hx" role="2JcizS">
+        <ref role="398BVh" node="1GhTetdAZXl" resolve="mpsqa.home" />
+        <node concept="2Ry0Ak" id="32O483pN5HB" role="iGT6I">
+          <property role="2Ry0Am" value="build" />
+          <node concept="2Ry0Ak" id="32O483pN5HG" role="2Ry0An">
+            <property role="2Ry0Am" value="artifacts" />
+            <node concept="2Ry0Ak" id="32O483pN5HL" role="2Ry0An">
+              <property role="2Ry0Am" value="org.mpsqa.base" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="1l3spV" id="2JVMSZMFXhb" role="1l3spN">
