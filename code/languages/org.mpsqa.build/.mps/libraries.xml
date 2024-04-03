@@ -11,6 +11,14 @@
             </Library>
           </value>
         </entry>
+        <entry key="testing">
+          <value>
+            <Library>
+              <option name="name" value="testing" />
+              <option name="path" value="$PROJECT_DIR$/../org.mpsqa.testing" />
+            </Library>
+          </value>
+        </entry>
       </map>
     </option>
   </component>

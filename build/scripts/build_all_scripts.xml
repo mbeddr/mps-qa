@@ -51,7 +51,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.org.mpsqa.build.allScripts, java.compile.org.mpsqa.base.build, java.compile.org.mpsqa.build, java.compile.org.mpsqa.build.sandboxes, java.compile.org.mpsqa.clones.build, java.compile.org.mpsqa.lint.build, java.compile.org.mpsqa.testing.tests.build" />
+  <target name="compileJava" depends="java.compile.org.mpsqa.build.allScripts, java.compile.org.mpsqa.base.build, java.compile.org.mpsqa.build, java.compile.org.mpsqa.build.sandboxes, java.compile.org.mpsqa.clones.build, java.compile.org.mpsqa.lint.build, java.compile.org.mpsqa.testing.build, java.compile.org.mpsqa.testing.tests.build" />
   
   <target name="processResources" />
   
@@ -162,6 +162,7 @@
         <module file="${basedir}/code/languages/org.mpsqa.build/solutions/org.mpsqa.build.sandboxes/org.mpsqa.build.sandboxes.msd" />
         <module file="${basedir}/code/languages/org.mpsqa.clones/solutions/org.mpsqa.clones.build/org.mpsqa.clones.build.msd" />
         <module file="${basedir}/code/languages/org.mpsqa.lint/solutions/org.mpsqa.lint.build/org.mpsqa.lint.build.msd" />
+        <module file="${basedir}/code/languages/org.mpsqa.testing/solutions/org.mpsqa.testing.build/org.mpsqa.testing.build.msd" />
         <module file="${basedir}/code/languages/org.mpsqa.testing/solutions/org.mpsqa.testing.tests.build/org.mpsqa.testing.tests.build.msd" />
       </chunk>
       <jvmargs>
@@ -206,7 +207,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.org.mpsqa.build" depends="java.compile.org.mpsqa.base.build">
+  <target name="java.compile.org.mpsqa.build" depends="java.compile.org.mpsqa.base.build, java.compile.org.mpsqa.testing.build">
     <mkdir dir="${basedir}/code/languages/org.mpsqa.build/solutions/org.mpsqa.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.mpsqa.build" />
     <javac destdir="${build.tmp}/java/out/org.mpsqa.build" fork="false" encoding="utf8" includeantruntime="false" debug="true">
@@ -214,7 +215,10 @@
       <src>
         <path location="${basedir}/code/languages/org.mpsqa.build/solutions/org.mpsqa.build/source_gen" />
       </src>
-      <classpath path="${build.tmp}/java/out/org.mpsqa.base.build" />
+      <classpath>
+        <pathelement path="${build.tmp}/java/out/org.mpsqa.base.build" />
+        <pathelement path="${build.tmp}/java/out/org.mpsqa.testing.build" />
+      </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/org.mpsqa.build">
       <fileset dir="${basedir}/code/languages/org.mpsqa.build/solutions/org.mpsqa.build/source_gen" excludes="**/*.java" />
@@ -269,7 +273,22 @@
     </copy>
   </target>
   
-  <target name="java.compile.org.mpsqa.testing.tests.build" depends="java.compile.org.mpsqa.build">
+  <target name="java.compile.org.mpsqa.testing.build" depends="java.compile.org.mpsqa.base.build">
+    <mkdir dir="${basedir}/code/languages/org.mpsqa.testing/solutions/org.mpsqa.testing.build/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/org.mpsqa.testing.build" />
+    <javac destdir="${build.tmp}/java/out/org.mpsqa.testing.build" fork="false" encoding="utf8" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/code/languages/org.mpsqa.testing/solutions/org.mpsqa.testing.build/source_gen" />
+      </src>
+      <classpath path="${build.tmp}/java/out/org.mpsqa.base.build" />
+    </javac>
+    <copy todir="${build.tmp}/java/out/org.mpsqa.testing.build">
+      <fileset dir="${basedir}/code/languages/org.mpsqa.testing/solutions/org.mpsqa.testing.build/source_gen" excludes="**/*.java" />
+    </copy>
+  </target>
+  
+  <target name="java.compile.org.mpsqa.testing.tests.build" depends="java.compile.org.mpsqa.base.build, java.compile.org.mpsqa.build, java.compile.org.mpsqa.testing.build">
     <mkdir dir="${basedir}/code/languages/org.mpsqa.testing/solutions/org.mpsqa.testing.tests.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.mpsqa.testing.tests.build" />
     <javac destdir="${build.tmp}/java/out/org.mpsqa.testing.tests.build" fork="false" encoding="utf8" includeantruntime="false" debug="true">
@@ -277,7 +296,11 @@
       <src>
         <path location="${basedir}/code/languages/org.mpsqa.testing/solutions/org.mpsqa.testing.tests.build/source_gen" />
       </src>
-      <classpath path="${build.tmp}/java/out/org.mpsqa.build" />
+      <classpath>
+        <pathelement path="${build.tmp}/java/out/org.mpsqa.base.build" />
+        <pathelement path="${build.tmp}/java/out/org.mpsqa.build" />
+        <pathelement path="${build.tmp}/java/out/org.mpsqa.testing.build" />
+      </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/org.mpsqa.testing.tests.build">
       <fileset dir="${basedir}/code/languages/org.mpsqa.testing/solutions/org.mpsqa.testing.tests.build/source_gen" excludes="**/*.java" />
@@ -291,6 +314,7 @@
     <delete dir="${basedir}/code/languages/org.mpsqa.build/solutions/org.mpsqa.build.sandboxes/source_gen" />
     <delete dir="${basedir}/code/languages/org.mpsqa.clones/solutions/org.mpsqa.clones.build/source_gen" />
     <delete dir="${basedir}/code/languages/org.mpsqa.lint/solutions/org.mpsqa.lint.build/source_gen" />
+    <delete dir="${basedir}/code/languages/org.mpsqa.testing/solutions/org.mpsqa.testing.build/source_gen" />
     <delete dir="${basedir}/code/languages/org.mpsqa.testing/solutions/org.mpsqa.testing.tests.build/source_gen" />
   </target>
 </project>
