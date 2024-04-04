@@ -154,6 +154,7 @@
       <concept id="2555875871751904530" name="org.mpsqa.lint.generic.structure.CheckingFunction" flags="ig" index="1MIXq2" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
@@ -280,7 +281,6 @@
         <child id="1237721435807" name="elementType" index="HW$YZ" />
       </concept>
       <concept id="1227008614712" name="jetbrains.mps.baseLanguage.collections.structure.LinkedListCreator" flags="nn" index="2Jqq0_" />
-      <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1160666733551" name="jetbrains.mps.baseLanguage.collections.structure.AddAllElementsOperation" flags="nn" index="X8dFx" />
@@ -594,7 +594,7 @@
                                     <node concept="2OqwBi" id="dV78QUjBw1" role="3clFbG">
                                       <node concept="2OqwBi" id="dV78QUjzhp" role="2Oq$k0">
                                         <node concept="37vLTw" id="dV78QUjyY2" role="2Oq$k0">
-                                          <ref role="3cqZAo" node="dV78QUjyXi" resolve="it" />
+                                          <ref role="3cqZAo" node="4KwcbYpE2O5" resolve="it" />
                                         </node>
                                         <node concept="liA8E" id="dV78QUjAUs" role="2OqNvi">
                                           <ref role="37wK5l" to="mhbf:~SReference.getTargetNode()" resolve="getTargetNode" />
@@ -609,9 +609,9 @@
                                     </node>
                                   </node>
                                 </node>
-                                <node concept="Rh6nW" id="dV78QUjyXi" role="1bW2Oz">
+                                <node concept="gl6BB" id="4KwcbYpE2O5" role="1bW2Oz">
                                   <property role="TrG5h" value="it" />
-                                  <node concept="2jxLKc" id="dV78QUjyXj" role="1tU5fm" />
+                                  <node concept="2jxLKc" id="4KwcbYpE2O6" role="1tU5fm" />
                                 </node>
                               </node>
                             </node>
