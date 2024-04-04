@@ -52,7 +52,7 @@
       <concept id="8654221991637384182" name="jetbrains.mps.build.structure.BuildFileIncludesSelector" flags="ng" index="3qWCbU">
         <property id="8654221991637384184" name="pattern" index="3qWCbO" />
       </concept>
-      <concept id="4701820937132344003" name="jetbrains.mps.build.structure.BuildLayout_Container" flags="ngI" index="1y1bJS">
+      <concept id="4701820937132344003" name="jetbrains.mps.build.structure.BuildLayout_Container" flags="ng" index="1y1bJS">
         <child id="7389400916848037006" name="children" index="39821P" />
       </concept>
       <concept id="841011766566059607" name="jetbrains.mps.build.structure.BuildStringNotEmpty" flags="ng" index="3_J27D" />
@@ -65,7 +65,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -130,6 +130,18 @@
     <property role="turDy" value="build-mutant-languages.xml" />
     <node concept="2sgV4H" id="3PN66LDqBYO" role="1l3spa">
       <ref role="1l3spb" to="2tou:7C9PHv6FBIG" resolve="org.mpsqa.base" />
+      <node concept="398BVA" id="32O483pN5Hx" role="2JcizS">
+        <ref role="398BVh" node="3PN66LDqBYR" resolve="mpsqa.home" />
+        <node concept="2Ry0Ak" id="32O483pN5HB" role="iGT6I">
+          <property role="2Ry0Am" value="build" />
+          <node concept="2Ry0Ak" id="32O483pN5HG" role="2Ry0An">
+            <property role="2Ry0Am" value="artifacts" />
+            <node concept="2Ry0Ak" id="32O483pN5HL" role="2Ry0An">
+              <property role="2Ry0Am" value="org.mpsqa.base" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="10PD9b" id="3PN66LDqBYP" role="10PD9s" />
     <node concept="3b7kt6" id="3PN66LDqBYQ" role="10PD9s" />

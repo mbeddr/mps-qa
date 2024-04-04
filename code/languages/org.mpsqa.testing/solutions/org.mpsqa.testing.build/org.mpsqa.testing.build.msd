@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="org.mpsqa.build" uuid="11d4368a-a7e8-4dd9-bfc6-c2de268d1994" moduleVersion="0">
+<solution name="org.mpsqa.testing.build" uuid="3bf16f17-7850-4b1d-804b-c60206298996" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -10,10 +10,10 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
+  <sourcePath />
   <dependencies>
-    <dependency reexport="false">422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)</dependency>
     <dependency reexport="false">5e8cea6b-997f-49b1-a8d8-dc2a7a6fa657(org.mpsqa.base.build)</dependency>
-    <dependency reexport="false">3bf16f17-7850-4b1d-804b-c60206298996(org.mpsqa.testing.build)</dependency>
+    <dependency reexport="false">422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:798100da-4f0a-421a-b991-71f8c50ce5d2:jetbrains.mps.build" version="0" />
@@ -23,7 +23,6 @@
   <dependencyVersions>
     <module reference="422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)" version="0" />
     <module reference="5e8cea6b-997f-49b1-a8d8-dc2a7a6fa657(org.mpsqa.base.build)" version="0" />
-    <module reference="11d4368a-a7e8-4dd9-bfc6-c2de268d1994(org.mpsqa.build)" version="0" />
     <module reference="3bf16f17-7850-4b1d-804b-c60206298996(org.mpsqa.testing.build)" version="0" />
   </dependencyVersions>
 </solution>
