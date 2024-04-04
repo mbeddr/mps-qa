@@ -7,7 +7,7 @@
           <value>
             <Library>
               <option name="name" value="base" />
-              <option name="path" value="$PROJECT_DIR$/../org.mpsqa.base" />
+              <option name="path" value="${mpsqa.home}/code/languages/org.mpsqa.base" />
             </Library>
           </value>
         </entry>

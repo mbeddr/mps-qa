@@ -10,6 +10,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.testcov.buildIntegration.jacoco.codeowners.tests/org.mpsqa.testcov.buildIntegration.jacoco.codeowners.tests.msd" folder="buildIntegration.tests" />
       <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.testcov.jacoco.rt/org.mpsqa.testcov.jacoco.rt.msd" folder="testcov" />
       <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.testcov.jacoco.sandbox/org.mpsqa.testcov.jacoco.sandbox.msd" folder="testcov" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.testing.build/org.mpsqa.testing.build.msd" folder="_build" />
       <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.testing.tests.build/org.mpsqa.testing.tests.build.msd" folder="_build" />
     </projectModules>
   </component>

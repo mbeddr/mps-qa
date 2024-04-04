@@ -137,6 +137,18 @@
     <property role="turDy" value="build-arch-analysis-languages.xml" />
     <node concept="2sgV4H" id="50Wzfz4shz0" role="1l3spa">
       <ref role="1l3spb" to="2tou:7C9PHv6FBIG" resolve="org.mpsqa.base" />
+      <node concept="398BVA" id="32O483pN5Hx" role="2JcizS">
+        <ref role="398BVh" node="50Wzfz4shz3" resolve="mpsqa.home" />
+        <node concept="2Ry0Ak" id="32O483pN5HB" role="iGT6I">
+          <property role="2Ry0Am" value="build" />
+          <node concept="2Ry0Ak" id="32O483pN5HG" role="2Ry0An">
+            <property role="2Ry0Am" value="artifacts" />
+            <node concept="2Ry0Ak" id="32O483pN5HL" role="2Ry0An">
+              <property role="2Ry0Am" value="org.mpsqa.base" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="10PD9b" id="50Wzfz4shz1" role="10PD9s" />
     <node concept="3b7kt6" id="50Wzfz4shz2" role="10PD9s" />
@@ -382,25 +394,6 @@
             <ref role="3bR37D" node="50Wzfz4shzn" resolve="org.mpsqa.arch" />
           </node>
         </node>
-        <node concept="1SiIV0" id="6ST145H7Ut5" role="3bR37C">
-          <node concept="1BurEX" id="6ST145H7Ut6" role="1SiIV1">
-            <node concept="398BVA" id="6ST145H7UsS" role="1BurEY">
-              <ref role="398BVh" node="50Wzfz4shz5" resolve="mpsqa.arch.home" />
-              <node concept="2Ry0Ak" id="6ST145H7UsT" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="6ST145H7UsU" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.mpsqa.arch.pluginSolution" />
-                  <node concept="2Ry0Ak" id="6ST145H7UsV" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="7PMJ7UztwOq" role="2Ry0An">
-                      <property role="2Ry0Am" value="plantuml-asl-1.2023.13.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="1BupzO" id="50Wzfz4sh_E" role="3bR31x">
           <property role="3ZfqAx" value="models" />
           <property role="1Hdu6h" value="true" />
@@ -436,6 +429,25 @@
             </node>
             <node concept="3qWCbU" id="1$4Qbt$B9zq" role="3LXTna">
               <property role="3qWCbO" value="icons/**" />
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6ST145H7Ut5" role="3bR37C">
+          <node concept="1BurEX" id="6ST145H7Ut6" role="1SiIV1">
+            <node concept="398BVA" id="6ST145H7UsS" role="1BurEY">
+              <ref role="398BVh" node="50Wzfz4shz5" resolve="mpsqa.arch.home" />
+              <node concept="2Ry0Ak" id="6ST145H7UsT" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="6ST145H7UsU" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.arch.pluginSolution" />
+                  <node concept="2Ry0Ak" id="6ST145H7UsV" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="7PMJ7UztwOq" role="2Ry0An">
+                      <property role="2Ry0Am" value="plantuml-asl-1.2023.13.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
