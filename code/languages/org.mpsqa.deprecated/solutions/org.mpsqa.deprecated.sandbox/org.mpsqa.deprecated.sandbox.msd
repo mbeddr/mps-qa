@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="org.mpsqa.deprecated.sandbox" uuid="3fb40ad3-c4f3-4da0-9f88-0c2a1446f870" moduleVersion="0" compileInMPS="true">
+<solution name="org.mpsqa.deprecated.sandbox" uuid="3fb40ad3-c4f3-4da0-9f88-0c2a1446f870" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -10,7 +10,6 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <sourcePath />
   <languageVersions>
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
     <language slang="l:b73ca93f-6762-4398-b251-df0d708b305b:org.mpsqa.deprecated" version="0" />

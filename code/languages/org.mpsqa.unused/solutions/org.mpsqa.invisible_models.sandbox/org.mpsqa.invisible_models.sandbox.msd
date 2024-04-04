@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="org.mpsqa.invisible_models.sandbox" uuid="11ca92e5-e287-4854-a6fa-3d8e9abeb6f7" moduleVersion="0" compileInMPS="true">
+<solution name="org.mpsqa.invisible_models.sandbox" uuid="11ca92e5-e287-4854-a6fa-3d8e9abeb6f7" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -10,7 +10,6 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <sourcePath />
   <languageVersions>
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
     <language slang="l:f87d0612-ec25-46e5-819a-31e58229407e:org.mpsqa.invisible_models" version="0" />
