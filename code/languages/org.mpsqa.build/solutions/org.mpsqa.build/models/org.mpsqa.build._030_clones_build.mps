@@ -7,7 +7,7 @@
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
-    <import index="2tou" ref="r:18bebd8f-6332-4ffd-b628-cc9dad4ef421(org.mpsqa.build._010_base_build)" />
+    <import index="2tou" ref="r:18bebd8f-6332-4ffd-b628-cc9dad4ef421(org.mpsqa.base.build)" />
   </imports>
   <registry>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
@@ -172,21 +172,6 @@
         </node>
       </node>
     </node>
-    <node concept="398rNT" id="34utZfVcg95" role="1l3spd">
-      <property role="TrG5h" value="dependencies.mpsqa.base" />
-      <node concept="398BVA" id="34utZfVcgdj" role="398pKh">
-        <ref role="398BVh" node="1GhTetdAZXl" resolve="mpsqa.home" />
-        <node concept="2Ry0Ak" id="34utZfVcgdk" role="iGT6I">
-          <property role="2Ry0Am" value="build" />
-          <node concept="2Ry0Ak" id="34utZfVcgdl" role="2Ry0An">
-            <property role="2Ry0Am" value="artifacts" />
-            <node concept="2Ry0Ak" id="34utZfVcgdm" role="2Ry0An">
-              <property role="2Ry0Am" value="org.mpsqa.base" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="2sgV4H" id="2JVMSZMFXgm" role="1l3spa">
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
       <node concept="398BVA" id="2JVMSZMFXgn" role="2JcizS">
@@ -195,8 +180,17 @@
     </node>
     <node concept="2sgV4H" id="7C9PHv6FDQo" role="1l3spa">
       <ref role="1l3spb" to="2tou:7C9PHv6FBIG" resolve="org.mpsqa.base" />
-      <node concept="398BVA" id="67NgLmjV$iW" role="2JcizS">
-        <ref role="398BVh" node="34utZfVcg95" resolve="dependencies.mpsqa.base" />
+      <node concept="398BVA" id="32O483pN5Hx" role="2JcizS">
+        <ref role="398BVh" node="1GhTetdAZXl" resolve="mpsqa.home" />
+        <node concept="2Ry0Ak" id="32O483pN5HB" role="iGT6I">
+          <property role="2Ry0Am" value="build" />
+          <node concept="2Ry0Ak" id="32O483pN5HG" role="2Ry0An">
+            <property role="2Ry0Am" value="artifacts" />
+            <node concept="2Ry0Ak" id="32O483pN5HL" role="2Ry0An">
+              <property role="2Ry0Am" value="org.mpsqa.base" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="1l3spV" id="2JVMSZMFXhb" role="1l3spN">
