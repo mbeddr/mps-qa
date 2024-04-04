@@ -28,3 +28,4 @@ test_gen.caches
 # RCP
 artifacts/*
 build/*
+!/build/scripts/build_all_scripts.xml
