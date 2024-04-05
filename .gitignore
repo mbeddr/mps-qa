@@ -1,31 +1,25 @@
 # -----------------------------------------------------------
 # General
-
-
-*.class
-
-.idea
-.gradle
-code\languages\org.mpsqa.clones\.mps\workspace.xml
+/.idea/
+/.gradle/
 
 junitvmwatcher*.properties
 build.properties
 junit*.properties
 /gradle.properties
 
-classes_gen
-source_gen
-source_gen.caches
+classes_gen/
+source_gen/
+source_gen.caches/
 
 workspace.xml
 
 # -----------------------------------------------------------
 # * tests
-test_gen
-test_gen.caches
+test_gen/
+test_gen.caches/
 
 # --------------------------------------- 
 # RCP
-artifacts/*
-build/*
+build/
 !/build/scripts/build_all_scripts.xml
