@@ -287,7 +287,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.org.mpsqa.testing.tests.build" depends="java.compile.org.mpsqa.base.build, java.compile.org.mpsqa.build, java.compile.org.mpsqa.testing.build">
+  <target name="java.compile.org.mpsqa.testing.tests.build" depends="java.compile.org.mpsqa.base.build, java.compile.org.mpsqa.testing.build">
     <mkdir dir="${basedir}/code/languages/org.mpsqa.testing/solutions/org.mpsqa.testing.tests.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.mpsqa.testing.tests.build" />
     <javac destdir="${build.tmp}/java/out/org.mpsqa.testing.tests.build" fork="false" encoding="utf8" includeantruntime="false" debug="true">
@@ -297,7 +297,6 @@
       </src>
       <classpath>
         <pathelement path="${build.tmp}/java/out/org.mpsqa.base.build" />
-        <pathelement path="${build.tmp}/java/out/org.mpsqa.build" />
         <pathelement path="${build.tmp}/java/out/org.mpsqa.testing.build" />
       </classpath>
     </javac>

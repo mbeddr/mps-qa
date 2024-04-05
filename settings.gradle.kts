@@ -10,3 +10,7 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
+
+
+include(":testing:sandbox")
+project(":testing:sandbox").projectDir = file("code/languages/org.mpsqa.testing/sandbox")
