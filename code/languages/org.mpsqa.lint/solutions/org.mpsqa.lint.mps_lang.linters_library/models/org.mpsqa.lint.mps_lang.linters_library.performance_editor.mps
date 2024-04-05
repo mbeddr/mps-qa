@@ -5,7 +5,7 @@
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="40ab19e9-751a-4433-b645-0e65160e58a0" name="org.mpsqa.lint.generic" version="0" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
     <use id="1a8554c4-eb84-43ba-8c34-6f0d90c6e75a" name="jetbrains.mps.lang.smodel.query" version="3" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
@@ -118,7 +118,7 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -156,7 +156,7 @@
       <concept id="7741759128795038157" name="org.mpsqa.lint.generic.structure.CheckableScriptParameter" flags="ng" index="2j1K4_">
         <child id="7741759128795045740" name="tpe" index="2j1LY4" />
       </concept>
-      <concept id="7741759128795045742" name="org.mpsqa.lint.generic.structure.IScriptsParametersAware" flags="ng" index="2j1LY6">
+      <concept id="7741759128795045742" name="org.mpsqa.lint.generic.structure.IScriptsParametersAware" flags="ngI" index="2j1LY6">
         <child id="7741759128795065655" name="parValues" index="2j1YRv" />
       </concept>
       <concept id="7741759128795045754" name="org.mpsqa.lint.generic.structure.CheckableScriptParameterRef" flags="ng" index="2j1LYi">
@@ -200,7 +200,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -270,14 +270,6 @@
         <property role="3cmrfH" value="500" />
       </node>
     </node>
-    <node concept="2j1LYv" id="2ZPTSaphb1g" role="2j1YRv">
-      <node concept="2j1LYi" id="2ZPTSaphb1h" role="2j1YQj">
-        <ref role="2j1LYj" node="2ZPTSaphajQ" resolve="maximumWaitTimeInMillis" />
-      </node>
-      <node concept="3cmrfG" id="2ZPTSaphb96" role="2j1LYg">
-        <property role="3cmrfH" value="10000" />
-      </node>
-    </node>
     <node concept="2j1K4_" id="6wZqgFKVthT" role="2j1K4A">
       <property role="TrG5h" value="moduleNameSubstring" />
       <node concept="17QB3L" id="6wZqgFKVti4" role="2j1LY4" />
@@ -289,10 +281,6 @@
     <node concept="2j1K4_" id="6wZqgFKVthV" role="2j1K4A">
       <property role="TrG5h" value="timeBoundInMillis" />
       <node concept="10Oyi0" id="6wZqgFKVti6" role="2j1LY4" />
-    </node>
-    <node concept="2j1K4_" id="2ZPTSaphajQ" role="2j1K4A">
-      <property role="TrG5h" value="maximumWaitTimeInMillis" />
-      <node concept="10Oyi0" id="2ZPTSaphaoO" role="2j1LY4" />
     </node>
     <node concept="1Pa9Pv" id="6wZqgFKVthW" role="1MIJl8">
       <node concept="1PaTwC" id="6wZqgFKVti7" role="1PaQFQ">
@@ -973,12 +961,17 @@
                                   <node concept="Xl_RD" id="6wZqgFKVtmO" role="37wK5m">
                                     <property role="Xl_RC" value="" />
                                   </node>
-                                  <node concept="2OqwBi" id="6wZqgFKVtmP" role="37wK5m">
-                                    <node concept="37vLTw" id="6wZqgFKVtmY" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="6wZqgFKVtlS" resolve="action" />
+                                  <node concept="2OqwBi" id="2wDnBzAzDA8" role="37wK5m">
+                                    <node concept="2OqwBi" id="6wZqgFKVtmP" role="2Oq$k0">
+                                      <node concept="37vLTw" id="6wZqgFKVtmY" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="6wZqgFKVtlS" resolve="action" />
+                                      </node>
+                                      <node concept="liA8E" id="6wZqgFKVtmZ" role="2OqNvi">
+                                        <ref role="37wK5l" to="qkt:~AnAction.getTemplatePresentation()" resolve="getTemplatePresentation" />
+                                      </node>
                                     </node>
-                                    <node concept="liA8E" id="6wZqgFKVtmZ" role="2OqNvi">
-                                      <ref role="37wK5l" to="qkt:~AnAction.getTemplatePresentation()" resolve="getTemplatePresentation" />
+                                    <node concept="liA8E" id="2wDnBzAzFNZ" role="2OqNvi">
+                                      <ref role="37wK5l" to="qkt:~Presentation.clone()" resolve="clone" />
                                     </node>
                                   </node>
                                   <node concept="2YIFZM" id="6wZqgFKVtmQ" role="37wK5m">
@@ -1099,11 +1092,11 @@
                         <node concept="3clFbS" id="6wZqgFKVtll" role="1zc67A">
                           <node concept="3clFbF" id="6wZqgFKVtlJ" role="3cqZAp">
                             <node concept="37vLTI" id="6wZqgFKVtm2" role="3clFbG">
-                              <node concept="2j1LYi" id="2ZPTSaphcvB" role="37vLTx">
-                                <ref role="2j1LYj" node="2ZPTSaphajQ" resolve="maximumWaitTimeInMillis" />
-                              </node>
                               <node concept="37vLTw" id="6wZqgFKVtmv" role="37vLTJ">
                                 <ref role="3cqZAo" node="6wZqgFKVtkY" resolve="elapsedTime" />
+                              </node>
+                              <node concept="2j1LYi" id="2ZPTSaphcvB" role="37vLTx">
+                                <ref role="2j1LYj" node="2ZPTSaphajQ" resolve="maximumWaitTimeInMillis" />
                               </node>
                             </node>
                           </node>
@@ -1282,6 +1275,18 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="2j1LYv" id="2ZPTSaphb1g" role="2j1YRv">
+      <node concept="2j1LYi" id="2ZPTSaphb1h" role="2j1YQj">
+        <ref role="2j1LYj" node="2ZPTSaphajQ" resolve="maximumWaitTimeInMillis" />
+      </node>
+      <node concept="3cmrfG" id="2ZPTSaphb96" role="2j1LYg">
+        <property role="3cmrfH" value="10000" />
+      </node>
+    </node>
+    <node concept="2j1K4_" id="2ZPTSaphajQ" role="2j1K4A">
+      <property role="TrG5h" value="maximumWaitTimeInMillis" />
+      <node concept="10Oyi0" id="2ZPTSaphaoO" role="2j1LY4" />
     </node>
   </node>
 </model>
