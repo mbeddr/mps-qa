@@ -18,6 +18,8 @@ workspace.xml
 # * tests
 test_gen/
 test_gen.caches/
+TEST-*.xml
+TESTS-*.xml
 
 # --------------------------------------- 
 # RCP

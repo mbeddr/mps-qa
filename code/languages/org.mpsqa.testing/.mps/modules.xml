@@ -6,6 +6,9 @@
       <modulePath path="$PROJECT_DIR$/languages/org.mpsqa.testcov.buildIntegration.jacoco/org.mpsqa.testcov.buildIntegration.jacoco.mpl" folder="buildIntegration" />
       <modulePath path="$PROJECT_DIR$/languages/org.mpsqa.testcov.buildIntegration.testutils/org.mpsqa.testcov.buildIntegration.testutils.mpl" folder="buildIntegration.tests" />
       <modulePath path="$PROJECT_DIR$/languages/org.mpsqa.testcov.jacoco/org.mpsqa.testcov.jacoco.mpl" folder="testcov" />
+      <modulePath path="$PROJECT_DIR$/sandbox/jacoco.sandbox.build/jacoco.sandbox.build.msd" folder="buildIntegration.sandbox" />
+      <modulePath path="$PROJECT_DIR$/sandbox/jacoco.sandbox.tests/jacoco.sandbox.tests.msd" folder="buildIntegration.sandbox" />
+      <modulePath path="$PROJECT_DIR$/sandbox/jacoco.sandbox/jacoco.sandbox.msd" folder="buildIntegration.sandbox" />
       <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.gentest.baseline/org.mpsqa.gentest.baseline.msd" folder="gentest" />
       <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.testcov.buildIntegration.jacoco.codeowners.tests/org.mpsqa.testcov.buildIntegration.jacoco.codeowners.tests.msd" folder="buildIntegration.tests" />
       <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.testcov.jacoco.rt/org.mpsqa.testcov.jacoco.rt.msd" folder="testcov" />
