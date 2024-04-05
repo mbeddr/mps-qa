@@ -91,6 +91,7 @@ configurations {
 dependencies {
     mps "com.jetbrains:mps:$mpsVersion"
     antLib "org.apache.ant:ant-junit:1.10.6"
+    antLib "org.jacoco:org.jacoco.ant:0.8.12"
 }
 
 repositories {
@@ -138,6 +139,7 @@ def dependenciesDir = file("$buildDir/dependencies")
 
 def defaultScriptArgs = [
         'mps.home'                          : mpsHomeDir,
+        'mps_home'                          : mpsHomeDir,
         'mpsqa.home'                        : rootDir,
         'build.dir'                         : buildDir,
         'version'                           : version,
@@ -235,6 +237,8 @@ task build_lint_analysis_languages(type: BuildLanguages, dependsOn: []) {
 task build_sandboxes(type: BuildLanguages) {
     dependsOn 'build_base_languages'
     dependsOn 'build_unused_languages'
+    dependsOn 'build_unused_languages'
+    dependsOn ':testing:sandbox:assemble'
 
     script "$buildDir/scripts/build-sandboxes.xml"
 }

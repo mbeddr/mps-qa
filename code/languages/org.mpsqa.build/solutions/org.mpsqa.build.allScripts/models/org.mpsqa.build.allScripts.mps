@@ -788,11 +788,6 @@
           </node>
         </node>
       </node>
-      <node concept="1SiIV0" id="2WwuhUZ0zUU" role="3bR37C">
-        <node concept="3bR9La" id="2WwuhUZ0zUV" role="1SiIV1">
-          <ref role="3bR37D" node="5Xjjs0Nf2r4" resolve="org.mpsqa.build" />
-        </node>
-      </node>
       <node concept="1SiIV0" id="2WwuhUZ0zUW" role="3bR37C">
         <node concept="3bR9La" id="2WwuhUZ0zUX" role="1SiIV1">
           <ref role="3bR37D" to="ffeo:78GwwOvB3tw" resolve="jetbrains.mps.ide.build" />
