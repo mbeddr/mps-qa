@@ -399,11 +399,6 @@
   </node>
   <node concept="bUwia" id="1vid6hjrqNk">
     <property role="TrG5h" value="main" />
-    <node concept="2rT7sh" id="6O2qfKebLM8" role="2rTMjI">
-      <property role="TrG5h" value="CheckableScriptParameter-&gt;VariableDeclaration" />
-      <ref role="2rTdP9" to="a1af:6HKgezStO7d" resolve="CheckableScriptParameter" />
-      <ref role="2rZz_L" to="tpee:fz3uBXI" resolve="VariableDeclaration" />
-    </node>
     <node concept="3lhOvk" id="y1G8y67jcJ" role="3lj3bC">
       <ref role="3lhOvi" node="y1G8y66r_j" resolve="MPS_QA_GENERIC_LINTER" />
       <ref role="30HIoZ" to="a1af:2dSiT1hKD8P" resolve="CheckableScript" />
@@ -455,6 +450,11 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="2rT7sh" id="6O2qfKebLM8" role="2rTMjI">
+      <property role="TrG5h" value="CheckableScriptParameter-&gt;VariableDeclaration" />
+      <ref role="2rTdP9" to="a1af:6HKgezStO7d" resolve="CheckableScriptParameter" />
+      <ref role="2rZz_L" to="tpee:fz3uBXI" resolve="VariableDeclaration" />
     </node>
   </node>
 </model>
