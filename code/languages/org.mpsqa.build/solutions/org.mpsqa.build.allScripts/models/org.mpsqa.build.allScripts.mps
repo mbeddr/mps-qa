@@ -585,6 +585,11 @@
           </node>
         </node>
       </node>
+      <node concept="1SiIV0" id="pMponrlh7d" role="3bR37C">
+        <node concept="3bR9La" id="pMponrlh7e" role="1SiIV1">
+          <ref role="3bR37D" node="32O483pJKIF" resolve="org.mpsqa.base.build" />
+        </node>
+      </node>
     </node>
     <node concept="1E1JtA" id="2WwuhUZ3iEo" role="3989C9">
       <property role="BnDLt" value="true" />

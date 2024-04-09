@@ -57,6 +57,9 @@
       <concept id="4701820937132344003" name="jetbrains.mps.build.structure.BuildLayout_Container" flags="ng" index="1y1bJS">
         <child id="7389400916848037006" name="children" index="39821P" />
       </concept>
+      <concept id="5610619299013057363" name="jetbrains.mps.build.structure.BuildLayout_ImportContent" flags="ng" index="3ygNvl">
+        <reference id="5610619299013057365" name="target" index="3ygNvj" />
+      </concept>
       <concept id="841011766565753074" name="jetbrains.mps.build.structure.BuildLayout_Import" flags="ng" index="3_I8Xc">
         <reference id="841011766565753076" name="target" index="3_I8Xa" />
       </concept>
@@ -245,11 +248,11 @@
         <ref role="m_rDy" node="fm3v0X36My" resolve="org.mpsqa.build" />
         <node concept="pUk6x" id="fm3v0X36Nt" role="pUk7w" />
       </node>
-      <node concept="3_I8Xc" id="3PN66LDqBYx" role="39821P">
-        <ref role="3_I8Xa" to="2tou:7C9PHv6FBJ6" resolve="org.mpsqa.base" />
+      <node concept="3ygNvl" id="6HLCbjfWKDY" role="39821P">
+        <ref role="3ygNvj" to="2tou:7C9PHv6FBIN" />
       </node>
-      <node concept="3_I8Xc" id="3PN66LDqBYA" role="39821P">
-        <ref role="3_I8Xa" to="hx16:2JVMSZMFXhf" resolve="org.mpsqa.testing" />
+      <node concept="3ygNvl" id="6HLCbjfWKE_" role="39821P">
+        <ref role="3ygNvj" to="hx16:2JVMSZMFXhb" />
       </node>
       <node concept="3_I8Xc" id="3PN66LDqBYI" role="39821P">
         <ref role="3_I8Xa" to="5g2w:2JVMSZMFXhf" resolve="org.mpsqa.clones" />
