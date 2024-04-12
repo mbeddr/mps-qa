@@ -60,11 +60,14 @@ ext.dependencyRepositories = [
 ]
 
 // Dependency versions
-ext.mpsVersion =  '2023.3'
+
+// Use the following for published releases:
+//   ext.mpsDependency = 'com.jetbrains:mps:2024.1'
+ext.mpsDependency = 'com.jetbrains.mps:mps-prerelease:241.14494.462'
 
 // Project versions
-ext.major = '2023'
-ext.minor = '3'
+ext.major = '999'
+ext.minor = '9'
 
 if (ciBuild) {
     String branch = GitBasedVersioning.gitBranch
@@ -89,7 +92,7 @@ configurations {
 }
 
 dependencies {
-    mps "com.jetbrains:mps:$mpsVersion"
+    mps project.mpsDependency
     antLib "org.apache.ant:ant-junit:1.10.6"
     antLib "org.jacoco:org.jacoco.ant:0.8.12"
 }
