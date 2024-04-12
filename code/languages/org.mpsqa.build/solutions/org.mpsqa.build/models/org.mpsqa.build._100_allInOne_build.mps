@@ -222,20 +222,6 @@
     </node>
     <node concept="398rNT" id="3PN66LDqBUA" role="1l3spd">
       <property role="TrG5h" value="mps.home" />
-      <node concept="55IIr" id="3PN66LDqBUI" role="398pKh">
-        <node concept="2Ry0Ak" id="3PN66LDqBUX" role="iGT6I">
-          <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="3PN66LDqBVD" role="2Ry0An">
-            <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="3PN66LDqBWg" role="2Ry0An">
-              <property role="2Ry0Am" value=".." />
-              <node concept="2Ry0Ak" id="3PN66LDqBWo" role="2Ry0An">
-                <property role="2Ry0Am" value="MPS_2019_3_4" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="2sgV4H" id="3PN66LDqBUC" role="1l3spa">
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
