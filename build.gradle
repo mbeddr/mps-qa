@@ -9,7 +9,7 @@ plugins {
     id 'maven-publish'
     id 'co.riiid.gradle' version '0.4.2'
 
-    id 'de.itemis.mps.gradle.launcher' version '2.2.0.+'
+    id 'de.itemis.mps.gradle.launcher' version '2.3.0.+'
 }
 
 ext.jbrVers = '17.0.8.1-b1000.32'
@@ -60,11 +60,11 @@ ext.dependencyRepositories = [
 ]
 
 // Dependency versions
-ext.mpsVersion =  '2023.2'
+ext.mpsVersion =  '2023.3'
 
 // Project versions
 ext.major = '2023'
-ext.minor = '2'
+ext.minor = '3'
 
 if (ciBuild) {
     String branch = GitBasedVersioning.gitBranch
@@ -381,7 +381,7 @@ configurations {
 }
 
 dependencies {
-    rerunMigrationsBackend("de.itemis.mps.build-backends:rerun-migrations:0.0.2.+")
+    rerunMigrationsBackend("de.itemis.mps.build-backends:rerun-migrations:0.0.3.+")
 }
 
 tasks.register('rerunMigrations', JavaExec) {
@@ -394,10 +394,10 @@ tasks.register('rerunMigrations', JavaExec) {
             .withJavaExecutable(tasks.named('downloadJbr', DownloadJbrForPlatform).map { it.javaExecutable.path })
             .configure(it)
 
-    classpath(configurations.rerunMigrationsBackend)
     classpath(fileTree(mpsHomeDir) {
         include("lib/**/*.jar")
     })
+    classpath(configurations.rerunMigrationsBackend)
     mainClass = 'de.itemis.mps.gradle.migrate.MainKt'
 
     for (dir in allProjectDirectories()) {
@@ -405,6 +405,18 @@ tasks.register('rerunMigrations', JavaExec) {
     }
 
     args("--macro=mpsqa.home::${rootDir}")
+
+    // rerun-migrations needs its own jar added as a plugin
+    argumentProviders.add(new CommandLineArgumentProvider() {
+        @Override
+        Iterable<String> asArguments() {
+            def config = configurations.rerunMigrationsBackend
+
+            ["--plugin=de.itemis.mps.buildbackends.rerun-migrations::" +
+                     configurations.rerunMigrationsBackend.files(config.dependencies.first()).first()]
+        }
+    })
+
     args("--plugin=jetbrains.mps.console::mps-console")
     args("--plugin=jetbrains.mps.trove::mps-trove")
     args("--plugin=jetbrains.mps.ide.modelchecker::mps-modelchecker")
