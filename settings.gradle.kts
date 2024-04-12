@@ -1,6 +1,6 @@
 pluginManagement {
     repositories {
-        maven("https://artifacts.itemis.cloud/repository/mps-maven")
+        maven("https://artifacts.itemis.cloud/repository/maven-mps")
         maven {
             url = uri("https://maven.pkg.github.com/mbeddr/*")
             credentials {
