@@ -27,11 +27,6 @@ if (System.env.CI != null && System.env.CI.toBoolean()) {
     ext.ciBuild = project.hasProperty("teamcity")
 }
 
-ext.dependencyRepositories = [
-        'https://maven.pkg.github.com/mbeddr/*',
-        'https://artifacts.itemis.cloud/repository/maven-mps/'
-]
-
 // Dependency versions
 ext.mpsVersion =  '2023.3'
 
@@ -68,14 +63,15 @@ dependencies {
 }
 
 repositories {
-    for (repoUrl in project.dependencyRepositories) {
-        maven {
-            url repoUrl
-            credentials {
-                username = project.findProperty("github_username") ?: System.getenv("GITHUB_ACTOR")
-                password = project.findProperty("github_token") ?: System.getenv("GITHUB_TOKEN")
-            }
+    maven {
+        url 'https://maven.pkg.github.com/mbeddr/*'
+        credentials {
+            username = project.findProperty("github_username") ?: System.getenv("GITHUB_ACTOR")
+            password = project.findProperty("github_token") ?: System.getenv("GITHUB_TOKEN")
         }
+    }
+    maven {
+        url 'https://artifacts.itemis.cloud/repository/maven-mps/'
     }
     mavenCentral()
 }
