@@ -3,8 +3,8 @@ import de.itemis.mps.gradle.downloadJBR.*
 import de.itemis.mps.gradle.tasks.*
 
 plugins {
-    id 'de.itemis.mps.gradle.common' version '1.23.1.+'
-    id 'download-jbr' version '1.23.1.+'
+    id 'de.itemis.mps.gradle.common' version '1.24.0.+'
+    id 'download-jbr' version '1.24.0.+'
     id 'base'
     id 'maven-publish'
     id 'co.riiid.gradle' version '0.4.2'
@@ -56,8 +56,8 @@ configurations {
 dependencies {
     // Use the following dependency for published releases:
     //   mps 'com.jetbrains:mps:2024.1'
-    mps 'com.jetbrains.mps:mps-prerelease:241.14494.462'
-    antLib "org.apache.ant:ant-junit:1.10.6"
+    mps 'com.jetbrains.mps:mps-prerelease:241.14494.569'
+    antLib "org.apache.ant:ant-junit:1.10.14"
     antLib "org.jacoco:org.jacoco.ant:0.8.12"
 }
 
@@ -107,6 +107,7 @@ def dependenciesDir = file("$buildDir/dependencies")
 def defaultScriptArgs = [
         'mps.home'                          : mpsHomeDir,
         'mps_home'                          : mpsHomeDir,
+        'build.jna.library.path'            : new File(mpsHomeDir, "lib/jna/${System.getProperty('os.arch')}"),
         'mpsqa.home'                        : rootDir,
         'build.dir'                         : buildDir,
         'version'                           : version,
@@ -129,36 +130,17 @@ tasks.withType(RunAntScript).configureEach {
     dependsOn(configureJava, resolveMps)
 }
 
-def build_allScripts_unpatched = tasks.register('build_allScripts_unpatched', BuildLanguages) {
-    script "$buildDir/scripts/build_all_scripts.xml"
-}
-
-// Patch JNA path in generated build scripts until https://github.com/JetBrains/MPS/pull/71 is fixed
-def patch_allScripts = tasks.register('patch_allScripts', Copy) {
-    dependsOn build_allScripts_unpatched
-    from 'build/scripts'
-    into 'build/patched-scripts'
-
-    def isAarch64 = System.getProperty('os.arch') == 'aarch64'
-    def jnaArch = isAarch64 ? 'aarch64' : 'amd64'
-
-    filter {
-        it.replace('"-Djna.boot.library.path=${artifacts.mps}/lib/jna"',
-                '"-Djna.boot.library.path=${artifacts.mps}/lib/jna/' + jnaArch + '"')
-    }
-}
-
-task build_allScripts {
-    dependsOn patch_allScripts
-}
-
 File scriptFile(String name) {
-    file("$buildDir/patched-scripts/$name")
+    file("$buildDir/scripts/$name")
+}
+
+def build_allScripts = tasks.register('build_allScripts', BuildLanguages) {
+    script scriptFile('build_all_scripts.xml')
 }
 
 // All other MPS tasks depend on build_allScripts
 tasks.withType(RunAntScript).configureEach {
-    if (it.name != build_allScripts_unpatched.name) {
+    if (it.name != build_allScripts.name) {
         it.dependsOn(build_allScripts)
     }
 }
