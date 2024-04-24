@@ -3,8 +3,8 @@ import de.itemis.mps.gradle.downloadJBR.*
 import de.itemis.mps.gradle.tasks.*
 
 plugins {
-    id 'de.itemis.mps.gradle.common' version '1.23.1.+'
-    id 'download-jbr' version '1.23.1.+'
+    id 'de.itemis.mps.gradle.common' version '1.24.0.+'
+    id 'download-jbr' version '1.24.0.+'
     id 'base'
     id 'maven-publish'
     id 'co.riiid.gradle' version '0.4.2'
@@ -56,8 +56,8 @@ configurations {
 dependencies {
     // Use the following dependency for published releases:
     //   mps 'com.jetbrains:mps:2024.1'
-    mps 'com.jetbrains.mps:mps-prerelease:241.14494.462'
-    antLib "org.apache.ant:ant-junit:1.10.6"
+    mps 'com.jetbrains.mps:mps-prerelease:241.14494.569'
+    antLib "org.apache.ant:ant-junit:1.10.14"
     antLib "org.jacoco:org.jacoco.ant:0.8.12"
 }
 
