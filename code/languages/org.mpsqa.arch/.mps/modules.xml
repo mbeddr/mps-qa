@@ -8,6 +8,7 @@
       <modulePath path="$PROJECT_DIR$/languages/test.org.mpsqa.arch.ext/test.org.mpsqa.arch.ext.mpl" folder="test" />
       <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.arch.pluginSolution/org.mpsqa.arch.pluginSolution.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.arch.sandbox/org.mpsqa.arch.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/test.org.mpsqa.arch.testdata/test.org.mpsqa.arch.testdata.msd" folder="test" />
       <modulePath path="$PROJECT_DIR$/solutions/test.org.mpsqa.arch/test.org.mpsqa.arch.msd" folder="test" />
     </projectModules>
   </component>

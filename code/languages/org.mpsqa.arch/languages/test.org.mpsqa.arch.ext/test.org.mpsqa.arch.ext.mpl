@@ -102,6 +102,8 @@
     <module reference="bcaa03af-4226-4b43-a0ed-7ecc5d6748d9(test.org.mpsqa.arch.baselang)" version="0" />
     <module reference="9e2430af-289d-4254-9192-096b6a0cdea0(test.org.mpsqa.arch.ext)" version="0" />
   </dependencyVersions>
-  <extendedLanguages />
+  <extendedLanguages>
+    <extendedLanguage>bcaa03af-4226-4b43-a0ed-7ecc5d6748d9(test.org.mpsqa.arch.baselang)</extendedLanguage>
+  </extendedLanguages>
 </language>
 
