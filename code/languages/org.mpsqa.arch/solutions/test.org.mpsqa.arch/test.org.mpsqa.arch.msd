@@ -24,7 +24,6 @@
     <language slang="l:8585453e-6bfb-4d80-98de-b16074f1d86c:jetbrains.mps.lang.test" version="6" />
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
     <language slang="l:6c101563-ba1f-458d-b298-a75634941e0c:org.mpsqa.arch" version="0" />
-    <language slang="l:bcaa03af-4226-4b43-a0ed-7ecc5d6748d9:test.org.mpsqa.arch.baselang" version="0" />
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />

@@ -2000,7 +2000,7 @@
                 </node>
               </node>
               <node concept="2YIFZM" id="Te1zv$_udG" role="33vP2m">
-                <ref role="37wK5l" to="u41u:1XeVdf8k46E" resolve="getOrComputeReferencedNodesModelsAndModules" />
+                <ref role="37wK5l" to="u41u:1XeVdf8k46E" resolve="getOrComputeReferencedNodesModelsAndModulesOrInstantiatedConcepts" />
                 <ref role="1Pybhc" to="u41u:1XeVdf85BSu" resolve="DependencyStrengthUtils" />
                 <node concept="1YBJjd" id="Te1zv$_udH" role="37wK5m">
                   <ref role="1YBMHb" node="Te1zv$_r1k" resolve="singleComponentDependency" />
@@ -2407,7 +2407,7 @@
             </node>
             <node concept="2OqwBi" id="Te1zv$CKHf" role="3clFbw">
               <node concept="37vLTw" id="Te1zv$CKHg" role="2Oq$k0">
-                <ref role="3cqZAo" node="Te1zv$CKH1" resolve="newDependencies" />
+                <ref role="3cqZAo" node="Te1zv$CKH1" resolve="notNeededDependencies" />
               </node>
               <node concept="3GX2aA" id="Te1zv$CKHh" role="2OqNvi" />
             </node>
@@ -2695,7 +2695,7 @@
         <node concept="3clFbF" id="Te1zv$CTua" role="3cqZAp">
           <node concept="2OqwBi" id="Te1zv$CTub" role="3clFbG">
             <node concept="QwW4i" id="Te1zv$CTuc" role="2Oq$k0">
-              <ref role="QwW4h" node="Te1zv$CTu3" resolve="newDependenciesStrings" />
+              <ref role="QwW4h" node="Te1zv$CTu3" resolve="notNeededDependencies" />
             </node>
             <node concept="2es0OD" id="Te1zv$CTud" role="2OqNvi">
               <node concept="1bVj0M" id="Te1zv$CTue" role="23t8la">

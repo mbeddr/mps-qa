@@ -234,7 +234,7 @@
     <property role="EcuMT" value="1030768201842383234" />
     <property role="TrG5h" value="SingleComponentDependencyWhitelistEntry" />
     <property role="3GE5qa" value="dependencies" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="Te1zv$_lIb" role="1TKVEl">
       <property role="IQ2nx" value="1030768201842383755" />
       <property role="TrG5h" value="explanation" />

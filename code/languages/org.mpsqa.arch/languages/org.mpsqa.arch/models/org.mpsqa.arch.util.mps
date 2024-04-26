@@ -1108,7 +1108,7 @@
                 </node>
                 <node concept="3JPx81" id="Te1zv$TLOz" role="2OqNvi">
                   <node concept="37vLTw" id="Te1zv$Vr2o" role="25WWJ7">
-                    <ref role="3cqZAo" node="Te1zv$Vr2h" resolve="declarationNode" />
+                    <ref role="3cqZAo" node="Te1zv$Vr2h" resolve="conceptDeclarationNode" />
                   </node>
                 </node>
               </node>
