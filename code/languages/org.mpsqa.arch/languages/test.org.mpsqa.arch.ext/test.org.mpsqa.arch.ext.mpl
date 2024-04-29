@@ -48,6 +48,7 @@
         <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
+        <module reference="bcaa03af-4226-4b43-a0ed-7ecc5d6748d9(test.org.mpsqa.arch.baselang)" version="0" />
         <module reference="9e2430af-289d-4254-9192-096b6a0cdea0(test.org.mpsqa.arch.ext)" version="0" />
         <module reference="3b8e07e8-51e0-4b88-b953-5a05fcf685c6(test.org.mpsqa.arch.ext.generator)" version="0" />
       </dependencyVersions>
@@ -102,6 +103,8 @@
     <module reference="bcaa03af-4226-4b43-a0ed-7ecc5d6748d9(test.org.mpsqa.arch.baselang)" version="0" />
     <module reference="9e2430af-289d-4254-9192-096b6a0cdea0(test.org.mpsqa.arch.ext)" version="0" />
   </dependencyVersions>
-  <extendedLanguages />
+  <extendedLanguages>
+    <extendedLanguage>bcaa03af-4226-4b43-a0ed-7ecc5d6748d9(test.org.mpsqa.arch.baselang)</extendedLanguage>
+  </extendedLanguages>
 </language>
 

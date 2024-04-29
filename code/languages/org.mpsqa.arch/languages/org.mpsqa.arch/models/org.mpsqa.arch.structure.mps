@@ -13,6 +13,15 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="3348158742936976480" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ng" index="25R33">
+        <property id="1421157252384165432" name="memberId" index="3tVfz5" />
+      </concept>
+      <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
+        <child id="3348158742936976577" name="members" index="25R1y" />
+      </concept>
+      <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
+        <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
@@ -43,6 +52,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -109,13 +121,26 @@
   </node>
   <node concept="1TIwiD" id="6MUZd5Uj9wl">
     <property role="EcuMT" value="7834852478394603541" />
-    <property role="TrG5h" value="ComponentRef" />
+    <property role="TrG5h" value="SingleComponentDependency" />
+    <property role="3GE5qa" value="dependencies" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="Te1zv$_jA0" role="1TKVEl">
+      <property role="IQ2nx" value="1030768201842375040" />
+      <property role="TrG5h" value="lock" />
+      <ref role="AX2Wp" node="Te1zv$_mMK" resolve="EDependencyLockType" />
+    </node>
     <node concept="1TJgyj" id="6MUZd5Uj9wm" role="1TKVEi">
       <property role="IQ2ns" value="7834852478394603542" />
       <property role="20kJfa" value="component" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="6MUZd5UjGNW" resolve="IComponentLike" />
+    </node>
+    <node concept="1TJgyj" id="Te1zv$_lYI" role="1TKVEi">
+      <property role="IQ2ns" value="1030768201842384814" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="whitelist" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="Te1zv$_lA2" resolve="SingleComponentDependencyWhitelistEntry" />
     </node>
   </node>
   <node concept="PlHQZ" id="6MUZd5Uj9MP">
@@ -126,6 +151,7 @@
     <property role="EcuMT" value="7834852478394604726" />
     <property role="TrG5h" value="ComponentDependency" />
     <property role="34LRSv" value="dependency" />
+    <property role="3GE5qa" value="dependencies" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6MUZd5Uj9MR" role="PzmwI">
       <ref role="PrY4T" node="6MUZd5Uj9MP" resolve="IComponentDefinitionContent" />
@@ -140,7 +166,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="dependsOn" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="6MUZd5Uj9wl" resolve="ComponentRef" />
+      <ref role="20lvS9" node="6MUZd5Uj9wl" resolve="SingleComponentDependency" />
     </node>
   </node>
   <node concept="1TIwiD" id="6MUZd5Uje4h">
@@ -202,6 +228,38 @@
     </node>
     <node concept="PrWs8" id="fm3v0WWntI" role="PzmwI">
       <ref role="PrY4T" node="6MUZd5Uj9vC" resolve="IArchitectureSpecificationContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="Te1zv$_lA2">
+    <property role="EcuMT" value="1030768201842383234" />
+    <property role="TrG5h" value="SingleComponentDependencyWhitelistEntry" />
+    <property role="3GE5qa" value="dependencies" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="Te1zv$_lIb" role="1TKVEl">
+      <property role="IQ2nx" value="1030768201842383755" />
+      <property role="TrG5h" value="explanation" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="25R3W" id="Te1zv$_mMK">
+    <property role="3F6X1D" value="1030768201842388144" />
+    <property role="TrG5h" value="EDependencyLockType" />
+    <property role="3GE5qa" value="dependencies" />
+    <node concept="25R33" id="Te1zv$_mML" role="25R1y">
+      <property role="3tVfz5" value="1030768201842388145" />
+      <property role="TrG5h" value="NO_LOCK" />
+    </node>
+    <node concept="25R33" id="Te1zv$_mMM" role="25R1y">
+      <property role="3tVfz5" value="1030768201842388146" />
+      <property role="TrG5h" value="MODULE_LOCK" />
+    </node>
+    <node concept="25R33" id="Te1zv$_mMP" role="25R1y">
+      <property role="3tVfz5" value="1030768201842388149" />
+      <property role="TrG5h" value="MODEL_LOCK" />
+    </node>
+    <node concept="25R33" id="GdL2WcU97I" role="25R1y">
+      <property role="3tVfz5" value="796508415473521134" />
+      <property role="TrG5h" value="NODE_LOCK" />
     </node>
   </node>
 </model>
