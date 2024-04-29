@@ -518,6 +518,22 @@
             </node>
           </node>
         </node>
+        <node concept="3rtmxn" id="3anYpSn_TWq" role="3bR31x">
+          <node concept="3LXTmp" id="3anYpSn_TWr" role="3rtmxm">
+            <node concept="398BVA" id="3anYpSn_TWs" role="3LXTmr">
+              <ref role="398BVh" node="50Wzfz4shz5" resolve="mpsqa.arch.home" />
+              <node concept="2Ry0Ak" id="3anYpSn_TWt" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="3anYpSn_TWu" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.org.mpsqa.arch" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="3anYpSn_TWw" role="3LXTna">
+              <property role="3qWCbO" value="icons/**" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="GdL2WddnxL" role="2G$12L">
         <property role="TrG5h" value="test.org.mpsqa.arch.baselang" />
