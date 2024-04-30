@@ -16,7 +16,7 @@ on:
         required: false
 
 env:
-  GITHUB_TOKEN: ${{ secrets.MPSQA_GITHUB_PKG_REGISTRY }}
+  GITHUB_TOKEN: ${{ secrets.MPS_CI_BUILD_BOT_ACCESS_TOKEN }}
 
 jobs:
   build_mps_qa_packages:
