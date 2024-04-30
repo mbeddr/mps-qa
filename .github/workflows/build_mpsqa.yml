@@ -21,20 +21,14 @@ env:
 jobs:
   build_mps_qa_packages:
     runs-on: ubuntu-latest
-    env:
-      DISPLAY: ':99'
 
     steps:
     - uses: actions/checkout@v4
 
-    - name: Setup headless environment
-      run: |
-        Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
-       
     - name: Set up JDK
       uses: actions/setup-java@v4
       with:
-        java-version: 11
+        java-version: 17
         distribution: temurin
 
     - name: Set up Gradle
@@ -42,9 +36,26 @@ jobs:
 
     - name: Build MPS-QA and migrate
       run: |
-          ./gradlew build migrate rerunMigrations \
+          xvfb-run ./gradlew build migrate rerunMigrations \
             -Partifacts.itemis.cloud.user=${{secrets.ARTIFACTS_ITEMIS_CLOUD_USER}} \
             -Partifacts.itemis.cloud.pw=${{secrets.ARTIFACTS_ITEMIS_CLOUD_PW}}
+
+    - name: Dump Java stacks on cancellation
+      if: cancelled()
+      run: |
+        jps -mlv > build/jps.txt
+        for pid in $(jps -q); do jstack -l -e $pid > build/stack$pid.txt || true; done
+
+    - name: Upload logs on cancellation or failure
+      uses: actions/upload-artifact@v4
+      if: cancelled() || failure()
+      with:
+        name: logs
+        path: |
+          build/system/log/
+          build/system/testlog/
+          build/jps.txt
+          build/stack*.txt
 
     - name: Check for no dirty files after build and migration
       run: |
