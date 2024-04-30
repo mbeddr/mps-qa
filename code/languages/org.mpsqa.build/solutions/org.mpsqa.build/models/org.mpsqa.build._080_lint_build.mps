@@ -6,7 +6,7 @@
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
   </languages>
   <imports>
-    <import index="2tou" ref="r:18bebd8f-6332-4ffd-b628-cc9dad4ef421(org.mpsqa.base.build)" />
+    <import index="2tou" ref="r:18bebd8f-6332-4ffd-b628-cc9dad4ef421(org.mpsqa.build._010_base_build)" />
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
   </imports>
   <registry>
@@ -366,7 +366,7 @@
             </node>
           </node>
           <node concept="1SiIV0" id="1UFFkMN1f2M" role="3bR37C">
-            <node concept="3bR9La" id="1UFFkMN1f2N" role="1SiIV1">
+            <node concept="3bR9La" id="1q_CqGKAxbk" role="1SiIV1">
               <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
             </node>
           </node>
