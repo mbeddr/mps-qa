@@ -7,16 +7,24 @@
     <use id="6c101563-ba1f-458d-b298-a75634941e0c" name="org.mpsqa.arch" version="0" />
     <use id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi" version="0" />
   </languages>
-  <imports />
+  <imports>
+    <import index="r5ch" ref="r:c30313a6-218d-4231-aea1-b60fe13b1149(org.mpsqa.arch.typesystem)" />
+  </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
-      <concept id="1215507671101" name="jetbrains.mps.lang.test.structure.NodeErrorCheckOperation" flags="ng" index="1TM$A" />
+      <concept id="1215507671101" name="jetbrains.mps.lang.test.structure.NodeErrorCheckOperation" flags="ng" index="1TM$A">
+        <child id="8489045168660938517" name="errorRef" index="3lydEf" />
+      </concept>
       <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
       </concept>
       <concept id="1215607067978" name="jetbrains.mps.lang.test.structure.CheckNodeForErrorMessagesOperation" flags="ng" index="7OXhh">
         <property id="3743352646565420194" name="includeSelf" index="GvXf4" />
       </concept>
+      <concept id="7691029917083872157" name="jetbrains.mps.lang.test.structure.IRuleReference" flags="ng" index="2u4UPC">
+        <reference id="8333855927540250453" name="declaration" index="39XzEq" />
+      </concept>
+      <concept id="4531408400484511853" name="jetbrains.mps.lang.test.structure.ReportErrorStatementReference" flags="ng" index="2PYRI3" />
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
@@ -37,8 +45,10 @@
       <concept id="7834852478394604726" name="org.mpsqa.arch.structure.ComponentDependency" flags="ng" index="mXA1B">
         <child id="7834852478394761713" name="dependsOn" index="mXvOw" />
       </concept>
-      <concept id="7834852478394603541" name="org.mpsqa.arch.structure.ComponentRef" flags="ng" index="mXAj4">
+      <concept id="7834852478394603541" name="org.mpsqa.arch.structure.SingleComponentDependency" flags="ng" index="mXAj4">
+        <property id="1030768201842375040" name="lock" index="3EQNYR" />
         <reference id="7834852478394603542" name="component" index="mXAj7" />
+        <child id="1030768201842384814" name="whitelist" index="3EQPAp" />
       </concept>
       <concept id="7834852478394603495" name="org.mpsqa.arch.structure.ComponentDefinition" flags="ng" index="mXAGQ">
         <child id="7834852478394603641" name="content" index="mXAiC" />
@@ -47,6 +57,9 @@
         <child id="7834852478394603499" name="content" index="mXAGU" />
       </concept>
       <concept id="276423752595634026" name="org.mpsqa.arch.structure.EmptyLine" flags="ng" index="Z9REq" />
+      <concept id="1030768201842383234" name="org.mpsqa.arch.structure.SingleComponentDependencyWhitelistEntry" flags="ng" index="3EQPYP">
+        <property id="1030768201842383755" name="explanation" index="3EQPQW" />
+      </concept>
     </language>
     <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
       <concept id="361130699826193249" name="jetbrains.mps.lang.modelapi.structure.ModulePointer" flags="ng" index="1dCxOk">
@@ -289,6 +302,192 @@
         </node>
         <node concept="7CXmI" id="1KHvhQesd2R" role="lGtFl">
           <node concept="7OXhh" id="1KHvhQesd2S" role="7EUXB">
+            <property role="GvXf4" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="Te1zv$HXqi">
+    <property role="TrG5h" value="_020_dependency_lock_tests" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
+    <node concept="1qefOq" id="Te1zv$HXqj" role="1SKRRt">
+      <node concept="mXAGR" id="Te1zv$HXqk" role="1qenE9">
+        <property role="TrG5h" value="_020_dependency_lock_module" />
+        <node concept="mXAGQ" id="Te1zv$HXql" role="mXAGU">
+          <property role="TrG5h" value="base" />
+          <node concept="mXxR0" id="Te1zv$HXqm" role="mXAiC">
+            <node concept="37shsh" id="Te1zv$HXqn" role="mXxR3">
+              <node concept="1dCxOk" id="Te1zv$HXqo" role="37shsm">
+                <property role="1XweGW" value="bcaa03af-4226-4b43-a0ed-7ecc5d6748d9" />
+                <property role="1XxBO9" value="test.org.mpsqa.arch.baselang" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="Z9REq" id="Te1zv$HXt1" role="mXAGU" />
+        <node concept="mXAGQ" id="Te1zv$HXto" role="mXAGU">
+          <property role="TrG5h" value="ext" />
+          <node concept="mXA1B" id="Te1zv$HXtN" role="mXAiC">
+            <node concept="mXAj4" id="Te1zv$HXtT" role="mXvOw">
+              <property role="3EQNYR" value="Te1zv$_mMM/MODULE_LOCK" />
+              <ref role="mXAj7" node="Te1zv$HXql" resolve="base" />
+              <node concept="7CXmI" id="Te1zv$J9xH" role="lGtFl">
+                <node concept="1TM$A" id="Te1zv$J9xI" role="7EUXB">
+                  <node concept="2PYRI3" id="Te1zv$JbRP" role="3lydEf">
+                    <ref role="39XzEq" to="r5ch:Te1zv$CzU_" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="mXxR0" id="Te1zv$HXqp" role="mXAiC">
+            <node concept="37shsh" id="Te1zv$HXqq" role="mXxR3">
+              <node concept="1dCxOk" id="Te1zv$HXqr" role="37shsm">
+                <property role="1XweGW" value="9e2430af-289d-4254-9192-096b6a0cdea0" />
+                <property role="1XxBO9" value="test.org.mpsqa.arch.ext" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="Z9REq" id="Te1zv$HXsI" role="mXAGU" />
+        <node concept="Z9REq" id="Te1zv$HXsR" role="mXAGU" />
+        <node concept="7CXmI" id="Te1zv$HXqu" role="lGtFl">
+          <node concept="7OXhh" id="Te1zv$HXqv" role="7EUXB">
+            <property role="GvXf4" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="GdL2WcU5Fr" role="1SKRRt">
+      <node concept="mXAGR" id="GdL2WcU5Fs" role="1qenE9">
+        <property role="TrG5h" value="_020_dependency_lock_module_saved_whitelist" />
+        <node concept="mXAGQ" id="GdL2WcU5Ft" role="mXAGU">
+          <property role="TrG5h" value="base" />
+          <node concept="mXxR0" id="GdL2WcU5Fu" role="mXAiC">
+            <node concept="37shsh" id="GdL2WcU5Fv" role="mXxR3">
+              <node concept="1dCxOk" id="GdL2WcU5Fw" role="37shsm">
+                <property role="1XweGW" value="bcaa03af-4226-4b43-a0ed-7ecc5d6748d9" />
+                <property role="1XxBO9" value="test.org.mpsqa.arch.baselang" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="Z9REq" id="GdL2WcU5Fx" role="mXAGU" />
+        <node concept="mXAGQ" id="GdL2WcU5Fy" role="mXAGU">
+          <property role="TrG5h" value="ext" />
+          <node concept="mXA1B" id="GdL2WcU5Fz" role="mXAiC">
+            <node concept="mXAj4" id="GdL2WcU5F$" role="mXvOw">
+              <property role="3EQNYR" value="Te1zv$_mMM/MODULE_LOCK" />
+              <ref role="mXAj7" node="GdL2WcU5Ft" resolve="base" />
+              <node concept="3EQPYP" id="GdL2WcU5F_" role="3EQPAp">
+                <property role="3EQPQW" value="module: 'test.org.mpsqa.arch.baselang'" />
+              </node>
+            </node>
+          </node>
+          <node concept="mXxR0" id="GdL2WcU5FA" role="mXAiC">
+            <node concept="37shsh" id="GdL2WcU5FB" role="mXxR3">
+              <node concept="1dCxOk" id="GdL2WcU5FC" role="37shsm">
+                <property role="1XweGW" value="9e2430af-289d-4254-9192-096b6a0cdea0" />
+                <property role="1XxBO9" value="test.org.mpsqa.arch.ext" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="7CXmI" id="GdL2WcU5FD" role="lGtFl">
+          <node concept="7OXhh" id="GdL2WcU5FE" role="7EUXB">
+            <property role="GvXf4" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="GdL2Wd2obw" role="1SKRRt">
+      <node concept="mXAGR" id="GdL2Wd2obx" role="1qenE9">
+        <property role="TrG5h" value="_030_dependency_lock_module_instantiated_concept" />
+        <node concept="mXAGQ" id="GdL2Wd2oby" role="mXAGU">
+          <property role="TrG5h" value="_030_base" />
+          <node concept="mXxR0" id="GdL2Wd2obz" role="mXAiC">
+            <node concept="37shsh" id="GdL2Wd2ob$" role="mXxR3">
+              <node concept="1dCxOk" id="GdL2Wd2ob_" role="37shsm">
+                <property role="1XweGW" value="bcaa03af-4226-4b43-a0ed-7ecc5d6748d9" />
+                <property role="1XxBO9" value="test.org.mpsqa.arch.baselang" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="Z9REq" id="GdL2Wd2obA" role="mXAGU" />
+        <node concept="mXAGQ" id="GdL2Wd2obB" role="mXAGU">
+          <property role="TrG5h" value="_030_testdata" />
+          <node concept="mXA1B" id="GdL2Wd2obC" role="mXAiC">
+            <node concept="mXAj4" id="GdL2Wd2obD" role="mXvOw">
+              <property role="3EQNYR" value="Te1zv$_mMM/MODULE_LOCK" />
+              <ref role="mXAj7" node="GdL2Wd2oby" resolve="_030_base" />
+              <node concept="7CXmI" id="GdL2Wd7Ugv" role="lGtFl">
+                <node concept="1TM$A" id="GdL2Wd7Ugw" role="7EUXB">
+                  <node concept="2PYRI3" id="GdL2Wd7Ug$" role="3lydEf">
+                    <ref role="39XzEq" to="r5ch:Te1zv$CzU_" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="mXxR0" id="GdL2Wd2obH" role="mXAiC">
+            <node concept="37shsh" id="GdL2Wd2obI" role="mXxR3">
+              <node concept="1dCxOk" id="GdL2Wd2obJ" role="37shsm">
+                <property role="1XweGW" value="f45e19f6-aaf5-42ad-9465-f11552d5033e" />
+                <property role="1XxBO9" value="test.org.mpsqa.arch.testdata" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="7CXmI" id="GdL2Wd2obK" role="lGtFl">
+          <node concept="7OXhh" id="GdL2Wd2obL" role="7EUXB">
+            <property role="GvXf4" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="Te1zv$HXrj" role="1SKRRt">
+      <node concept="mXAGR" id="Te1zv$HXrk" role="1qenE9">
+        <property role="TrG5h" value="_040_dependency_lock_nodes_instantiated_concept" />
+        <node concept="mXAGQ" id="Te1zv$JbRR" role="mXAGU">
+          <property role="TrG5h" value="_040_base" />
+          <node concept="mXxR0" id="Te1zv$JbRS" role="mXAiC">
+            <node concept="37shsh" id="Te1zv$JbRT" role="mXxR3">
+              <node concept="1dCxOk" id="Te1zv$JbRU" role="37shsm">
+                <property role="1XweGW" value="bcaa03af-4226-4b43-a0ed-7ecc5d6748d9" />
+                <property role="1XxBO9" value="test.org.mpsqa.arch.baselang" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="Z9REq" id="Te1zv$JbRV" role="mXAGU" />
+        <node concept="mXAGQ" id="Te1zv$JbRW" role="mXAGU">
+          <property role="TrG5h" value="_040_testdata" />
+          <node concept="mXA1B" id="Te1zv$JbRX" role="mXAiC">
+            <node concept="mXAj4" id="Te1zv$JbRY" role="mXvOw">
+              <property role="3EQNYR" value="GdL2WcU97I/NODE_LOCK" />
+              <ref role="mXAj7" node="Te1zv$JbRR" resolve="_040_base" />
+              <node concept="7CXmI" id="GdL2WcU5Hk" role="lGtFl">
+                <node concept="1TM$A" id="GdL2WcU5Hl" role="7EUXB">
+                  <node concept="2PYRI3" id="GdL2WcU5Hp" role="3lydEf">
+                    <ref role="39XzEq" to="r5ch:Te1zv$CzU_" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="mXxR0" id="Te1zv$JbS2" role="mXAiC">
+            <node concept="37shsh" id="Te1zv$JbS3" role="mXxR3">
+              <node concept="1dCxOk" id="GdL2WcU5Hf" role="37shsm">
+                <property role="1XweGW" value="f45e19f6-aaf5-42ad-9465-f11552d5033e" />
+                <property role="1XxBO9" value="test.org.mpsqa.arch.testdata" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="7CXmI" id="Te1zv$HXrB" role="lGtFl">
+          <node concept="7OXhh" id="Te1zv$HXrC" role="7EUXB">
             <property role="GvXf4" value="true" />
           </node>
         </node>
