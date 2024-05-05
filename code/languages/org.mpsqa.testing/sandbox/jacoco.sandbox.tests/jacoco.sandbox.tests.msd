@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="jacoco.sandbox.tests" uuid="b8361996-e168-4243-ad78-371ab9e34b18" moduleVersion="0" compileInMPS="true">
+<solution name="jacoco.sandbox.tests" uuid="b8361996-e168-4243-ad78-371ab9e34b18" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -11,7 +11,6 @@
     </facet>
     <facet type="tests" />
   </facets>
-  <sourcePath />
   <dependencies>
     <dependency reexport="false">6790318a-7335-4ffc-8a54-c17afd89c4c3(jacoco.sandbox)</dependency>
   </dependencies>

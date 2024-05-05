@@ -200,6 +200,7 @@
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
@@ -260,7 +261,6 @@
       </concept>
       <concept id="1235566554328" name="jetbrains.mps.baseLanguage.collections.structure.AnyOperation" flags="nn" index="2HwmR7" />
       <concept id="1227022210526" name="jetbrains.mps.baseLanguage.collections.structure.ClearAllElementsOperation" flags="nn" index="2Kehj3" />
-      <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1197932370469" name="jetbrains.mps.baseLanguage.collections.structure.MapElement" flags="nn" index="3EllGN">
         <child id="1197932505799" name="map" index="3ElQJh" />
@@ -911,7 +911,7 @@
                           <node concept="2OqwBi" id="2p0G1uTupu9" role="3clFbG">
                             <node concept="2OqwBi" id="2p0G1uTuoSo" role="2Oq$k0">
                               <node concept="37vLTw" id="2p0G1uTuoES" role="2Oq$k0">
-                                <ref role="3cqZAo" node="2p0G1uTuouC" resolve="it" />
+                                <ref role="3cqZAo" node="1vMaDkDXck2" resolve="it" />
                               </node>
                               <node concept="2qgKlT" id="2p0G1uTup7i" role="2OqNvi">
                                 <ref role="37wK5l" to="vdrq:WJz9iATjyN" resolve="getTextElements" />
@@ -925,7 +925,7 @@
                                       <node concept="2OqwBi" id="2p0G1uTuroW" role="2Oq$k0">
                                         <node concept="2OqwBi" id="2p0G1uTuqgg" role="2Oq$k0">
                                           <node concept="37vLTw" id="2p0G1uTuq2g" role="2Oq$k0">
-                                            <ref role="3cqZAo" node="2p0G1uTupLb" resolve="it" />
+                                            <ref role="3cqZAo" node="1vMaDkDXck0" resolve="it" />
                                           </node>
                                           <node concept="2qgKlT" id="2p0G1uTuqRn" role="2OqNvi">
                                             <ref role="37wK5l" to="vdrq:fB3l81it7u" resolve="getTextualRepresentation" />
@@ -944,18 +944,18 @@
                                     </node>
                                   </node>
                                 </node>
-                                <node concept="Rh6nW" id="2p0G1uTupLb" role="1bW2Oz">
+                                <node concept="gl6BB" id="1vMaDkDXck0" role="1bW2Oz">
                                   <property role="TrG5h" value="it" />
-                                  <node concept="2jxLKc" id="2p0G1uTupLc" role="1tU5fm" />
+                                  <node concept="2jxLKc" id="1vMaDkDXck1" role="1tU5fm" />
                                 </node>
                               </node>
                             </node>
                           </node>
                         </node>
                       </node>
-                      <node concept="Rh6nW" id="2p0G1uTuouC" role="1bW2Oz">
+                      <node concept="gl6BB" id="1vMaDkDXck2" role="1bW2Oz">
                         <property role="TrG5h" value="it" />
-                        <node concept="2jxLKc" id="2p0G1uTuouD" role="1tU5fm" />
+                        <node concept="2jxLKc" id="1vMaDkDXck3" role="1tU5fm" />
                       </node>
                     </node>
                   </node>

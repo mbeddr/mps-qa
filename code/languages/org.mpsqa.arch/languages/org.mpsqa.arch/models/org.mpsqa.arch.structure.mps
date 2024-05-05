@@ -124,11 +124,6 @@
     <property role="TrG5h" value="SingleComponentDependency" />
     <property role="3GE5qa" value="dependencies" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="Te1zv$_jA0" role="1TKVEl">
-      <property role="IQ2nx" value="1030768201842375040" />
-      <property role="TrG5h" value="lock" />
-      <ref role="AX2Wp" node="Te1zv$_mMK" resolve="EDependencyLockType" />
-    </node>
     <node concept="1TJgyj" id="6MUZd5Uj9wm" role="1TKVEi">
       <property role="IQ2ns" value="7834852478394603542" />
       <property role="20kJfa" value="component" />
@@ -141,6 +136,11 @@
       <property role="20kJfa" value="whitelist" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="Te1zv$_lA2" resolve="SingleComponentDependencyWhitelistEntry" />
+    </node>
+    <node concept="1TJgyi" id="Te1zv$_jA0" role="1TKVEl">
+      <property role="IQ2nx" value="1030768201842375040" />
+      <property role="TrG5h" value="lock" />
+      <ref role="AX2Wp" node="Te1zv$_mMK" resolve="EDependencyLockType" />
     </node>
   </node>
   <node concept="PlHQZ" id="6MUZd5Uj9MP">
@@ -230,17 +230,6 @@
       <ref role="PrY4T" node="6MUZd5Uj9vC" resolve="IArchitectureSpecificationContent" />
     </node>
   </node>
-  <node concept="1TIwiD" id="Te1zv$_lA2">
-    <property role="EcuMT" value="1030768201842383234" />
-    <property role="TrG5h" value="SingleComponentDependencyWhitelistEntry" />
-    <property role="3GE5qa" value="dependencies" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="Te1zv$_lIb" role="1TKVEl">
-      <property role="IQ2nx" value="1030768201842383755" />
-      <property role="TrG5h" value="explanation" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-  </node>
   <node concept="25R3W" id="Te1zv$_mMK">
     <property role="3F6X1D" value="1030768201842388144" />
     <property role="TrG5h" value="EDependencyLockType" />
@@ -260,6 +249,17 @@
     <node concept="25R33" id="GdL2WcU97I" role="25R1y">
       <property role="3tVfz5" value="796508415473521134" />
       <property role="TrG5h" value="NODE_LOCK" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="Te1zv$_lA2">
+    <property role="EcuMT" value="1030768201842383234" />
+    <property role="TrG5h" value="SingleComponentDependencyWhitelistEntry" />
+    <property role="3GE5qa" value="dependencies" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="Te1zv$_lIb" role="1TKVEl">
+      <property role="IQ2nx" value="1030768201842383755" />
+      <property role="TrG5h" value="explanation" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

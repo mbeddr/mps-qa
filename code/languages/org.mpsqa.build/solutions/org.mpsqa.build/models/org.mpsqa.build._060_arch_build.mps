@@ -171,20 +171,6 @@
     </node>
     <node concept="398rNT" id="50Wzfz4shz4" role="1l3spd">
       <property role="TrG5h" value="mps.home" />
-      <node concept="55IIr" id="50Wzfz4shzd" role="398pKh">
-        <node concept="2Ry0Ak" id="50Wzfz4shzp" role="iGT6I">
-          <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="50Wzfz4shzI" role="2Ry0An">
-            <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="50Wzfz4shzY" role="2Ry0An">
-              <property role="2Ry0Am" value=".." />
-              <node concept="2Ry0Ak" id="50Wzfz4sh$6" role="2Ry0An">
-                <property role="2Ry0Am" value="MPS_2019_3_4" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="398rNT" id="50Wzfz4shz5" role="1l3spd">
       <property role="TrG5h" value="mpsqa.arch.home" />
@@ -472,6 +458,10 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="55IIr" id="50Wzfz4shza" role="auvoZ" />
+    <node concept="2igEWh" id="50Wzfz4shzb" role="1hWBAP">
+      <property role="2igJW4" value="true" />
     </node>
     <node concept="2G$12M" id="GdL2Wddnv9" role="3989C9">
       <property role="TrG5h" value="test.mpsqa.arch" />
@@ -797,10 +787,6 @@
           </node>
         </node>
       </node>
-    </node>
-    <node concept="55IIr" id="50Wzfz4shza" role="auvoZ" />
-    <node concept="2igEWh" id="50Wzfz4shzb" role="1hWBAP">
-      <property role="2igJW4" value="true" />
     </node>
   </node>
 </model>
