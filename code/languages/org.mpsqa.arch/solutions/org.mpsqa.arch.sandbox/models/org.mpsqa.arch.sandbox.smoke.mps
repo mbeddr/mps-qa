@@ -16,14 +16,19 @@
       <concept id="7834852478394604726" name="org.mpsqa.arch.structure.ComponentDependency" flags="ng" index="mXA1B">
         <child id="7834852478394761713" name="dependsOn" index="mXvOw" />
       </concept>
-      <concept id="7834852478394603541" name="org.mpsqa.arch.structure.ComponentRef" flags="ng" index="mXAj4">
+      <concept id="7834852478394603541" name="org.mpsqa.arch.structure.SingleComponentDependency" flags="ng" index="mXAj4">
+        <property id="1030768201842375040" name="lock" index="3EQNYR" />
         <reference id="7834852478394603542" name="component" index="mXAj7" />
+        <child id="1030768201842384814" name="whitelist" index="3EQPAp" />
       </concept>
       <concept id="7834852478394603495" name="org.mpsqa.arch.structure.ComponentDefinition" flags="ng" index="mXAGQ">
         <child id="7834852478394603641" name="content" index="mXAiC" />
       </concept>
       <concept id="7834852478394603494" name="org.mpsqa.arch.structure.ArchSpecification" flags="ng" index="mXAGR">
         <child id="7834852478394603499" name="content" index="mXAGU" />
+      </concept>
+      <concept id="1030768201842383234" name="org.mpsqa.arch.structure.SingleComponentDependencyWhitelistEntry" flags="ng" index="3EQPYP">
+        <property id="1030768201842383755" name="explanation" index="3EQPQW" />
       </concept>
     </language>
     <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
@@ -67,7 +72,17 @@
         </node>
         <node concept="mXA1B" id="7qAQSsiFxd" role="1Rkc$q">
           <node concept="mXAj4" id="1XeVdf85oR_" role="mXvOw">
+            <property role="3EQNYR" value="Te1zv$_mMP/MODEL_LOCK" />
             <ref role="mXAj7" node="7qAQSsiFxK" resolve="JDK" />
+            <node concept="3EQPYP" id="Te1zv$J9wR" role="3EQPAp">
+              <property role="3EQPQW" value="model: 'java.lang' from module: 'JDK'" />
+            </node>
+            <node concept="3EQPYP" id="Te1zv$J9wS" role="3EQPAp">
+              <property role="3EQPQW" value="model: 'java.awt' from module: 'JDK'" />
+            </node>
+            <node concept="3EQPYP" id="Te1zv$J9wT" role="3EQPAp">
+              <property role="3EQPQW" value="model: 'java.util' from module: 'JDK'" />
+            </node>
           </node>
         </node>
       </node>

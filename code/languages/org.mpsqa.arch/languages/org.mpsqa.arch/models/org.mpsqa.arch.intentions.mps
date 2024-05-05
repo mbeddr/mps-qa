@@ -551,6 +551,12 @@
             <ref role="37wK5l" to="u41u:1XeVdf8hxz0" resolve="updateDependenciesStrenghts" />
             <ref role="1Pybhc" to="u41u:1XeVdf85BSu" resolve="DependencyStrengthUtils" />
             <node concept="2Sf5sV" id="1XeVdf8hN2J" role="37wK5m" />
+            <node concept="2OqwBi" id="GdL2Wd5$Ry" role="37wK5m">
+              <node concept="1XNTG" id="GdL2Wd5$KB" role="2Oq$k0" />
+              <node concept="liA8E" id="GdL2Wd5_6k" role="2OqNvi">
+                <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="1XeVdf8idXn" role="3cqZAp">
