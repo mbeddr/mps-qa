@@ -60,9 +60,12 @@ jobs:
     - name: Check for no dirty files after build and migration
       run: |
         if [[ -n $(git status --porcelain | head --lines=1) ]]
-        then
+        then          
           echo "Dirty files detected after build/migration, run './gradlew migrate' and/or update .gitignore to fix:"
           git status
+          echo ">>>>>>>>>>>>>>>>>>>>>"
+          git diff
+          echo "<<<<<<<<<<<<<<<<<<<<<"
           exit 1
         fi
 
