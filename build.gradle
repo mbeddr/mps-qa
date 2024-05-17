@@ -56,7 +56,7 @@ configurations {
 dependencies {
     // Use the following dependency for published releases:
     //   mps 'com.jetbrains:mps:2024.1'
-    mps 'com.jetbrains.mps:mps-prerelease:241.17011.703'
+    mps 'com.jetbrains.mps:mps-prerelease:241.17011.718'
     antLib "org.apache.ant:ant-junit:1.10.14"
     antLib "org.jacoco:org.jacoco.ant:0.8.12"
 }
