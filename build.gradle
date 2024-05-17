@@ -338,48 +338,20 @@ tasks.register('migrate', MpsMigrate) {
     pluginRoots.from(new File(mpsHomeDir, 'plugins/mps-console'))
 }
 
-configurations {
-    rerunMigrationsBackend
-}
-
-dependencies {
-    rerunMigrationsBackend("de.itemis.mps.build-backends:rerun-migrations:0.0.3.+")
-}
-
-tasks.register('rerunMigrations', JavaExec) {
+tasks.register('remigrate', Remigrate) {
     mustRunAfter('migrate')
     mustRunAfter('build_all_languages')
 
     dependsOn(resolveMps, 'downloadJbr')
-    mpsBackendLauncher.builder()
-            .withMpsHome(mpsHomeDir)
-            .withJavaExecutable(tasks.named('downloadJbr', DownloadJbrForPlatform).map { it.javaExecutable.path })
-            .configure(it)
 
-    classpath(fileTree(mpsHomeDir) {
-        include("lib/**/*.jar")
-    })
-    classpath(configurations.rerunMigrationsBackend)
-    mainClass = 'de.itemis.mps.gradle.migrate.MainKt'
+    mpsHome = mpsHomeDir
 
-    for (dir in allProjectDirectoriesInDependencyOrder) {
-        args("--project=$dir")
-    }
+    folderMacros.put('mpsqa.home', layout.projectDirectory)
 
-    args("--macro=mpsqa.home::${rootDir}")
+    projectDirectories.from(allProjectDirectoriesInDependencyOrder)
 
-    // rerun-migrations needs its own jar added as a plugin
-    argumentProviders.add(new CommandLineArgumentProvider() {
-        @Override
-        Iterable<String> asArguments() {
-            def config = configurations.rerunMigrationsBackend
-
-            ["--plugin=de.itemis.mps.buildbackends.rerun-migrations::" +
-                     configurations.rerunMigrationsBackend.files(config.dependencies.first()).first()]
-        }
-    })
-
-    args("--plugin=jetbrains.mps.console::mps-console")
-    args("--plugin=jetbrains.mps.trove::mps-trove")
-    args("--plugin=jetbrains.mps.ide.modelchecker::mps-modelchecker")
+    pluginRoots.from(new File(mpsHomeDir, 'plugins/mps-build'))
+    pluginRoots.from(new File(mpsHomeDir, 'plugins/mps-console'))
+    pluginRoots.from(new File(mpsHomeDir, 'plugins/mps-trove'))
+    pluginRoots.from(new File(mpsHomeDir, 'plugins/mps-modelchecker'))
 }

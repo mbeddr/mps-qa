@@ -36,7 +36,7 @@ jobs:
 
     - name: Build MPS-QA and migrate
       run: |
-          xvfb-run ./gradlew build migrate rerunMigrations \
+          xvfb-run ./gradlew build migrate remigrate \
             -Partifacts.itemis.cloud.user=${{secrets.ARTIFACTS_ITEMIS_CLOUD_USER}} \
             -Partifacts.itemis.cloud.pw=${{secrets.ARTIFACTS_ITEMIS_CLOUD_PW}}
 
@@ -61,7 +61,7 @@ jobs:
       run: |
         if [[ -n $(git status --porcelain | head --lines=1) ]]
         then          
-          echo "Dirty files detected after build/migration, run './gradlew migrate' and/or update .gitignore to fix:"
+          echo "Dirty files detected after build/migration, run './gradlew build migrate remigrate' and/or update .gitignore to fix:"
           git status
           echo ">>>>>>>>>>>>>>>>>>>>>"
           git diff
