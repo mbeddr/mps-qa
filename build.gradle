@@ -140,6 +140,7 @@ def dependenciesDir = file("$buildDir/dependencies")
 def defaultScriptArgs = [
         'mps.home'                          : mpsHomeDir,
         'mps_home'                          : mpsHomeDir,
+        'build.jna.library.path'            : new File(mpsHomeDir, "lib/jna/${System.getProperty('os.arch')}"),
         'mpsqa.home'                        : rootDir,
         'build.dir'                         : buildDir,
         'version'                           : version,
