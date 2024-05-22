@@ -19,6 +19,10 @@
       </concept>
       <concept id="4560297596904469357" name="jetbrains.mps.build.mps.tests.structure.BuildAspect_MpsTestModules" flags="nn" index="22LTRH">
         <child id="4560297596904469360" name="modules" index="22LTRK" />
+        <child id="6593674873639474544" name="options" index="24cAkG" />
+      </concept>
+      <concept id="6593674873639474400" name="jetbrains.mps.build.mps.tests.structure.BuildMps_TestModules_Options" flags="ng" index="24cAiW">
+        <child id="6593674873639478221" name="haltonfailure" index="24c_eh" />
       </concept>
       <concept id="4005526075820600484" name="jetbrains.mps.build.mps.tests.structure.BuildModuleTestsPlugin" flags="ng" index="1gjT0q" />
     </language>
@@ -34,12 +38,17 @@
         <reference id="5617550519002745380" name="script" index="1l3spb" />
         <child id="4129895186893471026" name="artifacts" index="2JcizS" />
       </concept>
+      <concept id="4380385936562003279" name="jetbrains.mps.build.structure.BuildString" flags="ng" index="NbPM2">
+        <child id="4903714810883783243" name="parts" index="3MwsjC" />
+      </concept>
       <concept id="8618885170173601777" name="jetbrains.mps.build.structure.BuildCompositePath" flags="nn" index="2Ry0Ak">
         <property id="8618885170173601779" name="head" index="2Ry0Am" />
         <child id="8618885170173601778" name="tail" index="2Ry0An" />
       </concept>
       <concept id="6647099934206700647" name="jetbrains.mps.build.structure.BuildJavaPlugin" flags="ng" index="10PD9b" />
-      <concept id="7389400916848136194" name="jetbrains.mps.build.structure.BuildFolderMacro" flags="ng" index="398rNT" />
+      <concept id="7389400916848136194" name="jetbrains.mps.build.structure.BuildFolderMacro" flags="ng" index="398rNT">
+        <child id="7389400916848144618" name="defaultPath" index="398pKh" />
+      </concept>
       <concept id="7389400916848153117" name="jetbrains.mps.build.structure.BuildSourceMacroRelativePath" flags="ng" index="398BVA">
         <reference id="7389400916848153130" name="macro" index="398BVh" />
       </concept>
@@ -65,6 +74,9 @@
       <concept id="5248329904287794596" name="jetbrains.mps.build.structure.BuildInputFiles" flags="ng" index="3LXTmp">
         <child id="5248329904287794598" name="dir" index="3LXTmr" />
         <child id="5248329904287794679" name="selectors" index="3LXTna" />
+      </concept>
+      <concept id="4903714810883702019" name="jetbrains.mps.build.structure.BuildTextStringPart" flags="ng" index="3Mxwew">
+        <property id="4903714810883755350" name="text" index="3MwjfP" />
       </concept>
     </language>
     <language id="bf73e6d8-133f-42d0-a056-6fd1d29d022f" name="org.mpsqa.testcov.buildIntegration.jacoco">
@@ -316,6 +328,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="3W4BA34jbWo" role="3bR37C">
+          <node concept="3bR9La" id="3W4BA34jbWp" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="55IIr" id="5KoFtetU68b" role="auvoZ" />
@@ -342,6 +359,12 @@
     <node concept="398rNT" id="4L8SKciIAuI" role="1l3spd">
       <property role="TrG5h" value="mpsqa.home" />
     </node>
+    <node concept="398rNT" id="3W4BA34kLb8" role="1l3spd">
+      <property role="TrG5h" value="mps.macro.mpsqa.home" />
+      <node concept="398BVA" id="3W4BA34kLbc" role="398pKh">
+        <ref role="398BVh" node="4L8SKciIAuI" resolve="mpsqa.home" />
+      </node>
+    </node>
     <node concept="19Et6q" id="5KoFtetU97x" role="1hWBAP">
       <property role="TrG5h" value="test" />
       <property role="9whAO" value="true" />
@@ -350,6 +373,13 @@
       </node>
       <node concept="3hnpWI" id="5KoFtetU97_" role="1rHEoW">
         <ref role="3hnpWJ" node="5KoFtetU95q" resolve="main" />
+      </node>
+      <node concept="24cAiW" id="3W4BA34jpYX" role="24cAkG">
+        <node concept="NbPM2" id="3W4BA34jpZ0" role="24c_eh">
+          <node concept="3Mxwew" id="3W4BA34jpYZ" role="3MwsjC">
+            <property role="3MwjfP" value="true" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="1y0Vig" id="oz4hQ$QQdU" role="1hWBAP" />
