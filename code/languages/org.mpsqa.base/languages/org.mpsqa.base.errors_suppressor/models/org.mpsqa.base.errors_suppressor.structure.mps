@@ -56,7 +56,7 @@
     <property role="TrG5h" value="SuppressCheckingResults" />
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="suppress checking results" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1DrnXKMSkKW" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -71,7 +71,7 @@
   <node concept="1TIwiD" id="1DrnXKMSl8W">
     <property role="EcuMT" value="1899217067217867324" />
     <property role="TrG5h" value="SingleCheckingResultSuppressorConfig" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1DrnXKMSlst" role="1TKVEi">
       <property role="IQ2ns" value="1899217067217868573" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
