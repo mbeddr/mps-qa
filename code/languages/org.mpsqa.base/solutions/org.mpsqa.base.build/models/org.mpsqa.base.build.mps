@@ -808,7 +808,7 @@
             <property role="2Ry0Am" value="solutions" />
             <node concept="2Ry0Ak" id="1DrnXKNQ5O1" role="2Ry0An">
               <property role="2Ry0Am" value="org.mpsqa.base.errors_suppressor.pluginSolution" />
-              <node concept="2Ry0Ak" id="1DrnXKNQ63e" role="2Ry0An">
+              <node concept="2Ry0Ak" id="4pYUkRlm5wO" role="2Ry0An">
                 <property role="2Ry0Am" value="org.mpsqa.base.errors_suppressor.pluginSolution.msd" />
               </node>
             </node>
@@ -870,7 +870,7 @@
                 <property role="2Ry0Am" value="solutions" />
                 <node concept="2Ry0Ak" id="1DrnXKNQ6V7" role="2Ry0An">
                   <property role="2Ry0Am" value="org.mpsqa.base.errors_suppressor.pluginSolution" />
-                  <node concept="2Ry0Ak" id="1DrnXKNQ6V8" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="4pYUkRlm5$e" role="2Ry0An">
                     <property role="2Ry0Am" value="models" />
                   </node>
                 </node>
@@ -878,6 +878,22 @@
             </node>
             <node concept="3qWCbU" id="1DrnXKNQ6Vi" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="1X0S7p0Q5$Q" role="3bR31x">
+          <node concept="3LXTmp" id="1X0S7p0Q5$R" role="3rtmxm">
+            <node concept="3qWCbU" id="1X0S7p0Q5$S" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="1X0S7p0Q5$T" role="3LXTmr">
+              <ref role="398BVh" node="7C9PHv6FBIL" resolve="mpsqa.base.home" />
+              <node concept="2Ry0Ak" id="1X0S7p0Q5$U" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="1X0S7p0Q5$V" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.base.errors_suppressor.pluginSolution" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
