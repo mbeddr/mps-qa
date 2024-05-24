@@ -126,7 +126,13 @@
             <property role="Vb096" value="fLJRk5_/gray" />
           </node>
         </node>
-        <node concept="3F0ifn" id="1k2QJ73ofZz" role="3EZMnx" />
+        <node concept="3F0ifn" id="1k2QJ73ofZz" role="3EZMnx">
+          <property role="3F0ifm" value="After each modification, the project needs to be closed and open again!" />
+          <node concept="VechU" id="4DQDMrIpcyo" role="3F10Kt">
+            <property role="Vb096" value="fLJRk5_/gray" />
+          </node>
+        </node>
+        <node concept="3F0ifn" id="4DQDMrIpcqU" role="3EZMnx" />
         <node concept="3F0ifn" id="1k2QJ73og0r" role="3EZMnx">
           <property role="3F0ifm" value="Example:" />
           <node concept="VechU" id="1k2QJ73QQpN" role="3F10Kt">

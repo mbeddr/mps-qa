@@ -2,8 +2,10 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/org.mpsqa.base.errors_suppressor.demolan/org.mpsqa.base.errors_suppressor.demolan.mpl" folder="errors_suppressor.sandbox" />
       <modulePath path="$PROJECT_DIR$/languages/org.mpsqa.base.errors_suppressor/org.mpsqa.base.errors_suppressor.mpl" folder="errors_suppressor" />
       <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.base.build/org.mpsqa.base.build.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.base.errors_suppressor.democonfig/org.mpsqa.base.errors_suppressor.democonfig.msd" folder="errors_suppressor.sandbox" />
       <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.base.errors_suppressor.pluginSolution/org.mpsqa.base.errors_suppressor.pluginSolution.msd" folder="errors_suppressor" />
       <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.base.lib/org.mpsqa.base.lib.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.base.utils/org.mpsqa.base.utils.msd" folder="" />
