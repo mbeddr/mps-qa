@@ -834,16 +834,6 @@
             <ref role="3bR37D" to="ffeo:44LXwdzyvTi" resolve="Annotations" />
           </node>
         </node>
-        <node concept="1SiIV0" id="1DrnXKNQ6UV" role="3bR37C">
-          <node concept="3bR9La" id="1DrnXKNQ6UW" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1DrnXKNQ6UX" role="3bR37C">
-          <node concept="3bR9La" id="1DrnXKNQ6UY" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="1DrnXKNQ6UZ" role="3bR37C">
           <node concept="3bR9La" id="1DrnXKNQ6V0" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
@@ -953,6 +943,64 @@
               </node>
             </node>
             <node concept="3qWCbU" id="1DrnXKNQ6zX" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2G$12M" id="3YFjm2ScVvw" role="3989C9">
+      <property role="TrG5h" value="org.mpsqa.base.errors_suppressor.demolang" />
+      <node concept="1E1JtD" id="3YFjm2ScVNP" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="org.mpsqa.base.errors_suppressor.demolan" />
+        <property role="3LESm3" value="86d6cea8-14ba-4857-9456-c755fc8925db" />
+        <node concept="398BVA" id="3YFjm2ScVP_" role="3LF7KH">
+          <ref role="398BVh" node="7C9PHv6FBIL" resolve="mpsqa.base.home" />
+          <node concept="2Ry0Ak" id="3YFjm2ScVT3" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="3YFjm2ScVZS" role="2Ry0An">
+              <property role="2Ry0Am" value="org.mpsqa.base.errors_suppressor.demolan" />
+              <node concept="2Ry0Ak" id="3YFjm2ScW3l" role="2Ry0An">
+                <property role="2Ry0Am" value="org.mpsqa.base.errors_suppressor.demolan.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1BupzO" id="3YFjm2ScWb9" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="3YFjm2ScWba" role="1HemKq">
+            <node concept="398BVA" id="3YFjm2ScWaY" role="3LXTmr">
+              <ref role="398BVh" node="7C9PHv6FBIL" resolve="mpsqa.base.home" />
+              <node concept="2Ry0Ak" id="3YFjm2ScWaZ" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="3YFjm2ScWb0" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.base.errors_suppressor.demolan" />
+                  <node concept="2Ry0Ak" id="3YFjm2ScWb1" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="3YFjm2ScWbb" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="3YFjm2ScWdo" role="3bR31x">
+          <node concept="3LXTmp" id="3YFjm2ScWdp" role="3rtmxm">
+            <node concept="398BVA" id="3YFjm2ScWdq" role="3LXTmr">
+              <ref role="398BVh" node="7C9PHv6FBIL" resolve="mpsqa.base.home" />
+              <node concept="2Ry0Ak" id="3YFjm2ScWdr" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="3YFjm2ScWds" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.base.errors_suppressor.demolan" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="3YFjm2ScWdu" role="3LXTna">
               <property role="3qWCbO" value="icons/**, resources/**" />
             </node>
           </node>
