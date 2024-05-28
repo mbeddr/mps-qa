@@ -2,11 +2,12 @@
 <model ref="r:b5f6f685-e641-4e79-861c-1be9b77a62b8(org.mpsqa.clones.demo.config._010_headless_runner@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
   </languages>
   <imports>
     <import index="f4mj" ref="r:87c69567-b194-437c-b9e6-0ce2770f06d2(org.mpsqa.clones.config.pluginSolution.utils)" />
@@ -21,6 +22,7 @@
       </concept>
       <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
@@ -73,11 +75,8 @@
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
     </language>
     <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
@@ -111,6 +110,14 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
+      </concept>
+    </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
         <child id="1151688676805" name="elementType" index="_ZDj9" />
@@ -120,6 +127,7 @@
   </registry>
   <node concept="1lH9Xt" id="6dJ4vxiTQh_">
     <property role="TrG5h" value="HeadlessRunner" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="7YZJmepzqZz" role="1SL9yI">
       <property role="TrG5h" value="run_clones_headless" />
       <node concept="3cqZAl" id="7YZJmepzqZ$" role="3clF45" />
@@ -141,7 +149,7 @@
                 <node concept="2OqwBi" id="7YZJmepB4S5" role="Vysub">
                   <node concept="1jxXqW" id="7YZJmepB4GZ" role="2Oq$k0" />
                   <node concept="liA8E" id="7YZJmepB5wq" role="2OqNvi">
-                    <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                   </node>
                 </node>
               </node>
@@ -175,13 +183,86 @@
         </node>
         <node concept="3clFbH" id="6dJ4vxiU2xr" role="3cqZAp" />
         <node concept="3SKdUt" id="6dJ4vxiU2I5" role="3cqZAp">
-          <node concept="3SKdUq" id="6dJ4vxiU2I7" role="3SKWNk">
-            <property role="3SKdUp" value="if the clones detection config has as postprocessor the &quot;filtering of new clones w.r.t. baseline&quot;, then our test " />
+          <node concept="1PaTwC" id="4G8aeOH2reC" role="1aUNEU">
+            <node concept="3oM_SD" id="4G8aeOH2reD" role="1PaTwD">
+              <property role="3oM_SC" value="if" />
+            </node>
+            <node concept="3oM_SD" id="4G8aeOH2reE" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="4G8aeOH2reF" role="1PaTwD">
+              <property role="3oM_SC" value="clones" />
+            </node>
+            <node concept="3oM_SD" id="4G8aeOH2reG" role="1PaTwD">
+              <property role="3oM_SC" value="detection" />
+            </node>
+            <node concept="3oM_SD" id="4G8aeOH2reH" role="1PaTwD">
+              <property role="3oM_SC" value="config" />
+            </node>
+            <node concept="3oM_SD" id="4G8aeOH2reI" role="1PaTwD">
+              <property role="3oM_SC" value="has" />
+            </node>
+            <node concept="3oM_SD" id="4G8aeOH2reJ" role="1PaTwD">
+              <property role="3oM_SC" value="as" />
+            </node>
+            <node concept="3oM_SD" id="4G8aeOH2reK" role="1PaTwD">
+              <property role="3oM_SC" value="postprocessor" />
+            </node>
+            <node concept="3oM_SD" id="4G8aeOH2reL" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="4G8aeOH2reM" role="1PaTwD">
+              <property role="3oM_SC" value="&quot;filtering" />
+            </node>
+            <node concept="3oM_SD" id="4G8aeOH2reN" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="4G8aeOH2reO" role="1PaTwD">
+              <property role="3oM_SC" value="new" />
+            </node>
+            <node concept="3oM_SD" id="4G8aeOH2reP" role="1PaTwD">
+              <property role="3oM_SC" value="clones" />
+            </node>
+            <node concept="3oM_SD" id="4G8aeOH2reQ" role="1PaTwD">
+              <property role="3oM_SC" value="w.r.t." />
+            </node>
+            <node concept="3oM_SD" id="4G8aeOH2reR" role="1PaTwD">
+              <property role="3oM_SC" value="baseline&quot;," />
+            </node>
+            <node concept="3oM_SD" id="4G8aeOH2reS" role="1PaTwD">
+              <property role="3oM_SC" value="then" />
+            </node>
+            <node concept="3oM_SD" id="4G8aeOH2reT" role="1PaTwD">
+              <property role="3oM_SC" value="our" />
+            </node>
+            <node concept="3oM_SD" id="4G8aeOH2reU" role="1PaTwD">
+              <property role="3oM_SC" value="test" />
+            </node>
           </node>
         </node>
         <node concept="3SKdUt" id="6dJ4vxiU3cL" role="3cqZAp">
-          <node concept="3SKdUq" id="6dJ4vxiU3cN" role="3SKWNk">
-            <property role="3SKdUp" value="will fail if new clones are detected " />
+          <node concept="1PaTwC" id="4G8aeOH2reV" role="1aUNEU">
+            <node concept="3oM_SD" id="4G8aeOH2reW" role="1PaTwD">
+              <property role="3oM_SC" value="will" />
+            </node>
+            <node concept="3oM_SD" id="4G8aeOH2reX" role="1PaTwD">
+              <property role="3oM_SC" value="fail" />
+            </node>
+            <node concept="3oM_SD" id="4G8aeOH2reY" role="1PaTwD">
+              <property role="3oM_SC" value="if" />
+            </node>
+            <node concept="3oM_SD" id="4G8aeOH2reZ" role="1PaTwD">
+              <property role="3oM_SC" value="new" />
+            </node>
+            <node concept="3oM_SD" id="4G8aeOH2rf0" role="1PaTwD">
+              <property role="3oM_SC" value="clones" />
+            </node>
+            <node concept="3oM_SD" id="4G8aeOH2rf1" role="1PaTwD">
+              <property role="3oM_SC" value="are" />
+            </node>
+            <node concept="3oM_SD" id="4G8aeOH2rf2" role="1PaTwD">
+              <property role="3oM_SC" value="detected" />
+            </node>
           </node>
         </node>
         <node concept="3vlDli" id="6dJ4vxiTVOZ" role="3cqZAp">
