@@ -3,7 +3,7 @@ updates:
   - package-ecosystem: gradle
     directory: /
     schedule:
-      interval: daily
+      interval: weekly
     registries: "*"
   - package-ecosystem: github-actions
     directory: /
