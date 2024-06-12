@@ -6,7 +6,7 @@
     </modelRoot>
   </models>
   <facets>
-    <facet type="java">
+    <facet type="java" compile="mps" classes="mps" ext="yes">
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
     <facet planModel="r:ebd662e8-4980-419c-8715-eac3a0640db1(org.mpsqa.base.errors_suppressor.pluginSolution.custom@genplan)" type="generator" />
