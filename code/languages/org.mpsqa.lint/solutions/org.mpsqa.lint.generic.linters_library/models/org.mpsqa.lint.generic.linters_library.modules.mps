@@ -4637,7 +4637,7 @@
                     </node>
                     <node concept="2OqwBi" id="6bcxNvJJWE5" role="33vP2m">
                       <node concept="2GrUjf" id="6bcxNvJJWE6" role="2Oq$k0">
-                        <ref role="2Gs0qQ" node="6bcxNvJJWE0" resolve="dep" />
+                        <ref role="2Gs0qQ" node="6bcxNvJJWE0" resolve="lang" />
                       </node>
                       <node concept="liA8E" id="6bcxNvJKp_W" role="2OqNvi">
                         <ref role="37wK5l" to="c17a:~SLanguage.getSourceModule()" resolve="getSourceModule" />
