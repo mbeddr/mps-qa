@@ -3819,63 +3819,46 @@
             <ref role="3cqZAo" node="1Yf9e2l9dIZ" resolve="allCycles" />
           </node>
           <node concept="3clFbS" id="1Yf9e2l9dJ8" role="2LFqv$">
-            <node concept="3clFbJ" id="1Yf9e2l9dJ9" role="3cqZAp">
-              <node concept="3clFbC" id="1Yf9e2l9sRM" role="3clFbw">
-                <node concept="2OqwBi" id="1Yf9e2l9dJb" role="3uHU7B">
-                  <node concept="liA8E" id="1Yf9e2l9dJc" role="2OqNvi">
-                    <ref role="37wK5l" to="33ny:~ArrayList.size()" resolve="size" />
-                  </node>
-                  <node concept="2GrUjf" id="1Yf9e2l9dJd" role="2Oq$k0">
-                    <ref role="2Gs0qQ" node="1Yf9e2l9dJ6" resolve="crtCycle" />
-                  </node>
-                </node>
-                <node concept="37vLTw" id="1Yf9e2l9dJe" role="3uHU7w">
-                  <ref role="3cqZAo" node="1Yf9e2l9dIU" resolve="cycleLength" />
-                </node>
-              </node>
-              <node concept="3clFbS" id="1Yf9e2l9dJf" role="3clFbx">
-                <node concept="3cpWs8" id="1Yf9e2l9dJg" role="3cqZAp">
-                  <node concept="3cpWsn" id="1Yf9e2l9dJh" role="3cpWs9">
-                    <property role="TrG5h" value="msg" />
-                    <node concept="17QB3L" id="1Yf9e2l9dJi" role="1tU5fm" />
-                    <node concept="3cpWs3" id="1Yf9e2l9dJj" role="33vP2m">
-                      <node concept="3cpWs3" id="1Yf9e2l9dJk" role="3uHU7B">
-                        <node concept="3cpWs3" id="1Yf9e2l9dJl" role="3uHU7B">
-                          <node concept="Xl_RD" id="1Yf9e2l9dJm" role="3uHU7B">
-                            <property role="Xl_RC" value="cyclic dependency with length " />
-                          </node>
-                          <node concept="2OqwBi" id="1Yf9e2l9dJn" role="3uHU7w">
-                            <node concept="2GrUjf" id="1Yf9e2l9dJo" role="2Oq$k0">
-                              <ref role="2Gs0qQ" node="1Yf9e2l9dJ6" resolve="crtCycle" />
-                            </node>
-                            <node concept="liA8E" id="1Yf9e2l9dJp" role="2OqNvi">
-                              <ref role="37wK5l" to="33ny:~ArrayList.size()" resolve="size" />
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="Xl_RD" id="1Yf9e2l9dJq" role="3uHU7w">
-                          <property role="Xl_RC" value=" found " />
-                        </node>
+            <node concept="3cpWs8" id="1Yf9e2l9dJg" role="3cqZAp">
+              <node concept="3cpWsn" id="1Yf9e2l9dJh" role="3cpWs9">
+                <property role="TrG5h" value="msg" />
+                <node concept="17QB3L" id="1Yf9e2l9dJi" role="1tU5fm" />
+                <node concept="3cpWs3" id="1Yf9e2l9dJj" role="33vP2m">
+                  <node concept="3cpWs3" id="1Yf9e2l9dJk" role="3uHU7B">
+                    <node concept="3cpWs3" id="1Yf9e2l9dJl" role="3uHU7B">
+                      <node concept="Xl_RD" id="1Yf9e2l9dJm" role="3uHU7B">
+                        <property role="Xl_RC" value="cyclic dependency with length " />
                       </node>
-                      <node concept="1rXfSq" id="1Yf9e2l9dJr" role="3uHU7w">
-                        <ref role="37wK5l" node="1gULBtOgaIe" resolve="formatCycle" />
-                        <node concept="2GrUjf" id="1Yf9e2l9dJs" role="37wK5m">
+                      <node concept="2OqwBi" id="1Yf9e2l9dJn" role="3uHU7w">
+                        <node concept="2GrUjf" id="1Yf9e2l9dJo" role="2Oq$k0">
                           <ref role="2Gs0qQ" node="1Yf9e2l9dJ6" resolve="crtCycle" />
                         </node>
+                        <node concept="liA8E" id="1Yf9e2l9dJp" role="2OqNvi">
+                          <ref role="37wK5l" to="33ny:~ArrayList.size()" resolve="size" />
+                        </node>
                       </node>
+                    </node>
+                    <node concept="Xl_RD" id="1Yf9e2l9dJq" role="3uHU7w">
+                      <property role="Xl_RC" value=" found " />
+                    </node>
+                  </node>
+                  <node concept="1rXfSq" id="1Yf9e2l9dJr" role="3uHU7w">
+                    <ref role="37wK5l" node="1gULBtOgaIe" resolve="formatCycle" />
+                    <node concept="2GrUjf" id="1Yf9e2l9dJs" role="37wK5m">
+                      <ref role="2Gs0qQ" node="1Yf9e2l9dJ6" resolve="crtCycle" />
                     </node>
                   </node>
                 </node>
-                <node concept="3clFbF" id="1Yf9e2l9dJt" role="3cqZAp">
-                  <node concept="2OqwBi" id="1Yf9e2l9dJu" role="3clFbG">
-                    <node concept="37vLTw" id="1Yf9e2l9dJv" role="2Oq$k0">
-                      <ref role="3cqZAo" node="1Yf9e2l9dIR" resolve="res" />
-                    </node>
-                    <node concept="TSZUe" id="1Yf9e2l9dJw" role="2OqNvi">
-                      <node concept="37vLTw" id="1Yf9e2l9dJx" role="25WWJ7">
-                        <ref role="3cqZAo" node="1Yf9e2l9dJh" resolve="msg" />
-                      </node>
-                    </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="1Yf9e2l9dJt" role="3cqZAp">
+              <node concept="2OqwBi" id="1Yf9e2l9dJu" role="3clFbG">
+                <node concept="37vLTw" id="1Yf9e2l9dJv" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1Yf9e2l9dIR" resolve="res" />
+                </node>
+                <node concept="TSZUe" id="1Yf9e2l9dJw" role="2OqNvi">
+                  <node concept="37vLTw" id="1Yf9e2l9dJx" role="25WWJ7">
+                    <ref role="3cqZAo" node="1Yf9e2l9dJh" resolve="msg" />
                   </node>
                 </node>
               </node>
