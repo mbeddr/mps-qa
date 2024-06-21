@@ -30,6 +30,7 @@
     <import index="jkny" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.wm(MPS.IDEA/)" />
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
@@ -939,6 +940,14 @@
                 <node concept="37vLTw" id="38klfj4HbDt" role="37wK5m">
                   <ref role="3cqZAo" node="6gY6GEDvR_$" resolve="cs" />
                 </node>
+                <node concept="2OqwBi" id="1SbpUwacdgH" role="37wK5m">
+                  <node concept="37vLTw" id="1SbpUwacd0i" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6gY6GEDvR_$" resolve="cs" />
+                  </node>
+                  <node concept="3TrcHB" id="1SbpUwacdR8" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -1020,6 +1029,14 @@
                 </node>
                 <node concept="37vLTw" id="38klfj4HcjI" role="37wK5m">
                   <ref role="3cqZAo" node="6gY6GEDvSN0" resolve="rcs" />
+                </node>
+                <node concept="2OqwBi" id="1SbpUwacelJ" role="37wK5m">
+                  <node concept="37vLTw" id="1SbpUwace2p" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6gY6GEDvSN0" resolve="rcs" />
+                  </node>
+                  <node concept="3TrcHB" id="1SbpUwaceEv" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
                 </node>
               </node>
             </node>

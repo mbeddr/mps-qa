@@ -19,9 +19,9 @@
     <import index="z1c4" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
     <import index="j8aq" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.module(MPS.Core/)" />
     <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="xlb7" ref="r:cf42fd0a-68d2-493b-8b77-961658617704(jetbrains.mps.lang.modelapi.behavior)" implicit="true" />
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -462,13 +462,8 @@
                                       <node concept="Xl_RD" id="4aEqBbbDfes" role="3uHU7B">
                                         <property role="Xl_RC" value="'" />
                                       </node>
-                                      <node concept="2OqwBi" id="4aEqBbbDg4q" role="3uHU7w">
-                                        <node concept="37vLTw" id="4aEqBbbDfNX" role="2Oq$k0">
-                                          <ref role="3cqZAo" node="y1G8y6ad_X" resolve="script" />
-                                        </node>
-                                        <node concept="3TrcHB" id="4aEqBbbDgkP" role="2OqNvi">
-                                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                                        </node>
+                                      <node concept="37vLTw" id="1SbpUwacbY_" role="3uHU7w">
+                                        <ref role="3cqZAo" node="1SbpUwacaRN" resolve="nameOfScript" />
                                       </node>
                                     </node>
                                     <node concept="Xl_RD" id="4aEqBbbDgwQ" role="3uHU7w">
@@ -544,6 +539,11 @@
         <property role="TrG5h" value="defaultNodeToReportErrors" />
         <property role="3TUv4t" value="true" />
         <node concept="3Tqbb2" id="38klfj4Had1" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="1SbpUwacaRN" role="3clF46">
+        <property role="TrG5h" value="nameOfScript" />
+        <property role="3TUv4t" value="true" />
+        <node concept="17QB3L" id="1SbpUwacbbh" role="1tU5fm" />
       </node>
       <node concept="_YKpA" id="7Jrb4ZsyOoJ" role="3clF45">
         <node concept="3uibUv" id="19GnlsUkL1i" role="_ZDj9">

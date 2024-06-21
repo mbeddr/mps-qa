@@ -4863,8 +4863,13 @@
               </node>
               <node concept="34oBXx" id="1SbpUw9Srg1" role="2OqNvi" />
             </node>
-            <node concept="37vLTw" id="1SbpUw9SaYd" role="3uHU7w">
-              <ref role="3cqZAo" node="1SbpUw9RHNO" resolve="cycleSize" />
+            <node concept="3cpWs3" id="1SbpUwabx82" role="3uHU7w">
+              <node concept="3cmrfG" id="1SbpUwabxg3" role="3uHU7w">
+                <property role="3cmrfH" value="1" />
+              </node>
+              <node concept="37vLTw" id="1SbpUw9SaYd" role="3uHU7B">
+                <ref role="3cqZAo" node="1SbpUw9RHNO" resolve="cycleSize" />
+              </node>
             </node>
           </node>
         </node>
@@ -4939,7 +4944,7 @@
                     </node>
                   </node>
                   <node concept="37vLTw" id="1SbpUw9PlNk" role="2Oq$k0">
-                    <ref role="3cqZAo" node="1SbpUw9PlNe" resolve="" />
+                    <ref role="3cqZAo" node="1SbpUw9PlNe" resolve="myIndirectDependencies" />
                   </node>
                 </node>
               </node>
@@ -4957,7 +4962,7 @@
                     </node>
                   </node>
                   <node concept="37vLTw" id="1SbpUw9PlNl" role="2Oq$k0">
-                    <ref role="3cqZAo" node="1SbpUw9PlNe" resolve="" />
+                    <ref role="3cqZAo" node="1SbpUw9PlNe" resolve="myIndirectDependencies" />
                   </node>
                 </node>
               </node>
