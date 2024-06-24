@@ -4953,7 +4953,7 @@
             </node>
             <node concept="TSZUe" id="63imCwJn7lI" role="2OqNvi">
               <node concept="37vLTw" id="63imCwJn8c8" role="25WWJ7">
-                <ref role="3cqZAo" node="63imCwJlprG" resolve="n" />
+                <ref role="3cqZAo" node="63imCwJlprG" resolve="currentModule" />
               </node>
             </node>
           </node>
@@ -4965,7 +4965,7 @@
             </node>
             <node concept="TSZUe" id="63imCwJqhDo" role="2OqNvi">
               <node concept="37vLTw" id="63imCwJqih3" role="25WWJ7">
-                <ref role="3cqZAo" node="63imCwJlprG" resolve="n" />
+                <ref role="3cqZAo" node="63imCwJlprG" resolve="currentModule" />
               </node>
             </node>
           </node>
@@ -4976,7 +4976,7 @@
           </node>
           <node concept="3EllGN" id="63imCwJlLcA" role="2GsD0m">
             <node concept="37vLTw" id="63imCwJlLzj" role="3ElVtu">
-              <ref role="3cqZAo" node="63imCwJlprG" resolve="n" />
+              <ref role="3cqZAo" node="63imCwJlprG" resolve="currentModule" />
             </node>
             <node concept="37vLTw" id="63imCwJ_xVe" role="3ElQJh">
               <ref role="3cqZAo" node="63imCwJ$O0W" resolve="directDependencies" />
@@ -4989,12 +4989,12 @@
                   <ref role="3cqZAo" node="63imCwJlN$y" resolve="action" />
                 </node>
                 <node concept="2GrUjf" id="63imCwJulnX" role="2SgHGx">
-                  <ref role="2Gs0qQ" node="63imCwJlJRK" resolve="w" />
+                  <ref role="2Gs0qQ" node="63imCwJlJRK" resolve="dependency" />
                 </node>
                 <node concept="2OqwBi" id="63imCwJE_nC" role="2SgHGx">
                   <node concept="3EllGN" id="63imCwJqI39" role="2Oq$k0">
                     <node concept="2GrUjf" id="63imCwJum4Z" role="3ElVtu">
-                      <ref role="2Gs0qQ" node="63imCwJlJRK" resolve="w" />
+                      <ref role="2Gs0qQ" node="63imCwJlJRK" resolve="dependency" />
                     </node>
                     <node concept="37vLTw" id="63imCwJ_Dex" role="3ElQJh">
                       <ref role="3cqZAo" node="63imCwJ$O0W" resolve="directDependencies" />
@@ -5018,7 +5018,7 @@
                   </node>
                   <node concept="3JPx81" id="63imCwJnbLF" role="2OqNvi">
                     <node concept="2GrUjf" id="63imCwJnc8y" role="25WWJ7">
-                      <ref role="2Gs0qQ" node="63imCwJlJRK" resolve="w" />
+                      <ref role="2Gs0qQ" node="63imCwJlJRK" resolve="dependency" />
                     </node>
                   </node>
                 </node>
@@ -5028,7 +5028,7 @@
                   <node concept="1rXfSq" id="63imCwJlw_j" role="3clFbG">
                     <ref role="37wK5l" node="63imCwJM1NN" resolve="DFSRecursive" />
                     <node concept="2GrUjf" id="63imCwJlNd5" role="37wK5m">
-                      <ref role="2Gs0qQ" node="63imCwJlJRK" resolve="w" />
+                      <ref role="2Gs0qQ" node="63imCwJlJRK" resolve="dependency" />
                     </node>
                     <node concept="37vLTw" id="63imCwJFLPz" role="37wK5m">
                       <ref role="3cqZAo" node="63imCwJ$O0W" resolve="directDependencies" />
@@ -5236,7 +5236,7 @@
                 <node concept="3clFbS" id="63imCwJCzvB" role="1bW5cS">
                   <node concept="3clFbF" id="63imCwJCRGN" role="3cqZAp">
                     <node concept="1rXfSq" id="63imCwJCRGM" role="3clFbG">
-                      <ref role="37wK5l" node="63imCwJLTCL" resolve="DFSInitial" />
+                      <ref role="37wK5l" node="63imCwJLTCL" resolve="DFS" />
                       <node concept="37vLTw" id="63imCwJCWaP" role="37wK5m">
                         <ref role="3cqZAo" node="63imCwJCzvC" resolve="startingMod" />
                       </node>
