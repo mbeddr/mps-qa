@@ -244,6 +244,14 @@
         <child id="7741759128795045752" name="exp" index="2j1LYg" />
         <child id="7741759128795065723" name="paramRef" index="2j1YQj" />
       </concept>
+      <concept id="7223240310078271419" name="org.mpsqa.lint.generic.structure.ILinterResultsContainer" flags="ng" index="3dgnlL">
+        <child id="7223240310078271420" name="violations" index="3dgnlQ" />
+      </concept>
+      <concept id="7223240310078271416" name="org.mpsqa.lint.generic.structure.ResultEntry" flags="ng" index="3dgnlM">
+        <property id="7223240310078271417" name="result" index="3dgnlN" />
+        <property id="8230153551040655111" name="resultNodeModelId" index="3qxsSb" />
+        <property id="8230153551040654991" name="resultNodeId" index="3qxsY3" />
+      </concept>
       <concept id="2555875871752198907" name="org.mpsqa.lint.generic.structure.ConceptFunctionParameter_MPSProject" flags="ng" index="1MG55F" />
       <concept id="2555875871751836213" name="org.mpsqa.lint.generic.structure.CheckableScript" flags="ng" index="1MIHA_">
         <property id="6685385159444651026" name="skipEvaluation" index="3zADTN" />
@@ -5459,6 +5467,224 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="5NhzjqzuXtt" role="jymVt" />
+    <node concept="2YIFZL" id="5NhzjqzulnR" role="jymVt">
+      <property role="TrG5h" value="findSomeCyclesStartingFromWithTransitiveClosure" />
+      <node concept="3clFbS" id="5NhzjqzulnS" role="3clF47">
+        <node concept="3cpWs8" id="5NhzjqzulnT" role="3cqZAp">
+          <node concept="3cpWsn" id="5NhzjqzulnU" role="3cpWs9">
+            <property role="TrG5h" value="cycles" />
+            <node concept="2ShNRf" id="5NhzjqzulnY" role="33vP2m">
+              <node concept="2i4dXS" id="5NhzjqzzJAt" role="2ShVmc">
+                <node concept="3uibUv" id="5NhzjqzzPvJ" role="HW$YZ">
+                  <ref role="3uigEE" to="33ny:~ArrayList" resolve="ArrayList" />
+                  <node concept="3uibUv" id="5NhzjqzzPvK" role="11_B2D">
+                    <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2hMVRd" id="5Nhzjqzzvu0" role="1tU5fm">
+              <node concept="3uibUv" id="5NhzjqzyZA7" role="2hN53Y">
+                <ref role="3uigEE" to="33ny:~ArrayList" resolve="ArrayList" />
+                <node concept="3uibUv" id="5NhzjqzzaoV" role="11_B2D">
+                  <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5NhzjqzuloW" role="3cqZAp">
+          <node concept="3cpWsn" id="5NhzjqzuloX" role="3cpWs9">
+            <property role="TrG5h" value="directModuleDeps" />
+            <node concept="3rvAFt" id="5NhzjqzuloY" role="1tU5fm">
+              <node concept="3uibUv" id="5NhzjqzuloZ" role="3rvQeY">
+                <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+              </node>
+              <node concept="2hMVRd" id="5Nhzjqzulp0" role="3rvSg0">
+                <node concept="3uibUv" id="5Nhzjqzulp1" role="2hN53Y">
+                  <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+                </node>
+              </node>
+            </node>
+            <node concept="1rXfSq" id="5Nhzjqzulp2" role="33vP2m">
+              <ref role="37wK5l" node="3b1aCyg4gsX" resolve="computeDirectModuleDependencies" />
+              <node concept="37vLTw" id="5Nhzjqzulp3" role="37wK5m">
+                <ref role="3cqZAo" node="5Nhzjqzulp8" resolve="modules" />
+              </node>
+              <node concept="37vLTw" id="5Nhzjqzulp4" role="37wK5m">
+                <ref role="3cqZAo" node="5Nhzjqzulpe" resolve="includeUsedLanguages" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5NhzjqzvJqo" role="3cqZAp">
+          <node concept="3cpWsn" id="5NhzjqzvJqp" role="3cpWs9">
+            <property role="TrG5h" value="indirectModuleDeps" />
+            <node concept="3rvAFt" id="5NhzjqzvEQ1" role="1tU5fm">
+              <node concept="3uibUv" id="5NhzjqzvEQa" role="3rvQeY">
+                <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+              </node>
+              <node concept="2hMVRd" id="5NhzjqzvEQb" role="3rvSg0">
+                <node concept="3uibUv" id="5NhzjqzvEQc" role="2hN53Y">
+                  <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+                </node>
+              </node>
+            </node>
+            <node concept="1rXfSq" id="5NhzjqzvJqq" role="33vP2m">
+              <ref role="37wK5l" node="3b1aCyfEME5" resolve="computeIndirectDependencies" />
+              <node concept="37vLTw" id="5NhzjqzvJqr" role="37wK5m">
+                <ref role="3cqZAo" node="5NhzjqzuloX" resolve="directModuleDeps" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5Nhzjqz$gbB" role="3cqZAp">
+          <node concept="3cpWsn" id="5Nhzjqz$gbC" role="3cpWs9">
+            <property role="TrG5h" value="alreadyVisitedModules" />
+            <node concept="2hMVRd" id="5Nhzjqz$bkw" role="1tU5fm">
+              <node concept="3uibUv" id="5Nhzjqz$bkz" role="2hN53Y">
+                <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+              </node>
+            </node>
+            <node concept="2ShNRf" id="5Nhzjqz$gbD" role="33vP2m">
+              <node concept="2i4dXS" id="5Nhzjqz$gbE" role="2ShVmc">
+                <node concept="3uibUv" id="5Nhzjqz$gbF" role="HW$YZ">
+                  <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5Nhzjqz$CyK" role="3cqZAp">
+          <node concept="3cpWsn" id="5Nhzjqz$CyL" role="3cpWs9">
+            <property role="TrG5h" value="modulesForWhichAllCyclesComputed" />
+            <node concept="2hMVRd" id="5Nhzjqz$z70" role="1tU5fm">
+              <node concept="3uibUv" id="5Nhzjqz$z73" role="2hN53Y">
+                <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+              </node>
+            </node>
+            <node concept="2ShNRf" id="5Nhzjqz$CyM" role="33vP2m">
+              <node concept="2i4dXS" id="5Nhzjqz$CyN" role="2ShVmc">
+                <node concept="3uibUv" id="5Nhzjqz$CyO" role="HW$YZ">
+                  <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5NhzjqzwKOe" role="3cqZAp">
+          <node concept="2OqwBi" id="5NhzjqzwQyn" role="3clFbG">
+            <node concept="37vLTw" id="5NhzjqzwKOc" role="2Oq$k0">
+              <ref role="3cqZAo" node="5Nhzjqzulpb" resolve="startingModules" />
+            </node>
+            <node concept="2es0OD" id="5NhzjqzwWma" role="2OqNvi">
+              <node concept="1bVj0M" id="5NhzjqzwWmc" role="23t8la">
+                <node concept="3clFbS" id="5NhzjqzwWmd" role="1bW5cS">
+                  <node concept="3clFbF" id="5NhzjqzwhGB" role="3cqZAp">
+                    <node concept="1rXfSq" id="5NhzjqzwhG_" role="3clFbG">
+                      <ref role="37wK5l" node="4aEqBbbBtrZ" resolve="computeTransitiveClosure" />
+                      <node concept="37vLTw" id="5NhzjqzwnBF" role="37wK5m">
+                        <ref role="3cqZAo" node="5NhzjqzuloX" resolve="directModuleDeps" />
+                      </node>
+                      <node concept="37vLTw" id="5NhzjqzwxDW" role="37wK5m">
+                        <ref role="3cqZAo" node="5NhzjqzvJqp" resolve="indirectModuleDeps" />
+                      </node>
+                      <node concept="37vLTw" id="5NhzjqzxgIE" role="37wK5m">
+                        <ref role="3cqZAo" node="5NhzjqzwWme" resolve="startingMod" />
+                      </node>
+                      <node concept="37vLTw" id="5NhzjqzxqQa" role="37wK5m">
+                        <ref role="3cqZAo" node="5NhzjqzwWme" resolve="startingMod" />
+                      </node>
+                      <node concept="2ShNRf" id="5Nhzjqzx$Y5" role="37wK5m">
+                        <node concept="Tc6Ow" id="5Nhzjqzx$Ft" role="2ShVmc">
+                          <node concept="3uibUv" id="5Nhzjqzx$Fu" role="HW$YZ">
+                            <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="37vLTw" id="5Nhzjqz$gbG" role="37wK5m">
+                        <ref role="3cqZAo" node="5Nhzjqz$gbC" resolve="set" />
+                      </node>
+                      <node concept="37vLTw" id="5Nhzjqz$CyP" role="37wK5m">
+                        <ref role="3cqZAo" node="5Nhzjqz$CyL" resolve="set" />
+                      </node>
+                      <node concept="37vLTw" id="5Nhzjqzypnm" role="37wK5m">
+                        <ref role="3cqZAo" node="5NhzjqzulnU" resolve="cycles" />
+                      </node>
+                      <node concept="3cmrfG" id="5NhzjqzykgQ" role="37wK5m">
+                        <property role="3cmrfH" value="-1" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="Rh6nW" id="5NhzjqzwWme" role="1bW2Oz">
+                  <property role="TrG5h" value="startingMod" />
+                  <node concept="2jxLKc" id="5NhzjqzwWmf" role="1tU5fm" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5NhzjqzAjoR" role="3cqZAp">
+          <node concept="2OqwBi" id="5NhzjqzAlxI" role="3clFbG">
+            <node concept="37vLTw" id="5NhzjqzAjoP" role="2Oq$k0">
+              <ref role="3cqZAo" node="5NhzjqzulnU" resolve="cycles" />
+            </node>
+            <node concept="3$u5V9" id="5NhzjqzArPR" role="2OqNvi">
+              <node concept="1bVj0M" id="5NhzjqzArPT" role="23t8la">
+                <node concept="3clFbS" id="5NhzjqzArPU" role="1bW5cS">
+                  <node concept="3clFbF" id="5NhzjqzAx2A" role="3cqZAp">
+                    <node concept="2ShNRf" id="5NhzjqzAKqh" role="3clFbG">
+                      <node concept="Tc6Ow" id="5NhzjqzAPDB" role="2ShVmc">
+                        <node concept="37vLTw" id="5NhzjqzB0H8" role="I$8f6">
+                          <ref role="3cqZAo" node="5NhzjqzArPV" resolve="it" />
+                        </node>
+                        <node concept="3uibUv" id="5NhzjqzBzq4" role="HW$YZ">
+                          <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="Rh6nW" id="5NhzjqzArPV" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="2jxLKc" id="5NhzjqzArPW" role="1tU5fm" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="5Nhzjqzulp8" role="3clF46">
+        <property role="TrG5h" value="modules" />
+        <node concept="_YKpA" id="5Nhzjqzulp9" role="1tU5fm">
+          <node concept="3uibUv" id="5Nhzjqzulpa" role="_ZDj9">
+            <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="5Nhzjqzulpb" role="3clF46">
+        <property role="TrG5h" value="startingModules" />
+        <node concept="_YKpA" id="5Nhzjqzulpc" role="1tU5fm">
+          <node concept="3uibUv" id="5Nhzjqzulpd" role="_ZDj9">
+            <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="5Nhzjqzulpe" role="3clF46">
+        <property role="TrG5h" value="includeUsedLanguages" />
+        <node concept="10P_77" id="5Nhzjqzulpf" role="1tU5fm" />
+      </node>
+      <node concept="3Tm1VV" id="5Nhzjqzulpg" role="1B3o_S" />
+      <node concept="A3Dl8" id="5Nhzjqzulph" role="3clF45">
+        <node concept="_YKpA" id="5Nhzjqzulpi" role="A3Ik2">
+          <node concept="3uibUv" id="5Nhzjqzulpj" role="_ZDj9">
+            <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="63imCwJAExS" role="jymVt" />
     <node concept="2YIFZL" id="4aEqBbbBtrZ" role="jymVt">
       <property role="TrG5h" value="computeTransitiveClosure" />
@@ -8407,6 +8633,11 @@
       <node concept="3clFbT" id="4Y9rGZajwAU" role="2j1LYg">
         <property role="3clFbU" value="true" />
       </node>
+    </node>
+    <node concept="3dgnlM" id="5Nhzjqzovma" role="3dgnlQ">
+      <property role="3dgnlN" value="OOPS ... exception in calling the checker. Did you forget to generate the code? Exception: org.mpsqa.lint.generic.linters_library.modules.MPS_QA_LINT_Checker_cyclic_module_dependencies_with_starting_point_5731233839534037106.doCheck(jetbrains.mps.project.MPSProject,boolean,null,boolean)" />
+      <property role="3qxsY3" value="5731233839534037106" />
+      <property role="3qxsSb" value="r:cadc46fc-2365-43d7-bda1-08e980cf970d" />
     </node>
   </node>
 </model>
