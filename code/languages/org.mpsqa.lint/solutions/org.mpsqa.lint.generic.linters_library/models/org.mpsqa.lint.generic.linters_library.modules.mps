@@ -110,9 +110,7 @@
         <child id="1070534934092" name="expression" index="10QFUP" />
       </concept>
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg" />
-      <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
-        <child id="1165602531693" name="superclass" index="1zkMxy" />
-      </concept>
+      <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -8250,9 +8248,6 @@
       </node>
     </node>
     <node concept="2tJIrI" id="1u5Q3uAFjFv" role="jymVt" />
-    <node concept="3uibUv" id="1u5Q3uAEQBl" role="1zkMxy">
-      <ref role="3uigEE" node="4aEqBbbBtjF" resolve="CyclicModuleDependenciesHelper" />
-    </node>
   </node>
   <node concept="1MIHA_" id="4Y9rGZa7XxM">
     <property role="TrG5h" value="cyclic_module_dependencies_with_starting_point" />
