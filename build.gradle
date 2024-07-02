@@ -305,7 +305,20 @@ defaultTasks 'build'
 
 task rebuild(dependsOn:[clean, build_allInOne_package])
 
-ext.allProjectDirectories = { file('code/languages').listFiles({ File file -> file.directory } as FileFilter) }
+ext.allProjectDirectoriesInDependencyOrder = [
+        'org.mpsqa.base',
+        'org.mpsqa.testing',
+        'org.mpsqa.build',
+
+        'org.mpsqa.arch',
+        'org.mpsqa.clones',
+        'org.mpsqa.deprecated',
+        'org.mpsqa.lint',
+        'org.mpsqa.mutant',
+        'org.mpsqa.profile',
+        'org.mpsqa.testing',
+        'org.mpsqa.unused'
+].collect { file("code/languages/$it") }
 
 tasks.register('migrate', MpsMigrate) {
     dependsOn(resolveMps, 'downloadJbr', 'build_all_languages')
@@ -319,7 +332,7 @@ tasks.register('migrate', MpsMigrate) {
 
     folderMacros.put('mpsqa.home', layout.projectDirectory)
 
-    projectDirectories.from(allProjectDirectories)
+    projectDirectories.from(allProjectDirectoriesInDependencyOrder)
 
     pluginRoots.from(new File(mpsHomeDir, 'plugins/mps-build'))
     pluginRoots.from(new File(mpsHomeDir, 'plugins/mps-console'))
@@ -349,7 +362,7 @@ tasks.register('rerunMigrations', JavaExec) {
     classpath(configurations.rerunMigrationsBackend)
     mainClass = 'de.itemis.mps.gradle.migrate.MainKt'
 
-    for (dir in allProjectDirectories()) {
+    for (dir in allProjectDirectoriesInDependencyOrder) {
         args("--project=$dir")
     }
 
