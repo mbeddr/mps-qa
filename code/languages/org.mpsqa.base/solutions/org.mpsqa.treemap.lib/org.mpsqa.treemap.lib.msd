@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="org.mpsqa.treemap.lib" uuid="56f134c7-a829-428d-9119-715369c69768" moduleVersion="0" compileInMPS="true">
+<solution name="org.mpsqa.treemap.lib" uuid="56f134c7-a829-428d-9119-715369c69768" moduleVersion="0">
   <models>
-    <modelRoot contentPath="${module}" type="default">
+    <modelRoot type="default" contentPath="${module}">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
+    <modelRoot type="java_classes" contentPath="${module}/lib">
       <sourceRoot location="jtreemap-1.1.0-bundle.jar" />
       <sourceRoot location="jtreemap-1.1.0.jar" />
       <sourceRoot location="net.sf.jtreemap.ktreemap-1.1.0-bundle.jar" />
@@ -14,17 +14,14 @@
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
+      <library location="${module}/lib/jtreemap-1.1.0-bundle.jar" />
+      <library location="${module}/lib/jtreemap-1.1.0.jar" />
+      <library location="${module}/lib/net.sf.jtreemap.ktreemap-1.1.0-bundle.jar" />
+      <library location="${module}/lib/net.sf.jtreemap.ktreemap-1.1.0.jar" />
     </facet>
   </facets>
-  <stubModelEntries>
-    <stubModelEntry path="${module}/lib/jtreemap-1.1.0-bundle.jar" />
-    <stubModelEntry path="${module}/lib/jtreemap-1.1.0.jar" />
-    <stubModelEntry path="${module}/lib/net.sf.jtreemap.ktreemap-1.1.0-bundle.jar" />
-    <stubModelEntry path="${module}/lib/net.sf.jtreemap.ktreemap-1.1.0.jar" />
-  </stubModelEntries>
-  <sourcePath />
   <dependencies>
-    <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+    <dependency reexport="true">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
