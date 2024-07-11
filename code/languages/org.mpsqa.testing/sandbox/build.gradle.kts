@@ -19,11 +19,29 @@ tasks {
         }
     }
 
+    val patchedScriptsDir = layout.buildDirectory.dir("patched-scripts")
+    val patchedBuildXml = patchedScriptsDir.map { dir -> dir.file("build.xml") }
+
+    val patchJacocoBuildscript by registering(Copy::class) {
+        from(file("build.xml"))
+        into(patchedScriptsDir)
+
+        val isAarch64 = System.getProperty("os.arch") == "aarch64"
+        val jnaArch = if (isAarch64) "aarch64" else "amd64"
+
+        filter {
+            it.replace(
+                "\"-Djna.boot.library.path=\${artifacts.mps}/lib/jna\"",
+                "\"-Djna.boot.library.path=\${artifacts.mps}/lib/jna/${jnaArch}\"")
+        }
+    }
+
     val assembleJacoco by registering(BuildLanguages::class) {
-        dependsOn(configureJava, ":resolveMps", ":build_testing_languages")
+        dependsOn(configureJava, patchJacocoBuildscript, ":resolveMps", ":build_testing_languages")
         group = LifecycleBasePlugin.BUILD_GROUP
         description = "Builds jacoco sandbox tests."
-        script = file("build.xml")
+        script = patchedBuildXml
+        scriptArgs = listOf("-Dbasedir=${projectDir}")
     }
 
     assemble { dependsOn(assembleJacoco) }
@@ -32,7 +50,9 @@ tasks {
         dependsOn(configureJava, ":resolveMps", assembleJacoco)
         group = LifecycleBasePlugin.VERIFICATION_GROUP
         description = "Executes jacoco sandbox tests."
-        script = file("build.xml")
+        script = patchedBuildXml
+        scriptArgs = listOf("-Dbasedir=${projectDir}")
+
         targets("check")
 
         val reportFile = rootProject.file("build/jacoco-reports/jacoco.sandbox/test.xml")
