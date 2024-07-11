@@ -40,7 +40,7 @@ jobs:
       uses: gradle/gradle-build-action@v2
       with: 
         arguments: >
-          build migrate rerunMigrations
+          build migrate remigrate
           -Partifacts.itemis.cloud.user=${{secrets.ARTIFACTS_ITEMIS_CLOUD_USER}}
           -Partifacts.itemis.cloud.pw=${{secrets.ARTIFACTS_ITEMIS_CLOUD_PW}}
         wrapper-cache-enabled: true
@@ -53,7 +53,7 @@ jobs:
       run: |
         if [[ -n $(git status --porcelain | head --lines=1) ]]
         then          
-          echo "Dirty files detected after build/migration, run './gradlew migrate' and/or update .gitignore to fix:"
+          echo "Dirty files detected after build/migration, run './gradlew build migrate remigrate' and/or update .gitignore to fix:"
           git status
           echo ">>>>>>>>>>>>>>>>>>>>>"
           git diff
