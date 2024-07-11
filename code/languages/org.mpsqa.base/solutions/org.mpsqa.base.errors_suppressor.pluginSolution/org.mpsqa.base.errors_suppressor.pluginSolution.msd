@@ -9,7 +9,7 @@
     <facet type="java" compile="mps" classes="mps" ext="yes">
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
-    <facet planModel="r:ebd662e8-4980-419c-8715-eac3a0640db1(org.mpsqa.base.errors_suppressor.pluginSolution.custom@genplan)" type="generator" />
+    <facet type="generator" planModel="r:ebd662e8-4980-419c-8715-eac3a0640db1(org.mpsqa.base.errors_suppressor.pluginSolution.custom@genplan)" />
   </facets>
   <dependencies>
     <dependency reexport="false">a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)</dependency>
