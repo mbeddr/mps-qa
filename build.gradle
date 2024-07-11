@@ -3,8 +3,8 @@ import de.itemis.mps.gradle.downloadJBR.*
 import de.itemis.mps.gradle.tasks.*
 
 plugins {
-    id 'de.itemis.mps.gradle.common' version '1.27.0.+'
-    id 'download-jbr' version '1.27.0.+'
+    id 'de.itemis.mps.gradle.common' version '1.28.0.+'
+    id 'download-jbr' version '1.28.0.+'
     id 'base'
     id 'maven-publish'
     id 'co.riiid.gradle' version '0.4.2'
@@ -319,39 +319,34 @@ ext.allProjectDirectoriesInDependencyOrder = [
         'org.mpsqa.testing',
         'org.mpsqa.unused'
 ].collect { file("code/languages/$it") }
+ext.mpsPluginRoots = ['mps-build', 'mps-console', 'mps-trove', 'mps-modelchecker']
+        .collect { new File(mpsHomeDir, "plugins/$it") }
+ext.jbrJavaLauncher = tasks.named('downloadJbr', DownloadJbrForPlatform).flatMap { it.javaLauncher }
 
 tasks.register('migrate', MpsMigrate) {
     dependsOn(resolveMps, 'downloadJbr', 'build_all_languages')
-    javaExecutable = layout.file(
-            tasks.named('downloadJbr', DownloadJbrForPlatform).map { it.javaExecutable })
+
+    javaLauncher = jbrJavaLauncher
+    mpsHome = mpsHomeDir
+    folderMacros.put('mpsqa.home', layout.projectDirectory)
+    projectDirectories.from(allProjectDirectoriesInDependencyOrder)
+    pluginRoots.from(mpsPluginRoots)
 
     haltOnPrecheckFailure = true
     haltOnDependencyError = true
-
-    mpsHome = mpsHomeDir
-
-    folderMacros.put('mpsqa.home', layout.projectDirectory)
-
-    projectDirectories.from(allProjectDirectoriesInDependencyOrder)
-
-    pluginRoots.from(new File(mpsHomeDir, 'plugins/mps-build'))
-    pluginRoots.from(new File(mpsHomeDir, 'plugins/mps-console'))
 }
 
 tasks.register('remigrate', Remigrate) {
+    dependsOn(resolveMps, 'downloadJbr')
     mustRunAfter('migrate')
+
+    // Technically we don't need to _depend_ on build_all_languages because we can opt to rerun only migrations that
+    // come from MPS.
     mustRunAfter('build_all_languages')
 
-    dependsOn(resolveMps, 'downloadJbr')
-
+    javaLauncher = jbrJavaLauncher
     mpsHome = mpsHomeDir
-
     folderMacros.put('mpsqa.home', layout.projectDirectory)
-
     projectDirectories.from(allProjectDirectoriesInDependencyOrder)
-
-    pluginRoots.from(new File(mpsHomeDir, 'plugins/mps-build'))
-    pluginRoots.from(new File(mpsHomeDir, 'plugins/mps-console'))
-    pluginRoots.from(new File(mpsHomeDir, 'plugins/mps-trove'))
-    pluginRoots.from(new File(mpsHomeDir, 'plugins/mps-modelchecker'))
+    pluginRoots.from(mpsPluginRoots)
 }
