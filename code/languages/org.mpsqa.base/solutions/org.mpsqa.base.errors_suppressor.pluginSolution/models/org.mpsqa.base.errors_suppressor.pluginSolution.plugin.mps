@@ -187,8 +187,21 @@
         <child id="1201186121363" name="typeParameter" index="2Ghqu4" />
       </concept>
     </language>
+    <language id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access">
+      <concept id="8974276187400348173" name="jetbrains.mps.lang.access.structure.CommandClosureLiteral" flags="nn" index="1QHqEC" />
+      <concept id="8974276187400348170" name="jetbrains.mps.lang.access.structure.BaseExecuteCommandStatement" flags="nn" index="1QHqEJ">
+        <child id="1423104411234567454" name="repo" index="ukAjM" />
+        <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
+      </concept>
+      <concept id="8974276187400348181" name="jetbrains.mps.lang.access.structure.ExecuteLightweightCommandStatement" flags="nn" index="1QHqEK" />
+    </language>
     <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
       <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
+    </language>
+    <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
+        <child id="1199569916463" name="body" index="1bW5cS" />
+      </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
       <concept id="2546654756694997551" name="jetbrains.mps.baseLanguage.javadoc.structure.LinkInlineDocTag" flags="ng" index="92FcH">
@@ -783,20 +796,32 @@
     </node>
     <node concept="2uRRBT" id="1DrnXKMVu0e" role="2uRRB$">
       <node concept="3clFbS" id="1DrnXKMVu0f" role="2VODD2">
-        <node concept="3clFbF" id="1DrnXKMVXj0" role="3cqZAp">
-          <node concept="37vLTI" id="1DrnXKMVYZ4" role="3clFbG">
-            <node concept="2ShNRf" id="1DrnXKMVZoY" role="37vLTx">
-              <node concept="1pGfFk" id="1DrnXKMW0ta" role="2ShVmc">
-                <property role="373rjd" value="true" />
-                <ref role="37wK5l" node="1DrnXKMVQNB" resolve="SuppressCheckerResults" />
-                <node concept="1KvdUw" id="1DrnXKMW0CV" role="37wK5m" />
+        <node concept="1QHqEK" id="4ZH1aVCAWfr" role="3cqZAp">
+          <node concept="1QHqEC" id="4ZH1aVCAWft" role="1QHqEI">
+            <node concept="3clFbS" id="4ZH1aVCAWfv" role="1bW5cS">
+              <node concept="3clFbF" id="1DrnXKMVXj0" role="3cqZAp">
+                <node concept="37vLTI" id="1DrnXKMVYZ4" role="3clFbG">
+                  <node concept="2ShNRf" id="1DrnXKMVZoY" role="37vLTx">
+                    <node concept="1pGfFk" id="1DrnXKMW0ta" role="2ShVmc">
+                      <property role="373rjd" value="true" />
+                      <ref role="37wK5l" node="1DrnXKMVQNB" resolve="SuppressCheckerResults" />
+                      <node concept="1KvdUw" id="1DrnXKMW0CV" role="37wK5m" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="1DrnXKMVXiU" role="37vLTJ">
+                    <node concept="2WthIp" id="1DrnXKMVXiX" role="2Oq$k0" />
+                    <node concept="2BZ7hE" id="1DrnXKMVXiZ" role="2OqNvi">
+                      <ref role="2WH_rO" node="1DrnXKMVtUC" resolve="warningsSilencer" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
-            <node concept="2OqwBi" id="1DrnXKMVXiU" role="37vLTJ">
-              <node concept="2WthIp" id="1DrnXKMVXiX" role="2Oq$k0" />
-              <node concept="2BZ7hE" id="1DrnXKMVXiZ" role="2OqNvi">
-                <ref role="2WH_rO" node="1DrnXKMVtUC" resolve="warningsSilencer" />
-              </node>
+          </node>
+          <node concept="2OqwBi" id="4ZH1aVCAY3n" role="ukAjM">
+            <node concept="1KvdUw" id="4ZH1aVCAX5R" role="2Oq$k0" />
+            <node concept="liA8E" id="4ZH1aVCAZaI" role="2OqNvi">
+              <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
             </node>
           </node>
         </node>
