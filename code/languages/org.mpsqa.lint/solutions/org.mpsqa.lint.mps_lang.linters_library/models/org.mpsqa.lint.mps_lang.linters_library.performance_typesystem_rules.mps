@@ -1911,7 +1911,7 @@
     </node>
     <node concept="2j1LYv" id="2QH7JPsZwRS" role="2j1YRv">
       <node concept="2j1LYi" id="2QH7JPsZwRT" role="2j1YQj">
-        <ref role="2j1LYj" node="2QH7JPsZwNB" resolve="timeBoundInMillis" />
+        <ref role="2j1LYj" node="2QH7JPsZwNB" resolve="memoryConsumptionInMb" />
       </node>
       <node concept="3cmrfG" id="2QH7JPsZwRU" role="2j1LYg">
         <property role="3cmrfH" value="10" />
