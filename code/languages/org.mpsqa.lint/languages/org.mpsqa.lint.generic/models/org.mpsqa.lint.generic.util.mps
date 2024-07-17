@@ -19,9 +19,9 @@
     <import index="z1c4" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
     <import index="j8aq" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.module(MPS.Core/)" />
     <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="xlb7" ref="r:cf42fd0a-68d2-493b-8b77-961658617704(jetbrains.mps.lang.modelapi.behavior)" implicit="true" />
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" implicit="true" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -250,7 +250,14 @@
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
       <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
         <property id="6332851714983843871" name="severity" index="2xdLsb" />
+        <child id="5721587534047265560" name="project" index="9lYEk" />
         <child id="5721587534047265374" name="message" index="9lYJi" />
+        <child id="5721587534047265375" name="throwable" index="9lYJj" />
+      </concept>
+      <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
+        <property id="2034914114981261751" name="severity" index="RRSoG" />
+        <child id="2034914114981261755" name="throwable" index="RRSow" />
+        <child id="2034914114981261753" name="message" index="RRSoy" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -360,64 +367,219 @@
                       <node concept="3Tm1VV" id="4qEpl_D8UJv" role="1B3o_S" />
                       <node concept="3clFbS" id="4qEpl_D8UJy" role="3clF47">
                         <node concept="3J1_TO" id="2dSiT1hQr4d" role="3cqZAp">
-                          <node concept="3uVAMA" id="2dSiT1hQr4e" role="1zxBo5">
-                            <node concept="XOnhg" id="2dSiT1hQr4f" role="1zc67B">
-                              <property role="TrG5h" value="e" />
-                              <node concept="nSUau" id="2dSiT1hQr4g" role="1tU5fm">
-                                <node concept="3uibUv" id="2dSiT1hQr4h" role="nSUat">
+                          <node concept="3uVAMA" id="fofa_o7AcX" role="1zxBo5">
+                            <node concept="XOnhg" id="fofa_o7AcY" role="1zc67B">
+                              <property role="TrG5h" value="ex" />
+                              <node concept="nSUau" id="fofa_o7AcZ" role="1tU5fm">
+                                <node concept="3uibUv" id="fofa_o7AyC" role="nSUat">
                                   <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
                                 </node>
                               </node>
                             </node>
-                            <node concept="3clFbS" id="2dSiT1hQr4i" role="1zc67A">
-                              <node concept="3clFbF" id="2dSiT1hQr4j" role="3cqZAp">
-                                <node concept="2OqwBi" id="2dSiT1hQr4k" role="3clFbG">
-                                  <node concept="37vLTw" id="2dSiT1hQr4l" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="2dSiT1hQr4f" resolve="e" />
+                            <node concept="3clFbS" id="fofa_o7Ad0" role="1zc67A">
+                              <node concept="2xdQw9" id="fofa_o9TOT" role="3cqZAp">
+                                <property role="2xdLsb" value="gZ5fh_4/error" />
+                                <node concept="3cpWs3" id="fofa_o9TOU" role="9lYJi">
+                                  <node concept="2OqwBi" id="fofa_o9TOV" role="3uHU7w">
+                                    <node concept="37vLTw" id="fofa_o9TOW" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="fofa_o7AcY" resolve="ex" />
+                                    </node>
+                                    <node concept="liA8E" id="fofa_o9TOX" role="2OqNvi">
+                                      <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
+                                    </node>
                                   </node>
-                                  <node concept="liA8E" id="2dSiT1hQr4m" role="2OqNvi">
-                                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
-                                  </node>
-                                </node>
-                              </node>
-                              <node concept="3cpWs6" id="7Jrb4Zsz5IZ" role="3cqZAp">
-                                <node concept="2ShNRf" id="7Jrb4Zsz62y" role="3cqZAk">
-                                  <node concept="Tc6Ow" id="7Jrb4Zsz62c" role="2ShVmc">
-                                    <node concept="2ry78W" id="19GnlsUkN3N" role="HW$Y0">
-                                      <ref role="2ryb1Q" node="19GnlsUkKsu" resolve="Result" />
-                                      <node concept="2r$n1x" id="19GnlsUkNup" role="2r_Bvh">
-                                        <ref role="2r$qp6" node="19GnlsUkKsI" resolve="message" />
-                                        <node concept="3cpWs3" id="7Jrb4Zsz7k6" role="2r_lH1">
-                                          <node concept="Xl_RD" id="7Jrb4Zsz7k7" role="3uHU7B">
-                                            <property role="Xl_RC" value="OOPS ... exception in calling the checker. Did you forget to generate the code? Exception: " />
-                                          </node>
-                                          <node concept="2OqwBi" id="7Jrb4Zsz7k8" role="3uHU7w">
-                                            <node concept="37vLTw" id="7Jrb4Zsz7k9" role="2Oq$k0">
-                                              <ref role="3cqZAo" node="2dSiT1hQr4f" resolve="e" />
-                                            </node>
-                                            <node concept="liA8E" id="7Jrb4Zsz7ka" role="2OqNvi">
-                                              <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
-                                            </node>
-                                          </node>
-                                        </node>
+                                  <node concept="3cpWs3" id="fofa_o9TOY" role="3uHU7B">
+                                    <node concept="3cpWs3" id="fofa_o9TOZ" role="3uHU7B">
+                                      <node concept="Xl_RD" id="fofa_o9TP0" role="3uHU7B">
+                                        <property role="Xl_RC" value="Fatal error while running linter '" />
                                       </node>
-                                      <node concept="2r$n1x" id="19GnlsUkP0_" role="2r_Bvh">
-                                        <ref role="2r$qp6" node="19GnlsUkK_C" resolve="quickfix" />
-                                        <node concept="10Nm6u" id="19GnlsUkPw5" role="2r_lH1" />
-                                      </node>
-                                      <node concept="2r$n1x" id="3ghOW5HShAh" role="2r_Bvh">
-                                        <ref role="2r$qp6" node="3ghOW5HS78o" resolve="node" />
-                                        <node concept="37vLTw" id="pZynZgZMd2" role="2r_lH1">
+                                      <node concept="2OqwBi" id="fofa_o9TP1" role="3uHU7w">
+                                        <node concept="37vLTw" id="fofa_o9TP2" role="2Oq$k0">
                                           <ref role="3cqZAo" node="y1G8y6ad_X" resolve="script" />
                                         </node>
-                                      </node>
-                                      <node concept="2r$n1x" id="3ghOW5H_V8n" role="2r_Bvh">
-                                        <ref role="2r$qp6" node="3ghOW5H_ihW" resolve="location" />
-                                        <node concept="10Nm6u" id="3ghOW5H_Vph" role="2r_lH1" />
+                                        <node concept="3TrcHB" id="fofa_o9TP3" role="2OqNvi">
+                                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                                        </node>
                                       </node>
                                     </node>
-                                    <node concept="3uibUv" id="19GnlsUkRHa" role="HW$YZ">
-                                      <ref role="3uigEE" node="19GnlsUkKsu" resolve="Result" />
+                                    <node concept="Xl_RD" id="fofa_o9TP4" role="3uHU7w">
+                                      <property role="Xl_RC" value="' " />
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="37vLTw" id="fofa_o9TP5" role="9lYJj">
+                                  <ref role="3cqZAo" node="fofa_o7AcY" resolve="ex" />
+                                </node>
+                                <node concept="37vLTw" id="fofa_o9TP6" role="9lYEk">
+                                  <ref role="3cqZAo" node="6gY6GEDtKzD" resolve="proj" />
+                                </node>
+                              </node>
+                              <node concept="3clFbJ" id="fofa_oadBd" role="3cqZAp">
+                                <node concept="3clFbS" id="fofa_oadBf" role="3clFbx">
+                                  <node concept="3cpWs6" id="fofa_o7C6X" role="3cqZAp">
+                                    <node concept="2ShNRf" id="fofa_o7C6Y" role="3cqZAk">
+                                      <node concept="Tc6Ow" id="fofa_o7C6Z" role="2ShVmc">
+                                        <node concept="2ry78W" id="fofa_o7C70" role="HW$Y0">
+                                          <ref role="2ryb1Q" node="19GnlsUkKsu" resolve="Result" />
+                                          <node concept="2r$n1x" id="fofa_o7C71" role="2r_Bvh">
+                                            <ref role="2r$qp6" node="19GnlsUkKsI" resolve="message" />
+                                            <node concept="Xl_RD" id="fofa_o7C73" role="2r_lH1">
+                                              <property role="Xl_RC" value="OOPS ... exception 'InvocationTargetException' in calling the linter! Did you forget to generate the code?" />
+                                            </node>
+                                          </node>
+                                          <node concept="2r$n1x" id="fofa_o7C77" role="2r_Bvh">
+                                            <ref role="2r$qp6" node="19GnlsUkK_C" resolve="quickfix" />
+                                            <node concept="10Nm6u" id="fofa_o7C78" role="2r_lH1" />
+                                          </node>
+                                          <node concept="2r$n1x" id="fofa_o7C79" role="2r_Bvh">
+                                            <ref role="2r$qp6" node="3ghOW5HS78o" resolve="node" />
+                                            <node concept="37vLTw" id="fofa_o7C7a" role="2r_lH1">
+                                              <ref role="3cqZAo" node="y1G8y6ad_X" resolve="script" />
+                                            </node>
+                                          </node>
+                                          <node concept="2r$n1x" id="fofa_o7C7b" role="2r_Bvh">
+                                            <ref role="2r$qp6" node="3ghOW5H_ihW" resolve="location" />
+                                            <node concept="10Nm6u" id="fofa_o7C7c" role="2r_lH1" />
+                                          </node>
+                                        </node>
+                                        <node concept="3uibUv" id="fofa_o7C7d" role="HW$YZ">
+                                          <ref role="3uigEE" node="19GnlsUkKsu" resolve="Result" />
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="3clFbC" id="fofa_oaf78" role="3clFbw">
+                                  <node concept="10Nm6u" id="fofa_oafAk" role="3uHU7w" />
+                                  <node concept="2OqwBi" id="fofa_oae0I" role="3uHU7B">
+                                    <node concept="37vLTw" id="fofa_oae0J" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="fofa_o7AcY" resolve="ex" />
+                                    </node>
+                                    <node concept="liA8E" id="fofa_oae0K" role="2OqNvi">
+                                      <ref role="37wK5l" to="wyt6:~Throwable.getCause()" resolve="getCause" />
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="9aQIb" id="fofa_oahiP" role="9aQIa">
+                                  <node concept="3clFbS" id="fofa_oahiQ" role="9aQI4">
+                                    <node concept="3cpWs8" id="fofa_oakQT" role="3cqZAp">
+                                      <node concept="3cpWsn" id="fofa_oakQU" role="3cpWs9">
+                                        <property role="TrG5h" value="e" />
+                                        <node concept="3uibUv" id="fofa_oakQV" role="1tU5fm">
+                                          <ref role="3uigEE" to="wyt6:~Throwable" resolve="Throwable" />
+                                        </node>
+                                        <node concept="2OqwBi" id="fofa_oamsQ" role="33vP2m">
+                                          <node concept="37vLTw" id="fofa_oamsR" role="2Oq$k0">
+                                            <ref role="3cqZAo" node="fofa_o7AcY" resolve="ex" />
+                                          </node>
+                                          <node concept="liA8E" id="fofa_oamsS" role="2OqNvi">
+                                            <ref role="37wK5l" to="wyt6:~Throwable.getCause()" resolve="getCause" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                    <node concept="2xdQw9" id="fofa_o7au4" role="3cqZAp">
+                                      <property role="2xdLsb" value="gZ5fh_4/error" />
+                                      <node concept="3cpWs3" id="fofa_o9mIs" role="9lYJi">
+                                        <node concept="2OqwBi" id="fofa_o9nxY" role="3uHU7w">
+                                          <node concept="37vLTw" id="fofa_o9n60" role="2Oq$k0">
+                                            <ref role="3cqZAo" node="fofa_oakQU" resolve="e" />
+                                          </node>
+                                          <node concept="liA8E" id="fofa_o9ohC" role="2OqNvi">
+                                            <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
+                                          </node>
+                                        </node>
+                                        <node concept="3cpWs3" id="fofa_o7g6g" role="3uHU7B">
+                                          <node concept="3cpWs3" id="fofa_o7fr_" role="3uHU7B">
+                                            <node concept="Xl_RD" id="fofa_o7au6" role="3uHU7B">
+                                              <property role="Xl_RC" value="Fatal error while running linter '" />
+                                            </node>
+                                            <node concept="2OqwBi" id="fofa_o7hbP" role="3uHU7w">
+                                              <node concept="37vLTw" id="fofa_o7gJl" role="2Oq$k0">
+                                                <ref role="3cqZAo" node="y1G8y6ad_X" resolve="script" />
+                                              </node>
+                                              <node concept="3TrcHB" id="fofa_o7hU6" role="2OqNvi">
+                                                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                                              </node>
+                                            </node>
+                                          </node>
+                                          <node concept="Xl_RD" id="fofa_o7igJ" role="3uHU7w">
+                                            <property role="Xl_RC" value="' " />
+                                          </node>
+                                        </node>
+                                      </node>
+                                      <node concept="37vLTw" id="2dSiT1hQr4l" role="9lYJj">
+                                        <ref role="3cqZAo" node="fofa_oakQU" resolve="e" />
+                                      </node>
+                                      <node concept="37vLTw" id="fofa_o7cVI" role="9lYEk">
+                                        <ref role="3cqZAo" node="6gY6GEDtKzD" resolve="proj" />
+                                      </node>
+                                    </node>
+                                    <node concept="RRSsy" id="fofa_o8CGG" role="3cqZAp">
+                                      <property role="RRSoG" value="gZ5fh_4/error" />
+                                      <node concept="3cpWs3" id="fofa_o8D5X" role="RRSoy">
+                                        <node concept="3cpWs3" id="fofa_o8D5Y" role="3uHU7B">
+                                          <node concept="Xl_RD" id="fofa_o8D5Z" role="3uHU7B">
+                                            <property role="Xl_RC" value="Fatal error while running linter '" />
+                                          </node>
+                                          <node concept="2OqwBi" id="fofa_o8D60" role="3uHU7w">
+                                            <node concept="37vLTw" id="fofa_o8D61" role="2Oq$k0">
+                                              <ref role="3cqZAo" node="y1G8y6ad_X" resolve="script" />
+                                            </node>
+                                            <node concept="3TrcHB" id="fofa_o8D62" role="2OqNvi">
+                                              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                                            </node>
+                                          </node>
+                                        </node>
+                                        <node concept="Xl_RD" id="fofa_o8D63" role="3uHU7w">
+                                          <property role="Xl_RC" value="'" />
+                                        </node>
+                                      </node>
+                                      <node concept="37vLTw" id="fofa_o8Dx6" role="RRSow">
+                                        <ref role="3cqZAo" node="fofa_oakQU" resolve="e" />
+                                      </node>
+                                    </node>
+                                    <node concept="3cpWs6" id="7Jrb4Zsz5IZ" role="3cqZAp">
+                                      <node concept="2ShNRf" id="7Jrb4Zsz62y" role="3cqZAk">
+                                        <node concept="Tc6Ow" id="7Jrb4Zsz62c" role="2ShVmc">
+                                          <node concept="2ry78W" id="19GnlsUkN3N" role="HW$Y0">
+                                            <ref role="2ryb1Q" node="19GnlsUkKsu" resolve="Result" />
+                                            <node concept="2r$n1x" id="19GnlsUkNup" role="2r_Bvh">
+                                              <ref role="2r$qp6" node="19GnlsUkKsI" resolve="message" />
+                                              <node concept="3cpWs3" id="fofa_o87ec" role="2r_lH1">
+                                                <node concept="Xl_RD" id="fofa_o87_F" role="3uHU7w">
+                                                  <property role="Xl_RC" value="' while running the linter! Details in the 'Messages' window ..." />
+                                                </node>
+                                                <node concept="3cpWs3" id="7Jrb4Zsz7k6" role="3uHU7B">
+                                                  <node concept="Xl_RD" id="7Jrb4Zsz7k7" role="3uHU7B">
+                                                    <property role="Xl_RC" value="OOPS ... exception '" />
+                                                  </node>
+                                                  <node concept="37vLTw" id="7Jrb4Zsz7k9" role="3uHU7w">
+                                                    <ref role="3cqZAo" node="fofa_oakQU" resolve="e" />
+                                                  </node>
+                                                </node>
+                                              </node>
+                                            </node>
+                                            <node concept="2r$n1x" id="19GnlsUkP0_" role="2r_Bvh">
+                                              <ref role="2r$qp6" node="19GnlsUkK_C" resolve="quickfix" />
+                                              <node concept="10Nm6u" id="19GnlsUkPw5" role="2r_lH1" />
+                                            </node>
+                                            <node concept="2r$n1x" id="3ghOW5HShAh" role="2r_Bvh">
+                                              <ref role="2r$qp6" node="3ghOW5HS78o" resolve="node" />
+                                              <node concept="37vLTw" id="pZynZgZMd2" role="2r_lH1">
+                                                <ref role="3cqZAo" node="y1G8y6ad_X" resolve="script" />
+                                              </node>
+                                            </node>
+                                            <node concept="2r$n1x" id="3ghOW5H_V8n" role="2r_Bvh">
+                                              <ref role="2r$qp6" node="3ghOW5H_ihW" resolve="location" />
+                                              <node concept="10Nm6u" id="3ghOW5H_Vph" role="2r_lH1" />
+                                            </node>
+                                          </node>
+                                          <node concept="3uibUv" id="19GnlsUkRHa" role="HW$YZ">
+                                            <ref role="3uigEE" node="19GnlsUkKsu" resolve="Result" />
+                                          </node>
+                                        </node>
+                                      </node>
                                     </node>
                                   </node>
                                 </node>
