@@ -3,7 +3,7 @@
   <persistence version="9" />
   <attribute name="doNotGenerate" value="false" />
   <languages>
-    <use id="40ab19e9-751a-4433-b645-0e65160e58a0" name="org.mpsqa.lint.generic" version="0" />
+    <use id="40ab19e9-751a-4433-b645-0e65160e58a0" name="org.mpsqa.lint.generic" version="1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="1a8554c4-eb84-43ba-8c34-6f0d90c6e75a" name="jetbrains.mps.lang.smodel.query" version="3" />
@@ -68,9 +68,11 @@
       </concept>
     </language>
     <language id="40ab19e9-751a-4433-b645-0e65160e58a0" name="org.mpsqa.lint.generic">
+      <concept id="7008376823202027689" name="org.mpsqa.lint.generic.structure.ICanSkipCheckerEvaluation" flags="ng" index="3miP$Z">
+        <property id="7008376823202030902" name="skipEvaluation" index="3miQiw" />
+      </concept>
       <concept id="2555875871752198907" name="org.mpsqa.lint.generic.structure.ConceptFunctionParameter_MPSProject" flags="ng" index="1MG55F" />
       <concept id="2555875871751836213" name="org.mpsqa.lint.generic.structure.CheckableScript" flags="ng" index="1MIHA_">
-        <property id="6685385159444651026" name="skipEvaluation" index="3zADTN" />
         <child id="1716492013482699988" name="checkingClosure" index="14J5yK" />
         <child id="2555875871751847640" name="explanation" index="1MIJl8" />
       </concept>
@@ -314,7 +316,7 @@
   </node>
   <node concept="1MIHA_" id="ST9rMmQ41n">
     <property role="TrG5h" value="generators_without_is_applicable_guard" />
-    <property role="3zADTN" value="true" />
+    <property role="3miQiw" value="true" />
     <node concept="1Pa9Pv" id="ST9rMmQ41o" role="1MIJl8">
       <node concept="1PaTwC" id="ST9rMmQ41p" role="1PaQFQ">
         <node concept="3oM_SD" id="ST9rMmQ41q" role="1PaTwD">
