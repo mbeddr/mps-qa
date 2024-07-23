@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="org.mpsqa.testing.build" uuid="3bf16f17-7850-4b1d-804b-c60206298996" moduleVersion="0" compileInMPS="true">
+<solution name="org.mpsqa.testing.build" uuid="3bf16f17-7850-4b1d-804b-c60206298996" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -10,7 +10,6 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <sourcePath />
   <dependencies>
     <dependency reexport="false">5e8cea6b-997f-49b1-a8d8-dc2a7a6fa657(org.mpsqa.base.build)</dependency>
     <dependency reexport="false">422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)</dependency>
