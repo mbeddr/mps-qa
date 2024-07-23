@@ -8,7 +8,7 @@
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" implicit="true" />
   </imports>
   <registry>
@@ -33,6 +33,10 @@
         <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
         <child id="3348158742936976577" name="members" index="25R1y" />
       </concept>
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
+        <property id="1225118929411" name="build" index="YLPcu" />
+        <property id="1225118933224" name="comment" index="YLQ7P" />
+      </concept>
       <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
         <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
       </concept>
@@ -43,7 +47,9 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
+      </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -68,6 +74,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -87,8 +94,12 @@
     </node>
     <node concept="1TJgyi" id="5N7gA6ZntKi" role="1TKVEl">
       <property role="IQ2nx" value="6685385159444651026" />
-      <property role="TrG5h" value="skipEvaluation" />
+      <property role="TrG5h" value="skipEvaluation_old" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="asaX9" id="652KpqR2qkS" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;org.mpsqa.lint.generic.structure.ICanSkipCheckerEvaluation&quot;" />
+        <property role="YLPcu" value="2024.07.22" />
+      </node>
     </node>
     <node concept="1TJgyj" id="2dSiT1hKFVo" role="1TKVEi">
       <property role="IQ2ns" value="2555875871751847640" />
@@ -120,6 +131,9 @@
     </node>
     <node concept="PrWs8" id="6HKgezStPXJ" role="PzmwI">
       <ref role="PrY4T" node="6HKgezStPXI" resolve="IScriptsParametersAware" />
+    </node>
+    <node concept="PrWs8" id="652KpqR2q88" role="PzmwI">
+      <ref role="PrY4T" node="652KpqR2pyD" resolve="ICanSkipCheckerEvaluation" />
     </node>
     <node concept="1irR5M" id="2dSiT1hKS3v" role="rwd14">
       <property role="2$rrk2" value="1" />
@@ -166,6 +180,9 @@
     </node>
     <node concept="PrWs8" id="pFzydTBOIl" role="PzmwI">
       <ref role="PrY4T" node="6HKgezStPXI" resolve="IScriptsParametersAware" />
+    </node>
+    <node concept="PrWs8" id="652KpqR2q4M" role="PzmwI">
+      <ref role="PrY4T" node="652KpqR2pyD" resolve="ICanSkipCheckerEvaluation" />
     </node>
     <node concept="1irR5M" id="3ibIDIkmpeS" role="rwd14">
       <property role="2$rrk2" value="2" />
@@ -329,6 +346,18 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="subPath" />
       <ref role="20lvS9" node="2Y3G5n6NAqC" resolve="NamedFullyQualifiedNodeReference" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="652KpqR2pyD">
+    <property role="EcuMT" value="7008376823202027689" />
+    <property role="TrG5h" value="ICanSkipCheckerEvaluation" />
+    <node concept="1TJgyi" id="652KpqR2qkQ" role="1TKVEl">
+      <property role="IQ2nx" value="7008376823202030902" />
+      <property role="TrG5h" value="skipEvaluation" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="PrWs8" id="652KpqR3VEu" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
 </model>
