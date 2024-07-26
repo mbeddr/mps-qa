@@ -9,6 +9,7 @@
     <use id="1a8554c4-eb84-43ba-8c34-6f0d90c6e75a" name="jetbrains.mps.lang.smodel.query" version="3" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
+    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
   </languages>
   <imports>
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
@@ -159,6 +160,11 @@
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
+      </concept>
+    </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
+        <child id="5721587534047265374" name="message" index="9lYJi" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -2019,6 +2025,21 @@
                                     <ref role="2Gs0qQ" node="3bllPAaXzYN" resolve="root" />
                                   </node>
                                 </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="2xdQw9" id="6HhjmNPAtXK" role="3cqZAp">
+                          <node concept="3cpWs3" id="6HhjmNPAuqz" role="9lYJi">
+                            <node concept="37vLTw" id="6HhjmNPAuq$" role="3uHU7w">
+                              <ref role="3cqZAo" node="3bllPAaXFM_" resolve="currentNumberOfDescendants" />
+                            </node>
+                            <node concept="3cpWs3" id="6HhjmNPAuq_" role="3uHU7B">
+                              <node concept="37vLTw" id="6HhjmNPBqKQ" role="3uHU7B">
+                                <ref role="3cqZAo" node="3bllPAaXzZd" resolve="msg" />
+                              </node>
+                              <node concept="Xl_RD" id="6HhjmNPAuqQ" role="3uHU7w">
+                                <property role="Xl_RC" value=" " />
                               </node>
                             </node>
                           </node>
