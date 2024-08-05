@@ -60,7 +60,7 @@ ext.dependencyRepositories = [
 ]
 
 // Dependency versions
-ext.mpsVersion =  '2023.2'
+ext.mpsVersion = '2023.2'
 
 // Project versions
 ext.major = '2023'
@@ -163,36 +163,17 @@ tasks.withType(RunAntScript).configureEach {
     dependsOn(configureJava, resolveMps)
 }
 
-def build_allScripts_unpatched = tasks.register('build_allScripts_unpatched', BuildLanguages) {
-    script "$buildDir/scripts/build_all_scripts.xml"
-}
-
-// Patch JNA path in generated build scripts until https://github.com/JetBrains/MPS/pull/71 is fixed
-def patch_allScripts = tasks.register('patch_allScripts', Copy) {
-    dependsOn build_allScripts_unpatched
-    from 'build/scripts'
-    into 'build/patched-scripts'
-
-    def isAarch64 = System.getProperty('os.arch') == 'aarch64'
-    def jnaArch = isAarch64 ? 'aarch64' : 'amd64'
-
-    filter {
-        it.replace('"-Djna.boot.library.path=${artifacts.mps}/lib/jna"',
-                '"-Djna.boot.library.path=${artifacts.mps}/lib/jna/' + jnaArch + '"')
-    }
-}
-
-task build_allScripts {
-    dependsOn patch_allScripts
-}
-
 File scriptFile(String name) {
-    file("$buildDir/patched-scripts/$name")
+    file("$buildDir/scripts/$name")
+}
+
+def build_allScripts = tasks.register('build_allScripts', BuildLanguages) {
+    script scriptFile('build_all_scripts.xml')
 }
 
 // All other MPS tasks depend on build_allScripts
 tasks.withType(RunAntScript).configureEach {
-    if (it.name != build_allScripts_unpatched.name) {
+    if (it.name != build_allScripts.name) {
         it.dependsOn(build_allScripts)
     }
 }
