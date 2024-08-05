@@ -76,7 +76,7 @@
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -132,9 +132,6 @@
     <node concept="PrWs8" id="6HKgezStPXJ" role="PzmwI">
       <ref role="PrY4T" node="6HKgezStPXI" resolve="IScriptsParametersAware" />
     </node>
-    <node concept="PrWs8" id="652KpqR2q88" role="PzmwI">
-      <ref role="PrY4T" node="652KpqR2pyD" resolve="ICanSkipCheckerEvaluation" />
-    </node>
     <node concept="1irR5M" id="2dSiT1hKS3v" role="rwd14">
       <property role="2$rrk2" value="1" />
       <node concept="1irPie" id="2dSiT1hKS3$" role="1irR9h">
@@ -143,6 +140,9 @@
           <property role="3PKj8l" value="FF0000" />
         </node>
       </node>
+    </node>
+    <node concept="PrWs8" id="652KpqR2q88" role="PzmwI">
+      <ref role="PrY4T" node="652KpqR2pyD" resolve="ICanSkipCheckerEvaluation" />
     </node>
   </node>
   <node concept="1TIwiD" id="2dSiT1hKTOi">
@@ -181,9 +181,6 @@
     <node concept="PrWs8" id="pFzydTBOIl" role="PzmwI">
       <ref role="PrY4T" node="6HKgezStPXI" resolve="IScriptsParametersAware" />
     </node>
-    <node concept="PrWs8" id="652KpqR2q4M" role="PzmwI">
-      <ref role="PrY4T" node="652KpqR2pyD" resolve="ICanSkipCheckerEvaluation" />
-    </node>
     <node concept="1irR5M" id="3ibIDIkmpeS" role="rwd14">
       <property role="2$rrk2" value="2" />
       <node concept="1irPie" id="3ibIDIkmpeW" role="1irR9h">
@@ -192,6 +189,9 @@
           <property role="3PKj8l" value="FF9999" />
         </node>
       </node>
+    </node>
+    <node concept="PrWs8" id="652KpqR2q4M" role="PzmwI">
+      <ref role="PrY4T" node="652KpqR2pyD" resolve="ICanSkipCheckerEvaluation" />
     </node>
   </node>
   <node concept="1TIwiD" id="6gY6GEDvQYS">

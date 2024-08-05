@@ -12,7 +12,7 @@ plugins {
     id 'de.itemis.mps.gradle.launcher' version '2.2.0.+'
 }
 
-ext.jbrVers = '17.0.6-b653.34'
+ext.jbrVers = '17.0.8.1-b1000.32'
 
 downloadJbr {
     jbrVersion = jbrVers
@@ -60,11 +60,11 @@ ext.dependencyRepositories = [
 ]
 
 // Dependency versions
-ext.mpsVersion =  '2022.3.2'
+ext.mpsVersion = '2023.2'
 
 // Project versions
-ext.major = '2022'
-ext.minor = '3'
+ext.major = '2023'
+ext.minor = '2'
 
 if (ciBuild) {
     String branch = GitBasedVersioning.gitBranch

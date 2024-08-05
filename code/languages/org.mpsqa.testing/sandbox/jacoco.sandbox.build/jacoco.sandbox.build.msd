@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="jacoco.sandbox.build" uuid="83703c80-0976-40cc-a0bd-5faf6052c4a0" moduleVersion="0" compileInMPS="true">
+<solution name="jacoco.sandbox.build" uuid="83703c80-0976-40cc-a0bd-5faf6052c4a0" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -10,7 +10,6 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <sourcePath />
   <dependencies>
     <dependency reexport="false">422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)</dependency>
     <dependency reexport="false">3bf16f17-7850-4b1d-804b-c60206298996(org.mpsqa.testing.build)</dependency>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="org.mpsqa.base.lib" uuid="79c13063-8a7d-4070-aaba-966b36d6e0c4" moduleVersion="0" compileInMPS="true">
+<solution name="org.mpsqa.base.lib" uuid="79c13063-8a7d-4070-aaba-966b36d6e0c4" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}/lib/commons-lang3-3.3.2" type="java_classes">
       <sourceRoot location="commons-lang3-3.3.2-javadoc.jar" />
@@ -13,15 +13,12 @@
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
+      <library location="${module}/lib/commons-lang3-3.3.2/commons-lang3-3.3.2-javadoc.jar" />
+      <library location="${module}/lib/commons-lang3-3.3.2/commons-lang3-3.3.2.jar" />
+      <library location="${module}/lib/commons-io-2.6.jar" />
+      <library location="${module}/lib/commons-cli-1.5.0.jar" />
     </facet>
   </facets>
-  <stubModelEntries>
-    <stubModelEntry path="${module}/lib/commons-lang3-3.3.2/commons-lang3-3.3.2-javadoc.jar" />
-    <stubModelEntry path="${module}/lib/commons-lang3-3.3.2/commons-lang3-3.3.2.jar" />
-    <stubModelEntry path="${module}/lib/commons-io-2.6.jar" />
-    <stubModelEntry path="${module}/lib/commons-cli-1.5.0.jar" />
-  </stubModelEntries>
-  <sourcePath />
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
   </dependencies>
