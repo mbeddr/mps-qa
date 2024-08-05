@@ -1588,7 +1588,9 @@
                           <node concept="3cpWsn" id="2QH7JPsZwQt" role="3cpWs9">
                             <property role="TrG5h" value="applicableNodes" />
                             <node concept="3vKaQO" id="2QH7JPsZwQu" role="1tU5fm">
-                              <node concept="3Tqbb2" id="2QH7JPsZwQv" role="3O5elw" />
+                              <node concept="3qUE_q" id="5e$mNoOyt_$" role="3O5elw">
+                                <node concept="3Tqbb2" id="5e$mNoOytRX" role="3qUE_r" />
+                              </node>
                             </node>
                             <node concept="qVDSY" id="2QH7JPsZwQw" role="33vP2m">
                               <node concept="25Kdxt" id="2QH7JPsZwQx" role="qVDSX">
@@ -1671,22 +1673,29 @@
                             <ref role="3cqZAo" node="2QH7JPsZwQt" resolve="applicableNodes" />
                           </node>
                           <node concept="3clFbS" id="2QH7JPsZwQF" role="2LFqv$">
-                            <node concept="3cpWs8" id="2QH7JPsZwQG" role="3cqZAp">
-                              <node concept="3cpWsn" id="2QH7JPsZwQH" role="3cpWs9">
+                            <node concept="3cpWs8" id="5e$mNoOyr09" role="3cqZAp">
+                              <node concept="3cpWsn" id="5e$mNoOyr0a" role="3cpWs9">
                                 <property role="TrG5h" value="typeCheckingContext" />
-                                <node concept="3uibUv" id="2QH7JPsZwQI" role="1tU5fm">
+                                <node concept="3uibUv" id="5e$mNoOyr0b" role="1tU5fm">
                                   <ref role="3uigEE" to="u78q:~TypeCheckingContext" resolve="TypeCheckingContext" />
                                 </node>
-                                <node concept="2OqwBi" id="2QH7JPsZwQJ" role="33vP2m">
-                                  <node concept="2YIFZM" id="2QH7JPsZwQK" role="2Oq$k0">
-                                    <ref role="37wK5l" to="u78q:~TypeContextManager.getInstance()" resolve="getInstance" />
-                                    <ref role="1Pybhc" to="u78q:~TypeContextManager" resolve="TypeContextManager" />
-                                  </node>
-                                  <node concept="liA8E" id="2QH7JPsZwQL" role="2OqNvi">
-                                    <ref role="37wK5l" to="u78q:~TypeContextManager.createTypeCheckingContext(org.jetbrains.mps.openapi.model.SNode)" resolve="createTypeCheckingContext" />
-                                    <node concept="2GrUjf" id="2QH7JPsZwQM" role="37wK5m">
+                                <node concept="2ShNRf" id="5e$mNoOyr0c" role="33vP2m">
+                                  <node concept="1pGfFk" id="5e$mNoOyr0d" role="2ShVmc">
+                                    <property role="373rjd" value="true" />
+                                    <ref role="37wK5l" to="evo:~IncrementalTypecheckingContext.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.typesystem.inference.TypeCheckerHelper,jetbrains.mps.classloading.ClassLoaderManager)" resolve="IncrementalTypecheckingContext" />
+                                    <node concept="2GrUjf" id="5e$mNoOyr0e" role="37wK5m">
                                       <ref role="2Gs0qQ" node="2QH7JPsZwQD" resolve="crtNode" />
                                     </node>
+                                    <node concept="2OqwBi" id="5e$mNoOyr0f" role="37wK5m">
+                                      <node concept="2YIFZM" id="5e$mNoOyr0g" role="2Oq$k0">
+                                        <ref role="37wK5l" to="u78q:~TypeChecker.getInstance()" resolve="getInstance" />
+                                        <ref role="1Pybhc" to="u78q:~TypeChecker" resolve="TypeChecker" />
+                                      </node>
+                                      <node concept="liA8E" id="5e$mNoOyr0h" role="2OqNvi">
+                                        <ref role="37wK5l" to="u78q:~TypeChecker.getTypeCheckerHelper()" resolve="getTypeCheckerHelper" />
+                                      </node>
+                                    </node>
+                                    <node concept="10Nm6u" id="5e$mNoOyr0i" role="37wK5m" />
                                   </node>
                                 </node>
                               </node>
@@ -1721,7 +1730,7 @@
                                     <ref role="2Gs0qQ" node="2QH7JPsZwQD" resolve="crtNode" />
                                   </node>
                                   <node concept="37vLTw" id="2QH7JPsZwQZ" role="37wK5m">
-                                    <ref role="3cqZAo" node="2QH7JPsZwQH" resolve="typeCheckingContext" />
+                                    <ref role="3cqZAo" node="5e$mNoOyr0a" resolve="typeCheckingContext" />
                                   </node>
                                   <node concept="37vLTw" id="2QH7JPsZwR0" role="37wK5m">
                                     <ref role="3cqZAo" node="2QH7JPsZwQO" resolve="applicableAndPattern" />
