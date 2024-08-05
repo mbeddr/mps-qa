@@ -2,7 +2,7 @@
 <model ref="r:4131fb32-f307-4fc3-b7a9-49f6a893024e(org.mpsqa.lint.generic.sandbox._020_smoke_referenced_linters_from_library)">
   <persistence version="9" />
   <languages>
-    <use id="40ab19e9-751a-4433-b645-0e65160e58a0" name="org.mpsqa.lint.generic" version="0" />
+    <use id="40ab19e9-751a-4433-b645-0e65160e58a0" name="org.mpsqa.lint.generic" version="1" />
   </languages>
   <imports>
     <import index="wpu7" ref="r:cadc46fc-2365-43d7-bda1-08e980cf970d(org.mpsqa.lint.generic.linters_library.modules)" />
