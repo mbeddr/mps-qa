@@ -16,7 +16,7 @@
     <import index="qqy" ref="r:baac1a2f-1e52-45fa-95c5-02a3dfae441c(org.mpsqa.lint.generic.util)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
-    <import index="a1af" ref="r:839ac015-7de1-49f3-ac8f-8d7c6d47259d(org.mpsqa.lint.generic.structure)" implicit="true" />
+    <import index="a1af" ref="r:839ac015-7de1-49f3-ac8f-8d7c6d47259d(org.mpsqa.lint.generic.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" implicit="true" />
@@ -375,40 +375,8 @@
       <node concept="PMmxH" id="6gY6GEDxQkS" role="3EZMnx">
         <ref role="PMmxG" node="6gY6GEDwP_H" resolve="EnableDeltaChecks" />
       </node>
-      <node concept="3EZMnI" id="5N7gA6Znz0u" role="3EZMnx">
-        <node concept="VPM3Z" id="5N7gA6Znz0w" role="3F10Kt" />
-        <node concept="3XFhqQ" id="5N7gA6ZnDVg" role="3EZMnx" />
-        <node concept="3F0ifn" id="5N7gA6Znz0y" role="3EZMnx">
-          <property role="3F0ifm" value="Skip evaluation for current script definition:" />
-        </node>
-        <node concept="3F0A7n" id="5N7gA6Znz0V" role="3EZMnx">
-          <ref role="1NtTu8" to="a1af:5N7gA6ZntKi" resolve="skipEvaluation" />
-          <node concept="30gYXW" id="5N7gA6Znz12" role="3F10Kt">
-            <node concept="3ZlJ5R" id="5N7gA6Znz13" role="VblUZ">
-              <node concept="3clFbS" id="5N7gA6Znz14" role="2VODD2">
-                <node concept="3clFbF" id="5N7gA6Znz15" role="3cqZAp">
-                  <node concept="3K4zz7" id="5N7gA6Znz16" role="3clFbG">
-                    <node concept="10M0yZ" id="5N7gA6Znz17" role="3K4E3e">
-                      <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                      <ref role="3cqZAo" to="z60i:~Color.ORANGE" resolve="ORANGE" />
-                    </node>
-                    <node concept="10M0yZ" id="5N7gA6Znz18" role="3K4GZi">
-                      <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                      <ref role="3cqZAo" to="z60i:~Color.GREEN" resolve="GREEN" />
-                    </node>
-                    <node concept="2OqwBi" id="5N7gA6Znz19" role="3K4Cdx">
-                      <node concept="pncrf" id="5N7gA6Znz1a" role="2Oq$k0" />
-                      <node concept="3TrcHB" id="5N7gA6Znz1b" role="2OqNvi">
-                        <ref role="3TsBF5" to="a1af:5N7gA6ZntKi" resolve="skipEvaluation" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2iRfu4" id="5N7gA6Znz0z" role="2iSdaV" />
+      <node concept="PMmxH" id="652KpqR2Gpy" role="3EZMnx">
+        <ref role="PMmxG" node="652KpqR2FT6" resolve="ICanSkipEvaluationEditorComponent" />
       </node>
       <node concept="3EZMnI" id="78RogMCGv1A" role="3EZMnx">
         <node concept="VPM3Z" id="78RogMCGv1C" role="3F10Kt" />
@@ -427,7 +395,7 @@
               <node concept="2OqwBi" id="78RogMCGviA" role="3clFbG">
                 <node concept="pncrf" id="78RogMCGv4p" role="2Oq$k0" />
                 <node concept="3TrcHB" id="78RogMCGvv6" role="2OqNvi">
-                  <ref role="3TsBF5" to="a1af:5N7gA6ZntKi" resolve="skipEvaluation" />
+                  <ref role="3TsBF5" to="a1af:652KpqR2qkQ" resolve="skipEvaluation" />
                 </node>
               </node>
             </node>
@@ -512,6 +480,9 @@
       </node>
       <node concept="PMmxH" id="6gY6GEDxQlu" role="3EZMnx">
         <ref role="PMmxG" node="6gY6GEDwP_H" resolve="EnableDeltaChecks" />
+      </node>
+      <node concept="PMmxH" id="652KpqR2GjQ" role="3EZMnx">
+        <ref role="PMmxG" node="652KpqR2FT6" resolve="ICanSkipEvaluationEditorComponent" />
       </node>
       <node concept="3F0ifn" id="6gY6GEDyAWX" role="3EZMnx" />
       <node concept="3EZMnI" id="3ibIDIklTPN" role="3EZMnx">
@@ -1536,6 +1507,45 @@
         <property role="TrG5h" value="n" />
         <node concept="3Tqbb2" id="6dX6nirXU6H" role="1tU5fm" />
       </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="652KpqR2FT6">
+    <property role="TrG5h" value="ICanSkipEvaluationEditorComponent" />
+    <ref role="1XX52x" to="a1af:652KpqR2pyD" resolve="ICanSkipCheckerEvaluation" />
+    <node concept="3EZMnI" id="652KpqR2FT8" role="2wV5jI">
+      <node concept="VPM3Z" id="652KpqR2FT9" role="3F10Kt" />
+      <node concept="3XFhqQ" id="652KpqR2FTa" role="3EZMnx" />
+      <node concept="3F0ifn" id="652KpqR2FTb" role="3EZMnx">
+        <property role="3F0ifm" value="Skip evaluation:" />
+      </node>
+      <node concept="3F0A7n" id="652KpqR2FTc" role="3EZMnx">
+        <ref role="1NtTu8" to="a1af:652KpqR2qkQ" resolve="skipEvaluation" />
+        <node concept="30gYXW" id="652KpqR2FTd" role="3F10Kt">
+          <node concept="3ZlJ5R" id="652KpqR2FTe" role="VblUZ">
+            <node concept="3clFbS" id="652KpqR2FTf" role="2VODD2">
+              <node concept="3clFbF" id="652KpqR2FTg" role="3cqZAp">
+                <node concept="3K4zz7" id="652KpqR2FTh" role="3clFbG">
+                  <node concept="10M0yZ" id="652KpqR2FTi" role="3K4E3e">
+                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                    <ref role="3cqZAo" to="z60i:~Color.ORANGE" resolve="ORANGE" />
+                  </node>
+                  <node concept="10M0yZ" id="652KpqR2FTj" role="3K4GZi">
+                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                    <ref role="3cqZAo" to="z60i:~Color.GREEN" resolve="GREEN" />
+                  </node>
+                  <node concept="2OqwBi" id="652KpqR2FTk" role="3K4Cdx">
+                    <node concept="pncrf" id="652KpqR2FTl" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="652KpqR2FTm" role="2OqNvi">
+                      <ref role="3TsBF5" to="a1af:652KpqR2qkQ" resolve="skipEvaluation" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2iRfu4" id="652KpqR2FTn" role="2iSdaV" />
     </node>
   </node>
 </model>

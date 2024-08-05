@@ -4,7 +4,7 @@
   <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
-    <use id="40ab19e9-751a-4433-b645-0e65160e58a0" name="org.mpsqa.lint.generic" version="0" />
+    <use id="40ab19e9-751a-4433-b645-0e65160e58a0" name="org.mpsqa.lint.generic" version="1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
     <use id="1a8554c4-eb84-43ba-8c34-6f0d90c6e75a" name="jetbrains.mps.lang.smodel.query" version="3" />
@@ -270,6 +270,14 @@
         <property role="3cmrfH" value="500" />
       </node>
     </node>
+    <node concept="2j1LYv" id="2ZPTSaphb1g" role="2j1YRv">
+      <node concept="2j1LYi" id="2ZPTSaphb1h" role="2j1YQj">
+        <ref role="2j1LYj" node="2ZPTSaphajQ" resolve="maximumWaitTimeInMillis" />
+      </node>
+      <node concept="3cmrfG" id="2ZPTSaphb96" role="2j1LYg">
+        <property role="3cmrfH" value="10000" />
+      </node>
+    </node>
     <node concept="2j1K4_" id="6wZqgFKVthT" role="2j1K4A">
       <property role="TrG5h" value="moduleNameSubstring" />
       <node concept="17QB3L" id="6wZqgFKVti4" role="2j1LY4" />
@@ -281,6 +289,10 @@
     <node concept="2j1K4_" id="6wZqgFKVthV" role="2j1K4A">
       <property role="TrG5h" value="timeBoundInMillis" />
       <node concept="10Oyi0" id="6wZqgFKVti6" role="2j1LY4" />
+    </node>
+    <node concept="2j1K4_" id="2ZPTSaphajQ" role="2j1K4A">
+      <property role="TrG5h" value="maximumWaitTimeInMillis" />
+      <node concept="10Oyi0" id="2ZPTSaphaoO" role="2j1LY4" />
     </node>
     <node concept="1Pa9Pv" id="6wZqgFKVthW" role="1MIJl8">
       <node concept="1PaTwC" id="6wZqgFKVti7" role="1PaQFQ">
@@ -1092,11 +1104,11 @@
                         <node concept="3clFbS" id="6wZqgFKVtll" role="1zc67A">
                           <node concept="3clFbF" id="6wZqgFKVtlJ" role="3cqZAp">
                             <node concept="37vLTI" id="6wZqgFKVtm2" role="3clFbG">
-                              <node concept="37vLTw" id="6wZqgFKVtmv" role="37vLTJ">
-                                <ref role="3cqZAo" node="6wZqgFKVtkY" resolve="elapsedTime" />
-                              </node>
                               <node concept="2j1LYi" id="2ZPTSaphcvB" role="37vLTx">
                                 <ref role="2j1LYj" node="2ZPTSaphajQ" resolve="maximumWaitTimeInMillis" />
+                              </node>
+                              <node concept="37vLTw" id="6wZqgFKVtmv" role="37vLTJ">
+                                <ref role="3cqZAo" node="6wZqgFKVtkY" resolve="elapsedTime" />
                               </node>
                             </node>
                           </node>
@@ -1275,18 +1287,6 @@
           </node>
         </node>
       </node>
-    </node>
-    <node concept="2j1LYv" id="2ZPTSaphb1g" role="2j1YRv">
-      <node concept="2j1LYi" id="2ZPTSaphb1h" role="2j1YQj">
-        <ref role="2j1LYj" node="2ZPTSaphajQ" resolve="maximumWaitTimeInMillis" />
-      </node>
-      <node concept="3cmrfG" id="2ZPTSaphb96" role="2j1LYg">
-        <property role="3cmrfH" value="10000" />
-      </node>
-    </node>
-    <node concept="2j1K4_" id="2ZPTSaphajQ" role="2j1K4A">
-      <property role="TrG5h" value="maximumWaitTimeInMillis" />
-      <node concept="10Oyi0" id="2ZPTSaphaoO" role="2j1LY4" />
     </node>
   </node>
 </model>
