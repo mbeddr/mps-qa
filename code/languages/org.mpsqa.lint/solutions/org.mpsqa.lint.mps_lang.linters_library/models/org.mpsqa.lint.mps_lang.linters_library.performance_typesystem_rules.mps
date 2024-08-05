@@ -22,6 +22,7 @@
     <import index="j8aq" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.module(MPS.Core/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="3qmy" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.classloading(MPS.Core/)" />
+    <import index="evo" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.newTypesystem.context(MPS.Core/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -50,6 +51,7 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534513062" name="jetbrains.mps.baseLanguage.structure.DoubleType" flags="in" index="10P55v" />
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
@@ -58,6 +60,9 @@
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
+      </concept>
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ngI" index="366HgL">
+        <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
@@ -102,6 +107,9 @@
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
+      <concept id="1171903916106" name="jetbrains.mps.baseLanguage.structure.UpperBoundType" flags="in" index="3qUE_q">
+        <child id="1171903916107" name="bound" index="3qUE_r" />
+      </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
         <child id="1109201940907" name="parameter" index="11_B2D" />
@@ -650,7 +658,9 @@
                           <node concept="3cpWsn" id="733wlN4CtOk" role="3cpWs9">
                             <property role="TrG5h" value="applicableNodes" />
                             <node concept="3vKaQO" id="733wlN4CtOx" role="1tU5fm">
-                              <node concept="3Tqbb2" id="733wlN4CtOL" role="3O5elw" />
+                              <node concept="3qUE_q" id="4JpXQ$UUx2I" role="3O5elw">
+                                <node concept="3Tqbb2" id="4JpXQ$UUxiO" role="3qUE_r" />
+                              </node>
                             </node>
                             <node concept="qVDSY" id="733wlN4CtOy" role="33vP2m">
                               <node concept="25Kdxt" id="733wlN4CtOM" role="qVDSX">
@@ -686,16 +696,23 @@
                                 <node concept="3uibUv" id="733wlN4CtOT" role="1tU5fm">
                                   <ref role="3uigEE" to="u78q:~TypeCheckingContext" resolve="TypeCheckingContext" />
                                 </node>
-                                <node concept="2OqwBi" id="733wlN4CtOU" role="33vP2m">
-                                  <node concept="2YIFZM" id="733wlN4CtOZ" role="2Oq$k0">
-                                    <ref role="37wK5l" to="u78q:~TypeContextManager.getInstance()" resolve="getInstance" />
-                                    <ref role="1Pybhc" to="u78q:~TypeContextManager" resolve="TypeContextManager" />
-                                  </node>
-                                  <node concept="liA8E" id="733wlN4CtP0" role="2OqNvi">
-                                    <ref role="37wK5l" to="u78q:~TypeContextManager.createTypeCheckingContext(org.jetbrains.mps.openapi.model.SNode)" resolve="createTypeCheckingContext" />
-                                    <node concept="2GrUjf" id="733wlN4CtP6" role="37wK5m">
+                                <node concept="2ShNRf" id="5Pbt4UlJWiX" role="33vP2m">
+                                  <node concept="1pGfFk" id="5Pbt4UlJYux" role="2ShVmc">
+                                    <property role="373rjd" value="true" />
+                                    <ref role="37wK5l" to="evo:~IncrementalTypecheckingContext.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.typesystem.inference.TypeCheckerHelper,jetbrains.mps.classloading.ClassLoaderManager)" resolve="IncrementalTypecheckingContext" />
+                                    <node concept="2GrUjf" id="5Pbt4UlJZsw" role="37wK5m">
                                       <ref role="2Gs0qQ" node="733wlN4CtOm" resolve="crtNode" />
                                     </node>
+                                    <node concept="2OqwBi" id="5Pbt4UlK1nM" role="37wK5m">
+                                      <node concept="2YIFZM" id="5Pbt4UlK14N" role="2Oq$k0">
+                                        <ref role="37wK5l" to="u78q:~TypeChecker.getInstance()" resolve="getInstance" />
+                                        <ref role="1Pybhc" to="u78q:~TypeChecker" resolve="TypeChecker" />
+                                      </node>
+                                      <node concept="liA8E" id="5Pbt4UlK1F4" role="2OqNvi">
+                                        <ref role="37wK5l" to="u78q:~TypeChecker.getTypeCheckerHelper()" resolve="getTypeCheckerHelper" />
+                                      </node>
+                                    </node>
+                                    <node concept="10Nm6u" id="5Pbt4UlK27t" role="37wK5m" />
                                   </node>
                                 </node>
                               </node>
@@ -1571,7 +1588,9 @@
                           <node concept="3cpWsn" id="2QH7JPsZwQt" role="3cpWs9">
                             <property role="TrG5h" value="applicableNodes" />
                             <node concept="3vKaQO" id="2QH7JPsZwQu" role="1tU5fm">
-                              <node concept="3Tqbb2" id="2QH7JPsZwQv" role="3O5elw" />
+                              <node concept="3qUE_q" id="5e$mNoOyt_$" role="3O5elw">
+                                <node concept="3Tqbb2" id="5e$mNoOytRX" role="3qUE_r" />
+                              </node>
                             </node>
                             <node concept="qVDSY" id="2QH7JPsZwQw" role="33vP2m">
                               <node concept="25Kdxt" id="2QH7JPsZwQx" role="qVDSX">
@@ -1654,22 +1673,29 @@
                             <ref role="3cqZAo" node="2QH7JPsZwQt" resolve="applicableNodes" />
                           </node>
                           <node concept="3clFbS" id="2QH7JPsZwQF" role="2LFqv$">
-                            <node concept="3cpWs8" id="2QH7JPsZwQG" role="3cqZAp">
-                              <node concept="3cpWsn" id="2QH7JPsZwQH" role="3cpWs9">
+                            <node concept="3cpWs8" id="5e$mNoOyr09" role="3cqZAp">
+                              <node concept="3cpWsn" id="5e$mNoOyr0a" role="3cpWs9">
                                 <property role="TrG5h" value="typeCheckingContext" />
-                                <node concept="3uibUv" id="2QH7JPsZwQI" role="1tU5fm">
+                                <node concept="3uibUv" id="5e$mNoOyr0b" role="1tU5fm">
                                   <ref role="3uigEE" to="u78q:~TypeCheckingContext" resolve="TypeCheckingContext" />
                                 </node>
-                                <node concept="2OqwBi" id="2QH7JPsZwQJ" role="33vP2m">
-                                  <node concept="2YIFZM" id="2QH7JPsZwQK" role="2Oq$k0">
-                                    <ref role="37wK5l" to="u78q:~TypeContextManager.getInstance()" resolve="getInstance" />
-                                    <ref role="1Pybhc" to="u78q:~TypeContextManager" resolve="TypeContextManager" />
-                                  </node>
-                                  <node concept="liA8E" id="2QH7JPsZwQL" role="2OqNvi">
-                                    <ref role="37wK5l" to="u78q:~TypeContextManager.createTypeCheckingContext(org.jetbrains.mps.openapi.model.SNode)" resolve="createTypeCheckingContext" />
-                                    <node concept="2GrUjf" id="2QH7JPsZwQM" role="37wK5m">
+                                <node concept="2ShNRf" id="5e$mNoOyr0c" role="33vP2m">
+                                  <node concept="1pGfFk" id="5e$mNoOyr0d" role="2ShVmc">
+                                    <property role="373rjd" value="true" />
+                                    <ref role="37wK5l" to="evo:~IncrementalTypecheckingContext.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.typesystem.inference.TypeCheckerHelper,jetbrains.mps.classloading.ClassLoaderManager)" resolve="IncrementalTypecheckingContext" />
+                                    <node concept="2GrUjf" id="5e$mNoOyr0e" role="37wK5m">
                                       <ref role="2Gs0qQ" node="2QH7JPsZwQD" resolve="crtNode" />
                                     </node>
+                                    <node concept="2OqwBi" id="5e$mNoOyr0f" role="37wK5m">
+                                      <node concept="2YIFZM" id="5e$mNoOyr0g" role="2Oq$k0">
+                                        <ref role="37wK5l" to="u78q:~TypeChecker.getInstance()" resolve="getInstance" />
+                                        <ref role="1Pybhc" to="u78q:~TypeChecker" resolve="TypeChecker" />
+                                      </node>
+                                      <node concept="liA8E" id="5e$mNoOyr0h" role="2OqNvi">
+                                        <ref role="37wK5l" to="u78q:~TypeChecker.getTypeCheckerHelper()" resolve="getTypeCheckerHelper" />
+                                      </node>
+                                    </node>
+                                    <node concept="10Nm6u" id="5e$mNoOyr0i" role="37wK5m" />
                                   </node>
                                 </node>
                               </node>
@@ -1704,7 +1730,7 @@
                                     <ref role="2Gs0qQ" node="2QH7JPsZwQD" resolve="crtNode" />
                                   </node>
                                   <node concept="37vLTw" id="2QH7JPsZwQZ" role="37wK5m">
-                                    <ref role="3cqZAo" node="2QH7JPsZwQH" resolve="typeCheckingContext" />
+                                    <ref role="3cqZAo" node="5e$mNoOyr0a" resolve="typeCheckingContext" />
                                   </node>
                                   <node concept="37vLTw" id="2QH7JPsZwR0" role="37wK5m">
                                     <ref role="3cqZAo" node="2QH7JPsZwQO" resolve="applicableAndPattern" />
