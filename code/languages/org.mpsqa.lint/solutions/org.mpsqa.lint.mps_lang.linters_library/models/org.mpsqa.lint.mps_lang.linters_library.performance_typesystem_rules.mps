@@ -118,9 +118,6 @@
         <child id="8276990574886367510" name="catchClause" index="1zxBo5" />
         <child id="8276990574886367508" name="body" index="1zxBo7" />
       </concept>
-      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="8356039341262087992" name="line" index="1aUNEU" />
-      </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="40ab19e9-751a-4433-b645-0e65160e58a0" name="org.mpsqa.lint.generic">
@@ -1346,6 +1343,18 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="4OCu8b$N6OH" role="3cqZAp" />
+        <node concept="3clFbF" id="fofa_ocOpT" role="3cqZAp">
+          <node concept="2OqwBi" id="fofa_ocPVU" role="3clFbG">
+            <node concept="2YIFZM" id="fofa_ocPjf" role="2Oq$k0">
+              <ref role="37wK5l" to="wyt6:~Runtime.getRuntime()" resolve="getRuntime" />
+              <ref role="1Pybhc" to="wyt6:~Runtime" resolve="Runtime" />
+            </node>
+            <node concept="liA8E" id="fofa_ocRbZ" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~Runtime.gc()" resolve="gc" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="fofa_ocT5H" role="3cqZAp" />
         <node concept="2Gpval" id="2QH7JPsZwOx" role="3cqZAp">
           <node concept="2GrKxI" id="2QH7JPsZwOy" role="2Gsz3X">
@@ -1583,42 +1592,6 @@
                           </node>
                         </node>
                         <node concept="3clFbH" id="2QH7JPsZwQz" role="3cqZAp" />
-                        <node concept="3SKdUt" id="fofa_ocYFK" role="3cqZAp">
-                          <node concept="1PaTwC" id="fofa_ocYFL" role="1aUNEU">
-                            <node concept="3oM_SD" id="fofa_od030" role="1PaTwD">
-                              <property role="3oM_SC" value="before" />
-                            </node>
-                            <node concept="3oM_SD" id="fofa_od0be" role="1PaTwD">
-                              <property role="3oM_SC" value="each" />
-                            </node>
-                            <node concept="3oM_SD" id="fofa_od0g4" role="1PaTwD">
-                              <property role="3oM_SC" value="check" />
-                            </node>
-                            <node concept="3oM_SD" id="fofa_od0la" role="1PaTwD">
-                              <property role="3oM_SC" value="we" />
-                            </node>
-                            <node concept="3oM_SD" id="fofa_od0mD" role="1PaTwD">
-                              <property role="3oM_SC" value="run" />
-                            </node>
-                            <node concept="3oM_SD" id="fofa_od0r4" role="1PaTwD">
-                              <property role="3oM_SC" value="the" />
-                            </node>
-                            <node concept="3oM_SD" id="fofa_od0ua" role="1PaTwD">
-                              <property role="3oM_SC" value="GC" />
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="3clFbF" id="fofa_ocOpT" role="3cqZAp">
-                          <node concept="2OqwBi" id="fofa_ocPVU" role="3clFbG">
-                            <node concept="2YIFZM" id="fofa_ocPjf" role="2Oq$k0">
-                              <ref role="37wK5l" to="wyt6:~Runtime.getRuntime()" resolve="getRuntime" />
-                              <ref role="1Pybhc" to="wyt6:~Runtime" resolve="Runtime" />
-                            </node>
-                            <node concept="liA8E" id="fofa_ocRbZ" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~Runtime.gc()" resolve="gc" />
-                            </node>
-                          </node>
-                        </node>
                         <node concept="3clFbH" id="fofa_ohOx4" role="3cqZAp" />
                         <node concept="3cpWs8" id="2QH7JPsZwQ$" role="3cqZAp">
                           <node concept="3cpWsn" id="2QH7JPsZwQ_" role="3cpWs9">
