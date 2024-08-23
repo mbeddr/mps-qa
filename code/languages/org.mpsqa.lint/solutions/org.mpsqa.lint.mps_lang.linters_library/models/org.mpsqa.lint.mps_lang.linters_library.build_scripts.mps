@@ -117,8 +117,8 @@
     <language id="40ab19e9-751a-4433-b645-0e65160e58a0" name="org.mpsqa.lint.generic">
       <concept id="2555875871752198907" name="org.mpsqa.lint.generic.structure.ConceptFunctionParameter_MPSProject" flags="ng" index="1MG55F" />
       <concept id="2555875871751836213" name="org.mpsqa.lint.generic.structure.CheckableScript" flags="ng" index="1MIHA_">
-        <child id="1716492013482699988" name="checkingClosure" index="14J5yK" />
-        <child id="2555875871751847640" name="explanation" index="1MIJl8" />
+        <child id="1716492013482699988" name="check" index="14J5yK" />
+        <child id="2555875871751847640" name="documentation" index="1MIJl8" />
       </concept>
       <concept id="2555875871751904530" name="org.mpsqa.lint.generic.structure.CheckingFunction" flags="ig" index="1MIXq2" />
     </language>
@@ -471,7 +471,7 @@
                               <node concept="3cpWs3" id="1anGYsMsnoe" role="37wK5m">
                                 <node concept="3cpWs3" id="1anGYsMsnof" role="3uHU7B">
                                   <node concept="Xl_RD" id="1anGYsMsnog" role="3uHU7B">
-                                    <property role="Xl_RC" value="plugin '" />
+                                    <property role="Xl_RC" value="Plugin '" />
                                   </node>
                                   <node concept="2OqwBi" id="1Ke2sdkiKwc" role="3uHU7w">
                                     <node concept="2GrUjf" id="1Ke2sdkiKkc" role="2Oq$k0">
