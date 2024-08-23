@@ -5,6 +5,7 @@
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -78,6 +79,9 @@
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
+      <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
+        <child id="1070534760952" name="componentType" index="10Q1$1" />
+      </concept>
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -97,6 +101,7 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
+      <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_" />
       <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
@@ -143,6 +148,7 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
+      <concept id="1107796713796" name="jetbrains.mps.baseLanguage.structure.Interface" flags="ig" index="3HP615" />
       <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
         <child id="1163668914799" name="condition" index="3K4Cdx" />
         <child id="1163668922816" name="ifTrue" index="3K4E3e" />
@@ -191,6 +197,9 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="7400021826771268254" name="jetbrains.mps.lang.smodel.structure.SNodePointerType" flags="ig" index="2sp9CU">
+        <reference id="7400021826771268269" name="concept" index="2sp9C9" />
+      </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
@@ -1760,6 +1769,41 @@
       </node>
       <node concept="17QB3L" id="9oKOt4oSid" role="3clF45" />
     </node>
+  </node>
+  <node concept="3HP615" id="4ACPUrdErME">
+    <property role="TrG5h" value="ILinter" />
+    <node concept="3clFb_" id="4ACPUrdEvZ7" role="jymVt">
+      <property role="TrG5h" value="doCheck" />
+      <node concept="37vLTG" id="2dSiT1hMYOk" role="3clF46">
+        <property role="TrG5h" value="project" />
+        <node concept="3uibUv" id="2dSiT1hMYOj" role="1tU5fm">
+          <ref role="3uigEE" to="z1c3:~MPSProject" resolve="MPSProject" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="4ACPUrdGkn$" role="3clF46">
+        <property role="TrG5h" value="parameters" />
+        <node concept="10Q1$e" id="4ACPUrdGkpt" role="1tU5fm">
+          <node concept="3uibUv" id="4ACPUrdGkoC" role="10Q1$1">
+            <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbS" id="4ACPUrdEvZa" role="3clF47" />
+      <node concept="3Tm1VV" id="4ACPUrdEvZb" role="1B3o_S" />
+      <node concept="3uibUv" id="4ACPUrdEvBj" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4ACPUrdECbG" role="jymVt" />
+    <node concept="3clFb_" id="4ACPUrdECcz" role="jymVt">
+      <property role="TrG5h" value="getQuickFix" />
+      <node concept="3clFbS" id="4ACPUrdECcA" role="3clF47" />
+      <node concept="3Tm1VV" id="4ACPUrdECcB" role="1B3o_S" />
+      <node concept="2sp9CU" id="4ACPUrdECc7" role="3clF45">
+        <ref role="2sp9C9" to="tpd4:hGQ5zx_" resolve="TypesystemQuickFix" />
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="4ACPUrdErMF" role="1B3o_S" />
   </node>
 </model>
 
