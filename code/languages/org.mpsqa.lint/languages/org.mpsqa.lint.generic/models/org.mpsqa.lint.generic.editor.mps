@@ -1185,7 +1185,7 @@
     <ref role="1XX52x" to="a1af:6HKgezStO7d" resolve="CheckableScriptParameter" />
     <node concept="3EZMnI" id="6HKgezSuyXz" role="2wV5jI">
       <node concept="3F1sOY" id="6HKgezSuyXE" role="3EZMnx">
-        <ref role="1NtTu8" to="a1af:6HKgezStPXG" resolve="tpe" />
+        <ref role="1NtTu8" to="a1af:6HKgezStPXG" resolve="type" />
       </node>
       <node concept="3F0A7n" id="6HKgezSuyXO" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
