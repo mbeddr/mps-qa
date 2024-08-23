@@ -9,6 +9,7 @@
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" implicit="true" />
   </imports>
   <registry>
@@ -28,6 +29,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="3348158742936976480" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ng" index="25R33">
         <property id="1421157252384165432" name="memberId" index="3tVfz5" />
+        <property id="672037151186491528" name="presentation" index="1L1pqM" />
       </concept>
       <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
         <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
@@ -43,6 +45,8 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
+        <property id="4628067390765956807" name="final" index="R5$K2" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
@@ -54,6 +58,7 @@
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <property id="5404671619616246344" name="staticScope" index="2_RsDV" />
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="6327362524875300597" name="icon" index="rwd14" />
@@ -104,14 +109,14 @@
     <node concept="1TJgyj" id="2dSiT1hKFVo" role="1TKVEi">
       <property role="IQ2ns" value="2555875871751847640" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="explanation" />
+      <property role="20kJfa" value="documentation" />
       <ref role="20lvS9" to="zqge:2cLqkTm6vgh" resolve="Text" />
     </node>
     <node concept="1TJgyj" id="1vid6hjrANk" role="1TKVEi">
       <property role="IQ2ns" value="1716492013482699988" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="checkingClosure" />
-      <ref role="20lvS9" node="2dSiT1hKTOi" resolve="CheckingFunction" />
+      <property role="20kJfa" value="check" />
+      <ref role="20lvS9" node="1BlvkgVC4T5" resolve="LinterCheckingFunction" />
     </node>
     <node concept="1TJgyj" id="6HKgezStO7e" role="1TKVEi">
       <property role="IQ2ns" value="7741759128795038158" />
@@ -147,9 +152,10 @@
   </node>
   <node concept="1TIwiD" id="2dSiT1hKTOi">
     <property role="EcuMT" value="2555875871751904530" />
-    <property role="TrG5h" value="CheckingFunction" />
-    <property role="34LRSv" value="checking function" />
-    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+    <property role="TrG5h" value="GenericCheckingFunction" />
+    <property role="34LRSv" value="generic check" />
+    <property role="3GE5qa" value="checkingFunction" />
+    <ref role="1TJDcQ" node="1BlvkgVC4T5" resolve="LinterCheckingFunction" />
   </node>
   <node concept="1TIwiD" id="2dSiT1hM1FV">
     <property role="EcuMT" value="2555875871752198907" />
@@ -235,18 +241,21 @@
   <node concept="25R3W" id="1c_Dn$lNzd5">
     <property role="3F6X1D" value="1379690800334385989" />
     <property role="TrG5h" value="EReportSeverityLevel" />
-    <ref role="1H5jkz" node="1c_Dn$lNzd6" resolve="ERROR" />
+    <ref role="1H5jkz" node="1c_Dn$lNzd6" resolve="error" />
     <node concept="25R33" id="1c_Dn$lNzd6" role="25R1y">
       <property role="3tVfz5" value="1379690800334385990" />
-      <property role="TrG5h" value="ERROR" />
+      <property role="TrG5h" value="error" />
+      <property role="1L1pqM" value="error" />
     </node>
     <node concept="25R33" id="1c_Dn$lNzd7" role="25R1y">
       <property role="3tVfz5" value="1379690800334385991" />
-      <property role="TrG5h" value="WARNING" />
+      <property role="TrG5h" value="warning" />
+      <property role="1L1pqM" value="warning" />
     </node>
     <node concept="25R33" id="1c_Dn$lNzda" role="25R1y">
       <property role="3tVfz5" value="1379690800334385994" />
-      <property role="TrG5h" value="INFO" />
+      <property role="TrG5h" value="info" />
+      <property role="1L1pqM" value="info" />
     </node>
   </node>
   <node concept="PlHQZ" id="ST9rMmWg3T">
@@ -358,6 +367,136 @@
     </node>
     <node concept="PrWs8" id="652KpqR3VEu" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4mUq39YClpV">
+    <property role="EcuMT" value="5024442900367365755" />
+    <property role="TrG5h" value="ModuleCheckingFunction" />
+    <property role="34LRSv" value="module check" />
+    <property role="3GE5qa" value="checkingFunction" />
+    <ref role="1TJDcQ" node="1BlvkgVC4T5" resolve="LinterCheckingFunction" />
+  </node>
+  <node concept="1TIwiD" id="hAvlQjq">
+    <property role="R5$K7" value="false" />
+    <property role="R5$K2" value="false" />
+    <property role="TrG5h" value="ConceptFunctionParameter_Module" />
+    <property role="2_RsDV" value="4G1g3fIR8JG/none" />
+    <property role="3GE5qa" value="" />
+    <property role="34LRSv" value="module" />
+    <property role="EcuMT" value="1209559114970" />
+    <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+  </node>
+  <node concept="1TIwiD" id="4mUq39YWa1A">
+    <property role="EcuMT" value="5024442900372562022" />
+    <property role="TrG5h" value="ModelCheckingFunction" />
+    <property role="34LRSv" value="model check" />
+    <property role="3GE5qa" value="checkingFunction" />
+    <ref role="1TJDcQ" node="1BlvkgVC4T5" resolve="LinterCheckingFunction" />
+  </node>
+  <node concept="1TIwiD" id="4mUq39YWadp">
+    <property role="R5$K7" value="false" />
+    <property role="R5$K2" value="false" />
+    <property role="TrG5h" value="ConceptFunctionParameter_Model" />
+    <property role="2_RsDV" value="4G1g3fIR8JG/none" />
+    <property role="3GE5qa" value="" />
+    <property role="34LRSv" value="model" />
+    <property role="EcuMT" value="5024442900372562777" />
+    <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+  </node>
+  <node concept="1TIwiD" id="2zdrQh751DQ">
+    <property role="R5$K7" value="false" />
+    <property role="R5$K2" value="false" />
+    <property role="TrG5h" value="ConceptFunctionParameter_Node" />
+    <property role="2_RsDV" value="4G1g3fIR8JG/none" />
+    <property role="3GE5qa" value="" />
+    <property role="34LRSv" value="node" />
+    <property role="EcuMT" value="2940128608222714486" />
+    <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+  </node>
+  <node concept="1TIwiD" id="2zdrQh751J5">
+    <property role="EcuMT" value="2940128608222714821" />
+    <property role="TrG5h" value="NodeCheckingFunction" />
+    <property role="34LRSv" value="node check" />
+    <property role="3GE5qa" value="checkingFunction" />
+    <ref role="1TJDcQ" node="1BlvkgVC4T5" resolve="LinterCheckingFunction" />
+    <node concept="PrWs8" id="2zdrQh7hiBS" role="PzmwI">
+      <ref role="PrY4T" node="2zdrQh7hiBR" resolve="IHaveConceptDeclarationReference" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2zdrQh77lN5">
+    <property role="EcuMT" value="2940128608223321285" />
+    <property role="TrG5h" value="RootNodeCheckingFunction" />
+    <property role="34LRSv" value="root node check" />
+    <property role="3GE5qa" value="checkingFunction" />
+    <ref role="1TJDcQ" node="2zdrQh751J5" resolve="NodeCheckingFunction" />
+  </node>
+  <node concept="1TIwiD" id="2zdrQh7ajrb">
+    <property role="R5$K7" value="false" />
+    <property role="R5$K2" value="false" />
+    <property role="TrG5h" value="ConceptFunctionParameter_RootNode" />
+    <property role="2_RsDV" value="4G1g3fIR8JG/none" />
+    <property role="3GE5qa" value="" />
+    <property role="34LRSv" value="rootNode" />
+    <property role="EcuMT" value="2940128608224097995" />
+    <ref role="1TJDcQ" node="2zdrQh751DQ" resolve="ConceptFunctionParameter_Node" />
+  </node>
+  <node concept="PlHQZ" id="2zdrQh7hiBR">
+    <property role="EcuMT" value="2940128608225929719" />
+    <property role="TrG5h" value="IHaveConceptDeclarationReference" />
+    <node concept="1TJgyj" id="gXXX56I" role="1TKVEi">
+      <property role="20kJfa" value="conceptDeclaration" />
+      <property role="IQ2ns" value="1166049300910" />
+      <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6EiPrTPStgx">
+    <property role="EcuMT" value="7679435328618353697" />
+    <property role="TrG5h" value="ForwardException" />
+    <property role="34LRSv" value="forwardException" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="6EiPrTPSyYw" role="1TKVEi">
+      <property role="IQ2ns" value="7679435328618377120" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="exception" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1BlvkgVC4T5">
+    <property role="EcuMT" value="1861531752999177797" />
+    <property role="TrG5h" value="LinterCheckingFunction" />
+    <property role="R5$K7" value="true" />
+    <property role="3GE5qa" value="checkingFunction" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+  </node>
+  <node concept="25R3W" id="18IBE403M_E">
+    <property role="3F6X1D" value="1310158955939309930" />
+    <property role="TrG5h" value="ScriptType" />
+    <ref role="1H5jkz" node="18IBE403M_F" resolve="generic" />
+    <node concept="25R33" id="18IBE403M_F" role="25R1y">
+      <property role="3tVfz5" value="1310158955939309931" />
+      <property role="TrG5h" value="generic" />
+      <property role="1L1pqM" value="generic" />
+    </node>
+    <node concept="25R33" id="18IBE403M_G" role="25R1y">
+      <property role="3tVfz5" value="1310158955939309932" />
+      <property role="TrG5h" value="module" />
+      <property role="1L1pqM" value="module" />
+    </node>
+    <node concept="25R33" id="18IBE403M_H" role="25R1y">
+      <property role="3tVfz5" value="1310158955939309933" />
+      <property role="TrG5h" value="model" />
+      <property role="1L1pqM" value="model" />
+    </node>
+    <node concept="25R33" id="18IBE403M_I" role="25R1y">
+      <property role="3tVfz5" value="1310158955939309934" />
+      <property role="TrG5h" value="root_node" />
+      <property role="1L1pqM" value="root node" />
+    </node>
+    <node concept="25R33" id="18IBE403M_J" role="25R1y">
+      <property role="3tVfz5" value="1310158955939309935" />
+      <property role="TrG5h" value="node" />
+      <property role="1L1pqM" value="node" />
     </node>
   </node>
 </model>
