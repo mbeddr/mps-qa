@@ -9,10 +9,9 @@
   <imports>
     <import index="a1af" ref="r:839ac015-7de1-49f3-ac8f-8d7c6d47259d(org.mpsqa.lint.generic.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-    <import index="qqy" ref="r:baac1a2f-1e52-45fa-95c5-02a3dfae441c(org.mpsqa.lint.generic.util)" />
     <import index="z1c3" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" />
-    <import index="b659" ref="r:654c665e-d426-4acf-8be1-49f83baabbb4(org.mpsqa.lint.generic.behavior)" />
+    <import index="2vvz" ref="r:e6dc4359-22d1-4635-86ba-fa2c4add1eaf(org.mpsqa.lint.generic.runtime)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -364,7 +363,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="4ACPUrdEDep" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
       <node concept="37vLTG" id="4ACPUrdEFXL" role="3clF46">
         <property role="TrG5h" value="project" />
@@ -438,7 +437,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="4ACPUrdEDex" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="3Tm1VV" id="y1G8y66r_k" role="1B3o_S" />
@@ -451,9 +450,9 @@
       <node concept="3zFVjK" id="y1G8y67CFA" role="3zH0cK">
         <node concept="3clFbS" id="y1G8y67CFB" role="2VODD2">
           <node concept="3clFbF" id="y1G8y67CNm" role="3cqZAp">
-            <node concept="2YIFZM" id="2dSiT1hLgrn" role="3clFbG">
-              <ref role="37wK5l" to="qqy:y1G8y67AQP" resolve="nameOfGeneratedModelCheckerClass" />
-              <ref role="1Pybhc" to="qqy:y1G8y67AP7" resolve="NamingUtils" />
+            <node concept="2YIFZM" id="3mJ3k6P7dFW" role="3clFbG">
+              <ref role="37wK5l" to="2vvz:y1G8y67AQP" resolve="nameOfGeneratedModelCheckerClass" />
+              <ref role="1Pybhc" to="2vvz:y1G8y67AP7" resolve="NamingUtils" />
               <node concept="1PxgMI" id="2dSiT1hLgro" role="37wK5m">
                 <property role="1BlNFB" value="true" />
                 <node concept="chp4Y" id="2dSiT1hLgrp" role="3oSUPX">
@@ -472,7 +471,7 @@
       </node>
     </node>
     <node concept="3uibUv" id="4ACPUrdECUD" role="EKbjA">
-      <ref role="3uigEE" to="b659:4ACPUrdErME" resolve="ILinter" />
+      <ref role="3uigEE" to="2vvz:4ACPUrdErME" resolve="ILinter" />
     </node>
   </node>
   <node concept="bUwia" id="1vid6hjrqNk">
