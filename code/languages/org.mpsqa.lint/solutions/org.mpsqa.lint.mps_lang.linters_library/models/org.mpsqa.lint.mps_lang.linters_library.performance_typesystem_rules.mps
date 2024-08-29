@@ -137,6 +137,9 @@
         <child id="7741759128795045752" name="exp" index="2j1LYg" />
         <child id="7741759128795065723" name="paramRef" index="2j1YQj" />
       </concept>
+      <concept id="7008376823202027689" name="org.mpsqa.lint.generic.structure.ICanSkipCheckerEvaluation" flags="ng" index="3miP$Z">
+        <property id="7008376823202030902" name="skipEvaluation" index="3miQiw" />
+      </concept>
       <concept id="2555875871752198907" name="org.mpsqa.lint.generic.structure.ConceptFunctionParameter_MPSProject" flags="ng" index="1MG55F" />
       <concept id="2555875871751836213" name="org.mpsqa.lint.generic.structure.CheckableScript" flags="ng" index="1MIHA_">
         <child id="7741759128795038158" name="additionalParameters" index="2j1K4A" />
@@ -1155,6 +1158,7 @@
   </node>
   <node concept="1MIHA_" id="2QH7JPsZwNy">
     <property role="TrG5h" value="memory_hungry_checking_rule" />
+    <property role="3miQiw" value="true" />
     <node concept="2j1K4_" id="2QH7JPsZwNz" role="2j1K4A">
       <property role="TrG5h" value="typesystemModelNamesRegex" />
       <node concept="17QB3L" id="2QH7JPsZwN$" role="2j1LY4" />
