@@ -234,7 +234,7 @@
     </language>
     <language id="40ab19e9-751a-4433-b645-0e65160e58a0" name="org.mpsqa.lint.generic">
       <concept id="7741759128795038157" name="org.mpsqa.lint.generic.structure.CheckableScriptParameter" flags="ng" index="2j1K4_">
-        <child id="7741759128795045740" name="tpe" index="2j1LY4" />
+        <child id="7741759128795045740" name="type" index="2j1LY4" />
       </concept>
       <concept id="7741759128795045742" name="org.mpsqa.lint.generic.structure.IScriptsParametersAware" flags="ng" index="2j1LY6">
         <child id="7741759128795065655" name="parValues" index="2j1YRv" />
@@ -2076,6 +2076,12 @@
                                 <node concept="3oM_SD" id="5LzwHWug9m1" role="1PaTwD">
                                   <property role="3oM_SC" value="&quot;DESIGN&quot;" />
                                 </node>
+                                <node concept="3oM_SD" id="3RlZDxLsOiX" role="1PaTwD">
+                                  <property role="3oM_SC" value="and" />
+                                </node>
+                                <node concept="3oM_SD" id="3RlZDxLsOjU" role="1PaTwD">
+                                  <property role="3oM_SC" value="&quot;GENERATE_INTO&quot;" />
+                                </node>
                                 <node concept="3oM_SD" id="5LzwHWug9nX" role="1PaTwD">
                                   <property role="3oM_SC" value="are" />
                                 </node>
@@ -2149,21 +2155,42 @@
                               </node>
                             </node>
                           </node>
-                          <node concept="3fqX7Q" id="5LzwHWug77F" role="3clFbw">
-                            <node concept="2OqwBi" id="5LzwHWug77G" role="3fr31v">
-                              <node concept="2OqwBi" id="5LzwHWug77H" role="2Oq$k0">
-                                <node concept="2GrUjf" id="5LzwHWug77I" role="2Oq$k0">
-                                  <ref role="2Gs0qQ" node="7hx0FZiWhuz" resolve="dep" />
+                          <node concept="1Wc70l" id="3RlZDxLsM3k" role="3clFbw">
+                            <node concept="3fqX7Q" id="5LzwHWug77F" role="3uHU7B">
+                              <node concept="2OqwBi" id="5LzwHWug77G" role="3fr31v">
+                                <node concept="2OqwBi" id="5LzwHWug77H" role="2Oq$k0">
+                                  <node concept="2GrUjf" id="5LzwHWug77I" role="2Oq$k0">
+                                    <ref role="2Gs0qQ" node="7hx0FZiWhuz" resolve="dep" />
+                                  </node>
+                                  <node concept="liA8E" id="5LzwHWug77J" role="2OqNvi">
+                                    <ref role="37wK5l" to="w0gx:~Dependency.getScope()" resolve="getScope" />
+                                  </node>
                                 </node>
-                                <node concept="liA8E" id="5LzwHWug77J" role="2OqNvi">
-                                  <ref role="37wK5l" to="w0gx:~Dependency.getScope()" resolve="getScope" />
+                                <node concept="liA8E" id="5LzwHWug77K" role="2OqNvi">
+                                  <ref role="37wK5l" to="wyt6:~Enum.equals(java.lang.Object)" resolve="equals" />
+                                  <node concept="Rm8GO" id="5LzwHWug77L" role="37wK5m">
+                                    <ref role="Rm8GQ" to="lui2:~SDependencyScope.DESIGN" resolve="DESIGN" />
+                                    <ref role="1Px2BO" to="lui2:~SDependencyScope" resolve="SDependencyScope" />
+                                  </node>
                                 </node>
                               </node>
-                              <node concept="liA8E" id="5LzwHWug77K" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~Enum.equals(java.lang.Object)" resolve="equals" />
-                                <node concept="Rm8GO" id="5LzwHWug77L" role="37wK5m">
-                                  <ref role="Rm8GQ" to="lui2:~SDependencyScope.DESIGN" resolve="DESIGN" />
-                                  <ref role="1Px2BO" to="lui2:~SDependencyScope" resolve="SDependencyScope" />
+                            </node>
+                            <node concept="3fqX7Q" id="3RlZDxLsMNk" role="3uHU7w">
+                              <node concept="2OqwBi" id="3RlZDxLsMNl" role="3fr31v">
+                                <node concept="2OqwBi" id="3RlZDxLsMNm" role="2Oq$k0">
+                                  <node concept="2GrUjf" id="3RlZDxLsMNn" role="2Oq$k0">
+                                    <ref role="2Gs0qQ" node="7hx0FZiWhuz" resolve="dep" />
+                                  </node>
+                                  <node concept="liA8E" id="3RlZDxLsMNo" role="2OqNvi">
+                                    <ref role="37wK5l" to="w0gx:~Dependency.getScope()" resolve="getScope" />
+                                  </node>
+                                </node>
+                                <node concept="liA8E" id="3RlZDxLsMNp" role="2OqNvi">
+                                  <ref role="37wK5l" to="wyt6:~Enum.equals(java.lang.Object)" resolve="equals" />
+                                  <node concept="Rm8GO" id="3RlZDxLsNJD" role="37wK5m">
+                                    <ref role="Rm8GQ" to="lui2:~SDependencyScope.GENERATES_INTO" resolve="GENERATES_INTO" />
+                                    <ref role="1Px2BO" to="lui2:~SDependencyScope" resolve="SDependencyScope" />
+                                  </node>
                                 </node>
                               </node>
                             </node>

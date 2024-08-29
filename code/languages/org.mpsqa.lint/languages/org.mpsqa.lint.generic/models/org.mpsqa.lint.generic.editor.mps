@@ -13,10 +13,10 @@
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="b659" ref="r:654c665e-d426-4acf-8be1-49f83baabbb4(org.mpsqa.lint.generic.behavior)" />
-    <import index="qqy" ref="r:baac1a2f-1e52-45fa-95c5-02a3dfae441c(org.mpsqa.lint.generic.util)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
     <import index="a1af" ref="r:839ac015-7de1-49f3-ac8f-8d7c6d47259d(org.mpsqa.lint.generic.structure)" />
+    <import index="2vvz" ref="r:e6dc4359-22d1-4635-86ba-fa2c4add1eaf(org.mpsqa.lint.generic.runtime)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" implicit="true" />
@@ -608,7 +608,7 @@
                     </node>
                     <node concept="_YKpA" id="7Jrb4Zs_P33" role="1tU5fm">
                       <node concept="3uibUv" id="19GnlsUl8xY" role="_ZDj9">
-                        <ref role="3uigEE" to="qqy:19GnlsUkKsu" resolve="Result" />
+                        <ref role="3uigEE" to="2vvz:19GnlsUkKsu" resolve="Result" />
                       </node>
                     </node>
                   </node>
@@ -646,7 +646,7 @@
                     </node>
                     <node concept="_YKpA" id="7Jrb4ZsyOoJ" role="1tU5fm">
                       <node concept="3uibUv" id="19GnlsUl8Br" role="_ZDj9">
-                        <ref role="3uigEE" to="qqy:19GnlsUkKsu" resolve="Result" />
+                        <ref role="3uigEE" to="2vvz:19GnlsUkKsu" resolve="Result" />
                       </node>
                     </node>
                   </node>
@@ -1185,7 +1185,7 @@
     <ref role="1XX52x" to="a1af:6HKgezStO7d" resolve="CheckableScriptParameter" />
     <node concept="3EZMnI" id="6HKgezSuyXz" role="2wV5jI">
       <node concept="3F1sOY" id="6HKgezSuyXE" role="3EZMnx">
-        <ref role="1NtTu8" to="a1af:6HKgezStPXG" resolve="tpe" />
+        <ref role="1NtTu8" to="a1af:6HKgezStPXG" resolve="type" />
       </node>
       <node concept="3F0A7n" id="6HKgezSuyXO" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
