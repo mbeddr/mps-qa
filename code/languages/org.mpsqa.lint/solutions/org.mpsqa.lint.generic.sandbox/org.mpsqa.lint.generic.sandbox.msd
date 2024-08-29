@@ -54,7 +54,6 @@
     <module reference="a1250a4d-c090-42c3-ad7c-d298a3357dd4(jetbrains.mps.make.runtime)" version="0" />
     <module reference="40ab19e9-751a-4433-b645-0e65160e58a0(org.mpsqa.lint.generic)" version="0" />
     <module reference="a86f8e91-0c59-4691-a7ce-49b7e2c7c3a9(org.mpsqa.lint.generic.linters_library)" version="0" />
-    <module reference="b15468d9-435b-45b2-bf51-3f984f734cc4(org.mpsqa.lint.generic.runtime)" version="0" />
     <module reference="ca35b9c2-3e20-44ff-a0ac-0d0ce67c8b34(org.mpsqa.lint.generic.runtime2)" version="0" />
     <module reference="6ce900c0-bfaf-49ef-a192-9b1044b1ac55(org.mpsqa.lint.generic.sandbox)" version="0" />
   </dependencyVersions>
