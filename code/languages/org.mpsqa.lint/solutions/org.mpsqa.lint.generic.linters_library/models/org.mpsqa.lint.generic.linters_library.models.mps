@@ -222,7 +222,7 @@
         <child id="7741759128795045752" name="exp" index="2j1LYg" />
         <child id="7741759128795065723" name="paramRef" index="2j1YQj" />
       </concept>
-      <concept id="7679435328618353697" name="org.mpsqa.lint.generic.structure.ForwardException" flags="ng" index="vsK6v">
+      <concept id="7679435328618353697" name="org.mpsqa.lint.generic.structure.FormatException" flags="ng" index="vsK6v">
         <child id="7679435328618377120" name="exception" index="vsfCu" />
       </concept>
       <concept id="5024442900372562022" name="org.mpsqa.lint.generic.structure.ModelCheckingFunction" flags="ig" index="ViGxk" />

@@ -246,7 +246,7 @@
         <child id="7741759128795065723" name="paramRef" index="2j1YQj" />
       </concept>
       <concept id="1209559114970" name="org.mpsqa.lint.generic.structure.ConceptFunctionParameter_Module" flags="nn" index="2vlQn3" />
-      <concept id="7679435328618353697" name="org.mpsqa.lint.generic.structure.ForwardException" flags="ng" index="vsK6v">
+      <concept id="7679435328618353697" name="org.mpsqa.lint.generic.structure.FormatException" flags="ng" index="vsK6v">
         <child id="7679435328618377120" name="exception" index="vsfCu" />
       </concept>
       <concept id="5024442900367365755" name="org.mpsqa.lint.generic.structure.ModuleCheckingFunction" flags="ig" index="V6NT9" />
