@@ -81,10 +81,10 @@
     <language id="40ab19e9-751a-4433-b645-0e65160e58a0" name="org.mpsqa.lint.generic">
       <concept id="2555875871752198907" name="org.mpsqa.lint.generic.structure.ConceptFunctionParameter_MPSProject" flags="ng" index="1MG55F" />
       <concept id="2555875871751836213" name="org.mpsqa.lint.generic.structure.CheckableScript" flags="ng" index="1MIHA_">
-        <child id="1716492013482699988" name="checkingClosure" index="14J5yK" />
-        <child id="2555875871751847640" name="explanation" index="1MIJl8" />
+        <child id="1716492013482699988" name="check" index="14J5yK" />
+        <child id="2555875871751847640" name="documentation" index="1MIJl8" />
       </concept>
-      <concept id="2555875871751904530" name="org.mpsqa.lint.generic.structure.CheckingFunction" flags="ig" index="1MIXq2" />
+      <concept id="2555875871751904530" name="org.mpsqa.lint.generic.structure.GenericCheckingFunction" flags="ig" index="1MIXq2" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -433,7 +433,7 @@
                         </node>
                         <node concept="3cpWs3" id="4I5DMJFttWX" role="3uHU7B">
                           <node concept="Xl_RD" id="4I5DMJFtrDw" role="3uHU7B">
-                            <property role="Xl_RC" value="module '" />
+                            <property role="Xl_RC" value="Module '" />
                           </node>
                           <node concept="37vLTw" id="4I5DMJFtusq" role="3uHU7w">
                             <ref role="3cqZAo" node="4I5DMJFtqRQ" resolve="it" />
@@ -502,6 +502,9 @@
           <property role="3oM_SC" value="hence" />
         </node>
         <node concept="3oM_SD" id="6wojtGU5kFd" role="1PaTwD">
+          <property role="3oM_SC" value="are" />
+        </node>
+        <node concept="3oM_SD" id="63CQ8uYRYM1" role="1PaTwD">
           <property role="3oM_SC" value="not" />
         </node>
         <node concept="3oM_SD" id="6wojtGU5kFt" role="1PaTwD">
