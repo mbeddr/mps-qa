@@ -3081,7 +3081,7 @@
                   <node concept="2OqwBi" id="34euvBSCHBI" role="37wK5m">
                     <node concept="2ShNRf" id="6nj_ILmBUsN" role="2Oq$k0">
                       <node concept="HV5vD" id="107f053Tj_z" role="2ShVmc">
-                        <ref role="HV5vE" to="wsw7:7X3$Ctw7ww1" resolve="ModelsExtractorImpl" />
+                        <ref role="HV5vE" to="wsw7:7X3$Ctw7ww1" resolve="ModelCheckerBuilder.ModelsExtractorImpl" />
                       </node>
                     </node>
                     <node concept="liA8E" id="34euvBSCHOa" role="2OqNvi">
