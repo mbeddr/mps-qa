@@ -2,7 +2,9 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/org.mpsqa.profile.generator/org.mpsqa.profile.generator.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.profile.generator.pluginSolution/org.mpsqa.profile.generator.pluginSolution.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.profile.generator.sandbox/org.mpsqa.profile.generator.sandbox.msd" folder="" />
     </projectModules>
   </component>
 </project>
