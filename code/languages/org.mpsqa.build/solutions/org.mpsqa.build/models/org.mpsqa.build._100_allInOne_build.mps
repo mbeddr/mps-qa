@@ -15,6 +15,7 @@
     <import index="kzun" ref="r:74b82ce9-7b88-4c92-9fe1-09b5d7a132b1(org.mpsqa.build._060_arch_build)" />
     <import index="91f2" ref="r:4924ad27-94e5-4602-a74a-ba87607fcdcc(org.mpsqa.build._070_deprecated_build)" />
     <import index="390y" ref="r:7cf4c5c6-be6b-461a-9752-5a87d0b55129(org.mpsqa.build._080_lint_build)" />
+    <import index="htun" ref="r:d5c51f7e-ae84-4374-a97c-990f1646bb5a(org.mpsqa.build._090_profile_build)" />
   </imports>
   <registry>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
@@ -207,6 +208,9 @@
     <node concept="2sgV4H" id="3ywQ_KXElck" role="1l3spa">
       <ref role="1l3spb" to="390y:3dqUbgQmcyp" resolve="org.mpsqa.lint" />
     </node>
+    <node concept="2sgV4H" id="6ueixcLDxdq" role="1l3spa">
+      <ref role="1l3spb" to="htun:6Z3QA_yyZMM" resolve="org.mpsqa.profile" />
+    </node>
     <node concept="10PD9b" id="3PN66LDqBUz" role="10PD9s" />
     <node concept="3b7kt6" id="3PN66LDqBU$" role="10PD9s" />
     <node concept="398rNT" id="3PN66LDqBU_" role="1l3spd">
@@ -271,6 +275,9 @@
       </node>
       <node concept="3_I8Xc" id="3ywQ_KXElbX" role="39821P">
         <ref role="3_I8Xa" to="390y:3dqUbgQmcyE" resolve="org.mpsqa.lint" />
+      </node>
+      <node concept="3_I8Xc" id="6ueixcLDxdV" role="39821P">
+        <ref role="3_I8Xa" to="htun:6Z3QA_yyZN5" resolve="org.mpsqa.profile" />
       </node>
     </node>
     <node concept="55IIr" id="3PN66LDqBUG" role="auvoZ" />
