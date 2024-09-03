@@ -12,6 +12,9 @@
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="1a8554c4-eb84-43ba-8c34-6f0d90c6e75a" name="jetbrains.mps.lang.smodel.query" version="3" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
+    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
   </languages>
   <imports>
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
@@ -25,7 +28,7 @@
     <import index="wyuk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.components(MPS.Core/)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="hkkt" ref="r:905f3835-f5d7-48c4-a6d6-3110a028428c(org.mpsqa.base.errors_suppressor.structure)" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -619,6 +622,53 @@
                                     <node concept="3lbrtF" id="1DrnXKMXdq0" role="2OqNvi" />
                                   </node>
                                   <node concept="3clFbS" id="1DrnXKMX3Qe" role="2LFqv$">
+                                    <node concept="3SKdUt" id="3eHAW53_4fk" role="3cqZAp">
+                                      <node concept="1PaTwC" id="3eHAW53_4fl" role="1aUNEU">
+                                        <node concept="3oM_SD" id="3eHAW53_6yW" role="1PaTwD">
+                                          <property role="3oM_SC" value="normalize" />
+                                        </node>
+                                        <node concept="3oM_SD" id="3eHAW53_79V" role="1PaTwD">
+                                          <property role="3oM_SC" value="error" />
+                                        </node>
+                                        <node concept="3oM_SD" id="3eHAW53_7aY" role="1PaTwD">
+                                          <property role="3oM_SC" value="messages" />
+                                        </node>
+                                      </node>
+                                    </node>
+                                    <node concept="3cpWs8" id="3eHAW53$g1O" role="3cqZAp">
+                                      <node concept="3cpWsn" id="3eHAW53$g1P" role="3cpWs9">
+                                        <property role="TrG5h" value="separator" />
+                                        <node concept="17QB3L" id="3eHAW53$p07" role="1tU5fm" />
+                                        <node concept="2YIFZM" id="3eHAW53$g1Q" role="33vP2m">
+                                          <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+                                          <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String)" resolve="getProperty" />
+                                          <node concept="Xl_RD" id="3eHAW53$g1R" role="37wK5m">
+                                            <property role="Xl_RC" value="line.separator" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                    <node concept="3clFbF" id="3eHAW53zwyl" role="3cqZAp">
+                                      <node concept="37vLTI" id="3eHAW53zwym" role="3clFbG">
+                                        <node concept="37vLTw" id="3eHAW53zwyn" role="37vLTJ">
+                                          <ref role="3cqZAo" node="1DrnXKFT0mM" resolve="msg" />
+                                        </node>
+                                        <node concept="2OqwBi" id="3eHAW53zJNQ" role="37vLTx">
+                                          <node concept="37vLTw" id="3eHAW53zC1n" role="2Oq$k0">
+                                            <ref role="3cqZAo" node="1DrnXKFT0mM" resolve="msg" />
+                                          </node>
+                                          <node concept="liA8E" id="3eHAW53zJNR" role="2OqNvi">
+                                            <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence)" resolve="replace" />
+                                            <node concept="37vLTw" id="3eHAW53$zDd" role="37wK5m">
+                                              <ref role="3cqZAo" node="3eHAW53$g1P" resolve="separator" />
+                                            </node>
+                                            <node concept="Xl_RD" id="3eHAW53zJNT" role="37wK5m">
+                                              <property role="Xl_RC" value="" />
+                                            </node>
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
                                     <node concept="3clFbJ" id="1DrnXKMXeQo" role="3cqZAp">
                                       <node concept="1Wc70l" id="1DrnXKMXBVX" role="3clFbw">
                                         <node concept="3clFbC" id="1DrnXKMXK$M" role="3uHU7w">
