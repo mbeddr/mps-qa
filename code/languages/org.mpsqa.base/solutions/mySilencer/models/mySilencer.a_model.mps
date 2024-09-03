@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:7ea618fd-a98b-4e68-92a2-ed34718d2dfa(org.mpsqa.base.errors_suppressor.democonfig.checking_results_suppressor)">
+<model ref="r:16667405-a9d5-412b-a53d-a5b81dfbba90(mySilencer.a_model)">
   <persistence version="9" />
   <languages>
     <use id="bc0be9e0-3b05-4108-89c1-9ae0623ef4fe" name="org.mpsqa.base.errors_suppressor" version="0" />
+    <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
   </languages>
   <imports />
   <registry>
@@ -34,10 +35,10 @@
     </language>
   </registry>
   <node concept="CIxxj" id="1k2QJ73raDf">
-    <property role="TrG5h" value="warnings_silencer" />
+    <property role="TrG5h" value="errors_silencer" />
     <node concept="CIwRw" id="1k2QJ73raIW" role="CIz68">
-      <property role="CIw2t" value="^Warning: this warning is a demo and will be suppressed -.*$" />
-      <property role="CIGSN" value="1DrnXKMSp1W/WARNING" />
+      <property role="CIw2t" value=".*" />
+      <property role="CIGSN" value="1DrnXKMSoVr/ERROR" />
       <node concept="1Pa9Pv" id="1k2QJ73GD5X" role="CIwz1">
         <node concept="1PaTwC" id="1k2QJ73GD5Y" role="1PaQFQ">
           <node concept="3oM_SD" id="1k2QJ73GD6r" role="1PaTwD">

@@ -28,8 +28,8 @@
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
-      <concept id="1207055528241" name="jetbrains.mps.lang.typesystem.structure.WarningStatement" flags="nn" index="a7r0C">
-        <child id="1207055552304" name="warningText" index="a7wSD" />
+      <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
+        <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
@@ -62,21 +62,21 @@
   <node concept="18kY7G" id="367UzyGC0vn">
     <property role="TrG5h" value="demo_warning_to_be_suppressed" />
     <node concept="3clFbS" id="367UzyGC0vo" role="18ibNy">
-      <node concept="a7r0C" id="367UzyGC0vz" role="3cqZAp">
-        <node concept="3cpWs3" id="367UzyGFlbD" role="a7wSD">
-          <node concept="2OqwBi" id="367UzyGFltV" role="3uHU7w">
-            <node concept="1YBJjd" id="367UzyGFleL" role="2Oq$k0">
+      <node concept="2MkqsV" id="TNNGfTgkpm" role="3cqZAp">
+        <node concept="3cpWs3" id="TNNGfTgkpo" role="2MkJ7o">
+          <node concept="2OqwBi" id="TNNGfTgkpp" role="3uHU7w">
+            <node concept="1YBJjd" id="TNNGfTgkpq" role="2Oq$k0">
               <ref role="1YBMHb" node="367UzyGC0vq" resolve="conceptDemo" />
             </node>
-            <node concept="3TrcHB" id="367UzyGFlR7" role="2OqNvi">
+            <node concept="3TrcHB" id="TNNGfTgkpr" role="2OqNvi">
               <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
             </node>
           </node>
-          <node concept="Xl_RD" id="367UzyGC0vJ" role="3uHU7B">
+          <node concept="Xl_RD" id="TNNGfTgkps" role="3uHU7B">
             <property role="Xl_RC" value="this warning is a demo and will be suppressed - " />
           </node>
         </node>
-        <node concept="1YBJjd" id="367UzyGFlX4" role="1urrMF">
+        <node concept="1YBJjd" id="TNNGfTgkpt" role="1urrMF">
           <ref role="1YBMHb" node="367UzyGC0vq" resolve="conceptDemo" />
         </node>
       </node>
