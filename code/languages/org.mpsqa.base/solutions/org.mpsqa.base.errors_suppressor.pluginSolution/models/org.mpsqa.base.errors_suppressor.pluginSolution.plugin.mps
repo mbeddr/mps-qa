@@ -12,6 +12,9 @@
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="1a8554c4-eb84-43ba-8c34-6f0d90c6e75a" name="jetbrains.mps.lang.smodel.query" version="3" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
+    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
   </languages>
   <imports>
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
@@ -25,7 +28,7 @@
     <import index="wyuk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.components(MPS.Core/)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="hkkt" ref="r:905f3835-f5d7-48c4-a6d6-3110a028428c(org.mpsqa.base.errors_suppressor.structure)" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -105,6 +108,7 @@
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271546410" name="jetbrains.mps.baseLanguage.structure.TrimOperation" flags="nn" index="17S1cR" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -619,6 +623,19 @@
                                     <node concept="3lbrtF" id="1DrnXKMXdq0" role="2OqNvi" />
                                   </node>
                                   <node concept="3clFbS" id="1DrnXKMX3Qe" role="2LFqv$">
+                                    <node concept="3clFbF" id="3eHAW53zwyl" role="3cqZAp">
+                                      <node concept="37vLTI" id="3eHAW53zwym" role="3clFbG">
+                                        <node concept="37vLTw" id="3eHAW53zwyn" role="37vLTJ">
+                                          <ref role="3cqZAo" node="1DrnXKFT0mM" resolve="msg" />
+                                        </node>
+                                        <node concept="2OqwBi" id="3eHAW53zJNQ" role="37vLTx">
+                                          <node concept="37vLTw" id="3eHAW53zC1n" role="2Oq$k0">
+                                            <ref role="3cqZAo" node="1DrnXKFT0mM" resolve="msg" />
+                                          </node>
+                                          <node concept="17S1cR" id="7zx_7y7Ecs2" role="2OqNvi" />
+                                        </node>
+                                      </node>
+                                    </node>
                                     <node concept="3clFbJ" id="1DrnXKMXeQo" role="3cqZAp">
                                       <node concept="1Wc70l" id="1DrnXKMXBVX" role="3clFbw">
                                         <node concept="3clFbC" id="1DrnXKMXK$M" role="3uHU7w">
