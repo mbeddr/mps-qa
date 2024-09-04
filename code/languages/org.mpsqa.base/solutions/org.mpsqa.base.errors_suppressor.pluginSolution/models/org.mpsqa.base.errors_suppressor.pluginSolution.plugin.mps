@@ -108,6 +108,7 @@
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271546410" name="jetbrains.mps.baseLanguage.structure.TrimOperation" flags="nn" index="17S1cR" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -622,32 +623,6 @@
                                     <node concept="3lbrtF" id="1DrnXKMXdq0" role="2OqNvi" />
                                   </node>
                                   <node concept="3clFbS" id="1DrnXKMX3Qe" role="2LFqv$">
-                                    <node concept="3SKdUt" id="3eHAW53_4fk" role="3cqZAp">
-                                      <node concept="1PaTwC" id="3eHAW53_4fl" role="1aUNEU">
-                                        <node concept="3oM_SD" id="3eHAW53_6yW" role="1PaTwD">
-                                          <property role="3oM_SC" value="normalize" />
-                                        </node>
-                                        <node concept="3oM_SD" id="3eHAW53_79V" role="1PaTwD">
-                                          <property role="3oM_SC" value="error" />
-                                        </node>
-                                        <node concept="3oM_SD" id="3eHAW53_7aY" role="1PaTwD">
-                                          <property role="3oM_SC" value="messages" />
-                                        </node>
-                                      </node>
-                                    </node>
-                                    <node concept="3cpWs8" id="3eHAW53$g1O" role="3cqZAp">
-                                      <node concept="3cpWsn" id="3eHAW53$g1P" role="3cpWs9">
-                                        <property role="TrG5h" value="separator" />
-                                        <node concept="17QB3L" id="3eHAW53$p07" role="1tU5fm" />
-                                        <node concept="2YIFZM" id="3eHAW53$g1Q" role="33vP2m">
-                                          <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
-                                          <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String)" resolve="getProperty" />
-                                          <node concept="Xl_RD" id="3eHAW53$g1R" role="37wK5m">
-                                            <property role="Xl_RC" value="line.separator" />
-                                          </node>
-                                        </node>
-                                      </node>
-                                    </node>
                                     <node concept="3clFbF" id="3eHAW53zwyl" role="3cqZAp">
                                       <node concept="37vLTI" id="3eHAW53zwym" role="3clFbG">
                                         <node concept="37vLTw" id="3eHAW53zwyn" role="37vLTJ">
@@ -657,15 +632,7 @@
                                           <node concept="37vLTw" id="3eHAW53zC1n" role="2Oq$k0">
                                             <ref role="3cqZAo" node="1DrnXKFT0mM" resolve="msg" />
                                           </node>
-                                          <node concept="liA8E" id="3eHAW53zJNR" role="2OqNvi">
-                                            <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence)" resolve="replace" />
-                                            <node concept="37vLTw" id="3eHAW53$zDd" role="37wK5m">
-                                              <ref role="3cqZAo" node="3eHAW53$g1P" resolve="separator" />
-                                            </node>
-                                            <node concept="Xl_RD" id="3eHAW53zJNT" role="37wK5m">
-                                              <property role="Xl_RC" value="" />
-                                            </node>
-                                          </node>
+                                          <node concept="17S1cR" id="7zx_7y7Ecs2" role="2OqNvi" />
                                         </node>
                                       </node>
                                     </node>
