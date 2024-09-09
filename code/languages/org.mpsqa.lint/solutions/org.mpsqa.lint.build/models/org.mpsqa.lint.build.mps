@@ -9,6 +9,7 @@
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
     <import index="390y" ref="r:7cf4c5c6-be6b-461a-9752-5a87d0b55129(org.mpsqa.build._080_lint_build)" />
+    <import index="btyb" ref="r:f164422f-f930-4439-ba9a-ecdd8fa81ba8(com.mbeddr.logicalview.checks.build)" />
   </imports>
   <registry>
     <language id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests">
@@ -126,6 +127,21 @@
     </node>
     <node concept="2sgV4H" id="3C011mxaO2f" role="1l3spa">
       <ref role="1l3spb" to="390y:3dqUbgQmcyp" resolve="org.mpsqa.lint" />
+    </node>
+    <node concept="2sgV4H" id="7cRQkn1_cBy" role="1l3spa">
+      <ref role="1l3spb" to="btyb:2OOCWIyjp5F" resolve="com.mbeddr.logicalview.checks" />
+      <node concept="398BVA" id="1RmXBL5D4nn" role="2JcizS">
+        <ref role="398BVh" node="6dJ4vxiMMPU" resolve="mps.macro.mpsqa.home" />
+        <node concept="2Ry0Ak" id="1RmXBL5D4nr" role="iGT6I">
+          <property role="2Ry0Am" value="build" />
+          <node concept="2Ry0Ak" id="1RmXBL5D4nu" role="2Ry0An">
+            <property role="2Ry0Am" value="dependencies" />
+            <node concept="2Ry0Ak" id="1RmXBL5D4nx" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.logicalview.checks" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="398rNT" id="1GhTetdB0nZ" role="1l3spd">
       <property role="TrG5h" value="mpsqa.home" />

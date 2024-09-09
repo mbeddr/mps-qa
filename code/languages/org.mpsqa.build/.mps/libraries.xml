@@ -19,6 +19,22 @@
             </Library>
           </value>
         </entry>
+        <entry key="com.mbeddr.logicalview.checks">
+          <value>
+            <Library>
+              <option name="name" value="com.mbeddr.logicalview.checks" />
+              <option name='path' value='$PROJECT_DIR$/../../../build/dependencies/com.mbeddr.logicalview.checks' />            
+   			    </Library>
+          </value>
+        </entry>
+        <entry key="com.mbeddr.logicalview.checks.all">
+          <value>
+            <Library>
+              <option name="name" value="com.mbeddr.logicalview.checks.all" />
+              <option name='path' value='$PROJECT_DIR$/../../../build/dependencies/com.mbeddr.logicalview.checks.all' />            
+   			    </Library>
+          </value>
+        </entry>
       </map>
     </option>
   </component>

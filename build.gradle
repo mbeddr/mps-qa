@@ -92,6 +92,7 @@ dependencies {
     mps "com.jetbrains:mps:$mpsVersion"
     antLib "org.apache.ant:ant-junit:1.10.6"
     antLib "org.jacoco:org.jacoco.ant:0.8.12"
+    languageLibs "com.mbeddr:logicalview.checks:2022.3+"
 }
 
 repositories {
@@ -127,6 +128,13 @@ if (project.skipResolveMps) {
     }
 }
 
+task resolveLanguageLibs(type: Sync) {
+    from {
+        configurations.languageLibs.resolve().collect { zipTree(it) }
+    }
+    into "$buildDir/dependencies"
+}
+
 // tools needed for compiler support in ant calls
 ext.buildScriptClasspath = project.configurations.antLib.fileCollection { true } +
         project.files("$project.jdk_home/lib/tools.jar")
@@ -160,7 +168,7 @@ task configureJava {
 
 // All MPS tasks depend on configureJava and resolveMps
 tasks.withType(RunAntScript).configureEach {
-    dependsOn(configureJava, resolveMps)
+    dependsOn(configureJava, resolveMps, resolveLanguageLibs)
 }
 
 File scriptFile(String name) {

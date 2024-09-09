@@ -140,6 +140,9 @@
     <node concept="PrWs8" id="652KpqR2q88" role="PzmwI">
       <ref role="PrY4T" node="652KpqR2pyD" resolve="ICanSkipCheckerEvaluation" />
     </node>
+    <node concept="PrWs8" id="4qVSwJULNcW" role="PzmwI">
+      <ref role="PrY4T" node="5A9oRzriInI" resolve="IExcludeFromLogicalView" />
+    </node>
     <node concept="1irR5M" id="2dSiT1hKS3v" role="rwd14">
       <property role="2$rrk2" value="1" />
       <node concept="1irPie" id="2dSiT1hKS3$" role="1irR9h">
@@ -189,6 +192,9 @@
     </node>
     <node concept="PrWs8" id="652KpqR2q4M" role="PzmwI">
       <ref role="PrY4T" node="652KpqR2pyD" resolve="ICanSkipCheckerEvaluation" />
+    </node>
+    <node concept="PrWs8" id="4qVSwJUKKAH" role="PzmwI">
+      <ref role="PrY4T" node="5A9oRzriInI" resolve="IExcludeFromLogicalView" />
     </node>
     <node concept="1irR5M" id="3ibIDIkmpeS" role="rwd14">
       <property role="2$rrk2" value="2" />
@@ -497,6 +503,16 @@
       <property role="3tVfz5" value="1310158955939309935" />
       <property role="TrG5h" value="node" />
       <property role="1L1pqM" value="node" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="5A9oRzriInI">
+    <property role="EcuMT" value="6451797311911290350" />
+    <property role="TrG5h" value="IExcludeFromLogicalView" />
+    <property role="3GE5qa" value="logicalview" />
+    <node concept="1TJgyi" id="5A9oRzriInK" role="1TKVEl">
+      <property role="IQ2nx" value="6451797311911290352" />
+      <property role="TrG5h" value="excludeFromLocicalView" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
 </model>

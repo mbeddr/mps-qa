@@ -16,6 +16,7 @@
     <import index="91f2" ref="r:4924ad27-94e5-4602-a74a-ba87607fcdcc(org.mpsqa.build._070_deprecated_build)" />
     <import index="390y" ref="r:7cf4c5c6-be6b-461a-9752-5a87d0b55129(org.mpsqa.build._080_lint_build)" />
     <import index="htun" ref="r:d5c51f7e-ae84-4374-a97c-990f1646bb5a(org.mpsqa.build._090_profile_build)" />
+    <import index="btyb" ref="r:f164422f-f930-4439-ba9a-ecdd8fa81ba8(com.mbeddr.logicalview.checks.build)" />
   </imports>
   <registry>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
@@ -156,6 +157,9 @@
       <node concept="m$_yC" id="3ALipV_2n6_" role="m$_yJ">
         <ref role="m$_y1" to="hx16:2XCAdv5uaeq" resolve="org.mpsqa.testing.build" />
       </node>
+      <node concept="m$_yC" id="1D$BtZ1Lq05" role="m$_yJ">
+        <ref role="m$_y1" to="btyb:73Pj8z_m9Xe" resolve="com.mbeddr.logicalview.checks.build" />
+      </node>
       <node concept="m$_yB" id="fm3v0X36N2" role="m$_yh">
         <ref role="m$_yA" node="5Xjjs0Nf2r4" resolve="org.mpsqa.build" />
       </node>
@@ -210,6 +214,21 @@
     </node>
     <node concept="2sgV4H" id="6ueixcLDxdq" role="1l3spa">
       <ref role="1l3spb" to="htun:6Z3QA_yyZMM" resolve="org.mpsqa.profile" />
+    </node>
+    <node concept="2sgV4H" id="6g1zsXb1fxg" role="1l3spa">
+      <ref role="1l3spb" to="btyb:2OOCWIyjp5F" resolve="com.mbeddr.logicalview.checks" />
+      <node concept="398BVA" id="6g1zsXb1fxs" role="2JcizS">
+        <ref role="398BVh" node="3PN66LDqBU_" resolve="mpsqa.home" />
+        <node concept="2Ry0Ak" id="6g1zsXb1fxv" role="iGT6I">
+          <property role="2Ry0Am" value="build" />
+          <node concept="2Ry0Ak" id="6g1zsXb1fxy" role="2Ry0An">
+            <property role="2Ry0Am" value="dependencies" />
+            <node concept="2Ry0Ak" id="1D$BtZ1Lq06" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.logicalview.checks" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="10PD9b" id="3PN66LDqBUz" role="10PD9s" />
     <node concept="3b7kt6" id="3PN66LDqBU$" role="10PD9s" />
@@ -375,6 +394,11 @@
       <node concept="1SiIV0" id="3ALipV_2n6m" role="3bR37C">
         <node concept="3bR9La" id="3ALipV_2n6n" role="1SiIV1">
           <ref role="3bR37D" to="hx16:2XCAdv5uaH8" resolve="org.mpsqa.testing.build" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="1o7kAwnmbaF" role="3bR37C">
+        <node concept="3bR9La" id="1o7kAwnmbaG" role="1SiIV1">
+          <ref role="3bR37D" to="btyb:73Pj8z_m9Xt" resolve="com.mbeddr.logicalview.checks.build" />
         </node>
       </node>
     </node>

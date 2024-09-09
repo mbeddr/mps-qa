@@ -3,12 +3,28 @@
   <component name="ProjectLibraryManager">
     <option name="libraries">
       <map>
+        <entry key="mps-qa.base">
+          <value>
+            <Library>
+              <option name="name" value="mps-qa.base" />
+              <option name="path" value="${mpsqa.home}/code/languages/org.mpsqa.base" />
+            </Library>
+          </value>
+        </entry>
         <entry key="mps-qa.build">
           <value>
             <Library>
               <option name="name" value="mps-qa.build" />
               <option name="path" value="${mpsqa.home}/code/languages/org.mpsqa.build" />
             </Library>
+          </value>
+        </entry>
+        <entry key="com.mbeddr.logicalview.checks">
+          <value>
+            <Library>
+              <option name="name" value="com.mbeddr.logicalview.checks" />
+              <option name='path' value='$PROJECT_DIR$/../../../build/dependencies/com.mbeddr.logicalview.checks' />            
+   			    </Library>
           </value>
         </entry>
       </map>

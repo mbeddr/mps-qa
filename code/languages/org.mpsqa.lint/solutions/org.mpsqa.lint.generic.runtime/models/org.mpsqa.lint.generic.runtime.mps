@@ -12,6 +12,9 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="z1c3" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" />
+    <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
+    <import index="wsw7" ref="r:ba41e9c6-15ca-4a47-95f2-6a81c2318547(jetbrains.mps.checkers)" />
+    <import index="d6hs" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.errors.item(MPS.Core/)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -38,9 +41,14 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
+        <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
+        <reference id="1144432896254" name="enumClass" index="1Px2BO" />
+      </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
+      <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
@@ -49,10 +57,17 @@
       <concept id="1164991038168" name="jetbrains.mps.baseLanguage.structure.ThrowStatement" flags="nn" index="YS8fn">
         <child id="1164991057263" name="throwable" index="YScLw" />
       </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
+      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
+      </concept>
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ng" index="366HgL">
+        <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
       </concept>
       <concept id="1109279763828" name="jetbrains.mps.baseLanguage.structure.TypeVariableDeclaration" flags="ng" index="16euLQ" />
       <concept id="1109279851642" name="jetbrains.mps.baseLanguage.structure.GenericDeclaration" flags="ng" index="16eOlS">
@@ -202,6 +217,38 @@
       <node concept="2sp9CU" id="4ACPUrdECc7" role="3clF45">
         <ref role="2sp9C9" to="tpd4:hGQ5zx_" resolve="TypesystemQuickFix" />
       </node>
+    </node>
+    <node concept="2tJIrI" id="4qVSwJULQjg" role="jymVt" />
+    <node concept="3clFb_" id="6yLnsIrpkDj" role="jymVt">
+      <property role="TrG5h" value="setChecker" />
+      <node concept="3clFbS" id="6yLnsIrpkDm" role="3clF47" />
+      <node concept="3Tm1VV" id="6yLnsIrpkDn" role="1B3o_S" />
+      <node concept="3cqZAl" id="6yLnsIrpkCA" role="3clF45" />
+      <node concept="37vLTG" id="6yLnsIrpkQ1" role="3clF46">
+        <property role="TrG5h" value="checker" />
+        <node concept="3uibUv" id="6yLnsIrpkQ0" role="1tU5fm">
+          <ref role="3uigEE" to="wsw7:3RAxiQnF9iT" resolve="IChecker.AbstractChecker" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6yLnsIrpkIZ" role="jymVt" />
+    <node concept="3clFb_" id="6yLnsIrpkKU" role="jymVt">
+      <property role="TrG5h" value="getChecker" />
+      <node concept="3clFbS" id="6yLnsIrpkKX" role="3clF47" />
+      <node concept="3Tm1VV" id="6yLnsIrpkKY" role="1B3o_S" />
+      <node concept="3uibUv" id="6yLnsIrpkS9" role="3clF45">
+        <ref role="3uigEE" to="wsw7:3RAxiQnF9iT" resolve="IChecker.AbstractChecker" />
+      </node>
+      <node concept="2AHcQZ" id="6yLnsIrqdeO" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3vy2h6a2wMJ" role="jymVt" />
+    <node concept="3clFb_" id="3vy2h6a2yVF" role="jymVt">
+      <property role="TrG5h" value="getSourceNode" />
+      <node concept="3clFbS" id="3vy2h6a2yVI" role="3clF47" />
+      <node concept="3Tm1VV" id="3vy2h6a2yVJ" role="1B3o_S" />
+      <node concept="2sp9CU" id="3vy2h6a2yT_" role="3clF45" />
     </node>
     <node concept="3Tm1VV" id="4ACPUrdErMF" role="1B3o_S" />
   </node>
@@ -405,6 +452,48 @@
       <node concept="3Tm1VV" id="6EiPrTQe6hB" role="1B3o_S" />
     </node>
     <node concept="3Tm1VV" id="6EiPrTPS9yh" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="6UHLFjzdKNM">
+    <property role="TrG5h" value="LinterConstants" />
+    <node concept="3Tm1VV" id="6UHLFjzdKNN" role="1B3o_S" />
+    <node concept="Wx3nA" id="6yLnsIrqAAI" role="jymVt">
+      <property role="TrG5h" value="CHECKER_CATEGORY" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="6yLnsIrq_P9" role="1B3o_S" />
+      <node concept="3uibUv" id="6yLnsIrqAAq" role="1tU5fm">
+        <ref role="3uigEE" to="d6hs:~IssueKindReportItem$CheckerCategory" resolve="IssueKindReportItem.CheckerCategory" />
+      </node>
+      <node concept="2ShNRf" id="6yLnsIrqBjp" role="33vP2m">
+        <node concept="1pGfFk" id="6yLnsIrqB$K" role="2ShVmc">
+          <property role="373rjd" value="true" />
+          <ref role="37wK5l" to="d6hs:~IssueKindReportItem$CheckerCategory.&lt;init&gt;(jetbrains.mps.errors.item.IssueKindReportItem$KindLevel,java.lang.String)" resolve="IssueKindReportItem.CheckerCategory" />
+          <node concept="Rm8GO" id="6yLnsIrqBAH" role="37wK5m">
+            <ref role="Rm8GQ" to="d6hs:~IssueKindReportItem$KindLevel.PROJECT" resolve="PROJECT" />
+            <ref role="1Px2BO" to="d6hs:~IssueKindReportItem$KindLevel" resolve="IssueKindReportItem.KindLevel" />
+          </node>
+          <node concept="Xl_RD" id="6yLnsIrqBCA" role="37wK5m">
+            <property role="Xl_RC" value="linter" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="Wx3nA" id="6yLnsIrrXqT" role="jymVt">
+      <property role="TrG5h" value="ITEM_KIND" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="6yLnsIrrXqU" role="1B3o_S" />
+      <node concept="3uibUv" id="6yLnsIrrXqV" role="1tU5fm">
+        <ref role="3uigEE" to="d6hs:~IssueKindReportItem$ItemKind" resolve="IssueKindReportItem.ItemKind" />
+      </node>
+      <node concept="2OqwBi" id="6yLnsIrrYnH" role="33vP2m">
+        <node concept="10M0yZ" id="6UHLFjzdL0R" role="2Oq$k0">
+          <ref role="3cqZAo" node="6yLnsIrqAAI" resolve="CHECKER_CATEGORY" />
+          <ref role="1PxDUh" node="6UHLFjzdKNM" resolve="LinterConstants" />
+        </node>
+        <node concept="liA8E" id="6yLnsIrrYvN" role="2OqNvi">
+          <ref role="37wK5l" to="d6hs:~IssueKindReportItem$CheckerCategory.deriveItemKind()" resolve="deriveItemKind" />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 

@@ -227,6 +227,9 @@
       <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz">
         <reference id="6677504323281689839" name="conceptDeclaraton" index="3bZ5Sy" />
       </concept>
+      <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
+        <child id="1177027386292" name="conceptArgument" index="cj9EA" />
+      </concept>
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
@@ -1630,6 +1633,29 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="5A9oRzriV2U" role="13h7CS">
+      <property role="TrG5h" value="exclusionFromLogicalViewNeeded" />
+      <ref role="13i0hy" node="5A9oRzriMUy" resolve="exclusionFromLogicalViewNeeded" />
+      <node concept="3Tm1VV" id="5A9oRzriV2V" role="1B3o_S" />
+      <node concept="3clFbS" id="5A9oRzriV2Y" role="3clF47">
+        <node concept="3clFbF" id="5A9oRzriVvO" role="3cqZAp">
+          <node concept="2OqwBi" id="5A9oRzriWYN" role="3clFbG">
+            <node concept="2OqwBi" id="5A9oRzriVKf" role="2Oq$k0">
+              <node concept="13iPFW" id="5A9oRzriVvL" role="2Oq$k0" />
+              <node concept="3TrEf2" id="5A9oRzriWeE" role="2OqNvi">
+                <ref role="3Tt5mk" to="a1af:1vid6hjrANk" resolve="check" />
+              </node>
+            </node>
+            <node concept="1mIQ4w" id="4qVSwJULMRL" role="2OqNvi">
+              <node concept="chp4Y" id="4qVSwJULMSv" role="cj9EA">
+                <ref role="cht4Q" to="a1af:2dSiT1hKTOi" resolve="GenericCheckingFunction" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="5A9oRzriV2Z" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="pFzydTBOIq">
     <ref role="13h7C2" to="a1af:3ibIDIklSMn" resolve="ReuseCheckableScript" />
@@ -1658,6 +1684,27 @@
       <node concept="2I9FWS" id="pFzydTBOIE" role="3clF45">
         <ref role="2I9WkF" to="a1af:6HKgezStO7d" resolve="CheckableScriptParameter" />
       </node>
+    </node>
+    <node concept="13i0hz" id="5A9oRzriSgB" role="13h7CS">
+      <property role="TrG5h" value="exclusionFromLogicalViewNeeded" />
+      <ref role="13i0hy" node="5A9oRzriMUy" resolve="exclusionFromLogicalViewNeeded" />
+      <node concept="3Tm1VV" id="5A9oRzriSgC" role="1B3o_S" />
+      <node concept="3clFbS" id="5A9oRzriSgF" role="3clF47">
+        <node concept="3clFbF" id="5A9oRzriSMQ" role="3cqZAp">
+          <node concept="2OqwBi" id="5A9oRzriU1v" role="3clFbG">
+            <node concept="2OqwBi" id="5A9oRzriT3h" role="2Oq$k0">
+              <node concept="13iPFW" id="5A9oRzriSMN" role="2Oq$k0" />
+              <node concept="3TrEf2" id="5A9oRzriTvr" role="2OqNvi">
+                <ref role="3Tt5mk" to="a1af:3ibIDIklSMM" resolve="script" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="5A9oRzriUy0" role="2OqNvi">
+              <ref role="37wK5l" node="5A9oRzriMUy" resolve="exclusionFromLogicalViewNeeded" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="5A9oRzriSgG" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="4Wm$DJ9cjhL">
@@ -2462,6 +2509,21 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="y1G8y67AP8" role="1B3o_S" />
+  </node>
+  <node concept="13h7C7" id="4qVSwJULNmY">
+    <property role="3GE5qa" value="logicalview" />
+    <ref role="13h7C2" to="a1af:5A9oRzriInI" resolve="IExcludeFromLogicalView" />
+    <node concept="13i0hz" id="5A9oRzriMUy" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="exclusionFromLogicalViewNeeded" />
+      <node concept="3Tm1VV" id="5A9oRzriMUz" role="1B3o_S" />
+      <node concept="10P_77" id="5A9oRzriN6$" role="3clF45" />
+      <node concept="3clFbS" id="5A9oRzriMU_" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="4qVSwJULNmZ" role="13h7CW">
+      <node concept="3clFbS" id="4qVSwJULNn0" role="2VODD2" />
+    </node>
   </node>
 </model>
 
