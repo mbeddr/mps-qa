@@ -231,7 +231,6 @@
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
-      <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
         <property id="1238684351431" name="asCast" index="1BlNFB" />
       </concept>
@@ -915,19 +914,37 @@
         </node>
         <node concept="3cpWs8" id="4nQIfGCalIQ" role="3cqZAp">
           <node concept="3cpWsn" id="4nQIfGCalIR" role="3cpWs9">
-            <property role="TrG5h" value="copiedRoot" />
-            <node concept="3Tqbb2" id="4nQIfGCalAF" role="1tU5fm">
-              <ref role="ehGHo" to="a1af:6gY6GEDvQYV" resolve="ILinterResultsContainer" />
+            <property role="TrG5h" value="listOfViolations" />
+            <node concept="2I9FWS" id="7GsV_QiyT1w" role="1tU5fm">
+              <ref role="2I9WkF" to="a1af:6gY6GEDvQYS" resolve="ResultEntry" />
             </node>
-            <node concept="2OqwBi" id="4nQIfGCalIV" role="33vP2m">
-              <node concept="37vLTw" id="4nQIfGCalIW" role="2Oq$k0">
-                <ref role="3cqZAo" node="2GTaDMXYhzh" resolve="myRoot" />
+            <node concept="2ShNRf" id="7GsV_QizOXv" role="33vP2m">
+              <node concept="2T8Vx0" id="7GsV_QizOXt" role="2ShVmc">
+                <node concept="2I9FWS" id="7GsV_QizOXu" role="2T96Bj">
+                  <ref role="2I9WkF" to="a1af:6gY6GEDvQYS" resolve="ResultEntry" />
+                </node>
               </node>
-              <node concept="1$rogu" id="4nQIfGCalIX" role="2OqNvi" />
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="4nQIfGCbYOd" role="3cqZAp" />
+        <node concept="3clFbF" id="7GsV_QizYu4" role="3cqZAp">
+          <node concept="2OqwBi" id="7GsV_Qi$49V" role="3clFbG">
+            <node concept="37vLTw" id="7GsV_QizYu2" role="2Oq$k0">
+              <ref role="3cqZAo" node="4nQIfGCalIR" resolve="listOfViolations" />
+            </node>
+            <node concept="X8dFx" id="7GsV_Qi$aLO" role="2OqNvi">
+              <node concept="2OqwBi" id="4nQIfGCalIV" role="25WWJ7">
+                <node concept="37vLTw" id="4nQIfGCalIW" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2GTaDMXYhzh" resolve="myRoot" />
+                </node>
+                <node concept="3Tsc0h" id="7GsV_QizqbB" role="2OqNvi">
+                  <ref role="3TtcxE" to="a1af:6gY6GEDvQYW" resolve="violations" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="7GsV_QizTQK" role="3cqZAp" />
         <node concept="3clFbF" id="4h5BVcebsOt" role="3cqZAp">
           <node concept="2OqwBi" id="4h5BVcebsOv" role="3clFbG">
             <node concept="2DpFxk" id="4h5BVcebyPT" role="2OqNvi">
@@ -970,13 +987,8 @@
                 <property role="3clFbU" value="true" />
               </node>
             </node>
-            <node concept="2OqwBi" id="4h5BVcebsOw" role="2Oq$k0">
-              <node concept="37vLTw" id="4nQIfGCcnvq" role="2Oq$k0">
-                <ref role="3cqZAo" node="4nQIfGCalIR" resolve="copiedRoot" />
-              </node>
-              <node concept="3Tsc0h" id="4h5BVcebsOy" role="2OqNvi">
-                <ref role="3TtcxE" to="a1af:6gY6GEDvQYW" resolve="violations" />
-              </node>
+            <node concept="37vLTw" id="4nQIfGCcnvq" role="2Oq$k0">
+              <ref role="3cqZAo" node="4nQIfGCalIR" resolve="listOfViolations" />
             </node>
           </node>
         </node>
@@ -1004,13 +1016,8 @@
               </node>
             </node>
             <node concept="X8dFx" id="4nQIfGCdmuJ" role="2OqNvi">
-              <node concept="2OqwBi" id="4nQIfGCdxby" role="25WWJ7">
-                <node concept="37vLTw" id="4nQIfGCdqPZ" role="2Oq$k0">
-                  <ref role="3cqZAo" node="4nQIfGCalIR" resolve="copiedRoot" />
-                </node>
-                <node concept="3Tsc0h" id="4nQIfGCdBhl" role="2OqNvi">
-                  <ref role="3TtcxE" to="a1af:6gY6GEDvQYW" resolve="violations" />
-                </node>
+              <node concept="37vLTw" id="4nQIfGCdqPZ" role="25WWJ7">
+                <ref role="3cqZAo" node="4nQIfGCalIR" resolve="listOfViolations" />
               </node>
             </node>
           </node>
