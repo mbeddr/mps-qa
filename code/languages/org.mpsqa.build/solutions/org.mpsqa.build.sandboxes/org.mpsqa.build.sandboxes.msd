@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="org.mpsqa.build.sandboxes" uuid="597901b4-55d9-4f1d-923a-6bff55b6cc3e" moduleVersion="0">
   <models>
-    <modelRoot type="default" contentPath="${module}">
+    <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
   </models>

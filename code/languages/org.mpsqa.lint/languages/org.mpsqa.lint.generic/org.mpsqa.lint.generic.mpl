@@ -14,7 +14,7 @@
   <generators>
     <generator alias="main" namespace="org.mpsqa.lint.generic.generator" uuid="63d1f8cf-e65e-4d00-bcfa-f196ad4419ca">
       <models>
-        <modelRoot type="default" contentPath="${module}/generator">
+        <modelRoot contentPath="${module}/generator" type="default">
           <sourceRoot location="templates" />
         </modelRoot>
       </models>
