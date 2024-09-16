@@ -854,6 +854,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="5ILDA6EXOVE" role="3bR37C">
+          <node concept="3bR9La" id="5ILDA6EXOVF" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:ymnOULAU0H" resolve="jetbrains.mps.lang.test" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="55IIr" id="3dqUbgQmcy$" role="auvoZ" />
