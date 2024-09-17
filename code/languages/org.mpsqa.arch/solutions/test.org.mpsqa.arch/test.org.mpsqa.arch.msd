@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="test.org.mpsqa.arch" uuid="e9a9dadb-1692-4088-a9d0-5e75db05f61a" moduleVersion="0" compileInMPS="true">
+<solution name="test.org.mpsqa.arch" uuid="e9a9dadb-1692-4088-a9d0-5e75db05f61a" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -11,7 +11,6 @@
     </facet>
     <facet type="tests" />
   </facets>
-  <sourcePath />
   <dependencies>
     <dependency reexport="false">6c101563-ba1f-458d-b298-a75634941e0c(org.mpsqa.arch)</dependency>
   </dependencies>

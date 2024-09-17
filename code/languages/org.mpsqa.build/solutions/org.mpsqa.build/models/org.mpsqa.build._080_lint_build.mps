@@ -6,7 +6,7 @@
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
   </languages>
   <imports>
-    <import index="2tou" ref="r:18bebd8f-6332-4ffd-b628-cc9dad4ef421(org.mpsqa.base.build)" />
+    <import index="2tou" ref="r:18bebd8f-6332-4ffd-b628-cc9dad4ef421(org.mpsqa.build._010_base_build)" />
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
   </imports>
   <registry>
@@ -52,7 +52,7 @@
       <concept id="8654221991637384182" name="jetbrains.mps.build.structure.BuildFileIncludesSelector" flags="ng" index="3qWCbU">
         <property id="8654221991637384184" name="pattern" index="3qWCbO" />
       </concept>
-      <concept id="4701820937132344003" name="jetbrains.mps.build.structure.BuildLayout_Container" flags="ng" index="1y1bJS">
+      <concept id="4701820937132344003" name="jetbrains.mps.build.structure.BuildLayout_Container" flags="ngI" index="1y1bJS">
         <child id="7389400916848037006" name="children" index="39821P" />
       </concept>
       <concept id="841011766566059607" name="jetbrains.mps.build.structure.BuildStringNotEmpty" flags="ng" index="3_J27D" />
@@ -65,7 +65,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -172,20 +172,6 @@
     </node>
     <node concept="398rNT" id="3dqUbgQmcyu" role="1l3spd">
       <property role="TrG5h" value="mps.home" />
-      <node concept="55IIr" id="3dqUbgQmcyB" role="398pKh">
-        <node concept="2Ry0Ak" id="3dqUbgQmcyO" role="iGT6I">
-          <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="3dqUbgQmcze" role="2Ry0An">
-            <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="3dqUbgQmcz$" role="2Ry0An">
-              <property role="2Ry0Am" value=".." />
-              <node concept="2Ry0Ak" id="3dqUbgQmczM" role="2Ry0An">
-                <property role="2Ry0Am" value="MPS_2019_3_4" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="398rNT" id="3dqUbgQmcyv" role="1l3spd">
       <property role="TrG5h" value="mpsqa.lint.home" />
@@ -416,9 +402,6 @@
             <ref role="1Busuk" to="ffeo:3HV74$ebibC" resolve="jetbrains.mps.lang.text" />
           </node>
         </node>
-        <node concept="1E0d5M" id="3mJ3k6P96iq" role="1E1XAP">
-          <ref role="1E0d5P" node="3mJ3k6P7dwI" resolve="org.mpsqa.lint.generic.runtime" />
-        </node>
         <node concept="1SiIV0" id="3mJ3k6P96id" role="3bR37C">
           <node concept="3bR9La" id="3mJ3k6P96ie" role="1SiIV1">
             <ref role="3bR37D" node="3mJ3k6P7dwI" resolve="org.mpsqa.lint.generic.runtime" />
@@ -438,6 +421,9 @@
           <node concept="3bR9La" id="1BlvkgWy3qV" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
           </node>
+        </node>
+        <node concept="1E0d5M" id="3mJ3k6P96iq" role="1E1XAP">
+          <ref role="1E0d5P" node="3mJ3k6P7dwI" resolve="org.mpsqa.lint.generic.runtime" />
         </node>
       </node>
       <node concept="1E1JtD" id="3ghOW5HWiKq" role="2G$12L">
@@ -852,6 +838,11 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="x5N8BMMJ9t" role="3bR37C">
+          <node concept="3bR9La" id="x5N8BMMJ9u" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:3qkjbZn808a" resolve="jetbrains.mps.lang.constraints.rules.runtime" />
           </node>
         </node>
         <node concept="1SiIV0" id="5ILDA6EXOVE" role="3bR37C">
