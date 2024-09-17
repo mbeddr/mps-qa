@@ -95,6 +95,20 @@
         </node>
         <node concept="2iRfu4" id="1k2QJ73R6Q2" role="2iSdaV" />
       </node>
+      <node concept="3EZMnI" id="28p3jNfoJ4_" role="3EZMnx">
+        <node concept="VPM3Z" id="28p3jNfoJ4A" role="3F10Kt" />
+        <node concept="3F0ifn" id="28p3jNfoJ4B" role="3EZMnx">
+          <property role="3F0ifm" value="don't suppress in editor" />
+          <node concept="VechU" id="28p3jNfoJ4C" role="3F10Kt">
+            <property role="Vb096" value="fLwANPu/blue" />
+          </node>
+        </node>
+        <node concept="3F0A7n" id="28p3jNfoJ4G" role="3EZMnx">
+          <ref role="1NtTu8" to="hkkt:28p3jNfo5_$" resolve="disableInEditor" />
+        </node>
+        <node concept="2iRfu4" id="28p3jNfoJ4E" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="28p3jNfoJ4t" role="3EZMnx" />
       <node concept="3F0ifn" id="1DrnXKMSm$9" role="3EZMnx">
         <property role="3F0ifm" value="---" />
       </node>

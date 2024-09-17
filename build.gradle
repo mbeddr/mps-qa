@@ -216,6 +216,10 @@ task build_lint_analysis_languages(type: BuildLanguages, dependsOn: []) {
     script scriptFile("build-lint-analysis-languages.xml")
 }
 
+task build_profile_languages(type: BuildLanguages, dependsOn: []) {
+    script scriptFile("build-profile-languages.xml")
+}
+
 task build_sandboxes(type: BuildLanguages) {
     dependsOn 'build_base_languages'
     dependsOn 'build_unused_languages'
@@ -234,6 +238,7 @@ tasks.register('build_main_languages') {
     dependsOn 'build_arch_languages'
     dependsOn 'build_deprecation_analysis_languages'
     dependsOn 'build_lint_analysis_languages'
+	dependsOn 'build_profile_languages'
 }
 
 tasks.register('build_all_languages') {
