@@ -98,7 +98,7 @@
       <concept id="3423774024185833128" name="org.mpsqa.lint.generic.structure.NamedFullyQualifiedNodeReference" flags="ng" index="3DjtrX">
         <reference id="3423774024185833136" name="node" index="3Djtr_" />
       </concept>
-      <concept id="2940128608225929719" name="org.mpsqa.lint.generic.structure.IHaveConceptDeclarationReference" flags="ng" index="1Jy4qj">
+      <concept id="2940128608225929719" name="org.mpsqa.lint.generic.structure.IHaveConceptDeclarationReference" flags="ngI" index="1Jy4qj">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
       <concept id="2940128608222714821" name="org.mpsqa.lint.generic.structure.NodeCheckingFunction" flags="ig" index="1JQnix" />

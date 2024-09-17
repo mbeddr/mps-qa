@@ -8,7 +8,7 @@
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="73736c50-f124-433b-b789-2828a15a0adc" name="jetbrains.mps.baseLanguage.collections.trove" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
   </languages>
@@ -246,6 +246,7 @@
       <concept id="8974276187400348183" name="jetbrains.mps.lang.access.structure.ExecuteWriteActionStatement" flags="nn" index="1QHqEM" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
@@ -334,7 +335,6 @@
       <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
         <child id="1237721435807" name="elementType" index="HW$YZ" />
       </concept>
-      <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1205679737078" name="jetbrains.mps.baseLanguage.collections.structure.SortOperation" flags="nn" index="2S7cBI">
         <child id="1205679832066" name="ascending" index="2S7zOq" />
       </concept>
@@ -1090,7 +1090,7 @@
                     <node concept="3clFbF" id="1TjcpJFqDPC" role="3cqZAp">
                       <node concept="3EllGN" id="1TjcpJFqDPD" role="3clFbG">
                         <node concept="37vLTw" id="1TjcpJFqDPE" role="3ElVtu">
-                          <ref role="3cqZAo" node="1TjcpJFqDPG" resolve="it" />
+                          <ref role="3cqZAo" node="7PWAhdDnHKQ" resolve="it" />
                         </node>
                         <node concept="37vLTw" id="1TjcpJFqDPF" role="3ElQJh">
                           <ref role="3cqZAo" node="7xXJtOUPOc7" resolve="genStep2time" />
@@ -1098,9 +1098,9 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="Rh6nW" id="1TjcpJFqDPG" role="1bW2Oz">
+                  <node concept="gl6BB" id="7PWAhdDnHKQ" role="1bW2Oz">
                     <property role="TrG5h" value="it" />
-                    <node concept="2jxLKc" id="1TjcpJFqDPH" role="1tU5fm" />
+                    <node concept="2jxLKc" id="7PWAhdDnHKR" role="1tU5fm" />
                   </node>
                 </node>
                 <node concept="1nlBCl" id="1TjcpJFqDPI" role="2S7zOq">
@@ -1534,7 +1534,7 @@
             <node concept="3uibUv" id="D9RB9JKRCD" role="1tU5fm">
               <ref role="3uigEE" to="33ny:~List" resolve="List" />
               <node concept="3uibUv" id="D9RB9JKRCG" role="11_B2D">
-                <ref role="3uigEE" to="ap4t:~ModelGenerationPlan$Step" resolve="Step" />
+                <ref role="3uigEE" to="ap4t:~ModelGenerationPlan$Step" resolve="ModelGenerationPlan.Step" />
               </node>
             </node>
           </node>
@@ -1689,7 +1689,7 @@
                                   <node concept="3cpWs3" id="7xXJtOUMiB8" role="3clFbG">
                                     <node concept="2OqwBi" id="7xXJtOUMiB9" role="3uHU7w">
                                       <node concept="37vLTw" id="7xXJtOUMiBa" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="7xXJtOUMiBj" resolve="it" />
+                                        <ref role="3cqZAo" node="7PWAhdDnHKS" resolve="it" />
                                       </node>
                                       <node concept="liA8E" id="7xXJtOUMiBb" role="2OqNvi">
                                         <ref role="37wK5l" to="r99j:~TemplateMappingConfiguration.getName()" resolve="getName" />
@@ -1699,7 +1699,7 @@
                                       <node concept="2OqwBi" id="7xXJtOUMiBd" role="3uHU7B">
                                         <node concept="2OqwBi" id="7xXJtOUMiBe" role="2Oq$k0">
                                           <node concept="37vLTw" id="7xXJtOUMiBf" role="2Oq$k0">
-                                            <ref role="3cqZAo" node="7xXJtOUMiBj" resolve="it" />
+                                            <ref role="3cqZAo" node="7PWAhdDnHKS" resolve="it" />
                                           </node>
                                           <node concept="liA8E" id="7xXJtOUMiBg" role="2OqNvi">
                                             <ref role="37wK5l" to="r99j:~TemplateMappingConfiguration.getModel()" resolve="getModel" />
@@ -1716,9 +1716,9 @@
                                   </node>
                                 </node>
                               </node>
-                              <node concept="Rh6nW" id="7xXJtOUMiBj" role="1bW2Oz">
+                              <node concept="gl6BB" id="7PWAhdDnHKS" role="1bW2Oz">
                                 <property role="TrG5h" value="it" />
-                                <node concept="2jxLKc" id="7xXJtOUMiBk" role="1tU5fm" />
+                                <node concept="2jxLKc" id="7PWAhdDnHKT" role="1tU5fm" />
                               </node>
                             </node>
                           </node>
@@ -2058,10 +2058,10 @@
                                   <node concept="1eOMI4" id="4yfIbkeAOCq" role="2Oq$k0">
                                     <node concept="10QFUN" id="4yfIbkeAOCr" role="1eOMHV">
                                       <node concept="3uibUv" id="4yfIbkeAOCs" role="10QFUM">
-                                        <ref role="3uigEE" to="ap4t:~TransientModelsModule$TransientSModelDescriptor" resolve="TransientSModelDescriptor" />
+                                        <ref role="3uigEE" to="ap4t:~TransientModelsModule$TransientSModelDescriptor" resolve="TransientModelsModule.TransientSModelDescriptor" />
                                       </node>
                                       <node concept="37vLTw" id="4yfIbkeAOCt" role="10QFUP">
-                                        <ref role="3cqZAo" node="4yfIbkeAOCv" resolve="it" />
+                                        <ref role="3cqZAo" node="7PWAhdDnHKU" resolve="it" />
                                       </node>
                                     </node>
                                   </node>
@@ -2071,9 +2071,9 @@
                                 </node>
                               </node>
                             </node>
-                            <node concept="Rh6nW" id="4yfIbkeAOCv" role="1bW2Oz">
+                            <node concept="gl6BB" id="7PWAhdDnHKU" role="1bW2Oz">
                               <property role="TrG5h" value="it" />
-                              <node concept="2jxLKc" id="4yfIbkeAOCw" role="1tU5fm" />
+                              <node concept="2jxLKc" id="7PWAhdDnHKV" role="1tU5fm" />
                             </node>
                           </node>
                           <node concept="1nlBCl" id="4yfIbkeAOCx" role="2S7zOq">
@@ -2114,12 +2114,12 @@
                         <node concept="3cpWsn" id="4yfIbke$r$2" role="3cpWs9">
                           <property role="TrG5h" value="tsmd" />
                           <node concept="3uibUv" id="4yfIbke$r$3" role="1tU5fm">
-                            <ref role="3uigEE" to="ap4t:~TransientModelsModule$TransientSModelDescriptor" resolve="TransientSModelDescriptor" />
+                            <ref role="3uigEE" to="ap4t:~TransientModelsModule$TransientSModelDescriptor" resolve="TransientModelsModule.TransientSModelDescriptor" />
                           </node>
                           <node concept="1eOMI4" id="4yfIbke$srR" role="33vP2m">
                             <node concept="10QFUN" id="4yfIbke$srO" role="1eOMHV">
                               <node concept="3uibUv" id="4yfIbke$srT" role="10QFUM">
-                                <ref role="3uigEE" to="ap4t:~TransientModelsModule$TransientSModelDescriptor" resolve="TransientSModelDescriptor" />
+                                <ref role="3uigEE" to="ap4t:~TransientModelsModule$TransientSModelDescriptor" resolve="TransientModelsModule.TransientSModelDescriptor" />
                               </node>
                               <node concept="2GrUjf" id="4yfIbke$sKJ" role="10QFUP">
                                 <ref role="2Gs0qQ" node="4yfIbkeuRbI" resolve="model" />
@@ -2288,6 +2288,7 @@
   <node concept="sE7Ow" id="7xXJtOUY1mJ">
     <property role="TrG5h" value="GeneratorProfilingConfigAction" />
     <property role="2uzpH1" value="Profile Generator Config" />
+    <property role="1rBW0U" value="true" />
     <node concept="2S4$dB" id="7xXJtOUY6gY" role="1NuT2Z">
       <property role="TrG5h" value="gpc" />
       <node concept="3Tm6S6" id="7xXJtOUY6gZ" role="1B3o_S" />
