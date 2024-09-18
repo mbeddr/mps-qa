@@ -8,6 +8,7 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
   </languages>
   <imports>
     <import index="81o" ref="96212ac2-423f-4cfb-b211-b58d0546b6bf/java:net.sourceforge.plantuml(org.mpsqa.arch.pluginSolution/)" />
@@ -23,6 +24,8 @@
     <import index="gsia" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.event(JDK/)" />
     <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
+    <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
@@ -61,6 +64,7 @@
       </concept>
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
         <property id="1205250923097" name="caption" index="2uzpH1" />
+        <property id="7458746815261976739" name="requiredAccess" index="2YLI8m" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
         <child id="1217413222820" name="parameter" index="1NuT2Z" />
         <child id="8976425910813834639" name="icon" index="3Uehp1" />
@@ -275,6 +279,14 @@
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
       </concept>
     </language>
+    <language id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access">
+      <concept id="8974276187400348173" name="jetbrains.mps.lang.access.structure.CommandClosureLiteral" flags="nn" index="1QHqEC" />
+      <concept id="8974276187400348170" name="jetbrains.mps.lang.access.structure.BaseExecuteCommandStatement" flags="nn" index="1QHqEJ">
+        <child id="1423104411234567454" name="repo" index="ukAjM" />
+        <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
+      </concept>
+      <concept id="8974276187400348181" name="jetbrains.mps.lang.access.structure.ExecuteLightweightCommandStatement" flags="nn" index="1QHqEK" />
+    </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
@@ -414,6 +426,7 @@
   <node concept="sE7Ow" id="1tkdAPw35e4">
     <property role="TrG5h" value="OpenPlantUmlOnArchitectureSpecification" />
     <property role="2uzpH1" value="Visualize DSLs Architecture with PlantUML" />
+    <property role="2YLI8m" value="6u2MFnph2wS/none" />
     <node concept="tnohg" id="1tkdAPw35e5" role="tncku">
       <node concept="3clFbS" id="1tkdAPw35e6" role="2VODD2">
         <node concept="3cpWs8" id="1Nl9e7Dz2vp" role="3cqZAp">
@@ -433,31 +446,55 @@
           <node concept="3cpWsn" id="1tkdAPw5gL_" role="3cpWs9">
             <property role="TrG5h" value="source" />
             <node concept="17QB3L" id="6qVhvNsIUxR" role="1tU5fm" />
-            <node concept="2YIFZM" id="6qVhvNsIThf" role="33vP2m">
-              <ref role="37wK5l" node="6qVhvNsIzDc" resolve="convertArchSpec" />
-              <ref role="1Pybhc" node="6qVhvNsIxrS" resolve="Arch2PlantUMLConverterUtils" />
-              <node concept="2OqwBi" id="6qVhvNsITJc" role="37wK5m">
-                <node concept="2WthIp" id="6qVhvNsITl1" role="2Oq$k0" />
-                <node concept="3gHZIF" id="6qVhvNsIU2o" role="2OqNvi">
-                  <ref role="2WH_rO" node="1tkdAPw4CYF" resolve="node" />
+          </node>
+        </node>
+        <node concept="1QHqEK" id="sRpFtPj4Gp" role="3cqZAp">
+          <node concept="1QHqEC" id="sRpFtPj4Gr" role="1QHqEI">
+            <node concept="3clFbS" id="sRpFtPj4Gt" role="1bW5cS">
+              <node concept="3clFbF" id="sRpFtPj4io" role="3cqZAp">
+                <node concept="37vLTI" id="sRpFtPj4iq" role="3clFbG">
+                  <node concept="2YIFZM" id="6qVhvNsIThf" role="37vLTx">
+                    <ref role="37wK5l" node="6qVhvNsIzDc" resolve="convertArchSpec" />
+                    <ref role="1Pybhc" node="6qVhvNsIxrS" resolve="Arch2PlantUMLConverterUtils" />
+                    <node concept="2OqwBi" id="6qVhvNsITJc" role="37wK5m">
+                      <node concept="2WthIp" id="6qVhvNsITl1" role="2Oq$k0" />
+                      <node concept="3gHZIF" id="6qVhvNsIU2o" role="2OqNvi">
+                        <ref role="2WH_rO" node="1tkdAPw4CYF" resolve="node" />
+                      </node>
+                    </node>
+                    <node concept="1LFfDK" id="1Nl9e7Dz45H" role="37wK5m">
+                      <node concept="3cmrfG" id="1Nl9e7Dz4aB" role="1LF_Uc">
+                        <property role="3cmrfH" value="0" />
+                      </node>
+                      <node concept="37vLTw" id="1Nl9e7Dz38V" role="1LFl5Q">
+                        <ref role="3cqZAo" node="1Nl9e7Dz2vq" resolve="depthAndShowModules" />
+                      </node>
+                    </node>
+                    <node concept="1LFfDK" id="1Nl9e7Dz4ey" role="37wK5m">
+                      <node concept="37vLTw" id="1Nl9e7Dz4e$" role="1LFl5Q">
+                        <ref role="3cqZAo" node="1Nl9e7Dz2vq" resolve="depthAndShowModules" />
+                      </node>
+                      <node concept="3cmrfG" id="1Nl9e7Dz4sM" role="1LF_Uc">
+                        <property role="3cmrfH" value="1" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="sRpFtPj4iu" role="37vLTJ">
+                    <ref role="3cqZAo" node="1tkdAPw5gL_" resolve="source" />
+                  </node>
                 </node>
               </node>
-              <node concept="1LFfDK" id="1Nl9e7Dz45H" role="37wK5m">
-                <node concept="3cmrfG" id="1Nl9e7Dz4aB" role="1LF_Uc">
-                  <property role="3cmrfH" value="0" />
-                </node>
-                <node concept="37vLTw" id="1Nl9e7Dz38V" role="1LFl5Q">
-                  <ref role="3cqZAo" node="1Nl9e7Dz2vq" resolve="depthAndShowModules" />
-                </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="sRpFtPj8$J" role="ukAjM">
+            <node concept="2OqwBi" id="sRpFtPj4Ms" role="2Oq$k0">
+              <node concept="2WthIp" id="sRpFtPj4Mv" role="2Oq$k0" />
+              <node concept="1DTwFV" id="sRpFtPj80B" role="2OqNvi">
+                <ref role="2WH_rO" node="sRpFtPj5YG" resolve="mpsProject" />
               </node>
-              <node concept="1LFfDK" id="1Nl9e7Dz4ey" role="37wK5m">
-                <node concept="37vLTw" id="1Nl9e7Dz4e$" role="1LFl5Q">
-                  <ref role="3cqZAo" node="1Nl9e7Dz2vq" resolve="depthAndShowModules" />
-                </node>
-                <node concept="3cmrfG" id="1Nl9e7Dz4sM" role="1LF_Uc">
-                  <property role="3cmrfH" value="1" />
-                </node>
-              </node>
+            </node>
+            <node concept="liA8E" id="sRpFtPj9cV" role="2OqNvi">
+              <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
             </node>
           </node>
         </node>
@@ -490,6 +527,11 @@
       <property role="TrG5h" value="proj" />
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
       <node concept="1oajcY" id="1tkdAPw5qGP" role="1oa70y" />
+    </node>
+    <node concept="1DS2jV" id="sRpFtPj5YG" role="1NuT2Z">
+      <property role="TrG5h" value="mpsProject" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
+      <node concept="1oajcY" id="sRpFtPj5YH" role="1oa70y" />
     </node>
     <node concept="1irR5M" id="1Nl9e7D_wKs" role="3Uehp1">
       <property role="2$rrk2" value="1" />
@@ -3069,6 +3111,7 @@
   <node concept="sE7Ow" id="1Nl9e7Dz$j_">
     <property role="TrG5h" value="OpenPlantUmlOnComponentDefinition" />
     <property role="2uzpH1" value="Visualize Component with PlantUML" />
+    <property role="2YLI8m" value="6u2MFnph2wS/none" />
     <node concept="tnohg" id="1Nl9e7Dz$jA" role="tncku">
       <node concept="3clFbS" id="1Nl9e7Dz$jB" role="2VODD2">
         <node concept="3cpWs8" id="1Nl9e7Dz$jC" role="3cqZAp">
@@ -3088,31 +3131,55 @@
           <node concept="3cpWsn" id="1Nl9e7Dz$jJ" role="3cpWs9">
             <property role="TrG5h" value="source" />
             <node concept="17QB3L" id="1Nl9e7Dz$jK" role="1tU5fm" />
-            <node concept="2YIFZM" id="1Nl9e7DzZ1t" role="33vP2m">
-              <ref role="37wK5l" node="1Nl9e7DzK4M" resolve="convertComponentDefinition" />
-              <ref role="1Pybhc" node="6qVhvNsIxrS" resolve="Arch2PlantUMLConverterUtils" />
-              <node concept="2OqwBi" id="1Nl9e7DzZ1u" role="37wK5m">
-                <node concept="2WthIp" id="1Nl9e7DzZ1v" role="2Oq$k0" />
-                <node concept="3gHZIF" id="1Nl9e7DzZ1w" role="2OqNvi">
-                  <ref role="2WH_rO" node="1Nl9e7Dz$k1" resolve="node" />
+          </node>
+        </node>
+        <node concept="1QHqEK" id="sRpFtPj9Yj" role="3cqZAp">
+          <node concept="1QHqEC" id="sRpFtPj9Yl" role="1QHqEI">
+            <node concept="3clFbS" id="sRpFtPj9Yn" role="1bW5cS">
+              <node concept="3clFbF" id="sRpFtPj9Ky" role="3cqZAp">
+                <node concept="37vLTI" id="sRpFtPj9K$" role="3clFbG">
+                  <node concept="2YIFZM" id="1Nl9e7DzZ1t" role="37vLTx">
+                    <ref role="37wK5l" node="1Nl9e7DzK4M" resolve="convertComponentDefinition" />
+                    <ref role="1Pybhc" node="6qVhvNsIxrS" resolve="Arch2PlantUMLConverterUtils" />
+                    <node concept="2OqwBi" id="1Nl9e7DzZ1u" role="37wK5m">
+                      <node concept="2WthIp" id="1Nl9e7DzZ1v" role="2Oq$k0" />
+                      <node concept="3gHZIF" id="1Nl9e7DzZ1w" role="2OqNvi">
+                        <ref role="2WH_rO" node="1Nl9e7Dz$k1" resolve="node" />
+                      </node>
+                    </node>
+                    <node concept="1LFfDK" id="1Nl9e7DzZ1x" role="37wK5m">
+                      <node concept="3cmrfG" id="1Nl9e7DzZ1y" role="1LF_Uc">
+                        <property role="3cmrfH" value="0" />
+                      </node>
+                      <node concept="37vLTw" id="1Nl9e7DzZ1z" role="1LFl5Q">
+                        <ref role="3cqZAo" node="1Nl9e7Dz$jD" resolve="depthAndShowModules" />
+                      </node>
+                    </node>
+                    <node concept="1LFfDK" id="1Nl9e7DzZ1$" role="37wK5m">
+                      <node concept="37vLTw" id="1Nl9e7DzZ1_" role="1LFl5Q">
+                        <ref role="3cqZAo" node="1Nl9e7Dz$jD" resolve="depthAndShowModules" />
+                      </node>
+                      <node concept="3cmrfG" id="1Nl9e7DzZ1A" role="1LF_Uc">
+                        <property role="3cmrfH" value="1" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="sRpFtPj9KC" role="37vLTJ">
+                    <ref role="3cqZAo" node="1Nl9e7Dz$jJ" resolve="source" />
+                  </node>
                 </node>
               </node>
-              <node concept="1LFfDK" id="1Nl9e7DzZ1x" role="37wK5m">
-                <node concept="3cmrfG" id="1Nl9e7DzZ1y" role="1LF_Uc">
-                  <property role="3cmrfH" value="0" />
-                </node>
-                <node concept="37vLTw" id="1Nl9e7DzZ1z" role="1LFl5Q">
-                  <ref role="3cqZAo" node="1Nl9e7Dz$jD" resolve="depthAndShowModules" />
-                </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="sRpFtPjc5F" role="ukAjM">
+            <node concept="2OqwBi" id="sRpFtPjavb" role="2Oq$k0">
+              <node concept="2WthIp" id="sRpFtPjave" role="2Oq$k0" />
+              <node concept="1DTwFV" id="sRpFtPjavg" role="2OqNvi">
+                <ref role="2WH_rO" node="sRpFtPjahs" resolve="project" />
               </node>
-              <node concept="1LFfDK" id="1Nl9e7DzZ1$" role="37wK5m">
-                <node concept="37vLTw" id="1Nl9e7DzZ1_" role="1LFl5Q">
-                  <ref role="3cqZAo" node="1Nl9e7Dz$jD" resolve="depthAndShowModules" />
-                </node>
-                <node concept="3cmrfG" id="1Nl9e7DzZ1A" role="1LF_Uc">
-                  <property role="3cmrfH" value="1" />
-                </node>
-              </node>
+            </node>
+            <node concept="liA8E" id="sRpFtPjcHV" role="2OqNvi">
+              <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
             </node>
           </node>
         </node>
@@ -3145,6 +3212,11 @@
       <property role="TrG5h" value="proj" />
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
       <node concept="1oajcY" id="1Nl9e7Dz$k6" role="1oa70y" />
+    </node>
+    <node concept="1DS2jV" id="sRpFtPjahs" role="1NuT2Z">
+      <property role="TrG5h" value="project" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
+      <node concept="1oajcY" id="sRpFtPjaht" role="1oa70y" />
     </node>
     <node concept="1irR5M" id="1Nl9e7D_x9t" role="3Uehp1">
       <property role="2$rrk2" value="2" />
