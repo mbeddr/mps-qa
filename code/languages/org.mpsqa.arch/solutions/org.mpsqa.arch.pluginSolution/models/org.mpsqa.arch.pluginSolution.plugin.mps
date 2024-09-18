@@ -26,10 +26,10 @@
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
     <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
+    <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" implicit="true" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
-    <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -923,6 +923,16 @@
                             </node>
                           </node>
                         </node>
+                        <node concept="3clFbF" id="sRpFtPjtd4" role="3cqZAp">
+                          <node concept="2OqwBi" id="sRpFtPjtoE" role="3clFbG">
+                            <node concept="2WthIp" id="sRpFtPjtd6" role="2Oq$k0">
+                              <ref role="32nkFo" node="1tkdAPw5hIG" resolve="PlantUML" />
+                            </node>
+                            <node concept="2XshWL" id="sRpFtPk80$" role="2OqNvi">
+                              <ref role="2WH_rO" node="sRpFtPk6cV" resolve="refreshComponent" />
+                            </node>
+                          </node>
+                        </node>
                       </node>
                       <node concept="2AHcQZ" id="fm3v0WQuO8" role="2AJF6D">
                         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
@@ -1388,6 +1398,47 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="2XrIbr" id="sRpFtPk6cV" role="2XNbBy">
+      <property role="TrG5h" value="refreshComponent" />
+      <node concept="3cqZAl" id="sRpFtPk77z" role="3clF45" />
+      <node concept="3clFbS" id="sRpFtPk6cX" role="3clF47">
+        <node concept="3cpWs8" id="sRpFtPkazK" role="3cqZAp">
+          <node concept="3cpWsn" id="sRpFtPkazL" role="3cpWs9">
+            <property role="TrG5h" value="component" />
+            <node concept="3uibUv" id="sRpFtPkaxn" role="1tU5fm">
+              <ref role="3uigEE" to="dxuu:~JComponent" resolve="JComponent" />
+            </node>
+            <node concept="2OqwBi" id="sRpFtPkazM" role="33vP2m">
+              <node concept="2WthIp" id="sRpFtPkazN" role="2Oq$k0" />
+              <node concept="liA8E" id="sRpFtPkazO" role="2OqNvi">
+                <ref role="37wK5l" to="71xd:~BaseTool.getComponent()" resolve="getComponent" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="sRpFtPk8IQ" role="3cqZAp">
+          <node concept="2OqwBi" id="sRpFtPjTZM" role="3clFbG">
+            <node concept="liA8E" id="sRpFtPjUJK" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~JComponent.revalidate()" resolve="revalidate" />
+            </node>
+            <node concept="37vLTw" id="sRpFtPkazP" role="2Oq$k0">
+              <ref role="3cqZAo" node="sRpFtPkazL" resolve="component" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="sRpFtPjUY1" role="3cqZAp">
+          <node concept="2OqwBi" id="sRpFtPjUY3" role="3clFbG">
+            <node concept="37vLTw" id="sRpFtPkazQ" role="2Oq$k0">
+              <ref role="3cqZAo" node="sRpFtPkazL" resolve="component" />
+            </node>
+            <node concept="liA8E" id="sRpFtPjUY7" role="2OqNvi">
+              <ref role="37wK5l" to="z60i:~Component.repaint()" resolve="repaint" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="sRpFtPk6VM" role="1B3o_S" />
     </node>
   </node>
   <node concept="tC5Ba" id="1tkdAPw6lGy">
@@ -3076,15 +3127,41 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="1tkdAPw78Nc" role="3cqZAp">
-              <node concept="2OqwBi" id="1tkdAPw78Ww" role="3clFbG">
-                <node concept="37vLTw" id="1tkdAPw78Na" role="2Oq$k0">
+            <node concept="3clFbJ" id="sRpFtPkbVu" role="3cqZAp">
+              <node concept="3clFbS" id="sRpFtPkbVw" role="3clFbx">
+                <node concept="3clFbF" id="sRpFtPkd$P" role="3cqZAp">
+                  <node concept="2OqwBi" id="sRpFtPkdDp" role="3clFbG">
+                    <node concept="37vLTw" id="sRpFtPkd$N" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1tkdAPw5mXu" resolve="tool" />
+                    </node>
+                    <node concept="2XshWL" id="sRpFtPkdKW" role="2OqNvi">
+                      <ref role="2WH_rO" node="sRpFtPk6cV" resolve="refreshComponent" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="sRpFtPkcCw" role="3clFbw">
+                <node concept="37vLTw" id="sRpFtPkcqh" role="2Oq$k0">
                   <ref role="3cqZAo" node="1tkdAPw5mXu" resolve="tool" />
                 </node>
-                <node concept="liA8E" id="1tkdAPw797S" role="2OqNvi">
-                  <ref role="37wK5l" to="71xd:~BaseTool.openToolLater(boolean)" resolve="openToolLater" />
-                  <node concept="3clFbT" id="1tkdAPw79aW" role="37wK5m">
-                    <property role="3clFbU" value="true" />
+                <node concept="liA8E" id="sRpFtPkcQW" role="2OqNvi">
+                  <ref role="37wK5l" to="71xd:~BaseTool.toolIsOpened()" resolve="toolIsOpened" />
+                </node>
+              </node>
+              <node concept="9aQIb" id="sRpFtPkdRk" role="9aQIa">
+                <node concept="3clFbS" id="sRpFtPkdRl" role="9aQI4">
+                  <node concept="3clFbF" id="1tkdAPw78Nc" role="3cqZAp">
+                    <node concept="2OqwBi" id="1tkdAPw78Ww" role="3clFbG">
+                      <node concept="37vLTw" id="1tkdAPw78Na" role="2Oq$k0">
+                        <ref role="3cqZAo" node="1tkdAPw5mXu" resolve="tool" />
+                      </node>
+                      <node concept="liA8E" id="1tkdAPw797S" role="2OqNvi">
+                        <ref role="37wK5l" to="71xd:~BaseTool.openToolLater(boolean)" resolve="openToolLater" />
+                        <node concept="3clFbT" id="1tkdAPw79aW" role="37wK5m">
+                          <property role="3clFbU" value="true" />
+                        </node>
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
