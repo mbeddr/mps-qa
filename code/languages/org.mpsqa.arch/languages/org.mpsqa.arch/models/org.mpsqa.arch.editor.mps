@@ -732,7 +732,7 @@
         <node concept="VPM3Z" id="1tkdAPw1fYe" role="3F10Kt" />
         <node concept="3XFhqQ" id="1tkdAPw1fYq" role="3EZMnx" />
         <node concept="3F0ifn" id="1tkdAPw1fYw" role="3EZMnx">
-          <property role="3F0ifm" value="excluded models:" />
+          <property role="3F0ifm" value="excludes:" />
         </node>
         <node concept="3F2HdR" id="1tkdAPw1fYC" role="3EZMnx">
           <property role="2czwfO" value="," />
