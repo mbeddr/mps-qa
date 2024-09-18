@@ -186,11 +186,11 @@
         <child id="7741759128795045752" name="exp" index="2j1LYg" />
         <child id="7741759128795065723" name="paramRef" index="2j1YQj" />
       </concept>
-      <concept id="1209559114970" name="org.mpsqa.lint.generic.structure.ConceptFunctionParameter_Module" flags="ng" index="2vlQn3" />
+      <concept id="1209559114970" name="org.mpsqa.lint.generic.structure.ConceptFunctionParameter_Module" flags="nn" index="2vlQn3" />
       <concept id="7679435328618353697" name="org.mpsqa.lint.generic.structure.FormatException" flags="ng" index="vsK6v">
         <child id="7679435328618377120" name="exception" index="vsfCu" />
       </concept>
-      <concept id="5024442900367365755" name="org.mpsqa.lint.generic.structure.ModuleCheckingFunction" flags="ng" index="V6NT9" />
+      <concept id="5024442900367365755" name="org.mpsqa.lint.generic.structure.ModuleCheckingFunction" flags="ig" index="V6NT9" />
       <concept id="7008376823202027689" name="org.mpsqa.lint.generic.structure.ICanSkipCheckerEvaluation" flags="ng" index="3miP$Z">
         <property id="7008376823202030902" name="skipEvaluation" index="3miQiw" />
       </concept>
@@ -200,7 +200,7 @@
         <child id="1716492013482699988" name="check" index="14J5yK" />
         <child id="2555875871751847640" name="documentation" index="1MIJl8" />
       </concept>
-      <concept id="2555875871751904530" name="org.mpsqa.lint.generic.structure.GenericCheckingFunction" flags="ng" index="1MIXq2" />
+      <concept id="2555875871751904530" name="org.mpsqa.lint.generic.structure.GenericCheckingFunction" flags="ig" index="1MIXq2" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -322,6 +322,32 @@
           </node>
         </node>
         <node concept="3J1_TO" id="6HKgezSv$ye" role="3cqZAp">
+          <node concept="3uVAMA" id="4mUq39YBw_i" role="1zxBo5">
+            <node concept="XOnhg" id="4mUq39YBw_j" role="1zc67B">
+              <property role="TrG5h" value="ioe" />
+              <node concept="nSUau" id="4mUq39YBx34" role="1tU5fm">
+                <node concept="3uibUv" id="4mUq39YBx35" role="nSUat">
+                  <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="4mUq39YBw_l" role="1zc67A">
+              <node concept="3clFbF" id="6EiPrTPS4UL" role="3cqZAp">
+                <node concept="2OqwBi" id="6EiPrTPS6fR" role="3clFbG">
+                  <node concept="37vLTw" id="6EiPrTPS4UK" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4mUq39YEamm" resolve="res" />
+                  </node>
+                  <node concept="TSZUe" id="6EiPrTPS7dZ" role="2OqNvi">
+                    <node concept="vsK6v" id="6EiPrTPUBp4" role="25WWJ7">
+                      <node concept="37vLTw" id="6EiPrTPVj5$" role="vsfCu">
+                        <ref role="3cqZAo" node="4mUq39YBw_j" resolve="ioe" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="3clFbS" id="6HKgezSv$yg" role="1zxBo7">
             <node concept="2Gpval" id="4mUq39YE21u" role="3cqZAp">
               <node concept="2GrKxI" id="4mUq39YE21w" role="2Gsz3X">
@@ -391,32 +417,6 @@
                 <node concept="1MG55F" id="4mUq39YE3gs" role="37wK5m" />
                 <node concept="2j1LYi" id="4mUq39YE3gt" role="37wK5m">
                   <ref role="2j1LYj" node="pFzydTBLXy" resolve="sizeInKb" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3uVAMA" id="4mUq39YBw_i" role="1zxBo5">
-            <node concept="XOnhg" id="4mUq39YBw_j" role="1zc67B">
-              <property role="TrG5h" value="ioe" />
-              <node concept="nSUau" id="4mUq39YBx34" role="1tU5fm">
-                <node concept="3uibUv" id="4mUq39YBx35" role="nSUat">
-                  <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbS" id="4mUq39YBw_l" role="1zc67A">
-              <node concept="3clFbF" id="6EiPrTPS4UL" role="3cqZAp">
-                <node concept="2OqwBi" id="6EiPrTPS6fR" role="3clFbG">
-                  <node concept="37vLTw" id="6EiPrTPS4UK" role="2Oq$k0">
-                    <ref role="3cqZAo" node="4mUq39YEamm" resolve="res" />
-                  </node>
-                  <node concept="TSZUe" id="6EiPrTPS7dZ" role="2OqNvi">
-                    <node concept="vsK6v" id="6EiPrTPUBp4" role="25WWJ7">
-                      <node concept="37vLTw" id="6EiPrTPVj5$" role="vsfCu">
-                        <ref role="3cqZAo" node="4mUq39YBw_j" resolve="ioe" />
-                      </node>
-                    </node>
-                  </node>
                 </node>
               </node>
             </node>

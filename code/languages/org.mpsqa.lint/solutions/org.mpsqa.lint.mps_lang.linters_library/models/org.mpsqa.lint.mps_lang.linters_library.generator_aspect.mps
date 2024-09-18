@@ -82,8 +82,8 @@
       <concept id="2940128608225929719" name="org.mpsqa.lint.generic.structure.IHaveConceptDeclarationReference" flags="ng" index="1Jy4qj">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
-      <concept id="2940128608222714821" name="org.mpsqa.lint.generic.structure.NodeCheckingFunction" flags="ng" index="1JQnix" />
-      <concept id="2940128608222714486" name="org.mpsqa.lint.generic.structure.ConceptFunctionParameter_Node" flags="ng" index="1JQnki" />
+      <concept id="2940128608222714821" name="org.mpsqa.lint.generic.structure.NodeCheckingFunction" flags="ig" index="1JQnix" />
+      <concept id="2940128608222714486" name="org.mpsqa.lint.generic.structure.ConceptFunctionParameter_Node" flags="nn" index="1JQnki" />
       <concept id="2555875871751836213" name="org.mpsqa.lint.generic.structure.CheckableScript" flags="ng" index="1MIHA_">
         <child id="1716492013482699988" name="check" index="14J5yK" />
         <child id="2555875871751847640" name="documentation" index="1MIJl8" />

@@ -153,10 +153,10 @@
       <concept id="2940128608225929719" name="org.mpsqa.lint.generic.structure.IHaveConceptDeclarationReference" flags="ng" index="1Jy4qj">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
-      <concept id="2940128608223321285" name="org.mpsqa.lint.generic.structure.RootNodeCheckingFunction" flags="ng" index="1JO3ex" />
-      <concept id="2940128608222714821" name="org.mpsqa.lint.generic.structure.NodeCheckingFunction" flags="ng" index="1JQnix" />
-      <concept id="2940128608222714486" name="org.mpsqa.lint.generic.structure.ConceptFunctionParameter_Node" flags="ng" index="1JQnki" />
-      <concept id="2940128608224097995" name="org.mpsqa.lint.generic.structure.ConceptFunctionParameter_RootNode" flags="ng" index="1JT5AJ" />
+      <concept id="2940128608223321285" name="org.mpsqa.lint.generic.structure.RootNodeCheckingFunction" flags="ig" index="1JO3ex" />
+      <concept id="2940128608222714821" name="org.mpsqa.lint.generic.structure.NodeCheckingFunction" flags="ig" index="1JQnix" />
+      <concept id="2940128608222714486" name="org.mpsqa.lint.generic.structure.ConceptFunctionParameter_Node" flags="nn" index="1JQnki" />
+      <concept id="2940128608224097995" name="org.mpsqa.lint.generic.structure.ConceptFunctionParameter_RootNode" flags="nn" index="1JT5AJ" />
       <concept id="2555875871752198907" name="org.mpsqa.lint.generic.structure.ConceptFunctionParameter_MPSProject" flags="ng" index="1MG55F" />
       <concept id="2555875871751836213" name="org.mpsqa.lint.generic.structure.CheckableScript" flags="ng" index="1MIHA_">
         <reference id="1327538619388468182" name="quickfix" index="CbOq1" />
@@ -164,7 +164,7 @@
         <child id="1716492013482699988" name="check" index="14J5yK" />
         <child id="2555875871751847640" name="documentation" index="1MIJl8" />
       </concept>
-      <concept id="2555875871751904530" name="org.mpsqa.lint.generic.structure.GenericCheckingFunction" flags="ng" index="1MIXq2" />
+      <concept id="2555875871751904530" name="org.mpsqa.lint.generic.structure.GenericCheckingFunction" flags="ig" index="1MIXq2" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">

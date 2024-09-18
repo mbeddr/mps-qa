@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:8c9302b8-f777-4b9c-9486-2da5dc467e63(org.mpsqa.lint.generic.editor)">
   <persistence version="9" />
-  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
@@ -13,10 +12,10 @@
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="b659" ref="r:654c665e-d426-4acf-8be1-49f83baabbb4(org.mpsqa.lint.generic.behavior)" />
-    <import index="qqy" ref="r:baac1a2f-1e52-45fa-95c5-02a3dfae441c(org.mpsqa.lint.generic.util)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
     <import index="a1af" ref="r:839ac015-7de1-49f3-ac8f-8d7c6d47259d(org.mpsqa.lint.generic.structure)" />
+    <import index="qqy" ref="r:baac1a2f-1e52-45fa-95c5-02a3dfae441c(org.mpsqa.lint.generic.util)" />
     <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -380,8 +379,8 @@
         </node>
       </node>
       <node concept="3F0ifn" id="63CQ8uYGhy8" role="3EZMnx" />
-      <node concept="3EZMnI" id="5N7gA6Znz0u" role="3EZMnx">
-        <node concept="2iRfu4" id="5N7gA6Znz0z" role="2iSdaV" />
+      <node concept="3EZMnI" id="63CQ8uYFamF" role="3EZMnx">
+        <node concept="2iRfu4" id="63CQ8uYFamG" role="2iSdaV" />
         <node concept="3XFhqQ" id="63CQ8uYFahq" role="3EZMnx" />
         <node concept="3EZMnI" id="63CQ8uY$Anx" role="3EZMnx">
           <node concept="VPM3Z" id="63CQ8uY$Anz" role="3F10Kt" />
@@ -1559,49 +1558,6 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="2zdrQh7d0YI">
-    <property role="3GE5qa" value="checkingFunction" />
-    <ref role="1XX52x" to="a1af:2zdrQh751J5" resolve="NodeCheckingFunction" />
-    <node concept="B$lHz" id="2zdrQh7dqO7" role="2wV5jI" />
-    <node concept="3EZMnI" id="2zdrQh7dqOc" role="6VMZX">
-      <node concept="2iRfu4" id="2zdrQh7dqOd" role="2iSdaV" />
-      <node concept="3F0ifn" id="2zdrQh7dqOa" role="3EZMnx">
-        <property role="3F0ifm" value="for concept" />
-      </node>
-      <node concept="1iCGBv" id="2zdrQh7dqOf" role="3EZMnx">
-        <ref role="1NtTu8" to="a1af:gXXX56I" resolve="conceptDeclaration" />
-        <node concept="1sVBvm" id="2zdrQh7dqOh" role="1sWHZn">
-          <node concept="3F0A7n" id="2zdrQh7dqOn" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="24kQdi" id="6EiPrTPSypL">
-    <ref role="1XX52x" to="a1af:6EiPrTPStgx" resolve="FormatException" />
-    <node concept="3EZMnI" id="6EiPrTPUBAN" role="2wV5jI">
-      <node concept="2iRfu4" id="6EiPrTPUBAO" role="2iSdaV" />
-      <node concept="PMmxH" id="6EiPrTPSypN" role="3EZMnx">
-        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-        <node concept="11LMrY" id="6EiPrTPUX1V" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="6EiPrTPUBAQ" role="3EZMnx">
-        <property role="3F0ifm" value="(" />
-        <ref role="1k5W1q" to="tpen:hFCSAw$" resolve="LeftParen" />
-      </node>
-      <node concept="3F1sOY" id="6EiPrTPUBAT" role="3EZMnx">
-        <ref role="1NtTu8" to="a1af:6EiPrTPSyYw" resolve="exception" />
-      </node>
-      <node concept="3F0ifn" id="6EiPrTPUBAW" role="3EZMnx">
-        <property role="3F0ifm" value=")" />
-        <ref role="1k5W1q" to="tpen:hFCSUmN" resolve="RightParen" />
-      </node>
-    </node>
-  </node>
   <node concept="PKFIW" id="652KpqR2FT6">
     <property role="TrG5h" value="ICanSkipEvaluationEditorComponent" />
     <ref role="1XX52x" to="a1af:652KpqR2pyD" resolve="ICanSkipCheckerEvaluation" />
@@ -1645,6 +1601,49 @@
         </node>
       </node>
       <node concept="2iRfu4" id="652KpqR2FTn" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2zdrQh7d0YI">
+    <property role="3GE5qa" value="checkingFunction" />
+    <ref role="1XX52x" to="a1af:2zdrQh751J5" resolve="NodeCheckingFunction" />
+    <node concept="B$lHz" id="2zdrQh7dqO7" role="2wV5jI" />
+    <node concept="3EZMnI" id="2zdrQh7dqOc" role="6VMZX">
+      <node concept="2iRfu4" id="2zdrQh7dqOd" role="2iSdaV" />
+      <node concept="3F0ifn" id="2zdrQh7dqOa" role="3EZMnx">
+        <property role="3F0ifm" value="for concept" />
+      </node>
+      <node concept="1iCGBv" id="2zdrQh7dqOf" role="3EZMnx">
+        <ref role="1NtTu8" to="a1af:gXXX56I" resolve="conceptDeclaration" />
+        <node concept="1sVBvm" id="2zdrQh7dqOh" role="1sWHZn">
+          <node concept="3F0A7n" id="2zdrQh7dqOn" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6EiPrTPSypL">
+    <ref role="1XX52x" to="a1af:6EiPrTPStgx" resolve="FormatException" />
+    <node concept="3EZMnI" id="6EiPrTPUBAN" role="2wV5jI">
+      <node concept="2iRfu4" id="6EiPrTPUBAO" role="2iSdaV" />
+      <node concept="PMmxH" id="6EiPrTPSypN" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <node concept="11LMrY" id="6EiPrTPUX1V" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6EiPrTPUBAQ" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <ref role="1k5W1q" to="tpen:hFCSAw$" resolve="LeftParen" />
+      </node>
+      <node concept="3F1sOY" id="6EiPrTPUBAT" role="3EZMnx">
+        <ref role="1NtTu8" to="a1af:6EiPrTPSyYw" resolve="exception" />
+      </node>
+      <node concept="3F0ifn" id="6EiPrTPUBAW" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <ref role="1k5W1q" to="tpen:hFCSUmN" resolve="RightParen" />
+      </node>
     </node>
   </node>
 </model>

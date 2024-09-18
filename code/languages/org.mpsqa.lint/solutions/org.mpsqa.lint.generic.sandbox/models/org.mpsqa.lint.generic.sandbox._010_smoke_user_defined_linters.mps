@@ -142,18 +142,18 @@
         <child id="7741759128795045752" name="exp" index="2j1LYg" />
         <child id="7741759128795065723" name="paramRef" index="2j1YQj" />
       </concept>
-      <concept id="1209559114970" name="org.mpsqa.lint.generic.structure.ConceptFunctionParameter_Module" flags="ng" index="2vlQn3" />
+      <concept id="1209559114970" name="org.mpsqa.lint.generic.structure.ConceptFunctionParameter_Module" flags="nn" index="2vlQn3" />
       <concept id="7679435328618353697" name="org.mpsqa.lint.generic.structure.FormatException" flags="ng" index="vsK6v">
         <child id="7679435328618377120" name="exception" index="vsfCu" />
       </concept>
-      <concept id="5024442900367365755" name="org.mpsqa.lint.generic.structure.ModuleCheckingFunction" flags="ng" index="V6NT9" />
+      <concept id="5024442900367365755" name="org.mpsqa.lint.generic.structure.ModuleCheckingFunction" flags="ig" index="V6NT9" />
       <concept id="2555875871752198907" name="org.mpsqa.lint.generic.structure.ConceptFunctionParameter_MPSProject" flags="ng" index="1MG55F" />
       <concept id="2555875871751836213" name="org.mpsqa.lint.generic.structure.CheckableScript" flags="ng" index="1MIHA_">
         <child id="7741759128795038158" name="additionalParameters" index="2j1K4A" />
         <child id="1716492013482699988" name="check" index="14J5yK" />
         <child id="2555875871751847640" name="documentation" index="1MIJl8" />
       </concept>
-      <concept id="2555875871751904530" name="org.mpsqa.lint.generic.structure.GenericCheckingFunction" flags="ng" index="1MIXq2" />
+      <concept id="2555875871751904530" name="org.mpsqa.lint.generic.structure.GenericCheckingFunction" flags="ig" index="1MIXq2" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
