@@ -25,6 +25,8 @@
     <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
     <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
+    <import index="g1qu" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.util.ui(MPS.IDEA/)" />
+    <import index="l5y2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui.scale(MPS.IDEA/)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" implicit="true" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
@@ -1321,28 +1323,21 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="fm3v0WQwsM" role="3cqZAp">
-          <node concept="3cpWsn" id="fm3v0WQwsN" role="3cpWs9">
-            <property role="TrG5h" value="scaledInstance" />
-            <node concept="3uibUv" id="fm3v0WQwsO" role="1tU5fm">
+        <node concept="3cpWs8" id="sRpFtPlM_w" role="3cqZAp">
+          <node concept="3cpWsn" id="sRpFtPlM_x" role="3cpWs9">
+            <property role="TrG5h" value="hidpiImage" />
+            <node concept="3uibUv" id="sRpFtPlM_y" role="1tU5fm">
               <ref role="3uigEE" to="z60i:~Image" resolve="Image" />
             </node>
-            <node concept="2OqwBi" id="fm3v0WQwsP" role="33vP2m">
-              <node concept="37vLTw" id="fm3v0WQwti" role="2Oq$k0">
+            <node concept="2YIFZM" id="sRpFtPlOO1" role="33vP2m">
+              <ref role="37wK5l" to="g1qu:~ImageUtil.ensureHiDPI(java.awt.Image,com.intellij.ui.scale.ScaleContext)" resolve="ensureHiDPI" />
+              <ref role="1Pybhc" to="g1qu:~ImageUtil" resolve="ImageUtil" />
+              <node concept="37vLTw" id="sRpFtPlP9y" role="37wK5m">
                 <ref role="3cqZAo" node="fm3v0WQwtg" resolve="bi" />
               </node>
-              <node concept="liA8E" id="fm3v0WQwsR" role="2OqNvi">
-                <ref role="37wK5l" to="z60i:~Image.getScaledInstance(int,int,int)" resolve="getScaledInstance" />
-                <node concept="37vLTw" id="fm3v0WQVAV" role="37wK5m">
-                  <ref role="3cqZAo" node="fm3v0WQSl5" resolve="newWidth" />
-                </node>
-                <node concept="37vLTw" id="fm3v0WQVHa" role="37wK5m">
-                  <ref role="3cqZAo" node="fm3v0WQUhV" resolve="newHeight" />
-                </node>
-                <node concept="10M0yZ" id="fm3v0WQwsU" role="37wK5m">
-                  <ref role="3cqZAo" to="z60i:~Image.SCALE_SMOOTH" resolve="SCALE_SMOOTH" />
-                  <ref role="1PxDUh" to="z60i:~Image" resolve="Image" />
-                </node>
+              <node concept="2YIFZM" id="sRpFtPlPP5" role="37wK5m">
+                <ref role="37wK5l" to="l5y2:~ScaleContext.create()" resolve="create" />
+                <ref role="1Pybhc" to="l5y2:~ScaleContext" resolve="ScaleContext" />
               </node>
             </node>
           </node>
@@ -1358,9 +1353,19 @@
                 <ref role="37wK5l" to="dxuu:~JLabel.&lt;init&gt;(javax.swing.Icon)" resolve="JLabel" />
                 <node concept="2ShNRf" id="fm3v0WQwt0" role="37wK5m">
                   <node concept="1pGfFk" id="fm3v0WQwt1" role="2ShVmc">
-                    <ref role="37wK5l" to="dxuu:~ImageIcon.&lt;init&gt;(java.awt.Image)" resolve="ImageIcon" />
-                    <node concept="37vLTw" id="fm3v0WQwt2" role="37wK5m">
-                      <ref role="3cqZAo" node="fm3v0WQwsN" resolve="scaledInstance" />
+                    <ref role="37wK5l" to="g1qu:~JBImageIcon.&lt;init&gt;(java.awt.Image)" resolve="JBImageIcon" />
+                    <node concept="2YIFZM" id="sRpFtPlQaY" role="37wK5m">
+                      <ref role="37wK5l" to="g1qu:~ImageUtil.scaleImage(java.awt.Image,int,int)" resolve="scaleImage" />
+                      <ref role="1Pybhc" to="g1qu:~ImageUtil" resolve="ImageUtil" />
+                      <node concept="37vLTw" id="sRpFtPlQaZ" role="37wK5m">
+                        <ref role="3cqZAo" node="sRpFtPlM_x" resolve="hidpiImage" />
+                      </node>
+                      <node concept="37vLTw" id="sRpFtPlTbZ" role="37wK5m">
+                        <ref role="3cqZAo" node="fm3v0WQSl5" resolve="newWidth" />
+                      </node>
+                      <node concept="37vLTw" id="sRpFtPlTyB" role="37wK5m">
+                        <ref role="3cqZAo" node="fm3v0WQUhV" resolve="newHeight" />
+                      </node>
                     </node>
                   </node>
                 </node>
