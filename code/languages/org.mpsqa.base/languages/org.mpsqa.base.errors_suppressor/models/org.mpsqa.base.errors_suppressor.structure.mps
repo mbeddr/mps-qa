@@ -88,6 +88,11 @@
       <property role="TrG5h" value="severity" />
       <ref role="AX2Wp" node="1DrnXKMSoVq" resolve="ESeverityLevelSuppressor" />
     </node>
+    <node concept="1TJgyi" id="28p3jNfo5_$" role="1TKVEl">
+      <property role="IQ2nx" value="2457009626535713124" />
+      <property role="TrG5h" value="disableInEditor" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="25R3W" id="1DrnXKMSoVq">
     <property role="3F6X1D" value="1899217067217882842" />

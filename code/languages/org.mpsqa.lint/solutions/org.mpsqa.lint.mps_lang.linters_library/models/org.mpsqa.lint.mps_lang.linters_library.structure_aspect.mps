@@ -87,10 +87,10 @@
     <language id="40ab19e9-751a-4433-b645-0e65160e58a0" name="org.mpsqa.lint.generic">
       <concept id="2555875871752198907" name="org.mpsqa.lint.generic.structure.ConceptFunctionParameter_MPSProject" flags="ng" index="1MG55F" />
       <concept id="2555875871751836213" name="org.mpsqa.lint.generic.structure.CheckableScript" flags="ng" index="1MIHA_">
-        <child id="1716492013482699988" name="checkingClosure" index="14J5yK" />
-        <child id="2555875871751847640" name="explanation" index="1MIJl8" />
+        <child id="1716492013482699988" name="check" index="14J5yK" />
+        <child id="2555875871751847640" name="documentation" index="1MIJl8" />
       </concept>
-      <concept id="2555875871751904530" name="org.mpsqa.lint.generic.structure.CheckingFunction" flags="ig" index="1MIXq2" />
+      <concept id="2555875871751904530" name="org.mpsqa.lint.generic.structure.GenericCheckingFunction" flags="ng" index="1MIXq2" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -122,6 +122,7 @@
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
       <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
         <property id="155656958578482949" name="value" index="3oM_SC" />
+        <property id="6328114375520539777" name="italic" index="1X82VY" />
       </concept>
       <concept id="2535923850359206929" name="jetbrains.mps.lang.text.structure.Text" flags="nn" index="1Pa9Pv">
         <child id="2535923850359210936" name="lines" index="1PaQFQ" />
@@ -179,13 +180,16 @@
           <property role="3oM_SC" value="have" />
         </node>
         <node concept="3oM_SD" id="4ZjVoNbC3f7" role="1PaTwD">
-          <property role="3oM_SC" value="&quot;can" />
+          <property role="3oM_SC" value="can" />
+          <property role="1X82VY" value="true" />
         </node>
         <node concept="3oM_SD" id="4ZjVoNbC3i9" role="1PaTwD">
           <property role="3oM_SC" value="be" />
+          <property role="1X82VY" value="true" />
         </node>
         <node concept="3oM_SD" id="4ZjVoNbC3iK" role="1PaTwD">
-          <property role="3oM_SC" value="root&quot;" />
+          <property role="3oM_SC" value="root" />
+          <property role="1X82VY" value="true" />
         </node>
         <node concept="3oM_SD" id="4ZjVoNbC3jM" role="1PaTwD">
           <property role="3oM_SC" value="set" />
@@ -208,8 +212,15 @@
         <node concept="3oM_SD" id="4ZjVoNbC3pv" role="1PaTwD">
           <property role="3oM_SC" value="implement" />
         </node>
+        <node concept="3oM_SD" id="63CQ8uYRXCf" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="63CQ8uYRXCg" role="1PaTwD">
+          <property role="3oM_SC" value="interface" />
+        </node>
         <node concept="3oM_SD" id="4ZjVoNbC3xl" role="1PaTwD">
           <property role="3oM_SC" value="INamedConcept." />
+          <property role="1X82VY" value="true" />
         </node>
       </node>
       <node concept="1PaTwC" id="4ZjVoNbC3yO" role="1PaQFQ">
@@ -218,20 +229,11 @@
         </node>
       </node>
       <node concept="1PaTwC" id="4ZjVoNbC3$2" role="1PaQFQ">
-        <node concept="3oM_SD" id="4ZjVoNbC3Ch" role="1PaTwD">
-          <property role="3oM_SC" value="In" />
-        </node>
-        <node concept="3oM_SD" id="4ZjVoNbC3Ng" role="1PaTwD">
-          <property role="3oM_SC" value="the" />
-        </node>
-        <node concept="3oM_SD" id="4ZjVoNbC3NM" role="1PaTwD">
-          <property role="3oM_SC" value="case" />
-        </node>
-        <node concept="3oM_SD" id="4ZjVoNbC3Ol" role="1PaTwD">
-          <property role="3oM_SC" value="when" />
+        <node concept="3oM_SD" id="63CQ8uYRXCj" role="1PaTwD">
+          <property role="3oM_SC" value="When" />
         </node>
         <node concept="3oM_SD" id="4ZjVoNbC3Pj" role="1PaTwD">
-          <property role="3oM_SC" value="'File-Per-Root'" />
+          <property role="3oM_SC" value="file-per-root" />
         </node>
         <node concept="3oM_SD" id="4ZjVoNbC3Um" role="1PaTwD">
           <property role="3oM_SC" value="persistence" />
@@ -284,7 +286,10 @@
           <property role="3oM_SC" value="their" />
         </node>
         <node concept="3oM_SD" id="4ZjVoNbC4dy" role="1PaTwD">
-          <property role="3oM_SC" value="nodeId" />
+          <property role="3oM_SC" value="node" />
+        </node>
+        <node concept="3oM_SD" id="63CQ8uYRXCk" role="1PaTwD">
+          <property role="3oM_SC" value="ID" />
         </node>
         <node concept="3oM_SD" id="4ZjVoNbC4fk" role="1PaTwD">
           <property role="3oM_SC" value="and" />
@@ -292,11 +297,8 @@
         <node concept="3oM_SD" id="4ZjVoNbC4fT" role="1PaTwD">
           <property role="3oM_SC" value="this" />
         </node>
-        <node concept="3oM_SD" id="4ZjVoNbC4gT" role="1PaTwD">
-          <property role="3oM_SC" value="is" />
-        </node>
-        <node concept="3oM_SD" id="4ZjVoNbC4hw" role="1PaTwD">
-          <property role="3oM_SC" value="confusing" />
+        <node concept="3oM_SD" id="63CQ8uYRXCn" role="1PaTwD">
+          <property role="3oM_SC" value="confuses" />
         </node>
         <node concept="3oM_SD" id="4ZjVoNbC4iW" role="1PaTwD">
           <property role="3oM_SC" value="users." />
@@ -381,7 +383,7 @@
                         <node concept="3cpWs3" id="2s7fKStziws" role="33vP2m">
                           <node concept="3cpWs3" id="2s7fKStziwt" role="3uHU7B">
                             <node concept="Xl_RD" id="2s7fKStziwu" role="3uHU7B">
-                              <property role="Xl_RC" value="concept '" />
+                              <property role="Xl_RC" value="Concept '" />
                             </node>
                             <node concept="2OqwBi" id="2s7fKStziwv" role="3uHU7w">
                               <node concept="2GrUjf" id="2s7fKStziwx" role="2Oq$k0">
