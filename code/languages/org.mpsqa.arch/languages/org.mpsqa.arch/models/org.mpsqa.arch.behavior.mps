@@ -57,6 +57,9 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
@@ -101,6 +104,7 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
@@ -186,6 +190,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -1976,6 +1983,63 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="10aXpfQeYpg" role="1B3o_S" />
+  </node>
+  <node concept="13h7C7" id="4n1yOK3eHiQ">
+    <property role="3GE5qa" value="dependencies" />
+    <ref role="13h7C2" to="ryx8:6MUZd5Uj9wl" resolve="SingleComponentDependency" />
+    <node concept="13i0hz" id="4n1yOK3eHll" role="13h7CS">
+      <property role="TrG5h" value="getReferencedNodes" />
+      <node concept="3Tm1VV" id="4n1yOK3eHlm" role="1B3o_S" />
+      <node concept="3clFbS" id="4n1yOK3eHlo" role="3clF47">
+        <node concept="3clFbF" id="4n1yOK3eHUs" role="3cqZAp">
+          <node concept="10QFUN" id="4n1yOK3eIJ3" role="3clFbG">
+            <node concept="2I9FWS" id="4n1yOK3eIMO" role="10QFUM" />
+            <node concept="2OqwBi" id="4n1yOK3eIry" role="10QFUP">
+              <node concept="2JrnkZ" id="4n1yOK3eIaD" role="2Oq$k0">
+                <node concept="13iPFW" id="4n1yOK3eHUr" role="2JrQYb" />
+              </node>
+              <node concept="liA8E" id="4n1yOK3eI$o" role="2OqNvi">
+                <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object)" resolve="getUserObject" />
+                <node concept="Xl_RD" id="4n1yOK3eIBq" role="37wK5m">
+                  <property role="Xl_RC" value="referencedNodes" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2I9FWS" id="4n1yOK3eHJX" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="4n1yOK3eIYG" role="13h7CS">
+      <property role="TrG5h" value="setReferencedNodes" />
+      <node concept="3Tm1VV" id="4n1yOK3eIYH" role="1B3o_S" />
+      <node concept="3cqZAl" id="4n1yOK3eJ2h" role="3clF45" />
+      <node concept="3clFbS" id="4n1yOK3eIYJ" role="3clF47">
+        <node concept="3clFbF" id="4n1yOK3eJmm" role="3cqZAp">
+          <node concept="2OqwBi" id="4n1yOK3eJMm" role="3clFbG">
+            <node concept="2JrnkZ" id="4n1yOK3eJzm" role="2Oq$k0">
+              <node concept="13iPFW" id="4n1yOK3eJml" role="2JrQYb" />
+            </node>
+            <node concept="liA8E" id="4n1yOK3eJVs" role="2OqNvi">
+              <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object)" resolve="putUserObject" />
+              <node concept="Xl_RD" id="4n1yOK3eJXI" role="37wK5m">
+                <property role="Xl_RC" value="referencedNodes" />
+              </node>
+              <node concept="37vLTw" id="4n1yOK3eK8i" role="37wK5m">
+                <ref role="3cqZAo" node="4n1yOK3eJb7" resolve="nodes" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="4n1yOK3eJb7" role="3clF46">
+        <property role="TrG5h" value="nodes" />
+        <node concept="2I9FWS" id="4n1yOK3eJg9" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="13hLZK" id="4n1yOK3eHiR" role="13h7CW">
+      <node concept="3clFbS" id="4n1yOK3eHiS" role="2VODD2" />
+    </node>
   </node>
 </model>
 

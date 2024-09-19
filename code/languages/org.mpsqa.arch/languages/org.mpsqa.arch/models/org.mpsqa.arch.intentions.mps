@@ -533,7 +533,7 @@
     </node>
   </node>
   <node concept="2S6QgY" id="1XeVdf8hFBy">
-    <property role="TrG5h" value="updateDependenciesStrenghts" />
+    <property role="TrG5h" value="updateDependenciesStrengts" />
     <ref role="2ZfgGC" to="ryx8:6MUZd5UjGNW" resolve="IComponentLike" />
     <node concept="2S6ZIM" id="1XeVdf8hFBz" role="2ZfVej">
       <node concept="3clFbS" id="1XeVdf8hFB$" role="2VODD2">
