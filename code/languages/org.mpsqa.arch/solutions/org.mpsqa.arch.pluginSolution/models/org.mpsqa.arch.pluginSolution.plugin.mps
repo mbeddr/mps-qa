@@ -444,7 +444,7 @@
   <node concept="2DaZZR" id="1tkdAPw35e3" />
   <node concept="sE7Ow" id="1tkdAPw35e4">
     <property role="TrG5h" value="OpenPlantUmlOnArchitectureSpecification" />
-    <property role="2uzpH1" value="Visualize DSLs Architecture with PlantUML" />
+    <property role="2uzpH1" value="Visualize DSLs Architecture" />
     <property role="2YLI8m" value="6u2MFnph2wS/none" />
     <node concept="tnohg" id="1tkdAPw35e5" role="tncku">
       <node concept="3clFbS" id="1tkdAPw35e6" role="2VODD2">
@@ -3126,7 +3126,7 @@
                 <node concept="1pGfFk" id="1Nl9e7Dy8ux" role="2ShVmc">
                   <ref role="37wK5l" to="dxuu:~JLabel.&lt;init&gt;(java.lang.String)" resolve="JLabel" />
                   <node concept="Xl_RD" id="1Nl9e7Dy8uy" role="37wK5m">
-                    <property role="Xl_RC" value="Max imbrication depth:" />
+                    <property role="Xl_RC" value="Maximum included depth:" />
                   </node>
                 </node>
               </node>
@@ -3540,7 +3540,7 @@
   </node>
   <node concept="sE7Ow" id="1Nl9e7Dz$j_">
     <property role="TrG5h" value="OpenPlantUmlOnComponentDefinition" />
-    <property role="2uzpH1" value="Visualize Component with PlantUML" />
+    <property role="2uzpH1" value="Visualize Component" />
     <property role="2YLI8m" value="6u2MFnph2wS/none" />
     <node concept="tnohg" id="1Nl9e7Dz$jA" role="tncku">
       <node concept="3clFbS" id="1Nl9e7Dz$jB" role="2VODD2">

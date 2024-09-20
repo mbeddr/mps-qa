@@ -1127,7 +1127,7 @@
     </node>
     <node concept="2tJIrI" id="1XeVdf8hxi8" role="jymVt" />
     <node concept="2YIFZL" id="1XeVdf8hxz0" role="jymVt">
-      <property role="TrG5h" value="updateDependenciesStrenghts" />
+      <property role="TrG5h" value="updateDependenciesStrengths" />
       <node concept="3clFbS" id="1XeVdf8hxz3" role="3clF47">
         <node concept="3clFbF" id="1XeVdf8hxHv" role="3cqZAp">
           <node concept="2OqwBi" id="1XeVdf8h$fL" role="3clFbG">

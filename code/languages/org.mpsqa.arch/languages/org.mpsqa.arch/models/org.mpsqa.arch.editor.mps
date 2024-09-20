@@ -1117,7 +1117,7 @@
           <node concept="3clFbS" id="1XeVdf8kQ8e" role="2VODD2">
             <node concept="3clFbF" id="1XeVdf8kQ9s" role="3cqZAp">
               <node concept="Xl_RD" id="1XeVdf8kQ9r" role="3clFbG">
-                <property role="Xl_RC" value="Compute Couplings" />
+                <property role="Xl_RC" value="Update dependencies strengths" />
               </node>
             </node>
           </node>
@@ -1126,7 +1126,7 @@
           <node concept="3clFbS" id="1XeVdf8kQ8g" role="2VODD2">
             <node concept="3clFbF" id="1XeVdf8hFks" role="3cqZAp">
               <node concept="2YIFZM" id="1XeVdf8hFpJ" role="3clFbG">
-                <ref role="37wK5l" to="u41u:1XeVdf8hxz0" resolve="updateDependenciesStrenghts" />
+                <ref role="37wK5l" to="u41u:1XeVdf8hxz0" resolve="updateDependenciesStrengths" />
                 <ref role="1Pybhc" to="u41u:1XeVdf85BSu" resolve="DependencyStrengthUtils" />
                 <node concept="7Obwk" id="1XeVdf8kRdf" role="37wK5m" />
                 <node concept="2OqwBi" id="GdL2Wd5$8q" role="37wK5m">
