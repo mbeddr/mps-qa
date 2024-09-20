@@ -255,6 +255,9 @@
       <node concept="m$_yC" id="50Wzfz4shzl" role="m$_yJ">
         <ref role="m$_y1" to="2tou:7C9PHv6FBIO" resolve="org.mpsqa.base" />
       </node>
+      <node concept="m$_yC" id="2VR19mpiUGU" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:5lGJ4TajoV9" resolve="jetbrains.mps.ide.migration.workbench" />
+      </node>
       <node concept="3_J27D" id="50Wzfz4shzm" role="m_cZH">
         <node concept="3Mxwew" id="50Wzfz4shzu" role="3MwsjC">
           <property role="3MwjfP" value="org.mpsqa.arch" />
@@ -350,11 +353,6 @@
         <node concept="1SiIV0" id="51obkXDwqhp" role="3bR37C">
           <node concept="3bR9La" id="51obkXDwqhq" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:3HV74$ebibC" resolve="jetbrains.mps.lang.text" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="5enppyYG89E" role="3bR37C">
-          <node concept="3bR9La" id="5enppyYG89F" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6L8Y" resolve="jetbrains.mps.lang.project" />
           </node>
         </node>
       </node>
@@ -469,6 +467,11 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2VR19mpiUB5" role="3bR37C">
+          <node concept="3bR9La" id="2VR19mpiUB6" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:2eDSGe9d1q1" resolve="MPS.Workbench" />
           </node>
         </node>
       </node>

@@ -7,9 +7,6 @@
     <modelRoot type="java_classes" contentPath="${module}/lib">
       <sourceRoot location="plantuml-asl-1.2023.13.jar" />
     </modelRoot>
-    <modelRoot type="java_classes" contentPath="${module}/lib/plantuml-1.2022.6.jar!/">
-      <sourceRoot location="." />
-    </modelRoot>
   </models>
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="yes">
