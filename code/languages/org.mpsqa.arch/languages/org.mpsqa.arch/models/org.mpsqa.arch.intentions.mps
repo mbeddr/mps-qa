@@ -575,5 +575,42 @@
       </node>
     </node>
   </node>
+  <node concept="2S6QgY" id="7_XHz4_A87Q">
+    <property role="TrG5h" value="removeDependenciesStrengths" />
+    <ref role="2ZfgGC" to="ryx8:6MUZd5UjGNW" resolve="IComponentLike" />
+    <node concept="2S6ZIM" id="7_XHz4_A87R" role="2ZfVej">
+      <node concept="3clFbS" id="7_XHz4_A87S" role="2VODD2">
+        <node concept="3clFbF" id="7_XHz4_A87T" role="3cqZAp">
+          <node concept="Xl_RD" id="7_XHz4_A87U" role="3clFbG">
+            <property role="Xl_RC" value="Remove Dependencies Strengths" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="7_XHz4_A87V" role="2ZfgGD">
+      <node concept="3clFbS" id="7_XHz4_A87W" role="2VODD2">
+        <node concept="3clFbF" id="7_XHz4_A87X" role="3cqZAp">
+          <node concept="2YIFZM" id="7_XHz4_A8mY" role="3clFbG">
+            <ref role="37wK5l" to="u41u:7_XHz4_A7kv" resolve="removeDependenciesStrengths" />
+            <ref role="1Pybhc" to="u41u:1XeVdf85BSu" resolve="DependencyStrengthUtils" />
+            <node concept="2Sf5sV" id="7_XHz4_A8mZ" role="37wK5m" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="7_XHz4_A883" role="3cqZAp">
+          <node concept="2OqwBi" id="7_XHz4_A884" role="3clFbG">
+            <node concept="2OqwBi" id="7_XHz4_A885" role="2Oq$k0">
+              <node concept="1XNTG" id="7_XHz4_A886" role="2Oq$k0" />
+              <node concept="liA8E" id="7_XHz4_A887" role="2OqNvi">
+                <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent()" resolve="getEditorComponent" />
+              </node>
+            </node>
+            <node concept="liA8E" id="7_XHz4_A888" role="2OqNvi">
+              <ref role="37wK5l" to="cj4x:~EditorComponent.rebuildEditorContent()" resolve="rebuildEditorContent" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
