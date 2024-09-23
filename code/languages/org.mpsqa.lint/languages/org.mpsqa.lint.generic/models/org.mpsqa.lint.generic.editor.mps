@@ -1192,8 +1192,8 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="liA8E" id="4XPt_Hap_$A" role="2OqNvi">
-                        <ref role="37wK5l" to="mhbf:~SNode.getName()" resolve="getName" />
+                      <node concept="liA8E" id="4XPt_HaQvt0" role="2OqNvi">
+                        <ref role="37wK5l" to="mhbf:~SNode.getPresentation()" resolve="getPresentation" />
                       </node>
                     </node>
                   </node>

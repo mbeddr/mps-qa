@@ -58,7 +58,6 @@
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT" />
-      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -380,23 +379,8 @@
                       <node concept="3cpWsn" id="2s7fKStziwq" role="3cpWs9">
                         <property role="TrG5h" value="msg" />
                         <node concept="17QB3L" id="2s7fKStziwr" role="1tU5fm" />
-                        <node concept="3cpWs3" id="2s7fKStziws" role="33vP2m">
-                          <node concept="3cpWs3" id="2s7fKStziwt" role="3uHU7B">
-                            <node concept="Xl_RD" id="2s7fKStziwu" role="3uHU7B">
-                              <property role="Xl_RC" value="Concept '" />
-                            </node>
-                            <node concept="2OqwBi" id="2s7fKStziwv" role="3uHU7w">
-                              <node concept="2GrUjf" id="2s7fKStziwx" role="2Oq$k0">
-                                <ref role="2Gs0qQ" node="3bllPAaPI5n" resolve="conceptDeclaration" />
-                              </node>
-                              <node concept="3TrcHB" id="2s7fKStziwz" role="2OqNvi">
-                                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                              </node>
-                            </node>
-                          </node>
-                          <node concept="Xl_RD" id="2s7fKStziw$" role="3uHU7w">
-                            <property role="Xl_RC" value="' is marked as 'can be root' but does not implement INamedConcept" />
-                          </node>
+                        <node concept="Xl_RD" id="4XPt_HaUGvw" role="33vP2m">
+                          <property role="Xl_RC" value="Concept is marked as 'can be root' but does not implement INamedConcept" />
                         </node>
                       </node>
                     </node>

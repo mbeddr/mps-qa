@@ -191,6 +191,9 @@
         <child id="7741759128795045752" name="exp" index="2j1LYg" />
         <child id="7741759128795065723" name="paramRef" index="2j1YQj" />
       </concept>
+      <concept id="7679435328618353697" name="org.mpsqa.lint.generic.structure.FormatException" flags="ng" index="vsK6v">
+        <child id="7679435328618377120" name="exception" index="vsfCu" />
+      </concept>
       <concept id="7008376823202027689" name="org.mpsqa.lint.generic.structure.ICanSkipCheckerEvaluation" flags="ng" index="3miP$Z">
         <property id="7008376823202030902" name="skipEvaluation" index="3miQiw" />
       </concept>
@@ -205,12 +208,6 @@
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569916463" name="body" index="1bW5cS" />
-      </concept>
-    </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
-        <child id="5721587534047265374" name="message" index="9lYJi" />
-        <child id="5721587534047265375" name="throwable" index="9lYJj" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -1146,12 +1143,24 @@
                               </node>
                             </node>
                           </node>
-                          <node concept="2xdQw9" id="2ZPTSapgKiL" role="3cqZAp">
-                            <node concept="Xl_RD" id="2ZPTSapgKiN" role="9lYJi">
-                              <property role="Xl_RC" value="interrupted exception while waiting for the editor to open" />
-                            </node>
-                            <node concept="37vLTw" id="2ZPTSapgK$m" role="9lYJj">
-                              <ref role="3cqZAo" node="6wZqgFKVtlm" resolve="e" />
+                          <node concept="3clFbF" id="4XPt_HaTH5B" role="3cqZAp">
+                            <node concept="2OqwBi" id="4XPt_HaTH5C" role="3clFbG">
+                              <node concept="37vLTw" id="4XPt_HaTH5D" role="2Oq$k0">
+                                <ref role="3cqZAo" node="6wZqgFKVtka" resolve="res" />
+                              </node>
+                              <node concept="TSZUe" id="4XPt_HaTH5E" role="2OqNvi">
+                                <node concept="2ShNRf" id="4XPt_HaTH5F" role="25WWJ7">
+                                  <node concept="1pGfFk" id="4XPt_HaTH5G" role="2ShVmc">
+                                    <ref role="37wK5l" to="zn9m:~Pair.&lt;init&gt;(java.lang.Object,java.lang.Object)" resolve="Pair" />
+                                    <node concept="vsK6v" id="4XPt_HaTH5H" role="37wK5m">
+                                      <node concept="37vLTw" id="6EiPrTPVj5$" role="vsfCu">
+                                        <ref role="3cqZAo" node="6wZqgFKVtlm" resolve="e" />
+                                      </node>
+                                    </node>
+                                    <node concept="10Nm6u" id="4XPt_HaTH5I" role="37wK5m" />
+                                  </node>
+                                </node>
+                              </node>
                             </node>
                           </node>
                         </node>
@@ -2087,36 +2096,8 @@
                                             <property role="Xl_RC" value="MB" />
                                           </node>
                                           <node concept="3cpWs3" id="2TekImn84e8" role="3uHU7B">
-                                            <node concept="3cpWs3" id="2TekImn84e9" role="3uHU7B">
-                                              <node concept="3cpWs3" id="2TekImn84ea" role="3uHU7B">
-                                                <node concept="3cpWs3" id="2TekImn84eb" role="3uHU7B">
-                                                  <node concept="3cpWs3" id="2TekImn84ec" role="3uHU7B">
-                                                    <node concept="Xl_RD" id="2TekImn84ed" role="3uHU7B">
-                                                      <property role="Xl_RC" value="editor retained too much memory on root node '" />
-                                                    </node>
-                                                    <node concept="2OqwBi" id="2TekImn84ee" role="3uHU7w">
-                                                      <node concept="2GrUjf" id="2TekImn84ef" role="2Oq$k0">
-                                                        <ref role="2Gs0qQ" node="2TekImn84ck" resolve="rootNode" />
-                                                      </node>
-                                                      <node concept="3TrcHB" id="2TekImn84eg" role="2OqNvi">
-                                                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                                                      </node>
-                                                    </node>
-                                                  </node>
-                                                  <node concept="Xl_RD" id="2TekImn84eh" role="3uHU7w">
-                                                    <property role="Xl_RC" value="' from model " />
-                                                  </node>
-                                                </node>
-                                                <node concept="2OqwBi" id="2TekImn84ei" role="3uHU7w">
-                                                  <node concept="2GrUjf" id="2TekImn84ej" role="2Oq$k0">
-                                                    <ref role="2Gs0qQ" node="2TekImn84bL" resolve="m" />
-                                                  </node>
-                                                  <node concept="LkI2h" id="2TekImn84ek" role="2OqNvi" />
-                                                </node>
-                                              </node>
-                                              <node concept="Xl_RD" id="2TekImn84el" role="3uHU7w">
-                                                <property role="Xl_RC" value=" - it retained " />
-                                              </node>
+                                            <node concept="Xl_RD" id="4XPt_HaTvLG" role="3uHU7B">
+                                              <property role="Xl_RC" value="Editor retained too much memory:" />
                                             </node>
                                             <node concept="2YIFZM" id="5BymHIvyS5e" role="3uHU7w">
                                               <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
@@ -2226,12 +2207,24 @@
                               </node>
                             </node>
                           </node>
-                          <node concept="2xdQw9" id="2TekImn84dp" role="3cqZAp">
-                            <node concept="Xl_RD" id="2TekImn84dq" role="9lYJi">
-                              <property role="Xl_RC" value="interrupted exception while waiting for the editor to open" />
-                            </node>
-                            <node concept="37vLTw" id="2TekImn84dr" role="9lYJj">
-                              <ref role="3cqZAo" node="2TekImn84ds" resolve="e" />
+                          <node concept="3clFbF" id="6EiPrTPS4UL" role="3cqZAp">
+                            <node concept="2OqwBi" id="6EiPrTPS6fR" role="3clFbG">
+                              <node concept="37vLTw" id="6EiPrTPS4UK" role="2Oq$k0">
+                                <ref role="3cqZAo" node="2TekImn84bv" resolve="res" />
+                              </node>
+                              <node concept="TSZUe" id="6EiPrTPS7dZ" role="2OqNvi">
+                                <node concept="2ShNRf" id="4XPt_HaB7jl" role="25WWJ7">
+                                  <node concept="1pGfFk" id="4XPt_HaB8Wf" role="2ShVmc">
+                                    <ref role="37wK5l" to="zn9m:~Pair.&lt;init&gt;(java.lang.Object,java.lang.Object)" resolve="Pair" />
+                                    <node concept="vsK6v" id="6EiPrTPUBp4" role="37wK5m">
+                                      <node concept="37vLTw" id="4XPt_HaTGkA" role="vsfCu">
+                                        <ref role="3cqZAo" node="2TekImn84ds" resolve="e" />
+                                      </node>
+                                    </node>
+                                    <node concept="10Nm6u" id="4XPt_HaB9Qy" role="37wK5m" />
+                                  </node>
+                                </node>
+                              </node>
                             </node>
                           </node>
                         </node>
@@ -2261,36 +2254,8 @@
                                       <property role="Xl_RC" value="ms" />
                                     </node>
                                     <node concept="3cpWs3" id="2TekImn84dF" role="3uHU7B">
-                                      <node concept="3cpWs3" id="2TekImn84dG" role="3uHU7B">
-                                        <node concept="3cpWs3" id="2TekImn84dH" role="3uHU7B">
-                                          <node concept="3cpWs3" id="2TekImn84dI" role="3uHU7B">
-                                            <node concept="3cpWs3" id="2TekImn84dJ" role="3uHU7B">
-                                              <node concept="Xl_RD" id="2TekImn84dK" role="3uHU7B">
-                                                <property role="Xl_RC" value="editor opened too slow on root node '" />
-                                              </node>
-                                              <node concept="2OqwBi" id="2TekImn84dL" role="3uHU7w">
-                                                <node concept="2GrUjf" id="2TekImn84dM" role="2Oq$k0">
-                                                  <ref role="2Gs0qQ" node="2TekImn84ck" resolve="rootNode" />
-                                                </node>
-                                                <node concept="3TrcHB" id="2TekImn84dN" role="2OqNvi">
-                                                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                                                </node>
-                                              </node>
-                                            </node>
-                                            <node concept="Xl_RD" id="2TekImn84dO" role="3uHU7w">
-                                              <property role="Xl_RC" value="' from model " />
-                                            </node>
-                                          </node>
-                                          <node concept="2OqwBi" id="2TekImn84dP" role="3uHU7w">
-                                            <node concept="2GrUjf" id="2TekImn84dQ" role="2Oq$k0">
-                                              <ref role="2Gs0qQ" node="2TekImn84bL" resolve="m" />
-                                            </node>
-                                            <node concept="LkI2h" id="2TekImn84dR" role="2OqNvi" />
-                                          </node>
-                                        </node>
-                                        <node concept="Xl_RD" id="2TekImn84dS" role="3uHU7w">
-                                          <property role="Xl_RC" value=". Timeout reached: " />
-                                        </node>
+                                      <node concept="Xl_RD" id="4XPt_HaTAKG" role="3uHU7B">
+                                        <property role="Xl_RC" value="Editor opened too slow. Timeout reached: " />
                                       </node>
                                       <node concept="37vLTw" id="2TekImn84dT" role="3uHU7w">
                                         <ref role="3cqZAo" node="2TekImn84cr" resolve="elapsedTime" />

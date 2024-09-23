@@ -167,9 +167,6 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
-      <concept id="1200397529627" name="jetbrains.mps.baseLanguage.structure.CharConstant" flags="nn" index="1Xhbcc">
-        <property id="1200397540847" name="charConstant" index="1XhdNS" />
-      </concept>
       <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
         <child id="1201186121363" name="typeParameter" index="2Ghqu4" />
@@ -389,42 +386,8 @@
                               <property role="Xl_RC" value="KB" />
                             </node>
                             <node concept="3cpWs3" id="4mUq39YDSLs" role="3uHU7B">
-                              <node concept="3cpWs3" id="4mUq39YDSLt" role="3uHU7B">
-                                <node concept="3cpWs3" id="4mUq39YDSLu" role="3uHU7B">
-                                  <node concept="Xl_RD" id="4mUq39YDSLv" role="3uHU7B">
-                                    <property role="Xl_RC" value="File '" />
-                                  </node>
-                                  <node concept="2OqwBi" id="4mUq39YDSLw" role="3uHU7w">
-                                    <node concept="2OqwBi" id="4mUq39YDSLx" role="2Oq$k0">
-                                      <node concept="2OqwBi" id="4mUq39YDSLy" role="2Oq$k0">
-                                        <node concept="liA8E" id="4mUq39YDSLz" role="2OqNvi">
-                                          <ref role="37wK5l" to="eoo2:~Path.relativize(java.nio.file.Path)" resolve="relativize" />
-                                          <node concept="2GrUjf" id="4mUq39YE9xp" role="37wK5m">
-                                            <ref role="2Gs0qQ" node="4mUq39YE21w" resolve="file" />
-                                          </node>
-                                        </node>
-                                        <node concept="37vLTw" id="4mUq39YDSL_" role="2Oq$k0">
-                                          <ref role="3cqZAo" node="4mUq39YDTMh" resolve="pathOfDirectoryContainingProject" />
-                                        </node>
-                                      </node>
-                                      <node concept="liA8E" id="4mUq39YDSLA" role="2OqNvi">
-                                        <ref role="37wK5l" to="eoo2:~Path.toString()" resolve="toString" />
-                                      </node>
-                                    </node>
-                                    <node concept="liA8E" id="4mUq39YDSLB" role="2OqNvi">
-                                      <ref role="37wK5l" to="wyt6:~String.replace(char,char)" resolve="replace" />
-                                      <node concept="1Xhbcc" id="4mUq39YDSLC" role="37wK5m">
-                                        <property role="1XhdNS" value="\\" />
-                                      </node>
-                                      <node concept="1Xhbcc" id="4mUq39YDSLD" role="37wK5m">
-                                        <property role="1XhdNS" value="/" />
-                                      </node>
-                                    </node>
-                                  </node>
-                                </node>
-                                <node concept="Xl_RD" id="4mUq39YDSLE" role="3uHU7w">
-                                  <property role="Xl_RC" value="' has a size bigger than " />
-                                </node>
+                              <node concept="Xl_RD" id="4XPt_HaVOG0" role="3uHU7B">
+                                <property role="Xl_RC" value="File has a size bigger than " />
                               </node>
                               <node concept="2j1LYi" id="4mUq39YDT75" role="3uHU7w">
                                 <ref role="2j1LYj" node="pFzydTBLXy" resolve="sizeInKb" />
