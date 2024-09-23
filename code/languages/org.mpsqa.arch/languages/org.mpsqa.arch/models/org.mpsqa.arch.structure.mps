@@ -24,6 +24,7 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
@@ -172,7 +173,8 @@
   <node concept="1TIwiD" id="6MUZd5Uje4h">
     <property role="EcuMT" value="7834852478394622225" />
     <property role="TrG5h" value="ModuleComponent" />
-    <property role="34LRSv" value="module component" />
+    <property role="34LRSv" value="mps-module" />
+    <property role="R4oN_" value="a MPS module (solution or language)" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6MUZd5Uje4i" role="1TKVEi">
       <property role="IQ2ns" value="7834852478394622226" />
