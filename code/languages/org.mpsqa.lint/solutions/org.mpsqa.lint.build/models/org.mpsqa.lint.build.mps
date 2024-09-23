@@ -242,6 +242,16 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="2NOEa4FIstY" role="3bR37C">
+          <node concept="3bR9La" id="2NOEa4FIstZ" role="1SiIV1">
+            <ref role="3bR37D" to="390y:3dqUbgQmcyL" resolve="org.mpsqa.lint.generic" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2NOEa4FIsu0" role="3bR37C">
+          <node concept="3bR9La" id="2NOEa4FIsu1" role="1SiIV1">
+            <ref role="3bR37D" to="390y:3mJ3k6P7dwI" resolve="org.mpsqa.lint.generic.runtime" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="22LTRH" id="2JVMSZMFYqK" role="1hWBAP">

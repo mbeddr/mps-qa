@@ -983,6 +983,11 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
           </node>
         </node>
+        <node concept="1SiIV0" id="2Y_MYwbTD2f" role="3bR37C">
+          <node concept="3bR9La" id="2Y_MYwbTD2g" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="2WwuhUZ0zvN" role="2G$12L">
         <property role="BnDLt" value="true" />

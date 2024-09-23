@@ -8,6 +8,7 @@
   <property name="mps.home" location="" />
   <property name="mpsqa.home" location="" />
   <property name="mps.macro.mpsqa.home" location="${mpsqa.home}" />
+  <property name="build.dir" location="" />
   <property name="artifacts.mps" location="${mps.home}" />
   <property name="artifacts.org.mpsqa.testing" location="${mpsqa.home}/build/artifacts/org.mpsqa.testing" />
   <property name="artifacts.org.mpsqa.base" location="${mpsqa.home}/build/artifacts/org.mpsqa.base" />
@@ -186,6 +187,7 @@
       <macro name="mps.home" path="${mps.home}" />
       <macro name="mpsqa.home" path="${mpsqa.home}" />
       <macro name="mps.macro.mpsqa.home" path="${mps.macro.mpsqa.home}" />
+      <macro name="build.dir" path="${build.dir}" />
     </generate>
   </target>
   
@@ -313,7 +315,7 @@
     <pathconvert property="mps.tests.path.string" refid="mps.tests.path" />
     <jacoco:agent property="agent.jvmarg" xmlns:jacoco="antlib:org.jacoco.ant" destfile="${build.tmp}/jacoco/test.exec" />
     <property name="build.jna.library.path" location="${artifacts.mps}/lib/jna" />
-    <launchtests fork="true" haltonfailure="true" mpshome="${artifacts.mps}" reports="${build.tmp}">      
+    <launchtests fork="true" haltonfailure="true" mpshome="${artifacts.mps}" reports="${build.dir}/test-reports/test">      
       <jvmargs>        
         <arg value="${agent.jvmarg}" />
         <arg value="-ea" />
@@ -338,15 +340,6 @@
         <path refid="mps.tests.path" />
       </testmodules>
     </launchtests>
-    <copy todir=".">      
-      <fileset dir="${build.tmp}">
-        <include name="TEST*.xml" />
-        <include name="junit-platform-events*.xml" />
-      </fileset>
-      
-      <globmapper from="*.xml" to="*-jacoco.sandbox.xml" />
-      
-    </copy>
     <jacoco:report xmlns:jacoco="antlib:org.jacoco.ant">
       <executiondata>
         <file file="${build.tmp}/jacoco/test.exec" />
