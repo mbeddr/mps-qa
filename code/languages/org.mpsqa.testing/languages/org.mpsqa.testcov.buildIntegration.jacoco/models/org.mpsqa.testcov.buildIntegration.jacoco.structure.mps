@@ -13,6 +13,9 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
+        <property id="7862711839422615217" name="text" index="t5JxN" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -90,8 +93,17 @@
     <property role="TrG5h" value="BuildAspect_MpsTestModulesWithCoverage" />
     <property role="34LRSv" value="test modules with coverage" />
     <ref role="1TJDcQ" to="5tjl:3X9rC2XzJdH" resolve="BuildAspect_MpsTestModules" />
+    <node concept="1TJgyj" id="6EMlENDKT4V" role="1TKVEi">
+      <property role="IQ2ns" value="7688302814531129659" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="reportsDir" />
+      <ref role="20lvS9" to="3ior:6qcrfIJFdKY" resolve="BuildSourcePath" />
+    </node>
     <node concept="PrWs8" id="5rJPecpIaV5" role="PzmwI">
       <ref role="PrY4T" node="5rJPecpIaUT" resolve="ICoverageAspect" />
+    </node>
+    <node concept="t5JxF" id="6EMlENDKRhr" role="lGtFl">
+      <property role="t5JxN" value="Extends standard MPS module tests with coverage support" />
     </node>
   </node>
   <node concept="1TIwiD" id="65fUPtD3WWf">

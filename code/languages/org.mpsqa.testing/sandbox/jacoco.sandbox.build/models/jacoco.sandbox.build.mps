@@ -80,7 +80,9 @@
       </concept>
     </language>
     <language id="bf73e6d8-133f-42d0-a056-6fd1d29d022f" name="org.mpsqa.testcov.buildIntegration.jacoco">
-      <concept id="3501904696383148638" name="org.mpsqa.testcov.buildIntegration.jacoco.structure.BuildAspect_MpsTestModulesWithCoverage" flags="ng" index="19Et6q" />
+      <concept id="3501904696383148638" name="org.mpsqa.testcov.buildIntegration.jacoco.structure.BuildAspect_MpsTestModulesWithCoverage" flags="ng" index="19Et6q">
+        <child id="7688302814531129659" name="reportsDir" index="23ssun" />
+      </concept>
       <concept id="6264459678549847737" name="org.mpsqa.testcov.buildIntegration.jacoco.structure.ICoverageAspect" flags="ngI" index="1flRDq">
         <property id="7012081905492226787" name="runWithModuleTests" index="9whAO" />
         <child id="1149674635298787521" name="coverageOf" index="1rHEoW" />
@@ -375,6 +377,15 @@
           </node>
         </node>
       </node>
+      <node concept="398BVA" id="4rL2kFIrsez" role="23ssun">
+        <ref role="398BVh" node="4rL2kFIrses" resolve="build.dir" />
+        <node concept="2Ry0Ak" id="4rL2kFIrseA" role="iGT6I">
+          <property role="2Ry0Am" value="test-reports" />
+          <node concept="2Ry0Ak" id="4rL2kFIrwjV" role="2Ry0An">
+            <property role="2Ry0Am" value="test" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1y0Vig" id="oz4hQ$QQdU" role="1hWBAP" />
     <node concept="398rNT" id="3W4BA34kLb8" role="1l3spd">
@@ -382,6 +393,9 @@
       <node concept="398BVA" id="3W4BA34kLbc" role="398pKh">
         <ref role="398BVh" node="4L8SKciIAuI" resolve="mpsqa.home" />
       </node>
+    </node>
+    <node concept="398rNT" id="4rL2kFIrses" role="1l3spd">
+      <property role="TrG5h" value="build.dir" />
     </node>
   </node>
 </model>
