@@ -34,6 +34,7 @@
     <import index="ovw5" ref="r:c20826af-2893-4d29-904e-89e5161f5716(org.mpsqa.lint.generic.linters_library.quickfixes.typesystem)" />
     <import index="dush" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.persistence(MPS.OpenAPI/)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
+    <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1113,11 +1114,23 @@
           <node concept="3cpWsn" id="3$9W3co2XpN" role="3cpWs9">
             <property role="TrG5h" value="res" />
             <node concept="_YKpA" id="3$9W3co2XpO" role="1tU5fm">
-              <node concept="17QB3L" id="3$9W3co2XpP" role="_ZDj9" />
+              <node concept="3uibUv" id="4XPt_HaJtRV" role="_ZDj9">
+                <ref role="3uigEE" to="zn9m:~Pair" resolve="Pair" />
+                <node concept="17QB3L" id="4XPt_HaJx2g" role="11_B2D" />
+                <node concept="3uibUv" id="4XPt_HaJyHF" role="11_B2D">
+                  <ref role="3uigEE" to="guwi:~File" resolve="File" />
+                </node>
+              </node>
             </node>
             <node concept="2ShNRf" id="3$9W3co2XpQ" role="33vP2m">
               <node concept="Tc6Ow" id="3$9W3co2XpR" role="2ShVmc">
-                <node concept="17QB3L" id="3$9W3co2XpS" role="HW$YZ" />
+                <node concept="3uibUv" id="4XPt_HaJzzC" role="HW$YZ">
+                  <ref role="3uigEE" to="zn9m:~Pair" resolve="Pair" />
+                  <node concept="17QB3L" id="4XPt_HaJzzD" role="11_B2D" />
+                  <node concept="3uibUv" id="4XPt_HaJzzE" role="11_B2D">
+                    <ref role="3uigEE" to="guwi:~File" resolve="File" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -1177,9 +1190,16 @@
                             <ref role="3cqZAo" node="3$9W3co2XpN" resolve="res" />
                           </node>
                           <node concept="TSZUe" id="6EiPrTQlhMO" role="2OqNvi">
-                            <node concept="vsK6v" id="6EiPrTQlebW" role="25WWJ7">
-                              <node concept="37vLTw" id="6EiPrTQljH4" role="vsfCu">
-                                <ref role="3cqZAo" node="3$9W3co6X7n" resolve="ioe" />
+                            <node concept="2ShNRf" id="4XPt_HaJ_b6" role="25WWJ7">
+                              <node concept="1pGfFk" id="4XPt_HaJ_Z0" role="2ShVmc">
+                                <property role="373rjd" value="true" />
+                                <ref role="37wK5l" to="zn9m:~Pair.&lt;init&gt;(java.lang.Object,java.lang.Object)" resolve="Pair" />
+                                <node concept="vsK6v" id="6EiPrTQlebW" role="37wK5m">
+                                  <node concept="37vLTw" id="6EiPrTQljH4" role="vsfCu">
+                                    <ref role="3cqZAo" node="3$9W3co6X7n" resolve="ioe" />
+                                  </node>
+                                </node>
+                                <node concept="10Nm6u" id="4XPt_HaJBch" role="37wK5m" />
                               </node>
                             </node>
                           </node>
@@ -1256,17 +1276,12 @@
                                             <ref role="3cqZAo" node="3$9W3co3U3M" resolve="msdFiles" />
                                           </node>
                                           <node concept="TSZUe" id="3$9W3co6PWq" role="2OqNvi">
-                                            <node concept="2OqwBi" id="3$9W3co6PWr" role="25WWJ7">
-                                              <node concept="2OqwBi" id="3$9W3co6PWs" role="2Oq$k0">
-                                                <node concept="37vLTw" id="3$9W3co6PWt" role="2Oq$k0">
-                                                  <ref role="3cqZAo" node="3$9W3co6PW9" resolve="file" />
-                                                </node>
-                                                <node concept="liA8E" id="3$9W3co6PWu" role="2OqNvi">
-                                                  <ref role="37wK5l" to="eoo2:~Path.toFile()" resolve="toFile" />
-                                                </node>
+                                            <node concept="2OqwBi" id="3$9W3co6PWs" role="25WWJ7">
+                                              <node concept="37vLTw" id="3$9W3co6PWt" role="2Oq$k0">
+                                                <ref role="3cqZAo" node="3$9W3co6PW9" resolve="file" />
                                               </node>
-                                              <node concept="liA8E" id="3$9W3co6PWv" role="2OqNvi">
-                                                <ref role="37wK5l" to="guwi:~File.getName()" resolve="getName" />
+                                              <node concept="liA8E" id="4XPt_HaJrH0" role="2OqNvi">
+                                                <ref role="37wK5l" to="eoo2:~Path.toString()" resolve="toString" />
                                               </node>
                                             </node>
                                           </node>
@@ -1387,7 +1402,7 @@
                               <ref role="3cqZAo" node="3$9W3co506w" resolve="descriptorFile" />
                             </node>
                             <node concept="liA8E" id="3$9W3co5$SS" role="2OqNvi">
-                              <ref role="37wK5l" to="3ju5:~IFile.getName()" resolve="getName" />
+                              <ref role="37wK5l" to="3ju5:~IFile.toRealPath()" resolve="toRealPath" />
                             </node>
                           </node>
                         </node>
@@ -1452,17 +1467,32 @@
                   <ref role="3cqZAo" node="3$9W3co2XpN" resolve="res" />
                 </node>
                 <node concept="TSZUe" id="3$9W3co5IH_" role="2OqNvi">
-                  <node concept="3cpWs3" id="3$9W3co5IHB" role="25WWJ7">
-                    <node concept="3cpWs3" id="3$9W3co5IHC" role="3uHU7B">
-                      <node concept="Xl_RD" id="3$9W3co5IHD" role="3uHU7B">
-                        <property role="Xl_RC" value="Module with file '" />
+                  <node concept="2ShNRf" id="4XPt_HaJCnv" role="25WWJ7">
+                    <node concept="1pGfFk" id="4XPt_HaJDgs" role="2ShVmc">
+                      <property role="373rjd" value="true" />
+                      <ref role="37wK5l" to="zn9m:~Pair.&lt;init&gt;(java.lang.Object,java.lang.Object)" resolve="Pair" />
+                      <node concept="3cpWs3" id="3$9W3co5IHB" role="37wK5m">
+                        <node concept="3cpWs3" id="3$9W3co5IHC" role="3uHU7B">
+                          <node concept="Xl_RD" id="3$9W3co5IHD" role="3uHU7B">
+                            <property role="Xl_RC" value="Module with file '" />
+                          </node>
+                          <node concept="2GrUjf" id="3$9W3co5KNi" role="3uHU7w">
+                            <ref role="2Gs0qQ" node="3$9W3co5Baw" resolve="fileNotInProject" />
+                          </node>
+                        </node>
+                        <node concept="Xl_RD" id="3$9W3co5IHH" role="3uHU7w">
+                          <property role="Xl_RC" value="' is located in project directory but it is not part of the project" />
+                        </node>
                       </node>
-                      <node concept="2GrUjf" id="3$9W3co5KNi" role="3uHU7w">
-                        <ref role="2Gs0qQ" node="3$9W3co5Baw" resolve="fileNotInProject" />
+                      <node concept="2ShNRf" id="4XPt_HaJHqF" role="37wK5m">
+                        <node concept="1pGfFk" id="4XPt_HaJItk" role="2ShVmc">
+                          <property role="373rjd" value="true" />
+                          <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                          <node concept="2GrUjf" id="4XPt_HaJJ5O" role="37wK5m">
+                            <ref role="2Gs0qQ" node="3$9W3co5Baw" resolve="fileNotInProject" />
+                          </node>
+                        </node>
                       </node>
-                    </node>
-                    <node concept="Xl_RD" id="3$9W3co5IHH" role="3uHU7w">
-                      <property role="Xl_RC" value="' is located in project directory but it is not part of the project" />
                     </node>
                   </node>
                 </node>
@@ -2517,7 +2547,7 @@
                   <node concept="3cpWs3" id="7XOuq5ggEQm" role="3uHU7B">
                     <node concept="3cpWs3" id="7XOuq5ggEcZ" role="3uHU7B">
                       <node concept="Xl_RD" id="7XOuq5ggDqX" role="3uHU7B">
-                        <property role="Xl_RC" value="too many cyclic dependencies with length " />
+                        <property role="Xl_RC" value="Too many cyclic dependencies with length " />
                       </node>
                       <node concept="2j1LYi" id="7XOuq5ggEtO" role="3uHU7w">
                         <ref role="2j1LYj" node="47tbZooQUks" resolve="cycleLength" />
@@ -3053,21 +3083,8 @@
                           <property role="Xl_RC" value="' (some plugins might not be loaded)" />
                         </node>
                         <node concept="3cpWs3" id="6WYDruH6tDs" role="3uHU7B">
-                          <node concept="3cpWs3" id="6WYDruH6rp6" role="3uHU7B">
-                            <node concept="3cpWs3" id="6WYDruH6peB" role="3uHU7B">
-                              <node concept="Xl_RD" id="6WYDruH6oWM" role="3uHU7B">
-                                <property role="Xl_RC" value="Module '" />
-                              </node>
-                              <node concept="2OqwBi" id="6WYDruH6pvY" role="3uHU7w">
-                                <node concept="2vlQn3" id="2zdrQh74hCT" role="2Oq$k0" />
-                                <node concept="liA8E" id="6WYDruH6qBp" role="2OqNvi">
-                                  <ref role="37wK5l" to="lui2:~SModule.getModuleName()" resolve="getModuleName" />
-                                </node>
-                              </node>
-                            </node>
-                            <node concept="Xl_RD" id="6WYDruH6rpo" role="3uHU7w">
-                              <property role="Xl_RC" value="' uses unknown language '" />
-                            </node>
+                          <node concept="Xl_RD" id="4XPt_HaKh4T" role="3uHU7B">
+                            <property role="Xl_RC" value="Module uses unknown language '" />
                           </node>
                           <node concept="2GrUjf" id="6WYDruH6uij" role="3uHU7w">
                             <ref role="2Gs0qQ" node="52u1lglBbro" resolve="lan" />
@@ -3149,21 +3166,8 @@
                                 <property role="Xl_RC" value=" of the language " />
                               </node>
                               <node concept="3cpWs3" id="52u1lglDrWy" role="3uHU7B">
-                                <node concept="3cpWs3" id="52u1lglB0vr" role="3uHU7B">
-                                  <node concept="3cpWs3" id="52u1lglB0vs" role="3uHU7B">
-                                    <node concept="Xl_RD" id="52u1lglB0vt" role="3uHU7B">
-                                      <property role="Xl_RC" value="Module '" />
-                                    </node>
-                                    <node concept="2OqwBi" id="52u1lglB0vu" role="3uHU7w">
-                                      <node concept="2vlQn3" id="2zdrQh74hZO" role="2Oq$k0" />
-                                      <node concept="liA8E" id="52u1lglB0vw" role="2OqNvi">
-                                        <ref role="37wK5l" to="lui2:~SModule.getModuleName()" resolve="getModuleName" />
-                                      </node>
-                                    </node>
-                                  </node>
-                                  <node concept="Xl_RD" id="52u1lglB0vx" role="3uHU7w">
-                                    <property role="Xl_RC" value="' needs to be migrated to version " />
-                                  </node>
+                                <node concept="Xl_RD" id="4XPt_HaKixf" role="3uHU7B">
+                                  <property role="Xl_RC" value="Module needs to be migrated to version " />
                                 </node>
                                 <node concept="37vLTw" id="52u1lglDshq" role="3uHU7w">
                                   <ref role="3cqZAo" node="RtEeVJVV5h" resolve="languageVersion" />
@@ -5666,11 +5670,23 @@
           <node concept="3cpWsn" id="7CQ_Wpsik_b" role="3cpWs9">
             <property role="TrG5h" value="res" />
             <node concept="_YKpA" id="7CQ_Wpsik_c" role="1tU5fm">
-              <node concept="17QB3L" id="7CQ_Wpsik_d" role="_ZDj9" />
+              <node concept="3uibUv" id="4XPt_HaAEXb" role="_ZDj9">
+                <ref role="3uigEE" to="zn9m:~Pair" resolve="Pair" />
+                <node concept="17QB3L" id="4XPt_HaAJ$c" role="11_B2D" />
+                <node concept="3uibUv" id="4XPt_HaAMo2" role="11_B2D">
+                  <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+                </node>
+              </node>
             </node>
             <node concept="2ShNRf" id="7CQ_Wpsik_e" role="33vP2m">
               <node concept="Tc6Ow" id="7CQ_Wpsik_f" role="2ShVmc">
-                <node concept="17QB3L" id="7CQ_Wpsik_g" role="HW$YZ" />
+                <node concept="3uibUv" id="4XPt_HaHPU8" role="HW$YZ">
+                  <ref role="3uigEE" to="zn9m:~Pair" resolve="Pair" />
+                  <node concept="17QB3L" id="4XPt_HaHPU9" role="11_B2D" />
+                  <node concept="3uibUv" id="4XPt_HaHPUa" role="11_B2D">
+                    <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -5756,8 +5772,17 @@
                               <ref role="3cqZAo" node="7CQ_Wpsik_b" resolve="res" />
                             </node>
                             <node concept="TSZUe" id="7CQ_WpsiQGk" role="2OqNvi">
-                              <node concept="Xl_RD" id="63CQ8uYFTXw" role="25WWJ7">
-                                <property role="Xl_RC" value="Language is not part of any devkit" />
+                              <node concept="2ShNRf" id="4XPt_HaHSLC" role="25WWJ7">
+                                <node concept="1pGfFk" id="4XPt_HaHT8G" role="2ShVmc">
+                                  <property role="373rjd" value="true" />
+                                  <ref role="37wK5l" to="zn9m:~Pair.&lt;init&gt;(java.lang.Object,java.lang.Object)" resolve="Pair" />
+                                  <node concept="Xl_RD" id="63CQ8uYFTXw" role="37wK5m">
+                                    <property role="Xl_RC" value="Language is not part of any devkit" />
+                                  </node>
+                                  <node concept="2GrUjf" id="4XPt_HaHTpf" role="37wK5m">
+                                    <ref role="2Gs0qQ" node="7CQ_WpsiHw1" resolve="module" />
+                                  </node>
+                                </node>
                               </node>
                             </node>
                           </node>
