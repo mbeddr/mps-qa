@@ -779,8 +779,8 @@
                       <ref role="3cqZAo" to="lzb2:~JBColor.ORANGE" resolve="ORANGE" />
                       <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
                     </node>
-                    <node concept="10M0yZ" id="63CQ8uYLJDf" role="3K4GZi">
-                      <ref role="3cqZAo" to="lzb2:~JBColor.LIGHT_GRAY" resolve="LIGHT_GRAY" />
+                    <node concept="10M0yZ" id="7_XHz4_JkX6" role="3K4GZi">
+                      <ref role="3cqZAo" to="lzb2:~JBColor.GREEN" resolve="GREEN" />
                       <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
                     </node>
                     <node concept="2OqwBi" id="63CQ8uYIrmU" role="3K4Cdx">
@@ -1775,8 +1775,8 @@
                       <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
                       <ref role="3cqZAo" to="lzb2:~JBColor.ORANGE" resolve="ORANGE" />
                     </node>
-                    <node concept="10M0yZ" id="63CQ8uYM8eX" role="3K4GZi">
-                      <ref role="3cqZAo" to="lzb2:~JBColor.LIGHT_GRAY" resolve="LIGHT_GRAY" />
+                    <node concept="10M0yZ" id="7_XHz4_J2PX" role="3K4GZi">
+                      <ref role="3cqZAo" to="lzb2:~JBColor.GREEN" resolve="GREEN" />
                       <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
                     </node>
                     <node concept="2OqwBi" id="652KpqR2FTk" role="3K4Cdx">
