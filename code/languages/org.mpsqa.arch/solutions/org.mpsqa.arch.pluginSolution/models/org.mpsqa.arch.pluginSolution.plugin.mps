@@ -473,7 +473,7 @@
           <node concept="3clFbC" id="sRpFtPpoXr" role="3clFbw">
             <node concept="10Nm6u" id="sRpFtPppgb" role="3uHU7w" />
             <node concept="37vLTw" id="sRpFtPpoym" role="3uHU7B">
-              <ref role="3cqZAo" node="1Nl9e7Dz2vq" resolve="depthAndShowModules" />
+              <ref role="3cqZAo" node="1Nl9e7Dz2vq" resolve="configuration" />
             </node>
           </node>
         </node>
@@ -816,7 +816,7 @@
         <node concept="3clFbF" id="fm3v0WVmVI" role="3cqZAp">
           <node concept="2OqwBi" id="fm3v0WVn_A" role="3clFbG">
             <node concept="37vLTw" id="fm3v0WVmVG" role="2Oq$k0">
-              <ref role="3cqZAo" node="fm3v0WVdU5" resolve="buttons" />
+              <ref role="3cqZAo" node="fm3v0WVdU5" resolve="buttonsPanel" />
             </node>
             <node concept="liA8E" id="fm3v0WVopn" role="2OqNvi">
               <ref role="37wK5l" to="z60i:~Component.setSize(int,int)" resolve="setSize" />
@@ -848,7 +848,7 @@
         <node concept="3clFbF" id="fm3v0WV249" role="3cqZAp">
           <node concept="2OqwBi" id="fm3v0WV2Q2" role="3clFbG">
             <node concept="37vLTw" id="fm3v0WVeSj" role="2Oq$k0">
-              <ref role="3cqZAo" node="fm3v0WVdU5" resolve="buttons" />
+              <ref role="3cqZAo" node="fm3v0WVdU5" resolve="buttonsPanel" />
             </node>
             <node concept="liA8E" id="fm3v0WV3DB" role="2OqNvi">
               <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component)" resolve="add" />
@@ -1021,7 +1021,7 @@
         <node concept="3clFbF" id="fm3v0WQlWK" role="3cqZAp">
           <node concept="2OqwBi" id="fm3v0WQmIn" role="3clFbG">
             <node concept="37vLTw" id="fm3v0WVeYB" role="2Oq$k0">
-              <ref role="3cqZAo" node="fm3v0WVdU5" resolve="buttons" />
+              <ref role="3cqZAo" node="fm3v0WVdU5" resolve="buttonsPanel" />
             </node>
             <node concept="liA8E" id="fm3v0WQnuS" role="2OqNvi">
               <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component)" resolve="add" />
@@ -1061,7 +1061,7 @@
                     <property role="2bfB8j" value="true" />
                     <property role="373rjd" value="true" />
                     <ref role="1Y3XeK" to="hyam:~ActionListener" resolve="ActionListener" />
-                    <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
+                    <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                     <node concept="3Tm1VV" id="sRpFtPpZ71" role="1B3o_S" />
                     <node concept="3clFb_" id="sRpFtPpZ7f" role="jymVt">
                       <property role="TrG5h" value="actionPerformed" />
@@ -1086,7 +1086,7 @@
                         </node>
                       </node>
                       <node concept="2AHcQZ" id="sRpFtPpZ7n" role="2AJF6D">
-                        <ref role="2AI5Lk" to="wyt6:~Override" />
+                        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                       </node>
                     </node>
                   </node>
@@ -1120,7 +1120,7 @@
             <node concept="liA8E" id="fm3v0WVhQq" role="2OqNvi">
               <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component,java.lang.Object)" resolve="add" />
               <node concept="37vLTw" id="fm3v0WViRb" role="37wK5m">
-                <ref role="3cqZAo" node="fm3v0WVdU5" resolve="buttons" />
+                <ref role="3cqZAo" node="fm3v0WVdU5" resolve="buttonsPanel" />
               </node>
               <node concept="10M0yZ" id="sRpFtPpFx1" role="37wK5m">
                 <ref role="3cqZAo" to="z60i:~BorderLayout.NORTH" resolve="NORTH" />
@@ -3289,7 +3289,7 @@
                   </node>
                 </node>
                 <node concept="2r$n1x" id="sRpFtPqCAi" role="2r_Bvh">
-                  <ref role="2r$qp6" node="sRpFtPqpZu" resolve="showModules" />
+                  <ref role="2r$qp6" node="sRpFtPqpZu" resolve="displayModules" />
                   <node concept="37vLTw" id="sRpFtPqDha" role="2r_lH1">
                     <ref role="3cqZAo" node="1Nl9e7DyQiR" resolve="displayModules" />
                   </node>
@@ -3569,7 +3569,7 @@
           <node concept="3clFbC" id="sRpFtPpqFc" role="3clFbw">
             <node concept="10Nm6u" id="sRpFtPpqXW" role="3uHU7w" />
             <node concept="37vLTw" id="sRpFtPpqg7" role="3uHU7B">
-              <ref role="3cqZAo" node="1Nl9e7Dz$jD" resolve="depthAndShowModules" />
+              <ref role="3cqZAo" node="1Nl9e7Dz$jD" resolve="configuration" />
             </node>
           </node>
         </node>

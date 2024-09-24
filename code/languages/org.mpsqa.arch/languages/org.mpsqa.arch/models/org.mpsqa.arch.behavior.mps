@@ -550,7 +550,7 @@
               </node>
             </node>
             <node concept="BsUDl" id="fm3v0WWNEM" role="33vP2m">
-              <ref role="37wK5l" node="fm3v0WRLT8" resolve="getModulesOfImportedModels" />
+              <ref role="37wK5l" node="fm3v0WRLT8" resolve="getModulesOnWhichThisModuleDepends" />
             </node>
           </node>
         </node>
@@ -1610,7 +1610,7 @@
             <node concept="2OqwBi" id="fm3v0WXc8T" role="33vP2m">
               <node concept="2OqwBi" id="fm3v0WXc8U" role="2Oq$k0">
                 <node concept="37vLTw" id="sRpFtPzzq9" role="2Oq$k0">
-                  <ref role="3cqZAo" node="sRpFtPzzq3" resolve="moduleId" />
+                  <ref role="3cqZAo" node="sRpFtPzzq3" resolve="modulePointer" />
                 </node>
                 <node concept="2qgKlT" id="fm3v0WXc90" role="2OqNvi">
                   <ref role="37wK5l" to="xlb7:1Bs_61$mqDd" resolve="toModuleReference" />
@@ -1689,7 +1689,7 @@
               <node concept="ANE8D" id="1XeVdf862N0" role="2OqNvi" />
               <node concept="2OqwBi" id="sRpFtPBuVO" role="2Oq$k0">
                 <node concept="BsUDl" id="sRpFtPBu1B" role="2Oq$k0">
-                  <ref role="37wK5l" node="sRpFtPBjJv" resolve="getExcludedModelIDs" />
+                  <ref role="37wK5l" node="sRpFtPBjJv" resolve="getExcludedModelRefs" />
                 </node>
                 <node concept="3$u5V9" id="sRpFtPBvKo" role="2OqNvi">
                   <node concept="1bVj0M" id="sRpFtPBvKq" role="23t8la">

@@ -1100,7 +1100,7 @@
             <ref role="1YBMHb" node="6ESRMYICZ1k" resolve="moduleComponent" />
           </node>
           <node concept="2qgKlT" id="fm3v0WSSGU" role="2OqNvi">
-            <ref role="37wK5l" to="lm2w:fm3v0WRLT8" resolve="getModulesOfImportedModels" />
+            <ref role="37wK5l" to="lm2w:fm3v0WRLT8" resolve="getModulesOnWhichThisModuleDepends" />
           </node>
         </node>
       </node>
