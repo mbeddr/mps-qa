@@ -425,10 +425,10 @@
                         <node concept="3cpWsn" id="28p3jNfoCSY" role="3cpWs9">
                           <property role="TrG5h" value="info" />
                           <node concept="3uibUv" id="28p3jNfoCSZ" role="1tU5fm">
-                            <ref role="3uigEE" node="28p3jNfoqlK" resolve="MessageInfo" />
+                            <ref role="3uigEE" node="28p3jNfoqlK" resolve="SuppressCheckerResults.MessageInfo" />
                           </node>
                           <node concept="2ry78W" id="28p3jNfoGL6" role="33vP2m">
-                            <ref role="2ryb1Q" node="28p3jNfoqlK" resolve="MessageInfo" />
+                            <ref role="2ryb1Q" node="28p3jNfoqlK" resolve="SuppressCheckerResults.MessageInfo" />
                             <node concept="2r$n1x" id="28p3jNfoHko" role="2r_Bvh">
                               <ref role="2r$qp6" node="28p3jNfot$J" resolve="status" />
                               <node concept="3K4zz7" id="1DrnXKMXYTi" role="2r_lH1">
