@@ -4,8 +4,11 @@
   <property name="build.tmp" location="${build.dir}/tmp/org.mpsqa.allScripts" />
   <property name="build.layout" location="${build.dir}/artifacts/org.mpsqa.allScripts" />
   <property name="mps.home" location="" />
+  <property name="mpsqa.home" location="${basedir}" />
   <property name="artifacts.mps" location="${mps.home}" />
+  <property name="artifacts.com.mbeddr.logicalview.checks" location="${mpsqa.home}/build/dependencies/com.mbeddr.logicalview.checks" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
+  <property file="${artifacts.com.mbeddr.logicalview.checks}/build.properties" prefix="import.com.mbeddr.logicalview.checks" />
   <property name="mps.build.number" value="${import.mps.mps.build.number}" />
   <property name="mps.date" value="${import.mps.mps.date}" />
   <property name="mps.build.vcs.number" value="${import.mps.mps.build.vcs.number}" />
@@ -17,6 +20,7 @@
   <property name="mpsBootstrapCore.version.bugfixNr" value="${import.mps.mpsBootstrapCore.version.bugfixNr}" />
   <property name="mpsBootstrapCore.version.eap" value="${import.mps.mpsBootstrapCore.version.eap}" />
   <property name="mpsBootstrapCore.version" value="${import.mps.mpsBootstrapCore.version}" />
+  <property name="com.mbeddr.logicalview.checks.version" value="${import.com.mbeddr.logicalview.checks.com.mbeddr.logicalview.checks.version}" />
   <property name="environment" value="env" />
   <property name="env.JAVA_HOME" value="${java.home}/.." />
   <property name="jdk.home" value="${env.JAVA_HOME}" />
@@ -36,7 +40,7 @@
   
   <target name="assemble" depends="classes, declare-mps-tasks">
     <mkdir dir="${build.layout}" />
-    <echo file="${build.layout}/build.properties">mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}${line.separator}mpsBootstrapCore.version.major=${mpsBootstrapCore.version.major}${line.separator}mpsBootstrapCore.version.minor=${mpsBootstrapCore.version.minor}${line.separator}mpsBootstrapCore.version.bugfixNr=${mpsBootstrapCore.version.bugfixNr}${line.separator}mpsBootstrapCore.version.eap=${mpsBootstrapCore.version.eap}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
+    <echo file="${build.layout}/build.properties">mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}${line.separator}mpsBootstrapCore.version.major=${mpsBootstrapCore.version.major}${line.separator}mpsBootstrapCore.version.minor=${mpsBootstrapCore.version.minor}${line.separator}mpsBootstrapCore.version.bugfixNr=${mpsBootstrapCore.version.bugfixNr}${line.separator}mpsBootstrapCore.version.eap=${mpsBootstrapCore.version.eap}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}com.mbeddr.logicalview.checks.version=${com.mbeddr.logicalview.checks.version}</echo>
   </target>
   
   <target name="buildDependents" />
@@ -64,6 +68,7 @@
     <echo message="generating" />
     <generate fork="true" logLevel="${mps.ant.log}">      
       <settings refid="m2m-defaults" />
+      <plugin path="${artifacts.com.mbeddr.logicalview.checks}/com.mbeddr.logicalview.checks.build" />
       <plugin path="${artifacts.mps}/plugins/mps-build" />
       <plugin path="${artifacts.mps}/plugins/mps-core" />
       <library file="${artifacts.mps}/languages/baseLanguage/closures.runtime.jar" />
@@ -169,6 +174,7 @@
         <arg value="--add-opens=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED" />
       </jvmargs>
       <macro name="mps.home" path="${mps.home}" />
+      <macro name="mpsqa.home" path="${mpsqa.home}" />
     </generate>
   </target>
   
@@ -177,60 +183,64 @@
   <target name="makeDependents" />
   
   <target name="java.compile.org.mpsqa.build.allScripts" depends="java.compile.org.mpsqa.build">
-    <mkdir dir="${basedir}/code/languages/org.mpsqa.build/solutions/org.mpsqa.build.allScripts/source_gen" />
+    <mkdir dir="${mpsqa.home}/code/languages/org.mpsqa.build/solutions/org.mpsqa.build.allScripts/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.mpsqa.build.allScripts" />
     <javac destdir="${build.tmp}/java/out/org.mpsqa.build.allScripts" fork="false" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${basedir}/code/languages/org.mpsqa.build/solutions/org.mpsqa.build.allScripts/source_gen" />
+        <path location="${mpsqa.home}/code/languages/org.mpsqa.build/solutions/org.mpsqa.build.allScripts/source_gen" />
       </src>
-      <classpath path="${build.tmp}/java/out/org.mpsqa.build" />
+      <classpath>
+        <pathelement path="${build.tmp}/java/out/org.mpsqa.build" />
+        <fileset file="${artifacts.com.mbeddr.logicalview.checks}/com.mbeddr.logicalview.checks.build/languages/com.mbeddr.logicalview.checks.build/com.mbeddr.logicalview.checks.build.jar" />
+      </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/org.mpsqa.build.allScripts">
-      <fileset dir="${basedir}/code/languages/org.mpsqa.build/solutions/org.mpsqa.build.allScripts/source_gen" excludes="**/*.java" />
+      <fileset dir="${mpsqa.home}/code/languages/org.mpsqa.build/solutions/org.mpsqa.build.allScripts/source_gen" excludes="**/*.java" />
     </copy>
   </target>
   
   <target name="java.compile.org.mpsqa.base.build">
-    <mkdir dir="${basedir}/code/languages/org.mpsqa.base/solutions/org.mpsqa.base.build/source_gen" />
+    <mkdir dir="${mpsqa.home}/code/languages/org.mpsqa.base/solutions/org.mpsqa.base.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.mpsqa.base.build" />
     <javac destdir="${build.tmp}/java/out/org.mpsqa.base.build" fork="false" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${basedir}/code/languages/org.mpsqa.base/solutions/org.mpsqa.base.build/source_gen" />
+        <path location="${mpsqa.home}/code/languages/org.mpsqa.base/solutions/org.mpsqa.base.build/source_gen" />
       </src>
       <classpath />
     </javac>
     <copy todir="${build.tmp}/java/out/org.mpsqa.base.build">
-      <fileset dir="${basedir}/code/languages/org.mpsqa.base/solutions/org.mpsqa.base.build/source_gen" excludes="**/*.java" />
+      <fileset dir="${mpsqa.home}/code/languages/org.mpsqa.base/solutions/org.mpsqa.base.build/source_gen" excludes="**/*.java" />
     </copy>
   </target>
   
   <target name="java.compile.org.mpsqa.build" depends="java.compile.org.mpsqa.base.build, java.compile.org.mpsqa.testing.build">
-    <mkdir dir="${basedir}/code/languages/org.mpsqa.build/solutions/org.mpsqa.build/source_gen" />
+    <mkdir dir="${mpsqa.home}/code/languages/org.mpsqa.build/solutions/org.mpsqa.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.mpsqa.build" />
     <javac destdir="${build.tmp}/java/out/org.mpsqa.build" fork="false" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${basedir}/code/languages/org.mpsqa.build/solutions/org.mpsqa.build/source_gen" />
+        <path location="${mpsqa.home}/code/languages/org.mpsqa.build/solutions/org.mpsqa.build/source_gen" />
       </src>
       <classpath>
         <pathelement path="${build.tmp}/java/out/org.mpsqa.base.build" />
         <pathelement path="${build.tmp}/java/out/org.mpsqa.testing.build" />
+        <fileset file="${artifacts.com.mbeddr.logicalview.checks}/com.mbeddr.logicalview.checks.build/languages/com.mbeddr.logicalview.checks.build/com.mbeddr.logicalview.checks.build.jar" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/org.mpsqa.build">
-      <fileset dir="${basedir}/code/languages/org.mpsqa.build/solutions/org.mpsqa.build/source_gen" excludes="**/*.java" />
+      <fileset dir="${mpsqa.home}/code/languages/org.mpsqa.build/solutions/org.mpsqa.build/source_gen" excludes="**/*.java" />
     </copy>
   </target>
   
   <target name="java.compile.org.mpsqa.build.sandboxes" depends="java.compile.org.mpsqa.base.build, java.compile.org.mpsqa.build">
-    <mkdir dir="${basedir}/code/languages/org.mpsqa.build/solutions/org.mpsqa.build.sandboxes/source_gen" />
+    <mkdir dir="${mpsqa.home}/code/languages/org.mpsqa.build/solutions/org.mpsqa.build.sandboxes/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.mpsqa.build.sandboxes" />
     <javac destdir="${build.tmp}/java/out/org.mpsqa.build.sandboxes" fork="false" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${basedir}/code/languages/org.mpsqa.build/solutions/org.mpsqa.build.sandboxes/source_gen" />
+        <path location="${mpsqa.home}/code/languages/org.mpsqa.build/solutions/org.mpsqa.build.sandboxes/source_gen" />
       </src>
       <classpath>
         <pathelement path="${build.tmp}/java/out/org.mpsqa.base.build" />
@@ -238,17 +248,17 @@
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/org.mpsqa.build.sandboxes">
-      <fileset dir="${basedir}/code/languages/org.mpsqa.build/solutions/org.mpsqa.build.sandboxes/source_gen" excludes="**/*.java" />
+      <fileset dir="${mpsqa.home}/code/languages/org.mpsqa.build/solutions/org.mpsqa.build.sandboxes/source_gen" excludes="**/*.java" />
     </copy>
   </target>
   
   <target name="java.compile.org.mpsqa.clones.build" depends="java.compile.org.mpsqa.base.build, java.compile.org.mpsqa.build">
-    <mkdir dir="${basedir}/code/languages/org.mpsqa.clones/solutions/org.mpsqa.clones.build/source_gen" />
+    <mkdir dir="${mpsqa.home}/code/languages/org.mpsqa.clones/solutions/org.mpsqa.clones.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.mpsqa.clones.build" />
     <javac destdir="${build.tmp}/java/out/org.mpsqa.clones.build" fork="false" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${basedir}/code/languages/org.mpsqa.clones/solutions/org.mpsqa.clones.build/source_gen" />
+        <path location="${mpsqa.home}/code/languages/org.mpsqa.clones/solutions/org.mpsqa.clones.build/source_gen" />
       </src>
       <classpath>
         <pathelement path="${build.tmp}/java/out/org.mpsqa.base.build" />
@@ -256,47 +266,50 @@
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/org.mpsqa.clones.build">
-      <fileset dir="${basedir}/code/languages/org.mpsqa.clones/solutions/org.mpsqa.clones.build/source_gen" excludes="**/*.java" />
+      <fileset dir="${mpsqa.home}/code/languages/org.mpsqa.clones/solutions/org.mpsqa.clones.build/source_gen" excludes="**/*.java" />
     </copy>
   </target>
   
   <target name="java.compile.org.mpsqa.lint.build" depends="java.compile.org.mpsqa.build">
-    <mkdir dir="${basedir}/code/languages/org.mpsqa.lint/solutions/org.mpsqa.lint.build/source_gen" />
+    <mkdir dir="${mpsqa.home}/code/languages/org.mpsqa.lint/solutions/org.mpsqa.lint.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.mpsqa.lint.build" />
     <javac destdir="${build.tmp}/java/out/org.mpsqa.lint.build" fork="false" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${basedir}/code/languages/org.mpsqa.lint/solutions/org.mpsqa.lint.build/source_gen" />
+        <path location="${mpsqa.home}/code/languages/org.mpsqa.lint/solutions/org.mpsqa.lint.build/source_gen" />
       </src>
-      <classpath path="${build.tmp}/java/out/org.mpsqa.build" />
+      <classpath>
+        <pathelement path="${build.tmp}/java/out/org.mpsqa.build" />
+        <fileset file="${artifacts.com.mbeddr.logicalview.checks}/com.mbeddr.logicalview.checks.build/languages/com.mbeddr.logicalview.checks.build/com.mbeddr.logicalview.checks.build.jar" />
+      </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/org.mpsqa.lint.build">
-      <fileset dir="${basedir}/code/languages/org.mpsqa.lint/solutions/org.mpsqa.lint.build/source_gen" excludes="**/*.java" />
+      <fileset dir="${mpsqa.home}/code/languages/org.mpsqa.lint/solutions/org.mpsqa.lint.build/source_gen" excludes="**/*.java" />
     </copy>
   </target>
   
   <target name="java.compile.org.mpsqa.testing.build" depends="java.compile.org.mpsqa.base.build">
-    <mkdir dir="${basedir}/code/languages/org.mpsqa.testing/solutions/org.mpsqa.testing.build/source_gen" />
+    <mkdir dir="${mpsqa.home}/code/languages/org.mpsqa.testing/solutions/org.mpsqa.testing.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.mpsqa.testing.build" />
     <javac destdir="${build.tmp}/java/out/org.mpsqa.testing.build" fork="false" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${basedir}/code/languages/org.mpsqa.testing/solutions/org.mpsqa.testing.build/source_gen" />
+        <path location="${mpsqa.home}/code/languages/org.mpsqa.testing/solutions/org.mpsqa.testing.build/source_gen" />
       </src>
       <classpath path="${build.tmp}/java/out/org.mpsqa.base.build" />
     </javac>
     <copy todir="${build.tmp}/java/out/org.mpsqa.testing.build">
-      <fileset dir="${basedir}/code/languages/org.mpsqa.testing/solutions/org.mpsqa.testing.build/source_gen" excludes="**/*.java" />
+      <fileset dir="${mpsqa.home}/code/languages/org.mpsqa.testing/solutions/org.mpsqa.testing.build/source_gen" excludes="**/*.java" />
     </copy>
   </target>
   
   <target name="java.compile.org.mpsqa.testing.tests.build" depends="java.compile.org.mpsqa.base.build, java.compile.org.mpsqa.testing.build">
-    <mkdir dir="${basedir}/code/languages/org.mpsqa.testing/solutions/org.mpsqa.testing.tests.build/source_gen" />
+    <mkdir dir="${mpsqa.home}/code/languages/org.mpsqa.testing/solutions/org.mpsqa.testing.tests.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.mpsqa.testing.tests.build" />
     <javac destdir="${build.tmp}/java/out/org.mpsqa.testing.tests.build" fork="false" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${basedir}/code/languages/org.mpsqa.testing/solutions/org.mpsqa.testing.tests.build/source_gen" />
+        <path location="${mpsqa.home}/code/languages/org.mpsqa.testing/solutions/org.mpsqa.testing.tests.build/source_gen" />
       </src>
       <classpath>
         <pathelement path="${build.tmp}/java/out/org.mpsqa.base.build" />
@@ -304,18 +317,18 @@
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/org.mpsqa.testing.tests.build">
-      <fileset dir="${basedir}/code/languages/org.mpsqa.testing/solutions/org.mpsqa.testing.tests.build/source_gen" excludes="**/*.java" />
+      <fileset dir="${mpsqa.home}/code/languages/org.mpsqa.testing/solutions/org.mpsqa.testing.tests.build/source_gen" excludes="**/*.java" />
     </copy>
   </target>
   
   <target name="cleanSources">
-    <delete dir="${basedir}/code/languages/org.mpsqa.base/solutions/org.mpsqa.base.build/source_gen" />
-    <delete dir="${basedir}/code/languages/org.mpsqa.build/solutions/org.mpsqa.build/source_gen" />
-    <delete dir="${basedir}/code/languages/org.mpsqa.build/solutions/org.mpsqa.build.allScripts/source_gen" />
-    <delete dir="${basedir}/code/languages/org.mpsqa.build/solutions/org.mpsqa.build.sandboxes/source_gen" />
-    <delete dir="${basedir}/code/languages/org.mpsqa.clones/solutions/org.mpsqa.clones.build/source_gen" />
-    <delete dir="${basedir}/code/languages/org.mpsqa.lint/solutions/org.mpsqa.lint.build/source_gen" />
-    <delete dir="${basedir}/code/languages/org.mpsqa.testing/solutions/org.mpsqa.testing.build/source_gen" />
-    <delete dir="${basedir}/code/languages/org.mpsqa.testing/solutions/org.mpsqa.testing.tests.build/source_gen" />
+    <delete dir="${mpsqa.home}/code/languages/org.mpsqa.base/solutions/org.mpsqa.base.build/source_gen" />
+    <delete dir="${mpsqa.home}/code/languages/org.mpsqa.build/solutions/org.mpsqa.build/source_gen" />
+    <delete dir="${mpsqa.home}/code/languages/org.mpsqa.build/solutions/org.mpsqa.build.allScripts/source_gen" />
+    <delete dir="${mpsqa.home}/code/languages/org.mpsqa.build/solutions/org.mpsqa.build.sandboxes/source_gen" />
+    <delete dir="${mpsqa.home}/code/languages/org.mpsqa.clones/solutions/org.mpsqa.clones.build/source_gen" />
+    <delete dir="${mpsqa.home}/code/languages/org.mpsqa.lint/solutions/org.mpsqa.lint.build/source_gen" />
+    <delete dir="${mpsqa.home}/code/languages/org.mpsqa.testing/solutions/org.mpsqa.testing.build/source_gen" />
+    <delete dir="${mpsqa.home}/code/languages/org.mpsqa.testing/solutions/org.mpsqa.testing.tests.build/source_gen" />
   </target>
 </project>
