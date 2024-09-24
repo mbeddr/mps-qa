@@ -2040,21 +2040,54 @@
                 </node>
               </node>
             </node>
+            <node concept="3cpWs8" id="7YedNyZKP5$" role="3cqZAp">
+              <node concept="3cpWsn" id="7YedNyZKP5_" role="3cpWs9">
+                <property role="TrG5h" value="model" />
+                <node concept="3uibUv" id="7YedNyZKK81" role="1tU5fm">
+                  <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+                </node>
+                <node concept="2OqwBi" id="7YedNyZKP5A" role="33vP2m">
+                  <node concept="37vLTw" id="7YedNyZKP5B" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4XPt_HaEId8" resolve="modelRef" />
+                  </node>
+                  <node concept="liA8E" id="7YedNyZKP5C" role="2OqNvi">
+                    <ref role="37wK5l" to="mhbf:~SModelReference.resolve(org.jetbrains.mps.openapi.module.SRepository)" resolve="resolve" />
+                    <node concept="37vLTw" id="7YedNyZKP5D" role="37wK5m">
+                      <ref role="3cqZAo" node="4XPt_HaxCna" resolve="repository" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="7YedNyZKPBV" role="3cqZAp">
+              <node concept="3clFbS" id="7YedNyZKPBX" role="3clFbx">
+                <node concept="3cpWs6" id="7YedNyZKQok" role="3cqZAp">
+                  <node concept="1Ls8ON" id="7YedNyZKQol" role="3cqZAk">
+                    <node concept="2OqwBi" id="7YedNyZKQom" role="1Lso8e">
+                      <node concept="13iPFW" id="7YedNyZKQon" role="2Oq$k0" />
+                      <node concept="3TrcHB" id="7YedNyZKQoo" role="2OqNvi">
+                        <ref role="3TsBF5" to="a1af:2I_DQhwrOw" resolve="resultLocation" />
+                      </node>
+                    </node>
+                    <node concept="3clFbT" id="7YedNyZKQop" role="1Lso8e" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbC" id="7YedNyZKPWP" role="3clFbw">
+                <node concept="10Nm6u" id="7YedNyZKQ5N" role="3uHU7w" />
+                <node concept="37vLTw" id="7YedNyZKPI1" role="3uHU7B">
+                  <ref role="3cqZAo" node="7YedNyZKP5_" resolve="model" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="7YedNyZKQFT" role="3cqZAp" />
             <node concept="3cpWs6" id="4XPt_HauHqo" role="3cqZAp">
               <node concept="1Ls8ON" id="4XPt_HaCtaF" role="3cqZAk">
                 <node concept="3cpWs3" id="4XPt_HaxD5R" role="1Lso8e">
                   <node concept="2OqwBi" id="4XPt_HaxEfO" role="3uHU7w">
                     <node concept="2OqwBi" id="4XPt_HaxDTQ" role="2Oq$k0">
-                      <node concept="2OqwBi" id="4XPt_HaxDj3" role="2Oq$k0">
-                        <node concept="37vLTw" id="4XPt_HaxD94" role="2Oq$k0">
-                          <ref role="3cqZAo" node="4XPt_HaEId8" resolve="modelRef" />
-                        </node>
-                        <node concept="liA8E" id="4XPt_HaxD_D" role="2OqNvi">
-                          <ref role="37wK5l" to="mhbf:~SModelReference.resolve(org.jetbrains.mps.openapi.module.SRepository)" resolve="resolve" />
-                          <node concept="37vLTw" id="4XPt_HaxDK5" role="37wK5m">
-                            <ref role="3cqZAo" node="4XPt_HaxCna" resolve="repository" />
-                          </node>
-                        </node>
+                      <node concept="37vLTw" id="7YedNyZKP5E" role="2Oq$k0">
+                        <ref role="3cqZAo" node="7YedNyZKP5_" resolve="model" />
                       </node>
                       <node concept="liA8E" id="4XPt_HaxE78" role="2OqNvi">
                         <ref role="37wK5l" to="mhbf:~SModel.getModule()" resolve="getModule" />
@@ -2245,6 +2278,17 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbJ" id="7YedNyZKR1V" role="3cqZAp">
+              <node concept="3clFbS" id="7YedNyZKR1X" role="3clFbx">
+                <node concept="3cpWs6" id="7YedNyZKRB4" role="3cqZAp" />
+              </node>
+              <node concept="3clFbC" id="7YedNyZKRnA" role="3clFbw">
+                <node concept="10Nm6u" id="7YedNyZKRvn" role="3uHU7w" />
+                <node concept="37vLTw" id="7YedNyZKRai" role="3uHU7B">
+                  <ref role="3cqZAo" node="4XPt_HaF1fZ" resolve="model" />
+                </node>
+              </node>
+            </node>
             <node concept="3clFbF" id="4XPt_HaEOh0" role="3cqZAp">
               <node concept="37vLTI" id="4XPt_HaEPEX" role="3clFbG">
                 <node concept="2OqwBi" id="4XPt_HaF4bq" role="37vLTx">
@@ -2328,6 +2372,17 @@
                         <ref role="3cqZAo" node="4XPt_HaEA7b" resolve="repository" />
                       </node>
                     </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbJ" id="7YedNyZKRRC" role="3cqZAp">
+                <node concept="3clFbS" id="7YedNyZKRRE" role="3clFbx">
+                  <node concept="3cpWs6" id="7YedNyZKSK5" role="3cqZAp" />
+                </node>
+                <node concept="3clFbC" id="7YedNyZKStx" role="3clFbw">
+                  <node concept="10Nm6u" id="7YedNyZKSCb" role="3uHU7w" />
+                  <node concept="37vLTw" id="7YedNyZKS0C" role="3uHU7B">
+                    <ref role="3cqZAo" node="4XPt_HaFgpK" resolve="module" />
                   </node>
                 </node>
               </node>
@@ -2448,17 +2503,27 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="4XPt_HaCGgF" role="3cqZAp">
-              <node concept="2OqwBi" id="4XPt_HaCGoE" role="3clFbG">
-                <node concept="2YIFZM" id="4XPt_HaCGhd" role="2Oq$k0">
-                  <ref role="37wK5l" to="z60i:~Desktop.getDesktop()" resolve="getDesktop" />
-                  <ref role="1Pybhc" to="z60i:~Desktop" resolve="Desktop" />
-                </node>
-                <node concept="liA8E" id="4XPt_HaCGwI" role="2OqNvi">
-                  <ref role="37wK5l" to="z60i:~Desktop.open(java.io.File)" resolve="open" />
-                  <node concept="37vLTw" id="4XPt_HaDmUU" role="37wK5m">
-                    <ref role="3cqZAo" node="4XPt_HaDmUO" resolve="file" />
+            <node concept="3clFbJ" id="5MlhRObXPtR" role="3cqZAp">
+              <node concept="3clFbS" id="5MlhRObXPtT" role="3clFbx">
+                <node concept="3clFbF" id="4XPt_HaCGgF" role="3cqZAp">
+                  <node concept="2OqwBi" id="4XPt_HaCGoE" role="3clFbG">
+                    <node concept="2YIFZM" id="4XPt_HaCGhd" role="2Oq$k0">
+                      <ref role="37wK5l" to="z60i:~Desktop.getDesktop()" resolve="getDesktop" />
+                      <ref role="1Pybhc" to="z60i:~Desktop" resolve="Desktop" />
+                    </node>
+                    <node concept="liA8E" id="4XPt_HaCGwI" role="2OqNvi">
+                      <ref role="37wK5l" to="z60i:~Desktop.open(java.io.File)" resolve="open" />
+                      <node concept="37vLTw" id="4XPt_HaDmUU" role="37wK5m">
+                        <ref role="3cqZAo" node="4XPt_HaDmUO" resolve="file" />
+                      </node>
+                    </node>
                   </node>
+                </node>
+              </node>
+              <node concept="3y3z36" id="5MlhRObXQhY" role="3clFbw">
+                <node concept="10Nm6u" id="5MlhRObXQwE" role="3uHU7w" />
+                <node concept="37vLTw" id="5MlhRObXP_E" role="3uHU7B">
+                  <ref role="3cqZAo" node="4XPt_HaDmUO" resolve="file" />
                 </node>
               </node>
             </node>
