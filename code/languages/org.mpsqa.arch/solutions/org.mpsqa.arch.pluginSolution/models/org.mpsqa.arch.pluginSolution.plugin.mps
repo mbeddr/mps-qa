@@ -3,7 +3,7 @@
   <persistence version="9" />
   <attribute name="doNotGenerate" value="false" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="5" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="6" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
@@ -494,7 +494,7 @@
                     <ref role="37wK5l" node="6qVhvNsIzDc" resolve="convertArchSpec" />
                     <ref role="1Pybhc" node="6qVhvNsIxrS" resolve="Arch2PlantUMLConverterUtils" />
                     <node concept="37vLTw" id="sRpFtPqGOX" role="37wK5m">
-                      <ref role="3cqZAo" node="1Nl9e7Dz2vq" resolve="depthAndShowModules" />
+                      <ref role="3cqZAo" node="1Nl9e7Dz2vq" resolve="configuration" />
                     </node>
                   </node>
                   <node concept="37vLTw" id="sRpFtPj4iu" role="37vLTJ">
@@ -3605,7 +3605,7 @@
                     <ref role="37wK5l" node="1Nl9e7DzK4M" resolve="convertComponentDefinition" />
                     <ref role="1Pybhc" node="6qVhvNsIxrS" resolve="Arch2PlantUMLConverterUtils" />
                     <node concept="37vLTw" id="sRpFtPt7OR" role="37wK5m">
-                      <ref role="3cqZAo" node="1Nl9e7Dz$jD" resolve="depthAndShowModules" />
+                      <ref role="3cqZAo" node="1Nl9e7Dz$jD" resolve="configuration" />
                     </node>
                   </node>
                   <node concept="37vLTw" id="sRpFtPj9KC" role="37vLTJ">

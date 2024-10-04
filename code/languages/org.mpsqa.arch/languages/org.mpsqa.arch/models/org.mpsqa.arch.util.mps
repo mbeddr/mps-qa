@@ -206,7 +206,6 @@
       <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
         <child id="1237721435807" name="elementType" index="HW$YZ" />
       </concept>
-      <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1160666733551" name="jetbrains.mps.baseLanguage.collections.structure.AddAllElementsOperation" flags="nn" index="X8dFx" />
       <concept id="1201792049884" name="jetbrains.mps.baseLanguage.collections.structure.TranslateOperation" flags="nn" index="3goQfb" />
@@ -1204,7 +1203,7 @@
                   <node concept="3clFbF" id="7_XHz4_A7kL" role="3cqZAp">
                     <node concept="2OqwBi" id="7_XHz4_A7kM" role="3clFbG">
                       <node concept="37vLTw" id="7_XHz4_A7kN" role="2Oq$k0">
-                        <ref role="3cqZAo" node="7_XHz4_A7kQ" resolve="it" />
+                        <ref role="3cqZAo" node="1Z8l9u1R6x" resolve="it" />
                       </node>
                       <node concept="2qgKlT" id="7_XHz4_A7kO" role="2OqNvi">
                         <ref role="37wK5l" to="lm2w:4n1yOK3eIYG" resolve="setReferencedNodes" />
@@ -1213,9 +1212,9 @@
                     </node>
                   </node>
                 </node>
-                <node concept="Rh6nW" id="7_XHz4_A7kQ" role="1bW2Oz">
+                <node concept="gl6BB" id="1Z8l9u1R6x" role="1bW2Oz">
                   <property role="TrG5h" value="it" />
-                  <node concept="2jxLKc" id="7_XHz4_A7kR" role="1tU5fm" />
+                  <node concept="2jxLKc" id="1Z8l9u1R6y" role="1tU5fm" />
                 </node>
               </node>
             </node>
