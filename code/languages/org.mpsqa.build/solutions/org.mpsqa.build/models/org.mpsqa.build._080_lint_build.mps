@@ -6,7 +6,7 @@
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
   </languages>
   <imports>
-    <import index="2tou" ref="r:18bebd8f-6332-4ffd-b628-cc9dad4ef421(org.mpsqa.build._010_base_build)" />
+    <import index="2tou" ref="r:18bebd8f-6332-4ffd-b628-cc9dad4ef421(org.mpsqa.base.build)" />
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
   </imports>
   <registry>
@@ -228,16 +228,19 @@
       <node concept="m$_yC" id="4Wm$DJ9mpUP" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbLe59" resolve="com.intellij.modules.mps" />
       </node>
+      <node concept="m$_yC" id="4XPt_HaGDDW" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:ymnOULATpW" resolve="jetbrains.mps.testing" />
+      </node>
       <node concept="m$_yC" id="30a3800NyCh" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:5lGJ4Taqfsl" resolve="jetbrains.mps.ide.modelchecker" />
-      </node>
-      <node concept="m$_yC" id="72L9LYdx1cL" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:ymnOULATpW" resolve="jetbrains.mps.testing" />
       </node>
       <node concept="3_J27D" id="3dqUbgQmcyK" role="m_cZH">
         <node concept="3Mxwew" id="3dqUbgQmcyU" role="3MwsjC">
           <property role="3MwjfP" value="org.mpsqa.lint" />
         </node>
+      </node>
+      <node concept="m$_yC" id="72L9LYdx1cL" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:ymnOULATpW" resolve="jetbrains.mps.testing" />
       </node>
     </node>
     <node concept="2G$12M" id="3dqUbgQmcyz" role="3989C9">
@@ -405,6 +408,9 @@
             <ref role="1Busuk" to="ffeo:3HV74$ebibC" resolve="jetbrains.mps.lang.text" />
           </node>
         </node>
+        <node concept="1E0d5M" id="3mJ3k6P96iq" role="1E1XAP">
+          <ref role="1E0d5P" node="3mJ3k6P7dwI" resolve="org.mpsqa.lint.generic.runtime" />
+        </node>
         <node concept="1SiIV0" id="3mJ3k6P96id" role="3bR37C">
           <node concept="3bR9La" id="3mJ3k6P96ie" role="1SiIV1">
             <ref role="3bR37D" node="3mJ3k6P7dwI" resolve="org.mpsqa.lint.generic.runtime" />
@@ -424,9 +430,6 @@
           <node concept="3bR9La" id="1BlvkgWy3qV" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
           </node>
-        </node>
-        <node concept="1E0d5M" id="3mJ3k6P96iq" role="1E1XAP">
-          <ref role="1E0d5P" node="3mJ3k6P7dwI" resolve="org.mpsqa.lint.generic.runtime" />
         </node>
       </node>
       <node concept="1E1JtD" id="3ghOW5HWiKq" role="2G$12L">
