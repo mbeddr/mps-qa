@@ -5,7 +5,7 @@
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="40ab19e9-751a-4433-b645-0e65160e58a0" name="org.mpsqa.lint.generic" version="1" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
     <use id="1a8554c4-eb84-43ba-8c34-6f0d90c6e75a" name="jetbrains.mps.lang.smodel.query" version="3" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
@@ -133,7 +133,7 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -155,7 +155,7 @@
         <child id="8276990574895933173" name="catchBody" index="1zc67A" />
         <child id="8276990574895933172" name="throwable" index="1zc67B" />
       </concept>
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="nn" index="3J1_TO">
@@ -181,7 +181,7 @@
       <concept id="7741759128795038157" name="org.mpsqa.lint.generic.structure.CheckableScriptParameter" flags="ng" index="2j1K4_">
         <child id="7741759128795045740" name="type" index="2j1LY4" />
       </concept>
-      <concept id="7741759128795045742" name="org.mpsqa.lint.generic.structure.IScriptsParametersAware" flags="ng" index="2j1LY6">
+      <concept id="7741759128795045742" name="org.mpsqa.lint.generic.structure.IScriptsParametersAware" flags="ngI" index="2j1LY6">
         <child id="7741759128795065655" name="parValues" index="2j1YRv" />
       </concept>
       <concept id="7741759128795045754" name="org.mpsqa.lint.generic.structure.CheckableScriptParameterRef" flags="ng" index="2j1LYi">
@@ -194,7 +194,7 @@
       <concept id="7679435328618353697" name="org.mpsqa.lint.generic.structure.FormatException" flags="ng" index="vsK6v">
         <child id="7679435328618377120" name="exception" index="vsfCu" />
       </concept>
-      <concept id="7008376823202027689" name="org.mpsqa.lint.generic.structure.ICanSkipCheckerEvaluation" flags="ng" index="3miP$Z">
+      <concept id="7008376823202027689" name="org.mpsqa.lint.generic.structure.ICanSkipCheckerEvaluation" flags="ngI" index="3miP$Z">
         <property id="7008376823202030902" name="skipEvaluation" index="3miQiw" />
       </concept>
       <concept id="2555875871752198907" name="org.mpsqa.lint.generic.structure.ConceptFunctionParameter_MPSProject" flags="ng" index="1MG55F" />
@@ -228,7 +228,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -1009,12 +1009,17 @@
                                   <node concept="Xl_RD" id="6wZqgFKVtmO" role="37wK5m">
                                     <property role="Xl_RC" value="" />
                                   </node>
-                                  <node concept="2OqwBi" id="6wZqgFKVtmP" role="37wK5m">
-                                    <node concept="37vLTw" id="6wZqgFKVtmY" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="6wZqgFKVtlS" resolve="action" />
+                                  <node concept="2OqwBi" id="2wDnBzAzDA8" role="37wK5m">
+                                    <node concept="2OqwBi" id="6wZqgFKVtmP" role="2Oq$k0">
+                                      <node concept="37vLTw" id="6wZqgFKVtmY" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="6wZqgFKVtlS" resolve="action" />
+                                      </node>
+                                      <node concept="liA8E" id="6wZqgFKVtmZ" role="2OqNvi">
+                                        <ref role="37wK5l" to="qkt:~AnAction.getTemplatePresentation()" resolve="getTemplatePresentation" />
+                                      </node>
                                     </node>
-                                    <node concept="liA8E" id="6wZqgFKVtmZ" role="2OqNvi">
-                                      <ref role="37wK5l" to="qkt:~AnAction.getTemplatePresentation()" resolve="getTemplatePresentation" />
+                                    <node concept="liA8E" id="2wDnBzAzFNZ" role="2OqNvi">
+                                      <ref role="37wK5l" to="qkt:~Presentation.clone()" resolve="clone" />
                                     </node>
                                   </node>
                                   <node concept="2YIFZM" id="6wZqgFKVtmQ" role="37wK5m">
@@ -2096,9 +2101,6 @@
                                             <property role="Xl_RC" value="MB" />
                                           </node>
                                           <node concept="3cpWs3" id="2TekImn84e8" role="3uHU7B">
-                                            <node concept="Xl_RD" id="4XPt_HaTvLG" role="3uHU7B">
-                                              <property role="Xl_RC" value="Editor retained too much memory:" />
-                                            </node>
                                             <node concept="2YIFZM" id="5BymHIvyS5e" role="3uHU7w">
                                               <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
                                               <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
@@ -2108,6 +2110,9 @@
                                               <node concept="37vLTw" id="5BymHIvyTWB" role="37wK5m">
                                                 <ref role="3cqZAo" node="2QH7JPsZwR3" resolve="usedMemoryInMb" />
                                               </node>
+                                            </node>
+                                            <node concept="Xl_RD" id="4XPt_HaTvLG" role="3uHU7B">
+                                              <property role="Xl_RC" value="Editor retained too much memory:" />
                                             </node>
                                           </node>
                                         </node>
@@ -2254,11 +2259,11 @@
                                       <property role="Xl_RC" value="ms" />
                                     </node>
                                     <node concept="3cpWs3" id="2TekImn84dF" role="3uHU7B">
-                                      <node concept="Xl_RD" id="4XPt_HaTAKG" role="3uHU7B">
-                                        <property role="Xl_RC" value="Editor opened too slow. Timeout reached: " />
-                                      </node>
                                       <node concept="37vLTw" id="2TekImn84dT" role="3uHU7w">
                                         <ref role="3cqZAo" node="2TekImn84cr" resolve="elapsedTime" />
+                                      </node>
+                                      <node concept="Xl_RD" id="4XPt_HaTAKG" role="3uHU7B">
+                                        <property role="Xl_RC" value="Editor opened too slow. Timeout reached: " />
                                       </node>
                                     </node>
                                   </node>

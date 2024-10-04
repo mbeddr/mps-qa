@@ -4,7 +4,7 @@
   <languages>
     <use id="40ab19e9-751a-4433-b645-0e65160e58a0" name="org.mpsqa.lint.generic" version="1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="1a8554c4-eb84-43ba-8c34-6f0d90c6e75a" name="jetbrains.mps.lang.smodel.query" version="3" />
   </languages>
   <imports>
@@ -69,7 +69,7 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -97,7 +97,7 @@
       <concept id="3423774024185833128" name="org.mpsqa.lint.generic.structure.NamedFullyQualifiedNodeReference" flags="ng" index="3DjtrX">
         <reference id="3423774024185833136" name="node" index="3Djtr_" />
       </concept>
-      <concept id="2940128608225929719" name="org.mpsqa.lint.generic.structure.IHaveConceptDeclarationReference" flags="ng" index="1Jy4qj">
+      <concept id="2940128608225929719" name="org.mpsqa.lint.generic.structure.IHaveConceptDeclarationReference" flags="ngI" index="1Jy4qj">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
       <concept id="2940128608222714821" name="org.mpsqa.lint.generic.structure.NodeCheckingFunction" flags="ig" index="1JQnix" />
@@ -142,7 +142,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -765,9 +765,6 @@
                         <property role="Xl_RC" value="'" />
                       </node>
                       <node concept="3cpWs3" id="78RogMCDf8_" role="3uHU7B">
-                        <node concept="Xl_RD" id="4XPt_HaT1rx" role="3uHU7B">
-                          <property role="Xl_RC" value="the concept method has the same signature as concept method from '" />
-                        </node>
                         <node concept="2OqwBi" id="78RogMCDf8W" role="3uHU7w">
                           <node concept="2OqwBi" id="78RogMCDf8X" role="2Oq$k0">
                             <node concept="3EllGN" id="78RogMCDf8Y" role="2Oq$k0">
@@ -789,6 +786,9 @@
                           <node concept="3TrcHB" id="78RogMCDf94" role="2OqNvi">
                             <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                           </node>
+                        </node>
+                        <node concept="Xl_RD" id="4XPt_HaT1rx" role="3uHU7B">
+                          <property role="Xl_RC" value="the concept method has the same signature as concept method from '" />
                         </node>
                       </node>
                     </node>

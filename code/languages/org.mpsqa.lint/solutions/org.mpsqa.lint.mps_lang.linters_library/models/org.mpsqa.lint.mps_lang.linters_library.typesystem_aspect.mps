@@ -4,7 +4,7 @@
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="40ab19e9-751a-4433-b645-0e65160e58a0" name="org.mpsqa.lint.generic" version="1" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
     <use id="1a8554c4-eb84-43ba-8c34-6f0d90c6e75a" name="jetbrains.mps.lang.smodel.query" version="3" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
@@ -37,7 +37,7 @@
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
-      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ng" index="366HgL">
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ngI" index="366HgL">
         <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
@@ -65,7 +65,7 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -79,10 +79,10 @@
       </concept>
     </language>
     <language id="40ab19e9-751a-4433-b645-0e65160e58a0" name="org.mpsqa.lint.generic">
-      <concept id="1024891882119954681" name="org.mpsqa.lint.generic.structure.ISeverityLevelAwareChecker" flags="ng" index="2oM2l5">
+      <concept id="1024891882119954681" name="org.mpsqa.lint.generic.structure.ISeverityLevelAwareChecker" flags="ngI" index="2oM2l5">
         <property id="1024891882119955433" name="reportLevel" index="2oM2pl" />
       </concept>
-      <concept id="7223240310078271419" name="org.mpsqa.lint.generic.structure.ILinterResultsContainer" flags="ng" index="3dgnlL">
+      <concept id="7223240310078271419" name="org.mpsqa.lint.generic.structure.ILinterResultsContainer" flags="ngI" index="3dgnlL">
         <child id="7223240310078271420" name="violations" index="3dgnlQ" />
       </concept>
       <concept id="7223240310078271416" name="org.mpsqa.lint.generic.structure.ResultEntry" flags="ng" index="3dgnlM">
@@ -90,7 +90,7 @@
         <property id="8230153551040655111" name="resultNodeModelId" index="3qxsSb" />
         <property id="8230153551040654991" name="resultNodeId" index="3qxsY3" />
       </concept>
-      <concept id="2940128608225929719" name="org.mpsqa.lint.generic.structure.IHaveConceptDeclarationReference" flags="ng" index="1Jy4qj">
+      <concept id="2940128608225929719" name="org.mpsqa.lint.generic.structure.IHaveConceptDeclarationReference" flags="ngI" index="1Jy4qj">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
       <concept id="2940128608222714821" name="org.mpsqa.lint.generic.structure.NodeCheckingFunction" flags="ig" index="1JQnix" />
@@ -117,7 +117,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -351,6 +351,11 @@
         </node>
       </node>
     </node>
+    <node concept="3dgnlM" id="5ILDA6EUYgi" role="3dgnlQ">
+      <property role="3dgnlN" value="Class for linter 'not_tested' couldn't be found. The model is probably not generated." />
+      <property role="3qxsY3" value="6607245066738849851" />
+      <property role="3qxsSb" value="r:59e2876f-999a-4af1-8c54-345ff89e1fb6" />
+    </node>
     <node concept="1MIXq2" id="5ILDA6EXlkB" role="14J5yK">
       <node concept="3clFbS" id="5ILDA6EXlkC" role="2VODD2">
         <node concept="3SKdUt" id="5ILDA6EXs9$" role="3cqZAp">
@@ -510,11 +515,6 @@
           </node>
         </node>
       </node>
-    </node>
-    <node concept="3dgnlM" id="5ILDA6EUYgi" role="3dgnlQ">
-      <property role="3dgnlN" value="Class for linter 'not_tested' couldn't be found. The model is probably not generated." />
-      <property role="3qxsY3" value="6607245066738849851" />
-      <property role="3qxsSb" value="r:59e2876f-999a-4af1-8c54-345ff89e1fb6" />
     </node>
   </node>
 </model>
