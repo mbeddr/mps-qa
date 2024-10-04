@@ -816,21 +816,11 @@
                     <node concept="1bVj0M" id="sRpFtPBJ1h" role="23t8la">
                       <node concept="3clFbS" id="sRpFtPBJ1i" role="1bW5cS">
                         <node concept="3clFbF" id="sRpFtPBJUZ" role="3cqZAp">
-                          <node concept="2OqwBi" id="sRpFtPBKGk" role="3clFbG">
-                            <node concept="2OqwBi" id="fm3v0WS4rC" role="2Oq$k0">
-                              <node concept="2OqwBi" id="fm3v0WS4rD" role="2Oq$k0">
-                                <node concept="37vLTw" id="fm3v0WS4rE" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="1vMaDkDXcjS" resolve="it" />
-                                </node>
-                                <node concept="3TrEf2" id="fm3v0WS4rF" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="tp25:1Bs_61$ngwB" resolve="modelRef" />
-                                </node>
-                              </node>
-                              <node concept="2qgKlT" id="fm3v0WS4rG" role="2OqNvi">
-                                <ref role="37wK5l" to="xlb7:1Bs_61$mvvu" resolve="toModelReference" />
-                              </node>
+                          <node concept="2OqwBi" id="2iYG$Wam58p" role="3clFbG">
+                            <node concept="37vLTw" id="fm3v0WS4rE" role="2Oq$k0">
+                              <ref role="3cqZAo" node="1vMaDkDXcjS" resolve="it" />
                             </node>
-                            <node concept="liA8E" id="sRpFtPBLPe" role="2OqNvi">
+                            <node concept="liA8E" id="2iYG$Wam6dP" role="2OqNvi">
                               <ref role="37wK5l" to="mhbf:~SModelReference.getModelId()" resolve="getModelId" />
                             </node>
                           </node>
