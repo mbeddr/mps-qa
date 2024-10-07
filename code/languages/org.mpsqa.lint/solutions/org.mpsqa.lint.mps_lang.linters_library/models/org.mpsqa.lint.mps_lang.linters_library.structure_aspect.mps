@@ -917,6 +917,52 @@
         </node>
       </node>
     </node>
+    <node concept="1Pa9Pv" id="7LF3t2Vb60K" role="1MIJl8">
+      <node concept="1PaTwC" id="7LF3t2Vb60L" role="1PaQFQ">
+        <node concept="3oM_SD" id="7LF3t2Vb6Cc" role="1PaTwD">
+          <property role="3oM_SC" value="Finds" />
+        </node>
+        <node concept="3oM_SD" id="7LF3t2Vb6Ce" role="1PaTwD">
+          <property role="3oM_SC" value="interface" />
+        </node>
+        <node concept="3oM_SD" id="7LF3t2Vb6Ch" role="1PaTwD">
+          <property role="3oM_SC" value="concept" />
+        </node>
+        <node concept="3oM_SD" id="7LF3t2Vb6Cl" role="1PaTwD">
+          <property role="3oM_SC" value="or" />
+        </node>
+        <node concept="3oM_SD" id="7LF3t2Vb6Cq" role="1PaTwD">
+          <property role="3oM_SC" value="abstract" />
+        </node>
+        <node concept="3oM_SD" id="7LF3t2Vb6Cw" role="1PaTwD">
+          <property role="3oM_SC" value="concept" />
+        </node>
+        <node concept="3oM_SD" id="7LF3t2Vb6CB" role="1PaTwD">
+          <property role="3oM_SC" value="declarations" />
+        </node>
+        <node concept="3oM_SD" id="7LF3t2Vb6CJ" role="1PaTwD">
+          <property role="3oM_SC" value="that" />
+        </node>
+        <node concept="3oM_SD" id="7LF3t2Vb6CS" role="1PaTwD">
+          <property role="3oM_SC" value="are" />
+        </node>
+        <node concept="3oM_SD" id="7LF3t2Vb6D2" role="1PaTwD">
+          <property role="3oM_SC" value="not" />
+        </node>
+        <node concept="3oM_SD" id="7LF3t2Vb6Dd" role="1PaTwD">
+          <property role="3oM_SC" value="implemented/extended" />
+        </node>
+        <node concept="3oM_SD" id="7LF3t2Vb6Dp" role="1PaTwD">
+          <property role="3oM_SC" value="by" />
+        </node>
+        <node concept="3oM_SD" id="7LF3t2Vb6DA" role="1PaTwD">
+          <property role="3oM_SC" value="another" />
+        </node>
+        <node concept="3oM_SD" id="7LF3t2Vb6DO" role="1PaTwD">
+          <property role="3oM_SC" value="declaration." />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
