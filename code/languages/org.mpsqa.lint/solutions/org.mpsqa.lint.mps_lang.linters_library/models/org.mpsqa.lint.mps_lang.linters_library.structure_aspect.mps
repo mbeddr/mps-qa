@@ -113,15 +113,6 @@
         <child id="7741759128795045752" name="exp" index="2j1LYg" />
         <child id="7741759128795065723" name="paramRef" index="2j1YQj" />
       </concept>
-      <concept id="7223240310078271419" name="org.mpsqa.lint.generic.structure.ILinterResultsContainer" flags="ngI" index="3dgnlL">
-        <property id="7223240310078527797" name="failOnlyOnNewResults" index="3dJkfZ" />
-        <child id="7223240310078271420" name="violations" index="3dgnlQ" />
-      </concept>
-      <concept id="7223240310078271416" name="org.mpsqa.lint.generic.structure.ResultEntry" flags="ng" index="3dgnlM">
-        <property id="7223240310078271417" name="result" index="3dgnlN" />
-        <property id="8230153551040655111" name="resultNodeModelId" index="3qxsSb" />
-        <property id="8230153551040654991" name="resultNodeId" index="3qxsY3" />
-      </concept>
       <concept id="2555875871752198907" name="org.mpsqa.lint.generic.structure.ConceptFunctionParameter_MPSProject" flags="ng" index="1MG55F" />
       <concept id="2555875871751836213" name="org.mpsqa.lint.generic.structure.CheckableScript" flags="ng" index="1MIHA_">
         <child id="7741759128795038158" name="additionalParameters" index="2j1K4A" />
@@ -523,7 +514,6 @@
   </node>
   <node concept="1MIHA_" id="3p$apGKs_Ey">
     <property role="TrG5h" value="not_used_interface_and_abstract_concept_declarations" />
-    <property role="3dJkfZ" value="true" />
     <node concept="1MIXq2" id="3p$apGKsEs7" role="14J5yK">
       <node concept="3clFbS" id="3p$apGKsEs8" role="2VODD2">
         <node concept="3cpWs8" id="4dXK4XTRdZi" role="3cqZAp">
@@ -1142,11 +1132,6 @@
       <node concept="Xl_RD" id="4dXK4XTQZrX" role="2j1LYg">
         <property role="Xl_RC" value="org.mpsqa.lint" />
       </node>
-    </node>
-    <node concept="3dgnlM" id="1m8sQb1tnoQ" role="3dgnlQ">
-      <property role="3dgnlN" value="The project name does not match the contents of the projectName variable." />
-      <property role="3qxsY3" value="3919303322228644514" />
-      <property role="3qxsSb" value="r:a054d3e5-e3cb-48b6-8b20-2ebc3d7b4ecf" />
     </node>
   </node>
 </model>
