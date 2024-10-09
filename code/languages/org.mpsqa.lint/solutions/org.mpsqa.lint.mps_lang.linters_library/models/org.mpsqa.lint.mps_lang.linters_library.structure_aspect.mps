@@ -662,7 +662,7 @@
                 <node concept="X8dFx" id="3VgMPuoY9q7" role="2OqNvi">
                   <node concept="2OqwBi" id="3VgMPuoVPCX" role="25WWJ7">
                     <node concept="37vLTw" id="2PvylaaaTP" role="2Oq$k0">
-                      <ref role="3cqZAo" node="2PvylaaaTM" resolve="collection" />
+                      <ref role="3cqZAo" node="2PvylaaaTM" resolve="abstractConceptDeclarationsFromWritableModules" />
                     </node>
                     <node concept="3zZkjj" id="3VgMPuoVQ$s" role="2OqNvi">
                       <node concept="1bVj0M" id="3VgMPuoVQ$u" role="23t8la">
