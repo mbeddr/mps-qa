@@ -743,13 +743,8 @@
                                   <property role="Xl_RC" value="KB" />
                                 </node>
                                 <node concept="3cpWs3" id="6HKgezSw9sy" role="3uHU7B">
-                                  <node concept="3cpWs3" id="6HKgezSw6F9" role="3uHU7B">
-                                    <node concept="Xl_RD" id="6HKgezSw7hB" role="3uHU7w">
-                                      <property role="Xl_RC" value="' is bigger than " />
-                                    </node>
-                                    <node concept="Xl_RD" id="4XPt_HaR8xv" role="3uHU7B">
-                                      <property role="Xl_RC" value="The file " />
-                                    </node>
+                                  <node concept="Xl_RD" id="PQOvWtfkbP" role="3uHU7B">
+                                    <property role="Xl_RC" value="The file is bigger than " />
                                   </node>
                                   <node concept="2j1LYi" id="7AhcwybAGdN" role="3uHU7w">
                                     <ref role="2j1LYj" node="pFzydTBLXy" resolve="sizeInKb" />
