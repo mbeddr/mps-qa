@@ -14,7 +14,6 @@
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="a1af" ref="r:839ac015-7de1-49f3-ac8f-8d7c6d47259d(org.mpsqa.lint.generic.structure)" />
     <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -56,7 +55,6 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -131,7 +129,6 @@
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
-      <concept id="1212008292747" name="jetbrains.mps.lang.smodel.structure.Model_GetLongNameOperation" flags="nn" index="LkI2h" />
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
         <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
       </concept>
@@ -215,11 +212,19 @@
           <node concept="3cpWsn" id="4lfwJVEz_XA" role="3cpWs9">
             <property role="TrG5h" value="res" />
             <node concept="_YKpA" id="4lfwJVEz_XH" role="1tU5fm">
-              <node concept="17QB3L" id="4XPt_HaAJ$c" role="_ZDj9" />
+              <node concept="3uibUv" id="4XPt_HaAEXb" role="_ZDj9">
+                <ref role="3uigEE" to="zn9m:~Pair" resolve="Pair" />
+                <node concept="17QB3L" id="4XPt_HaAJ$c" role="11_B2D" />
+                <node concept="3Tqbb2" id="4XPt_HaGVkB" role="11_B2D" />
+              </node>
             </node>
             <node concept="2ShNRf" id="4lfwJVEz_XI" role="33vP2m">
               <node concept="Tc6Ow" id="4lfwJVEz_XW" role="2ShVmc">
-                <node concept="17QB3L" id="4XPt_HaGVSe" role="HW$YZ" />
+                <node concept="3uibUv" id="4XPt_HaGVSd" role="HW$YZ">
+                  <ref role="3uigEE" to="zn9m:~Pair" resolve="Pair" />
+                  <node concept="17QB3L" id="4XPt_HaGVSe" role="11_B2D" />
+                  <node concept="3Tqbb2" id="4XPt_HaGWmS" role="11_B2D" />
+                </node>
               </node>
             </node>
           </node>
@@ -374,37 +379,15 @@
                   <ref role="3cqZAo" node="4lfwJVEz_XA" resolve="res" />
                 </node>
                 <node concept="TSZUe" id="4lfwJVEz_YP" role="2OqNvi">
-                  <node concept="3cpWs3" id="2nl61iiaKFd" role="25WWJ7">
-                    <node concept="Xl_RD" id="2nl61iiaL74" role="3uHU7w">
-                      <property role="Xl_RC" value="' is not reused" />
-                    </node>
-                    <node concept="3cpWs3" id="2nl61iiaCDm" role="3uHU7B">
-                      <node concept="3cpWs3" id="2nl61iiaAkm" role="3uHU7B">
-                        <node concept="3cpWs3" id="2nl61iianL9" role="3uHU7B">
-                          <node concept="Xl_RD" id="4XPt_HaH1m6" role="3uHU7B">
-                            <property role="Xl_RC" value="The Script '" />
-                          </node>
-                          <node concept="2OqwBi" id="2nl61iiaoG0" role="3uHU7w">
-                            <node concept="2GrUjf" id="2nl61iiao1H" role="2Oq$k0">
-                              <ref role="2Gs0qQ" node="4lfwJVEz_Y6" resolve="cs" />
-                            </node>
-                            <node concept="3TrcHB" id="2nl61iias1V" role="2OqNvi">
-                              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="Xl_RD" id="2nl61iiaAIY" role="3uHU7w">
-                          <property role="Xl_RC" value="' from model '" />
-                        </node>
+                  <node concept="2ShNRf" id="4XPt_HaGX0H" role="25WWJ7">
+                    <node concept="1pGfFk" id="4XPt_HaGXEy" role="2ShVmc">
+                      <property role="373rjd" value="true" />
+                      <ref role="37wK5l" to="zn9m:~Pair.&lt;init&gt;(java.lang.Object,java.lang.Object)" resolve="Pair" />
+                      <node concept="Xl_RD" id="4XPt_HaH1m6" role="37wK5m">
+                        <property role="Xl_RC" value="The Script is not re-used" />
                       </node>
-                      <node concept="2OqwBi" id="2nl61iiaJ3O" role="3uHU7w">
-                        <node concept="2OqwBi" id="2nl61iiaEbO" role="2Oq$k0">
-                          <node concept="2GrUjf" id="2nl61iiaD4l" role="2Oq$k0">
-                            <ref role="2Gs0qQ" node="4lfwJVEz_Y6" resolve="cs" />
-                          </node>
-                          <node concept="I4A8Y" id="2nl61iiaHYj" role="2OqNvi" />
-                        </node>
-                        <node concept="LkI2h" id="2nl61iiaJwG" role="2OqNvi" />
+                      <node concept="2GrUjf" id="4XPt_HaH3ic" role="37wK5m">
+                        <ref role="2Gs0qQ" node="4lfwJVEz_Y6" resolve="cs" />
                       </node>
                     </node>
                   </node>
