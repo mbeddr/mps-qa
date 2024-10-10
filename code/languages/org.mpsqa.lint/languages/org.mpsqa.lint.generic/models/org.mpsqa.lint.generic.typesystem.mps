@@ -6,7 +6,7 @@
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
@@ -4009,6 +4009,9 @@
                                           <node concept="2r$n1x" id="4KreBtcyo_R" role="2r_Bvh">
                                             <ref role="2r$qp6" to="qqy:3ghOW5H_ihW" resolve="location" />
                                             <node concept="2OqwBi" id="4XPt_HawMmY" role="2r_lH1">
+                                              <node concept="liA8E" id="4XPt_HawOxY" role="2OqNvi">
+                                                <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
+                                              </node>
                                               <node concept="2OqwBi" id="4XPt_HawJrJ" role="2Oq$k0">
                                                 <node concept="2OqwBi" id="4KreBtcyo_T" role="2Oq$k0">
                                                   <node concept="37vLTw" id="4KreBtcyo_U" role="2Oq$k0">
@@ -4021,9 +4024,6 @@
                                                 <node concept="liA8E" id="4XPt_HawLm2" role="2OqNvi">
                                                   <ref role="37wK5l" to="lui2:~SModule.getModuleReference()" resolve="getModuleReference" />
                                                 </node>
-                                              </node>
-                                              <node concept="liA8E" id="4XPt_HawOxY" role="2OqNvi">
-                                                <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
                                               </node>
                                             </node>
                                           </node>
