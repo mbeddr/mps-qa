@@ -144,6 +144,15 @@
         <child id="7679435328618377120" name="exception" index="vsfCu" />
       </concept>
       <concept id="5024442900367365755" name="org.mpsqa.lint.generic.structure.ModuleCheckingFunction" flags="ig" index="V6NT9" />
+      <concept id="7223240310078271419" name="org.mpsqa.lint.generic.structure.ILinterResultsContainer" flags="ngI" index="3dgnlL">
+        <child id="7223240310078271420" name="violations" index="3dgnlQ" />
+      </concept>
+      <concept id="7223240310078271416" name="org.mpsqa.lint.generic.structure.ResultEntry" flags="ng" index="3dgnlM">
+        <property id="49142249442884896" name="resultLocation" index="2hbMIX" />
+        <property id="7223240310078271417" name="result" index="3dgnlN" />
+        <property id="8230153551040655111" name="resultNodeModelId" index="3qxsSb" />
+        <property id="8230153551040654991" name="resultNodeId" index="3qxsY3" />
+      </concept>
       <concept id="2555875871752198907" name="org.mpsqa.lint.generic.structure.ConceptFunctionParameter_MPSProject" flags="ng" index="1MG55F" />
       <concept id="2555875871751836213" name="org.mpsqa.lint.generic.structure.CheckableScript" flags="ng" index="1MIHA_">
         <child id="7741759128795038158" name="additionalParameters" index="2j1K4A" />
@@ -839,6 +848,12 @@
           <property role="3oM_SC" value="size." />
         </node>
       </node>
+    </node>
+    <node concept="3dgnlM" id="2nl61iie$ij" role="3dgnlQ">
+      <property role="3dgnlN" value="The file ' is bigger than 10000KB" />
+      <property role="3qxsY3" value="7741759128795229972" />
+      <property role="3qxsSb" value="r:ca411a1b-a962-4e17-b6ba-52f6a5b63c94(org.mpsqa.lint.generic.sandbox._010_smoke_user_defined_linters)" />
+      <property role="2hbMIX" value="C:\work\mps-qa\code\languages\org.mpsqa.arch\solutions\org.mpsqa.arch.pluginSolution\lib\plantuml-asl-1.2023.13.jar" />
     </node>
   </node>
 </model>
