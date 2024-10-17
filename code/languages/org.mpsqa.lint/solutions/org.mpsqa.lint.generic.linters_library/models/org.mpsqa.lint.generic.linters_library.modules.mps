@@ -235,7 +235,7 @@
       <concept id="7741759128795038157" name="org.mpsqa.lint.generic.structure.CheckableScriptParameter" flags="ng" index="2j1K4_">
         <child id="7741759128795045740" name="type" index="2j1LY4" />
       </concept>
-      <concept id="7741759128795045742" name="org.mpsqa.lint.generic.structure.IScriptsParametersAware" flags="ngI" index="2j1LY6">
+      <concept id="7741759128795045742" name="org.mpsqa.lint.generic.structure.IScriptsParametersAware" flags="ng" index="2j1LY6">
         <child id="7741759128795065655" name="parValues" index="2j1YRv" />
       </concept>
       <concept id="7741759128795045754" name="org.mpsqa.lint.generic.structure.CheckableScriptParameterRef" flags="ng" index="2j1LYi">
@@ -245,12 +245,12 @@
         <child id="7741759128795045752" name="exp" index="2j1LYg" />
         <child id="7741759128795065723" name="paramRef" index="2j1YQj" />
       </concept>
-      <concept id="1209559114970" name="org.mpsqa.lint.generic.structure.ConceptFunctionParameter_Module" flags="nn" index="2vlQn3" />
+      <concept id="1209559114970" name="org.mpsqa.lint.generic.structure.ConceptFunctionParameter_Module" flags="ng" index="2vlQn3" />
       <concept id="7679435328618353697" name="org.mpsqa.lint.generic.structure.FormatException" flags="ng" index="vsK6v">
         <child id="7679435328618377120" name="exception" index="vsfCu" />
       </concept>
-      <concept id="5024442900367365755" name="org.mpsqa.lint.generic.structure.ModuleCheckingFunction" flags="ig" index="V6NT9" />
-      <concept id="7223240310078271419" name="org.mpsqa.lint.generic.structure.ILinterResultsContainer" flags="ngI" index="3dgnlL">
+      <concept id="5024442900367365755" name="org.mpsqa.lint.generic.structure.ModuleCheckingFunction" flags="ng" index="V6NT9" />
+      <concept id="7223240310078271419" name="org.mpsqa.lint.generic.structure.ILinterResultsContainer" flags="ng" index="3dgnlL">
         <child id="7223240310078271420" name="violations" index="3dgnlQ" />
       </concept>
       <concept id="7223240310078271416" name="org.mpsqa.lint.generic.structure.ResultEntry" flags="ng" index="3dgnlM">
@@ -259,7 +259,7 @@
         <property id="8230153551040655111" name="resultNodeModelId" index="3qxsSb" />
         <property id="8230153551040654991" name="resultNodeId" index="3qxsY3" />
       </concept>
-      <concept id="7008376823202027689" name="org.mpsqa.lint.generic.structure.ICanSkipCheckerEvaluation" flags="ngI" index="3miP$Z">
+      <concept id="7008376823202027689" name="org.mpsqa.lint.generic.structure.ICanSkipCheckerEvaluation" flags="ng" index="3miP$Z">
         <property id="7008376823202030902" name="skipEvaluation" index="3miQiw" />
       </concept>
       <concept id="2555875871752198907" name="org.mpsqa.lint.generic.structure.ConceptFunctionParameter_MPSProject" flags="ng" index="1MG55F" />
@@ -269,7 +269,7 @@
         <child id="1716492013482699988" name="check" index="14J5yK" />
         <child id="2555875871751847640" name="documentation" index="1MIJl8" />
       </concept>
-      <concept id="2555875871751904530" name="org.mpsqa.lint.generic.structure.GenericCheckingFunction" flags="ig" index="1MIXq2" />
+      <concept id="2555875871751904530" name="org.mpsqa.lint.generic.structure.GenericCheckingFunction" flags="ng" index="1MIXq2" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
@@ -1472,6 +1472,35 @@
           </node>
         </node>
         <node concept="3clFbH" id="3$9W3co4Ljz" role="3cqZAp" />
+        <node concept="3cpWs8" id="6ttlgUSREc7" role="3cqZAp">
+          <node concept="3cpWsn" id="6ttlgUSREc8" role="3cpWs9">
+            <property role="TrG5h" value="projectPath" />
+            <node concept="17QB3L" id="6ttlgUSRMdS" role="1tU5fm" />
+            <node concept="2OqwBi" id="6ttlgUSRM8n" role="33vP2m">
+              <node concept="37vLTw" id="6ttlgUSRENz" role="2Oq$k0">
+                <ref role="3cqZAo" node="3$9W3co3cMq" resolve="projectDir" />
+              </node>
+              <node concept="liA8E" id="6ttlgUSRMnY" role="2OqNvi">
+                <ref role="37wK5l" to="guwi:~File.getParent()" resolve="getParent" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6ttlgUSRObP" role="3cqZAp">
+          <node concept="3cpWsn" id="6ttlgUSRObQ" role="3cpWs9">
+            <property role="TrG5h" value="projPath" />
+            <node concept="3uibUv" id="6ttlgUSRObR" role="1tU5fm">
+              <ref role="3uigEE" to="eoo2:~Path" resolve="Path" />
+            </node>
+            <node concept="2YIFZM" id="6ttlgUSROLg" role="33vP2m">
+              <ref role="37wK5l" to="eoo2:~Paths.get(java.lang.String,java.lang.String...)" resolve="get" />
+              <ref role="1Pybhc" to="eoo2:~Paths" resolve="Paths" />
+              <node concept="37vLTw" id="6ttlgUSRQeX" role="37wK5m">
+                <ref role="3cqZAo" node="6ttlgUSREc8" resolve="projectPath" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="3$9W3co5VLi" role="3cqZAp">
           <node concept="3cpWsn" id="3$9W3co5VLj" role="3cpWs9">
             <property role="TrG5h" value="modulesNotInProject" />
@@ -1498,6 +1527,40 @@
             <ref role="3cqZAo" node="3$9W3co5VLj" resolve="modulesNotInProject" />
           </node>
           <node concept="3clFbS" id="3$9W3co5Ba$" role="2LFqv$">
+            <node concept="3cpWs8" id="6ttlgUSRQQC" role="3cqZAp">
+              <node concept="3cpWsn" id="6ttlgUSRQQD" role="3cpWs9">
+                <property role="TrG5h" value="filePath" />
+                <node concept="3uibUv" id="6ttlgUSRQQE" role="1tU5fm">
+                  <ref role="3uigEE" to="eoo2:~Path" resolve="Path" />
+                </node>
+                <node concept="2YIFZM" id="6ttlgUSRR7n" role="33vP2m">
+                  <ref role="37wK5l" to="eoo2:~Paths.get(java.lang.String,java.lang.String...)" resolve="get" />
+                  <ref role="1Pybhc" to="eoo2:~Paths" resolve="Paths" />
+                  <node concept="2GrUjf" id="6ttlgUSRRCU" role="37wK5m">
+                    <ref role="2Gs0qQ" node="3$9W3co5Baw" resolve="fileNotInProject" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="6ttlgUSRTL1" role="3cqZAp">
+              <node concept="3cpWsn" id="6ttlgUSRTL2" role="3cpWs9">
+                <property role="TrG5h" value="relativePath" />
+                <node concept="3uibUv" id="6ttlgUSRTL3" role="1tU5fm">
+                  <ref role="3uigEE" to="eoo2:~Path" resolve="Path" />
+                </node>
+                <node concept="2OqwBi" id="6ttlgUSRUXS" role="33vP2m">
+                  <node concept="37vLTw" id="6ttlgUSRU1s" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6ttlgUSRObQ" resolve="projPath" />
+                  </node>
+                  <node concept="liA8E" id="6ttlgUSRWC1" role="2OqNvi">
+                    <ref role="37wK5l" to="eoo2:~Path.relativize(java.nio.file.Path)" resolve="relativize" />
+                    <node concept="37vLTw" id="6ttlgUSRWE4" role="37wK5m">
+                      <ref role="3cqZAo" node="6ttlgUSRQQD" resolve="filePath" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3clFbF" id="3$9W3co5IHy" role="3cqZAp">
               <node concept="2OqwBi" id="3$9W3co5IHz" role="3clFbG">
                 <node concept="37vLTw" id="3$9W3co5IH$" role="2Oq$k0">
@@ -1513,8 +1576,13 @@
                           <node concept="Xl_RD" id="3$9W3co5IHD" role="3uHU7B">
                             <property role="Xl_RC" value="Module with file '" />
                           </node>
-                          <node concept="2GrUjf" id="3$9W3co5KNi" role="3uHU7w">
-                            <ref role="2Gs0qQ" node="3$9W3co5Baw" resolve="fileNotInProject" />
+                          <node concept="2OqwBi" id="6ttlgUSRYyS" role="3uHU7w">
+                            <node concept="37vLTw" id="6ttlgUSRXtW" role="2Oq$k0">
+                              <ref role="3cqZAo" node="6ttlgUSRTL2" resolve="relativePath" />
+                            </node>
+                            <node concept="liA8E" id="6ttlgUSS0qT" role="2OqNvi">
+                              <ref role="37wK5l" to="eoo2:~Path.toString()" resolve="toString" />
+                            </node>
                           </node>
                         </node>
                         <node concept="Xl_RD" id="3$9W3co5IHH" role="3uHU7w">
@@ -1525,8 +1593,13 @@
                         <node concept="1pGfFk" id="4XPt_HaJItk" role="2ShVmc">
                           <property role="373rjd" value="true" />
                           <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-                          <node concept="2GrUjf" id="4XPt_HaJJ5O" role="37wK5m">
-                            <ref role="2Gs0qQ" node="3$9W3co5Baw" resolve="fileNotInProject" />
+                          <node concept="2OqwBi" id="6ttlgUSS2ep" role="37wK5m">
+                            <node concept="37vLTw" id="6ttlgUSS1nJ" role="2Oq$k0">
+                              <ref role="3cqZAo" node="6ttlgUSRTL2" resolve="relativePath" />
+                            </node>
+                            <node concept="liA8E" id="6ttlgUSS41w" role="2OqNvi">
+                              <ref role="37wK5l" to="eoo2:~Path.toString()" resolve="toString" />
+                            </node>
                           </node>
                         </node>
                       </node>
