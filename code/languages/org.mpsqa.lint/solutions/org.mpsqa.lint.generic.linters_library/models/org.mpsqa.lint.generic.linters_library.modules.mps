@@ -1593,13 +1593,8 @@
                         <node concept="1pGfFk" id="4XPt_HaJItk" role="2ShVmc">
                           <property role="373rjd" value="true" />
                           <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-                          <node concept="2OqwBi" id="6ttlgUSS2ep" role="37wK5m">
-                            <node concept="37vLTw" id="6ttlgUSS1nJ" role="2Oq$k0">
-                              <ref role="3cqZAo" node="6ttlgUSRTL2" resolve="relativePath" />
-                            </node>
-                            <node concept="liA8E" id="6ttlgUSS41w" role="2OqNvi">
-                              <ref role="37wK5l" to="eoo2:~Path.toString()" resolve="toString" />
-                            </node>
+                          <node concept="2GrUjf" id="30pn8mu_9yA" role="37wK5m">
+                            <ref role="2Gs0qQ" node="3$9W3co5Baw" resolve="fileNotInProject" />
                           </node>
                         </node>
                       </node>
