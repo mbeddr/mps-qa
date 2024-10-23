@@ -4,12 +4,10 @@
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
-    <use id="40ab19e9-751a-4433-b645-0e65160e58a0" name="org.mpsqa.lint.generic" version="1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
-    <use id="df345b11-b8c7-4213-ac66-48d2a9b75d88" name="jetbrains.mps.baseLanguageInternal" version="0" />
   </languages>
   <imports>
     <import index="k2t0" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.checkers(MPS.Core/)" />
@@ -25,13 +23,12 @@
     <import index="mk8z" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.progress(MPS.Core/)" />
     <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
     <import index="6if8" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project.validation(MPS.Core/)" />
-    <import index="ykok" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.constraints(MPS.Core/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="phxh" ref="r:5754bb7d-f802-4a0f-bd3d-0764f0d71413(jetbrains.mps.ide.modelchecker.platform.actions)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="tjjq" ref="9e98f4e2-decf-4e97-bf80-9109e8b759aa/java:jetbrains.mps.core.context(jetbrains.mps.lang.feedback.context/)" />
     <import index="ze1i" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.runtime(MPS.Core/)" />
-    <import index="ykol" ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee/java:jetbrains.mps.smodel.constraints(jetbrains.mps.lang.constraints.rules.runtime/)" />
+    <import index="ykok" ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee/java:jetbrains.mps.smodel.constraints(jetbrains.mps.lang.constraints.rules.runtime/)" />
     <import index="pdwk" ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee/java:jetbrains.mps.core.aspects.constraints.rules.kinds(jetbrains.mps.lang.constraints.rules.runtime/)" />
     <import index="o99v" ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee/java:jetbrains.mps.core.aspects.constraints.rules(jetbrains.mps.lang.constraints.rules.runtime/)" implicit="true" />
   </imports>
@@ -441,31 +438,24 @@
                       <ref role="3cqZAo" node="2xFKNLWBFC5" resolve="res" />
                     </node>
                     <node concept="TSZUe" id="2xFKNLWBFBw" role="2OqNvi">
-                      <node concept="3cpWs3" id="2xFKNLWBFBz" role="25WWJ7">
-                        <node concept="Xl_RD" id="2xFKNLWBFB$" role="3uHU7w">
-                          <property role="Xl_RC" value="ms" />
-                        </node>
-                        <node concept="3cpWs3" id="2xFKNLWBFB_" role="3uHU7B">
-                          <node concept="3cpWs3" id="2xFKNLWBFBA" role="3uHU7B">
-                            <node concept="3cpWs3" id="2xFKNLWBFBC" role="3uHU7B">
-                              <node concept="3cpWs3" id="2xFKNLWBFBD" role="3uHU7B">
-                                <node concept="Xl_RD" id="2xFKNLWBFBE" role="3uHU7B">
-                                  <property role="Xl_RC" value="non-typesystem checks too slow on module '" />
-                                </node>
-                                <node concept="2GrUjf" id="2xFKNLWBZuN" role="3uHU7w">
-                                  <ref role="2Gs0qQ" node="2xFKNLWBFAn" resolve="module" />
-                                </node>
-                              </node>
-                              <node concept="Xl_RD" id="2xFKNLWBFBG" role="3uHU7w">
-                                <property role="Xl_RC" value="'" />
-                              </node>
+                      <node concept="2ShNRf" id="4XPt_HaUd5e" role="25WWJ7">
+                        <node concept="1pGfFk" id="4XPt_HaUe3f" role="2ShVmc">
+                          <ref role="37wK5l" to="zn9m:~Pair.&lt;init&gt;(java.lang.Object,java.lang.Object)" resolve="Pair" />
+                          <node concept="3cpWs3" id="2xFKNLWBFBz" role="37wK5m">
+                            <node concept="Xl_RD" id="2xFKNLWBFB$" role="3uHU7w">
+                              <property role="Xl_RC" value="ms" />
                             </node>
-                            <node concept="Xl_RD" id="2xFKNLWBFBK" role="3uHU7w">
-                              <property role="Xl_RC" value=" - it took " />
+                            <node concept="3cpWs3" id="2xFKNLWBFB_" role="3uHU7B">
+                              <node concept="Xl_RD" id="2xFKNLWBFBE" role="3uHU7B">
+                                <property role="Xl_RC" value="Non-typesystem checks too slow: " />
+                              </node>
+                              <node concept="37vLTw" id="2uhEaMSTF4G" role="3uHU7w">
+                                <ref role="3cqZAo" node="2xFKNLWBFB0" resolve="elapsedTime" />
+                              </node>
                             </node>
                           </node>
-                          <node concept="37vLTw" id="2uhEaMSTF4G" role="3uHU7w">
-                            <ref role="3cqZAo" node="2xFKNLWBFB0" resolve="elapsedTime" />
+                          <node concept="2GrUjf" id="4XPt_HaUkw7" role="37wK5m">
+                            <ref role="2Gs0qQ" node="2xFKNLWBFAn" resolve="module" />
                           </node>
                         </node>
                       </node>
@@ -512,7 +502,13 @@
       <node concept="37vLTG" id="2xFKNLWBFC5" role="3clF46">
         <property role="TrG5h" value="res" />
         <node concept="_YKpA" id="2xFKNLWBFC6" role="1tU5fm">
-          <node concept="17QB3L" id="2uhEaMSQNsM" role="_ZDj9" />
+          <node concept="3uibUv" id="4XPt_HaU8Tc" role="_ZDj9">
+            <ref role="3uigEE" to="zn9m:~Pair" resolve="Pair" />
+            <node concept="17QB3L" id="4XPt_HaUatY" role="11_B2D" />
+            <node concept="3uibUv" id="4XPt_HaUbke" role="11_B2D">
+              <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -675,29 +671,25 @@
                       <ref role="3cqZAo" node="2xFKNLWAMro" resolve="res" />
                     </node>
                     <node concept="TSZUe" id="2xFKNLWAMqN" role="2OqNvi">
-                      <node concept="3cpWs3" id="2xFKNLWAMqQ" role="25WWJ7">
-                        <node concept="Xl_RD" id="2xFKNLWAMqR" role="3uHU7w">
-                          <property role="Xl_RC" value="ms" />
-                        </node>
-                        <node concept="3cpWs3" id="2xFKNLWAMqS" role="3uHU7B">
-                          <node concept="3cpWs3" id="2xFKNLWAMqT" role="3uHU7B">
-                            <node concept="3cpWs3" id="2xFKNLWAMqU" role="3uHU7B">
-                              <node concept="Xl_RD" id="2xFKNLWAMqX" role="3uHU7B">
-                                <property role="Xl_RC" value="non-typesystem checks too slow on model '" />
-                              </node>
-                              <node concept="2OqwBi" id="2xFKNLWAMr0" role="3uHU7w">
-                                <node concept="2GrUjf" id="2xFKNLWAMr1" role="2Oq$k0">
-                                  <ref role="2Gs0qQ" node="6o7R8__tZIO" resolve="m" />
-                                </node>
-                                <node concept="LkI2h" id="2xFKNLWAMr2" role="2OqNvi" />
-                              </node>
+                      <node concept="2ShNRf" id="4XPt_HaTUax" role="25WWJ7">
+                        <node concept="1pGfFk" id="4XPt_HaTV4D" role="2ShVmc">
+                          <property role="373rjd" value="true" />
+                          <ref role="37wK5l" to="zn9m:~Pair.&lt;init&gt;(java.lang.Object,java.lang.Object)" resolve="Pair" />
+                          <node concept="3cpWs3" id="2xFKNLWAMqQ" role="37wK5m">
+                            <node concept="Xl_RD" id="2xFKNLWAMqR" role="3uHU7w">
+                              <property role="Xl_RC" value="ms" />
                             </node>
-                            <node concept="Xl_RD" id="2xFKNLWAMr3" role="3uHU7w">
-                              <property role="Xl_RC" value="' - it took " />
+                            <node concept="3cpWs3" id="2xFKNLWAMqS" role="3uHU7B">
+                              <node concept="Xl_RD" id="2xFKNLWAMqX" role="3uHU7B">
+                                <property role="Xl_RC" value="non-typesystem checks too slow: " />
+                              </node>
+                              <node concept="37vLTw" id="2uhEaMSTD8y" role="3uHU7w">
+                                <ref role="3cqZAo" node="6o7R8__tMOz" resolve="elapsedTime" />
+                              </node>
                             </node>
                           </node>
-                          <node concept="37vLTw" id="2uhEaMSTD8y" role="3uHU7w">
-                            <ref role="3cqZAo" node="6o7R8__tMOz" resolve="elapsedTime" />
+                          <node concept="2GrUjf" id="4XPt_HaTX2s" role="37wK5m">
+                            <ref role="2Gs0qQ" node="6o7R8__tZIO" resolve="m" />
                           </node>
                         </node>
                       </node>
@@ -746,7 +738,11 @@
       <node concept="37vLTG" id="2xFKNLWAMro" role="3clF46">
         <property role="TrG5h" value="res" />
         <node concept="_YKpA" id="2xFKNLWAMrp" role="1tU5fm">
-          <node concept="17QB3L" id="2xFKNLWB3E4" role="_ZDj9" />
+          <node concept="3uibUv" id="4XPt_HaTNc$" role="_ZDj9">
+            <ref role="3uigEE" to="zn9m:~Pair" resolve="Pair" />
+            <node concept="17QB3L" id="4XPt_HaTODI" role="11_B2D" />
+            <node concept="H_c77" id="4XPt_HaTQiV" role="11_B2D" />
+          </node>
         </node>
       </node>
     </node>
@@ -1743,8 +1739,8 @@
                       </node>
                     </node>
                     <node concept="2YIFZM" id="158mPassQut" role="2GsD0m">
-                      <ref role="1Pybhc" to="ykol:~ConstraintsCanBeFacade" resolve="ConstraintsCanBeFacade" />
-                      <ref role="37wK5l" to="ykol:~ConstraintsCanBeFacade.checkCanBeParent(jetbrains.mps.core.aspects.constraints.rules.kinds.ContainmentContext)" resolve="checkCanBeParent" />
+                      <ref role="1Pybhc" to="ykok:~ConstraintsCanBeFacade" resolve="ConstraintsCanBeFacade" />
+                      <ref role="37wK5l" to="ykok:~ConstraintsCanBeFacade.checkCanBeParent(jetbrains.mps.core.aspects.constraints.rules.kinds.ContainmentContext)" resolve="checkCanBeParent" />
                       <node concept="37vLTw" id="158mPassQuu" role="37wK5m">
                         <ref role="3cqZAo" node="4VtLjdspz10" resolve="cc" />
                       </node>
@@ -1770,8 +1766,8 @@
                       </node>
                     </node>
                     <node concept="2YIFZM" id="158mPastdgt" role="2GsD0m">
-                      <ref role="37wK5l" to="ykol:~ConstraintsCanBeFacade.checkCanBeChild(jetbrains.mps.core.aspects.constraints.rules.kinds.ContainmentContext)" resolve="checkCanBeChild" />
-                      <ref role="1Pybhc" to="ykol:~ConstraintsCanBeFacade" resolve="ConstraintsCanBeFacade" />
+                      <ref role="37wK5l" to="ykok:~ConstraintsCanBeFacade.checkCanBeChild(jetbrains.mps.core.aspects.constraints.rules.kinds.ContainmentContext)" resolve="checkCanBeChild" />
+                      <ref role="1Pybhc" to="ykok:~ConstraintsCanBeFacade" resolve="ConstraintsCanBeFacade" />
                       <node concept="37vLTw" id="158mPastdgu" role="37wK5m">
                         <ref role="3cqZAo" node="4VtLjdspz10" resolve="cc" />
                       </node>
@@ -1835,8 +1831,8 @@
                       </node>
                     </node>
                     <node concept="2YIFZM" id="158mPastz06" role="2GsD0m">
-                      <ref role="37wK5l" to="ykol:~ConstraintsCanBeFacade.checkCanBeAncestor(jetbrains.mps.core.aspects.constraints.rules.kinds.CanBeAncestorContext)" resolve="checkCanBeAncestor" />
-                      <ref role="1Pybhc" to="ykol:~ConstraintsCanBeFacade" resolve="ConstraintsCanBeFacade" />
+                      <ref role="37wK5l" to="ykok:~ConstraintsCanBeFacade.checkCanBeAncestor(jetbrains.mps.core.aspects.constraints.rules.kinds.CanBeAncestorContext)" resolve="checkCanBeAncestor" />
+                      <ref role="1Pybhc" to="ykok:~ConstraintsCanBeFacade" resolve="ConstraintsCanBeFacade" />
                       <node concept="37vLTw" id="158mPastz07" role="37wK5m">
                         <ref role="3cqZAo" node="5VJWClHvcG4" resolve="cbac" />
                       </node>

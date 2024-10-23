@@ -9,7 +9,6 @@
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
     <use id="1a8554c4-eb84-43ba-8c34-6f0d90c6e75a" name="jetbrains.mps.lang.smodel.query" version="3" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
-    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
   </languages>
   <imports>
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
@@ -1526,9 +1525,9 @@
                             <node concept="3Tqbb2" id="5e$mNoOytRX" role="3qUE_r" />
                           </node>
                         </node>
-                        <node concept="qVDSY" id="2QH7JPsZwQw" role="33vP2m">
-                          <node concept="25Kdxt" id="2QH7JPsZwQx" role="qVDSX">
-                            <node concept="37vLTw" id="2QH7JPsZwQy" role="25KhWn">
+                        <node concept="qVDSY" id="2iYG$WavkzX" role="33vP2m">
+                          <node concept="25Kdxt" id="2iYG$WavkzY" role="qVDSX">
+                            <node concept="37vLTw" id="2iYG$WavkzZ" role="25KhWn">
                               <ref role="3cqZAo" node="2QH7JPsZwPS" resolve="applicableConcept" />
                             </node>
                           </node>

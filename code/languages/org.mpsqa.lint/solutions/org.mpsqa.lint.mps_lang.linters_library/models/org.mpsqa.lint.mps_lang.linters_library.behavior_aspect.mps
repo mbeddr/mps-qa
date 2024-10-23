@@ -5,11 +5,9 @@
     <use id="40ab19e9-751a-4433-b645-0e65160e58a0" name="org.mpsqa.lint.generic" version="1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
-    <use id="1a8554c4-eb84-43ba-8c34-6f0d90c6e75a" name="jetbrains.mps.lang.smodel.query" version="3" />
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="1i04" ref="r:3270011d-8b2d-4938-8dff-d256a759e017(jetbrains.mps.lang.behavior.structure)" />
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" />
     <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
@@ -22,7 +20,6 @@
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
-      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -119,12 +116,8 @@
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
-      <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
-      </concept>
-      <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
-        <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
       <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
         <child id="1145567471833" name="createdType" index="2T96Bj" />
@@ -770,59 +763,6 @@
                         <property role="Xl_RC" value="'" />
                       </node>
                       <node concept="3cpWs3" id="78RogMCDf8_" role="3uHU7B">
-                        <node concept="3cpWs3" id="78RogMCDf8A" role="3uHU7B">
-                          <node concept="3cpWs3" id="78RogMCDf8B" role="3uHU7B">
-                            <node concept="2OqwBi" id="78RogMCDf8C" role="3uHU7w">
-                              <node concept="2OqwBi" id="78RogMCDf8D" role="2Oq$k0">
-                                <node concept="2JrnkZ" id="78RogMCDf8E" role="2Oq$k0">
-                                  <node concept="2OqwBi" id="78RogMCDf8F" role="2JrQYb">
-                                    <node concept="37vLTw" id="2zdrQh7q_73" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="2zdrQh7oJuy" resolve="behavior" />
-                                    </node>
-                                    <node concept="I4A8Y" id="78RogMCDf8H" role="2OqNvi" />
-                                  </node>
-                                </node>
-                                <node concept="liA8E" id="78RogMCDf8I" role="2OqNvi">
-                                  <ref role="37wK5l" to="mhbf:~SModel.getName()" resolve="getName" />
-                                </node>
-                              </node>
-                              <node concept="liA8E" id="78RogMCDf8J" role="2OqNvi">
-                                <ref role="37wK5l" to="mhbf:~SModelName.getValue()" resolve="getValue" />
-                              </node>
-                            </node>
-                            <node concept="3cpWs3" id="78RogMCDf8K" role="3uHU7B">
-                              <node concept="3cpWs3" id="78RogMCDf8L" role="3uHU7B">
-                                <node concept="2OqwBi" id="78RogMCDf8M" role="3uHU7w">
-                                  <node concept="37vLTw" id="2zdrQh7qzQ0" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="2zdrQh7oJuy" resolve="behavior" />
-                                  </node>
-                                  <node concept="3TrcHB" id="78RogMCDf8O" role="2OqNvi">
-                                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                                  </node>
-                                </node>
-                                <node concept="3cpWs3" id="78RogMCDf8P" role="3uHU7B">
-                                  <node concept="3cpWs3" id="78RogMCDf8Q" role="3uHU7B">
-                                    <node concept="Xl_RD" id="78RogMCDf8R" role="3uHU7B">
-                                      <property role="Xl_RC" value="concept method '" />
-                                    </node>
-                                    <node concept="37vLTw" id="78RogMCDf8S" role="3uHU7w">
-                                      <ref role="3cqZAo" node="3pz5R1DJaEC" resolve="nameAndSignature" />
-                                    </node>
-                                  </node>
-                                  <node concept="Xl_RD" id="78RogMCDf8T" role="3uHU7w">
-                                    <property role="Xl_RC" value="' from rootNode '" />
-                                  </node>
-                                </node>
-                              </node>
-                              <node concept="Xl_RD" id="78RogMCDf8U" role="3uHU7w">
-                                <property role="Xl_RC" value="' from model '" />
-                              </node>
-                            </node>
-                          </node>
-                          <node concept="Xl_RD" id="78RogMCDf8V" role="3uHU7w">
-                            <property role="Xl_RC" value="' has the same signature as concept method from '" />
-                          </node>
-                        </node>
                         <node concept="2OqwBi" id="78RogMCDf8W" role="3uHU7w">
                           <node concept="2OqwBi" id="78RogMCDf8X" role="2Oq$k0">
                             <node concept="3EllGN" id="78RogMCDf8Y" role="2Oq$k0">
@@ -844,6 +784,9 @@
                           <node concept="3TrcHB" id="78RogMCDf94" role="2OqNvi">
                             <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                           </node>
+                        </node>
+                        <node concept="Xl_RD" id="4XPt_HaT1rx" role="3uHU7B">
+                          <property role="Xl_RC" value="the concept method has the same signature as concept method from '" />
                         </node>
                       </node>
                     </node>
