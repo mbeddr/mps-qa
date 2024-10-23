@@ -6,9 +6,6 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="1a8554c4-eb84-43ba-8c34-6f0d90c6e75a" name="jetbrains.mps.lang.smodel.query" version="3" />
-    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
-    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
   </languages>
   <imports>
     <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
@@ -80,7 +77,6 @@
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
-      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -105,10 +101,6 @@
         <reference id="1107535924139" name="classifier" index="3uigEE" />
         <child id="1109201940907" name="parameter" index="11_B2D" />
       </concept>
-      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
-        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
-        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
-      </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -126,7 +118,6 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
-      <concept id="8329979535468945057" name="jetbrains.mps.lang.smodel.structure.Node_PresentationOperation" flags="ng" index="2Iv5rx" />
       <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
         <reference id="3562215692195600259" name="link" index="13MTZf" />
       </concept>
@@ -468,21 +459,8 @@
                             <node concept="1pGfFk" id="4lmpEOOA1FT" role="2ShVmc">
                               <property role="373rjd" value="true" />
                               <ref role="37wK5l" to="zn9m:~Pair.&lt;init&gt;(java.lang.Object,java.lang.Object)" resolve="Pair" />
-                              <node concept="3cpWs3" id="1anGYsMsnoe" role="37wK5m">
-                                <node concept="3cpWs3" id="1anGYsMsnof" role="3uHU7B">
-                                  <node concept="Xl_RD" id="1anGYsMsnog" role="3uHU7B">
-                                    <property role="Xl_RC" value="Plugin '" />
-                                  </node>
-                                  <node concept="2OqwBi" id="1Ke2sdkiKwc" role="3uHU7w">
-                                    <node concept="2GrUjf" id="1Ke2sdkiKkc" role="2Oq$k0">
-                                      <ref role="2Gs0qQ" node="1Ke2sdkiFDy" resolve="ip" />
-                                    </node>
-                                    <node concept="2Iv5rx" id="1Ke2sdkjFOj" role="2OqNvi" />
-                                  </node>
-                                </node>
-                                <node concept="Xl_RD" id="1anGYsMsnok" role="3uHU7w">
-                                  <property role="Xl_RC" value="' is involved in a cyclic dependency" />
-                                </node>
+                              <node concept="Xl_RD" id="4XPt_HaTl91" role="37wK5m">
+                                <property role="Xl_RC" value="Plugin is involved in a cyclic dependency" />
                               </node>
                               <node concept="2GrUjf" id="4lmpEOOA22n" role="37wK5m">
                                 <ref role="2Gs0qQ" node="1Ke2sdkiFDy" resolve="ip" />
