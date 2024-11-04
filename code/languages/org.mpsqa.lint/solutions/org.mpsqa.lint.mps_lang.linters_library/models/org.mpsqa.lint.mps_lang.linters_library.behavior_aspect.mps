@@ -116,9 +116,6 @@
         <child id="7741759128795045752" name="exp" index="2j1LYg" />
         <child id="7741759128795065723" name="paramRef" index="2j1YQj" />
       </concept>
-      <concept id="7223240310078271419" name="org.mpsqa.lint.generic.structure.ILinterResultsContainer" flags="ngI" index="3dgnlL">
-        <property id="7223240310078527797" name="failOnlyOnNewResults" index="3dJkfZ" />
-      </concept>
       <concept id="3423774024185833116" name="org.mpsqa.lint.generic.structure.NodeReferenceWord" flags="ng" index="3Djtr9">
         <child id="3423774024185984305" name="fullyQualifiedReference" index="3DkKl$" />
       </concept>
@@ -1114,7 +1111,6 @@
   </node>
   <node concept="1MIHA_" id="5FxxG02IpQB">
     <property role="TrG5h" value="mandatory_virtual_method_override" />
-    <property role="3dJkfZ" value="true" />
     <node concept="1JQnix" id="5FxxG02IpQE" role="14J5yK">
       <ref role="1XX52x" to="1i04:hP3h7Gq" resolve="ConceptBehavior" />
       <node concept="3clFbS" id="5FxxG02IpQF" role="2VODD2">
@@ -1551,7 +1547,7 @@
     </node>
     <node concept="2j1LYv" id="5FxxG02ItkT" role="2j1YRv">
       <node concept="2j1LYi" id="5FxxG02ItkU" role="2j1YQj">
-        <ref role="2j1LYj" node="5FxxG02Iq75" resolve="parentConcept" />
+        <ref role="2j1LYj" node="5FxxG02Iq75" resolve="parentConceptName" />
       </node>
       <node concept="Xl_RD" id="5FxxG02JmAe" role="2j1LYg">
         <property role="Xl_RC" value="BaseConcept" />
