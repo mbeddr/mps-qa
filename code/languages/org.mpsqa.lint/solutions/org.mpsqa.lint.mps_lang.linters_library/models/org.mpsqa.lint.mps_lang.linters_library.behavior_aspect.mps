@@ -1709,7 +1709,7 @@
                     </node>
                     <node concept="2OqwBi" id="3cj_LrgQOGH" role="33vP2m">
                       <node concept="2GrUjf" id="3cj_LrgQOGI" role="2Oq$k0">
-                        <ref role="2Gs0qQ" node="3cj_LrgQDfZ" resolve="crtBehavior" />
+                        <ref role="2Gs0qQ" node="3cj_LrgQDfZ" resolve="thisBehavior" />
                       </node>
                       <node concept="2qgKlT" id="3cj_LrgQOGJ" role="2OqNvi">
                         <ref role="37wK5l" to="csvn:1$X$vL9L8i8" resolve="getAllSuperBehaviors" />
