@@ -98,9 +98,16 @@
     <node concept="1TJgyj" id="ah8HpWiuVW" role="1TKVEi">
       <property role="IQ2ns" value="184967364302466812" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="deprecatedType" />
+      <property role="20kJfa" value="deprecatedConceptResults" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="ah8HpWiuVV" resolve="DeprecatedConceptResult" />
+    </node>
+    <node concept="1TJgyj" id="2fzXGFm4ppM" role="1TKVEi">
+      <property role="IQ2ns" value="2586181962076100210" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="deprecatedRefereceTargetResults" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2fzXGFm3KyA" resolve="DeprecatedReferenceTargetResult" />
     </node>
     <node concept="1TJgyi" id="3imng2mXeQS" role="1TKVEl">
       <property role="IQ2nx" value="3789318393592868280" />
@@ -155,6 +162,28 @@
     </node>
     <node concept="PrWs8" id="pFzydTDN9X" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2fzXGFm3KyA">
+    <property role="EcuMT" value="2586181962075932838" />
+    <property role="TrG5h" value="DeprecatedReferenceTargetResult" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2fzXGFm3KyB" role="1TKVEi">
+      <property role="IQ2ns" value="2586181962075932839" />
+      <property role="20kJfa" value="targetNode" />
+      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    </node>
+    <node concept="1TJgyj" id="2fzXGFm3KyC" role="1TKVEi">
+      <property role="IQ2ns" value="2586181962075932840" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="deprecatedReferringNodes" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="7LZ1KAVUTVU" resolve="DeprecatedNodeResult" />
+    </node>
+    <node concept="1TJgyi" id="2fzXGFm3KyD" role="1TKVEl">
+      <property role="IQ2nx" value="2586181962075932841" />
+      <property role="TrG5h" value="displayReferringNodes" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
 </model>

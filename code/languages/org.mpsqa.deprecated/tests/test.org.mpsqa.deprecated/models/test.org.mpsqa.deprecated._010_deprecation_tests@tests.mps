@@ -307,7 +307,7 @@
                   </node>
                 </node>
                 <node concept="13MTOL" id="45IuY9nkaat" role="2OqNvi">
-                  <ref role="13MTZf" to="3idh:ah8HpWiuVW" resolve="deprecatedType" />
+                  <ref role="13MTZf" to="3idh:ah8HpWiuVW" resolve="deprecatedConceptResults" />
                 </node>
               </node>
               <node concept="13MTOL" id="45IuY9nkaWE" role="2OqNvi">
