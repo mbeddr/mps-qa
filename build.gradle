@@ -12,7 +12,7 @@ plugins {
     id 'de.itemis.mps.gradle.launcher' version '2.5.2.+'
 }
 
-ext.jbrVers = '17.0.8.1-b1000.32'
+ext.jbrVers = '21.0.5-b631.8'
 
 downloadJbr {
     jbrVersion = jbrVers
@@ -56,7 +56,7 @@ configurations {
 dependencies {
     // Use the following dependency for published releases:
     //   mps 'com.jetbrains:mps:2024.1'
-    mps 'com.jetbrains.mps:mps-prerelease:241.19072.10578'
+    mps 'com.jetbrains.mps:mps-prerelease:243.21565.111'
     antLib "org.apache.ant:ant-junit:1.10.15"
     antLib "org.jacoco:org.jacoco.ant:0.8.12"
 }
