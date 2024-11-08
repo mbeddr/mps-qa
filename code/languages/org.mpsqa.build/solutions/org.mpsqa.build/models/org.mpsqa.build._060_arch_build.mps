@@ -243,9 +243,6 @@
           <property role="3MwjfP" value="org.mpsqa.arch" />
         </node>
       </node>
-      <node concept="m$_yC" id="2VR19mpiUGU" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:5lGJ4TajoV9" resolve="jetbrains.mps.ide.migration.workbench" />
-      </node>
     </node>
     <node concept="2G$12M" id="50Wzfz4shz9" role="3989C9">
       <property role="TrG5h" value="org.mpsqa.arch" />
@@ -355,11 +352,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="50Wzfz4sh_0" role="3bR37C">
-          <node concept="3bR9La" id="50Wzfz4sh_1" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="50Wzfz4sh_2" role="3bR37C">
           <node concept="3bR9La" id="50Wzfz4sh_3" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
@@ -370,11 +362,6 @@
             <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
           </node>
         </node>
-        <node concept="1SiIV0" id="50Wzfz4sh_6" role="3bR37C">
-          <node concept="3bR9La" id="50Wzfz4sh_7" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:4SM2EuqHUPF" resolve="jetbrains.mps.lang.modelapi" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="50Wzfz4sh_8" role="3bR37C">
           <node concept="3bR9La" id="50Wzfz4sh_9" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
@@ -383,11 +370,6 @@
         <node concept="1SiIV0" id="50Wzfz4sh_a" role="3bR37C">
           <node concept="3bR9La" id="50Wzfz4sh_b" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="50Wzfz4sh_c" role="3bR37C">
-          <node concept="3bR9La" id="50Wzfz4sh_d" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6L9O" resolve="jetbrains.mps.lang.smodel" />
           </node>
         </node>
         <node concept="1SiIV0" id="50Wzfz4sh_e" role="3bR37C">
@@ -450,11 +432,6 @@
                 </node>
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="2VR19mpiUB5" role="3bR37C">
-          <node concept="3bR9La" id="2VR19mpiUB6" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:2eDSGe9d1q1" resolve="MPS.Workbench" />
           </node>
         </node>
       </node>
