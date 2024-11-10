@@ -1028,7 +1028,7 @@
                         </node>
                       </node>
                       <node concept="gl6BB" id="1vMaDkDXck2" role="1bW2Oz">
-                        <property role="TrG5h" value="it" />
+                        <property role="TrG5h" value="line" />
                         <node concept="2jxLKc" id="1vMaDkDXck3" role="1tU5fm" />
                       </node>
                     </node>
