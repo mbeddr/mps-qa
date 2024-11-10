@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="7" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="8" />
     <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="1" />
   </languages>
   <imports>
@@ -160,7 +160,7 @@
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
       <node concept="m$_yC" id="1GhTetdABhp" role="m$_yJ">
-        <ref role="m$_y1" to="5g2w:2JVMSZMFXh0" resolve="org.mpsqa.clones" />
+        <ref role="m$_y1" to="5g2w:2JVMSZMFXh0" />
       </node>
       <node concept="3_J27D" id="2JVMSZMFY9r" role="m_cZH">
         <node concept="3Mxwew" id="2JVMSZMFY9s" role="3MwsjC">
@@ -263,7 +263,7 @@
       </node>
     </node>
     <node concept="2sgV4H" id="6dJ4vxiTR6z" role="1l3spa">
-      <ref role="1l3spb" to="c9zv:2JVMSZMFXJP" resolve="org.mpsqa.clones.headless" />
+      <ref role="1l3spb" to="c9zv:2JVMSZMFXJP" resolve="org.mpsqa.clones.tests" />
       <node concept="398BVA" id="6dJ4vxiUhxa" role="2JcizS">
         <ref role="398BVh" node="1GhTetdB0o4" resolve="mps_home" />
       </node>
