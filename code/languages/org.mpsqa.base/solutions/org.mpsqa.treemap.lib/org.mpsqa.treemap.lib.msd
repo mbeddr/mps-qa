@@ -9,7 +9,7 @@
     </modelRoot>
   </models>
   <facets>
-    <facet type="java" compile="mps" classes="mps" ext="no">
+    <facet type="java" compile="mps" classes="mps" ext="yes">
       <classes generated="true" path="${module}/classes_gen" />
       <library location="${module}/lib/jtreemap-1.1.0-bundle.jar" />
       <library location="${module}/lib/jtreemap-1.1.0.jar" />
