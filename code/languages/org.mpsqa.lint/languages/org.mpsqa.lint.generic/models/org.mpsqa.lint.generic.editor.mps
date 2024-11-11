@@ -8,9 +8,7 @@
   </languages>
   <imports>
     <import index="kqrb" ref="r:608506d3-3472-4b1d-929c-779e49cabb27(org.mpsqa.lint.generic.typesystem)" />
-    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
-    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="b659" ref="r:654c665e-d426-4acf-8be1-49f83baabbb4(org.mpsqa.lint.generic.behavior)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
@@ -779,15 +777,15 @@
                       <ref role="3cqZAo" to="lzb2:~JBColor.ORANGE" resolve="ORANGE" />
                       <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
                     </node>
-                    <node concept="10M0yZ" id="7_XHz4_JkX6" role="3K4GZi">
-                      <ref role="3cqZAo" to="lzb2:~JBColor.GREEN" resolve="GREEN" />
-                      <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
-                    </node>
                     <node concept="2OqwBi" id="63CQ8uYIrmU" role="3K4Cdx">
                       <node concept="pncrf" id="63CQ8uYIrmV" role="2Oq$k0" />
                       <node concept="3TrcHB" id="63CQ8uYIrmW" role="2OqNvi">
                         <ref role="3TsBF5" to="a1af:6gY6GEDwP$P" resolve="failOnlyOnNewResults" />
                       </node>
+                    </node>
+                    <node concept="10M0yZ" id="7_XHz4_JkX6" role="3K4GZi">
+                      <ref role="3cqZAo" to="lzb2:~JBColor.GREEN" resolve="GREEN" />
+                      <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
                     </node>
                   </node>
                   <node concept="3b6qkQ" id="63CQ8uYIrmX" role="37wK5m">
@@ -1288,7 +1286,6 @@
           </node>
         </node>
       </node>
-      <node concept="2iRkQZ" id="2I_DQhHcYI" role="2iSdaV" />
       <node concept="3EZMnI" id="2I_DQhHdR$" role="3EZMnx">
         <node concept="2iRfu4" id="2I_DQhHdR_" role="2iSdaV" />
         <node concept="3XFhqQ" id="4XPt_Hap3VX" role="3EZMnx" />
@@ -1317,6 +1314,7 @@
           </node>
         </node>
       </node>
+      <node concept="2iRkQZ" id="2I_DQhHcYI" role="2iSdaV" />
     </node>
   </node>
   <node concept="PKFIW" id="ST9rMmWg4s">
@@ -1775,15 +1773,15 @@
                       <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
                       <ref role="3cqZAo" to="lzb2:~JBColor.ORANGE" resolve="ORANGE" />
                     </node>
-                    <node concept="10M0yZ" id="7_XHz4_J2PX" role="3K4GZi">
-                      <ref role="3cqZAo" to="lzb2:~JBColor.GREEN" resolve="GREEN" />
-                      <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
-                    </node>
                     <node concept="2OqwBi" id="652KpqR2FTk" role="3K4Cdx">
                       <node concept="pncrf" id="652KpqR2FTl" role="2Oq$k0" />
                       <node concept="3TrcHB" id="652KpqR2FTm" role="2OqNvi">
                         <ref role="3TsBF5" to="a1af:652KpqR2qkQ" resolve="skipEvaluation" />
                       </node>
+                    </node>
+                    <node concept="10M0yZ" id="7_XHz4_J2PX" role="3K4GZi">
+                      <ref role="3cqZAo" to="lzb2:~JBColor.GREEN" resolve="GREEN" />
+                      <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
                     </node>
                   </node>
                   <node concept="3b6qkQ" id="63CQ8uYJ9VD" role="37wK5m">

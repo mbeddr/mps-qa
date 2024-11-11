@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:2d0587d8-db5b-486e-9a45-ecc0a4a2a2d5(org.mpsqa.base.errors_suppressor.pluginSolution.plugin)">
   <persistence version="9" />
-  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="5" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="6" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="1a8554c4-eb84-43ba-8c34-6f0d90c6e75a" name="jetbrains.mps.lang.smodel.query" version="3" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
-    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
+    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
   </languages>
   <imports>
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
@@ -29,11 +28,11 @@
     <import index="wyuk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.components(MPS.Core/)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="hkkt" ref="r:905f3835-f5d7-48c4-a6d6-3110a028428c(org.mpsqa.base.errors_suppressor.structure)" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
     <import index="z1c4" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
     <import index="n70j" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.checking(MPS.Editor/)" />
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="kpve" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.message(MPS.Editor/)" implicit="true" />
   </imports>
   <registry>
@@ -874,43 +873,6 @@
         </node>
       </node>
     </node>
-    <node concept="3Tm1VV" id="4c7y4qc4V7C" role="1B3o_S" />
-    <node concept="3uibUv" id="4c7y4qc4WGr" role="1zkMxy">
-      <ref role="3uigEE" to="wsw7:6qi2OtU3u$c" resolve="AbstractNodeCheckerInEditor" />
-    </node>
-    <node concept="3UR2Jj" id="3LCCkAqzsod" role="lGtFl">
-      <node concept="TZ5HA" id="3LCCkAqzsoe" role="TZ5H$">
-        <node concept="1dT_AC" id="3LCCkAqzsof" role="1dT_Ay">
-          <property role="1dT_AB" value="A special kind of checker that does nothing, but does have a " />
-        </node>
-        <node concept="1dT_AA" id="3LCCkAqzwDY" role="1dT_Ay">
-          <node concept="92FcH" id="3LCCkAqzwE4" role="qph3F">
-            <node concept="TZ5HA" id="3LCCkAqzwE6" role="2XjZqd" />
-            <node concept="VXe08" id="3LCCkAqzxVB" role="92FcQ">
-              <ref role="VXe09" to="wsw7:4c7y4qc4pe6" resolve="ICheckingPostprocessor" />
-            </node>
-          </node>
-        </node>
-        <node concept="1dT_AC" id="3LCCkAqzwDX" role="1dT_Ay">
-          <property role="1dT_AB" value=" to process warnings" />
-        </node>
-      </node>
-      <node concept="TZ5HA" id="3LCCkAqzyJ3" role="TZ5H$">
-        <node concept="1dT_AC" id="3LCCkAqzyJ4" role="1dT_Ay">
-          <property role="1dT_AB" value="reported by other checkers and are IRRELEVANT for this project. " />
-        </node>
-      </node>
-      <node concept="TZ5HA" id="3LCCkAqz_bN" role="TZ5H$">
-        <node concept="1dT_AC" id="3LCCkAqz_bO" role="1dT_Ay">
-          <property role="1dT_AB" value="&lt;p&gt;" />
-        </node>
-      </node>
-      <node concept="TZ5HA" id="1DrnXKM1K9Z" role="TZ5H$">
-        <node concept="1dT_AC" id="1DrnXKM1Ka0" role="1dT_Ay">
-          <property role="1dT_AB" value="This code is copied and adapted from &quot;jetbrains.mps.checkers.SuppressErrorsChecker&quot;" />
-        </node>
-      </node>
-    </node>
     <node concept="2tJIrI" id="5mI4pZCjaSw" role="jymVt" />
     <node concept="3clFb_" id="5mI4pZCjiiz" role="jymVt">
       <property role="TrG5h" value="isMessageSuppressed" />
@@ -1043,9 +1005,53 @@
         <node concept="10P_77" id="28p3jNfoMWM" role="1tU5fm" />
       </node>
     </node>
+    <node concept="3Tm1VV" id="4c7y4qc4V7C" role="1B3o_S" />
+    <node concept="3uibUv" id="4c7y4qc4WGr" role="1zkMxy">
+      <ref role="3uigEE" to="wsw7:6qi2OtU3u$c" resolve="AbstractNodeCheckerInEditor" />
+    </node>
+    <node concept="3UR2Jj" id="3LCCkAqzsod" role="lGtFl">
+      <node concept="TZ5HA" id="3LCCkAqzsoe" role="TZ5H$">
+        <node concept="1dT_AC" id="3LCCkAqzsof" role="1dT_Ay">
+          <property role="1dT_AB" value="A special kind of checker that does nothing, but does have a " />
+        </node>
+        <node concept="1dT_AA" id="3LCCkAqzwDY" role="1dT_Ay">
+          <node concept="92FcH" id="3LCCkAqzwE4" role="qph3F">
+            <node concept="TZ5HA" id="3LCCkAqzwE6" role="2XjZqd" />
+            <node concept="VXe08" id="3LCCkAqzxVB" role="92FcQ">
+              <ref role="VXe09" to="wsw7:4c7y4qc4pe6" resolve="ICheckingPostprocessor" />
+            </node>
+          </node>
+        </node>
+        <node concept="1dT_AC" id="3LCCkAqzwDX" role="1dT_Ay">
+          <property role="1dT_AB" value=" to process warnings" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="3LCCkAqzyJ3" role="TZ5H$">
+        <node concept="1dT_AC" id="3LCCkAqzyJ4" role="1dT_Ay">
+          <property role="1dT_AB" value="reported by other checkers and are IRRELEVANT for this project. " />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="3LCCkAqz_bN" role="TZ5H$">
+        <node concept="1dT_AC" id="3LCCkAqz_bO" role="1dT_Ay">
+          <property role="1dT_AB" value="&lt;p&gt;" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="1DrnXKM1K9Z" role="TZ5H$">
+        <node concept="1dT_AC" id="1DrnXKM1Ka0" role="1dT_Ay">
+          <property role="1dT_AB" value="This code is copied and adapted from &quot;jetbrains.mps.checkers.SuppressErrorsChecker&quot;" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="2uRRBy" id="1DrnXKMVtL_">
     <property role="TrG5h" value="CheckingSuppressorRegistrar" />
+    <node concept="2BZ0e9" id="5OzERE7j3Ob" role="2uRRBA">
+      <property role="TrG5h" value="editorCheckerSuppressor" />
+      <node concept="3Tm6S6" id="5OzERE7j3Oc" role="1B3o_S" />
+      <node concept="3uibUv" id="5OzERE7j44s" role="1tU5fm">
+        <ref role="3uigEE" node="5OzERE7iBzx" resolve="SuppressEditorCheckerResults" />
+      </node>
+    </node>
     <node concept="2uRRBT" id="1DrnXKMVu0e" role="2uRRB$">
       <node concept="3clFbS" id="1DrnXKMVu0f" role="2VODD2">
         <node concept="3clFbF" id="5OzERE7j4LA" role="3cqZAp">
@@ -1280,13 +1286,155 @@
         </node>
       </node>
     </node>
-    <node concept="2BZ0e9" id="5OzERE7j3Ob" role="2uRRBA">
-      <property role="TrG5h" value="editorCheckerSuppressor" />
-      <node concept="3Tm6S6" id="5OzERE7j3Oc" role="1B3o_S" />
-      <node concept="3uibUv" id="5OzERE7j44s" role="1tU5fm">
-        <ref role="3uigEE" node="5OzERE7iBzx" resolve="SuppressEditorCheckerResults" />
+  </node>
+  <node concept="312cEu" id="5mI4pZChNr3">
+    <property role="TrG5h" value="SuppressorManager" />
+    <node concept="2tJIrI" id="5mI4pZChX1e" role="jymVt" />
+    <node concept="Wx3nA" id="5mI4pZChZkZ" role="jymVt">
+      <property role="TrG5h" value="INSTANCE" />
+      <node concept="3Tm6S6" id="5mI4pZChYWK" role="1B3o_S" />
+      <node concept="3uibUv" id="5mI4pZChZkB" role="1tU5fm">
+        <ref role="3uigEE" node="5mI4pZChNr3" resolve="SuppressorManager" />
+      </node>
+      <node concept="2ShNRf" id="5mI4pZChZs9" role="33vP2m">
+        <node concept="1pGfFk" id="5mI4pZChZD$" role="2ShVmc">
+          <property role="373rjd" value="true" />
+          <ref role="37wK5l" node="5mI4pZChXzM" resolve="SuppressorManager" />
+        </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="5mI4pZChY3x" role="jymVt" />
+    <node concept="312cEg" id="5mI4pZChOhT" role="jymVt">
+      <property role="TrG5h" value="suppressors" />
+      <node concept="3Tm6S6" id="5mI4pZChNXY" role="1B3o_S" />
+      <node concept="3rvAFt" id="5mI4pZChO15" role="1tU5fm">
+        <node concept="3uibUv" id="5mI4pZChOcy" role="3rvQeY">
+          <ref role="3uigEE" to="z1c4:~MPSProject" resolve="MPSProject" />
+        </node>
+        <node concept="3uibUv" id="5mI4pZChOhz" role="3rvSg0">
+          <ref role="3uigEE" node="4c7y4qc4V7B" resolve="SuppressCheckerResults" />
+        </node>
+      </node>
+      <node concept="2ShNRf" id="5mI4pZChOjw" role="33vP2m">
+        <node concept="3rGOSV" id="5mI4pZChOxZ" role="2ShVmc">
+          <node concept="3uibUv" id="5mI4pZChOGi" role="3rHrn6">
+            <ref role="3uigEE" to="z1c4:~MPSProject" resolve="MPSProject" />
+          </node>
+          <node concept="3uibUv" id="5mI4pZChOPV" role="3rHtpV">
+            <ref role="3uigEE" node="4c7y4qc4V7B" resolve="SuppressCheckerResults" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5mI4pZChOSL" role="jymVt" />
+    <node concept="3clFbW" id="5mI4pZChXzM" role="jymVt">
+      <node concept="3cqZAl" id="5mI4pZChXzN" role="3clF45" />
+      <node concept="3clFbS" id="5mI4pZChXzP" role="3clF47" />
+      <node concept="3Tm6S6" id="5mI4pZChXt9" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="5mI4pZChZG9" role="jymVt" />
+    <node concept="2YIFZL" id="5mI4pZCi0Wq" role="jymVt">
+      <property role="TrG5h" value="getInstance" />
+      <node concept="3clFbS" id="5mI4pZCi0Ws" role="3clF47">
+        <node concept="3clFbF" id="5mI4pZCi0Wt" role="3cqZAp">
+          <node concept="37vLTw" id="5mI4pZCi0Wu" role="3clFbG">
+            <ref role="3cqZAo" node="5mI4pZChZkZ" resolve="INSTANCE" />
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="5mI4pZCi0Ww" role="3clF45">
+        <ref role="3uigEE" node="5mI4pZChNr3" resolve="SuppressorManager" />
+      </node>
+      <node concept="3Tm1VV" id="5mI4pZCi0Wv" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="5mI4pZChXJG" role="jymVt" />
+    <node concept="3clFb_" id="5mI4pZChPmt" role="jymVt">
+      <property role="TrG5h" value="addSuppressor" />
+      <node concept="3clFbS" id="5mI4pZChPmw" role="3clF47">
+        <node concept="3clFbF" id="5mI4pZChPDx" role="3cqZAp">
+          <node concept="37vLTI" id="5mI4pZChSJx" role="3clFbG">
+            <node concept="37vLTw" id="5mI4pZChSL5" role="37vLTx">
+              <ref role="3cqZAo" node="5mI4pZChPty" resolve="suppressor" />
+            </node>
+            <node concept="3EllGN" id="5mI4pZChQ1m" role="37vLTJ">
+              <node concept="37vLTw" id="5mI4pZChQhF" role="3ElVtu">
+                <ref role="3cqZAo" node="5mI4pZChPq0" resolve="project" />
+              </node>
+              <node concept="37vLTw" id="5mI4pZChPDw" role="3ElQJh">
+                <ref role="3cqZAo" node="5mI4pZChOhT" resolve="suppressors" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5mI4pZChPak" role="1B3o_S" />
+      <node concept="3cqZAl" id="5mI4pZChPlU" role="3clF45" />
+      <node concept="37vLTG" id="5mI4pZChPq0" role="3clF46">
+        <property role="TrG5h" value="project" />
+        <node concept="3uibUv" id="5mI4pZChPpZ" role="1tU5fm">
+          <ref role="3uigEE" to="z1c4:~MPSProject" resolve="MPSProject" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="5mI4pZChPty" role="3clF46">
+        <property role="TrG5h" value="suppressor" />
+        <node concept="3uibUv" id="5mI4pZChPwZ" role="1tU5fm">
+          <ref role="3uigEE" node="4c7y4qc4V7B" resolve="SuppressCheckerResults" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5mI4pZChT1d" role="jymVt" />
+    <node concept="3clFb_" id="5mI4pZChT3v" role="jymVt">
+      <property role="TrG5h" value="removeSuppressor" />
+      <node concept="3clFbS" id="5mI4pZChT3w" role="3clF47">
+        <node concept="3clFbF" id="5mI4pZChTvD" role="3cqZAp">
+          <node concept="2OqwBi" id="5mI4pZChTSA" role="3clFbG">
+            <node concept="37vLTw" id="5mI4pZChTvC" role="2Oq$k0">
+              <ref role="3cqZAo" node="5mI4pZChOhT" resolve="suppressors" />
+            </node>
+            <node concept="kI3uX" id="5mI4pZChUoZ" role="2OqNvi">
+              <node concept="37vLTw" id="5mI4pZChUrD" role="kIiFs">
+                <ref role="3cqZAo" node="5mI4pZChT3D" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5mI4pZChT3B" role="1B3o_S" />
+      <node concept="3cqZAl" id="5mI4pZChT3C" role="3clF45" />
+      <node concept="37vLTG" id="5mI4pZChT3D" role="3clF46">
+        <property role="TrG5h" value="project" />
+        <node concept="3uibUv" id="5mI4pZChT3E" role="1tU5fm">
+          <ref role="3uigEE" to="z1c4:~MPSProject" resolve="MPSProject" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5mI4pZChT1e" role="jymVt" />
+    <node concept="3clFb_" id="5mI4pZChUXE" role="jymVt">
+      <property role="TrG5h" value="getSuppressor" />
+      <node concept="3clFbS" id="5mI4pZChUXH" role="3clF47">
+        <node concept="3clFbF" id="5mI4pZChVax" role="3cqZAp">
+          <node concept="3EllGN" id="5mI4pZChVC7" role="3clFbG">
+            <node concept="37vLTw" id="5mI4pZChVWs" role="3ElVtu">
+              <ref role="3cqZAo" node="5mI4pZChV4q" resolve="project" />
+            </node>
+            <node concept="37vLTw" id="5mI4pZChVaw" role="3ElQJh">
+              <ref role="3cqZAo" node="5mI4pZChOhT" resolve="suppressors" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5mI4pZChURw" role="1B3o_S" />
+      <node concept="3uibUv" id="5mI4pZChUWZ" role="3clF45">
+        <ref role="3uigEE" node="4c7y4qc4V7B" resolve="SuppressCheckerResults" />
+      </node>
+      <node concept="37vLTG" id="5mI4pZChV4q" role="3clF46">
+        <property role="TrG5h" value="project" />
+        <node concept="3uibUv" id="5mI4pZChV4p" role="1tU5fm">
+          <ref role="3uigEE" to="z1c4:~MPSProject" resolve="MPSProject" />
+        </node>
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="5mI4pZChNr4" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="5OzERE7iBzx">
     <property role="TrG5h" value="SuppressEditorCheckerResults" />
@@ -1565,155 +1713,6 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
-  </node>
-  <node concept="312cEu" id="5mI4pZChNr3">
-    <property role="TrG5h" value="SuppressorManager" />
-    <node concept="2tJIrI" id="5mI4pZChX1e" role="jymVt" />
-    <node concept="Wx3nA" id="5mI4pZChZkZ" role="jymVt">
-      <property role="TrG5h" value="INSTANCE" />
-      <node concept="3Tm6S6" id="5mI4pZChYWK" role="1B3o_S" />
-      <node concept="3uibUv" id="5mI4pZChZkB" role="1tU5fm">
-        <ref role="3uigEE" node="5mI4pZChNr3" resolve="SuppressorManager" />
-      </node>
-      <node concept="2ShNRf" id="5mI4pZChZs9" role="33vP2m">
-        <node concept="1pGfFk" id="5mI4pZChZD$" role="2ShVmc">
-          <property role="373rjd" value="true" />
-          <ref role="37wK5l" node="5mI4pZChXzM" resolve="SuppressorManager" />
-        </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="5mI4pZChY3x" role="jymVt" />
-    <node concept="312cEg" id="5mI4pZChOhT" role="jymVt">
-      <property role="TrG5h" value="suppressors" />
-      <node concept="3Tm6S6" id="5mI4pZChNXY" role="1B3o_S" />
-      <node concept="3rvAFt" id="5mI4pZChO15" role="1tU5fm">
-        <node concept="3uibUv" id="5mI4pZChOcy" role="3rvQeY">
-          <ref role="3uigEE" to="z1c4:~MPSProject" resolve="MPSProject" />
-        </node>
-        <node concept="3uibUv" id="5mI4pZChOhz" role="3rvSg0">
-          <ref role="3uigEE" node="4c7y4qc4V7B" resolve="SuppressCheckerResults" />
-        </node>
-      </node>
-      <node concept="2ShNRf" id="5mI4pZChOjw" role="33vP2m">
-        <node concept="3rGOSV" id="5mI4pZChOxZ" role="2ShVmc">
-          <node concept="3uibUv" id="5mI4pZChOGi" role="3rHrn6">
-            <ref role="3uigEE" to="z1c4:~MPSProject" resolve="MPSProject" />
-          </node>
-          <node concept="3uibUv" id="5mI4pZChOPV" role="3rHtpV">
-            <ref role="3uigEE" node="4c7y4qc4V7B" resolve="SuppressCheckerResults" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="5mI4pZChOSL" role="jymVt" />
-    <node concept="3clFbW" id="5mI4pZChXzM" role="jymVt">
-      <node concept="3cqZAl" id="5mI4pZChXzN" role="3clF45" />
-      <node concept="3clFbS" id="5mI4pZChXzP" role="3clF47" />
-      <node concept="3Tm6S6" id="5mI4pZChXt9" role="1B3o_S" />
-    </node>
-    <node concept="2tJIrI" id="5mI4pZChZG9" role="jymVt" />
-    <node concept="2YIFZL" id="5mI4pZCi0Wq" role="jymVt">
-      <property role="TrG5h" value="getInstance" />
-      <node concept="3clFbS" id="5mI4pZCi0Ws" role="3clF47">
-        <node concept="3clFbF" id="5mI4pZCi0Wt" role="3cqZAp">
-          <node concept="37vLTw" id="5mI4pZCi0Wu" role="3clFbG">
-            <ref role="3cqZAo" node="5mI4pZChZkZ" resolve="INSTANCE" />
-          </node>
-        </node>
-      </node>
-      <node concept="3uibUv" id="5mI4pZCi0Ww" role="3clF45">
-        <ref role="3uigEE" node="5mI4pZChNr3" resolve="SuppressorManager" />
-      </node>
-      <node concept="3Tm1VV" id="5mI4pZCi0Wv" role="1B3o_S" />
-    </node>
-    <node concept="2tJIrI" id="5mI4pZChXJG" role="jymVt" />
-    <node concept="3clFb_" id="5mI4pZChPmt" role="jymVt">
-      <property role="TrG5h" value="addSuppressor" />
-      <node concept="3clFbS" id="5mI4pZChPmw" role="3clF47">
-        <node concept="3clFbF" id="5mI4pZChPDx" role="3cqZAp">
-          <node concept="37vLTI" id="5mI4pZChSJx" role="3clFbG">
-            <node concept="37vLTw" id="5mI4pZChSL5" role="37vLTx">
-              <ref role="3cqZAo" node="5mI4pZChPty" resolve="suppressor" />
-            </node>
-            <node concept="3EllGN" id="5mI4pZChQ1m" role="37vLTJ">
-              <node concept="37vLTw" id="5mI4pZChQhF" role="3ElVtu">
-                <ref role="3cqZAo" node="5mI4pZChPq0" resolve="project" />
-              </node>
-              <node concept="37vLTw" id="5mI4pZChPDw" role="3ElQJh">
-                <ref role="3cqZAo" node="5mI4pZChOhT" resolve="suppressors" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="5mI4pZChPak" role="1B3o_S" />
-      <node concept="3cqZAl" id="5mI4pZChPlU" role="3clF45" />
-      <node concept="37vLTG" id="5mI4pZChPq0" role="3clF46">
-        <property role="TrG5h" value="project" />
-        <node concept="3uibUv" id="5mI4pZChPpZ" role="1tU5fm">
-          <ref role="3uigEE" to="z1c4:~MPSProject" resolve="MPSProject" />
-        </node>
-      </node>
-      <node concept="37vLTG" id="5mI4pZChPty" role="3clF46">
-        <property role="TrG5h" value="suppressor" />
-        <node concept="3uibUv" id="5mI4pZChPwZ" role="1tU5fm">
-          <ref role="3uigEE" node="4c7y4qc4V7B" resolve="SuppressCheckerResults" />
-        </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="5mI4pZChT1d" role="jymVt" />
-    <node concept="3clFb_" id="5mI4pZChT3v" role="jymVt">
-      <property role="TrG5h" value="removeSuppressor" />
-      <node concept="3clFbS" id="5mI4pZChT3w" role="3clF47">
-        <node concept="3clFbF" id="5mI4pZChTvD" role="3cqZAp">
-          <node concept="2OqwBi" id="5mI4pZChTSA" role="3clFbG">
-            <node concept="37vLTw" id="5mI4pZChTvC" role="2Oq$k0">
-              <ref role="3cqZAo" node="5mI4pZChOhT" resolve="suppressors" />
-            </node>
-            <node concept="kI3uX" id="5mI4pZChUoZ" role="2OqNvi">
-              <node concept="37vLTw" id="5mI4pZChUrD" role="kIiFs">
-                <ref role="3cqZAo" node="5mI4pZChT3D" resolve="project" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="5mI4pZChT3B" role="1B3o_S" />
-      <node concept="3cqZAl" id="5mI4pZChT3C" role="3clF45" />
-      <node concept="37vLTG" id="5mI4pZChT3D" role="3clF46">
-        <property role="TrG5h" value="project" />
-        <node concept="3uibUv" id="5mI4pZChT3E" role="1tU5fm">
-          <ref role="3uigEE" to="z1c4:~MPSProject" resolve="MPSProject" />
-        </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="5mI4pZChT1e" role="jymVt" />
-    <node concept="3clFb_" id="5mI4pZChUXE" role="jymVt">
-      <property role="TrG5h" value="getSuppressor" />
-      <node concept="3clFbS" id="5mI4pZChUXH" role="3clF47">
-        <node concept="3clFbF" id="5mI4pZChVax" role="3cqZAp">
-          <node concept="3EllGN" id="5mI4pZChVC7" role="3clFbG">
-            <node concept="37vLTw" id="5mI4pZChVWs" role="3ElVtu">
-              <ref role="3cqZAo" node="5mI4pZChV4q" resolve="project" />
-            </node>
-            <node concept="37vLTw" id="5mI4pZChVaw" role="3ElQJh">
-              <ref role="3cqZAo" node="5mI4pZChOhT" resolve="suppressors" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="5mI4pZChURw" role="1B3o_S" />
-      <node concept="3uibUv" id="5mI4pZChUWZ" role="3clF45">
-        <ref role="3uigEE" node="4c7y4qc4V7B" resolve="SuppressCheckerResults" />
-      </node>
-      <node concept="37vLTG" id="5mI4pZChV4q" role="3clF46">
-        <property role="TrG5h" value="project" />
-        <node concept="3uibUv" id="5mI4pZChV4p" role="1tU5fm">
-          <ref role="3uigEE" to="z1c4:~MPSProject" resolve="MPSProject" />
-        </node>
-      </node>
-    </node>
-    <node concept="3Tm1VV" id="5mI4pZChNr4" role="1B3o_S" />
   </node>
 </model>
 

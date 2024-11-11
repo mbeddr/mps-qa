@@ -4,13 +4,12 @@
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="40ab19e9-751a-4433-b645-0e65160e58a0" name="org.mpsqa.lint.generic" version="1" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
     <use id="1a8554c4-eb84-43ba-8c34-6f0d90c6e75a" name="jetbrains.mps.lang.smodel.query" version="3" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
   </languages>
   <imports>
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" />
     <import index="tp5g" ref="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" />
@@ -351,6 +350,11 @@
         </node>
       </node>
     </node>
+    <node concept="3dgnlM" id="5ILDA6EUYgi" role="3dgnlQ">
+      <property role="3dgnlN" value="Class for linter 'not_tested' couldn't be found. The model is probably not generated." />
+      <property role="3qxsY3" value="6607245066738849851" />
+      <property role="3qxsSb" value="r:59e2876f-999a-4af1-8c54-345ff89e1fb6" />
+    </node>
     <node concept="1MIXq2" id="5ILDA6EXlkB" role="14J5yK">
       <node concept="3clFbS" id="5ILDA6EXlkC" role="2VODD2">
         <node concept="3SKdUt" id="5ILDA6EXs9$" role="3cqZAp">
@@ -510,11 +514,6 @@
           </node>
         </node>
       </node>
-    </node>
-    <node concept="3dgnlM" id="5ILDA6EUYgi" role="3dgnlQ">
-      <property role="3dgnlN" value="Class for linter 'not_tested' couldn't be found. The model is probably not generated." />
-      <property role="3qxsY3" value="6607245066738849851" />
-      <property role="3qxsSb" value="r:59e2876f-999a-4af1-8c54-345ff89e1fb6" />
     </node>
   </node>
 </model>

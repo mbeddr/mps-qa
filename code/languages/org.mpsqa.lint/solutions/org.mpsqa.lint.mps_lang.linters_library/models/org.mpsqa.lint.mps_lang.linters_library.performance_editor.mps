@@ -5,12 +5,11 @@
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="40ab19e9-751a-4433-b645-0e65160e58a0" name="org.mpsqa.lint.generic" version="1" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
     <use id="1a8554c4-eb84-43ba-8c34-6f0d90c6e75a" name="jetbrains.mps.lang.smodel.query" version="3" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
-    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
   </languages>
   <imports>
     <import index="kz9k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.navigation(MPS.Editor/)" />
@@ -1009,12 +1008,17 @@
                                   <node concept="Xl_RD" id="6wZqgFKVtmO" role="37wK5m">
                                     <property role="Xl_RC" value="" />
                                   </node>
-                                  <node concept="2OqwBi" id="6wZqgFKVtmP" role="37wK5m">
-                                    <node concept="37vLTw" id="6wZqgFKVtmY" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="6wZqgFKVtlS" resolve="action" />
+                                  <node concept="2OqwBi" id="2wDnBzAzDA8" role="37wK5m">
+                                    <node concept="2OqwBi" id="6wZqgFKVtmP" role="2Oq$k0">
+                                      <node concept="37vLTw" id="6wZqgFKVtmY" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="6wZqgFKVtlS" resolve="action" />
+                                      </node>
+                                      <node concept="liA8E" id="6wZqgFKVtmZ" role="2OqNvi">
+                                        <ref role="37wK5l" to="qkt:~AnAction.getTemplatePresentation()" resolve="getTemplatePresentation" />
+                                      </node>
                                     </node>
-                                    <node concept="liA8E" id="6wZqgFKVtmZ" role="2OqNvi">
-                                      <ref role="37wK5l" to="qkt:~AnAction.getTemplatePresentation()" resolve="getTemplatePresentation" />
+                                    <node concept="liA8E" id="2wDnBzAzFNZ" role="2OqNvi">
+                                      <ref role="37wK5l" to="qkt:~Presentation.clone()" resolve="clone" />
                                     </node>
                                   </node>
                                   <node concept="2YIFZM" id="6wZqgFKVtmQ" role="37wK5m">
@@ -2096,9 +2100,6 @@
                                             <property role="Xl_RC" value="MB" />
                                           </node>
                                           <node concept="3cpWs3" id="2TekImn84e8" role="3uHU7B">
-                                            <node concept="Xl_RD" id="4XPt_HaTvLG" role="3uHU7B">
-                                              <property role="Xl_RC" value="Editor retained too much memory:" />
-                                            </node>
                                             <node concept="2YIFZM" id="5BymHIvyS5e" role="3uHU7w">
                                               <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
                                               <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
@@ -2108,6 +2109,9 @@
                                               <node concept="37vLTw" id="5BymHIvyTWB" role="37wK5m">
                                                 <ref role="3cqZAo" node="2QH7JPsZwR3" resolve="usedMemoryInMb" />
                                               </node>
+                                            </node>
+                                            <node concept="Xl_RD" id="4XPt_HaTvLG" role="3uHU7B">
+                                              <property role="Xl_RC" value="Editor retained too much memory:" />
                                             </node>
                                           </node>
                                         </node>
@@ -2254,11 +2258,11 @@
                                       <property role="Xl_RC" value="ms" />
                                     </node>
                                     <node concept="3cpWs3" id="2TekImn84dF" role="3uHU7B">
-                                      <node concept="Xl_RD" id="4XPt_HaTAKG" role="3uHU7B">
-                                        <property role="Xl_RC" value="Editor opened too slow. Timeout reached: " />
-                                      </node>
                                       <node concept="37vLTw" id="2TekImn84dT" role="3uHU7w">
                                         <ref role="3cqZAo" node="2TekImn84cr" resolve="elapsedTime" />
+                                      </node>
+                                      <node concept="Xl_RD" id="4XPt_HaTAKG" role="3uHU7B">
+                                        <property role="Xl_RC" value="Editor opened too slow. Timeout reached: " />
                                       </node>
                                     </node>
                                   </node>
