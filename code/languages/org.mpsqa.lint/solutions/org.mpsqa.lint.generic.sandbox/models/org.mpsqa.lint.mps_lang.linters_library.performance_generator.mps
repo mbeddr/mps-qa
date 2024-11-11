@@ -712,7 +712,7 @@
                               <ref role="3uigEE" to="yo81:5mqBoD3U3WC" resolve="IResource" />
                             </node>
                             <node concept="37vLTw" id="7H5j78q03de" role="I$8f6">
-                              <ref role="3cqZAo" node="7H5j78q03d8" resolve="resources" />
+                              <ref role="3cqZAo" node="7H5j78q03d8" resolve="_resources" />
                             </node>
                           </node>
                         </node>
