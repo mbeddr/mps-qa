@@ -803,7 +803,7 @@
                       <ref role="3cqZAo" node="7nsdmC8vnp8" resolve="session" />
                     </node>
                     <node concept="37vLTw" id="4Cg9K369mzz" role="37wK5m">
-                      <ref role="3cqZAo" node="3G6GPGXx79A" resolve="resources" />
+                      <ref role="3cqZAo" node="3G6GPGXx79A" resolve="allResources" />
                     </node>
                   </node>
                 </node>
