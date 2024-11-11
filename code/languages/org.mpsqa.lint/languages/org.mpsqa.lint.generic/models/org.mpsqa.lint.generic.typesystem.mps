@@ -1390,6 +1390,9 @@
                       <node concept="liA8E" id="1BlvkgWnmMG" role="2OqNvi">
                         <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String)" resolve="append" />
                         <node concept="2OqwBi" id="106MO2l8VPg" role="37wK5m">
+                          <node concept="liA8E" id="106MO2l8Wbi" role="2OqNvi">
+                            <ref role="37wK5l" to="mhbf:~SModelName.toString()" resolve="toString" />
+                          </node>
                           <node concept="2OqwBi" id="1BlvkgWnmMH" role="2Oq$k0">
                             <node concept="1eOMI4" id="1BlvkgWnmMI" role="2Oq$k0">
                               <node concept="10QFUN" id="1BlvkgWnmMJ" role="1eOMHV">
@@ -1404,9 +1407,6 @@
                             <node concept="liA8E" id="1BlvkgWnmMO" role="2OqNvi">
                               <ref role="37wK5l" to="mhbf:~SModelReference.getName()" resolve="getName" />
                             </node>
-                          </node>
-                          <node concept="liA8E" id="106MO2l8Wbi" role="2OqNvi">
-                            <ref role="37wK5l" to="mhbf:~SModelName.toString()" resolve="toString" />
                           </node>
                         </node>
                       </node>
@@ -4066,6 +4066,9 @@
                                           <node concept="2r$n1x" id="4KreBtcxwNF" role="2r_Bvh">
                                             <ref role="2r$qp6" to="qqy:3ghOW5H_ihW" resolve="location" />
                                             <node concept="2OqwBi" id="4XPt_HawF1P" role="2r_lH1">
+                                              <node concept="liA8E" id="4XPt_HawHe5" role="2OqNvi">
+                                                <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
+                                              </node>
                                               <node concept="2OqwBi" id="4XPt_HavuJY" role="2Oq$k0">
                                                 <node concept="2JrnkZ" id="4XPt_HavsPR" role="2Oq$k0">
                                                   <node concept="2OqwBi" id="4KreBtcybHx" role="2JrQYb">
@@ -4080,9 +4083,6 @@
                                                 <node concept="liA8E" id="4XPt_HawCWO" role="2OqNvi">
                                                   <ref role="37wK5l" to="mhbf:~SModel.getReference()" resolve="getReference" />
                                                 </node>
-                                              </node>
-                                              <node concept="liA8E" id="4XPt_HawHe5" role="2OqNvi">
-                                                <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
                                               </node>
                                             </node>
                                           </node>
