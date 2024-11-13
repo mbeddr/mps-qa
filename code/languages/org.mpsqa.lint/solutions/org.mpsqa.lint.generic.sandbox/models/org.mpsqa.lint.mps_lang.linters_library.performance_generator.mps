@@ -672,7 +672,7 @@
                     </node>
                     <node concept="3cpWs8" id="7H5j78q03d7" role="3cqZAp">
                       <node concept="3cpWsn" id="7H5j78q03d8" role="3cpWs9">
-                        <property role="TrG5h" value="resources" />
+                        <property role="TrG5h" value="_resources" />
                         <node concept="3uibUv" id="7H5j78q0356" role="1tU5fm">
                           <ref role="3uigEE" to="wyt6:~Iterable" resolve="Iterable" />
                           <node concept="3uibUv" id="7H5j78q0359" role="11_B2D">
@@ -712,7 +712,7 @@
                               <ref role="3uigEE" to="yo81:5mqBoD3U3WC" resolve="IResource" />
                             </node>
                             <node concept="37vLTw" id="7H5j78q03de" role="I$8f6">
-                              <ref role="3cqZAo" node="7H5j78q03d8" resolve="resources" />
+                              <ref role="3cqZAo" node="7H5j78q03d8" resolve="_resources" />
                             </node>
                           </node>
                         </node>
