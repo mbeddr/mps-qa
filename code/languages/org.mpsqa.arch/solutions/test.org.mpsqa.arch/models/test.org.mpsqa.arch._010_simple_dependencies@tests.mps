@@ -37,6 +37,7 @@
       </concept>
     </language>
     <language id="6c101563-ba1f-458d-b298-a75634941e0c" name="org.mpsqa.arch">
+      <concept id="621894810884873790" name="org.mpsqa.arch.structure.ForbiddenDependency" flags="ng" index="iOJgR" />
       <concept id="7834852478394622225" name="org.mpsqa.arch.structure.ModuleComponent" flags="ng" index="mXxR0">
         <property id="276423752594287931" name="shortName" index="Z2I3b" />
         <child id="7834852478394622226" name="module" index="mXxR3" />
@@ -506,6 +507,94 @@
         </node>
         <node concept="7CXmI" id="Te1zv$HXrB" role="lGtFl">
           <node concept="7OXhh" id="Te1zv$HXrC" role="7EUXB">
+            <property role="GvXf4" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="yxqw$qurAB">
+    <property role="TrG5h" value="_030_forbidden_dependencies_tests" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
+    <node concept="1qefOq" id="yxqw$qurAC" role="1SKRRt">
+      <node concept="mXAGR" id="yxqw$qurAD" role="1qenE9">
+        <property role="TrG5h" value="_010_forbidden_dependencies" />
+        <node concept="mXAGQ" id="yxqw$qurAE" role="mXAGU">
+          <property role="TrG5h" value="base" />
+          <node concept="iOJgR" id="yxqw$qurCN" role="mXAiC">
+            <node concept="mXAj4" id="yxqw$qurCP" role="mXvOw">
+              <property role="3EQNYR" value="GdL2WcU97I/NODE_LOCK" />
+              <ref role="mXAj7" node="yxqw$qurAJ" resolve="ext_do_not_depend_upon" />
+            </node>
+          </node>
+          <node concept="mXxR0" id="yxqw$qurAF" role="mXAiC">
+            <node concept="37shsh" id="yxqw$qurAG" role="mXxR3">
+              <node concept="1dCxOk" id="yxqw$qurAH" role="37shsm">
+                <property role="1XweGW" value="bcaa03af-4226-4b43-a0ed-7ecc5d6748d9" />
+                <property role="1XxBO9" value="test.org.mpsqa.arch.baselang" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="Z9REq" id="yxqw$qurAI" role="mXAGU" />
+        <node concept="mXAGQ" id="yxqw$qurAJ" role="mXAGU">
+          <property role="TrG5h" value="ext_do_not_depend_upon" />
+          <node concept="mXxR0" id="yxqw$qurAP" role="mXAiC">
+            <node concept="37shsh" id="yxqw$qurAQ" role="mXxR3">
+              <node concept="1dCxOk" id="yxqw$qurCQ" role="37shsm">
+                <property role="1XweGW" value="c07bf2c7-3019-438f-9e89-c561747b91bf" />
+                <property role="1XxBO9" value="test.org.mpsqa.arch.language_no_other_shall_depend_upon" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="Z9REq" id="yxqw$qurAS" role="mXAGU" />
+        <node concept="Z9REq" id="yxqw$qurAT" role="mXAGU" />
+        <node concept="7CXmI" id="yxqw$qurAU" role="lGtFl">
+          <node concept="7OXhh" id="yxqw$qurAV" role="7EUXB">
+            <property role="GvXf4" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="yxqw$qurCU" role="1SKRRt">
+      <node concept="mXAGR" id="yxqw$qurCV" role="1qenE9">
+        <property role="TrG5h" value="_020_forbidden_dependencies" />
+        <node concept="mXAGQ" id="yxqw$qurCW" role="mXAGU">
+          <property role="TrG5h" value="base" />
+          <node concept="iOJgR" id="yxqw$qurCX" role="mXAiC">
+            <node concept="mXAj4" id="yxqw$qurCY" role="mXvOw">
+              <ref role="mXAj7" node="yxqw$qurD3" resolve="ext_do_not_depend_upon" />
+              <node concept="7CXmI" id="yxqw$qurDh" role="lGtFl">
+                <node concept="1TM$A" id="yxqw$qurDi" role="7EUXB" />
+              </node>
+            </node>
+          </node>
+          <node concept="mXxR0" id="yxqw$qurCZ" role="mXAiC">
+            <node concept="37shsh" id="yxqw$qurD0" role="mXxR3">
+              <node concept="1dCxOk" id="yxqw$qurD1" role="37shsm">
+                <property role="1XweGW" value="bcaa03af-4226-4b43-a0ed-7ecc5d6748d9" />
+                <property role="1XxBO9" value="test.org.mpsqa.arch.baselang" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="Z9REq" id="yxqw$qurD2" role="mXAGU" />
+        <node concept="mXAGQ" id="yxqw$qurD3" role="mXAGU">
+          <property role="TrG5h" value="ext_do_not_depend_upon" />
+          <node concept="mXxR0" id="yxqw$qurD4" role="mXAiC">
+            <node concept="37shsh" id="yxqw$qurD5" role="mXxR3">
+              <node concept="1dCxOk" id="yxqw$qurD6" role="37shsm">
+                <property role="1XweGW" value="c07bf2c7-3019-438f-9e89-c561747b91bf" />
+                <property role="1XxBO9" value="test.org.mpsqa.arch.language_no_other_shall_depend_upon" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="Z9REq" id="yxqw$qurD7" role="mXAGU" />
+        <node concept="Z9REq" id="yxqw$qurD8" role="mXAGU" />
+        <node concept="7CXmI" id="yxqw$qurD9" role="lGtFl">
+          <node concept="7OXhh" id="yxqw$qurDa" role="7EUXB">
             <property role="GvXf4" value="true" />
           </node>
         </node>

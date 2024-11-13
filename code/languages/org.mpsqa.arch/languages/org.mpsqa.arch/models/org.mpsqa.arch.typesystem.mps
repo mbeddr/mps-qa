@@ -2738,5 +2738,84 @@
       </node>
     </node>
   </node>
+  <node concept="18kY7G" id="yxqw$qsU2m">
+    <property role="TrG5h" value="check_ForbiddenDependency" />
+    <property role="3GE5qa" value="dependencies" />
+    <node concept="3clFbS" id="yxqw$qsU2n" role="18ibNy">
+      <node concept="2Gpval" id="yxqw$qsU35" role="3cqZAp">
+        <node concept="2GrKxI" id="yxqw$qsU36" role="2Gsz3X">
+          <property role="TrG5h" value="dep" />
+        </node>
+        <node concept="2OqwBi" id="yxqw$qsUey" role="2GsD0m">
+          <node concept="1YBJjd" id="yxqw$qsU3t" role="2Oq$k0">
+            <ref role="1YBMHb" node="yxqw$qsU2p" resolve="forbiddenDependency" />
+          </node>
+          <node concept="3Tsc0h" id="yxqw$qsW4s" role="2OqNvi">
+            <ref role="3TtcxE" to="ryx8:6MUZd5UjK7L" resolve="dependsOn" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="yxqw$qsU38" role="2LFqv$">
+          <node concept="3clFbJ" id="yxqw$qsW8U" role="3cqZAp">
+            <node concept="3fqX7Q" id="yxqw$qsXb7" role="3clFbw">
+              <node concept="2OqwBi" id="yxqw$qsXb9" role="3fr31v">
+                <node concept="2OqwBi" id="yxqw$qsXba" role="2Oq$k0">
+                  <node concept="2GrUjf" id="yxqw$qsXbb" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="yxqw$qsU36" resolve="dep" />
+                  </node>
+                  <node concept="3TrcHB" id="yxqw$qsXbc" role="2OqNvi">
+                    <ref role="3TsBF5" to="ryx8:Te1zv$_jA0" resolve="lock" />
+                  </node>
+                </node>
+                <node concept="21noJN" id="yxqw$qsXbd" role="2OqNvi">
+                  <node concept="21nZrQ" id="yxqw$qsXbe" role="21noJM">
+                    <ref role="21nZrZ" to="ryx8:GdL2WcU97I" resolve="NODE_LOCK" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="yxqw$qsW8W" role="3clFbx">
+              <node concept="2MkqsV" id="yxqw$qsZgg" role="3cqZAp">
+                <node concept="Xl_RD" id="yxqw$qsZgp" role="2MkJ7o">
+                  <property role="Xl_RC" value="all forbidden dependencies shall be NODE locked" />
+                </node>
+                <node concept="2GrUjf" id="yxqw$qsZhX" role="1urrMF">
+                  <ref role="2Gs0qQ" node="yxqw$qsU36" resolve="dep" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="yxqw$qsZip" role="3cqZAp">
+            <node concept="3fqX7Q" id="yxqw$qsZiq" role="3clFbw">
+              <node concept="2OqwBi" id="yxqw$qsZir" role="3fr31v">
+                <node concept="2OqwBi" id="yxqw$qsZis" role="2Oq$k0">
+                  <node concept="2GrUjf" id="yxqw$qsZit" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="yxqw$qsU36" resolve="dep" />
+                  </node>
+                  <node concept="3Tsc0h" id="yxqw$qsZVM" role="2OqNvi">
+                    <ref role="3TtcxE" to="ryx8:Te1zv$_lYI" resolve="whitelist" />
+                  </node>
+                </node>
+                <node concept="1v1jN8" id="yxqw$qt3Ao" role="2OqNvi" />
+              </node>
+            </node>
+            <node concept="3clFbS" id="yxqw$qsZix" role="3clFbx">
+              <node concept="2MkqsV" id="yxqw$qsZiy" role="3cqZAp">
+                <node concept="Xl_RD" id="yxqw$qsZiz" role="2MkJ7o">
+                  <property role="Xl_RC" value="all forbidden dependencies shall have empty whitelists" />
+                </node>
+                <node concept="2GrUjf" id="yxqw$qsZi$" role="1urrMF">
+                  <ref role="2Gs0qQ" node="yxqw$qsU36" resolve="dep" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="yxqw$qsU2p" role="1YuTPh">
+      <property role="TrG5h" value="forbiddenDependency" />
+      <ref role="1YaFvo" to="ryx8:yxqw$qsTSY" resolve="ForbiddenDependency" />
+    </node>
+  </node>
 </model>
 
