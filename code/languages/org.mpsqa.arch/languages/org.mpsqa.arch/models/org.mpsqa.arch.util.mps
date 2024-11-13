@@ -494,47 +494,62 @@
             <property role="TrG5h" value="op" />
           </node>
           <node concept="3clFbS" id="5ruws_4EC1a" role="2LFqv$">
-            <node concept="2Gpval" id="5ruws_4EDg4" role="3cqZAp">
-              <node concept="2GrKxI" id="5ruws_4EDg9" role="2Gsz3X">
-                <property role="TrG5h" value="pm" />
+            <node concept="2Gpval" id="3YxxzAUQRzd" role="3cqZAp">
+              <node concept="2GrKxI" id="3YxxzAUQRzf" role="2Gsz3X">
+                <property role="TrG5h" value="module" />
               </node>
-              <node concept="3clFbS" id="5ruws_4EDgj" role="2LFqv$">
-                <node concept="3clFbJ" id="5ruws_4EDqi" role="3cqZAp">
-                  <node concept="2OqwBi" id="5ruws_4EE2y" role="3clFbw">
-                    <node concept="2GrUjf" id="5ruws_4EDqV" role="2Oq$k0">
-                      <ref role="2Gs0qQ" node="5ruws_4EDg9" resolve="pm" />
-                    </node>
-                    <node concept="liA8E" id="5ruws_4EEUZ" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
-                      <node concept="37vLTw" id="5ruws_4EF5s" role="37wK5m">
-                        <ref role="3cqZAo" node="5ruws_4EDyr" resolve="myModel" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3clFbS" id="5ruws_4EDqk" role="3clFbx">
-                    <node concept="3cpWs6" id="2HNHUobr5wO" role="3cqZAp">
-                      <node concept="1rXfSq" id="2HNHUobr5wP" role="3cqZAk">
-                        <ref role="37wK5l" node="5enppyYCuMW" resolve="getProjectModulesNotPartOfArchitectureDescription" />
-                        <node concept="2GrUjf" id="48uyNAv9E$C" role="37wK5m">
-                          <ref role="2Gs0qQ" node="5ruws_4EC16" resolve="op" />
-                        </node>
-                        <node concept="37vLTw" id="2HNHUobr5wR" role="37wK5m">
-                          <ref role="3cqZAo" node="5enppyYDSO8" resolve="architectureSpec" />
-                        </node>
-                        <node concept="37vLTw" id="48uyNAv734r" role="37wK5m">
-                          <ref role="3cqZAo" node="48uyNAv72rJ" resolve="considerLanguages" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="2OqwBi" id="5ruws_4ECu_" role="2GsD0m">
-                <node concept="2GrUjf" id="5ruws_4ECg_" role="2Oq$k0">
+              <node concept="2OqwBi" id="3YxxzAUQSUG" role="2GsD0m">
+                <node concept="2GrUjf" id="3YxxzAUQS36" role="2Oq$k0">
                   <ref role="2Gs0qQ" node="5ruws_4EC16" resolve="op" />
                 </node>
-                <node concept="liA8E" id="5ruws_4ED2o" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getProjectModels()" resolve="getProjectModels" />
+                <node concept="liA8E" id="3YxxzAUQTWz" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~IProject.getProjectModules()" resolve="getProjectModules" />
+                </node>
+              </node>
+              <node concept="3clFbS" id="3YxxzAUQRzj" role="2LFqv$">
+                <node concept="2Gpval" id="3YxxzAUQW1Z" role="3cqZAp">
+                  <node concept="2GrKxI" id="3YxxzAUQW20" role="2Gsz3X">
+                    <property role="TrG5h" value="pm" />
+                  </node>
+                  <node concept="2OqwBi" id="3YxxzAUQXue" role="2GsD0m">
+                    <node concept="2GrUjf" id="3YxxzAUQX1y" role="2Oq$k0">
+                      <ref role="2Gs0qQ" node="3YxxzAUQRzf" resolve="module" />
+                    </node>
+                    <node concept="liA8E" id="3YxxzAUQYQa" role="2OqNvi">
+                      <ref role="37wK5l" to="lui2:~SModule.getModels()" resolve="getModels" />
+                    </node>
+                  </node>
+                  <node concept="3clFbS" id="3YxxzAUQW22" role="2LFqv$">
+                    <node concept="3clFbJ" id="5ruws_4EDqi" role="3cqZAp">
+                      <node concept="2OqwBi" id="5ruws_4EE2y" role="3clFbw">
+                        <node concept="2GrUjf" id="5ruws_4EDqV" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="3YxxzAUQW20" resolve="pm" />
+                        </node>
+                        <node concept="liA8E" id="5ruws_4EEUZ" role="2OqNvi">
+                          <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
+                          <node concept="37vLTw" id="5ruws_4EF5s" role="37wK5m">
+                            <ref role="3cqZAo" node="5ruws_4EDyr" resolve="myModel" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbS" id="5ruws_4EDqk" role="3clFbx">
+                        <node concept="3cpWs6" id="2HNHUobr5wO" role="3cqZAp">
+                          <node concept="1rXfSq" id="2HNHUobr5wP" role="3cqZAk">
+                            <ref role="37wK5l" node="5enppyYCuMW" resolve="getProjectModulesNotPartOfArchitectureDescription" />
+                            <node concept="2GrUjf" id="48uyNAv9E$C" role="37wK5m">
+                              <ref role="2Gs0qQ" node="5ruws_4EC16" resolve="op" />
+                            </node>
+                            <node concept="37vLTw" id="2HNHUobr5wR" role="37wK5m">
+                              <ref role="3cqZAo" node="5enppyYDSO8" resolve="architectureSpec" />
+                            </node>
+                            <node concept="37vLTw" id="48uyNAv734r" role="37wK5m">
+                              <ref role="3cqZAo" node="48uyNAv72rJ" resolve="considerLanguages" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>

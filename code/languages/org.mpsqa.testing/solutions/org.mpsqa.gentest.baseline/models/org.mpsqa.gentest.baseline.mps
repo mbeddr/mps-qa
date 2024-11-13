@@ -9,6 +9,7 @@
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
   </languages>
   <imports>
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
@@ -22,6 +23,7 @@
     <import index="btm1" ref="79c13063-8a7d-4070-aaba-966b36d6e0c4/java:org.apache.commons.lang3(org.mpsqa.base.lib/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="b0pz" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project.facets(MPS.Core/)" />
+    <import index="7x5y" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.charset(JDK/)" />
     <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" implicit="true" />
   </imports>
   <registry>
@@ -203,6 +205,9 @@
         <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
       </concept>
       <concept id="8974276187400348181" name="jetbrains.mps.lang.access.structure.ExecuteLightweightCommandStatement" flags="nn" index="1QHqEK" />
+    </language>
+    <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
+      <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
@@ -479,8 +484,8 @@
           <node concept="3cpWsn" id="5mQCqLmwVC5" role="3cpWs9">
             <property role="TrG5h" value="absfOutput" />
             <node concept="17QB3L" id="5mQCqLmwVCP" role="1tU5fm" />
-            <node concept="2OqwBi" id="7cLvrVTV6ry" role="33vP2m">
-              <node concept="2OqwBi" id="7cLvrVTV5P2" role="2Oq$k0">
+            <node concept="2EnYce" id="3YxxzAVg4X2" role="33vP2m">
+              <node concept="2EnYce" id="3YxxzAVg3YB" role="2Oq$k0">
                 <node concept="37vLTw" id="7cLvrVTV7GN" role="2Oq$k0">
                   <ref role="3cqZAo" node="7cLvrVTV7GC" resolve="generationTargetFacet" />
                 </node>
@@ -1170,10 +1175,14 @@
               <node concept="17QB3L" id="4ZxQD5y7hp3" role="11_B2D" />
             </node>
             <node concept="2YIFZM" id="4ZxQD5y7hp4" role="33vP2m">
-              <ref role="37wK5l" to="8oaq:~FileUtils.readLines(java.io.File)" resolve="readLines" />
+              <ref role="37wK5l" to="8oaq:~FileUtils.readLines(java.io.File,java.nio.charset.Charset)" resolve="readLines" />
               <ref role="1Pybhc" to="8oaq:~FileUtils" resolve="FileUtils" />
               <node concept="37vLTw" id="4ZxQD5y7pAu" role="37wK5m">
                 <ref role="3cqZAo" node="4ZxQD5y78Xt" resolve="actualFile" />
+              </node>
+              <node concept="2YIFZM" id="3YxxzAVgwJO" role="37wK5m">
+                <ref role="37wK5l" to="7x5y:~Charset.defaultCharset()" resolve="defaultCharset" />
+                <ref role="1Pybhc" to="7x5y:~Charset" resolve="Charset" />
               </node>
             </node>
           </node>
@@ -1186,10 +1195,14 @@
               <node concept="17QB3L" id="4ZxQD5y7hp9" role="11_B2D" />
             </node>
             <node concept="2YIFZM" id="4ZxQD5y7hpa" role="33vP2m">
-              <ref role="37wK5l" to="8oaq:~FileUtils.readLines(java.io.File)" resolve="readLines" />
+              <ref role="37wK5l" to="8oaq:~FileUtils.readLines(java.io.File,java.nio.charset.Charset)" resolve="readLines" />
               <ref role="1Pybhc" to="8oaq:~FileUtils" resolve="FileUtils" />
               <node concept="37vLTw" id="4ZxQD5y7rD5" role="37wK5m">
                 <ref role="3cqZAo" node="4ZxQD5y78Xv" resolve="expectedFile" />
+              </node>
+              <node concept="2YIFZM" id="3YxxzAVgF20" role="37wK5m">
+                <ref role="37wK5l" to="7x5y:~Charset.defaultCharset()" resolve="defaultCharset" />
+                <ref role="1Pybhc" to="7x5y:~Charset" resolve="Charset" />
               </node>
             </node>
           </node>

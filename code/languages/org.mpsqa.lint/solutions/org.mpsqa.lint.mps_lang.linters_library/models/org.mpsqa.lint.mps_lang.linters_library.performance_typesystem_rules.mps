@@ -22,6 +22,8 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="3qmy" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.classloading(MPS.Core/)" />
     <import index="evo" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.newTypesystem.context(MPS.Core/)" />
+    <import index="t6h5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang.reflect(JDK/)" implicit="true" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -436,7 +438,7 @@
                   <node concept="3cpWsn" id="7E22LggeI20" role="3cpWs9">
                     <property role="TrG5h" value="myLanguage" />
                     <node concept="3uibUv" id="7E22LggeHQ8" role="1tU5fm">
-                      <ref role="3uigEE" to="j8aq:~ReloadableModule" resolve="ReloadableModule" />
+                      <ref role="3uigEE" to="j8aq:~ReloadableModuleBase" resolve="ReloadableModuleBase" />
                     </node>
                     <node concept="1eOMI4" id="7E22LggeI21" role="33vP2m">
                       <node concept="10QFUN" id="7E22LggeI22" role="1eOMHV">
@@ -451,7 +453,7 @@
                           </node>
                         </node>
                         <node concept="3uibUv" id="7E22LggeI27" role="10QFUM">
-                          <ref role="3uigEE" to="j8aq:~ReloadableModule" resolve="ReloadableModule" />
+                          <ref role="3uigEE" to="j8aq:~ReloadableModuleBase" resolve="ReloadableModuleBase" />
                         </node>
                       </node>
                     </node>
@@ -468,7 +470,7 @@
                         <ref role="3cqZAo" node="7E22LggeI20" resolve="myLanguage" />
                       </node>
                       <node concept="liA8E" id="7E22LggeKxs" role="2OqNvi">
-                        <ref role="37wK5l" to="j8aq:~ReloadableModule.getClassLoader()" resolve="getClassLoader" />
+                        <ref role="37wK5l" to="j8aq:~ReloadableModuleBase.getClassLoader()" resolve="getClassLoader" />
                       </node>
                     </node>
                   </node>
@@ -512,11 +514,16 @@
                       <ref role="3uigEE" to="qurh:~AbstractNonTypesystemRule_Runtime" resolve="AbstractNonTypesystemRule_Runtime" />
                     </node>
                     <node concept="2OqwBi" id="733wlN4CtNS" role="33vP2m">
-                      <node concept="37vLTw" id="733wlN4CtOg" role="2Oq$k0">
-                        <ref role="3cqZAo" node="733wlN4CtNy" resolve="forName" />
+                      <node concept="2OqwBi" id="3YxxzAUFoqs" role="2Oq$k0">
+                        <node concept="37vLTw" id="733wlN4CtOg" role="2Oq$k0">
+                          <ref role="3cqZAo" node="733wlN4CtNy" resolve="forName" />
+                        </node>
+                        <node concept="liA8E" id="3YxxzAUFrR6" role="2OqNvi">
+                          <ref role="37wK5l" to="wyt6:~Class.getConstructor(java.lang.Class...)" resolve="getConstructor" />
+                        </node>
                       </node>
                       <node concept="liA8E" id="733wlN4CtOh" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Class.newInstance()" resolve="newInstance" />
+                        <ref role="37wK5l" to="t6h5:~Constructor.newInstance(java.lang.Object...)" resolve="newInstance" />
                       </node>
                     </node>
                   </node>
@@ -552,48 +559,63 @@
                     </node>
                   </node>
                 </node>
-                <node concept="2Gpval" id="7NPKLoqmM_L" role="3cqZAp">
-                  <node concept="2GrKxI" id="7NPKLoqmM_N" role="2Gsz3X">
-                    <property role="TrG5h" value="m" />
+                <node concept="2Gpval" id="3YxxzAUER_n" role="3cqZAp">
+                  <node concept="2GrKxI" id="3YxxzAUER_p" role="2Gsz3X">
+                    <property role="TrG5h" value="module" />
                   </node>
-                  <node concept="2OqwBi" id="7NPKLoqmO9n" role="2GsD0m">
-                    <node concept="1MG55F" id="7NPKLoqmNkD" role="2Oq$k0" />
-                    <node concept="liA8E" id="7NPKLoqmOXr" role="2OqNvi">
-                      <ref role="37wK5l" to="z1c3:~Project.getProjectModels()" resolve="getProjectModels" />
+                  <node concept="2OqwBi" id="3YxxzAUF0Bt" role="2GsD0m">
+                    <node concept="1MG55F" id="3YxxzAUEZee" role="2Oq$k0" />
+                    <node concept="liA8E" id="3YxxzAUF1Ig" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~ProjectBase.getProjectModules()" resolve="getProjectModules" />
                     </node>
                   </node>
-                  <node concept="3clFbS" id="7NPKLoqmM_R" role="2LFqv$">
-                    <node concept="3clFbJ" id="7NPKLoqmPJv" role="3cqZAp">
-                      <node concept="2OqwBi" id="7NPKLoqmTZM" role="3clFbw">
-                        <node concept="2OqwBi" id="7NPKLoqmSPh" role="2Oq$k0">
-                          <node concept="2OqwBi" id="7NPKLoqmQXc" role="2Oq$k0">
-                            <node concept="2GrUjf" id="7NPKLoqmQ6k" role="2Oq$k0">
-                              <ref role="2Gs0qQ" node="7NPKLoqmM_N" resolve="m" />
-                            </node>
-                            <node concept="liA8E" id="7NPKLoqmRLb" role="2OqNvi">
-                              <ref role="37wK5l" to="mhbf:~SModel.getName()" resolve="getName" />
-                            </node>
-                          </node>
-                          <node concept="liA8E" id="7NPKLoqmTr6" role="2OqNvi">
-                            <ref role="37wK5l" to="mhbf:~SModelName.getLongName()" resolve="getLongName" />
-                          </node>
+                  <node concept="3clFbS" id="3YxxzAUER_t" role="2LFqv$">
+                    <node concept="2Gpval" id="3YxxzAUF40K" role="3cqZAp">
+                      <node concept="2GrKxI" id="3YxxzAUF40L" role="2Gsz3X">
+                        <property role="TrG5h" value="m" />
+                      </node>
+                      <node concept="2OqwBi" id="3YxxzAUF8S2" role="2GsD0m">
+                        <node concept="2GrUjf" id="3YxxzAUF6P6" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="3YxxzAUER_p" resolve="module" />
                         </node>
-                        <node concept="liA8E" id="7NPKLoqmVwI" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
-                          <node concept="2j1LYi" id="7NPKLoqmVW7" role="37wK5m">
-                            <ref role="2j1LYj" node="7NPKLoqmxTq" resolve="modelsToCheckNamesRegex" />
-                          </node>
+                        <node concept="liA8E" id="3YxxzAUFbHF" role="2OqNvi">
+                          <ref role="37wK5l" to="lui2:~SModule.getModels()" resolve="getModels" />
                         </node>
                       </node>
-                      <node concept="3clFbS" id="7NPKLoqmPJx" role="3clFbx">
-                        <node concept="3clFbF" id="7NPKLoqmWS7" role="3cqZAp">
-                          <node concept="2OqwBi" id="7NPKLoqmXLe" role="3clFbG">
-                            <node concept="37vLTw" id="7NPKLoqmWS6" role="2Oq$k0">
-                              <ref role="3cqZAo" node="7NPKLoqmBIn" resolve="modelsToCheck" />
+                      <node concept="3clFbS" id="3YxxzAUF40N" role="2LFqv$">
+                        <node concept="3clFbJ" id="7NPKLoqmPJv" role="3cqZAp">
+                          <node concept="2OqwBi" id="7NPKLoqmTZM" role="3clFbw">
+                            <node concept="2OqwBi" id="7NPKLoqmSPh" role="2Oq$k0">
+                              <node concept="2OqwBi" id="7NPKLoqmQXc" role="2Oq$k0">
+                                <node concept="2GrUjf" id="7NPKLoqmQ6k" role="2Oq$k0">
+                                  <ref role="2Gs0qQ" node="3YxxzAUF40L" resolve="m" />
+                                </node>
+                                <node concept="liA8E" id="7NPKLoqmRLb" role="2OqNvi">
+                                  <ref role="37wK5l" to="mhbf:~SModel.getName()" resolve="getName" />
+                                </node>
+                              </node>
+                              <node concept="liA8E" id="7NPKLoqmTr6" role="2OqNvi">
+                                <ref role="37wK5l" to="mhbf:~SModelName.getLongName()" resolve="getLongName" />
+                              </node>
                             </node>
-                            <node concept="TSZUe" id="7NPKLoqmYNe" role="2OqNvi">
-                              <node concept="2GrUjf" id="7NPKLoqmZeX" role="25WWJ7">
-                                <ref role="2Gs0qQ" node="7NPKLoqmM_N" resolve="m" />
+                            <node concept="liA8E" id="7NPKLoqmVwI" role="2OqNvi">
+                              <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
+                              <node concept="2j1LYi" id="7NPKLoqmVW7" role="37wK5m">
+                                <ref role="2j1LYj" node="7NPKLoqmxTq" resolve="modelsToCheckNamesRegex" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3clFbS" id="7NPKLoqmPJx" role="3clFbx">
+                            <node concept="3clFbF" id="7NPKLoqmWS7" role="3cqZAp">
+                              <node concept="2OqwBi" id="7NPKLoqmXLe" role="3clFbG">
+                                <node concept="37vLTw" id="7NPKLoqmWS6" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="7NPKLoqmBIn" resolve="modelsToCheck" />
+                                </node>
+                                <node concept="TSZUe" id="7NPKLoqmYNe" role="2OqNvi">
+                                  <node concept="2GrUjf" id="7NPKLoqmZeX" role="25WWJ7">
+                                    <ref role="2Gs0qQ" node="3YxxzAUF40L" resolve="m" />
+                                  </node>
+                                </node>
                               </node>
                             </node>
                           </node>
@@ -649,7 +671,7 @@
                             <node concept="2ShNRf" id="5Pbt4UlJWiX" role="33vP2m">
                               <node concept="1pGfFk" id="5Pbt4UlJYux" role="2ShVmc">
                                 <property role="373rjd" value="true" />
-                                <ref role="37wK5l" to="evo:~IncrementalTypecheckingContext.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.typesystem.inference.TypeCheckerHelper,jetbrains.mps.smodel.language.LanguageRegistry)" resolve="IncrementalTypecheckingContext" />
+                                <ref role="37wK5l" to="evo:~IncrementalTypecheckingContext.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.typesystem.inference.TypeCheckerHelper,jetbrains.mps.classloading.ClassLoaderManager)" resolve="IncrementalTypecheckingContext" />
                                 <node concept="2GrUjf" id="5Pbt4UlJZsw" role="37wK5m">
                                   <ref role="2Gs0qQ" node="733wlN4CtOm" resolve="crtNode" />
                                 </node>
@@ -1267,51 +1289,66 @@
             </node>
           </node>
         </node>
-        <node concept="2Gpval" id="2QH7JPsZwQ5" role="3cqZAp">
-          <node concept="2GrKxI" id="2QH7JPsZwQ6" role="2Gsz3X">
-            <property role="TrG5h" value="m" />
+        <node concept="2Gpval" id="3YxxzAUD_D2" role="3cqZAp">
+          <node concept="2GrKxI" id="3YxxzAUD_D4" role="2Gsz3X">
+            <property role="TrG5h" value="module" />
           </node>
-          <node concept="2OqwBi" id="2QH7JPsZwQ7" role="2GsD0m">
-            <node concept="1MG55F" id="2QH7JPsZwQ8" role="2Oq$k0" />
-            <node concept="liA8E" id="2QH7JPsZwQ9" role="2OqNvi">
-              <ref role="37wK5l" to="z1c3:~Project.getProjectModels()" resolve="getProjectModels" />
+          <node concept="2OqwBi" id="3YxxzAUDMd7" role="2GsD0m">
+            <node concept="1MG55F" id="3YxxzAUDIa2" role="2Oq$k0" />
+            <node concept="liA8E" id="3YxxzAUDPEy" role="2OqNvi">
+              <ref role="37wK5l" to="z1c3:~ProjectBase.getProjectModules()" resolve="getProjectModules" />
             </node>
           </node>
-          <node concept="3clFbS" id="2QH7JPsZwQa" role="2LFqv$">
-            <node concept="3clFbJ" id="2QH7JPsZwQb" role="3cqZAp">
-              <node concept="2OqwBi" id="2QH7JPsZwQc" role="3clFbw">
-                <node concept="2OqwBi" id="2QH7JPsZwQd" role="2Oq$k0">
-                  <node concept="2OqwBi" id="2QH7JPsZwQe" role="2Oq$k0">
-                    <node concept="2GrUjf" id="2QH7JPsZwQf" role="2Oq$k0">
-                      <ref role="2Gs0qQ" node="2QH7JPsZwQ6" resolve="m" />
-                    </node>
-                    <node concept="liA8E" id="2QH7JPsZwQg" role="2OqNvi">
-                      <ref role="37wK5l" to="mhbf:~SModel.getName()" resolve="getName" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="2QH7JPsZwQh" role="2OqNvi">
-                    <ref role="37wK5l" to="mhbf:~SModelName.getLongName()" resolve="getLongName" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="2QH7JPsZwQi" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
-                  <node concept="2j1LYi" id="2QH7JPsZwQj" role="37wK5m">
-                    <ref role="2j1LYj" node="2QH7JPsZwN_" resolve="modelsToCheckNamesRegex" />
-                  </node>
-                </node>
+          <node concept="3clFbS" id="3YxxzAUD_D8" role="2LFqv$">
+            <node concept="2Gpval" id="3YxxzAUDT8i" role="3cqZAp">
+              <node concept="2GrKxI" id="3YxxzAUDT8j" role="2Gsz3X">
+                <property role="TrG5h" value="m" />
               </node>
-              <node concept="3clFbS" id="2QH7JPsZwQk" role="3clFbx">
-                <node concept="3clFbF" id="2QH7JPsZwQl" role="3cqZAp">
-                  <node concept="2OqwBi" id="2QH7JPsZwQm" role="3clFbG">
-                    <node concept="37vLTw" id="2QH7JPsZwQn" role="2Oq$k0">
-                      <ref role="3cqZAo" node="2QH7JPsZwPZ" resolve="modelsToCheck" />
+              <node concept="3clFbS" id="3YxxzAUDT8l" role="2LFqv$">
+                <node concept="3clFbJ" id="2QH7JPsZwQb" role="3cqZAp">
+                  <node concept="2OqwBi" id="2QH7JPsZwQc" role="3clFbw">
+                    <node concept="2OqwBi" id="2QH7JPsZwQd" role="2Oq$k0">
+                      <node concept="2OqwBi" id="2QH7JPsZwQe" role="2Oq$k0">
+                        <node concept="2GrUjf" id="2QH7JPsZwQf" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="3YxxzAUDT8j" resolve="m" />
+                        </node>
+                        <node concept="liA8E" id="2QH7JPsZwQg" role="2OqNvi">
+                          <ref role="37wK5l" to="mhbf:~SModel.getName()" resolve="getName" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="2QH7JPsZwQh" role="2OqNvi">
+                        <ref role="37wK5l" to="mhbf:~SModelName.getLongName()" resolve="getLongName" />
+                      </node>
                     </node>
-                    <node concept="TSZUe" id="2QH7JPsZwQo" role="2OqNvi">
-                      <node concept="2GrUjf" id="2QH7JPsZwQp" role="25WWJ7">
-                        <ref role="2Gs0qQ" node="2QH7JPsZwQ6" resolve="m" />
+                    <node concept="liA8E" id="2QH7JPsZwQi" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
+                      <node concept="2j1LYi" id="2QH7JPsZwQj" role="37wK5m">
+                        <ref role="2j1LYj" node="2QH7JPsZwN_" resolve="modelsToCheckNamesRegex" />
                       </node>
                     </node>
                   </node>
+                  <node concept="3clFbS" id="2QH7JPsZwQk" role="3clFbx">
+                    <node concept="3clFbF" id="2QH7JPsZwQl" role="3cqZAp">
+                      <node concept="2OqwBi" id="2QH7JPsZwQm" role="3clFbG">
+                        <node concept="37vLTw" id="2QH7JPsZwQn" role="2Oq$k0">
+                          <ref role="3cqZAo" node="2QH7JPsZwPZ" resolve="modelsToCheck" />
+                        </node>
+                        <node concept="TSZUe" id="2QH7JPsZwQo" role="2OqNvi">
+                          <node concept="2GrUjf" id="2QH7JPsZwQp" role="25WWJ7">
+                            <ref role="2Gs0qQ" node="3YxxzAUDT8j" resolve="m" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="3YxxzAUEf8A" role="2GsD0m">
+                <node concept="2GrUjf" id="3YxxzAUEbR4" role="2Oq$k0">
+                  <ref role="2Gs0qQ" node="3YxxzAUD_D4" resolve="module" />
+                </node>
+                <node concept="liA8E" id="3YxxzAUEghn" role="2OqNvi">
+                  <ref role="37wK5l" to="lui2:~SModule.getModels()" resolve="getModels" />
                 </node>
               </node>
             </node>
@@ -1412,7 +1449,7 @@
                   <node concept="3cpWsn" id="2QH7JPsZwPl" role="3cpWs9">
                     <property role="TrG5h" value="myLanguage" />
                     <node concept="3uibUv" id="2QH7JPsZwPm" role="1tU5fm">
-                      <ref role="3uigEE" to="j8aq:~ReloadableModule" resolve="ReloadableModule" />
+                      <ref role="3uigEE" to="j8aq:~ReloadableModuleBase" resolve="ReloadableModuleBase" />
                     </node>
                     <node concept="1eOMI4" id="2QH7JPsZwPn" role="33vP2m">
                       <node concept="10QFUN" id="2QH7JPsZwPo" role="1eOMHV">
@@ -1427,7 +1464,7 @@
                           </node>
                         </node>
                         <node concept="3uibUv" id="2QH7JPsZwPt" role="10QFUM">
-                          <ref role="3uigEE" to="j8aq:~ReloadableModule" resolve="ReloadableModule" />
+                          <ref role="3uigEE" to="j8aq:~ReloadableModuleBase" resolve="ReloadableModuleBase" />
                         </node>
                       </node>
                     </node>
@@ -1444,7 +1481,7 @@
                         <ref role="3cqZAo" node="2QH7JPsZwPl" resolve="myLanguage" />
                       </node>
                       <node concept="liA8E" id="2QH7JPsZwPz" role="2OqNvi">
-                        <ref role="37wK5l" to="j8aq:~ReloadableModule.getClassLoader()" resolve="getClassLoader" />
+                        <ref role="37wK5l" to="j8aq:~ReloadableModuleBase.getClassLoader()" resolve="getClassLoader" />
                       </node>
                     </node>
                   </node>
@@ -1488,11 +1525,16 @@
                       <ref role="3uigEE" to="qurh:~AbstractNonTypesystemRule_Runtime" resolve="AbstractNonTypesystemRule_Runtime" />
                     </node>
                     <node concept="2OqwBi" id="2QH7JPsZwPN" role="33vP2m">
-                      <node concept="37vLTw" id="2QH7JPsZwPO" role="2Oq$k0">
-                        <ref role="3cqZAo" node="2QH7JPsZwP_" resolve="forName" />
+                      <node concept="2OqwBi" id="3YxxzAUEDCA" role="2Oq$k0">
+                        <node concept="37vLTw" id="2QH7JPsZwPO" role="2Oq$k0">
+                          <ref role="3cqZAo" node="2QH7JPsZwP_" resolve="forName" />
+                        </node>
+                        <node concept="liA8E" id="3YxxzAUEJIu" role="2OqNvi">
+                          <ref role="37wK5l" to="wyt6:~Class.getConstructor(java.lang.Class...)" resolve="getConstructor" />
+                        </node>
                       </node>
                       <node concept="liA8E" id="2QH7JPsZwPP" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Class.newInstance()" resolve="newInstance" />
+                        <ref role="37wK5l" to="t6h5:~Constructor.newInstance(java.lang.Object...)" resolve="newInstance" />
                       </node>
                     </node>
                   </node>
@@ -1579,7 +1621,7 @@
                             <node concept="2ShNRf" id="5e$mNoOyr0c" role="33vP2m">
                               <node concept="1pGfFk" id="5e$mNoOyr0d" role="2ShVmc">
                                 <property role="373rjd" value="true" />
-                                <ref role="37wK5l" to="evo:~IncrementalTypecheckingContext.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.typesystem.inference.TypeCheckerHelper,jetbrains.mps.smodel.language.LanguageRegistry)" resolve="IncrementalTypecheckingContext" />
+                                <ref role="37wK5l" to="evo:~IncrementalTypecheckingContext.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.typesystem.inference.TypeCheckerHelper,jetbrains.mps.classloading.ClassLoaderManager)" resolve="IncrementalTypecheckingContext" />
                                 <node concept="2GrUjf" id="5e$mNoOyr0e" role="37wK5m">
                                   <ref role="2Gs0qQ" node="2QH7JPsZwQD" resolve="crtNode" />
                                 </node>
