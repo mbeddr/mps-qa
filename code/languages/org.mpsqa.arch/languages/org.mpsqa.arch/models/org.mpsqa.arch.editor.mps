@@ -1169,5 +1169,23 @@
     </node>
     <node concept="22hDWj" id="Te1zv$IzfP" role="22hAXT" />
   </node>
+  <node concept="24kQdi" id="yxqw$qsTSZ">
+    <property role="3GE5qa" value="dependencies" />
+    <ref role="1XX52x" to="ryx8:yxqw$qsTSY" resolve="ForbiddenDependency" />
+    <node concept="3EZMnI" id="yxqw$qsTT1" role="2wV5jI">
+      <node concept="3F0ifn" id="yxqw$qsTT2" role="3EZMnx">
+        <property role="3F0ifm" value="forbidden dependency:" />
+        <node concept="VechU" id="yxqw$qsU2l" role="3F10Kt">
+          <property role="Vb096" value="fLwANPn/red" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="yxqw$qsTT3" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <ref role="1NtTu8" to="ryx8:6MUZd5UjK7L" resolve="dependsOn" />
+        <node concept="2iRfu4" id="yxqw$qsTT4" role="2czzBx" />
+      </node>
+      <node concept="2iRfu4" id="yxqw$qsTT5" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 
