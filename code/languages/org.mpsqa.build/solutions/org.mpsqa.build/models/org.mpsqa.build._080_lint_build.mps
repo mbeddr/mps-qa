@@ -856,6 +856,16 @@
             <ref role="3bR37D" to="ffeo:ymnOULAU0H" resolve="jetbrains.mps.lang.test" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5PFth5Wc5FU" role="3bR37C">
+          <node concept="3bR9La" id="5PFth5Wc5FV" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1CtrbKI2fIc" resolve="jetbrains.mps.baseLanguage.lightweightdsl" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5PFth5Wc5FW" role="3bR37C">
+          <node concept="3bR9La" id="5PFth5Wc5FX" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1CtrbKI23Wm" resolve="jetbrains.mps.lang.migration" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="55IIr" id="3dqUbgQmcy$" role="auvoZ" />
