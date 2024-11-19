@@ -1625,18 +1625,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="D9RB9JLd67" role="3cqZAp" />
-        <node concept="1X3_iC" id="1TjcpJFpLyf" role="3cqZAp">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="2xdQw9" id="D9RB9JLeeW" role="8Wnug">
-            <node concept="Xl_RD" id="D9RB9JLeeY" role="9lYJi">
-              <property role="Xl_RC" value="----------------- Plan &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;" />
-            </node>
-            <node concept="37vLTw" id="D9RB9JVxA7" role="9lYEk">
-              <ref role="3cqZAo" node="D9RB9Jpw7l" resolve="project" />
-            </node>
-          </node>
-        </node>
         <node concept="2Gpval" id="D9RB9JLnvi" role="3cqZAp">
           <node concept="2GrKxI" id="D9RB9JLnvk" role="2Gsz3X">
             <property role="TrG5h" value="generationStep" />

@@ -15,6 +15,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="pdwk" ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee/java:jetbrains.mps.core.aspects.constraints.rules.kinds(jetbrains.mps.lang.constraints.rules.runtime/)" />
     <import index="ykol" ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee/java:jetbrains.mps.smodel.constraints(jetbrains.mps.lang.constraints.rules.runtime/)" />
+    <import index="o99v" ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee/java:jetbrains.mps.core.aspects.constraints.rules(jetbrains.mps.lang.constraints.rules.runtime/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
@@ -85,6 +86,7 @@
       </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
+        <child id="1109201940907" name="parameter" index="11_B2D" />
       </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
@@ -169,6 +171,12 @@
             <property role="TrG5h" value="canBeParentFailingRules" />
             <node concept="3uibUv" id="5Lgg1tGGZho" role="1tU5fm">
               <ref role="3uigEE" to="33ny:~List" resolve="List" />
+              <node concept="3uibUv" id="3YxxzATSwpz" role="11_B2D">
+                <ref role="3uigEE" to="o99v:~Rule" resolve="Rule" />
+                <node concept="3uibUv" id="3YxxzATSwp$" role="11_B2D">
+                  <ref role="3uigEE" to="pdwk:~ContainmentContext" resolve="ContainmentContext" />
+                </node>
+              </node>
             </node>
             <node concept="2YIFZM" id="5Lgg1tGH4pO" role="33vP2m">
               <ref role="37wK5l" to="ykol:~ConstraintsCanBeFacade.checkCanBeParent(jetbrains.mps.core.aspects.constraints.rules.kinds.ContainmentContext)" resolve="checkCanBeParent" />
@@ -203,6 +211,12 @@
             <property role="TrG5h" value="canBeChildFailingRules" />
             <node concept="3uibUv" id="5Lgg1tGH69D" role="1tU5fm">
               <ref role="3uigEE" to="33ny:~List" resolve="List" />
+              <node concept="3uibUv" id="3YxxzATSwpH" role="11_B2D">
+                <ref role="3uigEE" to="o99v:~Rule" resolve="Rule" />
+                <node concept="3uibUv" id="3YxxzATSwpI" role="11_B2D">
+                  <ref role="3uigEE" to="pdwk:~ContainmentContext" resolve="ContainmentContext" />
+                </node>
+              </node>
             </node>
             <node concept="2YIFZM" id="5Lgg1tGH6lF" role="33vP2m">
               <ref role="1Pybhc" to="ykol:~ConstraintsCanBeFacade" resolve="ConstraintsCanBeFacade" />
@@ -291,6 +305,12 @@
                 <property role="TrG5h" value="canBeAncestorFailingRules" />
                 <node concept="3uibUv" id="5Lgg1tGH2Bu" role="1tU5fm">
                   <ref role="3uigEE" to="33ny:~List" resolve="List" />
+                  <node concept="3uibUv" id="3YxxzATSwpR" role="11_B2D">
+                    <ref role="3uigEE" to="o99v:~Rule" resolve="Rule" />
+                    <node concept="3uibUv" id="3YxxzATSwpS" role="11_B2D">
+                      <ref role="3uigEE" to="pdwk:~CanBeAncestorContext" resolve="CanBeAncestorContext" />
+                    </node>
+                  </node>
                 </node>
                 <node concept="2YIFZM" id="5Lgg1tGH7FZ" role="33vP2m">
                   <ref role="37wK5l" to="ykol:~ConstraintsCanBeFacade.checkCanBeAncestor(jetbrains.mps.core.aspects.constraints.rules.kinds.CanBeAncestorContext)" resolve="checkCanBeAncestor" />
@@ -412,6 +432,9 @@
                 <property role="TrG5h" value="checkPropertyValue" />
                 <node concept="3uibUv" id="5Lgg1tGGZgL" role="1tU5fm">
                   <ref role="3uigEE" to="33ny:~List" resolve="List" />
+                  <node concept="3uibUv" id="3YxxzAVa6DF" role="11_B2D">
+                    <ref role="3uigEE" to="j809:~FailingPropertyConstraintProblem" resolve="FailingPropertyConstraintProblem" />
+                  </node>
                 </node>
                 <node concept="2YIFZM" id="5Lgg1tGH9hT" role="33vP2m">
                   <ref role="37wK5l" to="ykol:~ConstraintsChildAndPropFacade.checkPropertyValue(jetbrains.mps.core.aspects.feedback.messages.FailingPropertyConstraintContext)" resolve="checkPropertyValue" />
