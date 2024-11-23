@@ -20,6 +20,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="13i" ref="r:be2b07cb-a227-48ca-9163-d8b3ff4f6e3c(org.mpsqa.testcov.buildIntegration.jacoco.codeowners.generator.util)" />
     <import index="3vc8" ref="r:fa4c3e61-a5ce-4a5d-8b6c-8b0a77f5de5e(org.mpsqa.testcov.buildIntegration.testutils.structure)" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -27,6 +28,7 @@
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
+      <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1216993439383" name="methods" index="1qtyYc" />
@@ -62,6 +64,9 @@
       </concept>
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -131,6 +136,9 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
+      <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
+        <reference id="1116615189566" name="classifier" index="3VsUkX" />
+      </concept>
       <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
         <child id="1201186121363" name="typeParameter" index="2Ghqu4" />
@@ -421,7 +429,6 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="4EqSY0IUpLr" role="3cqZAp" />
             <node concept="3cpWs8" id="4EqSY0IUuh3" role="3cqZAp">
               <node concept="3cpWsn" id="4EqSY0IUuh4" role="3cpWs9">
                 <property role="TrG5h" value="moduleOwners" />
@@ -431,19 +438,34 @@
                 <node concept="2YIFZM" id="4EqSY0IUuh5" role="33vP2m">
                   <ref role="37wK5l" to="13i:4EqSY0Hy$k4" resolve="forGitRepository" />
                   <ref role="1Pybhc" to="13i:4EqSY0HtLXQ" resolve="MpsModuleOwners" />
-                  <node concept="2OqwBi" id="4EqSY0IUuh6" role="37wK5m">
-                    <node concept="2YIFZM" id="4EqSY0IUuh7" role="2Oq$k0">
-                      <ref role="37wK5l" to="3ju5:~FileSystem.getInstance()" resolve="getInstance" />
-                      <ref role="1Pybhc" to="3ju5:~FileSystem" resolve="FileSystem" />
-                    </node>
-                    <node concept="liA8E" id="4EqSY0IUuh8" role="2OqNvi">
-                      <ref role="37wK5l" to="3ju5:~FileSystem.getFile(java.lang.String)" resolve="getFile" />
-                      <node concept="2OqwBi" id="4EqSY0IUuh9" role="37wK5m">
-                        <node concept="37vLTw" id="4EqSY0IUuha" role="2Oq$k0">
-                          <ref role="3cqZAo" node="4EqSY0IU8vW" resolve="tmpdir" />
+                  <node concept="2OqwBi" id="3YxxzAVhzl1" role="37wK5m">
+                    <node concept="2OqwBi" id="3YxxzAVhsH5" role="2Oq$k0">
+                      <node concept="1jxXqW" id="3YxxzAVhrgX" role="2Oq$k0" />
+                      <node concept="liA8E" id="3YxxzAVhtER" role="2OqNvi">
+                        <ref role="37wK5l" to="z1c3:~Project.getComponent(java.lang.Class)" resolve="getComponent" />
+                        <node concept="3VsKOn" id="3YxxzAVhxK7" role="37wK5m">
+                          <ref role="3VsUkX" to="3ju5:~VFSManager" resolve="VFSManager" />
                         </node>
-                        <node concept="liA8E" id="4EqSY0IUuhb" role="2OqNvi">
-                          <ref role="37wK5l" to="eoo2:~Path.toString()" resolve="toString" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="3YxxzAVh$2h" role="2OqNvi">
+                      <ref role="37wK5l" to="3ju5:~VFSManager.getFile(jetbrains.mps.vfs.QualifiedPath)" resolve="getFile" />
+                      <node concept="2ShNRf" id="3YxxzAVh_s2" role="37wK5m">
+                        <node concept="1pGfFk" id="3YxxzAVhA3v" role="2ShVmc">
+                          <property role="373rjd" value="true" />
+                          <ref role="37wK5l" to="3ju5:~QualifiedPath.&lt;init&gt;(java.lang.String,java.lang.String)" resolve="QualifiedPath" />
+                          <node concept="10M0yZ" id="3YxxzAVhBFW" role="37wK5m">
+                            <ref role="3cqZAo" to="3ju5:~VFSManager.FILE_FS" resolve="FILE_FS" />
+                            <ref role="1PxDUh" to="3ju5:~VFSManager" resolve="VFSManager" />
+                          </node>
+                          <node concept="2OqwBi" id="3YxxzAVhE3h" role="37wK5m">
+                            <node concept="37vLTw" id="3YxxzAVhCSG" role="2Oq$k0">
+                              <ref role="3cqZAo" node="4EqSY0IU8vW" resolve="tmpdir" />
+                            </node>
+                            <node concept="liA8E" id="3YxxzAVhGsy" role="2OqNvi">
+                              <ref role="37wK5l" to="eoo2:~Path.toString()" resolve="toString" />
+                            </node>
+                          </node>
                         </node>
                       </node>
                     </node>
