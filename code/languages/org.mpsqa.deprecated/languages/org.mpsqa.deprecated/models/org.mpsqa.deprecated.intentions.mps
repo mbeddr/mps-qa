@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:e88510c3-3006-4599-af71-400329cef2ea(org.mpsqa.deprecated.intentions)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="1" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
@@ -1495,12 +1496,6 @@
           <ref role="3uigEE" to="28m1:~LocalDate" resolve="LocalDate" />
         </node>
       </node>
-      <node concept="37vLTG" id="3YxxzAV7HWo" role="3clF46">
-        <property role="TrG5h" value="repository" />
-        <node concept="3uibUv" id="3YxxzAV7IFH" role="1tU5fm">
-          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
-        </node>
-      </node>
       <node concept="3clFbS" id="45IuY9ndYiL" role="3clF47">
         <node concept="3cpWs8" id="45IuY9ndYiW" role="3cqZAp">
           <node concept="3cpWsn" id="45IuY9ndYiX" role="3cpWs9">
@@ -1587,6 +1582,12 @@
               <ref role="3cqZAo" node="45IuY9ndYiX" resolve="somethingDeprecated" />
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="3YxxzAV7HWo" role="3clF46">
+        <property role="TrG5h" value="repository" />
+        <node concept="3uibUv" id="3YxxzAV7IFH" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
     </node>
@@ -1692,12 +1693,6 @@
       <node concept="37vLTG" id="45IuY9nb01o" role="3clF46">
         <property role="TrG5h" value="presentInCrtNode" />
         <node concept="10P_77" id="45IuY9nb0jb" role="1tU5fm" />
-      </node>
-      <node concept="37vLTG" id="3YxxzAV7duH" role="3clF46">
-        <property role="TrG5h" value="repository" />
-        <node concept="3uibUv" id="3YxxzAV7dST" role="1tU5fm">
-          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
-        </node>
       </node>
       <node concept="3clFbS" id="3dqUbgQpoec" role="3clF47">
         <node concept="2Gpval" id="3dqUbgQpoef" role="3cqZAp">
@@ -1812,6 +1807,12 @@
           <node concept="3clFbT" id="45IuY9nb0Uu" role="3cqZAk" />
         </node>
       </node>
+      <node concept="37vLTG" id="3YxxzAV7duH" role="3clF46">
+        <property role="TrG5h" value="repository" />
+        <node concept="3uibUv" id="3YxxzAV7dST" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="3dqUbgQq1E6" role="jymVt" />
     <node concept="2YIFZL" id="3dqUbgQq0Q6" role="jymVt">
@@ -1833,12 +1834,6 @@
       <node concept="37vLTG" id="45IuY9nb8GR" role="3clF46">
         <property role="TrG5h" value="presentInCrtNode" />
         <node concept="10P_77" id="45IuY9nb8V7" role="1tU5fm" />
-      </node>
-      <node concept="37vLTG" id="3YxxzAV7r3w" role="3clF46">
-        <property role="TrG5h" value="repository" />
-        <node concept="3uibUv" id="3YxxzAV7r3x" role="1tU5fm">
-          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
-        </node>
       </node>
       <node concept="3clFbS" id="3dqUbgQq0Qf" role="3clF47">
         <node concept="2Gpval" id="3dqUbgQq0Qk" role="3cqZAp">
@@ -1938,6 +1933,12 @@
           <node concept="3clFbT" id="45IuY9nbDiO" role="3cqZAk" />
         </node>
       </node>
+      <node concept="37vLTG" id="3YxxzAV7r3w" role="3clF46">
+        <property role="TrG5h" value="repository" />
+        <node concept="3uibUv" id="3YxxzAV7r3x" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="3dqUbgQqabR" role="jymVt" />
     <node concept="2YIFZL" id="3dqUbgQq9sQ" role="jymVt">
@@ -1959,12 +1960,6 @@
       <node concept="37vLTG" id="45IuY9nb8YM" role="3clF46">
         <property role="TrG5h" value="presentInCrtNode" />
         <node concept="10P_77" id="45IuY9nb98H" role="1tU5fm" />
-      </node>
-      <node concept="37vLTG" id="3YxxzAV7w6y" role="3clF46">
-        <property role="TrG5h" value="repository" />
-        <node concept="3uibUv" id="3YxxzAV7w$W" role="1tU5fm">
-          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
-        </node>
       </node>
       <node concept="3clFbS" id="3dqUbgQq9sZ" role="3clF47">
         <node concept="2Gpval" id="3dqUbgQq9t4" role="3cqZAp">
@@ -2062,6 +2057,12 @@
         </node>
         <node concept="3cpWs6" id="3dqUbgQq9tW" role="3cqZAp">
           <node concept="3clFbT" id="45IuY9nbHuB" role="3cqZAk" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="3YxxzAV7w6y" role="3clF46">
+        <property role="TrG5h" value="repository" />
+        <node concept="3uibUv" id="3YxxzAV7w$W" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
     </node>
