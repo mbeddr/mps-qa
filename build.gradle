@@ -28,8 +28,8 @@ if (System.env.CI != null && System.env.CI.toBoolean()) {
 }
 
 // Project versions
-ext.major = '999'
-ext.minor = '9'
+ext.major = '2024'
+ext.minor = '3'
 
 if (ciBuild) {
     String branch = GitBasedVersioning.gitBranch
@@ -54,9 +54,7 @@ configurations {
 }
 
 dependencies {
-    // Use the following dependency for published releases:
-    //   mps 'com.jetbrains:mps:2024.3'
-    mps 'com.jetbrains.mps:mps-prerelease:243.21565.173'
+    mps 'com.jetbrains:mps:2024.3-EAP1'
     antLib "org.apache.ant:ant-junit:1.10.15"
     antLib "org.jacoco:org.jacoco.ant:0.8.12"
 }
