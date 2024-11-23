@@ -671,7 +671,7 @@
                             <node concept="2ShNRf" id="5Pbt4UlJWiX" role="33vP2m">
                               <node concept="1pGfFk" id="5Pbt4UlJYux" role="2ShVmc">
                                 <property role="373rjd" value="true" />
-                                <ref role="37wK5l" to="evo:~IncrementalTypecheckingContext.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.typesystem.inference.TypeCheckerHelper,jetbrains.mps.classloading.ClassLoaderManager)" resolve="IncrementalTypecheckingContext" />
+                                <ref role="37wK5l" to="evo:~IncrementalTypecheckingContext.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.typesystem.inference.TypeCheckerHelper,jetbrains.mps.smodel.language.LanguageRegistry)" resolve="IncrementalTypecheckingContext" />
                                 <node concept="2GrUjf" id="5Pbt4UlJZsw" role="37wK5m">
                                   <ref role="2Gs0qQ" node="733wlN4CtOm" resolve="crtNode" />
                                 </node>
@@ -1621,7 +1621,7 @@
                             <node concept="2ShNRf" id="5e$mNoOyr0c" role="33vP2m">
                               <node concept="1pGfFk" id="5e$mNoOyr0d" role="2ShVmc">
                                 <property role="373rjd" value="true" />
-                                <ref role="37wK5l" to="evo:~IncrementalTypecheckingContext.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.typesystem.inference.TypeCheckerHelper,jetbrains.mps.classloading.ClassLoaderManager)" resolve="IncrementalTypecheckingContext" />
+                                <ref role="37wK5l" to="evo:~IncrementalTypecheckingContext.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.typesystem.inference.TypeCheckerHelper,jetbrains.mps.smodel.language.LanguageRegistry)" resolve="IncrementalTypecheckingContext" />
                                 <node concept="2GrUjf" id="5e$mNoOyr0e" role="37wK5m">
                                   <ref role="2Gs0qQ" node="2QH7JPsZwQD" resolve="crtNode" />
                                 </node>
