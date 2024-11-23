@@ -264,5 +264,13 @@
       <property role="TrG5h" value="NODE_LOCK" />
     </node>
   </node>
+  <node concept="1TIwiD" id="yxqw$qsTSY">
+    <property role="EcuMT" value="621894810884873790" />
+    <property role="3GE5qa" value="dependencies" />
+    <property role="TrG5h" value="ForbiddenDependency" />
+    <property role="34LRSv" value="forbidden dependency" />
+    <property role="R4oN_" value="a dependency which is forbidden" />
+    <ref role="1TJDcQ" node="6MUZd5Uj9MQ" resolve="ComponentDependency" />
+  </node>
 </model>
 

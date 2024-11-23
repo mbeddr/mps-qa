@@ -436,10 +436,6 @@
         </node>
       </node>
     </node>
-    <node concept="55IIr" id="50Wzfz4shza" role="auvoZ" />
-    <node concept="2igEWh" id="50Wzfz4shzb" role="1hWBAP">
-      <property role="2igJW4" value="true" />
-    </node>
     <node concept="2G$12M" id="GdL2Wddnv9" role="3989C9">
       <property role="TrG5h" value="test.mpsqa.arch" />
       <node concept="1E1JtA" id="GdL2WddnQ7" role="2G$12L">
@@ -677,6 +673,10 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="55IIr" id="50Wzfz4shza" role="auvoZ" />
+    <node concept="2igEWh" id="50Wzfz4shzb" role="1hWBAP">
+      <property role="2igJW4" value="true" />
     </node>
   </node>
 </model>
