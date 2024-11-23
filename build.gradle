@@ -12,7 +12,7 @@ plugins {
     id 'de.itemis.mps.gradle.launcher' version '2.5.2.+'
 }
 
-ext.jbrVers = '17.0.11-b1207.30'
+ext.jbrVers = '21.0.5-b631.8'
 
 downloadJbr {
     jbrVersion = jbrVers
@@ -27,11 +27,9 @@ if (System.env.CI != null && System.env.CI.toBoolean()) {
     ext.ciBuild = project.hasProperty("teamcity")
 }
 
-ext.mpsVersion =  '2024.1.1'
-
 // Project versions
-ext.major = '2024'
-ext.minor = '1'
+ext.major = '999'
+ext.minor = '9'
 
 if (ciBuild) {
     String branch = GitBasedVersioning.gitBranch
