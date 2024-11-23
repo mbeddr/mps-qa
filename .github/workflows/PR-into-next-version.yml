@@ -15,4 +15,5 @@ jobs:
           branch_prefix: maintenance/MPS-
           merge_prefix: merge/MPS-
           default_merge_prefix: merge/
+          automerge_new_prs: true
           token: ${{ secrets.MPS_CI_BUILD_BOT_ACCESS_TOKEN }}
