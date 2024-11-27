@@ -1201,7 +1201,7 @@
           <property role="3oM_SC" value="root" />
         </node>
         <node concept="3oM_SD" id="5$DH147DfCw" role="1PaTwD">
-          <property role="3oM_SC" value="direcotry]/build'" />
+          <property role="3oM_SC" value="directory]/build'" />
         </node>
         <node concept="3oM_SD" id="5$DH147DfCx" role="1PaTwD">
           <property role="3oM_SC" value="" />
@@ -1590,29 +1590,6 @@
                 </node>
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="5$DH147CUsY" role="3cqZAp" />
-        <node concept="3clFbJ" id="5$DH147CUsZ" role="3cqZAp">
-          <node concept="3clFbS" id="5$DH147CUt0" role="3clFbx">
-            <node concept="3clFbF" id="5$DH147CUt1" role="3cqZAp">
-              <node concept="2OqwBi" id="5$DH147CUt2" role="3clFbG">
-                <node concept="37vLTw" id="5$DH147CUt3" role="2Oq$k0">
-                  <ref role="3cqZAo" node="5$DH147CUqq" resolve="res" />
-                </node>
-                <node concept="TSZUe" id="5$DH147CUt4" role="2OqNvi">
-                  <node concept="Xl_RD" id="5$DH147CUt5" role="25WWJ7">
-                    <property role="Xl_RC" value="empty" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="2OqwBi" id="5$DH147CUt6" role="3clFbw">
-            <node concept="2j1LYi" id="5$DH147CUt7" role="2Oq$k0">
-              <ref role="2j1LYj" node="5$DH147CJBE" resolve="rootPathToIgnore" />
-            </node>
-            <node concept="17RlXB" id="5$DH147CUt8" role="2OqNvi" />
           </node>
         </node>
         <node concept="3clFbH" id="5$DH147CUt9" role="3cqZAp" />
