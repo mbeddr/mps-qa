@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:41dd60d6-cb56-455c-9e7d-3a90f1d67408(org.mpsqa.lint.mps_lang.linters_library.meta_level)">
+<model ref="r:41dd60d6-cb56-455c-9e7d-3a90f1d67408(org.mpsqa.lint.mps_lang.linters_library.language_coverage)">
   <persistence version="9" />
   <languages>
     <use id="40ab19e9-751a-4433-b645-0e65160e58a0" name="org.mpsqa.lint.generic" version="1" />
@@ -194,7 +194,7 @@
     </language>
   </registry>
   <node concept="1MIHA_" id="3gAEjiGDSKt">
-    <property role="TrG5h" value="unused_languages" />
+    <property role="TrG5h" value="languages_with_no_instantiated_concepts" />
     <property role="3miQiw" value="true" />
     <node concept="1Pa9Pv" id="3gAEjiGDSMF" role="1MIJl8">
       <node concept="1PaTwC" id="_LkUz2g3_B" role="1PaQFQ">
@@ -214,16 +214,25 @@
           <property role="3oM_SC" value="languages" />
         </node>
         <node concept="3oM_SD" id="_LkUz2g3AA" role="1PaTwD">
-          <property role="3oM_SC" value="declared" />
+          <property role="3oM_SC" value="whose" />
         </node>
-        <node concept="3oM_SD" id="_LkUz2g3AH" role="1PaTwD">
-          <property role="3oM_SC" value="but" />
+        <node concept="3oM_SD" id="4p1IWUFVcCj" role="1PaTwD">
+          <property role="3oM_SC" value="concepts" />
         </node>
-        <node concept="3oM_SD" id="_LkUz2g3B8" role="1PaTwD">
+        <node concept="3oM_SD" id="4p1IWUFVcCk" role="1PaTwD">
+          <property role="3oM_SC" value="are" />
+        </node>
+        <node concept="3oM_SD" id="4p1IWUFVcCl" role="1PaTwD">
           <property role="3oM_SC" value="not" />
         </node>
-        <node concept="3oM_SD" id="_LkUz2g3Bh" role="1PaTwD">
-          <property role="3oM_SC" value="used" />
+        <node concept="3oM_SD" id="4p1IWUFVcCm" role="1PaTwD">
+          <property role="3oM_SC" value="instantiated" />
+        </node>
+        <node concept="3oM_SD" id="4p1IWUFVcCn" role="1PaTwD">
+          <property role="3oM_SC" value="at" />
+        </node>
+        <node concept="3oM_SD" id="4p1IWUFVcCo" role="1PaTwD">
+          <property role="3oM_SC" value="all" />
         </node>
         <node concept="3oM_SD" id="_LkUz2g3Br" role="1PaTwD">
           <property role="3oM_SC" value="in" />
@@ -232,7 +241,10 @@
           <property role="3oM_SC" value="the" />
         </node>
         <node concept="3oM_SD" id="_LkUz2g3BM" role="1PaTwD">
-          <property role="3oM_SC" value="project" />
+          <property role="3oM_SC" value="current" />
+        </node>
+        <node concept="3oM_SD" id="4p1IWUFVcCq" role="1PaTwD">
+          <property role="3oM_SC" value="project." />
         </node>
       </node>
       <node concept="1PaTwC" id="_LkUz2g3xy" role="1PaQFQ">
