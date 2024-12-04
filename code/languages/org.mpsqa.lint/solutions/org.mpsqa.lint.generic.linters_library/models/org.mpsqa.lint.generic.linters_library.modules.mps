@@ -250,15 +250,6 @@
         <child id="7679435328618377120" name="exception" index="vsfCu" />
       </concept>
       <concept id="5024442900367365755" name="org.mpsqa.lint.generic.structure.ModuleCheckingFunction" flags="ig" index="V6NT9" />
-      <concept id="7223240310078271419" name="org.mpsqa.lint.generic.structure.ILinterResultsContainer" flags="ngI" index="3dgnlL">
-        <child id="7223240310078271420" name="violations" index="3dgnlQ" />
-      </concept>
-      <concept id="7223240310078271416" name="org.mpsqa.lint.generic.structure.ResultEntry" flags="ng" index="3dgnlM">
-        <property id="49142249442884896" name="resultLocation" index="2hbMIX" />
-        <property id="7223240310078271417" name="result" index="3dgnlN" />
-        <property id="8230153551040655111" name="resultNodeModelId" index="3qxsSb" />
-        <property id="8230153551040654991" name="resultNodeId" index="3qxsY3" />
-      </concept>
       <concept id="7008376823202027689" name="org.mpsqa.lint.generic.structure.ICanSkipCheckerEvaluation" flags="ngI" index="3miP$Z">
         <property id="7008376823202030902" name="skipEvaluation" index="3miQiw" />
       </concept>
@@ -1133,7 +1124,7 @@
         <property role="2RT3bR" value="0" />
         <node concept="3oM_SD" id="5$DH147D5WJ" role="1PaTwD">
           <property role="1X82S1" value="true" />
-          <property role="3oM_SC" value="regexRelativePathsToCheck" />
+          <property role="3oM_SC" value="checkPathsFromRootRegex" />
         </node>
         <node concept="3oM_SD" id="5$DH147D5WK" role="1PaTwD">
           <property role="3oM_SC" value="–" />
@@ -1195,7 +1186,7 @@
           <property role="3oM_SC" value="e.g." />
         </node>
         <node concept="3oM_SD" id="HM0s1GGzjZ" role="1PaTwD">
-          <property role="3oM_SC" value="&quot;^(?!build|doc).*&quot;" />
+          <property role="3oM_SC" value="'^(?!build|doc).*'" />
         </node>
         <node concept="3oM_SD" id="HM0s1GGznh" role="1PaTwD">
           <property role="3oM_SC" value="check" />
@@ -1227,10 +1218,24 @@
         <node concept="3oM_SD" id="HM0s1GGzfd" role="1PaTwD">
           <property role="3oM_SC" value="OR" />
         </node>
-        <node concept="3oM_SD" id="HM0s1GGzfr" role="1PaTwD">
-          <property role="3oM_SC" value="'doc'" />
+        <node concept="3oM_SD" id="HM0s1GNnws" role="1PaTwD">
+          <property role="3oM_SC" value="'doc'," />
         </node>
-        <node concept="3oM_SD" id="HM0s1GGzoh" role="1PaTwD" />
+        <node concept="3oM_SD" id="HM0s1GNnyj" role="1PaTwD">
+          <property role="3oM_SC" value="'.*'" />
+        </node>
+        <node concept="3oM_SD" id="HM0s1GNnAa" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="HM0s1GNnM_" role="1PaTwD">
+          <property role="3oM_SC" value="check" />
+        </node>
+        <node concept="3oM_SD" id="HM0s1GNnVT" role="1PaTwD">
+          <property role="3oM_SC" value="all" />
+        </node>
+        <node concept="3oM_SD" id="HM0s1GNnGE" role="1PaTwD">
+          <property role="3oM_SC" value="paths" />
+        </node>
       </node>
     </node>
     <node concept="1MIXq2" id="3$9W3co2XpK" role="14J5yK">
@@ -1720,7 +1725,7 @@
                 <node concept="liA8E" id="HM0s1G$zcP" role="2OqNvi">
                   <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
                   <node concept="2j1LYi" id="HM0s1G$zcQ" role="37wK5m">
-                    <ref role="2j1LYj" node="5$DH147CJBE" resolve="relativePathRegexToIgnore" />
+                    <ref role="2j1LYj" node="5$DH147CJBE" resolve="checkPathsFromRootRegex" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="HM0s1G$zcR" role="2Oq$k0">
@@ -1737,64 +1742,16 @@
         </node>
       </node>
     </node>
-    <node concept="3dgnlM" id="66FM0vTKx3f" role="3dgnlQ">
-      <property role="3dgnlN" value="Module with file 'C:\work\mps-qa\code\languages\org.mpsqa.lint\languages\org.mpsqa.lint.generic.linters_library.quickfixes\org.mpsqa.lint.generic.linters_library.quickfixes.mpl' is located in project directory but it is not part of the project" />
-      <property role="3qxsY3" value="4110080237189715541" />
-      <property role="3qxsSb" value="r:cadc46fc-2365-43d7-bda1-08e980cf970d(org.mpsqa.lint.generic.linters_library.modules)" />
-      <property role="2hbMIX" value="C:\work\mps-qa\code\languages\org.mpsqa.lint\languages\org.mpsqa.lint.generic.linters_library.quickfixes\org.mpsqa.lint.generic.linters_library.quickfixes.mpl" />
-    </node>
-    <node concept="3dgnlM" id="66FM0vTKx3g" role="3dgnlQ">
-      <property role="3dgnlN" value="Module with file 'C:\work\mps-qa\code\languages\org.mpsqa.lint\languages\org.mpsqa.lint.generic\org.mpsqa.lint.generic.mpl' is located in project directory but it is not part of the project" />
-      <property role="3qxsY3" value="4110080237189715541" />
-      <property role="3qxsSb" value="r:cadc46fc-2365-43d7-bda1-08e980cf970d(org.mpsqa.lint.generic.linters_library.modules)" />
-      <property role="2hbMIX" value="C:\work\mps-qa\code\languages\org.mpsqa.lint\languages\org.mpsqa.lint.generic\org.mpsqa.lint.generic.mpl" />
-    </node>
-    <node concept="3dgnlM" id="66FM0vTKx3h" role="3dgnlQ">
-      <property role="3dgnlN" value="Module with file 'C:\work\mps-qa\code\languages\org.mpsqa.lint\solutions\org.mpsqa.lint.build\org.mpsqa.lint.build.msd' is located in project directory but it is not part of the project" />
-      <property role="3qxsY3" value="4110080237189715541" />
-      <property role="3qxsSb" value="r:cadc46fc-2365-43d7-bda1-08e980cf970d(org.mpsqa.lint.generic.linters_library.modules)" />
-      <property role="2hbMIX" value="C:\work\mps-qa\code\languages\org.mpsqa.lint\solutions\org.mpsqa.lint.build\org.mpsqa.lint.build.msd" />
-    </node>
-    <node concept="3dgnlM" id="66FM0vTKx3i" role="3dgnlQ">
-      <property role="3dgnlN" value="Module with file 'C:\work\mps-qa\code\languages\org.mpsqa.lint\solutions\org.mpsqa.lint.generic.linters_library\org.mpsqa.lint.generic.linters_library.msd' is located in project directory but it is not part of the project" />
-      <property role="3qxsY3" value="4110080237189715541" />
-      <property role="3qxsSb" value="r:cadc46fc-2365-43d7-bda1-08e980cf970d(org.mpsqa.lint.generic.linters_library.modules)" />
-      <property role="2hbMIX" value="C:\work\mps-qa\code\languages\org.mpsqa.lint\solutions\org.mpsqa.lint.generic.linters_library\org.mpsqa.lint.generic.linters_library.msd" />
-    </node>
-    <node concept="3dgnlM" id="66FM0vTKx3j" role="3dgnlQ">
-      <property role="3dgnlN" value="Module with file 'C:\work\mps-qa\code\languages\org.mpsqa.lint\solutions\org.mpsqa.lint.generic.runtime\org.mpsqa.lint.generic.runtime.msd' is located in project directory but it is not part of the project" />
-      <property role="3qxsY3" value="4110080237189715541" />
-      <property role="3qxsSb" value="r:cadc46fc-2365-43d7-bda1-08e980cf970d(org.mpsqa.lint.generic.linters_library.modules)" />
-      <property role="2hbMIX" value="C:\work\mps-qa\code\languages\org.mpsqa.lint\solutions\org.mpsqa.lint.generic.runtime\org.mpsqa.lint.generic.runtime.msd" />
-    </node>
-    <node concept="3dgnlM" id="66FM0vTKx3k" role="3dgnlQ">
-      <property role="3dgnlN" value="Module with file 'C:\work\mps-qa\code\languages\org.mpsqa.lint\solutions\org.mpsqa.lint.generic.sandbox\org.mpsqa.lint.generic.sandbox.msd' is located in project directory but it is not part of the project" />
-      <property role="3qxsY3" value="4110080237189715541" />
-      <property role="3qxsSb" value="r:cadc46fc-2365-43d7-bda1-08e980cf970d(org.mpsqa.lint.generic.linters_library.modules)" />
-      <property role="2hbMIX" value="C:\work\mps-qa\code\languages\org.mpsqa.lint\solutions\org.mpsqa.lint.generic.sandbox\org.mpsqa.lint.generic.sandbox.msd" />
-    </node>
-    <node concept="3dgnlM" id="66FM0vTKx3l" role="3dgnlQ">
-      <property role="3dgnlN" value="Module with file 'C:\work\mps-qa\code\languages\org.mpsqa.lint\solutions\org.mpsqa.lint.mps_lang.linters_library\org.mpsqa.lint.mps_lang.linters_library.msd' is located in project directory but it is not part of the project" />
-      <property role="3qxsY3" value="4110080237189715541" />
-      <property role="3qxsSb" value="r:cadc46fc-2365-43d7-bda1-08e980cf970d(org.mpsqa.lint.generic.linters_library.modules)" />
-      <property role="2hbMIX" value="C:\work\mps-qa\code\languages\org.mpsqa.lint\solutions\org.mpsqa.lint.mps_lang.linters_library\org.mpsqa.lint.mps_lang.linters_library.msd" />
-    </node>
-    <node concept="3dgnlM" id="66FM0vTKx3m" role="3dgnlQ">
-      <property role="3dgnlN" value="Module with file 'C:\work\mps-qa\code\languages\org.mpsqa.lint\solutions\org.mpsqa.lint.test\org.mpsqa.lint.test.msd' is located in project directory but it is not part of the project" />
-      <property role="3qxsY3" value="4110080237189715541" />
-      <property role="3qxsSb" value="r:cadc46fc-2365-43d7-bda1-08e980cf970d(org.mpsqa.lint.generic.linters_library.modules)" />
-      <property role="2hbMIX" value="C:\work\mps-qa\code\languages\org.mpsqa.lint\solutions\org.mpsqa.lint.test\org.mpsqa.lint.test.msd" />
-    </node>
     <node concept="2j1K4_" id="5$DH147CJBE" role="2j1K4A">
-      <property role="TrG5h" value="regexRelativePathsToCheck" />
+      <property role="TrG5h" value="checkPathsFromRootRegex" />
       <node concept="17QB3L" id="5$DH147CM5E" role="2j1LY4" />
     </node>
     <node concept="2j1LYv" id="5$DH147CRDB" role="2j1YRv">
       <node concept="2j1LYi" id="5$DH147CRDC" role="2j1YQj">
-        <ref role="2j1LYj" node="5$DH147CJBE" resolve="rootPathToIgnore" />
+        <ref role="2j1LYj" node="5$DH147CJBE" resolve="checkPathsFromRootRegex" />
       </node>
       <node concept="Xl_RD" id="5$DH147CTnb" role="2j1LYg">
-        <property role="Xl_RC" value="^(?!build|doc).*" />
+        <property role="Xl_RC" value=".*" />
       </node>
     </node>
   </node>
