@@ -1132,44 +1132,50 @@
       <node concept="2DRihI" id="5$DH147D5WI" role="1PaQFQ">
         <property role="2RT3bR" value="0" />
         <node concept="3oM_SD" id="5$DH147D5WJ" role="1PaTwD">
-          <property role="3oM_SC" value="rootPathToIgnore" />
           <property role="1X82S1" value="true" />
+          <property role="3oM_SC" value="regexRelativePathsToCheck" />
         </node>
         <node concept="3oM_SD" id="5$DH147D5WK" role="1PaTwD">
           <property role="3oM_SC" value="–" />
         </node>
-        <node concept="3oM_SD" id="5$DH147D5YA" role="1PaTwD">
+        <node concept="3oM_SD" id="HM0s1GGz8D" role="1PaTwD">
           <property role="3oM_SC" value="path" />
         </node>
+        <node concept="3oM_SD" id="HM0s1GGz7B" role="1PaTwD">
+          <property role="3oM_SC" value="regex" />
+        </node>
         <node concept="3oM_SD" id="5$DH147D5YQ" role="1PaTwD">
-          <property role="3oM_SC" value="to" />
+          <property role="3oM_SC" value="applied" />
+        </node>
+        <node concept="3oM_SD" id="HM0s1GGz8S" role="1PaTwD">
+          <property role="3oM_SC" value="from" />
+        </node>
+        <node concept="3oM_SD" id="HM0s1GGz98" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="HM0s1GGz9p" role="1PaTwD">
+          <property role="3oM_SC" value="root" />
         </node>
         <node concept="3oM_SD" id="5$DH147D5Z7" role="1PaTwD">
           <property role="3oM_SC" value="directory" />
         </node>
-        <node concept="3oM_SD" id="5$DH147D5Zp" role="1PaTwD">
-          <property role="3oM_SC" value="from" />
+        <node concept="3oM_SD" id="HM0s1GGzb2" role="1PaTwD">
+          <property role="3oM_SC" value="in" />
         </node>
-        <node concept="3oM_SD" id="5$DH147D5ZG" role="1PaTwD">
-          <property role="3oM_SC" value="project" />
+        <node concept="3oM_SD" id="HM0s1GGzbd" role="1PaTwD">
+          <property role="3oM_SC" value="which" />
         </node>
-        <node concept="3oM_SD" id="5$DH147D600" role="1PaTwD">
-          <property role="3oM_SC" value="root" />
+        <node concept="3oM_SD" id="HM0s1GGzbp" role="1PaTwD">
+          <property role="3oM_SC" value="this" />
         </node>
-        <node concept="3oM_SD" id="5$DH147D63l" role="1PaTwD">
-          <property role="3oM_SC" value="where" />
+        <node concept="3oM_SD" id="HM0s1GGzc3" role="1PaTwD">
+          <property role="3oM_SC" value="linter" />
         </node>
-        <node concept="3oM_SD" id="5$DH147D63F" role="1PaTwD">
-          <property role="3oM_SC" value="module" />
+        <node concept="3oM_SD" id="HM0s1GGzch" role="1PaTwD">
+          <property role="3oM_SC" value="will" />
         </node>
-        <node concept="3oM_SD" id="5$DH147D642" role="1PaTwD">
-          <property role="3oM_SC" value="files" />
-        </node>
-        <node concept="3oM_SD" id="5$DH147D64q" role="1PaTwD">
-          <property role="3oM_SC" value="are" />
-        </node>
-        <node concept="3oM_SD" id="5$DH147DfA4" role="1PaTwD">
-          <property role="3oM_SC" value="permitted" />
+        <node concept="3oM_SD" id="HM0s1GGzcw" role="1PaTwD">
+          <property role="3oM_SC" value="check" />
         </node>
       </node>
       <node concept="1PaTwC" id="5$DH147DfCr" role="1PaQFQ">
@@ -1188,12 +1194,43 @@
         <node concept="3oM_SD" id="5$DH147DfDh" role="1PaTwD">
           <property role="3oM_SC" value="e.g." />
         </node>
-        <node concept="3oM_SD" id="HM0s1G4w4d" role="1PaTwD">
-          <property role="3oM_SC" value="'build/'" />
+        <node concept="3oM_SD" id="HM0s1GGzjZ" role="1PaTwD">
+          <property role="3oM_SC" value="&quot;^(?!build|doc).*&quot;" />
         </node>
-        <node concept="3oM_SD" id="5$DH147DfCx" role="1PaTwD">
-          <property role="3oM_SC" value="" />
+        <node concept="3oM_SD" id="HM0s1GGznh" role="1PaTwD">
+          <property role="3oM_SC" value="check" />
         </node>
+        <node concept="3oM_SD" id="HM0s1GG$DX" role="1PaTwD">
+          <property role="3oM_SC" value="any" />
+        </node>
+        <node concept="3oM_SD" id="HM0s1GG$FC" role="1PaTwD">
+          <property role="3oM_SC" value="path" />
+        </node>
+        <node concept="3oM_SD" id="HM0s1GGze8" role="1PaTwD">
+          <property role="3oM_SC" value="which" />
+        </node>
+        <node concept="3oM_SD" id="HM0s1GG$G9" role="1PaTwD">
+          <property role="3oM_SC" value="does" />
+        </node>
+        <node concept="3oM_SD" id="HM0s1GG$GG" role="1PaTwD">
+          <property role="3oM_SC" value="not" />
+        </node>
+        <node concept="3oM_SD" id="HM0s1GGzeD" role="1PaTwD">
+          <property role="3oM_SC" value="start" />
+        </node>
+        <node concept="3oM_SD" id="HM0s1GGzeO" role="1PaTwD">
+          <property role="3oM_SC" value="with" />
+        </node>
+        <node concept="3oM_SD" id="HM0s1GGzf0" role="1PaTwD">
+          <property role="3oM_SC" value="'build'" />
+        </node>
+        <node concept="3oM_SD" id="HM0s1GGzfd" role="1PaTwD">
+          <property role="3oM_SC" value="OR" />
+        </node>
+        <node concept="3oM_SD" id="HM0s1GGzfr" role="1PaTwD">
+          <property role="3oM_SC" value="'doc'" />
+        </node>
+        <node concept="3oM_SD" id="HM0s1GGzoh" role="1PaTwD" />
       </node>
     </node>
     <node concept="1MIXq2" id="3$9W3co2XpK" role="14J5yK">
@@ -1757,7 +1794,7 @@
         <ref role="2j1LYj" node="5$DH147CJBE" resolve="rootPathToIgnore" />
       </node>
       <node concept="Xl_RD" id="5$DH147CTnb" role="2j1LYg">
-        <property role="Xl_RC" value="^(build|doc).*" />
+        <property role="Xl_RC" value="^(?!build|doc).*" />
       </node>
     </node>
   </node>
