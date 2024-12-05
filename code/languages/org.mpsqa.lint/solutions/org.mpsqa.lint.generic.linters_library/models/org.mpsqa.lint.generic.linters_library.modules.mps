@@ -124,7 +124,6 @@
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
-      <concept id="1225271369338" name="jetbrains.mps.baseLanguage.structure.IsEmptyOperation" flags="nn" index="17RlXB" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -144,7 +143,6 @@
         <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
-        <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
@@ -165,10 +163,6 @@
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
-      <concept id="1206060495898" name="jetbrains.mps.baseLanguage.structure.ElsifClause" flags="ng" index="3eNFk2">
-        <child id="1206060619838" name="condition" index="3eO9$A" />
-        <child id="1206060644605" name="statementList" index="3eOfB_" />
-      </concept>
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
@@ -256,15 +250,6 @@
         <child id="7679435328618377120" name="exception" index="vsfCu" />
       </concept>
       <concept id="5024442900367365755" name="org.mpsqa.lint.generic.structure.ModuleCheckingFunction" flags="ig" index="V6NT9" />
-      <concept id="7223240310078271419" name="org.mpsqa.lint.generic.structure.ILinterResultsContainer" flags="ngI" index="3dgnlL">
-        <child id="7223240310078271420" name="violations" index="3dgnlQ" />
-      </concept>
-      <concept id="7223240310078271416" name="org.mpsqa.lint.generic.structure.ResultEntry" flags="ng" index="3dgnlM">
-        <property id="49142249442884896" name="resultLocation" index="2hbMIX" />
-        <property id="7223240310078271417" name="result" index="3dgnlN" />
-        <property id="8230153551040655111" name="resultNodeModelId" index="3qxsSb" />
-        <property id="8230153551040654991" name="resultNodeId" index="3qxsY3" />
-      </concept>
       <concept id="7008376823202027689" name="org.mpsqa.lint.generic.structure.ICanSkipCheckerEvaluation" flags="ngI" index="3miP$Z">
         <property id="7008376823202030902" name="skipEvaluation" index="3miQiw" />
       </concept>
@@ -1138,44 +1123,50 @@
       <node concept="2DRihI" id="5$DH147D5WI" role="1PaQFQ">
         <property role="2RT3bR" value="0" />
         <node concept="3oM_SD" id="5$DH147D5WJ" role="1PaTwD">
-          <property role="3oM_SC" value="rootPathToIgnore" />
           <property role="1X82S1" value="true" />
+          <property role="3oM_SC" value="checkPathsFromRootRegex" />
         </node>
         <node concept="3oM_SD" id="5$DH147D5WK" role="1PaTwD">
           <property role="3oM_SC" value="–" />
         </node>
-        <node concept="3oM_SD" id="5$DH147D5YA" role="1PaTwD">
+        <node concept="3oM_SD" id="HM0s1GGz8D" role="1PaTwD">
           <property role="3oM_SC" value="path" />
         </node>
+        <node concept="3oM_SD" id="HM0s1GGz7B" role="1PaTwD">
+          <property role="3oM_SC" value="regex" />
+        </node>
         <node concept="3oM_SD" id="5$DH147D5YQ" role="1PaTwD">
-          <property role="3oM_SC" value="to" />
+          <property role="3oM_SC" value="applied" />
+        </node>
+        <node concept="3oM_SD" id="HM0s1GGz8S" role="1PaTwD">
+          <property role="3oM_SC" value="from" />
+        </node>
+        <node concept="3oM_SD" id="HM0s1GGz98" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="HM0s1GGz9p" role="1PaTwD">
+          <property role="3oM_SC" value="root" />
         </node>
         <node concept="3oM_SD" id="5$DH147D5Z7" role="1PaTwD">
           <property role="3oM_SC" value="directory" />
         </node>
-        <node concept="3oM_SD" id="5$DH147D5Zp" role="1PaTwD">
-          <property role="3oM_SC" value="from" />
+        <node concept="3oM_SD" id="HM0s1GGzb2" role="1PaTwD">
+          <property role="3oM_SC" value="in" />
         </node>
-        <node concept="3oM_SD" id="5$DH147D5ZG" role="1PaTwD">
-          <property role="3oM_SC" value="project" />
+        <node concept="3oM_SD" id="HM0s1GGzbd" role="1PaTwD">
+          <property role="3oM_SC" value="which" />
         </node>
-        <node concept="3oM_SD" id="5$DH147D600" role="1PaTwD">
-          <property role="3oM_SC" value="root" />
+        <node concept="3oM_SD" id="HM0s1GGzbp" role="1PaTwD">
+          <property role="3oM_SC" value="this" />
         </node>
-        <node concept="3oM_SD" id="5$DH147D63l" role="1PaTwD">
-          <property role="3oM_SC" value="where" />
+        <node concept="3oM_SD" id="HM0s1GGzc3" role="1PaTwD">
+          <property role="3oM_SC" value="linter" />
         </node>
-        <node concept="3oM_SD" id="5$DH147D63F" role="1PaTwD">
-          <property role="3oM_SC" value="module" />
+        <node concept="3oM_SD" id="HM0s1GGzch" role="1PaTwD">
+          <property role="3oM_SC" value="will" />
         </node>
-        <node concept="3oM_SD" id="5$DH147D642" role="1PaTwD">
-          <property role="3oM_SC" value="files" />
-        </node>
-        <node concept="3oM_SD" id="5$DH147D64q" role="1PaTwD">
-          <property role="3oM_SC" value="are" />
-        </node>
-        <node concept="3oM_SD" id="5$DH147DfA4" role="1PaTwD">
-          <property role="3oM_SC" value="permitted" />
+        <node concept="3oM_SD" id="HM0s1GGzcw" role="1PaTwD">
+          <property role="3oM_SC" value="check" />
         </node>
       </node>
       <node concept="1PaTwC" id="5$DH147DfCr" role="1PaQFQ">
@@ -1194,17 +1185,56 @@
         <node concept="3oM_SD" id="5$DH147DfDh" role="1PaTwD">
           <property role="3oM_SC" value="e.g." />
         </node>
-        <node concept="3oM_SD" id="5$DH147DfCu" role="1PaTwD">
-          <property role="3oM_SC" value="'[project" />
+        <node concept="3oM_SD" id="HM0s1GGzjZ" role="1PaTwD">
+          <property role="3oM_SC" value="'^(?!build|doc).*'" />
         </node>
-        <node concept="3oM_SD" id="5$DH147DfCv" role="1PaTwD">
-          <property role="3oM_SC" value="root" />
+        <node concept="3oM_SD" id="HM0s1GGznh" role="1PaTwD">
+          <property role="3oM_SC" value="check" />
         </node>
-        <node concept="3oM_SD" id="5$DH147DfCw" role="1PaTwD">
-          <property role="3oM_SC" value="directory]/build'" />
+        <node concept="3oM_SD" id="HM0s1GG$DX" role="1PaTwD">
+          <property role="3oM_SC" value="any" />
         </node>
-        <node concept="3oM_SD" id="5$DH147DfCx" role="1PaTwD">
-          <property role="3oM_SC" value="" />
+        <node concept="3oM_SD" id="HM0s1GG$FC" role="1PaTwD">
+          <property role="3oM_SC" value="path" />
+        </node>
+        <node concept="3oM_SD" id="HM0s1GGze8" role="1PaTwD">
+          <property role="3oM_SC" value="which" />
+        </node>
+        <node concept="3oM_SD" id="HM0s1GG$G9" role="1PaTwD">
+          <property role="3oM_SC" value="does" />
+        </node>
+        <node concept="3oM_SD" id="HM0s1GG$GG" role="1PaTwD">
+          <property role="3oM_SC" value="not" />
+        </node>
+        <node concept="3oM_SD" id="HM0s1GGzeD" role="1PaTwD">
+          <property role="3oM_SC" value="start" />
+        </node>
+        <node concept="3oM_SD" id="HM0s1GGzeO" role="1PaTwD">
+          <property role="3oM_SC" value="with" />
+        </node>
+        <node concept="3oM_SD" id="HM0s1GGzf0" role="1PaTwD">
+          <property role="3oM_SC" value="'build'" />
+        </node>
+        <node concept="3oM_SD" id="HM0s1GGzfd" role="1PaTwD">
+          <property role="3oM_SC" value="OR" />
+        </node>
+        <node concept="3oM_SD" id="HM0s1GNnws" role="1PaTwD">
+          <property role="3oM_SC" value="'doc'," />
+        </node>
+        <node concept="3oM_SD" id="HM0s1GNnyj" role="1PaTwD">
+          <property role="3oM_SC" value="'.*'" />
+        </node>
+        <node concept="3oM_SD" id="HM0s1GNnAa" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="HM0s1GNnM_" role="1PaTwD">
+          <property role="3oM_SC" value="check" />
+        </node>
+        <node concept="3oM_SD" id="HM0s1GNnVT" role="1PaTwD">
+          <property role="3oM_SC" value="all" />
+        </node>
+        <node concept="3oM_SD" id="HM0s1GNnGE" role="1PaTwD">
+          <property role="3oM_SC" value="paths" />
         </node>
       </node>
     </node>
@@ -1549,11 +1579,16 @@
             <property role="TrG5h" value="projectPath" />
             <node concept="17QB3L" id="5$DH147CUsG" role="1tU5fm" />
             <node concept="2OqwBi" id="5$DH147CUsH" role="33vP2m">
-              <node concept="37vLTw" id="5$DH147CUsI" role="2Oq$k0">
-                <ref role="3cqZAo" node="5$DH147CUqx" resolve="projectDir" />
+              <node concept="2OqwBi" id="HM0s1G62rF" role="2Oq$k0">
+                <node concept="37vLTw" id="5$DH147CUsI" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5$DH147CUqx" resolve="projectDir" />
+                </node>
+                <node concept="liA8E" id="HM0s1G3_YS" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~File.toPath()" resolve="toPath" />
+                </node>
               </node>
-              <node concept="liA8E" id="5$DH147CUsJ" role="2OqNvi">
-                <ref role="37wK5l" to="guwi:~File.getParent()" resolve="getParent" />
+              <node concept="liA8E" id="HM0s1G3Eji" role="2OqNvi">
+                <ref role="37wK5l" to="eoo2:~Path.toString()" resolve="toString" />
               </node>
             </node>
           </node>
@@ -1660,6 +1695,7 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbH" id="HM0s1G7ee8" role="3cqZAp" />
             <node concept="3clFbJ" id="5$DH147CUt$" role="3cqZAp">
               <node concept="3clFbS" id="5$DH147CUt_" role="3clFbx">
                 <node concept="3clFbF" id="5$DH147CUtA" role="3cqZAp">
@@ -1685,49 +1721,15 @@
                   </node>
                 </node>
               </node>
-              <node concept="2OqwBi" id="5$DH147CUtJ" role="3clFbw">
-                <node concept="2j1LYi" id="5$DH147CUtK" role="2Oq$k0">
-                  <ref role="2j1LYj" node="5$DH147CJBE" resolve="rootPathToIgnore" />
-                </node>
-                <node concept="17RlXB" id="5$DH147CUtL" role="2OqNvi" />
-              </node>
-              <node concept="3eNFk2" id="5$DH147CUtM" role="3eNLev">
-                <node concept="3clFbS" id="5$DH147CUtN" role="3eOfB_">
-                  <node concept="3clFbF" id="5$DH147CUtO" role="3cqZAp">
-                    <node concept="2OqwBi" id="5$DH147CUtP" role="3clFbG">
-                      <node concept="37vLTw" id="5$DH147CUtQ" role="2Oq$k0">
-                        <ref role="3cqZAo" node="5$DH147CUqq" resolve="res" />
-                      </node>
-                      <node concept="TSZUe" id="5$DH147CUtR" role="2OqNvi">
-                        <node concept="3cpWs3" id="5$DH147CUtS" role="25WWJ7">
-                          <node concept="3cpWs3" id="5$DH147CUtT" role="3uHU7B">
-                            <node concept="Xl_RD" id="5$DH147CUtU" role="3uHU7B">
-                              <property role="Xl_RC" value="Module with file '" />
-                            </node>
-                            <node concept="37vLTw" id="5$DH147CUtV" role="3uHU7w">
-                              <ref role="3cqZAo" node="5$DH147CUtr" resolve="safePathString" />
-                            </node>
-                          </node>
-                          <node concept="Xl_RD" id="5$DH147CUtW" role="3uHU7w">
-                            <property role="Xl_RC" value="' is located in project directory but it is not part of the project" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
+              <node concept="2OqwBi" id="HM0s1G$zcO" role="3clFbw">
+                <node concept="liA8E" id="HM0s1G$zcP" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
+                  <node concept="2j1LYi" id="HM0s1G$zcQ" role="37wK5m">
+                    <ref role="2j1LYj" node="5$DH147CJBE" resolve="checkPathsFromRootRegex" />
                   </node>
                 </node>
-                <node concept="3fqX7Q" id="5$DH147CUtX" role="3eO9$A">
-                  <node concept="2OqwBi" id="5$DH147CUtY" role="3fr31v">
-                    <node concept="37vLTw" id="5$DH147CUtZ" role="2Oq$k0">
-                      <ref role="3cqZAo" node="5$DH147CUtr" resolve="safePathString" />
-                    </node>
-                    <node concept="liA8E" id="5$DH147CUu0" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String)" resolve="startsWith" />
-                      <node concept="2j1LYi" id="5$DH147CUu1" role="37wK5m">
-                        <ref role="2j1LYj" node="5$DH147CJBE" resolve="rootPathToIgnore" />
-                      </node>
-                    </node>
-                  </node>
+                <node concept="37vLTw" id="HM0s1G$zcR" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5$DH147CUtr" resolve="safePathString" />
                 </node>
               </node>
             </node>
@@ -1740,64 +1742,16 @@
         </node>
       </node>
     </node>
-    <node concept="3dgnlM" id="66FM0vTKx3f" role="3dgnlQ">
-      <property role="3dgnlN" value="Module with file 'C:\work\mps-qa\code\languages\org.mpsqa.lint\languages\org.mpsqa.lint.generic.linters_library.quickfixes\org.mpsqa.lint.generic.linters_library.quickfixes.mpl' is located in project directory but it is not part of the project" />
-      <property role="3qxsY3" value="4110080237189715541" />
-      <property role="3qxsSb" value="r:cadc46fc-2365-43d7-bda1-08e980cf970d(org.mpsqa.lint.generic.linters_library.modules)" />
-      <property role="2hbMIX" value="C:\work\mps-qa\code\languages\org.mpsqa.lint\languages\org.mpsqa.lint.generic.linters_library.quickfixes\org.mpsqa.lint.generic.linters_library.quickfixes.mpl" />
-    </node>
-    <node concept="3dgnlM" id="66FM0vTKx3g" role="3dgnlQ">
-      <property role="3dgnlN" value="Module with file 'C:\work\mps-qa\code\languages\org.mpsqa.lint\languages\org.mpsqa.lint.generic\org.mpsqa.lint.generic.mpl' is located in project directory but it is not part of the project" />
-      <property role="3qxsY3" value="4110080237189715541" />
-      <property role="3qxsSb" value="r:cadc46fc-2365-43d7-bda1-08e980cf970d(org.mpsqa.lint.generic.linters_library.modules)" />
-      <property role="2hbMIX" value="C:\work\mps-qa\code\languages\org.mpsqa.lint\languages\org.mpsqa.lint.generic\org.mpsqa.lint.generic.mpl" />
-    </node>
-    <node concept="3dgnlM" id="66FM0vTKx3h" role="3dgnlQ">
-      <property role="3dgnlN" value="Module with file 'C:\work\mps-qa\code\languages\org.mpsqa.lint\solutions\org.mpsqa.lint.build\org.mpsqa.lint.build.msd' is located in project directory but it is not part of the project" />
-      <property role="3qxsY3" value="4110080237189715541" />
-      <property role="3qxsSb" value="r:cadc46fc-2365-43d7-bda1-08e980cf970d(org.mpsqa.lint.generic.linters_library.modules)" />
-      <property role="2hbMIX" value="C:\work\mps-qa\code\languages\org.mpsqa.lint\solutions\org.mpsqa.lint.build\org.mpsqa.lint.build.msd" />
-    </node>
-    <node concept="3dgnlM" id="66FM0vTKx3i" role="3dgnlQ">
-      <property role="3dgnlN" value="Module with file 'C:\work\mps-qa\code\languages\org.mpsqa.lint\solutions\org.mpsqa.lint.generic.linters_library\org.mpsqa.lint.generic.linters_library.msd' is located in project directory but it is not part of the project" />
-      <property role="3qxsY3" value="4110080237189715541" />
-      <property role="3qxsSb" value="r:cadc46fc-2365-43d7-bda1-08e980cf970d(org.mpsqa.lint.generic.linters_library.modules)" />
-      <property role="2hbMIX" value="C:\work\mps-qa\code\languages\org.mpsqa.lint\solutions\org.mpsqa.lint.generic.linters_library\org.mpsqa.lint.generic.linters_library.msd" />
-    </node>
-    <node concept="3dgnlM" id="66FM0vTKx3j" role="3dgnlQ">
-      <property role="3dgnlN" value="Module with file 'C:\work\mps-qa\code\languages\org.mpsqa.lint\solutions\org.mpsqa.lint.generic.runtime\org.mpsqa.lint.generic.runtime.msd' is located in project directory but it is not part of the project" />
-      <property role="3qxsY3" value="4110080237189715541" />
-      <property role="3qxsSb" value="r:cadc46fc-2365-43d7-bda1-08e980cf970d(org.mpsqa.lint.generic.linters_library.modules)" />
-      <property role="2hbMIX" value="C:\work\mps-qa\code\languages\org.mpsqa.lint\solutions\org.mpsqa.lint.generic.runtime\org.mpsqa.lint.generic.runtime.msd" />
-    </node>
-    <node concept="3dgnlM" id="66FM0vTKx3k" role="3dgnlQ">
-      <property role="3dgnlN" value="Module with file 'C:\work\mps-qa\code\languages\org.mpsqa.lint\solutions\org.mpsqa.lint.generic.sandbox\org.mpsqa.lint.generic.sandbox.msd' is located in project directory but it is not part of the project" />
-      <property role="3qxsY3" value="4110080237189715541" />
-      <property role="3qxsSb" value="r:cadc46fc-2365-43d7-bda1-08e980cf970d(org.mpsqa.lint.generic.linters_library.modules)" />
-      <property role="2hbMIX" value="C:\work\mps-qa\code\languages\org.mpsqa.lint\solutions\org.mpsqa.lint.generic.sandbox\org.mpsqa.lint.generic.sandbox.msd" />
-    </node>
-    <node concept="3dgnlM" id="66FM0vTKx3l" role="3dgnlQ">
-      <property role="3dgnlN" value="Module with file 'C:\work\mps-qa\code\languages\org.mpsqa.lint\solutions\org.mpsqa.lint.mps_lang.linters_library\org.mpsqa.lint.mps_lang.linters_library.msd' is located in project directory but it is not part of the project" />
-      <property role="3qxsY3" value="4110080237189715541" />
-      <property role="3qxsSb" value="r:cadc46fc-2365-43d7-bda1-08e980cf970d(org.mpsqa.lint.generic.linters_library.modules)" />
-      <property role="2hbMIX" value="C:\work\mps-qa\code\languages\org.mpsqa.lint\solutions\org.mpsqa.lint.mps_lang.linters_library\org.mpsqa.lint.mps_lang.linters_library.msd" />
-    </node>
-    <node concept="3dgnlM" id="66FM0vTKx3m" role="3dgnlQ">
-      <property role="3dgnlN" value="Module with file 'C:\work\mps-qa\code\languages\org.mpsqa.lint\solutions\org.mpsqa.lint.test\org.mpsqa.lint.test.msd' is located in project directory but it is not part of the project" />
-      <property role="3qxsY3" value="4110080237189715541" />
-      <property role="3qxsSb" value="r:cadc46fc-2365-43d7-bda1-08e980cf970d(org.mpsqa.lint.generic.linters_library.modules)" />
-      <property role="2hbMIX" value="C:\work\mps-qa\code\languages\org.mpsqa.lint\solutions\org.mpsqa.lint.test\org.mpsqa.lint.test.msd" />
-    </node>
     <node concept="2j1K4_" id="5$DH147CJBE" role="2j1K4A">
-      <property role="TrG5h" value="rootPathToIgnore" />
+      <property role="TrG5h" value="checkPathsFromRootRegex" />
       <node concept="17QB3L" id="5$DH147CM5E" role="2j1LY4" />
     </node>
     <node concept="2j1LYv" id="5$DH147CRDB" role="2j1YRv">
       <node concept="2j1LYi" id="5$DH147CRDC" role="2j1YQj">
-        <ref role="2j1LYj" node="5$DH147CJBE" resolve="rootPathToIgnore" />
+        <ref role="2j1LYj" node="5$DH147CJBE" resolve="checkPathsFromRootRegex" />
       </node>
       <node concept="Xl_RD" id="5$DH147CTnb" role="2j1LYg">
-        <property role="Xl_RC" value="" />
+        <property role="Xl_RC" value=".*" />
       </node>
     </node>
   </node>
