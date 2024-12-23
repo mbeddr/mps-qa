@@ -344,8 +344,7 @@ defaultTasks 'build'
 task rebuild(dependsOn:[clean, build_allInOne_package])
 
 ext.allProjectDirectories = { file('code/languages').listFiles({ File file -> file.directory } as FileFilter) }
-ext.mpsPluginRoots = ['mps-build', 'mps-console', 'mps-trove', 'mps-modelchecker']
-        .collect { new File(mpsHomeDir, "plugins/$it") }
+ext.mpsPluginRoots = [new File(mpsHomeDir, "plugins/")]
 ext.jbrJavaLauncher = tasks.named('downloadJbr', DownloadJbrForPlatform).flatMap { it.javaLauncher }
 
 tasks.register('migrate', MpsMigrate) {
