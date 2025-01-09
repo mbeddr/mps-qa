@@ -96,6 +96,7 @@
     <dependency reexport="false">c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)</dependency>
     <dependency reexport="false">b15468d9-435b-45b2-bf51-3f984f734cc4(org.mpsqa.lint.generic.runtime)</dependency>
     <dependency reexport="false" scope="generate-into">1a8554c4-eb84-43ba-8c34-6f0d90c6e75a(jetbrains.mps.lang.smodel.query)</dependency>
+    <dependency reexport="false">3867cfe1-8589-4ef1-9b3c-48b17d473edf(org.mpsqa.base.utils)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
@@ -160,6 +161,7 @@
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
     <module reference="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" version="0" />
     <module reference="20c6e580-bdc5-4067-8049-d7e3265a86de(jetbrains.mps.typesystemEngine)" version="0" />
+    <module reference="3867cfe1-8589-4ef1-9b3c-48b17d473edf(org.mpsqa.base.utils)" version="0" />
     <module reference="40ab19e9-751a-4433-b645-0e65160e58a0(org.mpsqa.lint.generic)" version="0" />
     <module reference="b15468d9-435b-45b2-bf51-3f984f734cc4(org.mpsqa.lint.generic.runtime)" version="0" />
     <module reference="ca35b9c2-3e20-44ff-a0ac-0d0ce67c8b34(org.mpsqa.lint.generic.runtime2)" version="0" />
