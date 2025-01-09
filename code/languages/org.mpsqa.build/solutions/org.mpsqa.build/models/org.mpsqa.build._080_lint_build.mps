@@ -206,6 +206,9 @@
     </node>
     <node concept="m$_wf" id="3dqUbgQmcyy" role="3989C9">
       <property role="m$_wk" value="org.mpsqa.lint" />
+      <node concept="m$_yC" id="7HJqs_aPN6i" role="m$_yJ">
+        <ref role="m$_y1" to="2tou:7C9PHv6FBIO" resolve="org.mpsqa.base" />
+      </node>
       <node concept="3_J27D" id="3dqUbgQmcyF" role="m$_yQ">
         <node concept="3Mxwew" id="3dqUbgQmcyS" role="3MwsjC">
           <property role="3MwjfP" value="org.mpsqa.lint" />
@@ -429,6 +432,11 @@
         <node concept="1SiIV0" id="1BlvkgWy3qU" role="3bR37C">
           <node concept="3bR9La" id="1BlvkgWy3qV" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7HJqs_aPN5c" role="3bR37C">
+          <node concept="3bR9La" id="7HJqs_aPN5d" role="1SiIV1">
+            <ref role="3bR37D" to="2tou:zudvsqcgIl" resolve="org.mpsqa.base.utils" />
           </node>
         </node>
       </node>

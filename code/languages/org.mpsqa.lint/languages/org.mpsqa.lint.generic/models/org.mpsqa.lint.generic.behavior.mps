@@ -29,6 +29,7 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="ends" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.persistence(MPS.Core/)" />
+    <import index="ss65" ref="r:c36b009c-d033-4959-91fc-d917836cbe4f(org.mpsqa.base.utils.project)" />
     <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" implicit="true" />
     <import index="vdrq" ref="r:85354f47-14fd-40e6-a7cc-2d1aa842c4cd(jetbrains.mps.lang.text.behavior)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
@@ -1521,12 +1522,11 @@
                     </node>
                   </node>
                 </node>
-                <node concept="2OqwBi" id="4XPt_Has6i8" role="2GsD0m">
-                  <node concept="37vLTw" id="4XPt_Hasg_d" role="2Oq$k0">
+                <node concept="2YIFZM" id="7HJqs_aPpc2" role="2GsD0m">
+                  <ref role="37wK5l" to="ss65:7HJqs_aOYku" resolve="getProjectModels" />
+                  <ref role="1Pybhc" to="ss65:7HJqs_aCpVf" resolve="MPSQAProjectUtils" />
+                  <node concept="37vLTw" id="7HJqs_aPpYa" role="37wK5m">
                     <ref role="3cqZAo" node="4XPt_Hasg_a" resolve="project" />
-                  </node>
-                  <node concept="liA8E" id="4XPt_Has7GX" role="2OqNvi">
-                    <ref role="37wK5l" to="z1c4:~Project.getProjectModels()" resolve="getProjectModels" />
                   </node>
                 </node>
               </node>

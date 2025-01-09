@@ -11,14 +11,6 @@
             </Library>
           </value>
         </entry>
-        <entry key="mps-qa.build">
-          <value>
-            <Library>
-              <option name="name" value="mps-qa.build" />
-              <option name="path" value="${mpsqa.home}/code/languages/org.mpsqa.build" />
-            </Library>
-          </value>
-        </entry>
       </map>
     </option>
   </component>
