@@ -177,7 +177,7 @@
   
   <target name="makeDependents" />
   
-  <target name="java.compile.org.mpsqa.build.allScripts" depends="java.compile.org.mpsqa.build">
+  <target name="java.compile.org.mpsqa.build.allScripts">
     <mkdir dir="${basedir}/code/languages/org.mpsqa.build/solutions/org.mpsqa.build.allScripts/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.mpsqa.build.allScripts" />
     <javac destdir="${build.tmp}/java/out/org.mpsqa.build.allScripts" fork="false" encoding="utf8" includeantruntime="false" debug="true">
@@ -185,7 +185,7 @@
       <src>
         <path location="${basedir}/code/languages/org.mpsqa.build/solutions/org.mpsqa.build.allScripts/source_gen" />
       </src>
-      <classpath path="${build.tmp}/java/out/org.mpsqa.build" />
+      <classpath />
     </javac>
     <copy todir="${build.tmp}/java/out/org.mpsqa.build.allScripts">
       <fileset dir="${basedir}/code/languages/org.mpsqa.build/solutions/org.mpsqa.build.allScripts/source_gen" excludes="**/*.java" />
@@ -261,7 +261,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.org.mpsqa.lint.build" depends="java.compile.org.mpsqa.build">
+  <target name="java.compile.org.mpsqa.lint.build" depends="java.compile.org.mpsqa.base.build, java.compile.org.mpsqa.build">
     <mkdir dir="${basedir}/code/languages/org.mpsqa.lint/solutions/org.mpsqa.lint.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.mpsqa.lint.build" />
     <javac destdir="${build.tmp}/java/out/org.mpsqa.lint.build" fork="false" encoding="utf8" includeantruntime="false" debug="true">
@@ -269,7 +269,10 @@
       <src>
         <path location="${basedir}/code/languages/org.mpsqa.lint/solutions/org.mpsqa.lint.build/source_gen" />
       </src>
-      <classpath path="${build.tmp}/java/out/org.mpsqa.build" />
+      <classpath>
+        <pathelement path="${build.tmp}/java/out/org.mpsqa.base.build" />
+        <pathelement path="${build.tmp}/java/out/org.mpsqa.build" />
+      </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/org.mpsqa.lint.build">
       <fileset dir="${basedir}/code/languages/org.mpsqa.lint/solutions/org.mpsqa.lint.build/source_gen" excludes="**/*.java" />
