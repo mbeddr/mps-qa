@@ -75,7 +75,7 @@
         <node concept="mXA1B" id="7qAQSsiFxd" role="1Rkc$q">
           <node concept="mXAj4" id="1XeVdf85oR_" role="mXvOw">
             <property role="3EQNYR" value="Te1zv$_mMP/MODEL_LOCK" />
-            <ref role="mXAj7" node="7qAQSsiFxK" resolve="JDK" />
+            <ref role="mXAj7" node="7qAQSsiFxK" resolve="jdk" />
             <node concept="3EQPYP" id="Te1zv$J9wR" role="3EQPAp">
               <property role="3EQPQW" value="model: 'java.lang' from module: 'JDK'" />
             </node>
@@ -103,7 +103,7 @@
       <property role="TrG5h" value="first_layer" />
       <node concept="mXA1B" id="1XeVdf8advS" role="mXAiC">
         <node concept="mXAj4" id="1XeVdf8adw2" role="mXvOw">
-          <ref role="mXAj7" node="7qAQSsiFxK" resolve="JDK" />
+          <ref role="mXAj7" node="7qAQSsiFxK" resolve="jdk" />
         </node>
       </node>
       <node concept="mXxR0" id="1tkdAPw1fXp" role="mXAiC">

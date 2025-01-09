@@ -356,7 +356,7 @@
           </node>
           <node concept="2OqwBi" id="7HJqs_aOZQc" role="2GsD0m">
             <node concept="37vLTw" id="7HJqs_aP1_j" role="2Oq$k0">
-              <ref role="3cqZAo" node="7HJqs_aOYXK" resolve="p" />
+              <ref role="3cqZAo" node="7HJqs_aOYXK" resolve="project" />
             </node>
             <node concept="liA8E" id="7HJqs_aOZQe" role="2OqNvi">
               <ref role="37wK5l" to="z1c3:~IProject.getProjectModules()" resolve="getProjectModules" />
