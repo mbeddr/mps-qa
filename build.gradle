@@ -361,7 +361,7 @@ tasks.register('migrate', MpsMigrate) {
 }
 
 tasks.register('remigrate', Remigrate) {
-    dependsOn(resolveMps, 'downloadJbr', 'build_all_languages')
+    dependsOn(resolveMps, 'downloadJbr')
     mustRunAfter('migrate')
 
     // Technically we don't need to _depend_ on build_all_languages because we can opt to rerun only migrations that
