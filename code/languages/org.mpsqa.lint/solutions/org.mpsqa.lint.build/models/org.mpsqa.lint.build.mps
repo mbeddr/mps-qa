@@ -130,6 +130,18 @@
     </node>
     <node concept="2sgV4H" id="5tfsHJYw2SA" role="1l3spa">
       <ref role="1l3spb" to="2tou:7C9PHv6FBIG" resolve="org.mpsqa.base" />
+      <node concept="398BVA" id="5tfsHJYy3LA" role="2JcizS">
+        <ref role="398BVh" node="1GhTetdB0nZ" resolve="mpsqa.home" />
+        <node concept="2Ry0Ak" id="5tfsHJYy3LE" role="iGT6I">
+          <property role="2Ry0Am" value="build" />
+          <node concept="2Ry0Ak" id="5tfsHJYy3LH" role="2Ry0An">
+            <property role="2Ry0Am" value="artifacts" />
+            <node concept="2Ry0Ak" id="5tfsHJYy3LK" role="2Ry0An">
+              <property role="2Ry0Am" value="org.mpsqa.base" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="398rNT" id="1GhTetdB0nZ" role="1l3spd">
       <property role="TrG5h" value="mpsqa.home" />
