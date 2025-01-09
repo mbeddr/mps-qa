@@ -215,11 +215,6 @@
           </node>
         </node>
       </node>
-      <node concept="1SiIV0" id="32O483pJKM3" role="3bR37C">
-        <node concept="3bR9La" id="32O483pJKM4" role="1SiIV1">
-          <ref role="3bR37D" node="5Xjjs0Nf2r4" resolve="org.mpsqa.build" />
-        </node>
-      </node>
     </node>
     <node concept="1E1JtA" id="32O483pJKIF" role="3989C9">
       <property role="BnDLt" value="true" />
@@ -676,6 +671,11 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="1SiIV0" id="5tfsHJYwKKe" role="3bR37C">
+        <node concept="3bR9La" id="5tfsHJYwKKf" role="1SiIV1">
+          <ref role="3bR37D" node="32O483pJKIF" resolve="org.mpsqa.base.build" />
         </node>
       </node>
     </node>
