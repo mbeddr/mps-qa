@@ -407,6 +407,31 @@
       </node>
       <node concept="2iRkQZ" id="6MUZd5Uj9wc" role="2iSdaV" />
     </node>
+    <node concept="3EZMnI" id="33N0Tlz1QsK" role="6VMZX">
+      <node concept="2iRkQZ" id="33N0Tlz1QsL" role="2iSdaV" />
+      <node concept="3F0ifn" id="33N0Tlz1QuX" role="3EZMnx">
+        <property role="3F0ifm" value="If 'report error when not all project modules are considered' is set 'true', then" />
+        <node concept="VechU" id="33N0Tlz1Qv4" role="3F10Kt">
+          <property role="Vb096" value="fLJRk5_/gray" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="33N0Tlz1Qv2" role="3EZMnx">
+        <property role="3F0ifm" value="you can specify which modules can be ignored (e.g. sandbox, examples, tests, ...)" />
+        <node concept="VechU" id="33N0Tlz1Qv5" role="3F10Kt">
+          <property role="Vb096" value="fLJRk5_/gray" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="33N0Tlz1QuA" role="3EZMnx">
+        <node concept="3XFhqQ" id="33N0Tlz1QuO" role="3EZMnx" />
+        <node concept="2iRfu4" id="33N0Tlz1QuB" role="2iSdaV" />
+        <node concept="3F0ifn" id="33N0Tlz1QuG" role="3EZMnx">
+          <property role="3F0ifm" value="regex:" />
+        </node>
+        <node concept="3F0A7n" id="33N0Tlz1QuI" role="3EZMnx">
+          <ref role="1NtTu8" to="ryx8:33N0Tlz1Pl9" resolve="regexForModulesNamesToWhitelist" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="24kQdi" id="6MUZd5Uj9wo">
     <property role="3GE5qa" value="dependencies" />
