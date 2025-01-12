@@ -9,6 +9,7 @@
   <registry>
     <language id="6c101563-ba1f-458d-b298-a75634941e0c" name="org.mpsqa.arch">
       <concept id="7834852478394622225" name="org.mpsqa.arch.structure.ModuleComponent" flags="ng" index="mXxR0">
+        <property id="276423752594287931" name="shortName" index="Z2I3b" />
         <child id="7834852478394622226" name="module" index="mXxR3" />
         <child id="276423752594450974" name="excludeModels" index="Z2mvI" />
         <child id="1681028404306313079" name="dependsOn" index="1Rkc$q" />
@@ -64,6 +65,7 @@
     <node concept="mXAGQ" id="6MUZd5Uje4f" role="mXAGU">
       <property role="TrG5h" value="base" />
       <node concept="mXxR0" id="6MUZd5Ujhmc" role="mXAiC">
+        <property role="Z2I3b" value="arch" />
         <node concept="37shsh" id="6MUZd5UjGNH" role="mXxR3">
           <node concept="1dCxOk" id="6MUZd5UjGNP" role="37shsm">
             <property role="1XweGW" value="6c101563-ba1f-458d-b298-a75634941e0c" />
@@ -73,7 +75,7 @@
         <node concept="mXA1B" id="7qAQSsiFxd" role="1Rkc$q">
           <node concept="mXAj4" id="1XeVdf85oR_" role="mXvOw">
             <property role="3EQNYR" value="Te1zv$_mMP/MODEL_LOCK" />
-            <ref role="mXAj7" node="7qAQSsiFxK" resolve="JDK" />
+            <ref role="mXAj7" node="7qAQSsiFxK" resolve="jdk" />
             <node concept="3EQPYP" id="Te1zv$J9wR" role="3EQPAp">
               <property role="3EQPQW" value="model: 'java.lang' from module: 'JDK'" />
             </node>
@@ -101,7 +103,7 @@
       <property role="TrG5h" value="first_layer" />
       <node concept="mXA1B" id="1XeVdf8advS" role="mXAiC">
         <node concept="mXAj4" id="1XeVdf8adw2" role="mXvOw">
-          <ref role="mXAj7" node="7qAQSsiFxK" resolve="JDK" />
+          <ref role="mXAj7" node="7qAQSsiFxK" resolve="jdk" />
         </node>
       </node>
       <node concept="mXxR0" id="1tkdAPw1fXp" role="mXAiC">
@@ -128,6 +130,7 @@
     <node concept="mXAGQ" id="7qAQSsiFxw" role="mXAGU">
       <property role="TrG5h" value="java_sdk" />
       <node concept="mXxR0" id="7qAQSsiFxK" role="mXAiC">
+        <property role="Z2I3b" value="jdk" />
         <node concept="37shsh" id="7qAQSsiFxM" role="mXxR3">
           <node concept="1dCxOk" id="7qAQSsiFxT" role="37shsm">
             <property role="1XweGW" value="6354ebe7-c22a-4a0f-ac54-50b52ab9b065" />
