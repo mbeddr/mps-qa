@@ -76,14 +76,17 @@
           <node concept="mXAj4" id="1XeVdf85oR_" role="mXvOw">
             <property role="3EQNYR" value="Te1zv$_mMP/MODEL_LOCK" />
             <ref role="mXAj7" node="7qAQSsiFxK" resolve="jdk" />
-            <node concept="3EQPYP" id="Te1zv$J9wR" role="3EQPAp">
+            <node concept="3EQPYP" id="51YlqUeSgQb" role="3EQPAp">
               <property role="3EQPQW" value="model: 'java.lang' from module: 'JDK'" />
             </node>
-            <node concept="3EQPYP" id="Te1zv$J9wS" role="3EQPAp">
-              <property role="3EQPQW" value="model: 'java.awt' from module: 'JDK'" />
-            </node>
-            <node concept="3EQPYP" id="Te1zv$J9wT" role="3EQPAp">
+            <node concept="3EQPYP" id="51YlqUeSgQc" role="3EQPAp">
               <property role="3EQPQW" value="model: 'java.util' from module: 'JDK'" />
+            </node>
+            <node concept="3EQPYP" id="51YlqUeSgQd" role="3EQPAp">
+              <property role="3EQPQW" value="model: 'javax.swing' from module: 'JDK'" />
+            </node>
+            <node concept="3EQPYP" id="51YlqUeSgQe" role="3EQPAp">
+              <property role="3EQPQW" value="model: 'java.awt' from module: 'JDK'" />
             </node>
           </node>
         </node>
