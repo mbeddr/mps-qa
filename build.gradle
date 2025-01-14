@@ -324,8 +324,12 @@ ext.allProjectDirectoriesInDependencyOrder = [
         'org.mpsqa.testing',
         'org.mpsqa.unused'
 ].collect { file("code/languages/$it") }
-ext.mpsPluginRoots = ['mps-build', 'mps-console', 'mps-trove', 'mps-modelchecker', 'mps-testing']
-        .collect { new File(mpsHomeDir, "plugins/$it") }
+ext.mpsPluginRoots = new File(mpsHomeDir, "plugins").listFiles(
+                        new FileFilter() {
+                            public boolean accept(File file) {
+                                return file.isDirectory();
+                            }
+                        })
 ext.jbrJavaLauncher = tasks.named('downloadJbr', DownloadJbrForPlatform).flatMap { it.javaLauncher }
 
 tasks.register('migrate', MpsMigrate) {
