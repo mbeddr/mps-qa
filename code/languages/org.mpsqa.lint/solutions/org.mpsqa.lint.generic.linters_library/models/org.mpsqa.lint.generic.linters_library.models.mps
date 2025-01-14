@@ -2332,13 +2332,8 @@
                   <ref role="3cqZAo" node="4mUq39Z4Lk2" resolve="res" />
                 </node>
                 <node concept="TSZUe" id="4mUq39Z4LmD" role="2OqNvi">
-                  <node concept="3cpWs3" id="4mUq39Z4LmE" role="25WWJ7">
-                    <node concept="37vLTw" id="4mUq39Z4LmF" role="3uHU7w">
-                      <ref role="3cqZAo" node="4mUq39Z4Lmt" resolve="numberOfNodes" />
-                    </node>
-                    <node concept="Xl_RD" id="4mUq39Z4LmP" role="3uHU7B">
-                      <property role="Xl_RC" value="Model has too many nodes:" />
-                    </node>
+                  <node concept="Xl_RD" id="4mUq39Z4LmP" role="25WWJ7">
+                    <property role="Xl_RC" value="Model has too many nodes." />
                   </node>
                 </node>
               </node>
@@ -2560,13 +2555,8 @@
                   <ref role="3cqZAo" node="4mUq39Z4IfR" resolve="res" />
                 </node>
                 <node concept="TSZUe" id="7Q9umlgca5y" role="2OqNvi">
-                  <node concept="3cpWs3" id="63CQ8uYw_Kk" role="25WWJ7">
-                    <node concept="Xl_RD" id="6HhjmNPBqpD" role="3uHU7B">
-                      <property role="Xl_RC" value="Model has too many nodes: " />
-                    </node>
-                    <node concept="37vLTw" id="63CQ8uYwA1h" role="3uHU7w">
-                      <ref role="3cqZAo" node="6CE1TgLsRWu" resolve="numberOfNodes" />
-                    </node>
+                  <node concept="Xl_RD" id="6HhjmNPBqpD" role="25WWJ7">
+                    <property role="Xl_RC" value="Model has too many nodes." />
                   </node>
                 </node>
               </node>
