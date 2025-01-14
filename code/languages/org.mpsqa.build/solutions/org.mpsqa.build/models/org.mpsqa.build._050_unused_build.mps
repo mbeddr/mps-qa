@@ -4,11 +4,11 @@
   <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="7" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="8" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
-    <import index="2tou" ref="r:18bebd8f-6332-4ffd-b628-cc9dad4ef421(org.mpsqa.build._010_base_build)" />
+    <import index="2tou" ref="r:18bebd8f-6332-4ffd-b628-cc9dad4ef421(org.mpsqa.base.build)" />
   </imports>
   <registry>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
@@ -107,16 +107,13 @@
       <concept id="763829979718664966" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleResources" flags="ng" index="3rtmxn">
         <child id="763829979718664967" name="files" index="3rtmxm" />
       </concept>
-      <concept id="5507251971038816436" name="jetbrains.mps.build.mps.structure.BuildMps_Generator" flags="ng" index="1yeLz9" />
       <concept id="4278635856200817744" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleModelRoot" flags="ng" index="1BupzO">
         <property id="8137134783396907368" name="convert2binary" index="1Hdu6h" />
         <property id="8137134783396676838" name="extracted" index="1HemKv" />
         <property id="2889113830911481881" name="deployFolderName" index="3ZfqAx" />
         <child id="8137134783396676835" name="location" index="1HemKq" />
       </concept>
-      <concept id="3189788309731840248" name="jetbrains.mps.build.mps.structure.BuildMps_Language" flags="ng" index="1E1JtD">
-        <child id="9200313594498201639" name="generator" index="1TViLv" />
-      </concept>
+      <concept id="3189788309731840248" name="jetbrains.mps.build.mps.structure.BuildMps_Language" flags="ng" index="1E1JtD" />
       <concept id="322010710375871467" name="jetbrains.mps.build.mps.structure.BuildMps_AbstractModule" flags="ng" index="3LEN3z">
         <property id="8369506495128725901" name="compact" index="BnDLt" />
         <property id="322010710375892619" name="uuid" index="3LESm3" />
@@ -297,35 +294,6 @@
             </node>
             <node concept="3qWCbU" id="1YSnQiVh0Bk" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-            </node>
-          </node>
-        </node>
-        <node concept="1yeLz9" id="1YSnQiVh0Bl" role="1TViLv">
-          <property role="TrG5h" value="org.mpsqa.lancov.generator" />
-          <property role="3LESm3" value="0b965dd1-84fc-451d-93bc-29a36894708a" />
-          <node concept="1BupzO" id="1YSnQiVh0Bz" role="3bR31x">
-            <property role="3ZfqAx" value="generator/templates" />
-            <property role="1Hdu6h" value="true" />
-            <property role="1HemKv" value="true" />
-            <node concept="3LXTmp" id="1YSnQiVh0B$" role="1HemKq">
-              <node concept="398BVA" id="1YSnQiVh0Bm" role="3LXTmr">
-                <ref role="398BVh" node="1YSnQiVh0x7" resolve="mpsqa.unused.home" />
-                <node concept="2Ry0Ak" id="1YSnQiVh0Bn" role="iGT6I">
-                  <property role="2Ry0Am" value="languages" />
-                  <node concept="2Ry0Ak" id="1YSnQiVh0Bo" role="2Ry0An">
-                    <property role="2Ry0Am" value="org.mpsqa.lancov" />
-                    <node concept="2Ry0Ak" id="1YSnQiVh0Bp" role="2Ry0An">
-                      <property role="2Ry0Am" value="generator" />
-                      <node concept="2Ry0Ak" id="1YSnQiVh0Bq" role="2Ry0An">
-                        <property role="2Ry0Am" value="templates" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3qWCbU" id="1YSnQiVh0B_" role="3LXTna">
-                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-              </node>
             </node>
           </node>
         </node>

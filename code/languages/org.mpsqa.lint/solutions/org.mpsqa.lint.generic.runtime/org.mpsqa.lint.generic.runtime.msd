@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="org.mpsqa.lint.generic.runtime" uuid="b15468d9-435b-45b2-bf51-3f984f734cc4" moduleVersion="0">
   <models>
-    <modelRoot type="default" contentPath="${module}">
+    <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
   </models>
   <facets>
-    <facet compile="mps" classes="mps" ext="no" type="java">
+    <facet type="java" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>

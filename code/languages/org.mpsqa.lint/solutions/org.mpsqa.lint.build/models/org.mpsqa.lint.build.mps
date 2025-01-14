@@ -2,7 +2,7 @@
 <model ref="r:f44fe2b3-781b-4c2a-8a73-8a395c3251d8(org.mpsqa.lint.build)">
   <persistence version="9" />
   <languages>
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="7" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="8" />
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
     <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="1" />
   </languages>
@@ -127,21 +127,6 @@
     </node>
     <node concept="2sgV4H" id="3C011mxaO2f" role="1l3spa">
       <ref role="1l3spb" to="390y:3dqUbgQmcyp" resolve="org.mpsqa.lint" />
-    </node>
-    <node concept="2sgV4H" id="5tfsHJYw2SA" role="1l3spa">
-      <ref role="1l3spb" to="2tou:7C9PHv6FBIG" resolve="org.mpsqa.base" />
-      <node concept="398BVA" id="5tfsHJYy3LA" role="2JcizS">
-        <ref role="398BVh" node="1GhTetdB0nZ" resolve="mpsqa.home" />
-        <node concept="2Ry0Ak" id="5tfsHJYy3LE" role="iGT6I">
-          <property role="2Ry0Am" value="build" />
-          <node concept="2Ry0Ak" id="5tfsHJYy3LH" role="2Ry0An">
-            <property role="2Ry0Am" value="artifacts" />
-            <node concept="2Ry0Ak" id="5tfsHJYy3LK" role="2Ry0An">
-              <property role="2Ry0Am" value="org.mpsqa.base" />
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="398rNT" id="1GhTetdB0nZ" role="1l3spd">
       <property role="TrG5h" value="mpsqa.home" />
@@ -279,6 +264,21 @@
         <node concept="NbPM2" id="4jd8IzHDwG3" role="24c_eh">
           <node concept="3Mxwew" id="4jd8IzHDwG2" role="3MwsjC">
             <property role="3MwjfP" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2sgV4H" id="5tfsHJYw2SA" role="1l3spa">
+      <ref role="1l3spb" to="2tou:7C9PHv6FBIG" resolve="org.mpsqa.base" />
+      <node concept="398BVA" id="5tfsHJYy3LA" role="2JcizS">
+        <ref role="398BVh" node="1GhTetdB0nZ" resolve="mpsqa.home" />
+        <node concept="2Ry0Ak" id="5tfsHJYy3LE" role="iGT6I">
+          <property role="2Ry0Am" value="build" />
+          <node concept="2Ry0Ak" id="5tfsHJYy3LH" role="2Ry0An">
+            <property role="2Ry0Am" value="artifacts" />
+            <node concept="2Ry0Ak" id="5tfsHJYy3LK" role="2Ry0An">
+              <property role="2Ry0Am" value="org.mpsqa.base" />
+            </node>
           </node>
         </node>
       </node>

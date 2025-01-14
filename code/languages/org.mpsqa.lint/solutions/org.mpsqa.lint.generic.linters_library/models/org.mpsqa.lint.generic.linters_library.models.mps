@@ -212,7 +212,7 @@
       <concept id="7741759128795038157" name="org.mpsqa.lint.generic.structure.CheckableScriptParameter" flags="ng" index="2j1K4_">
         <child id="7741759128795045740" name="type" index="2j1LY4" />
       </concept>
-      <concept id="7741759128795045742" name="org.mpsqa.lint.generic.structure.IScriptsParametersAware" flags="ngI" index="2j1LY6">
+      <concept id="7741759128795045742" name="org.mpsqa.lint.generic.structure.IScriptsParametersAware" flags="ng" index="2j1LY6">
         <child id="7741759128795065655" name="parValues" index="2j1YRv" />
       </concept>
       <concept id="7741759128795045754" name="org.mpsqa.lint.generic.structure.CheckableScriptParameterRef" flags="ng" index="2j1LYi">
@@ -225,15 +225,15 @@
       <concept id="7679435328618353697" name="org.mpsqa.lint.generic.structure.FormatException" flags="ng" index="vsK6v">
         <child id="7679435328618377120" name="exception" index="vsfCu" />
       </concept>
-      <concept id="5024442900372562022" name="org.mpsqa.lint.generic.structure.ModelCheckingFunction" flags="ig" index="ViGxk" />
-      <concept id="5024442900372562777" name="org.mpsqa.lint.generic.structure.ConceptFunctionParameter_Model" flags="nn" index="ViGHF" />
-      <concept id="7223240310078271419" name="org.mpsqa.lint.generic.structure.ILinterResultsContainer" flags="ngI" index="3dgnlL">
+      <concept id="5024442900372562022" name="org.mpsqa.lint.generic.structure.ModelCheckingFunction" flags="ng" index="ViGxk" />
+      <concept id="5024442900372562777" name="org.mpsqa.lint.generic.structure.ConceptFunctionParameter_Model" flags="ng" index="ViGHF" />
+      <concept id="7223240310078271419" name="org.mpsqa.lint.generic.structure.ILinterResultsContainer" flags="ng" index="3dgnlL">
         <child id="7223240310078271420" name="violations" index="3dgnlQ" />
       </concept>
       <concept id="7223240310078271416" name="org.mpsqa.lint.generic.structure.ResultEntry" flags="ng" index="3dgnlM">
         <property id="7223240310078271417" name="result" index="3dgnlN" />
       </concept>
-      <concept id="7008376823202027689" name="org.mpsqa.lint.generic.structure.ICanSkipCheckerEvaluation" flags="ngI" index="3miP$Z">
+      <concept id="7008376823202027689" name="org.mpsqa.lint.generic.structure.ICanSkipCheckerEvaluation" flags="ng" index="3miP$Z">
         <property id="7008376823202030902" name="skipEvaluation" index="3miQiw" />
       </concept>
       <concept id="2555875871752198907" name="org.mpsqa.lint.generic.structure.ConceptFunctionParameter_MPSProject" flags="ng" index="1MG55F" />
@@ -243,7 +243,7 @@
         <child id="1716492013482699988" name="check" index="14J5yK" />
         <child id="2555875871751847640" name="documentation" index="1MIJl8" />
       </concept>
-      <concept id="2555875871751904530" name="org.mpsqa.lint.generic.structure.GenericCheckingFunction" flags="ig" index="1MIXq2" />
+      <concept id="2555875871751904530" name="org.mpsqa.lint.generic.structure.GenericCheckingFunction" flags="ng" index="1MIXq2" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
@@ -1935,14 +1935,22 @@
                   </node>
                 </node>
               </node>
-              <node concept="2OqwBi" id="61xqYhG0qcw" role="3clFbw">
-                <node concept="37vLTw" id="61xqYhG0p5A" role="2Oq$k0">
-                  <ref role="3cqZAo" node="61xqYhG0bpV" resolve="secondLine" />
+              <node concept="1Wc70l" id="3YxxzAVn9WC" role="3clFbw">
+                <node concept="3y3z36" id="3YxxzAVncxU" role="3uHU7B">
+                  <node concept="10Nm6u" id="3YxxzAVndRe" role="3uHU7w" />
+                  <node concept="37vLTw" id="3YxxzAVnaWN" role="3uHU7B">
+                    <ref role="3cqZAo" node="61xqYhG0bpV" resolve="secondLine" />
+                  </node>
                 </node>
-                <node concept="liA8E" id="61xqYhG0rAh" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String)" resolve="startsWith" />
-                  <node concept="Xl_RD" id="61xqYhG0slq" role="37wK5m">
-                    <property role="Xl_RC" value="&lt;model ref=" />
+                <node concept="2OqwBi" id="61xqYhG0qcw" role="3uHU7w">
+                  <node concept="37vLTw" id="61xqYhG0p5A" role="2Oq$k0">
+                    <ref role="3cqZAo" node="61xqYhG0bpV" resolve="secondLine" />
+                  </node>
+                  <node concept="liA8E" id="61xqYhG0rAh" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String)" resolve="startsWith" />
+                    <node concept="Xl_RD" id="61xqYhG0slq" role="37wK5m">
+                      <property role="Xl_RC" value="&lt;model ref=" />
+                    </node>
                   </node>
                 </node>
               </node>

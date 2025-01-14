@@ -4,7 +4,7 @@
   <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="7" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="8" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
@@ -243,9 +243,6 @@
           <property role="3MwjfP" value="org.mpsqa.arch" />
         </node>
       </node>
-      <node concept="m$_yC" id="2VR19mpiUGU" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:5lGJ4TajoV9" resolve="jetbrains.mps.ide.migration.workbench" />
-      </node>
     </node>
     <node concept="2G$12M" id="50Wzfz4shz9" role="3989C9">
       <property role="TrG5h" value="org.mpsqa.arch" />
@@ -440,11 +437,6 @@
                 </node>
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="2VR19mpiUB5" role="3bR37C">
-          <node concept="3bR9La" id="2VR19mpiUB6" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:2eDSGe9d1q1" resolve="MPS.Workbench" />
           </node>
         </node>
       </node>

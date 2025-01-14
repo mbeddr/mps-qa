@@ -2,7 +2,7 @@
 <model ref="r:7cf4c5c6-be6b-461a-9752-5a87d0b55129(org.mpsqa.build._080_lint_build)">
   <persistence version="9" />
   <languages>
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="7" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="8" />
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
   </languages>
   <imports>
@@ -206,9 +206,6 @@
     </node>
     <node concept="m$_wf" id="3dqUbgQmcyy" role="3989C9">
       <property role="m$_wk" value="org.mpsqa.lint" />
-      <node concept="m$_yC" id="7HJqs_aPN6i" role="m$_yJ">
-        <ref role="m$_y1" to="2tou:7C9PHv6FBIO" resolve="org.mpsqa.base" />
-      </node>
       <node concept="3_J27D" id="3dqUbgQmcyF" role="m$_yQ">
         <node concept="3Mxwew" id="3dqUbgQmcyS" role="3MwsjC">
           <property role="3MwjfP" value="org.mpsqa.lint" />
@@ -221,6 +218,9 @@
       </node>
       <node concept="m$f5U" id="3dqUbgQmcyH" role="m$_yh">
         <ref role="m$f5T" node="3dqUbgQmcyz" resolve="org.mpsqa.lint" />
+      </node>
+      <node concept="m$_yC" id="7HJqs_aPN6i" role="m$_yJ">
+        <ref role="m$_y1" to="2tou:7C9PHv6FBIO" resolve="org.mpsqa.base" />
       </node>
       <node concept="m$_yC" id="3dqUbgQmcyI" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />

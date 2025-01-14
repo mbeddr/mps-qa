@@ -9,6 +9,7 @@
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
@@ -211,6 +212,9 @@
       <concept id="1200397529627" name="jetbrains.mps.baseLanguage.structure.CharConstant" flags="nn" index="1Xhbcc">
         <property id="1200397540847" name="charConstant" index="1XhdNS" />
       </concept>
+    </language>
+    <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
+      <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
@@ -972,7 +976,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="2KsA7NZhWxl" role="3cqZAp" />
         <node concept="3cpWs6" id="2KsA7NZhWNX" role="3cqZAp">
           <node concept="2OqwBi" id="2KsA7NZhX69" role="3cqZAk">
             <node concept="37vLTw" id="2KsA7NZhX4q" role="2Oq$k0">
@@ -980,7 +983,7 @@
             </node>
             <node concept="liA8E" id="2KsA7NZhXx6" role="2OqNvi">
               <ref role="37wK5l" to="wyt6:~String.substring(int)" resolve="substring" />
-              <node concept="2OqwBi" id="2KsA7NZhY3F" role="37wK5m">
+              <node concept="2EnYce" id="3YxxzAVhfai" role="37wK5m">
                 <node concept="37vLTw" id="2KsA7NZhXUo" role="2Oq$k0">
                   <ref role="3cqZAo" node="2KsA7NZhOP_" resolve="prefix" />
                 </node>
