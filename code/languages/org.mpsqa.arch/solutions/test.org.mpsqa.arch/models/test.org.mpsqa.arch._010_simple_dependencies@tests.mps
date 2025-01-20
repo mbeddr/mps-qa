@@ -15,6 +15,9 @@
       <concept id="1215507671101" name="jetbrains.mps.lang.test.structure.NodeErrorCheckOperation" flags="ng" index="1TM$A">
         <child id="8489045168660938517" name="errorRef" index="3lydEf" />
       </concept>
+      <concept id="1215511704609" name="jetbrains.mps.lang.test.structure.NodeWarningCheckOperation" flags="ng" index="29bkU">
+        <child id="8489045168660938635" name="warningRef" index="3lydCh" />
+      </concept>
       <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
       </concept>
@@ -24,6 +27,7 @@
       <concept id="7691029917083872157" name="jetbrains.mps.lang.test.structure.IRuleReference" flags="ngI" index="2u4UPC">
         <reference id="8333855927540250453" name="declaration" index="39XzEq" />
       </concept>
+      <concept id="4531408400486526326" name="jetbrains.mps.lang.test.structure.WarningStatementReference" flags="ng" index="2PQEqo" />
       <concept id="4531408400484511853" name="jetbrains.mps.lang.test.structure.ReportErrorStatementReference" flags="ng" index="2PYRI3" />
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
@@ -595,6 +599,45 @@
         <node concept="Z9REq" id="yxqw$qurD8" role="mXAGU" />
         <node concept="7CXmI" id="yxqw$qurD9" role="lGtFl">
           <node concept="7OXhh" id="yxqw$qurDa" role="7EUXB">
+            <property role="GvXf4" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="2pcEbw5$Nd_">
+    <property role="TrG5h" value="_040_redundant_dependencies_tests" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
+    <node concept="1qefOq" id="2pcEbw5$Net" role="1SKRRt">
+      <node concept="mXAGR" id="2pcEbw5$Neu" role="1qenE9">
+        <property role="TrG5h" value="redundant_dependencies" />
+        <node concept="mXAGQ" id="2pcEbw5$Nev" role="mXAGU">
+          <property role="TrG5h" value="parent_component" />
+          <node concept="mXAGQ" id="2pcEbw5$NfD" role="mXAiC">
+            <property role="TrG5h" value="child_component" />
+          </node>
+        </node>
+        <node concept="Z9REq" id="2pcEbw5$Ne_" role="mXAGU" />
+        <node concept="mXAGQ" id="2pcEbw5$NeA" role="mXAGU">
+          <property role="TrG5h" value="another_component" />
+          <node concept="mXA1B" id="2pcEbw5$NfG" role="mXAiC">
+            <node concept="mXAj4" id="2pcEbw5$NfI" role="mXvOw">
+              <ref role="mXAj7" node="2pcEbw5$Nev" resolve="parent_component" />
+            </node>
+            <node concept="mXAj4" id="2pcEbw5$NfJ" role="mXvOw">
+              <ref role="mXAj7" node="2pcEbw5$NfD" resolve="child_component" />
+              <node concept="7CXmI" id="2pcEbw5CtTQ" role="lGtFl">
+                <node concept="29bkU" id="2pcEbw5CtTR" role="7EUXB">
+                  <node concept="2PQEqo" id="2pcEbw5CtTS" role="3lydCh">
+                    <ref role="39XzEq" to="r5ch:2pcEbw5AUjb" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="7CXmI" id="2pcEbw5$NeE" role="lGtFl">
+          <node concept="7OXhh" id="2pcEbw5$NeF" role="7EUXB">
             <property role="GvXf4" value="true" />
           </node>
         </node>
