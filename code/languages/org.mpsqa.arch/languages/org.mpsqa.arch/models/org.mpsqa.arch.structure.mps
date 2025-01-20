@@ -152,6 +152,9 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="Te1zv$_lA2" resolve="SingleComponentDependencyWhitelistEntry" />
     </node>
+    <node concept="PrWs8" id="5gfdDUfRu3S" role="PzmwI">
+      <ref role="PrY4T" node="5gfdDUfN3cO" resolve="ICommentable" />
+    </node>
   </node>
   <node concept="PlHQZ" id="6MUZd5Uj9MP">
     <property role="EcuMT" value="7834852478394604725" />

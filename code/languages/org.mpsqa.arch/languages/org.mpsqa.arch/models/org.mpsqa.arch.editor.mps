@@ -709,6 +709,9 @@
       </node>
     </node>
     <node concept="3EZMnI" id="Te1zv$_m_4" role="6VMZX">
+      <node concept="PMmxH" id="5gfdDUfSb_n" role="3EZMnx">
+        <ref role="PMmxG" node="2p0G1uTtlry" resolve="CommentEditorComponent" />
+      </node>
       <node concept="3F0ifn" id="Te1zv$_pgh" role="3EZMnx">
         <property role="3F0ifm" value="// module/model/node-lock: does not allow other modules/models/nodes as dependency besides those saved in the whitelist" />
         <node concept="VechU" id="Te1zv$Huvl" role="3F10Kt">
