@@ -1550,7 +1550,7 @@
   </node>
   <node concept="PKFIW" id="2p0G1uTtlry">
     <property role="TrG5h" value="CommentEditorComponent" />
-    <ref role="1XX52x" to="ryx8:6MUZd5UjGNW" resolve="IComponentLike" />
+    <ref role="1XX52x" to="ryx8:5gfdDUfN3cO" resolve="ICommentable" />
     <node concept="3EZMnI" id="2p0G1uTtk0V" role="2wV5jI">
       <node concept="VPM3Z" id="2p0G1uTtk0X" role="3F10Kt" />
       <node concept="3F0ifn" id="2p0G1uTtk0Z" role="3EZMnx">
@@ -1568,7 +1568,7 @@
                     <node concept="2OqwBi" id="2p0G1uTu2n9" role="2Oq$k0">
                       <node concept="pncrf" id="2p0G1uTu298" role="2Oq$k0" />
                       <node concept="3TrEf2" id="2p0G1uTu2$6" role="2OqNvi">
-                        <ref role="3Tt5mk" to="ryx8:2p0G1uTtfqN" resolve="comment" />
+                        <ref role="3Tt5mk" to="ryx8:5gfdDUfN4cw" resolve="comment" />
                       </node>
                     </node>
                     <node concept="3Tsc0h" id="2p0G1uTullj" role="2OqNvi">
@@ -1651,7 +1651,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="2p0G1uTtk4N" role="3EZMnx">
-        <ref role="1NtTu8" to="ryx8:2p0G1uTtfqN" resolve="comment" />
+        <ref role="1NtTu8" to="ryx8:5gfdDUfN4cw" resolve="comment" />
       </node>
       <node concept="3F0ifn" id="2p0G1uTtk50" role="3EZMnx">
         <property role="3F0ifm" value=";" />
@@ -1664,7 +1664,7 @@
               <node concept="2OqwBi" id="2p0G1uTtklO" role="2Oq$k0">
                 <node concept="pncrf" id="2p0G1uTtk5x" role="2Oq$k0" />
                 <node concept="3TrEf2" id="2p0G1uTtkCc" role="2OqNvi">
-                  <ref role="3Tt5mk" to="ryx8:2p0G1uTtfqN" resolve="comment" />
+                  <ref role="3Tt5mk" to="ryx8:5gfdDUfN4cw" resolve="comment" />
                 </node>
               </node>
               <node concept="3x8VRR" id="2p0G1uTtlco" role="2OqNvi" />
