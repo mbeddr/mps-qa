@@ -19,6 +19,9 @@
       <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
         <child id="3348158742936976577" name="members" index="25R1y" />
       </concept>
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
+        <property id="1225118933224" name="comment" index="YLQ7P" />
+      </concept>
       <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
         <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
       </concept>
@@ -55,6 +58,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -148,6 +152,9 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="Te1zv$_lA2" resolve="SingleComponentDependencyWhitelistEntry" />
     </node>
+    <node concept="PrWs8" id="5gfdDUfRu3S" role="PzmwI">
+      <ref role="PrY4T" node="5gfdDUfN3cO" resolve="ICommentable" />
+    </node>
   </node>
   <node concept="PlHQZ" id="6MUZd5Uj9MP">
     <property role="EcuMT" value="7834852478394604725" />
@@ -219,11 +226,17 @@
     <node concept="1TJgyj" id="2p0G1uTtfqN" role="1TKVEi">
       <property role="IQ2ns" value="2756396587892930227" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="comment" />
+      <property role="20kJfa" value="comment_old" />
       <ref role="20lvS9" to="zqge:2cLqkTm6vgh" resolve="Text" />
+      <node concept="asaX9" id="5gfdDUfN4cF" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;org.mpsqa.arch.structure.ICommentable&quot;" />
+      </node>
     </node>
     <node concept="PrWs8" id="6MUZd5UjGNX" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="5gfdDUfN3cP" role="PrDN$">
+      <ref role="PrY4T" node="5gfdDUfN3cO" resolve="ICommentable" />
     </node>
   </node>
   <node concept="1TIwiD" id="fm3v0WWntE">
@@ -276,6 +289,16 @@
     <property role="34LRSv" value="forbidden dependency" />
     <property role="R4oN_" value="a dependency which is forbidden" />
     <ref role="1TJDcQ" node="6MUZd5Uj9MQ" resolve="ComponentDependency" />
+  </node>
+  <node concept="PlHQZ" id="5gfdDUfN3cO">
+    <property role="EcuMT" value="6057120078481863476" />
+    <property role="TrG5h" value="ICommentable" />
+    <node concept="1TJgyj" id="5gfdDUfN4cw" role="1TKVEi">
+      <property role="IQ2ns" value="6057120078481867552" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="comment" />
+      <ref role="20lvS9" to="zqge:2cLqkTm6vgh" resolve="Text" />
+    </node>
   </node>
 </model>
 
