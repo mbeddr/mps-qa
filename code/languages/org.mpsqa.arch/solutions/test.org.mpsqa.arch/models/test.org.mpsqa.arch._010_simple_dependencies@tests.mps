@@ -11,6 +11,7 @@
   <imports>
     <import index="r5ch" ref="r:c30313a6-218d-4231-aea1-b60fe13b1149(org.mpsqa.arch.typesystem)" />
     <import index="ddnr" ref="r:a408262b-b236-4e39-aad0-05bb28f3fdce(org.mpsqa.arch.intentions)" />
+    <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="lm2w" ref="r:f5e4041f-398d-420c-a501-c76be3c82f70(org.mpsqa.arch.behavior)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
     <import index="ryx8" ref="r:d0c25d1d-f21e-42b4-b319-5eef0584d5ca(org.mpsqa.arch.structure)" implicit="true" />
@@ -70,6 +71,7 @@
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -94,6 +96,7 @@
       </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
+        <child id="1109201940907" name="parameter" index="11_B2D" />
       </concept>
     </language>
     <language id="6c101563-ba1f-458d-b298-a75634941e0c" name="org.mpsqa.arch">
@@ -144,14 +147,14 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
-      <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
-        <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
-      </concept>
       <concept id="1678062499342629858" name="jetbrains.mps.lang.smodel.structure.ModuleRefExpression" flags="ng" index="37shsh">
         <child id="1678062499342629861" name="moduleId" index="37shsm" />
       </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
         <property id="1238684351431" name="asCast" index="1BlNFB" />
+      </concept>
+      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
+        <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
@@ -166,6 +169,9 @@
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
+        <child id="1151688676805" name="elementType" index="_ZDj9" />
+      </concept>
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1197683403723" name="jetbrains.mps.baseLanguage.collections.structure.MapType" flags="in" index="3rvAFt">
         <child id="1197683466920" name="keyType" index="3rvQeY" />
@@ -794,21 +800,27 @@
       <property role="TrG5h" value="test_Impact" />
       <node concept="3cqZAl" id="3Xymzzl3S0N" role="3clF45" />
       <node concept="3clFbS" id="3Xymzzl3S0O" role="3clF47">
-        <node concept="3cpWs8" id="3Xymzzl3T$1" role="3cqZAp">
-          <node concept="3cpWsn" id="3Xymzzl3T$2" role="3cpWs9">
-            <property role="TrG5h" value="computeImpact" />
-            <node concept="3rvAFt" id="3Xymzzl3Tux" role="1tU5fm">
-              <node concept="3uibUv" id="3Xymzzl3TuB" role="3rvQeY">
+        <node concept="3cpWs8" id="2QGMdxo_IDG" role="3cqZAp">
+          <node concept="3cpWsn" id="2QGMdxo_IDH" role="3cpWs9">
+            <property role="TrG5h" value="computedImpact" />
+            <node concept="3rvAFt" id="2QGMdxo_Ioi" role="1tU5fm">
+              <node concept="3uibUv" id="2QGMdxo_IoF" role="3rvQeY">
                 <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
               </node>
-              <node concept="2I9FWS" id="3Xymzzl3TuA" role="3rvSg0">
-                <ref role="2I9WkF" to="ryx8:6MUZd5Uje4h" resolve="ModuleComponent" />
+              <node concept="_YKpA" id="2QGMdxo_IoB" role="3rvSg0">
+                <node concept="3uibUv" id="2QGMdxo_IoC" role="_ZDj9">
+                  <ref role="3uigEE" to="18ew:~Pair" resolve="Pair" />
+                  <node concept="3Tqbb2" id="2QGMdxo_IoD" role="11_B2D">
+                    <ref role="ehGHo" to="ryx8:6MUZd5Uje4h" resolve="ModuleComponent" />
+                  </node>
+                  <node concept="17QB3L" id="2QGMdxo_IoE" role="11_B2D" />
+                </node>
               </node>
             </node>
-            <node concept="2YIFZM" id="3Xymzzl3T$3" role="33vP2m">
+            <node concept="2YIFZM" id="2QGMdxo_IDI" role="33vP2m">
               <ref role="37wK5l" to="ddnr:3XymzzkXuhs" resolve="computeImpact" />
               <ref role="1Pybhc" to="ddnr:3XymzzkXubF" resolve="ImpactAnalysisComputer" />
-              <node concept="3xONca" id="3Xymzzl3T$4" role="37wK5m">
+              <node concept="3xONca" id="2QGMdxo_IDJ" role="37wK5m">
                 <ref role="3xOPvv" node="3Xymzzl3SKh" resolve="impact_analysis_seed" />
               </node>
             </node>
@@ -817,7 +829,7 @@
         <node concept="3vlDli" id="3Xymzzl3S0P" role="3cqZAp">
           <node concept="2OqwBi" id="3Xymzzl3YhC" role="3tpDZA">
             <node concept="37vLTw" id="3Xymzzl3Whg" role="2Oq$k0">
-              <ref role="3cqZAo" node="3Xymzzl3T$2" resolve="computeImpact" />
+              <ref role="3cqZAo" node="2QGMdxo_IDH" resolve="computedImpact" />
             </node>
             <node concept="34oBXx" id="3Xymzzl3Zpt" role="2OqNvi" />
           </node>
