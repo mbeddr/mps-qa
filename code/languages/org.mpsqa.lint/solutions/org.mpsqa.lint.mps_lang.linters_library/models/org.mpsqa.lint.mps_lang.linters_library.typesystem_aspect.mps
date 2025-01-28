@@ -1524,7 +1524,7 @@
               </node>
               <node concept="2OqwBi" id="yjHn8dfrtP" role="2GsD0m">
                 <node concept="2GrUjf" id="yjHn8dfraa" role="2Oq$k0">
-                  <ref role="2Gs0qQ" node="7NPKLoqmM_N" resolve="m" />
+                  <ref role="2Gs0qQ" node="7NPKLoqmM_N" resolve="module" />
                 </node>
                 <node concept="liA8E" id="yjHn8dfwJK" role="2OqNvi">
                   <ref role="37wK5l" to="lui2:~SModule.getModels()" resolve="getModels" />

@@ -816,7 +816,7 @@
                 <node concept="2OqwBi" id="yjHn8jbDnf" role="37wK5m">
                   <node concept="2ShNRf" id="yjHn8jbDng" role="2Oq$k0">
                     <node concept="1pGfFk" id="yjHn8jbDnh" role="2ShVmc">
-                      <ref role="37wK5l" to="wsw7:6pnunaLnyyn" resolve="ModelsExtractorImpl" />
+                      <ref role="37wK5l" to="wsw7:6pnunaLnyyn" resolve="ModelCheckerBuilder.ModelsExtractorImpl" />
                     </node>
                   </node>
                   <node concept="liA8E" id="yjHn8jbDni" role="2OqNvi">
@@ -1852,7 +1852,7 @@
                             </node>
                             <node concept="2ShNRf" id="2xFKNLWAqAo" role="37wK5m">
                               <node concept="HV5vD" id="6o7R8__tk1j" role="2ShVmc">
-                                <ref role="HV5vE" node="6o7R8__t7c5" resolve="NoOpConsummer" />
+                                <ref role="HV5vE" node="6o7R8__t7c5" resolve="TypesystemPerformanceUtils.NoOpConsummer" />
                                 <node concept="3uibUv" id="6o7R8__t_oC" role="HU9BZ">
                                   <ref role="3uigEE" to="d6hs:~NodeReportItem" resolve="NodeReportItem" />
                                 </node>
