@@ -99,6 +99,11 @@
       <property role="TrG5h" value="regexForModulesNamesToWhitelist" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyi" id="5yQ9IyuJEHF" role="1TKVEl">
+      <property role="IQ2nx" value="6392339501636561771" />
+      <property role="TrG5h" value="collapseComponentDefinitions" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6MUZd5Uj9vB">
     <property role="EcuMT" value="7834852478394603495" />

@@ -108,6 +108,7 @@
         <property id="6240706158490734113" name="collapseByDefault" index="3EXrWe" />
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="7723470090030138869" name="foldedCellModel" index="AHCbl" />
+        <child id="6240706158490734121" name="collapseByDefaultCondition" index="3EXrW6" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
       <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
@@ -372,6 +373,20 @@
           <ref role="1NtTu8" to="ryx8:48uyNAv6UZR" resolve="considerOnlyLanguages" />
         </node>
         <node concept="2iRfu4" id="48uyNAv6Von" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="5yQ9IyuJFMr" role="3EZMnx">
+        <node concept="VPM3Z" id="5yQ9IyuJFMs" role="3F10Kt" />
+        <node concept="3XFhqQ" id="5yQ9IyuJFMt" role="3EZMnx" />
+        <node concept="3F0ifn" id="5yQ9IyuJFMu" role="3EZMnx">
+          <property role="3F0ifm" value="collapse component definitions:" />
+          <node concept="VechU" id="5yQ9IyuJFMv" role="3F10Kt">
+            <property role="Vb096" value="fLJRk5B/darkGray" />
+          </node>
+        </node>
+        <node concept="3F0A7n" id="5yQ9IyuJFMw" role="3EZMnx">
+          <ref role="1NtTu8" to="ryx8:5yQ9IyuJEHF" resolve="collapseComponentDefinitions" />
+        </node>
+        <node concept="2iRfu4" id="5yQ9IyuJFMx" role="2iSdaV" />
       </node>
       <node concept="18a60v" id="1XeVdf8kOIN" role="3EZMnx">
         <node concept="VPM3Z" id="1XeVdf8kOIP" role="3F10Kt" />
@@ -788,7 +803,6 @@
       </node>
       <node concept="3EZMnI" id="5gfdDUfJ$A2" role="3EZMnx">
         <property role="S$Qs1" value="true" />
-        <property role="3EXrWe" value="true" />
         <node concept="2iRkQZ" id="5gfdDUfJ$A3" role="2iSdaV" />
         <node concept="3EZMnI" id="6MUZd5Uj9wO" role="3EZMnx">
           <node concept="VPM3Z" id="6MUZd5Uj9wQ" role="3F10Kt" />
@@ -848,6 +862,27 @@
             <property role="3F0ifm" value="}" />
           </node>
           <node concept="2iRfu4" id="fm3v0WWu36" role="2iSdaV" />
+        </node>
+        <node concept="pkWqt" id="5yQ9IyuJCEv" role="3EXrW6">
+          <node concept="3clFbS" id="5yQ9IyuJCEw" role="2VODD2">
+            <node concept="3clFbF" id="5yQ9IyuJCSS" role="3cqZAp">
+              <node concept="2OqwBi" id="5yQ9IyuJEuF" role="3clFbG">
+                <node concept="2OqwBi" id="5yQ9IyuJDnZ" role="2Oq$k0">
+                  <node concept="pncrf" id="5yQ9IyuJCSR" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="5yQ9IyuJEb2" role="2OqNvi">
+                    <node concept="1xMEDy" id="5yQ9IyuJEb4" role="1xVPHs">
+                      <node concept="chp4Y" id="5yQ9IyuJEdB" role="ri$Ld">
+                        <ref role="cht4Q" to="ryx8:6MUZd5Uj9vA" resolve="ArchSpecification" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3TrcHB" id="5yQ9IyuLDcU" role="2OqNvi">
+                  <ref role="3TsBF5" to="ryx8:5yQ9IyuJEHF" resolve="collapseComponentDefinitions" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2iRkQZ" id="6MUZd5Uj9wK" role="2iSdaV" />
