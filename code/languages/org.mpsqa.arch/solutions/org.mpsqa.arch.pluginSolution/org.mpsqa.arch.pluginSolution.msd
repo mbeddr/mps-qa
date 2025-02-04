@@ -48,7 +48,7 @@
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
     <module reference="39983771-4e9b-401b-a1a9-1da6c777c843(MPS.ThirdParty)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
-    <module reference="6c101563-ba1f-458d-b298-a75634941e0c(org.mpsqa.arch)" version="0" />
+    <module reference="6c101563-ba1f-458d-b298-a75634941e0c(org.mpsqa.arch)" version="1" />
     <module reference="96212ac2-423f-4cfb-b211-b58d0546b6bf(org.mpsqa.arch.pluginSolution)" version="0" />
   </dependencyVersions>
 </solution>
