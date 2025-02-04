@@ -4,7 +4,7 @@ import de.itemis.mps.gradle.tasks.*
 
 plugins {
     id 'de.itemis.mps.gradle.common' version '1.28.0.+'
-    id 'download-jbr' version '1.28.0.+'
+    id 'download-jbr' version '1.29.0.+'
     id 'base'
     id 'maven-publish'
     id 'co.riiid.gradle' version '0.4.2'
