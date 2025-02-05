@@ -161,27 +161,27 @@ task build_clones_languages(type: BuildLanguages, dependsOn: [build_base_languag
     script scriptFile("build-clones-languages.xml")
 }
 
-task build_mutant_languages(type: BuildLanguages, dependsOn: []) {
+task build_mutant_languages(type: BuildLanguages, dependsOn: [build_base_languages]) {
     script scriptFile("build-mutant-languages.xml")
 }
 
-task build_unused_languages(type: BuildLanguages, dependsOn: []) {
+task build_unused_languages(type: BuildLanguages, dependsOn: [build_base_languages]) {
     script scriptFile("build-unused-languages-analysis.xml")
 }
 
-task build_arch_languages(type: BuildLanguages, dependsOn: []) {
+task build_arch_languages(type: BuildLanguages, dependsOn: [build_base_languages]) {
     script scriptFile("build-arch-analysis-languages.xml")
 }
 
-task build_deprecation_analysis_languages(type: BuildLanguages, dependsOn: []) {
+task build_deprecation_analysis_languages(type: BuildLanguages, dependsOn: [build_base_languages]) {
     script scriptFile("build-deprecated-analysis-languages.xml")
 }
 
-task build_lint_analysis_languages(type: BuildLanguages, dependsOn: []) {
+task build_lint_analysis_languages(type: BuildLanguages, dependsOn: [build_base_languages]) {
     script scriptFile("build-lint-analysis-languages.xml")
 }
 
-task build_profile_languages(type: BuildLanguages, dependsOn: []) {
+task build_profile_languages(type: BuildLanguages, dependsOn: [build_base_languages]) {
     script scriptFile("build-profile-languages.xml")
 }
 
@@ -322,7 +322,7 @@ ext.allProjectDirectoriesInDependencyOrder = [
         'org.mpsqa.testing',
         'org.mpsqa.unused'
 ].collect { file("code/languages/$it") }
-ext.mpsPluginRoots = ['mps-build', 'mps-console', 'mps-trove', 'mps-modelchecker', 'mps-testing']
+ext.mpsPluginRoots = ['mps-build', 'mps-console', 'mps-trove', 'mps-modelchecker', 'mps-tooltips', 'mps-testing']
         .collect { new File(mpsHomeDir, "plugins/$it") }
 ext.jbrJavaLauncher = tasks.named('downloadJbr', DownloadJbrForPlatform).flatMap { it.javaLauncher }
 

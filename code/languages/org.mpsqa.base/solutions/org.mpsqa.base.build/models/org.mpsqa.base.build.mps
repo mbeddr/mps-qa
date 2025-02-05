@@ -780,6 +780,21 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="7HJqs_aWd1R" role="3bR37C">
+          <node concept="3bR9La" id="7HJqs_aWd1S" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7HJqs_aWd1T" role="3bR37C">
+          <node concept="3bR9La" id="7HJqs_aWd1U" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7HJqs_aWd1V" role="3bR37C">
+          <node concept="3bR9La" id="7HJqs_aWd1W" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="55IIr" id="7C9PHv6FBIQ" role="auvoZ" />

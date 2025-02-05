@@ -9,6 +9,7 @@
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
     <import index="390y" ref="r:7cf4c5c6-be6b-461a-9752-5a87d0b55129(org.mpsqa.build._080_lint_build)" />
+    <import index="2tou" ref="r:18bebd8f-6332-4ffd-b628-cc9dad4ef421(org.mpsqa.base.build)" />
   </imports>
   <registry>
     <language id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests">
@@ -263,6 +264,21 @@
         <node concept="NbPM2" id="4jd8IzHDwG3" role="24c_eh">
           <node concept="3Mxwew" id="4jd8IzHDwG2" role="3MwsjC">
             <property role="3MwjfP" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2sgV4H" id="5tfsHJYw2SA" role="1l3spa">
+      <ref role="1l3spb" to="2tou:7C9PHv6FBIG" resolve="org.mpsqa.base" />
+      <node concept="398BVA" id="5tfsHJYy3LA" role="2JcizS">
+        <ref role="398BVh" node="1GhTetdB0nZ" resolve="mpsqa.home" />
+        <node concept="2Ry0Ak" id="5tfsHJYy3LE" role="iGT6I">
+          <property role="2Ry0Am" value="build" />
+          <node concept="2Ry0Ak" id="5tfsHJYy3LH" role="2Ry0An">
+            <property role="2Ry0Am" value="artifacts" />
+            <node concept="2Ry0Ak" id="5tfsHJYy3LK" role="2Ry0An">
+              <property role="2Ry0Am" value="org.mpsqa.base" />
+            </node>
           </node>
         </node>
       </node>

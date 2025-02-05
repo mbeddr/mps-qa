@@ -13,12 +13,10 @@
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" />
     <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
-    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
-    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="csvn" ref="r:a91e42c5-728b-4866-86c4-d97454f4aee4(jetbrains.mps.lang.behavior.behavior)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -1227,6 +1225,9 @@
           <property role="3oM_SC" value="all" />
         </node>
         <node concept="3oM_SD" id="3cj_LrgPwh8" role="1PaTwD">
+          <property role="3oM_SC" value="non-abstract" />
+        </node>
+        <node concept="3oM_SD" id="1TpxQu7gitL" role="1PaTwD">
           <property role="3oM_SC" value="sub-concepts" />
         </node>
         <node concept="3oM_SD" id="3cj_LrgVU95" role="1PaTwD">
@@ -1584,6 +1585,24 @@
                 <property role="TrG5h" value="thisBehavior" />
               </node>
               <node concept="3clFbS" id="3cj_LrgQDg7" role="2LFqv$">
+                <node concept="3clFbJ" id="1TpxQu7exEM" role="3cqZAp">
+                  <node concept="3clFbS" id="1TpxQu7exEO" role="3clFbx">
+                    <node concept="3N13vt" id="1TpxQu7eB6e" role="3cqZAp" />
+                  </node>
+                  <node concept="2OqwBi" id="1TpxQu7e_Uu" role="3clFbw">
+                    <node concept="2OqwBi" id="1TpxQu7ey4G" role="2Oq$k0">
+                      <node concept="2GrUjf" id="1TpxQu7exTe" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="3cj_LrgQDfZ" resolve="thisBehavior" />
+                      </node>
+                      <node concept="3TrEf2" id="1TpxQu7e_qg" role="2OqNvi">
+                        <ref role="3Tt5mk" to="1i04:hP3h7Gv" resolve="concept" />
+                      </node>
+                    </node>
+                    <node concept="3TrcHB" id="1TpxQu7eAOZ" role="2OqNvi">
+                      <ref role="3TsBF5" to="tpce:40UcGlRb7V2" resolve="abstract" />
+                    </node>
+                  </node>
+                </node>
                 <node concept="3cpWs8" id="3cj_LrgQOGF" role="3cqZAp">
                   <node concept="3cpWsn" id="3cj_LrgQOGG" role="3cpWs9">
                     <property role="TrG5h" value="allSuperBehaviors" />
