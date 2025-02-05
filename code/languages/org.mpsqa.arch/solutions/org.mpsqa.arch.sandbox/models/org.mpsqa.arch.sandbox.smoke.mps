@@ -2,7 +2,7 @@
 <model ref="r:c84ea1be-c5cd-4d8d-810e-3d6722f22270(org.mpsqa.arch.sandbox.smoke)">
   <persistence version="9" />
   <languages>
-    <use id="6c101563-ba1f-458d-b298-a75634941e0c" name="org.mpsqa.arch" version="0" />
+    <use id="6c101563-ba1f-458d-b298-a75634941e0c" name="org.mpsqa.arch" version="1" />
     <use id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi" version="0" />
   </languages>
   <imports />
