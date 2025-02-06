@@ -4366,7 +4366,7 @@
               <node concept="3fqX7Q" id="5ye0JLMCX9G" role="3clFbw">
                 <node concept="2OqwBi" id="5ye0JLMCX9H" role="3fr31v">
                   <node concept="37vLTw" id="5ye0JLMCX9I" role="2Oq$k0">
-                    <ref role="3cqZAo" node="5ye0JLMCX9e" resolve="usedLanguages" />
+                    <ref role="3cqZAo" node="5ye0JLMCX9e" resolve="usedDevkits" />
                   </node>
                   <node concept="liA8E" id="5ye0JLMCX9J" role="2OqNvi">
                     <ref role="37wK5l" to="33ny:~Collection.isEmpty()" resolve="isEmpty" />
@@ -4386,7 +4386,7 @@
     </node>
     <node concept="2j1LYv" id="5ye0JLMD6NU" role="2j1YRv">
       <node concept="2j1LYi" id="5ye0JLMD6NV" role="2j1YQj">
-        <ref role="2j1LYj" node="5ye0JLMD2kj" resolve="devkitRegex" />
+        <ref role="2j1LYj" node="5ye0JLMD2kj" resolve="forbiddenDevkitsRegex" />
       </node>
       <node concept="Xl_RD" id="5ye0JLMD7lx" role="2j1LYg">
         <property role="Xl_RC" value=".*" />
