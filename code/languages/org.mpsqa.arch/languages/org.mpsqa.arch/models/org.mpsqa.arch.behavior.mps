@@ -625,13 +625,13 @@
         <node concept="3cpWs8" id="fm3v0WWNEK" role="3cqZAp">
           <node concept="3cpWsn" id="fm3v0WWNEL" role="3cpWs9">
             <property role="TrG5h" value="allModules" />
+            <node concept="BsUDl" id="fm3v0WWNEM" role="33vP2m">
+              <ref role="37wK5l" node="fm3v0WRLT8" resolve="getModulesOnWhichThisModuleDepends" />
+            </node>
             <node concept="2hMVRd" id="2pcEbw5tgIr" role="1tU5fm">
               <node concept="3uibUv" id="2pcEbw5tgIt" role="2hN53Y">
                 <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
               </node>
-            </node>
-            <node concept="BsUDl" id="fm3v0WWNEM" role="33vP2m">
-              <ref role="37wK5l" node="fm3v0WRLT8" resolve="getModulesOnWhichThisModuleDepends" />
             </node>
           </node>
         </node>
@@ -795,11 +795,6 @@
     <node concept="13i0hz" id="fm3v0WRLT8" role="13h7CS">
       <property role="TrG5h" value="getModulesOnWhichThisModuleDepends" />
       <node concept="3Tm1VV" id="fm3v0WRLT9" role="1B3o_S" />
-      <node concept="2hMVRd" id="2pcEbw5sWad" role="3clF45">
-        <node concept="3uibUv" id="2pcEbw5sWaf" role="2hN53Y">
-          <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
-        </node>
-      </node>
       <node concept="3clFbS" id="fm3v0WRLTb" role="3clF47">
         <node concept="3cpWs8" id="fm3v0WXjzt" role="3cqZAp">
           <node concept="3cpWsn" id="fm3v0WXjzu" role="3cpWs9">
@@ -1215,6 +1210,11 @@
           <node concept="1dT_AC" id="7_XHz4_EfKl" role="1dT_Ay">
             <property role="1dT_AB" value="If some models are excluded, then dependencies caused by the other models of the module are considered." />
           </node>
+        </node>
+      </node>
+      <node concept="2hMVRd" id="2pcEbw5sWad" role="3clF45">
+        <node concept="3uibUv" id="2pcEbw5sWaf" role="2hN53Y">
+          <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
         </node>
       </node>
     </node>
