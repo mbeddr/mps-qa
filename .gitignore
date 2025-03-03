@@ -25,3 +25,6 @@ TESTS-*.xml
 # RCP
 build/
 !/build/scripts/build_all_scripts.xml
+
+# Mac-specific
+.DS_Store

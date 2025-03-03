@@ -3,10 +3,10 @@
   <component name="ProjectLibraryManager">
     <option name="libraries">
       <map>
-        <entry key="base">
+        <entry key="mps-qa.base">
           <value>
             <Library>
-              <option name="name" value="base" />
+              <option name="name" value="mps-qa.base" />
               <option name="path" value="${mpsqa.home}/code/languages/org.mpsqa.base" />
             </Library>
           </value>

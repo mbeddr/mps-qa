@@ -7,15 +7,15 @@
     </modelRoot>
     <modelRoot contentPath="${module}/lib" type="java_classes">
       <sourceRoot location="commons-cli-1.5.0.jar" />
-      <sourceRoot location="commons-io-2.6.jar" />
+      <sourceRoot location="commons-io-2.7.jar" />
     </modelRoot>
   </models>
   <facets>
-    <facet type="java" compile="mps" classes="mps" ext="no">
+    <facet type="java" compile="mps" classes="mps" ext="yes">
       <classes generated="true" path="${module}/classes_gen" />
       <library location="${module}/lib/commons-lang3-3.3.2/commons-lang3-3.3.2-javadoc.jar" />
       <library location="${module}/lib/commons-lang3-3.3.2/commons-lang3-3.3.2.jar" />
-      <library location="${module}/lib/commons-io-2.6.jar" />
+      <library location="${module}/lib/commons-io-2.7.jar" />
       <library location="${module}/lib/commons-cli-1.5.0.jar" />
     </facet>
   </facets>
