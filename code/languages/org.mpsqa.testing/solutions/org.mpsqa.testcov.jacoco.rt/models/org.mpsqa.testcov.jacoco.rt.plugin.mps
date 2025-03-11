@@ -36,6 +36,7 @@
       </concept>
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
         <property id="1205250923097" name="caption" index="2uzpH1" />
+        <property id="7458746815261976739" name="requiredAccess" index="2YLI8m" />
         <property id="4692598989365753297" name="updateInBackground" index="1rBW0U" />
         <property id="1213273179528" name="description" index="1WHSii" />
         <child id="1203083196627" name="updateBlock" index="tmbBb" />
@@ -201,6 +202,7 @@
     <property role="TrG5h" value="JaCoCo Root Node Coverage" />
     <property role="2uzpH1" value="Display JaCoCo Tests Coverage for This Root" />
     <property role="1WHSii" value="Display JaCoCo Tests Coverage for This Root Node" />
+    <property role="2YLI8m" value="6u2MFnph2yk/editorCommand" />
     <node concept="tnohg" id="3uTLX9ZIvB_" role="tncku">
       <node concept="3clFbS" id="3uTLX9ZIvBA" role="2VODD2">
         <node concept="3clFbF" id="7YpeH5eSUN9" role="3cqZAp">

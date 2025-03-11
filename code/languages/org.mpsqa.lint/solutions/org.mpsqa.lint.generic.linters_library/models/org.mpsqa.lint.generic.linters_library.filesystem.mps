@@ -271,62 +271,6 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="4mUq39YDTM2" role="3cqZAp">
-          <node concept="3cpWsn" id="4mUq39YDTM3" role="3cpWs9">
-            <property role="TrG5h" value="projectFile" />
-            <node concept="3uibUv" id="4mUq39YDTM4" role="1tU5fm">
-              <ref role="3uigEE" to="guwi:~File" resolve="File" />
-            </node>
-            <node concept="2OqwBi" id="4mUq39YDTM5" role="33vP2m">
-              <node concept="1MG55F" id="4mUq39YDUMg" role="2Oq$k0" />
-              <node concept="liA8E" id="4mUq39YDTM7" role="2OqNvi">
-                <ref role="37wK5l" to="z1c3:~MPSProject.getProjectFile()" resolve="getProjectFile" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="4mUq39YDTM8" role="3cqZAp">
-          <node concept="3cpWsn" id="4mUq39YDTM9" role="3cpWs9">
-            <property role="TrG5h" value="directoryContainingProject" />
-            <node concept="17QB3L" id="4mUq39YDTMa" role="1tU5fm" />
-            <node concept="2OqwBi" id="4mUq39YDTMb" role="33vP2m">
-              <node concept="2OqwBi" id="4mUq39YDTMc" role="2Oq$k0">
-                <node concept="37vLTw" id="4mUq39YDTMd" role="2Oq$k0">
-                  <ref role="3cqZAo" node="4mUq39YDTM3" resolve="projectFile" />
-                </node>
-                <node concept="liA8E" id="4mUq39YDTMe" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~File.getAbsoluteFile()" resolve="getAbsoluteFile" />
-                </node>
-              </node>
-              <node concept="liA8E" id="4mUq39YDTMf" role="2OqNvi">
-                <ref role="37wK5l" to="guwi:~File.getParent()" resolve="getParent" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="4mUq39YDTMg" role="3cqZAp">
-          <node concept="3cpWsn" id="4mUq39YDTMh" role="3cpWs9">
-            <property role="TrG5h" value="pathOfDirectoryContainingProject" />
-            <property role="3TUv4t" value="true" />
-            <node concept="3uibUv" id="4mUq39YDTMi" role="1tU5fm">
-              <ref role="3uigEE" to="eoo2:~Path" resolve="Path" />
-            </node>
-            <node concept="2OqwBi" id="4mUq39YDTMj" role="33vP2m">
-              <node concept="2ShNRf" id="4mUq39YDTMk" role="2Oq$k0">
-                <node concept="1pGfFk" id="4mUq39YDTMl" role="2ShVmc">
-                  <property role="373rjd" value="true" />
-                  <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-                  <node concept="37vLTw" id="4mUq39YDTMm" role="37wK5m">
-                    <ref role="3cqZAo" node="4mUq39YDTM9" resolve="directoryContainingProject" />
-                  </node>
-                </node>
-              </node>
-              <node concept="liA8E" id="4mUq39YDTMn" role="2OqNvi">
-                <ref role="37wK5l" to="guwi:~File.toPath()" resolve="toPath" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3J1_TO" id="6HKgezSv$ye" role="3cqZAp">
           <node concept="3uVAMA" id="4mUq39YBw_i" role="1zxBo5">
             <node concept="XOnhg" id="4mUq39YBw_j" role="1zc67B">

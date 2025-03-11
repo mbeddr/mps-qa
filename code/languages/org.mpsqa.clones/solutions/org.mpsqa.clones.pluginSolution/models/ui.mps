@@ -3190,6 +3190,7 @@
       <node concept="3cqZAl" id="E3aAvrJys9" role="3clF45" />
       <node concept="37vLTG" id="E3aAvrJysa" role="3clF46">
         <property role="TrG5h" value="project" />
+        <property role="3TUv4t" value="true" />
         <node concept="3uibUv" id="E3aAvrJysb" role="1tU5fm">
           <ref role="3uigEE" to="z1c3:~MPSProject" resolve="MPSProject" />
         </node>
@@ -3329,7 +3330,10 @@
                                 <node concept="2OqwBi" id="E3aAvrJyt3" role="3clFbG">
                                   <node concept="2YIFZM" id="E3aAvrJyt4" role="2Oq$k0">
                                     <ref role="1Pybhc" to="kz9k:~NavigationSupport" resolve="NavigationSupport" />
-                                    <ref role="37wK5l" to="kz9k:~NavigationSupport.getInstance()" resolve="getInstance" />
+                                    <ref role="37wK5l" to="kz9k:~NavigationSupport.getInstance(jetbrains.mps.project.Project)" resolve="getInstance" />
+                                    <node concept="37vLTw" id="3YxxzAV3ZxC" role="37wK5m">
+                                      <ref role="3cqZAo" node="E3aAvrJysa" resolve="project" />
+                                    </node>
                                   </node>
                                   <node concept="liA8E" id="E3aAvrJyt5" role="2OqNvi">
                                     <ref role="37wK5l" to="kz9k:~NavigationSupport.openNode(jetbrains.mps.project.Project,org.jetbrains.mps.openapi.model.SNode,boolean,boolean)" resolve="openNode" />
@@ -3527,7 +3531,10 @@
                                 <node concept="2OqwBi" id="4vctr_xSRpr" role="3clFbG">
                                   <node concept="2YIFZM" id="4vctr_xSRps" role="2Oq$k0">
                                     <ref role="1Pybhc" to="kz9k:~NavigationSupport" resolve="NavigationSupport" />
-                                    <ref role="37wK5l" to="kz9k:~NavigationSupport.getInstance()" resolve="getInstance" />
+                                    <ref role="37wK5l" to="kz9k:~NavigationSupport.getInstance(jetbrains.mps.project.Project)" resolve="getInstance" />
+                                    <node concept="37vLTw" id="3YxxzAV49SA" role="37wK5m">
+                                      <ref role="3cqZAo" node="E3aAvrJysa" resolve="project" />
+                                    </node>
                                   </node>
                                   <node concept="liA8E" id="4vctr_xSRpt" role="2OqNvi">
                                     <ref role="37wK5l" to="kz9k:~NavigationSupport.openNode(jetbrains.mps.project.Project,org.jetbrains.mps.openapi.model.SNode,boolean,boolean)" resolve="openNode" />
@@ -3633,7 +3640,10 @@
                                     <node concept="2OqwBi" id="4vctr_xQupB" role="3clFbG">
                                       <node concept="2YIFZM" id="4vctr_xQupC" role="2Oq$k0">
                                         <ref role="1Pybhc" to="kz9k:~NavigationSupport" resolve="NavigationSupport" />
-                                        <ref role="37wK5l" to="kz9k:~NavigationSupport.getInstance()" resolve="getInstance" />
+                                        <ref role="37wK5l" to="kz9k:~NavigationSupport.getInstance(jetbrains.mps.project.Project)" resolve="getInstance" />
+                                        <node concept="37vLTw" id="3YxxzAV4dia" role="37wK5m">
+                                          <ref role="3cqZAo" node="E3aAvrJysa" resolve="project" />
+                                        </node>
                                       </node>
                                       <node concept="liA8E" id="4vctr_xQupD" role="2OqNvi">
                                         <ref role="37wK5l" to="kz9k:~NavigationSupport.openNode(jetbrains.mps.project.Project,org.jetbrains.mps.openapi.model.SNode,boolean,boolean)" resolve="openNode" />

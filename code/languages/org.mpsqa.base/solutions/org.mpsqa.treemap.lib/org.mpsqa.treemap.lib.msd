@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="org.mpsqa.treemap.lib" uuid="56f134c7-a829-428d-9119-715369c69768" moduleVersion="0">
   <models>
-    <modelRoot type="default" contentPath="${module}">
-      <sourceRoot location="models" />
-    </modelRoot>
-    <modelRoot type="java_classes" contentPath="${module}/lib">
+    <modelRoot contentPath="${module}/lib" type="java_classes">
       <sourceRoot location="jtreemap-1.1.0-bundle.jar" />
       <sourceRoot location="jtreemap-1.1.0.jar" />
       <sourceRoot location="net.sf.jtreemap.ktreemap-1.1.0-bundle.jar" />
@@ -12,7 +9,7 @@
     </modelRoot>
   </models>
   <facets>
-    <facet type="java" compile="mps" classes="mps" ext="no">
+    <facet type="java" compile="mps" classes="mps" ext="yes">
       <classes generated="true" path="${module}/classes_gen" />
       <library location="${module}/lib/jtreemap-1.1.0-bundle.jar" />
       <library location="${module}/lib/jtreemap-1.1.0.jar" />
