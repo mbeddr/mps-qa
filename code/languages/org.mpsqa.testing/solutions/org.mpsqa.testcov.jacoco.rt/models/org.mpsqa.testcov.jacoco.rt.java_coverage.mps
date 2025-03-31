@@ -1303,7 +1303,7 @@
       </node>
       <node concept="TZ5HA" id="67NgLmjPoyL" role="TZ5H$">
         <node concept="1dT_AC" id="67NgLmjPoyM" role="1dT_Ay">
-          <property role="1dT_AB" value="   - Step 1: enable code coverage instrumentation for your running MPS. Add &quot;-javaagent:C:\work\mps-qa\code\languages\org.mpsqa.testing\solutions\org.mpsqa.testcov.jacoco.rt\lib\lib\jacocoagent.jar&quot; to &quot;MPS_install_dir\bin\mps64.exe.vmoptions&quot;" />
+          <property role="1dT_AB" value="   - Step 1: enable code coverage instrumentation for your running MPS. Add &quot;-javaagent:C:\work\mps-qa\code\languages\org.mpsqa.testing\solutions\org.mpsqa.testcov.jacoco.rt\lib\agent\jacocoagent.jar&quot; to &quot;MPS_install_dir\bin\mps64.exe.vmoptions&quot;" />
         </node>
       </node>
       <node concept="TZ5HA" id="67NgLmjPpHF" role="TZ5H$">
@@ -1324,4 +1324,3 @@
     </node>
   </node>
 </model>
-
