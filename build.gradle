@@ -9,12 +9,12 @@ plugins {
     id 'maven-publish'
     id 'co.riiid.gradle' version '0.4.2'
 
-    id 'de.itemis.mps.gradle.launcher' version '2.2.0.+'
+    id 'de.itemis.mps.gradle.launcher' version '2.5.2.+'
 
     id 'org.cyclonedx.bom' version '2.2.0'
 }
 
-ext.jbrVers = '17.0.8.1-b1000.32'
+ext.jbrVers = '17.0.11-b1207.30'
 
 downloadJbr {
     jbrVersion = jbrVers
@@ -29,45 +29,11 @@ if (System.env.CI != null && System.env.CI.toBoolean()) {
     ext.ciBuild = project.hasProperty("teamcity")
 }
 
-// Detect jdk location, required to start ant with tools.jar on classpath otherwise javac and tests will fail
-String jdk_home
-
-if (ext.has('java11_home')) {
-    jdk_home = ext.get('java11_home')
-} else if (System.getenv('JB_JAVA11_HOME') != null) {
-    jdk_home = System.getenv('JB_JAVA11_HOME')
-} else {
-    def expected = JavaVersion.VERSION_11
-    if (JavaVersion.current() < expected) {
-        throw new GradleException("This build script requires Java 11 but you are currently using ${JavaVersion.current()}.\nWhat you can do:\n"
-                + "  * Use project property java11_home to point to the Java 11 JDK.\n"
-                + "  * Use environment variable JB_JAVA11_HOME to point to the Java 11 JDK\n"
-                + "  * Run Gradle using Java 11")
-    }
-    jdk_home = System.getProperty('java.home')
-}
-
-// Check JDK location
-if (!new File(jdk_home, "lib").exists()) {
-    throw new GradleException("Unable to locate JDK home folder. Detected folder is: $jdk_home")
-}
-
-logger.info 'Using JDK at {}', jdk_home
-
-ext.jdk_home = jdk_home
-
-ext.dependencyRepositories = [
-        'https://maven.pkg.github.com/mbeddr/*',
-        'https://artifacts.itemis.cloud/repository/maven-mps/',
-        'https://packages.atlassian.com/maven-public/'
-]
-
-// Dependency versions
-ext.mpsVersion = '2023.2.2'
+ext.mpsVersion =  '2024.1.1'
 
 // Project versions
-ext.major = '2023'
-ext.minor = '2'
+ext.major = '2024'
+ext.minor = '1'
 
 if (ciBuild) {
     String branch = GitBasedVersioning.gitBranch
@@ -90,7 +56,7 @@ configurations {
     mps
     // includes also junit tasks support
     antLib
-    
+
     plantuml { transitive = false }
     baseLib { transitive = false }
     treemap { transitive = false }
@@ -120,19 +86,23 @@ dependencies {
     jacoco "org.jacoco:org.jacoco.core:$jacocoVersion"
     jacoco "org.jacoco:org.jacoco.report:$jacocoVersion"
 
-    antLib "org.apache.ant:ant-junit:1.10.6"
+    antLib "org.apache.ant:ant-junit:1.10.15"
     antLib "org.jacoco:org.jacoco.ant:0.8.12"
 }
 
 repositories {
-    for (repoUrl in project.dependencyRepositories) {
-        maven {
-            url repoUrl
-            credentials {
-                username = project.findProperty("github_username") ?: System.getenv("GITHUB_ACTOR")
-                password = project.findProperty("github_token") ?: System.getenv("GITHUB_TOKEN")
-            }
+    maven {
+        url 'https://maven.pkg.github.com/mbeddr/*'
+        credentials {
+            username = project.findProperty("github_username") ?: System.getenv("GITHUB_ACTOR")
+            password = project.findProperty("github_token") ?: System.getenv("GITHUB_TOKEN")
         }
+    }
+    maven {
+        url 'https://artifacts.itemis.cloud/repository/maven-mps/'
+    }
+    maven {
+        url 'https://packages.atlassian.com/maven-public/'
     }
     mavenCentral()
 }
@@ -158,8 +128,7 @@ if (project.skipResolveMps) {
 }
 
 // tools needed for compiler support in ant calls
-ext.buildScriptClasspath = project.configurations.antLib.fileCollection { true } +
-        project.files("$project.jdk_home/lib/tools.jar")
+ext.buildScriptClasspath = project.configurations.antLib
 
 def artifactsDir = file("$buildDir/artifacts")
 def reportsDir = file("$buildDir/reports")
@@ -344,7 +313,7 @@ tasks.register('check_lint', MpsCheck) {
     pluginRoots.add(layout.dir(provider { new File(mpsHomeDir, 'plugins/mps-modelchecker') }))
 }
 
-cyclonedxBom { 
+cyclonedxBom {
     destination = reportsDir
     outputName = "sbom"
     outputFormat = "json"
@@ -388,7 +357,7 @@ publishing {
                 def languageLibs = ['plantuml', 'baseLib', 'treemap', 'jacoco']
                 languageLibs.each { configName ->
                     def configuration = configurations.findByName(configName)
-                    
+
                     configuration.resolvedConfiguration.firstLevelModuleDependencies.each {
                         def dependencyNode = dependenciesNode.appendNode('dependency')
                         dependencyNode.appendNode('groupId', it.moduleGroup)
@@ -421,8 +390,22 @@ defaultTasks 'build'
 
 task rebuild(dependsOn:[clean, build_allInOne_package])
 
-ext.allProjectDirectories = { file('code/languages').listFiles({ File file -> file.directory } as FileFilter) }
-ext.mpsPluginRoots = [new File(mpsHomeDir, "plugins/")]
+ext.allProjectDirectoriesInDependencyOrder = [
+        'org.mpsqa.base',
+        'org.mpsqa.testing',
+        'org.mpsqa.build',
+
+        'org.mpsqa.arch',
+        'org.mpsqa.clones',
+        'org.mpsqa.deprecated',
+        'org.mpsqa.lint',
+        'org.mpsqa.mutant',
+        'org.mpsqa.profile',
+        'org.mpsqa.testing',
+        'org.mpsqa.unused'
+].collect { file("code/languages/$it") }
+ext.mpsPluginRoots = ['mps-build', 'mps-console', 'mps-trove', 'mps-modelchecker', 'mps-tooltips', 'mps-testing']
+        .collect { new File(mpsHomeDir, "plugins/$it") }
 ext.jbrJavaLauncher = tasks.named('downloadJbr', DownloadJbrForPlatform).flatMap { it.javaLauncher }
 
 tasks.register('migrate', MpsMigrate) {
@@ -431,7 +414,7 @@ tasks.register('migrate', MpsMigrate) {
     javaLauncher = jbrJavaLauncher
     mpsHome = mpsHomeDir
     folderMacros.put('mpsqa.home', layout.projectDirectory)
-    projectDirectories.from(allProjectDirectories)
+    projectDirectories.from(allProjectDirectoriesInDependencyOrder)
     pluginRoots.from(mpsPluginRoots)
 
     haltOnPrecheckFailure = true
@@ -449,6 +432,6 @@ tasks.register('remigrate', Remigrate) {
     javaLauncher = jbrJavaLauncher
     mpsHome = mpsHomeDir
     folderMacros.put('mpsqa.home', layout.projectDirectory)
-    projectDirectories.from(allProjectDirectories)
+    projectDirectories.from(allProjectDirectoriesInDependencyOrder)
     pluginRoots.from(mpsPluginRoots)
 }

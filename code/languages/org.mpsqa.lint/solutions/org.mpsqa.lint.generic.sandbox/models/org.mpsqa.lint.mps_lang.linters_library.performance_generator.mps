@@ -615,7 +615,7 @@
       <node concept="3clFbS" id="7H5j78pZvyE" role="3clF47">
         <node concept="3cpWs8" id="3G6GPGXx79_" role="3cqZAp">
           <node concept="3cpWsn" id="3G6GPGXx79A" role="3cpWs9">
-            <property role="TrG5h" value="resources" />
+            <property role="TrG5h" value="allResources" />
             <node concept="_YKpA" id="4Cg9K36aWr6" role="1tU5fm">
               <node concept="3qUE_q" id="7H5j78q09dP" role="_ZDj9">
                 <node concept="3uibUv" id="7H5j78q09Fo" role="3qUE_r">
@@ -803,7 +803,7 @@
                       <ref role="3cqZAo" node="7nsdmC8vnp8" resolve="session" />
                     </node>
                     <node concept="37vLTw" id="4Cg9K369mzz" role="37wK5m">
-                      <ref role="3cqZAo" node="3G6GPGXx79A" resolve="resources" />
+                      <ref role="3cqZAo" node="3G6GPGXx79A" resolve="allResources" />
                     </node>
                   </node>
                 </node>

@@ -5,7 +5,6 @@
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
-    <use id="73736c50-f124-433b-b789-2828a15a0adc" name="jetbrains.mps.baseLanguage.collections.trove" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
@@ -626,13 +625,13 @@
         <node concept="3cpWs8" id="fm3v0WWNEK" role="3cqZAp">
           <node concept="3cpWsn" id="fm3v0WWNEL" role="3cpWs9">
             <property role="TrG5h" value="allModules" />
+            <node concept="BsUDl" id="fm3v0WWNEM" role="33vP2m">
+              <ref role="37wK5l" node="fm3v0WRLT8" resolve="getModulesOnWhichThisModuleDepends" />
+            </node>
             <node concept="2hMVRd" id="2pcEbw5tgIr" role="1tU5fm">
               <node concept="3uibUv" id="2pcEbw5tgIt" role="2hN53Y">
                 <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
               </node>
-            </node>
-            <node concept="BsUDl" id="fm3v0WWNEM" role="33vP2m">
-              <ref role="37wK5l" node="fm3v0WRLT8" resolve="getModulesOnWhichThisModuleDepends" />
             </node>
           </node>
         </node>
@@ -796,11 +795,6 @@
     <node concept="13i0hz" id="fm3v0WRLT8" role="13h7CS">
       <property role="TrG5h" value="getModulesOnWhichThisModuleDepends" />
       <node concept="3Tm1VV" id="fm3v0WRLT9" role="1B3o_S" />
-      <node concept="2hMVRd" id="2pcEbw5sWad" role="3clF45">
-        <node concept="3uibUv" id="2pcEbw5sWaf" role="2hN53Y">
-          <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
-        </node>
-      </node>
       <node concept="3clFbS" id="fm3v0WRLTb" role="3clF47">
         <node concept="3cpWs8" id="fm3v0WXjzt" role="3cqZAp">
           <node concept="3cpWsn" id="fm3v0WXjzu" role="3cpWs9">
@@ -1216,6 +1210,11 @@
           <node concept="1dT_AC" id="7_XHz4_EfKl" role="1dT_Ay">
             <property role="1dT_AB" value="If some models are excluded, then dependencies caused by the other models of the module are considered." />
           </node>
+        </node>
+      </node>
+      <node concept="2hMVRd" id="2pcEbw5sWad" role="3clF45">
+        <node concept="3uibUv" id="2pcEbw5sWaf" role="2hN53Y">
+          <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
         </node>
       </node>
     </node>

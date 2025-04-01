@@ -1,0 +1,16 @@
+version: 2
+updates:
+  - package-ecosystem: gradle
+    directory: /
+    schedule:
+      interval: weekly
+    registries: "*"
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: daily
+
+registries:
+  itemis:
+    type: maven-repository
+    url: https://artifacts.itemis.cloud/repository/maven-mps

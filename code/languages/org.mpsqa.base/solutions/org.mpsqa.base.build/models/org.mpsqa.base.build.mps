@@ -428,22 +428,6 @@
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
-        <node concept="3rtmxn" id="46QW9mm7JbM" role="3bR31x">
-          <node concept="3LXTmp" id="46QW9mm7JbN" role="3rtmxm">
-            <node concept="3qWCbU" id="46QW9mm7JbO" role="3LXTna">
-              <property role="3qWCbO" value="icons/**, resources/**" />
-            </node>
-            <node concept="398BVA" id="46QW9mm7JbP" role="3LXTmr">
-              <ref role="398BVh" node="7C9PHv6FBIL" resolve="mpsqa.base.home" />
-              <node concept="2Ry0Ak" id="46QW9mm7JbQ" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="46QW9mm7JbR" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.mpsqa.base.lib" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="1SiIV0" id="3WPdYHrmlpi" role="3bR37C">
           <node concept="1BurEX" id="3WPdYHrmlpj" role="1SiIV1">
             <node concept="398BVA" id="3WPdYHrmlp5" role="1BurEY">
@@ -501,6 +485,22 @@
             </node>
           </node>
         </node>
+        <node concept="3rtmxn" id="46QW9mm7JbM" role="3bR31x">
+          <node concept="3LXTmp" id="46QW9mm7JbN" role="3rtmxm">
+            <node concept="3qWCbU" id="46QW9mm7JbO" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="46QW9mm7JbP" role="3LXTmr">
+              <ref role="398BVh" node="7C9PHv6FBIL" resolve="mpsqa.base.home" />
+              <node concept="2Ry0Ak" id="46QW9mm7JbQ" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="46QW9mm7JbR" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.base.lib" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="7C9PHv6FBMC" role="2G$12L">
         <property role="TrG5h" value="org.mpsqa.treemap.lib" />
@@ -522,22 +522,6 @@
           <node concept="3bR9La" id="7C9PHv6FBMI" role="1SiIV1">
             <property role="3bR36h" value="true" />
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
-          </node>
-        </node>
-        <node concept="3rtmxn" id="46QW9mm7JbT" role="3bR31x">
-          <node concept="3LXTmp" id="46QW9mm7JbU" role="3rtmxm">
-            <node concept="3qWCbU" id="46QW9mm7JbV" role="3LXTna">
-              <property role="3qWCbO" value="icons/**, resources/**" />
-            </node>
-            <node concept="398BVA" id="46QW9mm7JbW" role="3LXTmr">
-              <ref role="398BVh" node="7C9PHv6FBIL" resolve="mpsqa.base.home" />
-              <node concept="2Ry0Ak" id="46QW9mm7JbX" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="46QW9mm7JbY" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.mpsqa.treemap.lib" />
-                </node>
-              </node>
-            </node>
           </node>
         </node>
         <node concept="1SiIV0" id="3WPdYHrmlpZ" role="3bR37C">
@@ -573,6 +557,22 @@
                       <property role="2Ry0Am" value="ktreemap.jar" />
                     </node>
                   </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="46QW9mm7JbT" role="3bR31x">
+          <node concept="3LXTmp" id="46QW9mm7JbU" role="3rtmxm">
+            <node concept="3qWCbU" id="46QW9mm7JbV" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="46QW9mm7JbW" role="3LXTmr">
+              <ref role="398BVh" node="7C9PHv6FBIL" resolve="mpsqa.base.home" />
+              <node concept="2Ry0Ak" id="46QW9mm7JbX" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="46QW9mm7JbY" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.mpsqa.treemap.lib" />
                 </node>
               </node>
             </node>
