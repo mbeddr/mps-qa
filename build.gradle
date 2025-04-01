@@ -91,68 +91,34 @@ configurations {
     // includes also junit tasks support
     antLib
     
-    plantuml
-    baseLib
-    treemap
-    jacoco
+    plantuml { transitive = false }
+    baseLib { transitive = false }
+    treemap { transitive = false }
+    jacoco { transitive = false }
 }
 
 dependencies {
     mps "com.jetbrains:mps:$mpsVersion"
 
-    plantuml("net.sourceforge.plantuml:plantuml-asl:1.2023.13") {
-        transitive = false
-    }
+    plantuml "net.sourceforge.plantuml:plantuml-asl:1.2023.13"
 
-    baseLib("org.apache.commons:commons-lang3:3.3.2") {
-        transitive = false
-    }
+    baseLib "org.apache.commons:commons-lang3:3.3.2"
+    baseLib "commons-cli:commons-cli:1.5.0"
+    baseLib "commons-io:commons-io:2.6"
 
-    baseLib("commons-cli:commons-cli:1.5.0") {
-        transitive = false
-    }
-    baseLib("commons-io:commons-io:2.6") {
-        transitive = false
-    }
-
-    treemap("net.sf.jtreemap:jtreemap:1.1.3") {
-        transitive = false
-    }
-
-    treemap("net.sf.jtreemap:ktreemap:1.1.0-atlassian-01") {
-        transitive = false
-    }
+    treemap "net.sf.jtreemap:jtreemap:1.1.3"
+    treemap "net.sf.jtreemap:ktreemap:1.1.0-atlassian-01"
 
     def asmVersion = "9.2"
     def jacocoVersion = "0.8.7"
 
-    jacoco("org.ow2.asm:asm:$asmVersion") {
-         transitive = false
-    }
-
-    jacoco("org.ow2.asm:asm-commons:$asmVersion") {
-         transitive = false
-    }
-
-    jacoco("org.ow2.asm:asm-tree:$asmVersion") {
-         transitive = false
-    }
-
-    jacoco("org.jacoco:org.jacoco.agent:$jacocoVersion") {
-         transitive = false
-    }
-
-    jacoco("org.jacoco:org.jacoco.ant:$jacocoVersion") {
-         transitive = false
-    }
-
-    jacoco("org.jacoco:org.jacoco.core:$jacocoVersion") {
-         transitive = false
-    }
-
-    jacoco("org.jacoco:org.jacoco.report:$jacocoVersion") {
-         transitive = false
-    }
+    jacoco "org.ow2.asm:asm:$asmVersion"
+    jacoco "org.ow2.asm:asm-commons:$asmVersion"
+    jacoco "org.ow2.asm:asm-tree:$asmVersion"
+    jacoco "org.jacoco:org.jacoco.agent:$jacocoVersion"
+    jacoco "org.jacoco:org.jacoco.ant:$jacocoVersion"
+    jacoco "org.jacoco:org.jacoco.core:$jacocoVersion"
+    jacoco "org.jacoco:org.jacoco.report:$jacocoVersion"
 
     antLib "org.apache.ant:ant-junit:1.10.6"
     antLib "org.jacoco:org.jacoco.ant:0.8.12"
@@ -232,70 +198,29 @@ File scriptFile(String name) {
     file("$buildDir/scripts/$name")
 }
 
-task resolvePlantUML(type: Sync) {
-    from configurations.plantuml
-    into file('code/languages/org.mpsqa.arch/solutions/org.mpsqa.arch.pluginSolution/lib')
-    // Strip version numbers from file names
-    rename { filename ->
-        def ra = configurations.plantuml.resolvedConfiguration.resolvedArtifacts.find { ResolvedArtifact ra -> ra.file.name == filename }
-        String finalName
-        if (ra.classifier != null) {
-            finalName = "${ra.name}-${ra.classifier}.${ra.extension}"
-        } else {
-            finalName = "${ra.name}.${ra.extension}"
+def createResolveTask(taskName, configurationName, outputDir) {
+    tasks.register(taskName, Sync) {
+        from configurations."${configurationName}"
+        into file(outputDir)
+        // Strip version numbers from file names
+        rename { filename ->
+            def ra = configurations."${configurationName}".resolvedConfiguration.resolvedArtifacts.find { ResolvedArtifact ra -> ra.file.name == filename }
+            String finalName
+            if (ra.classifier != null) {
+                finalName = "${ra.name}-${ra.classifier}.${ra.extension}"
+            } else {
+                finalName = "${ra.name}.${ra.extension}"
+            }
+            return finalName
         }
-        return finalName
     }
 }
 
-task resolveBaseLibs(type: Sync) {
-    from configurations.baseLib
-    into file('code/languages/org.mpsqa.base/solutions/org.mpsqa.base.lib/lib')
-    // Strip version numbers from file names
-    rename { filename ->
-        def ra = configurations.baseLib.resolvedConfiguration.resolvedArtifacts.find { ResolvedArtifact ra -> ra.file.name == filename }
-        String finalName
-        println("Classifier:"+ ra.classifier)
-        if (ra.classifier != null) {
-            finalName = "${ra.name}-${ra.classifier}.${ra.extension}"
-        } else {
-            finalName = "${ra.name}.${ra.extension}"
-        }
-        return finalName
-    }
-}
-
-task resolveTreeMap(type: Sync) {
-    from configurations.treemap
-    into file('code/languages/org.mpsqa.base/solutions/org.mpsqa.treemap.lib/lib')
-     // Strip version numbers from file names
-    rename { filename ->
-        def ra = configurations.treemap.resolvedConfiguration.resolvedArtifacts.find { ResolvedArtifact ra -> ra.file.name == filename }
-        String finalName
-        if (ra.classifier != null) {
-            finalName = "${ra.name}-${ra.classifier}.${ra.extension}"
-        } else {
-            finalName = "${ra.name}.${ra.extension}"
-        }
-        return finalName
-    }
-}
-
-task resolveJacoco(type: Sync) {
-    from configurations.jacoco
-    into file('code/languages/org.mpsqa.testing/solutions/org.mpsqa.testcov.jacoco.rt/lib/lib')
-    // Strip version numbers from file names
-    rename { filename ->
-        def ra = configurations.jacoco.resolvedConfiguration.resolvedArtifacts.find { ResolvedArtifact ra -> ra.file.name == filename }
-        String finalName
-        if (ra.classifier != null) {
-            finalName = "${ra.name}-${ra.classifier}.${ra.extension}"
-        } else {
-            finalName = "${ra.name}.${ra.extension}"
-        }
-        return finalName
-    }
-}
+// Define tasks using the reusable function
+createResolveTask('resolvePlantUML', 'plantuml', 'code/languages/org.mpsqa.arch/solutions/org.mpsqa.arch.pluginSolution/lib')
+createResolveTask('resolveBaseLibs', 'baseLib', 'code/languages/org.mpsqa.base/solutions/org.mpsqa.base.lib/lib')
+createResolveTask('resolveTreeMap', 'treemap', 'code/languages/org.mpsqa.base/solutions/org.mpsqa.treemap.lib/lib')
+createResolveTask('resolveJacoco', 'jacoco', 'code/languages/org.mpsqa.testing/solutions/org.mpsqa.testcov.jacoco.rt/lib/lib')
 
 task resolveDependencies(dependsOn: [resolvePlantUML, resolveBaseLibs, resolveTreeMap, resolveJacoco])
 
