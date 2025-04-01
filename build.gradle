@@ -383,15 +383,14 @@ publishing {
             groupId 'org.mpsqa'
             artifactId 'all-in-one'
             artifact package_mpsqa
-
             pom.withXml {
-                def dependencyNode = asNode().appendNode('dependency')
-
+                def dependenciesNode = asNode().appendNode('dependencies')
                 def languageLibs = ['plantuml', 'baseLib', 'treemap', 'jacoco']
                 languageLibs.each { configName ->
                     def configuration = configurations.findByName(configName)
                     
                     configuration.resolvedConfiguration.firstLevelModuleDependencies.each {
+                        def dependencyNode = dependenciesNode.appendNode('dependency')
                         dependencyNode.appendNode('groupId', it.moduleGroup)
                         dependencyNode.appendNode('artifactId', it.moduleName)
                         dependencyNode.appendNode('version', it.moduleVersion)
@@ -400,6 +399,7 @@ publishing {
                 }
 
                 configurations.mps.resolvedConfiguration.firstLevelModuleDependencies.each {
+                    def dependencyNode = dependenciesNode.appendNode('dependency')
                     dependencyNode.appendNode('groupId', it.moduleGroup)
                     dependencyNode.appendNode('artifactId', it.moduleName)
                     dependencyNode.appendNode('version', it.moduleVersion)
