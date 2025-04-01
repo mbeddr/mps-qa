@@ -1,22 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="org.mpsqa.base.lib" uuid="79c13063-8a7d-4070-aaba-966b36d6e0c4" moduleVersion="0">
   <models>
-    <modelRoot contentPath="${module}/lib/commons-lang3-3.3.2" type="java_classes">
-      <sourceRoot location="commons-lang3-3.3.2-javadoc.jar" />
-      <sourceRoot location="commons-lang3-3.3.2.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="commons-cli-1.5.0.jar" />
-      <sourceRoot location="commons-io-2.6.jar" />
+    <modelRoot type="java_classes" contentPath="${module}/lib">
+      <sourceRoot location="commons-cli.jar" />
+      <sourceRoot location="commons-io.jar" />
+      <sourceRoot location="commons-lang3.jar" />
     </modelRoot>
   </models>
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
-      <library location="${module}/lib/commons-lang3-3.3.2/commons-lang3-3.3.2-javadoc.jar" />
-      <library location="${module}/lib/commons-lang3-3.3.2/commons-lang3-3.3.2.jar" />
-      <library location="${module}/lib/commons-io-2.6.jar" />
-      <library location="${module}/lib/commons-cli-1.5.0.jar" />
+      <library location="${module}/lib/commons-cli.jar" />
+      <library location="${module}/lib/commons-io.jar" />
+      <library location="${module}/lib/commons-lang3.jar" />
     </facet>
   </facets>
   <dependencies>
