@@ -385,7 +385,7 @@ publishing {
             artifact package_mpsqa
 
             pom.withXml {
-                def dependencyNode = dependenciesNode.appendNode('dependency')
+                def dependencyNode = asNode().appendNode('dependency')
 
                 def languageLibs = ['plantuml', 'baseLib', 'treemap', 'jacoco']
                 languageLibs.each { configName ->
