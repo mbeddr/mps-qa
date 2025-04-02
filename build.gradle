@@ -3,8 +3,8 @@ import de.itemis.mps.gradle.downloadJBR.*
 import de.itemis.mps.gradle.tasks.*
 
 plugins {
-    id 'de.itemis.mps.gradle.common' version '1.28.0.+'
-    id 'download-jbr' version '1.28.0.+'
+    id 'de.itemis.mps.gradle.common' version '1.29.1.+'
+    id 'download-jbr' version '1.29.1.+'
     id 'base'
     id 'maven-publish'
     id 'co.riiid.gradle' version '0.4.2'
@@ -30,9 +30,8 @@ if (System.env.CI != null && System.env.CI.toBoolean()) {
 }
 
 // Project versions
-ext.major = '2024'
-ext.minor = '3'
-ext.mpsVersion = ext.major + "." + ext.minor
+ext.major = '999'
+ext.minor = '9'
 
 if (ciBuild) {
     String branch = GitBasedVersioning.gitBranch
@@ -63,7 +62,11 @@ configurations {
 }
 
 dependencies {
-    mps "com.jetbrains:mps:$mpsVersion"
+    // Use the following dependency for published releases:
+    //   mps 'com.jetbrains:mps:2024.3'
+    mps 'com.jetbrains.mps:mps-prerelease:243.21565.10057'
+    antLib "org.apache.ant:ant-junit:1.10.15"
+    antLib "org.jacoco:org.jacoco.ant:0.8.12"
 
     plantuml "net.sourceforge.plantuml:plantuml-asl:1.2023.13"
 
@@ -84,9 +87,6 @@ dependencies {
     jacoco "org.jacoco:org.jacoco.ant:$jacocoVersion"
     jacoco "org.jacoco:org.jacoco.core:$jacocoVersion"
     jacoco "org.jacoco:org.jacoco.report:$jacocoVersion"
-
-    antLib "org.apache.ant:ant-junit:1.10.15"
-    antLib "org.jacoco:org.jacoco.ant:0.8.12"
 }
 
 repositories {
