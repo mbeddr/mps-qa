@@ -32,6 +32,7 @@ if (System.env.CI != null && System.env.CI.toBoolean()) {
 // Project versions
 ext.major = '2024'
 ext.minor = '3'
+ext.mpsVersion = ext.major + "." + ext.minor
 
 if (ciBuild) {
     String branch = GitBasedVersioning.gitBranch
