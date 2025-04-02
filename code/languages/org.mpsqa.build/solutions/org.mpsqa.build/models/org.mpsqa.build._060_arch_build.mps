@@ -203,8 +203,8 @@
                 <property role="2Ry0Am" value="org.mpsqa.arch.pluginSolution" />
                 <node concept="2Ry0Ak" id="50Wzfz4sDIC" role="2Ry0An">
                   <property role="2Ry0Am" value="lib" />
-                  <node concept="2Ry0Ak" id="7PMJ7Uztwp3" role="2Ry0An">
-                    <property role="2Ry0Am" value="plantuml-asl-1.2023.13.jar" />
+                  <node concept="2Ry0Ak" id="3WPdYHrpHuj" role="2Ry0An">
+                    <property role="2Ry0Am" value="plantuml-asl.jar" />
                   </node>
                 </node>
               </node>
@@ -431,33 +431,23 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="6ST145H7Ut5" role="3bR37C">
-          <node concept="1BurEX" id="6ST145H7Ut6" role="1SiIV1">
-            <node concept="398BVA" id="6ST145H7UsS" role="1BurEY">
+        <node concept="1SiIV0" id="3WPdYHrp5Vj" role="3bR37C">
+          <node concept="1BurEX" id="3WPdYHrp5Vk" role="1SiIV1">
+            <node concept="398BVA" id="3WPdYHrp5V6" role="1BurEY">
               <ref role="398BVh" node="50Wzfz4shz5" resolve="mpsqa.arch.home" />
-              <node concept="2Ry0Ak" id="6ST145H7UsT" role="iGT6I">
+              <node concept="2Ry0Ak" id="3WPdYHrp5V7" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="6ST145H7UsU" role="2Ry0An">
+                <node concept="2Ry0Ak" id="3WPdYHrp5V8" role="2Ry0An">
                   <property role="2Ry0Am" value="org.mpsqa.arch.pluginSolution" />
-                  <node concept="2Ry0Ak" id="6ST145H7UsV" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="3WPdYHrp5V9" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="7PMJ7UztwOq" role="2Ry0An">
-                      <property role="2Ry0Am" value="plantuml-asl-1.2023.13.jar" />
+                    <node concept="2Ry0Ak" id="3WPdYHrp5Va" role="2Ry0An">
+                      <property role="2Ry0Am" value="plantuml-asl.jar" />
                     </node>
                   </node>
                 </node>
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="2VR19mpiUB5" role="3bR37C">
-          <node concept="3bR9La" id="2VR19mpiUB6" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:2eDSGe9d1q1" resolve="MPS.Workbench" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="7DAiGQdnG$l" role="3bR37C">
-          <node concept="3bR9La" id="7DAiGQdnG$m" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:7pdFgzxlDoP" resolve="jetbrains.mps.build.mps" />
           </node>
         </node>
       </node>

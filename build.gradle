@@ -10,6 +10,8 @@ plugins {
     id 'co.riiid.gradle' version '0.4.2'
 
     id 'de.itemis.mps.gradle.launcher' version '2.5.2.+'
+
+    id 'org.cyclonedx.bom' version '2.2.0'
 }
 
 ext.jbrVers = '21.0.5-b631.8'
@@ -46,11 +48,17 @@ if (ciBuild) {
     version = "$major.$minor-SNAPSHOT"
 }
 
+group = 'org.mpsqa'
+
 configurations {
     mps
-    languageLibs
     // includes also junit tasks support
     antLib
+
+    plantuml { transitive = false }
+    baseLib { transitive = false }
+    treemap { transitive = false }
+    jacoco { transitive = false }
 }
 
 dependencies {
@@ -59,6 +67,26 @@ dependencies {
     mps 'com.jetbrains.mps:mps-prerelease:243.21565.10057'
     antLib "org.apache.ant:ant-junit:1.10.15"
     antLib "org.jacoco:org.jacoco.ant:0.8.12"
+
+    plantuml "net.sourceforge.plantuml:plantuml-asl:1.2023.13"
+
+    baseLib "org.apache.commons:commons-lang3:3.3.2"
+    baseLib "commons-cli:commons-cli:1.5.0"
+    baseLib "commons-io:commons-io:2.6"
+
+    treemap "net.sf.jtreemap:jtreemap:1.1.3"
+    treemap "net.sf.jtreemap:ktreemap:1.1.0-atlassian-01"
+
+    def asmVersion = "9.2"
+    def jacocoVersion = "0.8.7"
+
+    jacoco "org.ow2.asm:asm:$asmVersion"
+    jacoco "org.ow2.asm:asm-commons:$asmVersion"
+    jacoco "org.ow2.asm:asm-tree:$asmVersion"
+    jacoco "org.jacoco:org.jacoco.agent:$jacocoVersion"
+    jacoco "org.jacoco:org.jacoco.ant:$jacocoVersion"
+    jacoco "org.jacoco:org.jacoco.core:$jacocoVersion"
+    jacoco "org.jacoco:org.jacoco.report:$jacocoVersion"
 }
 
 repositories {
@@ -71,6 +99,9 @@ repositories {
     }
     maven {
         url 'https://artifacts.itemis.cloud/repository/maven-mps/'
+    }
+    maven {
+        url 'https://packages.atlassian.com/maven-public/'
     }
     mavenCentral()
 }
@@ -99,6 +130,7 @@ if (project.skipResolveMps) {
 ext.buildScriptClasspath = project.configurations.antLib
 
 def artifactsDir = file("$buildDir/artifacts")
+def reportsDir = file("$buildDir/reports")
 def dependenciesDir = file("$buildDir/dependencies")
 
 
@@ -134,7 +166,35 @@ File scriptFile(String name) {
     file("$buildDir/scripts/$name")
 }
 
+def createResolveTask(taskName, configurationName, outputDir) {
+    tasks.register(taskName, Sync) {
+        from configurations."${configurationName}"
+        into file(outputDir)
+        // Strip version numbers from file names
+        rename { filename ->
+            def ra = configurations."${configurationName}".resolvedConfiguration.resolvedArtifacts.find { ResolvedArtifact ra -> ra.file.name == filename }
+            String finalName
+            if (ra.classifier != null) {
+                finalName = "${ra.name}-${ra.classifier}.${ra.extension}"
+            } else {
+                finalName = "${ra.name}.${ra.extension}"
+            }
+            return finalName
+        }
+    }
+}
+
+// Define tasks using the reusable function
+createResolveTask('resolvePlantUML', 'plantuml', 'code/languages/org.mpsqa.arch/solutions/org.mpsqa.arch.pluginSolution/lib')
+createResolveTask('resolveBaseLibs', 'baseLib', 'code/languages/org.mpsqa.base/solutions/org.mpsqa.base.lib/lib')
+createResolveTask('resolveTreeMap', 'treemap', 'code/languages/org.mpsqa.base/solutions/org.mpsqa.treemap.lib/lib')
+createResolveTask('resolveJacoco', 'jacoco', 'code/languages/org.mpsqa.testing/solutions/org.mpsqa.testcov.jacoco.rt/lib/lib')
+
+task resolveDependencies(dependsOn: [resolvePlantUML, resolveBaseLibs, resolveTreeMap, resolveJacoco])
+
+
 def build_allScripts = tasks.register('build_allScripts', BuildLanguages) {
+    dependsOn resolveDependencies
     script scriptFile('build_all_scripts.xml')
 }
 
@@ -219,10 +279,14 @@ task build_allInOne_package(type: BuildLanguages, dependsOn: [build_allScripts])
     script scriptFile("build-allInOne-package.xml")
 }
 
-task package_mpsqa(type: Zip, dependsOn: build_allInOne_package) {
+task package_mpsqa(type: Zip, dependsOn: [build_allInOne_package, cyclonedxBom]) {
     archiveBaseName = 'org.mpsqa'
-    from artifactsDir
-    include 'org.mpsqa.allInOne/**'
+    from(artifactsDir) {
+        include 'org.mpsqa.allInOne/**'
+    }
+    from(reportsDir) {
+        include 'sbom.json'
+    }
 }
 
 task test_clones(type: TestLanguages, dependsOn: build_clones_languages) {
@@ -246,6 +310,15 @@ tasks.register('check_lint', MpsCheck) {
 
     pluginRoots.add(layout.dir(provider { new File(mpsHomeDir, 'plugins/mps-console') }))
     pluginRoots.add(layout.dir(provider { new File(mpsHomeDir, 'plugins/mps-modelchecker') }))
+}
+
+cyclonedxBom {
+    destination = reportsDir
+    outputName = "sbom"
+    outputFormat = "json"
+    includeLicenseText = false
+    schemaVersion = "1.5"
+    includeConfigs = ["plantuml","baseLib","treemap","jacoco"]
 }
 
 check.dependsOn(tasks.withType(TestLanguages))
@@ -280,13 +353,20 @@ publishing {
             artifact package_mpsqa
             pom.withXml {
                 def dependenciesNode = asNode().appendNode('dependencies')
-                configurations.languageLibs.resolvedConfiguration.firstLevelModuleDependencies.each {
-                    def dependencyNode = dependenciesNode.appendNode('dependency')
-                    dependencyNode.appendNode('groupId', it.moduleGroup)
-                    dependencyNode.appendNode('artifactId', it.moduleName)
-                    dependencyNode.appendNode('version', it.moduleVersion)
-                    dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
+                def languageLibs = ['plantuml', 'baseLib', 'treemap', 'jacoco']
+                languageLibs.each { configName ->
+                    def configuration = configurations.findByName(configName)
+
+                    configuration.resolvedConfiguration.firstLevelModuleDependencies.each {
+                        def dependencyNode = dependenciesNode.appendNode('dependency')
+                        dependencyNode.appendNode('groupId', it.moduleGroup)
+                        dependencyNode.appendNode('artifactId', it.moduleName)
+                        dependencyNode.appendNode('version', it.moduleVersion)
+                        dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
+                        dependencyNode.appendNode('scope', 'provided')
+                    }
                 }
+
                 configurations.mps.resolvedConfiguration.firstLevelModuleDependencies.each {
                     def dependencyNode = dependenciesNode.appendNode('dependency')
                     dependencyNode.appendNode('groupId', it.moduleGroup)
