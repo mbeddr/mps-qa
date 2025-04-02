@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="org.mpsqa.arch.pluginSolution" uuid="96212ac2-423f-4cfb-b211-b58d0546b6bf" moduleVersion="0">
   <models>
-    <modelRoot type="default" contentPath="${module}">
+    <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot type="java_classes" contentPath="${module}/lib">
+    <modelRoot contentPath="${module}/lib" type="java_classes">
       <sourceRoot location="plantuml-asl.jar" />
     </modelRoot>
   </models>

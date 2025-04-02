@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="org.mpsqa.testcov.jacoco.rt" uuid="998f9a96-8397-4ccb-acfb-d98f854aae12" moduleVersion="0">
   <models>
-    <modelRoot type="default" contentPath="${module}">
+    <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot type="java_classes" contentPath="${module}/lib/lib">
+    <modelRoot contentPath="${module}/lib/lib" type="java_classes">
       <sourceRoot location="asm-commons.jar" />
       <sourceRoot location="asm-tree.jar" />
       <sourceRoot location="asm.jar" />
@@ -51,6 +51,7 @@
     <language slang="l:446c26eb-2b7b-4bf0-9b35-f83fa582753e:jetbrains.mps.lang.modelapi" version="0" />
     <language slang="l:28f9e497-3b42-4291-aeba-0a1039153ab1:jetbrains.mps.lang.plugin" version="6" />
     <language slang="l:ef7bf5ac-d06c-4342-b11d-e42104eb9343:jetbrains.mps.lang.plugin.standalone" version="0" />
+    <language slang="l:982eb8df-2c96-4bd7-9963-11712ea622e5:jetbrains.mps.lang.resources" version="3" />
     <language slang="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" version="19" />
     <language slang="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" version="0" />
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />

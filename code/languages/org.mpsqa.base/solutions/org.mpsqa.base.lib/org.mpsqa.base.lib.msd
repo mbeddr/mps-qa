@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="org.mpsqa.base.lib" uuid="79c13063-8a7d-4070-aaba-966b36d6e0c4" moduleVersion="0">
   <models>
-    <modelRoot type="java_classes" contentPath="${module}/lib">
+    <modelRoot contentPath="${module}/lib" type="java_classes">
       <sourceRoot location="commons-cli.jar" />
       <sourceRoot location="commons-io.jar" />
       <sourceRoot location="commons-lang3.jar" />
