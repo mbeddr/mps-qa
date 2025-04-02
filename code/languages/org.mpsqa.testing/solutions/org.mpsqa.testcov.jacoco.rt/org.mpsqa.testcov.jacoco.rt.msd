@@ -1,46 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="org.mpsqa.testcov.jacoco.rt" uuid="998f9a96-8397-4ccb-acfb-d98f854aae12" moduleVersion="0">
   <models>
-    <modelRoot contentPath="${module}" type="default">
+    <modelRoot type="default" contentPath="${module}">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot contentPath="${module}/lib/lib/org.jacoco.core-0.8.7.202105040129.jar!/" type="java_classes">
-      <sourceRoot location="." />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib/lib/org.jacoco.report-0.8.7.202105040129.jar!/" type="java_classes">
-      <sourceRoot location="." />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib/lib" type="java_classes">
-      <sourceRoot location="org.jacoco.core-0.8.7.202105040129.jar" />
-      <sourceRoot location="org.jacoco.report-0.8.7.202105040129.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib/lib/asm-9.2.jar!/" type="java_classes">
-      <sourceRoot location="." />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib/lib" type="java_classes">
-      <sourceRoot location="asm-9.2.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib/lib/asm-tree-9.2.jar!/" type="java_classes">
-      <sourceRoot location="." />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib/lib" type="java_classes">
-      <sourceRoot location="asm-tree-9.2.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib/lib/asm-commons-9.2.jar!/" type="java_classes">
-      <sourceRoot location="." />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib/lib" type="java_classes">
-      <sourceRoot location="asm-commons-9.2.jar" />
+    <modelRoot type="java_classes" contentPath="${module}/lib/lib">
+      <sourceRoot location="asm-commons.jar" />
+      <sourceRoot location="asm-tree.jar" />
+      <sourceRoot location="asm.jar" />
+      <sourceRoot location="org.jacoco.agent.jar" />
+      <sourceRoot location="org.jacoco.ant.jar" />
+      <sourceRoot location="org.jacoco.core.jar" />
+      <sourceRoot location="org.jacoco.report.jar" />
     </modelRoot>
   </models>
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="yes">
       <classes generated="true" path="${module}/classes_gen" />
-      <library location="${module}/lib/lib/org.jacoco.core-0.8.7.202105040129.jar" />
-      <library location="${module}/lib/lib/org.jacoco.report-0.8.7.202105040129.jar" />
-      <library location="${module}/lib/lib/asm-9.2.jar" />
-      <library location="${module}/lib/lib/asm-tree-9.2.jar" />
-      <library location="${module}/lib/lib/asm-commons-9.2.jar" />
+      <library location="${module}/lib/lib/asm-commons.jar" />
+      <library location="${module}/lib/lib/asm-tree.jar" />
+      <library location="${module}/lib/lib/asm.jar" />
+      <library location="${module}/lib/lib/org.jacoco.agent.jar" />
+      <library location="${module}/lib/lib/org.jacoco.ant.jar" />
+      <library location="${module}/lib/lib/org.jacoco.core.jar" />
+      <library location="${module}/lib/lib/org.jacoco.report.jar" />
     </facet>
   </facets>
   <dependencies>
