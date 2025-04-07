@@ -66,7 +66,7 @@ dependencies {
     //   mps 'com.jetbrains:mps:2024.3'
     mps 'com.jetbrains.mps:mps-prerelease:243.21565.10057'
     antLib "org.apache.ant:ant-junit:1.10.15"
-    antLib "org.jacoco:org.jacoco.ant:0.8.12"
+    antLib "org.jacoco:org.jacoco.ant:0.8.13"
 
     plantuml "net.sourceforge.plantuml:plantuml-asl:1.2025.2"
 
@@ -78,7 +78,7 @@ dependencies {
     treemap "net.sf.jtreemap:ktreemap:1.1.0-atlassian-01"
 
     def asmVersion = "9.2"
-    def jacocoVersion = "0.8.7"
+    def jacocoVersion = "0.8.13"
 
     jacoco "org.ow2.asm:asm:$asmVersion"
     jacoco "org.ow2.asm:asm-commons:$asmVersion"
