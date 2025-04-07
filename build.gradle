@@ -68,7 +68,7 @@ dependencies {
     antLib "org.apache.ant:ant-junit:1.10.15"
     antLib "org.jacoco:org.jacoco.ant:0.8.12"
 
-    plantuml "net.sourceforge.plantuml:plantuml-asl:1.2023.13"
+    plantuml "net.sourceforge.plantuml:plantuml-asl:1.2025.2"
 
     baseLib "org.apache.commons:commons-lang3:3.17.0"
     baseLib "commons-cli:commons-cli:1.5.0"
