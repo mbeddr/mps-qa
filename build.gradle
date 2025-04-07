@@ -70,7 +70,7 @@ dependencies {
 
     plantuml "net.sourceforge.plantuml:plantuml-asl:1.2023.13"
 
-    baseLib "org.apache.commons:commons-lang3:3.3.2"
+    baseLib "org.apache.commons:commons-lang3:3.17.0"
     baseLib "commons-cli:commons-cli:1.5.0"
     baseLib "commons-io:commons-io:2.18.0"
 
