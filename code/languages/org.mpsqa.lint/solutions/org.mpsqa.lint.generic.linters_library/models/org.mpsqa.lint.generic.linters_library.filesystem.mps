@@ -167,6 +167,11 @@
         <child id="8276990574886367508" name="body" index="1zxBo7" />
         <child id="5351203823916750334" name="resource" index="3J1_TS" />
       </concept>
+      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
+        <child id="1163668914799" name="condition" index="3K4Cdx" />
+        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
+        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
+      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
@@ -2209,11 +2214,24 @@
                 <ref role="3uigEE" to="eoo2:~Path" resolve="Path" />
               </node>
             </node>
-            <node concept="2YIFZM" id="2$sjfgVGsmB" role="33vP2m">
-              <ref role="37wK5l" to="eoo2:~Files.list(java.nio.file.Path)" resolve="list" />
-              <ref role="1Pybhc" to="eoo2:~Files" resolve="Files" />
-              <node concept="37vLTw" id="2$sjfgVGsmC" role="37wK5m">
-                <ref role="3cqZAo" node="3mH47G9YyGI" resolve="languagePath" />
+            <node concept="3K4zz7" id="7wWe4iQ3UYf" role="33vP2m">
+              <node concept="2YIFZM" id="7wWe4iQ41Gn" role="3K4GZi">
+                <ref role="37wK5l" to="1ctc:~Stream.empty()" resolve="empty" />
+                <ref role="1Pybhc" to="1ctc:~Stream" resolve="Stream" />
+              </node>
+              <node concept="2YIFZM" id="7wWe4iQ3Ou5" role="3K4Cdx">
+                <ref role="37wK5l" to="eoo2:~Files.exists(java.nio.file.Path,java.nio.file.LinkOption...)" resolve="exists" />
+                <ref role="1Pybhc" to="eoo2:~Files" resolve="Files" />
+                <node concept="37vLTw" id="7wWe4iQ3Rvc" role="37wK5m">
+                  <ref role="3cqZAo" node="3mH47G9YyGI" resolve="languagePath" />
+                </node>
+              </node>
+              <node concept="2YIFZM" id="2$sjfgVGsmB" role="3K4E3e">
+                <ref role="37wK5l" to="eoo2:~Files.list(java.nio.file.Path)" resolve="list" />
+                <ref role="1Pybhc" to="eoo2:~Files" resolve="Files" />
+                <node concept="37vLTw" id="2$sjfgVGsmC" role="37wK5m">
+                  <ref role="3cqZAo" node="3mH47G9YyGI" resolve="languagePath" />
+                </node>
               </node>
             </node>
           </node>
@@ -2226,11 +2244,24 @@
                 <ref role="3uigEE" to="eoo2:~Path" resolve="Path" />
               </node>
             </node>
-            <node concept="2YIFZM" id="2$sjfgVGvsr" role="33vP2m">
-              <ref role="37wK5l" to="eoo2:~Files.list(java.nio.file.Path)" resolve="list" />
-              <ref role="1Pybhc" to="eoo2:~Files" resolve="Files" />
-              <node concept="37vLTw" id="2$sjfgVGvss" role="37wK5m">
-                <ref role="3cqZAo" node="3mH47G9YBfS" resolve="solutionPath" />
+            <node concept="3K4zz7" id="7wWe4iQ4jkL" role="33vP2m">
+              <node concept="2YIFZM" id="7wWe4iQ4qew" role="3K4GZi">
+                <ref role="37wK5l" to="1ctc:~Stream.empty()" resolve="empty" />
+                <ref role="1Pybhc" to="1ctc:~Stream" resolve="Stream" />
+              </node>
+              <node concept="2YIFZM" id="7wWe4iQ4bFD" role="3K4Cdx">
+                <ref role="37wK5l" to="eoo2:~Files.exists(java.nio.file.Path,java.nio.file.LinkOption...)" resolve="exists" />
+                <ref role="1Pybhc" to="eoo2:~Files" resolve="Files" />
+                <node concept="37vLTw" id="7wWe4iQ4fg8" role="37wK5m">
+                  <ref role="3cqZAo" node="3mH47G9YBfS" resolve="solutionPath" />
+                </node>
+              </node>
+              <node concept="2YIFZM" id="2$sjfgVGvsr" role="3K4E3e">
+                <ref role="37wK5l" to="eoo2:~Files.list(java.nio.file.Path)" resolve="list" />
+                <ref role="1Pybhc" to="eoo2:~Files" resolve="Files" />
+                <node concept="37vLTw" id="2$sjfgVGvss" role="37wK5m">
+                  <ref role="3cqZAo" node="3mH47G9YBfS" resolve="solutionPath" />
+                </node>
               </node>
             </node>
           </node>
