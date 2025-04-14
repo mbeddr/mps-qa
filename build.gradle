@@ -318,6 +318,7 @@ task package_mpsqa(type: Zip, dependsOn: [build_allInOne_package, cyclonedxBom])
     }
     from(reportsDir) {
         include 'sbom.json'
+        into 'org.mpsqa.allInOne'
     }
 }
 
@@ -349,7 +350,6 @@ cyclonedxBom {
     outputName = "sbom"
     outputFormat = "json"
     includeLicenseText = false
-    schemaVersion = "1.5"
     includeConfigs = ["plantuml","baseLib","treemap","jacoco"]
 }
 
