@@ -128,6 +128,15 @@
         <child id="3189788309731917348" name="runtime" index="1E1XAP" />
         <child id="9200313594498201639" name="generator" index="1TViLv" />
       </concept>
+      <concept id="322010710375794190" name="jetbrains.mps.build.mps.structure.BuildMps_DevKit" flags="ng" index="3LEwk6">
+        <child id="322010710375832962" name="exports" index="3LEDUa" />
+      </concept>
+      <concept id="322010710375832938" name="jetbrains.mps.build.mps.structure.BuildMps_DevKitExportLanguage" flags="ng" index="3LEDTy">
+        <reference id="322010710375832947" name="language" index="3LEDTV" />
+      </concept>
+      <concept id="322010710375832954" name="jetbrains.mps.build.mps.structure.BuildMps_DevKitExportSolution" flags="ng" index="3LEDTM">
+        <reference id="322010710375832955" name="solution" index="3LEDTN" />
+      </concept>
       <concept id="322010710375871467" name="jetbrains.mps.build.mps.structure.BuildMps_AbstractModule" flags="ng" index="3LEN3z">
         <property id="8369506495128725901" name="compact" index="BnDLt" />
         <property id="322010710375892619" name="uuid" index="3LESm3" />
@@ -873,6 +882,50 @@
           <node concept="3bR9La" id="5PFth5Wc5FX" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:1CtrbKI23Wm" resolve="jetbrains.mps.lang.migration" />
           </node>
+        </node>
+      </node>
+      <node concept="3LEwk6" id="NzCohCfYuI" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="org.mpsqa.lint.devkit" />
+        <property role="3LESm3" value="ce47f8ae-2ba9-435c-99ef-44dc38731951" />
+        <node concept="398BVA" id="NzCohCfYuM" role="3LF7KH">
+          <ref role="398BVh" node="3dqUbgQmcyv" resolve="mpsqa.lint.home" />
+          <node concept="2Ry0Ak" id="NzCohCfYuQ" role="iGT6I">
+            <property role="2Ry0Am" value="devkits" />
+            <node concept="2Ry0Ak" id="NzCohCfYuT" role="2Ry0An">
+              <property role="2Ry0Am" value="org.mpsqa.lint.devkit" />
+              <node concept="2Ry0Ak" id="NzCohCfYuW" role="2Ry0An">
+                <property role="2Ry0Am" value="org.mpsqa.lint.devkit.devkit" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3LEDTy" id="NzCohCfYw1" role="3LEDUa">
+          <ref role="3LEDTV" node="3dqUbgQmcyL" resolve="org.mpsqa.lint.generic" />
+        </node>
+        <node concept="3LEDTy" id="NzCohCfYw2" role="3LEDUa">
+          <ref role="3LEDTV" to="ffeo:7Kfy9QB6L0h" resolve="jetbrains.mps.baseLanguage.collections" />
+        </node>
+        <node concept="3LEDTy" id="NzCohCfYw3" role="3LEDUa">
+          <ref role="3LEDTV" to="ffeo:568PkTlPWgX" resolve="jetbrains.mps.baseLanguage.collections.trove" />
+        </node>
+        <node concept="3LEDTy" id="NzCohCfYw4" role="3LEDUa">
+          <ref role="3LEDTV" to="ffeo:7Kfy9QB6L9O" resolve="jetbrains.mps.lang.smodel" />
+        </node>
+        <node concept="3LEDTM" id="NzCohCfYw5" role="3LEDUa">
+          <ref role="3LEDTN" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+        </node>
+        <node concept="3LEDTM" id="NzCohCfYw6" role="3LEDUa">
+          <ref role="3LEDTN" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+        </node>
+        <node concept="3LEDTy" id="NzCohCgCrh" role="3LEDUa">
+          <ref role="3LEDTV" to="ffeo:14x5$qAUbkb" resolve="jetbrains.mps.lang.access" />
+        </node>
+        <node concept="3LEDTy" id="NzCohCgCri" role="3LEDUa">
+          <ref role="3LEDTV" to="ffeo:3ZgZ1njKuFL" resolve="jetbrains.mps.lang.smodel.query" />
+        </node>
+        <node concept="3LEDTM" id="NzCohCgCrj" role="3LEDUa">
+          <ref role="3LEDTN" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
         </node>
       </node>
     </node>
