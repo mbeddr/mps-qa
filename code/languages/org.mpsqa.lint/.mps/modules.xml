@@ -11,11 +11,6 @@
       <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.lint.generic.sandbox/org.mpsqa.lint.generic.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.lint.mps_lang.linters_library/org.mpsqa.lint.mps_lang.linters_library.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.mpsqa.lint.test/org.mpsqa.lint.test.msd" folder="" />
-      <modulePath path="${enabler.home}/code/languages/tech.cariad.arche.sdv/languages/tech.cariad.arche.fastxml/tech.cariad.arche.fastxml.mpl" folder="" />
-      <modulePath path="${enabler.home}/code/languages/tech.cariad.arche.sdv/languages/tech.cariad.arche.plainarxml.gen/tech.cariad.arche.plainarxml.gen.mpl" folder="" />
-      <modulePath path="${enabler.home}/code/languages/tech.cariad.arche.sdv/languages/tech.cariad.arche.plainarxml.importer/tech.cariad.arche.plainarxml.importer.mpl" folder="" />
-      <modulePath path="${enabler.home}/code/languages/tech.cariad.arche.sdv/languages/tech.cariad.arche.plainarxml/tech.cariad.arche.plainarxml.mpl" folder="" />
-      <modulePath path="${enabler.home}/code/languages/tech.cariad.arche.sdv/solutions/tech.cariad.arche.plainarxml.importer.sandbox/tech.cariad.arche.plainarxml.importer.sandbox.msd" folder="" />
     </projectModules>
   </component>
 </project>
