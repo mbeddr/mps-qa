@@ -10,7 +10,9 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <accessoryModels />
+  <accessoryModels>
+    <model modelUID="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
+  </accessoryModels>
   <generators>
     <generator alias="main" namespace="org.mpsqa.lint.generic.generator" uuid="63d1f8cf-e65e-4d00-bcfa-f196ad4419ca">
       <models>
