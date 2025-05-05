@@ -30,7 +30,7 @@ if (System.env.CI != null && System.env.CI.toBoolean()) {
 }
 
 // Project versions
-ext.major = '999'
+ext.major = '9999'
 ext.minor = '9'
 
 if (ciBuild) {
