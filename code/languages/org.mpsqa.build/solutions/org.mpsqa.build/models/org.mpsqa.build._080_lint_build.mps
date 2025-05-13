@@ -244,9 +244,6 @@
       <node concept="m$_yC" id="4Wm$DJ9mpUP" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbLe59" resolve="com.intellij.modules.mps" />
       </node>
-      <node concept="m$_yC" id="4XPt_HaGDDW" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:ymnOULATpW" resolve="jetbrains.mps.testing" />
-      </node>
       <node concept="m$_yC" id="30a3800NyCh" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:5lGJ4Taqfsl" resolve="jetbrains.mps.ide.modelchecker" />
       </node>
@@ -257,9 +254,6 @@
       </node>
       <node concept="m$_yC" id="72L9LYdx1cL" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:ymnOULATpW" resolve="jetbrains.mps.testing" />
-      </node>
-      <node concept="m$_yC" id="1n_6a3Gunqn" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:4O0hKJpjIV3" resolve="jetbrains.mps.ide.devkit" />
       </node>
     </node>
     <node concept="2G$12M" id="3dqUbgQmcyz" role="3989C9">
