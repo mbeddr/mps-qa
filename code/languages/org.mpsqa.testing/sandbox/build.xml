@@ -166,6 +166,7 @@
     <echo message="generating" />
     <generate fork="true" logLevel="${mps.ant.log}">      
       <settings refid="m2m-defaults" />
+      <plugin path="${artifacts.mps}/lib/mps-workbench.jar" id="com.intellij.modules.mps" />
       <plugin path="${artifacts.mps}/plugins/mps-build" id="jetbrains.mps.build" />
       <plugin path="${artifacts.mps}/plugins/mps-core" id="jetbrains.mps.core" />
       <plugin path="${artifacts.mps}/plugins/mps-junit5" id="jetbrains.mps.junit5" />
@@ -174,6 +175,7 @@
       <plugin path="${artifacts.org.mpsqa.base}/org.mpsqa.base.build" id="org.mpsqa.base.build" />
       <plugin path="${artifacts.org.mpsqa.testing}/org.mpsqa.testing" id="org.mpsqa.testing" />
       <plugin path="${artifacts.org.mpsqa.testing}/org.mpsqa.testing.build" id="org.mpsqa.testing.build" />
+      <library file="${artifacts.mps}/languages/editor/jetbrains.mps.ide.editor.jar" />
       <chunk>
         <module file="${basedir}/jacoco.sandbox/jacoco.sandbox.msd" />
         <module file="${basedir}/jacoco.sandbox.build/jacoco.sandbox.build.msd" />
