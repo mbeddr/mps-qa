@@ -29,10 +29,9 @@ if (System.env.CI != null && System.env.CI.toBoolean()) {
     ext.ciBuild = project.hasProperty("teamcity")
 }
 
-ext.major = '2025'
-ext.minor = '1'
-ext.bugfix = ''
-ext.mpsVersion = ext.major + '.' + ext.minor + (ext.bugfix ? '.' + ext.bugfix : '')
+// Project versions
+ext.major = '9999'
+ext.minor = '9'
 
 if (ciBuild) {
     String branch = GitBasedVersioning.gitBranch
@@ -63,8 +62,9 @@ configurations {
 }
 
 dependencies {
-    mps "com.jetbrains:mps:$mpsVersion"
-
+    // Use the following dependency for published releases:
+    //   mps 'com.jetbrains:mps:2025.1'
+    mps 'com.jetbrains.mps:mps-prerelease:251.23774.10102'
     antLib "org.apache.ant:ant-junit:1.10.15"
     antLib "org.jacoco:org.jacoco.ant:0.8.13"
 
