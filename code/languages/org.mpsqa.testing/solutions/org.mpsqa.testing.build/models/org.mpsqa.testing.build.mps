@@ -393,6 +393,12 @@
       <node concept="m$_yC" id="67NgLmjPxzk" role="m$_yJ">
         <ref role="m$_y1" to="2tou:7C9PHv6FBIO" resolve="org.mpsqa.base" />
       </node>
+      <node concept="m$_yC" id="22xRGj_wKuI" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:6jDaT$jlVJY" />
+      </node>
+      <node concept="m$_yC" id="22xRGj_wKW2" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:ymnOULATpW" />
+      </node>
       <node concept="3_J27D" id="2JVMSZMFXh7" role="m_cZH">
         <node concept="3Mxwew" id="2JVMSZMFXh8" role="3MwsjC">
           <property role="3MwjfP" value="org.mpsqa.testing" />
