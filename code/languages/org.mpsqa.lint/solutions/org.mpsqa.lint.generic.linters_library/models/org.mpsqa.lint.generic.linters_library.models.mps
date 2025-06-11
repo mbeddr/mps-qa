@@ -2296,7 +2296,7 @@
     </node>
     <node concept="2j1LYv" id="22xRGj_xViz" role="2j1YRv">
       <node concept="2j1LYi" id="22xRGj_xVi$" role="2j1YQj">
-        <ref role="2j1LYj" node="22xRGj_xUyg" resolve="forbiddenDevkitsRegex" />
+        <ref role="2j1LYj" node="22xRGj_xUyg" resolve="allowedLanguagesRegex" />
       </node>
       <node concept="Xl_RD" id="22xRGj_xZQw" role="2j1LYg">
         <property role="Xl_RC" value=".*" />
@@ -2431,7 +2431,7 @@
                                       </node>
                                       <node concept="2OqwBi" id="22xRGj_y_tt" role="3uHU7w">
                                         <node concept="2GrUjf" id="22xRGj_y_tu" role="2Oq$k0">
-                                          <ref role="2Gs0qQ" node="22xRGj_y_ta" resolve="devkit" />
+                                          <ref role="2Gs0qQ" node="22xRGj_y_ta" resolve="language" />
                                         </node>
                                         <node concept="liA8E" id="22xRGj_y_tv" role="2OqNvi">
                                           <ref role="37wK5l" to="c17a:~SLanguage.getQualifiedName()" resolve="getQualifiedName" />
@@ -2477,7 +2477,7 @@
                                     </node>
                                     <node concept="2OqwBi" id="22xRGj_zpZa" role="3uHU7w">
                                       <node concept="2GrUjf" id="22xRGj_zpZb" role="2Oq$k0">
-                                        <ref role="2Gs0qQ" node="22xRGj_y_ta" resolve="devkit" />
+                                        <ref role="2Gs0qQ" node="22xRGj_y_ta" resolve="language" />
                                       </node>
                                       <node concept="liA8E" id="22xRGj_zpZc" role="2OqNvi">
                                         <ref role="37wK5l" to="c17a:~SLanguage.getQualifiedName()" resolve="getQualifiedName" />

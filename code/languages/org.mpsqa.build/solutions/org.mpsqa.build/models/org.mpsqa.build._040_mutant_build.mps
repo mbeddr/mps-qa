@@ -212,7 +212,7 @@
         <ref role="m$_y1" to="2tou:7C9PHv6FBIO" resolve="org.mpsqa.base" />
       </node>
       <node concept="m$_yC" id="22xRGj_xpyr" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:4O0hKJpmtq1" />
+        <ref role="m$_y1" to="ffeo:4O0hKJpmtq1" resolve="jetbrains.mps.trove" />
       </node>
       <node concept="3_J27D" id="3PN66LDqBZ9" role="m_cZH">
         <node concept="3Mxwew" id="3PN66LDqBZl" role="3MwsjC">

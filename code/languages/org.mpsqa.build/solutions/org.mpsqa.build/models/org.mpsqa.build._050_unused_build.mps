@@ -212,10 +212,10 @@
         <ref role="m$_y1" to="2tou:7C9PHv6FBIO" resolve="org.mpsqa.base" />
       </node>
       <node concept="m$_yC" id="22xRGj_xpys" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:6Hpa5co69BH" />
+        <ref role="m$_y1" to="ffeo:6Hpa5co69BH" resolve="jetbrains.mps.editor.tooltips" />
       </node>
       <node concept="m$_yC" id="22xRGj_xujh" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:4O0hKJpmtq1" />
+        <ref role="m$_y1" to="ffeo:4O0hKJpmtq1" resolve="jetbrains.mps.trove" />
       </node>
       <node concept="3_J27D" id="1YSnQiVh0xo" role="m_cZH">
         <node concept="3Mxwew" id="1YSnQiVh0xz" role="3MwsjC">
