@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="org.mpsqa.treemap.lib" uuid="56f134c7-a829-428d-9119-715369c69768" moduleVersion="0">
   <models>
-    <modelRoot type="java_classes" contentPath="${module}/lib">
+    <modelRoot contentPath="${module}/lib" type="java_classes">
       <sourceRoot location="jtreemap.jar" />
       <sourceRoot location="ktreemap.jar" />
     </modelRoot>
