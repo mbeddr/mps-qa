@@ -668,10 +668,10 @@
                     </node>
                     <node concept="2OqwBi" id="2Wh5DQ1R3yk" role="33vP2m">
                       <node concept="2GrUjf" id="2Wh5DQ1R3yl" role="2Oq$k0">
-                        <ref role="2Gs0qQ" node="2Wh5DQ1R3yf" resolve="smc" />
+                        <ref role="2Gs0qQ" node="2Wh5DQ1R3yf" resolve="ct" />
                       </node>
                       <node concept="3TrEf2" id="2Wh5DQ1R3ym" role="2OqNvi">
-                        <ref role="3Tt5mk" to="tpee:g7uigIF" />
+                        <ref role="3Tt5mk" to="tpee:g7uigIF" resolve="classifier" />
                       </node>
                     </node>
                   </node>
@@ -750,7 +750,7 @@
                                     </node>
                                   </node>
                                   <node concept="2GrUjf" id="2Wh5DQ1R3yW" role="37wK5m">
-                                    <ref role="2Gs0qQ" node="2Wh5DQ1R3yf" resolve="smc" />
+                                    <ref role="2Gs0qQ" node="2Wh5DQ1R3yf" resolve="ct" />
                                   </node>
                                 </node>
                               </node>
@@ -804,7 +804,7 @@
     </node>
     <node concept="2j1LYv" id="2Wh5DQ1Ozqs" role="2j1YRv">
       <node concept="2j1LYi" id="2Wh5DQ1Ozqt" role="2j1YQj">
-        <ref role="2j1LYj" node="2Wh5DQ1OlF9" resolve="packageNameRegex" />
+        <ref role="2j1LYj" node="2Wh5DQ1OlF9" resolve="fqClassNameRegex" />
       </node>
       <node concept="Xl_RD" id="2Wh5DQ1Ozw9" role="2j1LYg">
         <property role="Xl_RC" value="^org.apache.*StringUtils$" />

@@ -1968,7 +1968,7 @@
                                         <property role="Xl_RC" value="Model from file '" />
                                       </node>
                                       <node concept="37vLTw" id="2Wh5DQ1xT1q" role="3uHU7w">
-                                        <ref role="3cqZAo" node="2Wh5DQ1xT1o" resolve="file" />
+                                        <ref role="3cqZAo" node="2Wh5DQ1xT1o" resolve="path1" />
                                       </node>
                                     </node>
                                     <node concept="Xl_RD" id="3jiJ$OUDXwg" role="3uHU7w">
