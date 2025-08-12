@@ -1867,6 +1867,85 @@
                     </node>
                   </node>
                   <node concept="3clFbS" id="3jiJ$OUE9Dt" role="3clFbx">
+                    <node concept="3cpWs8" id="2Wh5DQ1xT1n" role="3cqZAp">
+                      <node concept="3cpWsn" id="2Wh5DQ1xT1o" role="3cpWs9">
+                        <property role="TrG5h" value="path1" />
+                        <node concept="17QB3L" id="2Wh5DQ1xU$1" role="1tU5fm" />
+                        <node concept="3cpWs3" id="2Wh5DQ1yRp1" role="33vP2m">
+                          <node concept="Xl_RD" id="2Wh5DQ1yS$$" role="3uHU7B">
+                            <property role="Xl_RC" value="PROJECT_DIR" />
+                          </node>
+                          <node concept="2OqwBi" id="2Wh5DQ1y67i" role="3uHU7w">
+                            <node concept="2OqwBi" id="2Wh5DQ1y1qr" role="2Oq$k0">
+                              <node concept="2GrUjf" id="2Wh5DQ1xT1p" role="2Oq$k0">
+                                <ref role="2Gs0qQ" node="61xqYhG05ur" resolve="modelFile" />
+                              </node>
+                              <node concept="liA8E" id="2Wh5DQ1y4qy" role="2OqNvi">
+                                <ref role="37wK5l" to="guwi:~File.getAbsolutePath()" resolve="getAbsolutePath" />
+                              </node>
+                            </node>
+                            <node concept="liA8E" id="2Wh5DQ1y9yD" role="2OqNvi">
+                              <ref role="37wK5l" to="wyt6:~String.substring(int)" resolve="substring" />
+                              <node concept="2OqwBi" id="2Wh5DQ1yi40" role="37wK5m">
+                                <node concept="2OqwBi" id="2Wh5DQ1ydpC" role="2Oq$k0">
+                                  <node concept="37vLTw" id="2Wh5DQ1ybb7" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="3$9W3co3cMq" resolve="projectDir" />
+                                  </node>
+                                  <node concept="liA8E" id="2Wh5DQ1yfvC" role="2OqNvi">
+                                    <ref role="37wK5l" to="guwi:~File.getAbsolutePath()" resolve="getAbsolutePath" />
+                                  </node>
+                                </node>
+                                <node concept="liA8E" id="2Wh5DQ1yjCb" role="2OqNvi">
+                                  <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3cpWs8" id="2Wh5DQ1yl7W" role="3cqZAp">
+                      <node concept="3cpWsn" id="2Wh5DQ1yl7X" role="3cpWs9">
+                        <property role="TrG5h" value="path2" />
+                        <node concept="17QB3L" id="2Wh5DQ1yl7Y" role="1tU5fm" />
+                        <node concept="3cpWs3" id="2Wh5DQ1yXSO" role="33vP2m">
+                          <node concept="2OqwBi" id="2Wh5DQ1yl7Z" role="3uHU7w">
+                            <node concept="2OqwBi" id="2Wh5DQ1yl80" role="2Oq$k0">
+                              <node concept="liA8E" id="2Wh5DQ1yl82" role="2OqNvi">
+                                <ref role="37wK5l" to="guwi:~File.getAbsolutePath()" resolve="getAbsolutePath" />
+                              </node>
+                              <node concept="3EllGN" id="2Wh5DQ1ynZo" role="2Oq$k0">
+                                <node concept="37vLTw" id="2Wh5DQ1ynZp" role="3ElVtu">
+                                  <ref role="3cqZAo" node="3jiJ$OUEe4u" resolve="currentModelId" />
+                                </node>
+                                <node concept="37vLTw" id="2Wh5DQ1ynZq" role="3ElQJh">
+                                  <ref role="3cqZAo" node="3jiJ$OUBO$F" resolve="alreadyCollectedIDs2ModelFiles" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="liA8E" id="2Wh5DQ1yl83" role="2OqNvi">
+                              <ref role="37wK5l" to="wyt6:~String.substring(int)" resolve="substring" />
+                              <node concept="2OqwBi" id="2Wh5DQ1yl84" role="37wK5m">
+                                <node concept="2OqwBi" id="2Wh5DQ1yl85" role="2Oq$k0">
+                                  <node concept="37vLTw" id="2Wh5DQ1yl86" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="3$9W3co3cMq" resolve="projectDir" />
+                                  </node>
+                                  <node concept="liA8E" id="2Wh5DQ1yl87" role="2OqNvi">
+                                    <ref role="37wK5l" to="guwi:~File.getAbsolutePath()" resolve="getAbsolutePath" />
+                                  </node>
+                                </node>
+                                <node concept="liA8E" id="2Wh5DQ1yl88" role="2OqNvi">
+                                  <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="Xl_RD" id="2Wh5DQ1yZ59" role="3uHU7B">
+                            <property role="Xl_RC" value="PROJECT_DIR" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
                     <node concept="3clFbF" id="3jiJ$OUDXw4" role="3cqZAp">
                       <node concept="2OqwBi" id="3jiJ$OUDXw5" role="3clFbG">
                         <node concept="37vLTw" id="3jiJ$OUDXw6" role="2Oq$k0">
@@ -1888,8 +1967,8 @@
                                       <node concept="Xl_RD" id="3jiJ$OUDXwc" role="3uHU7B">
                                         <property role="Xl_RC" value="Model from file '" />
                                       </node>
-                                      <node concept="2GrUjf" id="61xqYhG0YAi" role="3uHU7w">
-                                        <ref role="2Gs0qQ" node="61xqYhG05ur" resolve="modelFile" />
+                                      <node concept="37vLTw" id="2Wh5DQ1xT1q" role="3uHU7w">
+                                        <ref role="3cqZAo" node="2Wh5DQ1xT1o" resolve="file" />
                                       </node>
                                     </node>
                                     <node concept="Xl_RD" id="3jiJ$OUDXwg" role="3uHU7w">
@@ -1901,18 +1980,8 @@
                                   </node>
                                 </node>
                               </node>
-                              <node concept="2OqwBi" id="3jiJ$OUFZeC" role="3uHU7w">
-                                <node concept="3EllGN" id="3jiJ$OUE_R8" role="2Oq$k0">
-                                  <node concept="37vLTw" id="3jiJ$OUEA1j" role="3ElVtu">
-                                    <ref role="3cqZAo" node="3jiJ$OUEe4u" resolve="currentModelId" />
-                                  </node>
-                                  <node concept="37vLTw" id="3jiJ$OUDXw9" role="3ElQJh">
-                                    <ref role="3cqZAo" node="3jiJ$OUBO$F" resolve="alreadyCollectedIDs2ModelFiles" />
-                                  </node>
-                                </node>
-                                <node concept="liA8E" id="61xqYhG1dpa" role="2OqNvi">
-                                  <ref role="37wK5l" to="guwi:~File.getAbsolutePath()" resolve="getAbsolutePath" />
-                                </node>
+                              <node concept="37vLTw" id="2Wh5DQ1yqA1" role="3uHU7w">
+                                <ref role="3cqZAo" node="2Wh5DQ1yl7X" resolve="path2" />
                               </node>
                             </node>
                           </node>
