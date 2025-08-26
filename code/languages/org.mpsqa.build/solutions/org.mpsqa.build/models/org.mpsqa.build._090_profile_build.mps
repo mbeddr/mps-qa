@@ -228,6 +228,9 @@
       <node concept="m$_yC" id="6ueixcLDsQA" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbLe59" resolve="com.intellij.modules.mps" />
       </node>
+      <node concept="m$_yC" id="22xRGj_xEd9" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:4O0hKJpmtq1" resolve="jetbrains.mps.trove" />
+      </node>
       <node concept="3_J27D" id="6Z3QA_yyZNb" role="m_cZH">
         <node concept="3Mxwew" id="6Z3QA_yyZNm" role="3MwsjC">
           <property role="3MwjfP" value="org.mpsqa.profile" />
