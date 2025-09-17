@@ -5,13 +5,13 @@ import org.gradle.api.artifacts.ResolvedArtifact
 import java.util.*
 
 plugins {
-    id("de.itemis.mps.gradle.common") version "1.28.0.+"
-    id("download-jbr") version "1.28.0.+"
+    id("de.itemis.mps.gradle.common") version "1.29.3.+"
+    id("download-jbr") version "1.29.3.+"
     id("base")
     id("maven-publish")
     id("co.riiid.gradle") version "0.4.2"
 
-    id("de.itemis.mps.gradle.launcher") version "2.5.2.+"
+    id("de.itemis.mps.gradle.launcher") version "2.7.0.+"
 
     id("org.cyclonedx.bom") version "2.2.0"
 }
