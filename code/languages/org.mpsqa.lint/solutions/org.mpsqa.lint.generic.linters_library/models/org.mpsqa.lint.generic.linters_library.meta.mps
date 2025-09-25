@@ -1012,7 +1012,7 @@
             <property role="TrG5h" value="cs" />
           </node>
           <node concept="37vLTw" id="4otXw3$naTQ" role="2GsD0m">
-            <ref role="3cqZAo" node="4otXw3$naT0" resolve="reachableCheckableScripts" />
+            <ref role="3cqZAo" node="4otXw3$naT0" resolve="checkableScriptsFromSameModel" />
           </node>
           <node concept="3clFbS" id="4otXw3$naTR" role="2LFqv$">
             <node concept="3clFbJ" id="4otXw3$nn_0" role="3cqZAp">
@@ -1165,7 +1165,7 @@
       </node>
       <node concept="2tJFMh" id="4otXw3$naUN" role="2j1LYg">
         <node concept="ZC_QK" id="4otXw3$naUO" role="2tJFKM">
-          <ref role="2aWVGs" node="4otXw3$naS_" resolve="not_used_linters" />
+          <ref role="2aWVGs" node="4otXw3$naS_" resolve="linters_without_documentation" />
         </node>
       </node>
     </node>
