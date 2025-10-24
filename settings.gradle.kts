@@ -7,6 +7,7 @@ pluginManagement {
                 password = if (extra.has("github_token")) extra.get("github_token") as String else System.getenv("GITHUB_TOKEN")
             }
         }
+        maven("https://artifacts.itemis.cloud/repository/maven-mps")
         gradlePluginPortal()
     }
 }
