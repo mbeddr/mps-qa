@@ -249,7 +249,10 @@
       <node concept="m$_yC" id="7DAiGQdnG_C" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:5HVSRHdVm9a" resolve="jetbrains.mps.build" />
       </node>
-      <node concept="m$_yC" id="4UYQrPl1MZe" role="m$_yJ">
+      <node concept="m$_yC" id="22xRGj_xpyE" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:4O0hKJpmtq1" resolve="jetbrains.mps.trove" />
+      </node>
+      <node concept="m$_yC" id="22xRGj_xzB8" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:6Hpa5co69BH" resolve="jetbrains.mps.editor.tooltips" />
       </node>
     </node>
