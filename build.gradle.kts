@@ -16,7 +16,7 @@ plugins {
     id("org.cyclonedx.bom") version "2.2.0"
 }
 
-val jbrVers = "21.0.5-b631.8"
+val jbrVers = "21.0.6-b895.109"
 
 downloadJbr {
     jbrVersion = jbrVers
@@ -31,7 +31,7 @@ val ciBuild = if (System.getenv("CI") != null && System.getenv("CI").toBoolean()
     project.hasProperty("teamcity")
 }
 
-val mpsVersion = "2024.3"
+val mpsVersion = "2025.1"
 
 // Project versions
 val major = mpsVersion.substring(0, 4)
@@ -63,7 +63,7 @@ val jacoco by configurations.creating { isTransitive = false }
 dependencies {
     mps("com.jetbrains:mps:$mpsVersion")
 
-    plantuml("net.sourceforge.plantuml:plantuml-asl:1.2023.13")
+    plantuml("net.sourceforge.plantuml:plantuml-asl:1.2025.2")
 
     baseLib("org.apache.commons:commons-lang3:3.20.0")
     baseLib("commons-cli:commons-cli:1.5.0")
@@ -73,7 +73,7 @@ dependencies {
     treemap("net.sf.jtreemap:ktreemap:1.1.0-atlassian-01")
 
     val asmVersion = "9.2"
-    val jacocoVersion = "0.8.7"
+    val jacocoVersion = "0.8.13"
 
     jacoco("org.ow2.asm:asm:$asmVersion")
     jacoco("org.ow2.asm:asm-commons:$asmVersion")
@@ -84,7 +84,7 @@ dependencies {
     jacoco("org.jacoco:org.jacoco.report:$jacocoVersion")
 
     antLib("org.apache.ant:ant-junit:1.10.15")
-    antLib("org.jacoco:org.jacoco.ant:0.8.12")
+    antLib("org.jacoco:org.jacoco.ant:0.8.13")
 }
 
 repositories {
