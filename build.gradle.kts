@@ -100,7 +100,7 @@ repositories {
 }
 
 val skipResolveMps = project.hasProperty("mpsHomeDir")
-val mpsHomeDir = rootProject.file(project.findProperty("mpsHomeDir") ?: "$buildDir/mps")
+val mpsHomeDir = rootProject.file(project.findProperty("mpsHomeDir") ?: rootProject.layout.buildDirectory.dir("mps"))
 
 val resolveMps = if (skipResolveMps) {
     tasks.register("resolveMps") {
@@ -122,9 +122,9 @@ val resolveMps = if (skipResolveMps) {
 // tools needed for compiler support in ant calls
 val buildScriptClasspath = project.configurations.getByName("antLib")
 
-val artifactsDir = file("$buildDir/artifacts")
-val reportsDir = file("$buildDir/reports")
-val dependenciesDir = file("$buildDir/dependencies")
+val artifactsDir = rootProject.layout.buildDirectory.dir("artifacts").get().asFile
+val reportsDir = rootProject.layout.buildDirectory.dir("reports").get().asFile
+val dependenciesDir = rootProject.layout.buildDirectory.dir("dependencies").get().asFile
 
 // ___________________ utilities ___________________
 
@@ -133,7 +133,7 @@ val defaultScriptArgs = mapOf(
     "mps_home" to mpsHomeDir,
     "build.jna.library.path" to File(mpsHomeDir, "lib/jna/${System.getProperty("os.arch")}"),
     "mpsqa.home" to rootDir,
-    "build.dir" to buildDir,
+    "build.dir" to rootProject.layout.buildDirectory.get().asFile,
     "version" to version,
     "build.date" to Date()
 )
@@ -154,7 +154,7 @@ tasks.withType<RunAntScript> {
     dependsOn(configureJava, resolveMps)
 }
 
-fun scriptFile(name: String): File = file("$buildDir/scripts/$name")
+fun scriptFile(name: String): File = rootProject.layout.buildDirectory.dir("scripts").get().file(name).asFile
 
 fun createResolveTask(taskName: String, configurationName: String, outputDir: String) {
     tasks.register(taskName, Sync::class) {
@@ -252,7 +252,7 @@ val build_sandboxes = tasks.register("build_sandboxes", BuildLanguages::class) {
     dependsOn("build_unused_languages")
     dependsOn(":testing:sandbox:assemble")
 
-    script = file("$buildDir/scripts/build-sandboxes.xml")
+    script = scriptFile("build-sandboxes.xml")
 }
 
 tasks.register("build_main_languages") {
