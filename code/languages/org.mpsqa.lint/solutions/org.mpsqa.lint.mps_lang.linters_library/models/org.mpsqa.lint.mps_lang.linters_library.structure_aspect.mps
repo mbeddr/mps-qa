@@ -1684,7 +1684,7 @@
                           <ref role="2Gs0qQ" node="59aaTqc3Kry" resolve="node" />
                         </node>
                         <node concept="3TrEf2" id="59aaTqcasHh" role="2OqNvi">
-                          <ref role="3Tt5mk" to="tpce:5vfjF5cjTVP" />
+                          <ref role="3Tt5mk" to="tpce:5vfjF5cjTVP" resolve="icon" />
                         </node>
                       </node>
                       <node concept="3w_OXm" id="59aaTqcatHr" role="2OqNvi" />
