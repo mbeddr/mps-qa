@@ -1871,7 +1871,7 @@
                                 <ref role="3cqZAo" node="2s7fKStziwq" resolve="msg" />
                               </node>
                               <node concept="2GrUjf" id="2s7fKStziwG" role="37wK5m">
-                                <ref role="2Gs0qQ" node="3bllPAaPI5n" resolve="conceptDeclaration" />
+                                <ref role="2Gs0qQ" node="3bllPAaPI5n" resolve="quickFix" />
                               </node>
                             </node>
                           </node>
