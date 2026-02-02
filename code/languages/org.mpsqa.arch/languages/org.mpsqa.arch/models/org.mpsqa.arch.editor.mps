@@ -345,6 +345,9 @@
   <node concept="24kQdi" id="6MUZd5Uj9w7">
     <ref role="1XX52x" to="ryx8:6MUZd5Uj9vA" resolve="ArchSpecification" />
     <node concept="3EZMnI" id="6MUZd5Uj9w9" role="2wV5jI">
+      <node concept="PMmxH" id="1B1BP5fx8Nj" role="3EZMnx">
+        <ref role="PMmxG" node="2p0G1uTtlry" resolve="CommentEditorComponent" />
+      </node>
       <node concept="3EZMnI" id="6MUZd5UjaE7" role="3EZMnx">
         <node concept="VPM3Z" id="6MUZd5UjaE9" role="3F10Kt" />
         <node concept="3F0ifn" id="7geiIKJls5p" role="3EZMnx">
