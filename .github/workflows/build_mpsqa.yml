@@ -47,7 +47,7 @@ jobs:
         for pid in $(jps -q); do jstack -l -e "$pid" > "build/stack$pid.txt" || true; done
 
     - name: Upload logs on cancellation or failure
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
       if: cancelled() || failure()
       with:
         name: logs
@@ -80,7 +80,7 @@ jobs:
           -Partifacts.itemis.cloud.pw=${{secrets.ARTIFACTS_ITEMIS_CLOUD_PW}}
 
     - name: Archive distribution
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
       with:
         name: org.mpsqa.allInOne
         path: build/artifacts/org.mpsqa.allInOne/
