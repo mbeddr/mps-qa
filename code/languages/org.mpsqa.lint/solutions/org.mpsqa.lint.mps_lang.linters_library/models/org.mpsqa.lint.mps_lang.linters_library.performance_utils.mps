@@ -6,7 +6,7 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
   </languages>
   <imports>
@@ -215,14 +215,8 @@
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
       <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
@@ -328,9 +322,39 @@
           <ref role="3uigEE" to="tjjq:~Context" resolve="Context" />
         </node>
         <node concept="z59LJ" id="30a38016jpz" role="lGtFl">
-          <node concept="TZ5HA" id="30a38016jp$" role="TZ5H$">
-            <node concept="1dT_AC" id="30a38016jp_" role="1dT_Ay">
-              <property role="1dT_AB" value="DO_NOT_DELETE: dummy field to avoid triggering the linter for not used" />
+          <node concept="1PaTwC" id="RYGxAyBhv_" role="1Vez_I">
+            <node concept="3oM_SD" id="RYGxAyBhvA" role="1PaTwD">
+              <property role="3oM_SC" value="DO_NOT_DELETE:" />
+            </node>
+            <node concept="3oM_SD" id="RYGxAyBhvB" role="1PaTwD">
+              <property role="3oM_SC" value="dummy" />
+            </node>
+            <node concept="3oM_SD" id="RYGxAyBhvC" role="1PaTwD">
+              <property role="3oM_SC" value="field" />
+            </node>
+            <node concept="3oM_SD" id="RYGxAyBhvD" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="RYGxAyBhvE" role="1PaTwD">
+              <property role="3oM_SC" value="avoid" />
+            </node>
+            <node concept="3oM_SD" id="RYGxAyBhvF" role="1PaTwD">
+              <property role="3oM_SC" value="triggering" />
+            </node>
+            <node concept="3oM_SD" id="RYGxAyBhvG" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="RYGxAyBhvH" role="1PaTwD">
+              <property role="3oM_SC" value="linter" />
+            </node>
+            <node concept="3oM_SD" id="RYGxAyBhvI" role="1PaTwD">
+              <property role="3oM_SC" value="for" />
+            </node>
+            <node concept="3oM_SD" id="RYGxAyBhvJ" role="1PaTwD">
+              <property role="3oM_SC" value="not" />
+            </node>
+            <node concept="3oM_SD" id="RYGxAyBhvK" role="1PaTwD">
+              <property role="3oM_SC" value="used" />
             </node>
           </node>
         </node>

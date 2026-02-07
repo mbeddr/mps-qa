@@ -6,7 +6,7 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="6" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
@@ -250,26 +250,22 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="2546654756694997551" name="jetbrains.mps.baseLanguage.javadoc.structure.LinkInlineDocTag" flags="ng" index="92FcH">
-        <child id="2546654756694997556" name="reference" index="92FcQ" />
-        <child id="3106559687488913694" name="line" index="2XjZqd" />
-      </concept>
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      <concept id="6971016359099800069" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldSingleCommentLine" flags="ngI" index="2JaDLO">
+        <child id="6971016359099801474" name="commentBody" index="2JaDBN" />
       </concept>
       <concept id="2217234381367530212" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocReference" flags="ng" index="VXe08">
         <reference id="2217234381367530213" name="classifier" index="VXe09" />
       </concept>
-      <concept id="8970989240999019145" name="jetbrains.mps.baseLanguage.javadoc.structure.InlineTagCommentLinePart" flags="ng" index="1dT_AA">
-        <child id="6962838954693749192" name="tag" index="qph3F" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
+      <concept id="5085607816306582224" name="jetbrains.mps.baseLanguage.javadoc.structure.InlineTagCommentTextElement" flags="ng" index="1Vtdud">
+        <child id="5085607816306582225" name="tag" index="1Vtduc" />
+      </concept>
+      <concept id="5085607816306647746" name="jetbrains.mps.baseLanguage.javadoc.structure.LinkInlineDocTagTE" flags="ng" index="1VuXuv">
+        <child id="5085607816306647747" name="reference" index="1VuXuu" />
+      </concept>
     </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
       <concept id="1213999088275" name="jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierFieldDeclaration" flags="ig" index="2BZ0e9" />
@@ -1009,35 +1005,126 @@
       <ref role="3uigEE" to="wsw7:6qi2OtU3u$c" resolve="AbstractNodeCheckerInEditor" />
     </node>
     <node concept="3UR2Jj" id="3LCCkAqzsod" role="lGtFl">
-      <node concept="TZ5HA" id="3LCCkAqzsoe" role="TZ5H$">
-        <node concept="1dT_AC" id="3LCCkAqzsof" role="1dT_Ay">
-          <property role="1dT_AB" value="A special kind of checker that does nothing, but does have a " />
+      <node concept="1PaTwC" id="RYGxAy_VTA" role="1Vez_I">
+        <node concept="3oM_SD" id="RYGxAy_VTB" role="1PaTwD">
+          <property role="3oM_SC" value="A" />
         </node>
-        <node concept="1dT_AA" id="3LCCkAqzwDY" role="1dT_Ay">
-          <node concept="92FcH" id="3LCCkAqzwE4" role="qph3F">
-            <node concept="TZ5HA" id="3LCCkAqzwE6" role="2XjZqd" />
-            <node concept="VXe08" id="3LCCkAqzxVB" role="92FcQ">
+        <node concept="3oM_SD" id="RYGxAy_VTC" role="1PaTwD">
+          <property role="3oM_SC" value="special" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAy_VTD" role="1PaTwD">
+          <property role="3oM_SC" value="kind" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAy_VTE" role="1PaTwD">
+          <property role="3oM_SC" value="of" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAy_VTF" role="1PaTwD">
+          <property role="3oM_SC" value="checker" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAy_VTG" role="1PaTwD">
+          <property role="3oM_SC" value="that" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAy_VTH" role="1PaTwD">
+          <property role="3oM_SC" value="does" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAy_VTI" role="1PaTwD">
+          <property role="3oM_SC" value="nothing," />
+        </node>
+        <node concept="3oM_SD" id="RYGxAy_VTJ" role="1PaTwD">
+          <property role="3oM_SC" value="but" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAy_VTK" role="1PaTwD">
+          <property role="3oM_SC" value="does" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAy_VTL" role="1PaTwD">
+          <property role="3oM_SC" value="have" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAy_VTM" role="1PaTwD">
+          <property role="3oM_SC" value="a" />
+        </node>
+        <node concept="1Vtdud" id="RYGxAy_VTN" role="1PaTwD">
+          <node concept="1VuXuv" id="RYGxAy_VTO" role="1Vtduc">
+            <node concept="VXe08" id="3LCCkAqzxVB" role="1VuXuu">
               <ref role="VXe09" to="wsw7:4c7y4qc4pe6" resolve="ICheckingPostprocessor" />
+            </node>
+            <node concept="1PaTwC" id="RYGxAy_VTR" role="2JaDBN">
+              <node concept="3oM_SD" id="RYGxAy_VTS" role="1PaTwD">
+                <property role="3oM_SC" value="" />
+              </node>
             </node>
           </node>
         </node>
-        <node concept="1dT_AC" id="3LCCkAqzwDX" role="1dT_Ay">
-          <property role="1dT_AB" value=" to process warnings" />
+        <node concept="3oM_SD" id="RYGxAy_VTT" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAy_VTU" role="1PaTwD">
+          <property role="3oM_SC" value="process" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAy_VTV" role="1PaTwD">
+          <property role="3oM_SC" value="warnings" />
         </node>
       </node>
-      <node concept="TZ5HA" id="3LCCkAqzyJ3" role="TZ5H$">
-        <node concept="1dT_AC" id="3LCCkAqzyJ4" role="1dT_Ay">
-          <property role="1dT_AB" value="reported by other checkers and are IRRELEVANT for this project. " />
+      <node concept="1PaTwC" id="RYGxAy_VTW" role="1Vez_I">
+        <node concept="3oM_SD" id="RYGxAy_VTX" role="1PaTwD">
+          <property role="3oM_SC" value="reported" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAy_VTY" role="1PaTwD">
+          <property role="3oM_SC" value="by" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAy_VTZ" role="1PaTwD">
+          <property role="3oM_SC" value="other" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAy_VU0" role="1PaTwD">
+          <property role="3oM_SC" value="checkers" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAy_VU1" role="1PaTwD">
+          <property role="3oM_SC" value="and" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAy_VU2" role="1PaTwD">
+          <property role="3oM_SC" value="are" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAy_VU3" role="1PaTwD">
+          <property role="3oM_SC" value="IRRELEVANT" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAy_VU4" role="1PaTwD">
+          <property role="3oM_SC" value="for" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAy_VU5" role="1PaTwD">
+          <property role="3oM_SC" value="this" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAy_VU6" role="1PaTwD">
+          <property role="3oM_SC" value="project." />
         </node>
       </node>
-      <node concept="TZ5HA" id="3LCCkAqz_bN" role="TZ5H$">
-        <node concept="1dT_AC" id="3LCCkAqz_bO" role="1dT_Ay">
-          <property role="1dT_AB" value="&lt;p&gt;" />
+      <node concept="1PaTwC" id="RYGxAy_VU7" role="1Vez_I">
+        <node concept="3oM_SD" id="RYGxAy_VU8" role="1PaTwD">
+          <property role="3oM_SC" value="&lt;p&gt;" />
         </node>
       </node>
-      <node concept="TZ5HA" id="1DrnXKM1K9Z" role="TZ5H$">
-        <node concept="1dT_AC" id="1DrnXKM1Ka0" role="1dT_Ay">
-          <property role="1dT_AB" value="This code is copied and adapted from &quot;jetbrains.mps.checkers.SuppressErrorsChecker&quot;" />
+      <node concept="1PaTwC" id="RYGxAy_VU9" role="1Vez_I">
+        <node concept="3oM_SD" id="RYGxAy_VUa" role="1PaTwD">
+          <property role="3oM_SC" value="This" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAy_VUb" role="1PaTwD">
+          <property role="3oM_SC" value="code" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAy_VUc" role="1PaTwD">
+          <property role="3oM_SC" value="is" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAy_VUd" role="1PaTwD">
+          <property role="3oM_SC" value="copied" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAy_VUe" role="1PaTwD">
+          <property role="3oM_SC" value="and" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAy_VUf" role="1PaTwD">
+          <property role="3oM_SC" value="adapted" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAy_VUg" role="1PaTwD">
+          <property role="3oM_SC" value="from" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAy_VUh" role="1PaTwD">
+          <property role="3oM_SC" value="&quot;jetbrains.mps.checkers.SuppressErrorsChecker&quot;" />
         </node>
       </node>
     </node>

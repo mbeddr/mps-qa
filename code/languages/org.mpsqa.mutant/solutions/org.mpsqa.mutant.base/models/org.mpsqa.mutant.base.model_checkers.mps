@@ -5,7 +5,7 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
   </languages>
   <imports>
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
@@ -94,22 +94,17 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="2217234381367049075" name="jetbrains.mps.baseLanguage.javadoc.structure.CodeInlineDocTag" flags="ng" index="VVOAv">
-        <child id="3106559687488741665" name="line" index="2Xj1qM" />
-      </concept>
-      <concept id="8970989240999019145" name="jetbrains.mps.baseLanguage.javadoc.structure.InlineTagCommentLinePart" flags="ng" index="1dT_AA">
-        <child id="6962838954693749192" name="tag" index="qph3F" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      <concept id="6971016359099800069" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldSingleCommentLine" flags="ngI" index="2JaDLO">
+        <child id="6971016359099801474" name="commentBody" index="2JaDBN" />
       </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
+      <concept id="5085607816306582224" name="jetbrains.mps.baseLanguage.javadoc.structure.InlineTagCommentTextElement" flags="ng" index="1Vtdud">
+        <child id="5085607816306582225" name="tag" index="1Vtduc" />
+      </concept>
+      <concept id="5085607816306633585" name="jetbrains.mps.baseLanguage.javadoc.structure.CodeInlineDocTagTE" flags="ng" index="1VuTSG" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
@@ -126,6 +121,14 @@
       <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7">
         <property id="8575328350543493365" name="message" index="huDt6" />
         <property id="2423417345669755629" name="filter" index="1eyWvh" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -480,26 +483,101 @@
     <node concept="2tJIrI" id="4VtLjdspxXJ" role="jymVt" />
     <node concept="3Tm1VV" id="4VtLjdspxWz" role="1B3o_S" />
     <node concept="3UR2Jj" id="4VtLjdspLWh" role="lGtFl">
-      <node concept="TZ5HA" id="4VtLjdspLWi" role="TZ5H$">
-        <node concept="1dT_AC" id="4VtLjdspLWj" role="1dT_Ay">
-          <property role="1dT_AB" value="This is a re-implementation of " />
+      <node concept="1PaTwC" id="RYGxAyBijH" role="1Vez_I">
+        <node concept="3oM_SD" id="RYGxAyBijI" role="1PaTwD">
+          <property role="3oM_SC" value="This" />
         </node>
-        <node concept="1dT_AA" id="4VtLjdspM4X" role="1dT_Ay">
-          <node concept="VVOAv" id="4VtLjdspM53" role="qph3F">
-            <node concept="TZ5HA" id="4VtLjdspM55" role="2Xj1qM">
-              <node concept="1dT_AC" id="4VtLjdspM59" role="1dT_Ay">
-                <property role="1dT_AB" value="jetbrains.mps.checkers.ConstraintsChecker" />
+        <node concept="3oM_SD" id="RYGxAyBijJ" role="1PaTwD">
+          <property role="3oM_SC" value="is" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyBijK" role="1PaTwD">
+          <property role="3oM_SC" value="a" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyBijL" role="1PaTwD">
+          <property role="3oM_SC" value="re-implementation" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyBijM" role="1PaTwD">
+          <property role="3oM_SC" value="of" />
+        </node>
+        <node concept="1Vtdud" id="RYGxAyBijN" role="1PaTwD">
+          <node concept="1VuTSG" id="RYGxAyBijO" role="1Vtduc">
+            <node concept="1PaTwC" id="RYGxAyBijR" role="2JaDBN">
+              <node concept="3oM_SD" id="RYGxAyBijS" role="1PaTwD">
+                <property role="3oM_SC" value="jetbrains.mps.checkers.ConstraintsChecker" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="1dT_AC" id="4VtLjdspM4W" role="1dT_Ay">
-          <property role="1dT_AB" value=" with the goal of increasing the performance." />
+        <node concept="3oM_SD" id="RYGxAyBijT" role="1PaTwD">
+          <property role="3oM_SC" value="with" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyBijU" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyBijV" role="1PaTwD">
+          <property role="3oM_SC" value="goal" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyBijW" role="1PaTwD">
+          <property role="3oM_SC" value="of" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyBijX" role="1PaTwD">
+          <property role="3oM_SC" value="increasing" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyBijY" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyBijZ" role="1PaTwD">
+          <property role="3oM_SC" value="performance." />
         </node>
       </node>
-      <node concept="TZ5HA" id="4VtLjdspM3m" role="TZ5H$">
-        <node concept="1dT_AC" id="4VtLjdspM3n" role="1dT_Ay">
-          <property role="1dT_AB" value="The strategy used to increase the performance is to immediately return when an error is found." />
+      <node concept="1PaTwC" id="RYGxAyBik0" role="1Vez_I">
+        <node concept="3oM_SD" id="RYGxAyBik1" role="1PaTwD">
+          <property role="3oM_SC" value="The" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyBik2" role="1PaTwD">
+          <property role="3oM_SC" value="strategy" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyBik3" role="1PaTwD">
+          <property role="3oM_SC" value="used" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyBik4" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyBik5" role="1PaTwD">
+          <property role="3oM_SC" value="increase" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyBik6" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyBik7" role="1PaTwD">
+          <property role="3oM_SC" value="performance" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyBik8" role="1PaTwD">
+          <property role="3oM_SC" value="is" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyBik9" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyBika" role="1PaTwD">
+          <property role="3oM_SC" value="immediately" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyBikb" role="1PaTwD">
+          <property role="3oM_SC" value="return" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyBikc" role="1PaTwD">
+          <property role="3oM_SC" value="when" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyBikd" role="1PaTwD">
+          <property role="3oM_SC" value="an" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyBike" role="1PaTwD">
+          <property role="3oM_SC" value="error" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyBikf" role="1PaTwD">
+          <property role="3oM_SC" value="is" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyBikg" role="1PaTwD">
+          <property role="3oM_SC" value="found." />
         </node>
       </node>
     </node>

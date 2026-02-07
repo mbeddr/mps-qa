@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
   </languages>
@@ -142,16 +142,10 @@
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -159,6 +153,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -1281,44 +1283,416 @@
     </node>
     <node concept="3Tm1VV" id="4DA1Mfy76SJ" role="1B3o_S" />
     <node concept="3UR2Jj" id="67NgLmjPkml" role="lGtFl">
-      <node concept="TZ5HA" id="67NgLmjPkmm" role="TZ5H$">
-        <node concept="1dT_AC" id="67NgLmjPkmn" role="1dT_Ay">
-          <property role="1dT_AB" value="Command line tool for generating coverage reports for MPS projects. Reports are generated as HTML, XML and CSV." />
+      <node concept="1PaTwC" id="RYGxAyAt0P" role="1Vez_I">
+        <node concept="3oM_SD" id="RYGxAyAt0Q" role="1PaTwD">
+          <property role="3oM_SC" value="Command" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt0R" role="1PaTwD">
+          <property role="3oM_SC" value="line" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt0S" role="1PaTwD">
+          <property role="3oM_SC" value="tool" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt0T" role="1PaTwD">
+          <property role="3oM_SC" value="for" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt0U" role="1PaTwD">
+          <property role="3oM_SC" value="generating" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt0V" role="1PaTwD">
+          <property role="3oM_SC" value="coverage" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt0W" role="1PaTwD">
+          <property role="3oM_SC" value="reports" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt0X" role="1PaTwD">
+          <property role="3oM_SC" value="for" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt0Y" role="1PaTwD">
+          <property role="3oM_SC" value="MPS" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt0Z" role="1PaTwD">
+          <property role="3oM_SC" value="projects." />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt10" role="1PaTwD">
+          <property role="3oM_SC" value="Reports" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt11" role="1PaTwD">
+          <property role="3oM_SC" value="are" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt12" role="1PaTwD">
+          <property role="3oM_SC" value="generated" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt13" role="1PaTwD">
+          <property role="3oM_SC" value="as" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt14" role="1PaTwD">
+          <property role="3oM_SC" value="HTML," />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt15" role="1PaTwD">
+          <property role="3oM_SC" value="XML" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt16" role="1PaTwD">
+          <property role="3oM_SC" value="and" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt17" role="1PaTwD">
+          <property role="3oM_SC" value="CSV." />
         </node>
       </node>
-      <node concept="TZ5HA" id="67NgLmjPmah" role="TZ5H$">
-        <node concept="1dT_AC" id="67NgLmjPmai" role="1dT_Ay">
-          <property role="1dT_AB" value="Before calling this tool, we assume that MPS was previously ran and coverage information was collected - i.e. the &quot;jacoco.exec&quot; file containing coverage information exists." />
+      <node concept="1PaTwC" id="RYGxAyAt18" role="1Vez_I">
+        <node concept="3oM_SD" id="RYGxAyAt19" role="1PaTwD">
+          <property role="3oM_SC" value="Before" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt1a" role="1PaTwD">
+          <property role="3oM_SC" value="calling" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt1b" role="1PaTwD">
+          <property role="3oM_SC" value="this" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt1c" role="1PaTwD">
+          <property role="3oM_SC" value="tool," />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt1d" role="1PaTwD">
+          <property role="3oM_SC" value="we" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt1e" role="1PaTwD">
+          <property role="3oM_SC" value="assume" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt1f" role="1PaTwD">
+          <property role="3oM_SC" value="that" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt1g" role="1PaTwD">
+          <property role="3oM_SC" value="MPS" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt1h" role="1PaTwD">
+          <property role="3oM_SC" value="was" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt1i" role="1PaTwD">
+          <property role="3oM_SC" value="previously" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt1j" role="1PaTwD">
+          <property role="3oM_SC" value="ran" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt1k" role="1PaTwD">
+          <property role="3oM_SC" value="and" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt1l" role="1PaTwD">
+          <property role="3oM_SC" value="coverage" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt1m" role="1PaTwD">
+          <property role="3oM_SC" value="information" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt1n" role="1PaTwD">
+          <property role="3oM_SC" value="was" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt1o" role="1PaTwD">
+          <property role="3oM_SC" value="collected" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt1p" role="1PaTwD">
+          <property role="3oM_SC" value="-" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt1q" role="1PaTwD">
+          <property role="3oM_SC" value="i.e." />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt1r" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt1s" role="1PaTwD">
+          <property role="3oM_SC" value="&quot;jacoco.exec&quot;" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt1t" role="1PaTwD">
+          <property role="3oM_SC" value="file" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt1u" role="1PaTwD">
+          <property role="3oM_SC" value="containing" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt1v" role="1PaTwD">
+          <property role="3oM_SC" value="coverage" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt1w" role="1PaTwD">
+          <property role="3oM_SC" value="information" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt1x" role="1PaTwD">
+          <property role="3oM_SC" value="exists." />
         </node>
       </node>
-      <node concept="TZ5HA" id="67NgLmjPof5" role="TZ5H$">
-        <node concept="1dT_AC" id="67NgLmjPof6" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="RYGxAyAt1y" role="1Vez_I">
+        <node concept="3oM_SD" id="RYGxAyAt1z" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
-      <node concept="TZ5HA" id="67NgLmjPofd" role="TZ5H$">
-        <node concept="1dT_AC" id="67NgLmjPofe" role="1dT_Ay">
-          <property role="1dT_AB" value="Typical usage scenario is:" />
+      <node concept="1PaTwC" id="RYGxAyAt1$" role="1Vez_I">
+        <node concept="3oM_SD" id="RYGxAyAt1_" role="1PaTwD">
+          <property role="3oM_SC" value="Typical" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt1A" role="1PaTwD">
+          <property role="3oM_SC" value="usage" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt1B" role="1PaTwD">
+          <property role="3oM_SC" value="scenario" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt1C" role="1PaTwD">
+          <property role="3oM_SC" value="is:" />
         </node>
       </node>
-      <node concept="TZ5HA" id="67NgLmjPoyL" role="TZ5H$">
-        <node concept="1dT_AC" id="67NgLmjPoyM" role="1dT_Ay">
-          <property role="1dT_AB" value="   - Step 1: enable code coverage instrumentation for your running MPS. Add &quot;-javaagent:C:\work\mps-qa\code\languages\org.mpsqa.testing\solutions\org.mpsqa.testcov.jacoco.rt\lib\agent\jacocoagent.jar&quot; to &quot;MPS_install_dir\bin\mps64.exe.vmoptions&quot;" />
+      <node concept="1PaTwC" id="RYGxAyAt1D" role="1Vez_I">
+        <node concept="3oM_SD" id="RYGxAyAt1E" role="1PaTwD">
+          <property role="3oM_SC" value="" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt1F" role="1PaTwD">
+          <property role="3oM_SC" value="" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt1G" role="1PaTwD">
+          <property role="3oM_SC" value="" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt1H" role="1PaTwD">
+          <property role="3oM_SC" value="-" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt1I" role="1PaTwD">
+          <property role="3oM_SC" value="Step" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt1J" role="1PaTwD">
+          <property role="3oM_SC" value="1:" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt1K" role="1PaTwD">
+          <property role="3oM_SC" value="enable" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt1L" role="1PaTwD">
+          <property role="3oM_SC" value="code" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt1M" role="1PaTwD">
+          <property role="3oM_SC" value="coverage" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt1N" role="1PaTwD">
+          <property role="3oM_SC" value="instrumentation" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt1O" role="1PaTwD">
+          <property role="3oM_SC" value="for" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt1P" role="1PaTwD">
+          <property role="3oM_SC" value="your" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt1Q" role="1PaTwD">
+          <property role="3oM_SC" value="running" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt1R" role="1PaTwD">
+          <property role="3oM_SC" value="MPS." />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt1S" role="1PaTwD">
+          <property role="3oM_SC" value="Add" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt1T" role="1PaTwD">
+          <property role="3oM_SC" value="&quot;-javaagent:C:\work\mps-qa\code\languages\org.mpsqa.testing\solutions\org.mpsqa.testcov.jacoco.rt\lib\agent\jacocoagent.jar&quot;" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt1U" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt1V" role="1PaTwD">
+          <property role="3oM_SC" value="&quot;MPS_install_dir\bin\mps64.exe.vmoptions&quot;" />
         </node>
       </node>
-      <node concept="TZ5HA" id="67NgLmjPpHF" role="TZ5H$">
-        <node concept="1dT_AC" id="67NgLmjPpHG" role="1dT_Ay">
-          <property role="1dT_AB" value="   - Step 2: start MPS and perform some actions (e.g. run tests, call model checker on project, ... or simply do some work)" />
+      <node concept="1PaTwC" id="RYGxAyAt1W" role="1Vez_I">
+        <node concept="3oM_SD" id="RYGxAyAt1X" role="1PaTwD">
+          <property role="3oM_SC" value="" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt1Y" role="1PaTwD">
+          <property role="3oM_SC" value="" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt1Z" role="1PaTwD">
+          <property role="3oM_SC" value="" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt20" role="1PaTwD">
+          <property role="3oM_SC" value="-" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt21" role="1PaTwD">
+          <property role="3oM_SC" value="Step" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt22" role="1PaTwD">
+          <property role="3oM_SC" value="2:" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt23" role="1PaTwD">
+          <property role="3oM_SC" value="start" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt24" role="1PaTwD">
+          <property role="3oM_SC" value="MPS" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt25" role="1PaTwD">
+          <property role="3oM_SC" value="and" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt26" role="1PaTwD">
+          <property role="3oM_SC" value="perform" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt27" role="1PaTwD">
+          <property role="3oM_SC" value="some" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt28" role="1PaTwD">
+          <property role="3oM_SC" value="actions" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt29" role="1PaTwD">
+          <property role="3oM_SC" value="(e.g." />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2a" role="1PaTwD">
+          <property role="3oM_SC" value="run" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2b" role="1PaTwD">
+          <property role="3oM_SC" value="tests," />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2c" role="1PaTwD">
+          <property role="3oM_SC" value="call" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2d" role="1PaTwD">
+          <property role="3oM_SC" value="model" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2e" role="1PaTwD">
+          <property role="3oM_SC" value="checker" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2f" role="1PaTwD">
+          <property role="3oM_SC" value="on" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2g" role="1PaTwD">
+          <property role="3oM_SC" value="project," />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2h" role="1PaTwD">
+          <property role="3oM_SC" value="..." />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2i" role="1PaTwD">
+          <property role="3oM_SC" value="or" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2j" role="1PaTwD">
+          <property role="3oM_SC" value="simply" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2k" role="1PaTwD">
+          <property role="3oM_SC" value="do" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2l" role="1PaTwD">
+          <property role="3oM_SC" value="some" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2m" role="1PaTwD">
+          <property role="3oM_SC" value="work)" />
         </node>
       </node>
-      <node concept="TZ5HA" id="67NgLmjPrFM" role="TZ5H$">
-        <node concept="1dT_AC" id="67NgLmjPrFN" role="1dT_Ay">
-          <property role="1dT_AB" value="   - Step 3: gently exit MPS - &quot;File-&gt;Exit&quot; (the coverage information is saved on the hard-disk in the file &quot;jacoco.exec&quot;) in directory &quot;MPS_install_dir\bin&quot;" />
+      <node concept="1PaTwC" id="RYGxAyAt2n" role="1Vez_I">
+        <node concept="3oM_SD" id="RYGxAyAt2o" role="1PaTwD">
+          <property role="3oM_SC" value="" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2p" role="1PaTwD">
+          <property role="3oM_SC" value="" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2q" role="1PaTwD">
+          <property role="3oM_SC" value="" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2r" role="1PaTwD">
+          <property role="3oM_SC" value="-" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2s" role="1PaTwD">
+          <property role="3oM_SC" value="Step" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2t" role="1PaTwD">
+          <property role="3oM_SC" value="3:" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2u" role="1PaTwD">
+          <property role="3oM_SC" value="gently" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2v" role="1PaTwD">
+          <property role="3oM_SC" value="exit" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2w" role="1PaTwD">
+          <property role="3oM_SC" value="MPS" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2x" role="1PaTwD">
+          <property role="3oM_SC" value="-" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2y" role="1PaTwD">
+          <property role="3oM_SC" value="&quot;File-&gt;Exit&quot;" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2z" role="1PaTwD">
+          <property role="3oM_SC" value="(the" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2$" role="1PaTwD">
+          <property role="3oM_SC" value="coverage" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2_" role="1PaTwD">
+          <property role="3oM_SC" value="information" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2A" role="1PaTwD">
+          <property role="3oM_SC" value="is" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2B" role="1PaTwD">
+          <property role="3oM_SC" value="saved" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2C" role="1PaTwD">
+          <property role="3oM_SC" value="on" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2D" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2E" role="1PaTwD">
+          <property role="3oM_SC" value="hard-disk" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2F" role="1PaTwD">
+          <property role="3oM_SC" value="in" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2G" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2H" role="1PaTwD">
+          <property role="3oM_SC" value="file" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2I" role="1PaTwD">
+          <property role="3oM_SC" value="&quot;jacoco.exec&quot;)" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2J" role="1PaTwD">
+          <property role="3oM_SC" value="in" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2K" role="1PaTwD">
+          <property role="3oM_SC" value="directory" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2L" role="1PaTwD">
+          <property role="3oM_SC" value="&quot;MPS_install_dir\bin&quot;" />
         </node>
       </node>
-      <node concept="TZ5HA" id="67NgLmjPtGP" role="TZ5H$">
-        <node concept="1dT_AC" id="67NgLmjPtGQ" role="1dT_Ay">
-          <property role="1dT_AB" value="   - Step 4: call this tool to produce the coverage report" />
+      <node concept="1PaTwC" id="RYGxAyAt2M" role="1Vez_I">
+        <node concept="3oM_SD" id="RYGxAyAt2N" role="1PaTwD">
+          <property role="3oM_SC" value="" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2O" role="1PaTwD">
+          <property role="3oM_SC" value="" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2P" role="1PaTwD">
+          <property role="3oM_SC" value="" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2Q" role="1PaTwD">
+          <property role="3oM_SC" value="-" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2R" role="1PaTwD">
+          <property role="3oM_SC" value="Step" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2S" role="1PaTwD">
+          <property role="3oM_SC" value="4:" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2T" role="1PaTwD">
+          <property role="3oM_SC" value="call" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2U" role="1PaTwD">
+          <property role="3oM_SC" value="this" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2V" role="1PaTwD">
+          <property role="3oM_SC" value="tool" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2W" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2X" role="1PaTwD">
+          <property role="3oM_SC" value="produce" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2Y" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt2Z" role="1PaTwD">
+          <property role="3oM_SC" value="coverage" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt30" role="1PaTwD">
+          <property role="3oM_SC" value="report" />
         </node>
       </node>
     </node>
