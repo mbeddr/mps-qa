@@ -284,9 +284,8 @@ val package_mpsqa = tasks.register("package_mpsqa", Zip::class) {
     from(artifactsDir) {
         include("org.mpsqa.allInOne/**")
     }
-    from(reportsDir) {
-        include("sbom.json")
-        into("org.mpsqa.allInOne")
+    into ("org.mpsqa.allInOne") {
+        from(tasks.cyclonedxDirectBom)
     }
 }
 
@@ -314,10 +313,10 @@ tasks.register("check_lint", MpsCheck::class) {
     pluginRoots.add(layout.dir(provider { File(mpsHomeDir, "plugins/mps-modelchecker") }))
 }
 
-tasks.cyclonedxBom {
-    destination = reportsDir
-    outputName = "sbom"
-    outputFormat = "json"
+tasks.cyclonedxDirectBom {
+    jsonOutput = reportsDir.resolve("sbom.json")
+    xmlOutput.unsetConvention() // Not interested in XML output
+
     includeLicenseText = false
     includeConfigs = listOf("plantuml", "baseLib", "treemap", "jacoco")
 }
