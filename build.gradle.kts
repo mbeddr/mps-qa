@@ -11,8 +11,6 @@ plugins {
     id("maven-publish")
     id("co.riiid.gradle") version "0.4.2"
 
-    id("de.itemis.mps.gradle.launcher") version "2.7.0.+"
-
     id("org.cyclonedx.bom") version "3.1.0"
 }
 
