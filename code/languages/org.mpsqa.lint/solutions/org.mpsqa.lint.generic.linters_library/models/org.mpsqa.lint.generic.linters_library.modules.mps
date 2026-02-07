@@ -587,7 +587,7 @@
                     <node concept="10QFUN" id="2dSiT1hOUlT" role="1eOMHV">
                       <node concept="2vlQn3" id="2zdrQh740Vl" role="10QFUP" />
                       <node concept="3uibUv" id="2dSiT1hOUtM" role="10QFUM">
-                        <ref role="3uigEE" to="j8aq:~ReloadableModuleBase" resolve="ReloadableModuleBase" />
+                        <ref role="3uigEE" to="z1c3:~AbstractModule" resolve="AbstractModule" />
                       </node>
                     </node>
                   </node>
@@ -803,7 +803,7 @@
           </node>
           <node concept="2ZW3vV" id="2dSiT1hLynQ" role="3clFbw">
             <node concept="3uibUv" id="2dSiT1hLyq7" role="2ZW6by">
-              <ref role="3uigEE" to="j8aq:~ReloadableModuleBase" resolve="ReloadableModuleBase" />
+              <ref role="3uigEE" to="z1c3:~AbstractModule" resolve="AbstractModule" />
             </node>
             <node concept="2vlQn3" id="2zdrQh73ZGw" role="2ZW6bz" />
           </node>
