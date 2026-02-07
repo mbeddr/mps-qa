@@ -6,7 +6,7 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
   </languages>
   <imports>
@@ -223,17 +223,11 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
       <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
@@ -265,6 +259,14 @@
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -499,9 +501,69 @@
         <node concept="10Oyi0" id="3uTLX9ZJSi4" role="1tU5fm" />
       </node>
       <node concept="P$JXv" id="HEhrUSlOr_" role="lGtFl">
-        <node concept="TZ5HA" id="HEhrUSlOrA" role="TZ5H$">
-          <node concept="1dT_AC" id="HEhrUSlOrB" role="1dT_Ay">
-            <property role="1dT_AB" value="Returns ALL possible original nodes. 'unitName' is expected in format pack1.sub_pack2.sub_pack3.fileNameWithoutExtension, 'fileName' shall be the name of the file (including extension)" />
+        <node concept="1PaTwC" id="RYGxAyAt3b" role="1Vez_I">
+          <node concept="3oM_SD" id="RYGxAyAt3c" role="1PaTwD">
+            <property role="3oM_SC" value="Returns" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt3d" role="1PaTwD">
+            <property role="3oM_SC" value="ALL" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt3e" role="1PaTwD">
+            <property role="3oM_SC" value="possible" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt3f" role="1PaTwD">
+            <property role="3oM_SC" value="original" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt3g" role="1PaTwD">
+            <property role="3oM_SC" value="nodes." />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt3h" role="1PaTwD">
+            <property role="3oM_SC" value="'unitName'" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt3i" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt3j" role="1PaTwD">
+            <property role="3oM_SC" value="expected" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt3k" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt3l" role="1PaTwD">
+            <property role="3oM_SC" value="format" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt3m" role="1PaTwD">
+            <property role="3oM_SC" value="pack1.sub_pack2.sub_pack3.fileNameWithoutExtension," />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt3n" role="1PaTwD">
+            <property role="3oM_SC" value="'fileName'" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt3o" role="1PaTwD">
+            <property role="3oM_SC" value="shall" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt3p" role="1PaTwD">
+            <property role="3oM_SC" value="be" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt3q" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt3r" role="1PaTwD">
+            <property role="3oM_SC" value="name" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt3s" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt3t" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt3u" role="1PaTwD">
+            <property role="3oM_SC" value="file" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt3v" role="1PaTwD">
+            <property role="3oM_SC" value="(including" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt3w" role="1PaTwD">
+            <property role="3oM_SC" value="extension)" />
           </node>
         </node>
       </node>
@@ -706,18 +768,99 @@
         <node concept="17QB3L" id="2hdihghB_Jr" role="1tU5fm" />
       </node>
       <node concept="P$JXv" id="2hdihghB_Ju" role="lGtFl">
-        <node concept="TZ5HA" id="2hdihghB_Jv" role="TZ5H$">
-          <node concept="1dT_AC" id="2hdihghB_Jw" role="1dT_Ay">
-            <property role="1dT_AB" value="Returns ALL possible roots. 'unitName' is expected in format pack1.sub_pack2.sub_pack3.fileNameWithoutExtension, 'fileName' shall be the name of the file (including extension)" />
+        <node concept="1PaTwC" id="RYGxAyAt3x" role="1Vez_I">
+          <node concept="3oM_SD" id="RYGxAyAt3y" role="1PaTwD">
+            <property role="3oM_SC" value="Returns" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt3z" role="1PaTwD">
+            <property role="3oM_SC" value="ALL" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt3$" role="1PaTwD">
+            <property role="3oM_SC" value="possible" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt3_" role="1PaTwD">
+            <property role="3oM_SC" value="roots." />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt3A" role="1PaTwD">
+            <property role="3oM_SC" value="'unitName'" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt3B" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt3C" role="1PaTwD">
+            <property role="3oM_SC" value="expected" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt3D" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt3E" role="1PaTwD">
+            <property role="3oM_SC" value="format" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt3F" role="1PaTwD">
+            <property role="3oM_SC" value="pack1.sub_pack2.sub_pack3.fileNameWithoutExtension," />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt3G" role="1PaTwD">
+            <property role="3oM_SC" value="'fileName'" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt3H" role="1PaTwD">
+            <property role="3oM_SC" value="shall" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt3I" role="1PaTwD">
+            <property role="3oM_SC" value="be" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt3J" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt3K" role="1PaTwD">
+            <property role="3oM_SC" value="name" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt3L" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt3M" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt3N" role="1PaTwD">
+            <property role="3oM_SC" value="file" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt3O" role="1PaTwD">
+            <property role="3oM_SC" value="(including" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt3P" role="1PaTwD">
+            <property role="3oM_SC" value="extension)" />
           </node>
         </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="3dXNG5u6AYl" role="1B3o_S" />
     <node concept="3UR2Jj" id="HEhrUSlQeR" role="lGtFl">
-      <node concept="TZ5HA" id="HEhrUSlQeS" role="TZ5H$">
-        <node concept="1dT_AC" id="HEhrUSlQeT" role="1dT_Ay">
-          <property role="1dT_AB" value="Facade for tracing lines from generated files to nodes." />
+      <node concept="1PaTwC" id="RYGxAyAt31" role="1Vez_I">
+        <node concept="3oM_SD" id="RYGxAyAt32" role="1PaTwD">
+          <property role="3oM_SC" value="Facade" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt33" role="1PaTwD">
+          <property role="3oM_SC" value="for" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt34" role="1PaTwD">
+          <property role="3oM_SC" value="tracing" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt35" role="1PaTwD">
+          <property role="3oM_SC" value="lines" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt36" role="1PaTwD">
+          <property role="3oM_SC" value="from" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt37" role="1PaTwD">
+          <property role="3oM_SC" value="generated" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt38" role="1PaTwD">
+          <property role="3oM_SC" value="files" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt39" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="RYGxAyAt3a" role="1PaTwD">
+          <property role="3oM_SC" value="nodes." />
         </node>
       </node>
     </node>

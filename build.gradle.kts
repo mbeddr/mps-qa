@@ -5,15 +5,13 @@ import org.gradle.api.artifacts.ResolvedArtifact
 import java.util.*
 
 plugins {
-    id("de.itemis.mps.gradle.common") version "1.29.3.+"
-    id("download-jbr") version "1.29.3.+"
+    id("de.itemis.mps.gradle.common") version "1.30.0.+"
+    id("download-jbr") version "1.30.0.+"
     id("base")
     id("maven-publish")
     id("co.riiid.gradle") version "0.4.2"
 
-    id("de.itemis.mps.gradle.launcher") version "2.7.0.+"
-
-    id("org.cyclonedx.bom") version "2.2.0"
+    id("org.cyclonedx.bom") version "3.1.0"
 }
 
 val jbrVers = "21.0.6-b895.109"
@@ -63,19 +61,19 @@ val jacoco by configurations.creating { isTransitive = false }
 dependencies {
     // Use the following dependency for published releases:
     //   mps("com.jetbrains:mps:$mpsVersion")
-    mps("com.jetbrains.mps:mps-prerelease:251.23774.10102")
+    mps("com.jetbrains.mps:mps-prerelease:253.28294.10325")
 
-    plantuml("net.sourceforge.plantuml:plantuml-asl:1.2025.2")
+    plantuml("net.sourceforge.plantuml:plantuml-asl:1.2026.1")
 
-    baseLib("org.apache.commons:commons-lang3:3.17.0")
-    baseLib("commons-cli:commons-cli:1.10.0")
-    baseLib("commons-io:commons-io:2.20.0")
+    baseLib("org.apache.commons:commons-lang3:3.20.0")
+    baseLib("commons-cli:commons-cli:1.11.0")
+    baseLib("commons-io:commons-io:2.21.0")
 
     treemap("net.sf.jtreemap:jtreemap:1.1.3")
     treemap("net.sf.jtreemap:ktreemap:1.1.0-atlassian-01")
 
-    val asmVersion = "9.8"
-    val jacocoVersion = "0.8.13"
+    val asmVersion = "9.9.1"
+    val jacocoVersion = "0.8.14"
 
     jacoco("org.ow2.asm:asm:$asmVersion")
     jacoco("org.ow2.asm:asm-commons:$asmVersion")
@@ -286,9 +284,8 @@ val package_mpsqa = tasks.register("package_mpsqa", Zip::class) {
     from(artifactsDir) {
         include("org.mpsqa.allInOne/**")
     }
-    from(reportsDir) {
-        include("sbom.json")
-        into("org.mpsqa.allInOne")
+    into ("org.mpsqa.allInOne") {
+        from(tasks.cyclonedxDirectBom)
     }
 }
 
@@ -316,10 +313,10 @@ tasks.register("check_lint", MpsCheck::class) {
     pluginRoots.add(layout.dir(provider { File(mpsHomeDir, "plugins/mps-modelchecker") }))
 }
 
-tasks.cyclonedxBom {
-    destination = reportsDir
-    outputName = "sbom"
-    outputFormat = "json"
+tasks.cyclonedxDirectBom {
+    jsonOutput = reportsDir.resolve("sbom.json")
+    xmlOutput.unsetConvention() // Not interested in XML output
+
     includeLicenseText = false
     includeConfigs = listOf("plantuml", "baseLib", "treemap", "jacoco")
 }
