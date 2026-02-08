@@ -279,7 +279,7 @@ val build_allInOne_package = tasks.register("build_allInOne_package", BuildLangu
 }
 
 val package_mpsqa = tasks.register("package_mpsqa", Zip::class) {
-    dependsOn(build_allInOne_package, "cyclonedxBom")
+    dependsOn(build_allInOne_package)
     archiveBaseName.set("org.mpsqa")
     from(artifactsDir) {
         include("org.mpsqa.allInOne/**")
