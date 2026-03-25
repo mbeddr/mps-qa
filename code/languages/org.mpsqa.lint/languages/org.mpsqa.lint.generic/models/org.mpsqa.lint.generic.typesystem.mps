@@ -2800,7 +2800,7 @@
                               <property role="TrG5h" value="ex" />
                               <node concept="nSUau" id="fofa_o7AcZ" role="1tU5fm">
                                 <node concept="3uibUv" id="fofa_o7AyC" role="nSUat">
-                                  <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
+                                  <ref role="3uigEE" to="wyt6:~Throwable" resolve="Throwable" />
                                 </node>
                               </node>
                             </node>
