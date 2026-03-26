@@ -4136,12 +4136,12 @@
           <node concept="2ShNRf" id="13En2FvW0MJ" role="3clFbG">
             <node concept="1pGfFk" id="13En2FvW4Tb" role="2ShVmc">
               <property role="373rjd" value="true" />
-              <ref role="37wK5l" node="13En2FvqZ5e" />
+              <ref role="37wK5l" node="13En2FvqZ5e" resolve="CyclicGenericDependenciesHelper" />
               <node concept="3uibUv" id="13En2FvXXuX" role="1pMfVU">
                 <ref role="3uigEE" to="lui2:~SModuleReference" resolve="SModuleReference" />
               </node>
               <node concept="37vLTw" id="13En2Fwb4te" role="37wK5m">
-                <ref role="3cqZAo" node="13En2Fwb4rS" resolve="function" />
+                <ref role="3cqZAo" node="13En2Fwb4rS" resolve="dependencyResolver" />
               </node>
               <node concept="37vLTw" id="13En2FvYa6I" role="37wK5m">
                 <ref role="3cqZAo" node="1gULBtOjnwD" resolve="COMPARE_MODULE_REFS" />
@@ -6696,7 +6696,7 @@
                   <ref role="16sUi3" node="13En2FvIxxl" resolve="Component" />
                 </node>
                 <node concept="37vLTw" id="13En2FvIP98" role="HW$Y0">
-                  <ref role="3cqZAo" node="13En2FvIP9R" resolve="startingModule" />
+                  <ref role="3cqZAo" node="13En2FvIP9R" resolve="startingComponent" />
                 </node>
               </node>
             </node>
@@ -6847,7 +6847,7 @@
             </node>
             <node concept="TSZUe" id="13En2FvJE3O" role="2OqNvi">
               <node concept="37vLTw" id="13En2FvJE3P" role="25WWJ7">
-                <ref role="3cqZAo" node="13En2FvJE4v" resolve="currentModule" />
+                <ref role="3cqZAo" node="13En2FvJE4v" resolve="currentComponent" />
               </node>
             </node>
           </node>
@@ -6859,7 +6859,7 @@
             </node>
             <node concept="TSZUe" id="13En2FvJE3T" role="2OqNvi">
               <node concept="37vLTw" id="13En2FvJE3U" role="25WWJ7">
-                <ref role="3cqZAo" node="13En2FvJE4v" resolve="currentModule" />
+                <ref role="3cqZAo" node="13En2FvJE4v" resolve="currentComponent" />
               </node>
             </node>
           </node>
@@ -6870,7 +6870,7 @@
           </node>
           <node concept="3EllGN" id="13En2FvJE3X" role="2GsD0m">
             <node concept="37vLTw" id="13En2FvJE3Y" role="3ElVtu">
-              <ref role="3cqZAo" node="13En2FvJE4v" resolve="currentModule" />
+              <ref role="3cqZAo" node="13En2FvJE4v" resolve="currentComponent" />
             </node>
             <node concept="37vLTw" id="13En2FvJE3Z" role="3ElQJh">
               <ref role="3cqZAo" node="13En2FvJE4x" resolve="directDependencies" />
@@ -7128,7 +7128,7 @@
         <node concept="3clFbF" id="13En2FvM0mG" role="3cqZAp">
           <node concept="2OqwBi" id="13En2FvM0mH" role="3clFbG">
             <node concept="37vLTw" id="13En2FvM0mI" role="2Oq$k0">
-              <ref role="3cqZAo" node="13En2FvM0mW" resolve="startingModules" />
+              <ref role="3cqZAo" node="13En2FvM0mW" resolve="startingComponents" />
             </node>
             <node concept="2es0OD" id="13En2FvM0mJ" role="2OqNvi">
               <node concept="1bVj0M" id="13En2FvM0mK" role="23t8la">
@@ -7140,7 +7140,7 @@
                         <ref role="3cqZAo" node="13En2FvM0mR" resolve="startingMod" />
                       </node>
                       <node concept="37vLTw" id="13En2FvMpjR" role="37wK5m">
-                        <ref role="3cqZAo" node="13En2FvM0m$" resolve="directModuleDependencies" />
+                        <ref role="3cqZAo" node="13En2FvM0m$" resolve="directComponentDependencies" />
                       </node>
                       <node concept="37vLTw" id="13En2FvMxTX" role="37wK5m">
                         <ref role="3cqZAo" node="13En2FvM0mZ" resolve="action" />
@@ -7351,10 +7351,10 @@
           <node concept="1rXfSq" id="13En2FvNZff" role="3clFbG">
             <ref role="37wK5l" node="13En2FvM0mw" resolve="DFS" />
             <node concept="37vLTw" id="13En2FvNZfg" role="37wK5m">
-              <ref role="3cqZAo" node="13En2FvNZfm" resolve="modules" />
+              <ref role="3cqZAo" node="13En2FvNZfm" resolve="components" />
             </node>
             <node concept="37vLTw" id="13En2FvNZfh" role="37wK5m">
-              <ref role="3cqZAo" node="13En2FvNZfp" resolve="startingModules" />
+              <ref role="3cqZAo" node="13En2FvNZfp" resolve="startingComponents" />
             </node>
             <node concept="37vLTw" id="13En2FvNZfi" role="37wK5m">
               <ref role="3cqZAo" node="13En2FvNZet" resolve="addToCycles" />
@@ -8609,7 +8609,7 @@
                       <ref role="3cqZAo" node="13En2FvxEFh" resolve="alreadyVisited" />
                     </node>
                     <node concept="37vLTw" id="13En2FvCsKX" role="37wK5m">
-                      <ref role="3cqZAo" node="13En2FvxEED" resolve="modulesForWhichAllCyclesHaveBeenFound" />
+                      <ref role="3cqZAo" node="13En2FvxEED" resolve="componentsForWhichAllCyclesHaveBeenFound" />
                     </node>
                     <node concept="37vLTw" id="13En2FvC_p$" role="37wK5m">
                       <ref role="3cqZAo" node="13En2FvxEEw" resolve="allCycles" />
@@ -8639,7 +8639,7 @@
             <node concept="3clFbF" id="13En2FvxEFC" role="3cqZAp">
               <node concept="2OqwBi" id="13En2FvxEFD" role="3clFbG">
                 <node concept="37vLTw" id="13En2FvxEFE" role="2Oq$k0">
-                  <ref role="3cqZAo" node="13En2FvxEED" resolve="modulesForWhichAllCyclesHaveBeenFound" />
+                  <ref role="3cqZAo" node="13En2FvxEED" resolve="componentsForWhichAllCyclesHaveBeenFound" />
                 </node>
                 <node concept="TSZUe" id="13En2FvxEFF" role="2OqNvi">
                   <node concept="2GrUjf" id="13En2FvxEFG" role="25WWJ7">

@@ -5478,7 +5478,7 @@
                     </node>
                   </node>
                   <node concept="2j1LYi" id="13En2FwicUm" role="37wK5m">
-                    <ref role="2j1LYj" node="4Y9rGZa7XDu" resolve="startingModuleRef" />
+                    <ref role="2j1LYj" node="4Y9rGZa7XDu" resolve="startingModelRef" />
                   </node>
                   <node concept="37vLTw" id="13En2FwmaTz" role="37wK5m">
                     <ref role="3cqZAo" node="4Y9rGZadqg6" resolve="res" />
@@ -5580,7 +5580,7 @@
     </node>
     <node concept="2j1LYv" id="4Y9rGZajwnS" role="2j1YRv">
       <node concept="2j1LYi" id="4Y9rGZajwnT" role="2j1YQj">
-        <ref role="2j1LYj" node="4Y9rGZa7XDu" resolve="startingModuleRef" />
+        <ref role="2j1LYj" node="4Y9rGZa7XDu" resolve="startingModelRef" />
       </node>
       <node concept="1Xw6AR" id="13En2FwoylN" role="2j1LYg">
         <node concept="1dCxOl" id="13En2FwoyPa" role="1XwpL7">
@@ -6011,7 +6011,7 @@
                     </node>
                     <node concept="2OqwBi" id="13En2Fwb4sb" role="33vP2m">
                       <node concept="37vLTw" id="13En2Fwb4sc" role="2Oq$k0">
-                        <ref role="3cqZAo" node="13En2Fwb4rW" resolve="moduleReference" />
+                        <ref role="3cqZAo" node="13En2Fwb4rW" resolve="modelReference" />
                       </node>
                       <node concept="liA8E" id="13En2Fwb4sd" role="2OqNvi">
                         <ref role="37wK5l" to="mhbf:~SModelReference.resolve(org.jetbrains.mps.openapi.module.SRepository)" resolve="resolve" />
@@ -6103,7 +6103,7 @@
                 <node concept="3clFbF" id="13En2FwcA4v" role="3cqZAp">
                   <node concept="2OqwBi" id="13En2FwcAKy" role="3clFbG">
                     <node concept="37vLTw" id="13En2FwcA4u" role="2Oq$k0">
-                      <ref role="3cqZAo" node="13En2FwcmFW" resolve="moduleReference" />
+                      <ref role="3cqZAo" node="13En2FwcmFW" resolve="modelReference" />
                     </node>
                     <node concept="liA8E" id="13En2FwcG3l" role="2OqNvi">
                       <ref role="37wK5l" to="mhbf:~SModelReference.getModelName()" resolve="getModelName" />
@@ -6125,7 +6125,7 @@
           <node concept="2ShNRf" id="13En2FvW0MJ" role="3clFbG">
             <node concept="1pGfFk" id="13En2FvW4Tb" role="2ShVmc">
               <property role="373rjd" value="true" />
-              <ref role="37wK5l" to="wpu7:13En2FvqZ5e" />
+              <ref role="37wK5l" to="wpu7:13En2FvqZ5e" resolve="CyclicGenericDependenciesHelper" />
               <node concept="3uibUv" id="13En2FvXXuX" role="1pMfVU">
                 <ref role="3uigEE" to="mhbf:~SModelReference" resolve="SModelReference" />
               </node>
@@ -6133,7 +6133,7 @@
                 <ref role="3cqZAo" node="13En2Fwb4rS" resolve="dependencyResolver" />
               </node>
               <node concept="37vLTw" id="13En2FwnONt" role="37wK5m">
-                <ref role="3cqZAo" node="1gULBtOjnwD" resolve="COMPARE_MODULE_REFS" />
+                <ref role="3cqZAo" node="1gULBtOjnwD" resolve="COMPARE_MODEL_REFS" />
               </node>
               <node concept="37vLTw" id="13En2FwcX1e" role="37wK5m">
                 <ref role="3cqZAo" node="13En2Fwc0bk" resolve="componentNameResolver" />
