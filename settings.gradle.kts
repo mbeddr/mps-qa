@@ -7,10 +7,12 @@ pluginManagement {
                 password = if (extra.has("github_token")) extra.get("github_token") as String else System.getenv("GITHUB_TOKEN")
             }
         }
+        maven("https://artifacts.itemis.cloud/repository/maven-mps")
         gradlePluginPortal()
     }
 }
 
+include(":testing")
+project(":testing").projectDir = file("code/languages/org.mpsqa.testing")
 
 include(":testing:sandbox")
-project(":testing:sandbox").projectDir = file("code/languages/org.mpsqa.testing/sandbox")

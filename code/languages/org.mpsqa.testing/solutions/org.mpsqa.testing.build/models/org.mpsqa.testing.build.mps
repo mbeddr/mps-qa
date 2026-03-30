@@ -393,16 +393,16 @@
       <node concept="m$_yC" id="67NgLmjPxzk" role="m$_yJ">
         <ref role="m$_y1" to="2tou:7C9PHv6FBIO" resolve="org.mpsqa.base" />
       </node>
+      <node concept="3_J27D" id="2JVMSZMFXh7" role="m_cZH">
+        <node concept="3Mxwew" id="2JVMSZMFXh8" role="3MwsjC">
+          <property role="3MwjfP" value="org.mpsqa.testing" />
+        </node>
+      </node>
       <node concept="m$_yC" id="22xRGj_wKuI" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:6jDaT$jlVJY" resolve="jetbrains.mps.junit5" />
       </node>
       <node concept="m$_yC" id="22xRGj_wKW2" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:ymnOULATpW" resolve="jetbrains.mps.testing" />
-      </node>
-      <node concept="3_J27D" id="2JVMSZMFXh7" role="m_cZH">
-        <node concept="3Mxwew" id="2JVMSZMFXh8" role="3MwsjC">
-          <property role="3MwjfP" value="org.mpsqa.testing" />
-        </node>
       </node>
     </node>
     <node concept="1E1JtA" id="2XCAdv5uaH8" role="3989C9">

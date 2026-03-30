@@ -190,13 +190,13 @@
       <concept id="1622293396948952339" name="jetbrains.mps.core.xml.structure.XmlText" flags="nn" index="3o6iSG" />
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
-      <concept id="1510949579266781519" name="jetbrains.mps.lang.generator.structure.TemplateCallMacro" flags="ln" index="5jKBG">
+      <concept id="1510949579266781519" name="jetbrains.mps.lang.generator.structure.TemplateCallMacro" flags="lg" index="5jKBG">
         <child id="1510949579266801461" name="sourceNodeQuery" index="5jGum" />
       </concept>
-      <concept id="1114706874351" name="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" flags="ln" index="29HgVG">
+      <concept id="1114706874351" name="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" flags="lg" index="29HgVG">
         <child id="1168024447342" name="sourceNodeQuery" index="3NFExx" />
       </concept>
-      <concept id="1114729360583" name="jetbrains.mps.lang.generator.structure.CopySrcListMacro" flags="ln" index="2b32R4">
+      <concept id="1114729360583" name="jetbrains.mps.lang.generator.structure.CopySrcListMacro" flags="lg" index="2b32R4">
         <child id="1168278589236" name="sourceNodesQuery" index="2P8S$" />
       </concept>
       <concept id="1202776937179" name="jetbrains.mps.lang.generator.structure.AbandonInput_RuleConsequence" flags="lg" index="b5Tf3" />
@@ -237,7 +237,7 @@
         <reference id="1168285871518" name="applicableConcept" index="3gUMe" />
         <child id="1092060348987" name="contentNode" index="13RCb5" />
       </concept>
-      <concept id="1087833241328" name="jetbrains.mps.lang.generator.structure.PropertyMacro" flags="ln" index="17Uvod">
+      <concept id="1087833241328" name="jetbrains.mps.lang.generator.structure.PropertyMacro" flags="lg" index="17Uvod">
         <child id="1167756362303" name="propertyValueFunction" index="3zH0cK" />
       </concept>
       <concept id="1167327847730" name="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" flags="lg" index="3aamgX">
@@ -262,19 +262,19 @@
       <concept id="1167756221419" name="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_templatePropertyValue" flags="nn" index="3zGtF$" />
       <concept id="1167770111131" name="jetbrains.mps.lang.generator.structure.ReferenceMacro_GetReferent" flags="in" index="3$xsQk" />
       <concept id="1167945743726" name="jetbrains.mps.lang.generator.structure.IfMacro_Condition" flags="in" index="3IZrLx" />
-      <concept id="1167951910403" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodesQuery" flags="in" index="3JmXsc" />
+      <concept id="1167951910403" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodesQuery" flags="ig" index="3JmXsc" />
       <concept id="1805153994415891174" name="jetbrains.mps.lang.generator.structure.TemplateParameterDeclaration" flags="ng" index="1N15co">
         <child id="1805153994415893199" name="type" index="1N15GL" />
       </concept>
-      <concept id="1168024337012" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery" flags="in" index="3NFfHV" />
-      <concept id="1118773211870" name="jetbrains.mps.lang.generator.structure.IfMacro" flags="ln" index="1W57fq">
+      <concept id="1168024337012" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery" flags="ig" index="3NFfHV" />
+      <concept id="1118773211870" name="jetbrains.mps.lang.generator.structure.IfMacro" flags="lg" index="1W57fq">
         <child id="1194989344771" name="alternativeConsequence" index="UU_$l" />
         <child id="1167945861827" name="conditionFunction" index="3IZSJc" />
       </concept>
-      <concept id="1118786554307" name="jetbrains.mps.lang.generator.structure.LoopMacro" flags="ln" index="1WS0z7">
+      <concept id="1118786554307" name="jetbrains.mps.lang.generator.structure.LoopMacro" flags="lg" index="1WS0z7">
         <child id="1167952069335" name="sourceNodesQuery" index="3Jn$fo" />
       </concept>
-      <concept id="1088761943574" name="jetbrains.mps.lang.generator.structure.ReferenceMacro" flags="ln" index="1ZhdrF">
+      <concept id="1088761943574" name="jetbrains.mps.lang.generator.structure.ReferenceMacro" flags="lg" index="1ZhdrF">
         <child id="1167770376702" name="referentFunction" index="3$ytzL" />
       </concept>
     </language>
@@ -908,44 +908,21 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="3cpWs8" id="4JpXQ$UYAK8" role="3cqZAp">
-                    <node concept="3cpWsn" id="4JpXQ$UYAK9" role="3cpWs9">
-                      <property role="TrG5h" value="project" />
-                      <node concept="3Tqbb2" id="4JpXQ$UYAKa" role="1tU5fm">
-                        <ref role="ehGHo" to="3ior:4RPz6WoY4Cj" resolve="BuildProject" />
-                      </node>
-                      <node concept="1PxgMI" id="4JpXQ$UYAKb" role="33vP2m">
-                        <node concept="2OqwBi" id="4JpXQ$UYAKc" role="1m5AlR">
-                          <node concept="2Rxl7S" id="4JpXQ$UYAKd" role="2OqNvi" />
-                          <node concept="30H73N" id="4JpXQ$UYAKe" role="2Oq$k0" />
-                        </node>
-                        <node concept="chp4Y" id="4JpXQ$UYAKf" role="3oSUPX">
-                          <ref role="cht4Q" to="3ior:4RPz6WoY4Cj" resolve="BuildProject" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
                   <node concept="3cpWs8" id="4JpXQ$UYAKg" role="3cqZAp">
                     <node concept="3cpWsn" id="4JpXQ$UYAKh" role="3cpWs9">
                       <property role="TrG5h" value="macroHelper" />
                       <node concept="3uibUv" id="4JpXQ$UYAKi" role="1tU5fm">
                         <ref role="3uigEE" to="o3n2:5FtnUVJR86u" resolve="MacroHelper" />
                       </node>
-                      <node concept="2OqwBi" id="4JpXQ$UYAKj" role="33vP2m">
-                        <node concept="2ShNRf" id="4JpXQ$UYAKk" role="2Oq$k0">
-                          <node concept="1pGfFk" id="4JpXQ$UYAKl" role="2ShVmc">
-                            <ref role="37wK5l" to="o3n2:5DY7s5F2Pa1" resolve="MacroHelper.MacroContext" />
-                            <node concept="37vLTw" id="4JpXQ$UYAKm" role="37wK5m">
-                              <ref role="3cqZAo" node="4JpXQ$UYAK9" resolve="project" />
-                            </node>
-                            <node concept="1iwH7S" id="4JpXQ$UYAKn" role="37wK5m" />
-                          </node>
+                      <node concept="2OqwBi" id="3uAfcsN3j9F" role="33vP2m">
+                        <node concept="2YIFZM" id="5V$ev8kKIwf" role="2Oq$k0">
+                          <ref role="1Pybhc" to="o3n2:4jjtc7WZOAv" resolve="Context" />
+                          <ref role="37wK5l" to="o3n2:19KdqCVerNJ" resolve="defaultContext" />
+                          <node concept="1iwH7S" id="5V$ev8kKIwg" role="37wK5m" />
                         </node>
-                        <node concept="liA8E" id="4JpXQ$UYAKo" role="2OqNvi">
-                          <ref role="37wK5l" to="o3n2:5DY7s5F2PaT" resolve="getMacros" />
-                          <node concept="37vLTw" id="4JpXQ$UYAKp" role="37wK5m">
-                            <ref role="3cqZAo" node="4JpXQ$UYAK9" resolve="project" />
-                          </node>
+                        <node concept="liA8E" id="3uAfcsN3jnX" role="2OqNvi">
+                          <ref role="37wK5l" to="o3n2:5DY7s5F3vd2" resolve="getMacros" />
+                          <node concept="30H73N" id="3uAfcsN3rhl" role="37wK5m" />
                         </node>
                       </node>
                     </node>
@@ -1725,44 +1702,21 @@
                               </node>
                             </node>
                           </node>
-                          <node concept="3cpWs8" id="HwplGM7Em4" role="3cqZAp">
-                            <node concept="3cpWsn" id="HwplGM7Em5" role="3cpWs9">
-                              <property role="TrG5h" value="project" />
-                              <node concept="3Tqbb2" id="HwplGM7Em6" role="1tU5fm">
-                                <ref role="ehGHo" to="3ior:4RPz6WoY4Cj" resolve="BuildProject" />
-                              </node>
-                              <node concept="1PxgMI" id="HwplGM7Em7" role="33vP2m">
-                                <node concept="2OqwBi" id="HwplGM7Em8" role="1m5AlR">
-                                  <node concept="2Rxl7S" id="HwplGM7Em9" role="2OqNvi" />
-                                  <node concept="30H73N" id="HwplGM7Ema" role="2Oq$k0" />
-                                </node>
-                                <node concept="chp4Y" id="HwplGM7Emb" role="3oSUPX">
-                                  <ref role="cht4Q" to="3ior:4RPz6WoY4Cj" resolve="BuildProject" />
-                                </node>
-                              </node>
-                            </node>
-                          </node>
                           <node concept="3cpWs8" id="HwplGM7Emc" role="3cqZAp">
                             <node concept="3cpWsn" id="HwplGM7Emd" role="3cpWs9">
                               <property role="TrG5h" value="macroHelper" />
                               <node concept="3uibUv" id="HwplGM7Eme" role="1tU5fm">
                                 <ref role="3uigEE" to="o3n2:5FtnUVJR86u" resolve="MacroHelper" />
                               </node>
-                              <node concept="2OqwBi" id="HwplGM7Emf" role="33vP2m">
-                                <node concept="2ShNRf" id="HwplGM7Emg" role="2Oq$k0">
-                                  <node concept="1pGfFk" id="HwplGM7Emh" role="2ShVmc">
-                                    <ref role="37wK5l" to="o3n2:5DY7s5F2Pa1" resolve="MacroHelper.MacroContext" />
-                                    <node concept="37vLTw" id="HwplGM7Emi" role="37wK5m">
-                                      <ref role="3cqZAo" node="HwplGM7Em5" resolve="project" />
-                                    </node>
-                                    <node concept="1iwH7S" id="HwplGM7Emj" role="37wK5m" />
-                                  </node>
+                              <node concept="2OqwBi" id="3uAfcsN3tZO" role="33vP2m">
+                                <node concept="2YIFZM" id="3uAfcsN3tZP" role="2Oq$k0">
+                                  <ref role="1Pybhc" to="o3n2:4jjtc7WZOAv" resolve="Context" />
+                                  <ref role="37wK5l" to="o3n2:19KdqCVerNJ" resolve="defaultContext" />
+                                  <node concept="1iwH7S" id="3uAfcsN3tZQ" role="37wK5m" />
                                 </node>
-                                <node concept="liA8E" id="HwplGM7Emk" role="2OqNvi">
-                                  <ref role="37wK5l" to="o3n2:5DY7s5F2PaT" resolve="getMacros" />
-                                  <node concept="37vLTw" id="HwplGM7Eml" role="37wK5m">
-                                    <ref role="3cqZAo" node="HwplGM7Em5" resolve="project" />
-                                  </node>
+                                <node concept="liA8E" id="3uAfcsN3tZR" role="2OqNvi">
+                                  <ref role="37wK5l" to="o3n2:5DY7s5F3vd2" resolve="getMacros" />
+                                  <node concept="30H73N" id="3uAfcsN3tZS" role="37wK5m" />
                                 </node>
                               </node>
                             </node>
@@ -2245,44 +2199,21 @@
                                 </node>
                               </node>
                             </node>
-                            <node concept="3cpWs8" id="4JpXQ$UYZH8" role="3cqZAp">
-                              <node concept="3cpWsn" id="4JpXQ$UYZH9" role="3cpWs9">
-                                <property role="TrG5h" value="project" />
-                                <node concept="3Tqbb2" id="4JpXQ$UYZHa" role="1tU5fm">
-                                  <ref role="ehGHo" to="3ior:4RPz6WoY4Cj" resolve="BuildProject" />
-                                </node>
-                                <node concept="1PxgMI" id="4JpXQ$UYZHb" role="33vP2m">
-                                  <node concept="2OqwBi" id="4JpXQ$UYZHc" role="1m5AlR">
-                                    <node concept="2Rxl7S" id="4JpXQ$UYZHd" role="2OqNvi" />
-                                    <node concept="30H73N" id="4JpXQ$UYZHe" role="2Oq$k0" />
-                                  </node>
-                                  <node concept="chp4Y" id="4JpXQ$UYZHf" role="3oSUPX">
-                                    <ref role="cht4Q" to="3ior:4RPz6WoY4Cj" resolve="BuildProject" />
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
                             <node concept="3cpWs8" id="4JpXQ$UYZHg" role="3cqZAp">
                               <node concept="3cpWsn" id="4JpXQ$UYZHh" role="3cpWs9">
                                 <property role="TrG5h" value="macroHelper" />
                                 <node concept="3uibUv" id="4JpXQ$UYZHi" role="1tU5fm">
                                   <ref role="3uigEE" to="o3n2:5FtnUVJR86u" resolve="MacroHelper" />
                                 </node>
-                                <node concept="2OqwBi" id="4JpXQ$UYZHj" role="33vP2m">
-                                  <node concept="2ShNRf" id="4JpXQ$UYZHk" role="2Oq$k0">
-                                    <node concept="1pGfFk" id="4JpXQ$UYZHl" role="2ShVmc">
-                                      <ref role="37wK5l" to="o3n2:5DY7s5F2Pa1" resolve="MacroHelper.MacroContext" />
-                                      <node concept="37vLTw" id="4JpXQ$UYZHm" role="37wK5m">
-                                        <ref role="3cqZAo" node="4JpXQ$UYZH9" resolve="project" />
-                                      </node>
-                                      <node concept="1iwH7S" id="4JpXQ$UYZHn" role="37wK5m" />
-                                    </node>
+                                <node concept="2OqwBi" id="3uAfcsN3sHH" role="33vP2m">
+                                  <node concept="2YIFZM" id="3uAfcsN3sHI" role="2Oq$k0">
+                                    <ref role="1Pybhc" to="o3n2:4jjtc7WZOAv" resolve="Context" />
+                                    <ref role="37wK5l" to="o3n2:19KdqCVerNJ" resolve="defaultContext" />
+                                    <node concept="1iwH7S" id="3uAfcsN3sHJ" role="37wK5m" />
                                   </node>
-                                  <node concept="liA8E" id="4JpXQ$UYZHo" role="2OqNvi">
-                                    <ref role="37wK5l" to="o3n2:5DY7s5F2PaT" resolve="getMacros" />
-                                    <node concept="37vLTw" id="4JpXQ$UYZHp" role="37wK5m">
-                                      <ref role="3cqZAo" node="4JpXQ$UYZH9" resolve="project" />
-                                    </node>
+                                  <node concept="liA8E" id="3uAfcsN3sHK" role="2OqNvi">
+                                    <ref role="37wK5l" to="o3n2:5DY7s5F3vd2" resolve="getMacros" />
+                                    <node concept="30H73N" id="3uAfcsN3sHL" role="37wK5m" />
                                   </node>
                                 </node>
                               </node>
@@ -3491,44 +3422,21 @@
                               </node>
                             </node>
                           </node>
-                          <node concept="3cpWs8" id="51DD0tdMhSa" role="3cqZAp">
-                            <node concept="3cpWsn" id="51DD0tdMhSb" role="3cpWs9">
-                              <property role="TrG5h" value="project" />
-                              <node concept="3Tqbb2" id="51DD0tdMhSc" role="1tU5fm">
-                                <ref role="ehGHo" to="3ior:4RPz6WoY4Cj" resolve="BuildProject" />
-                              </node>
-                              <node concept="1PxgMI" id="51DD0tdMhSd" role="33vP2m">
-                                <node concept="2OqwBi" id="51DD0tdMhSe" role="1m5AlR">
-                                  <node concept="2Rxl7S" id="51DD0tdMhSf" role="2OqNvi" />
-                                  <node concept="30H73N" id="51DD0tdMhSg" role="2Oq$k0" />
-                                </node>
-                                <node concept="chp4Y" id="51DD0tdMhSh" role="3oSUPX">
-                                  <ref role="cht4Q" to="3ior:4RPz6WoY4Cj" resolve="BuildProject" />
-                                </node>
-                              </node>
-                            </node>
-                          </node>
                           <node concept="3cpWs8" id="51DD0tdMhSi" role="3cqZAp">
                             <node concept="3cpWsn" id="51DD0tdMhSj" role="3cpWs9">
                               <property role="TrG5h" value="macroHelper" />
                               <node concept="3uibUv" id="51DD0tdMhSk" role="1tU5fm">
                                 <ref role="3uigEE" to="o3n2:5FtnUVJR86u" resolve="MacroHelper" />
                               </node>
-                              <node concept="2OqwBi" id="51DD0tdMhSl" role="33vP2m">
-                                <node concept="2ShNRf" id="51DD0tdMhSm" role="2Oq$k0">
-                                  <node concept="1pGfFk" id="51DD0tdMhSn" role="2ShVmc">
-                                    <ref role="37wK5l" to="o3n2:5DY7s5F2Pa1" resolve="MacroHelper.MacroContext" />
-                                    <node concept="37vLTw" id="51DD0tdMhSo" role="37wK5m">
-                                      <ref role="3cqZAo" node="51DD0tdMhSb" resolve="project" />
-                                    </node>
-                                    <node concept="1iwH7S" id="51DD0tdMhSp" role="37wK5m" />
-                                  </node>
+                              <node concept="2OqwBi" id="3uAfcsN3uih" role="33vP2m">
+                                <node concept="2YIFZM" id="3uAfcsN3uii" role="2Oq$k0">
+                                  <ref role="1Pybhc" to="o3n2:4jjtc7WZOAv" resolve="Context" />
+                                  <ref role="37wK5l" to="o3n2:19KdqCVerNJ" resolve="defaultContext" />
+                                  <node concept="1iwH7S" id="3uAfcsN3uij" role="37wK5m" />
                                 </node>
-                                <node concept="liA8E" id="51DD0tdMhSq" role="2OqNvi">
-                                  <ref role="37wK5l" to="o3n2:5DY7s5F2PaT" resolve="getMacros" />
-                                  <node concept="37vLTw" id="51DD0tdMhSr" role="37wK5m">
-                                    <ref role="3cqZAo" node="51DD0tdMhSb" resolve="project" />
-                                  </node>
+                                <node concept="liA8E" id="3uAfcsN3uik" role="2OqNvi">
+                                  <ref role="37wK5l" to="o3n2:5DY7s5F3vd2" resolve="getMacros" />
+                                  <node concept="30H73N" id="3uAfcsN3uil" role="37wK5m" />
                                 </node>
                               </node>
                             </node>
