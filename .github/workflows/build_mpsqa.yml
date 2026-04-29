@@ -44,7 +44,7 @@ jobs:
       if: cancelled()
       run: |
         jps -mlv > build/jps.txt
-        for pid in $(jps -q); do jstack -l -e $pid > build/stack$pid.txt || true; done
+        for pid in $(jps -q); do jstack -l -e "$pid" > "build/stack$pid.txt" || true; done
 
     - name: Upload logs on cancellation or failure
       uses: actions/upload-artifact@v4

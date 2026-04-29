@@ -16,7 +16,7 @@ plugins {
     id("org.cyclonedx.bom") version "2.2.0"
 }
 
-val jbrVers = "21.0.5-b631.8"
+val jbrVers = "21.0.6-b895.109"
 
 downloadJbr {
     jbrVersion = jbrVers
@@ -31,7 +31,7 @@ val ciBuild = if (System.getenv("CI") != null && System.getenv("CI").toBoolean()
     project.hasProperty("teamcity")
 }
 
-val mpsVersion = "2024.3"
+val mpsVersion = "2025.1"
 
 // Project versions
 val major = mpsVersion.substring(0, 4)
@@ -63,7 +63,7 @@ val jacoco by configurations.creating { isTransitive = false }
 dependencies {
     mps("com.jetbrains:mps:$mpsVersion")
 
-    plantuml("net.sourceforge.plantuml:plantuml-asl:1.2023.13")
+    plantuml("net.sourceforge.plantuml:plantuml-asl:1.2025.2")
 
     baseLib("org.apache.commons:commons-lang3:3.20.0")
     baseLib("commons-cli:commons-cli:1.5.0")
@@ -73,7 +73,7 @@ dependencies {
     treemap("net.sf.jtreemap:ktreemap:1.1.0-atlassian-01")
 
     val asmVersion = "9.2"
-    val jacocoVersion = "0.8.7"
+    val jacocoVersion = "0.8.13"
 
     jacoco("org.ow2.asm:asm:$asmVersion")
     jacoco("org.ow2.asm:asm-commons:$asmVersion")
@@ -84,7 +84,7 @@ dependencies {
     jacoco("org.jacoco:org.jacoco.report:$jacocoVersion")
 
     antLib("org.apache.ant:ant-junit:1.10.15")
-    antLib("org.jacoco:org.jacoco.ant:0.8.12")
+    antLib("org.jacoco:org.jacoco.ant:0.8.13")
 }
 
 repositories {
@@ -100,7 +100,7 @@ repositories {
 }
 
 val skipResolveMps = project.hasProperty("mpsHomeDir")
-val mpsHomeDir = rootProject.file(project.findProperty("mpsHomeDir") ?: "$buildDir/mps")
+val mpsHomeDir = rootProject.file(project.findProperty("mpsHomeDir") ?: rootProject.layout.buildDirectory.dir("mps"))
 
 val resolveMps = if (skipResolveMps) {
     tasks.register("resolveMps") {
@@ -122,9 +122,9 @@ val resolveMps = if (skipResolveMps) {
 // tools needed for compiler support in ant calls
 val buildScriptClasspath = project.configurations.getByName("antLib")
 
-val artifactsDir = file("$buildDir/artifacts")
-val reportsDir = file("$buildDir/reports")
-val dependenciesDir = file("$buildDir/dependencies")
+val artifactsDir = rootProject.layout.buildDirectory.dir("artifacts").get().asFile
+val reportsDir = rootProject.layout.buildDirectory.dir("reports").get().asFile
+val dependenciesDir = rootProject.layout.buildDirectory.dir("dependencies").get().asFile
 
 // ___________________ utilities ___________________
 
@@ -133,7 +133,7 @@ val defaultScriptArgs = mapOf(
     "mps_home" to mpsHomeDir,
     "build.jna.library.path" to File(mpsHomeDir, "lib/jna/${System.getProperty("os.arch")}"),
     "mpsqa.home" to rootDir,
-    "build.dir" to buildDir,
+    "build.dir" to rootProject.layout.buildDirectory.get().asFile,
     "version" to version,
     "build.date" to Date()
 )
@@ -154,7 +154,7 @@ tasks.withType<RunAntScript> {
     dependsOn(configureJava, resolveMps)
 }
 
-fun scriptFile(name: String): File = file("$buildDir/scripts/$name")
+fun scriptFile(name: String): File = rootProject.layout.buildDirectory.dir("scripts").get().file(name).asFile
 
 fun createResolveTask(taskName: String, configurationName: String, outputDir: String) {
     tasks.register(taskName, Sync::class) {
@@ -252,7 +252,7 @@ val build_sandboxes = tasks.register("build_sandboxes", BuildLanguages::class) {
     dependsOn("build_unused_languages")
     dependsOn(":testing:sandbox:assemble")
 
-    script = file("$buildDir/scripts/build-sandboxes.xml")
+    script = scriptFile("build-sandboxes.xml")
 }
 
 tasks.register("build_main_languages") {

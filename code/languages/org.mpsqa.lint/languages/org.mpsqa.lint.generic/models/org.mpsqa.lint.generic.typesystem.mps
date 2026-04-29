@@ -3201,7 +3201,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="1Cs6QcZxTdc" role="2OqNvi">
-                    <ref role="37wK5l" to="j8aq:~ReloadableModuleBase.getClass(java.lang.String)" resolve="getClass" />
+                    <ref role="37wK5l" to="j8aq:~ReloadableModule.getClass(java.lang.String)" resolve="getClass" />
                     <node concept="37vLTw" id="1Cs6QcZxWLU" role="37wK5m">
                       <ref role="3cqZAo" node="y1G8y67DG8" resolve="clazzName" />
                     </node>
