@@ -20,6 +20,9 @@
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
@@ -150,7 +153,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
@@ -591,7 +593,7 @@
                       <node concept="2GrUjf" id="3pz5R1DI8xW" role="2Oq$k0">
                         <ref role="2Gs0qQ" node="3pz5R1DI4IT" resolve="superBehavior" />
                       </node>
-                      <node concept="2qgKlT" id="3pz5R1DIawQ" role="2OqNvi">
+                      <node concept="3zqWPK" id="5F$d9grXzvm" role="2OqNvi">
                         <ref role="37wK5l" to="tpek:hEwJjl2" resolve="getMembers" />
                       </node>
                     </node>
@@ -609,7 +611,7 @@
             <node concept="37vLTw" id="2zdrQh7q$G0" role="2Oq$k0">
               <ref role="3cqZAo" node="2zdrQh7oJuy" resolve="behavior" />
             </node>
-            <node concept="2qgKlT" id="3pz5R1DI1o0" role="2OqNvi">
+            <node concept="3zqWPK" id="5F$d9grXzvo" role="2OqNvi">
               <ref role="37wK5l" to="csvn:1$X$vL9L8i8" resolve="getAllSuperBehaviors" />
             </node>
           </node>
@@ -664,7 +666,7 @@
                       <node concept="2GrUjf" id="3pz5R1DIYCw" role="2Oq$k0">
                         <ref role="2Gs0qQ" node="3pz5R1DI$BL" resolve="m" />
                       </node>
-                      <node concept="2qgKlT" id="3pz5R1DIZN4" role="2OqNvi">
+                      <node concept="3zqWPK" id="5F$d9grXzvq" role="2OqNvi">
                         <ref role="37wK5l" to="tpek:2t8d$bukubq" resolve="getErasureSignature" />
                       </node>
                     </node>
@@ -681,7 +683,7 @@
                     <node concept="2GrUjf" id="3pz5R1DJ5vl" role="2Oq$k0">
                       <ref role="2Gs0qQ" node="3pz5R1DI$BL" resolve="m" />
                     </node>
-                    <node concept="2qgKlT" id="3pz5R1DJ6JR" role="2OqNvi">
+                    <node concept="3zqWPK" id="5F$d9grXzvs" role="2OqNvi">
                       <ref role="37wK5l" to="csvn:hP3pnNO" resolve="getOverridenMethod" />
                     </node>
                   </node>
@@ -694,7 +696,7 @@
                       <node concept="2GrUjf" id="3pz5R1DJ2X_" role="2Oq$k0">
                         <ref role="2Gs0qQ" node="3pz5R1DI$BL" resolve="m" />
                       </node>
-                      <node concept="2qgKlT" id="3pz5R1DJ4eo" role="2OqNvi">
+                      <node concept="3zqWPK" id="5F$d9grXzvu" role="2OqNvi">
                         <ref role="37wK5l" to="csvn:hP3pnNO" resolve="getOverridenMethod" />
                       </node>
                     </node>
@@ -732,7 +734,7 @@
                   <node concept="37vLTw" id="2zdrQh7q$gZ" role="2Oq$k0">
                     <ref role="3cqZAo" node="2zdrQh7oJuy" resolve="behavior" />
                   </node>
-                  <node concept="2qgKlT" id="3pz5R1DHW$n" role="2OqNvi">
+                  <node concept="3zqWPK" id="5F$d9grXzvw" role="2OqNvi">
                     <ref role="37wK5l" to="tpek:hEwJjl2" resolve="getMembers" />
                   </node>
                 </node>
@@ -780,7 +782,7 @@
                       <node concept="2GrUjf" id="3pz5R1DJaEN" role="2Oq$k0">
                         <ref role="2Gs0qQ" node="3pz5R1DJaE$" resolve="m" />
                       </node>
-                      <node concept="2qgKlT" id="3pz5R1DJaEO" role="2OqNvi">
+                      <node concept="3zqWPK" id="5F$d9grXzvy" role="2OqNvi">
                         <ref role="37wK5l" to="tpek:2t8d$bukubq" resolve="getErasureSignature" />
                       </node>
                     </node>
@@ -797,7 +799,7 @@
                     <node concept="2GrUjf" id="3pz5R1DJaEU" role="2Oq$k0">
                       <ref role="2Gs0qQ" node="3pz5R1DJaE$" resolve="m" />
                     </node>
-                    <node concept="2qgKlT" id="3pz5R1DJaEV" role="2OqNvi">
+                    <node concept="3zqWPK" id="5F$d9grXzv$" role="2OqNvi">
                       <ref role="37wK5l" to="csvn:hP3pnNO" resolve="getOverridenMethod" />
                     </node>
                   </node>
@@ -810,7 +812,7 @@
                       <node concept="2GrUjf" id="3pz5R1DJaF0" role="2Oq$k0">
                         <ref role="2Gs0qQ" node="3pz5R1DJaE$" resolve="m" />
                       </node>
-                      <node concept="2qgKlT" id="3pz5R1DJaF1" role="2OqNvi">
+                      <node concept="3zqWPK" id="5F$d9grXzvA" role="2OqNvi">
                         <ref role="37wK5l" to="csvn:hP3pnNO" resolve="getOverridenMethod" />
                       </node>
                     </node>
@@ -1500,7 +1502,7 @@
                                 <node concept="37vLTw" id="3cj_LrgSJ2U" role="2Oq$k0">
                                   <ref role="3cqZAo" node="3cj_LrgSJ3a" resolve="conceptBehavior" />
                                 </node>
-                                <node concept="2qgKlT" id="3cj_LrgSJ2V" role="2OqNvi">
+                                <node concept="3zqWPK" id="5F$d9grXzvC" role="2OqNvi">
                                   <ref role="37wK5l" to="tpek:hEwJjl2" resolve="getMembers" />
                                 </node>
                               </node>
@@ -1613,7 +1615,7 @@
                       <node concept="2GrUjf" id="3cj_LrgQOGI" role="2Oq$k0">
                         <ref role="2Gs0qQ" node="3cj_LrgQDfZ" resolve="thisBehavior" />
                       </node>
-                      <node concept="2qgKlT" id="3cj_LrgQOGJ" role="2OqNvi">
+                      <node concept="3zqWPK" id="5F$d9grXzvE" role="2OqNvi">
                         <ref role="37wK5l" to="csvn:1$X$vL9L8i8" resolve="getAllSuperBehaviors" />
                       </node>
                     </node>
@@ -1660,7 +1662,7 @@
                                     <node concept="37vLTw" id="3cj_LrgVDko" role="2Oq$k0">
                                       <ref role="3cqZAo" node="3cj_LrgVDkt" resolve="behavior" />
                                     </node>
-                                    <node concept="2qgKlT" id="3cj_LrgVDkp" role="2OqNvi">
+                                    <node concept="3zqWPK" id="5F$d9grXzvG" role="2OqNvi">
                                       <ref role="37wK5l" to="tpek:hEwJjl2" resolve="getMembers" />
                                     </node>
                                   </node>
@@ -1711,7 +1713,7 @@
                                     </node>
                                     <node concept="13u695" id="3cj_LrgVXPS" role="2OqNvi" />
                                   </node>
-                                  <node concept="2qgKlT" id="3cj_LrgVYV1" role="2OqNvi">
+                                  <node concept="3zqWPK" id="5F$d9grXzvI" role="2OqNvi">
                                     <ref role="37wK5l" to="tpcu:22G2W3WJ92t" resolve="getDetailedPresentation" />
                                   </node>
                                 </node>

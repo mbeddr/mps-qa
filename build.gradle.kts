@@ -5,13 +5,13 @@ import org.gradle.api.artifacts.ResolvedArtifact
 import java.util.*
 
 plugins {
-    id("de.itemis.mps.gradle.common") version "1.30.0.+"
-    id("download-jbr") version "1.30.0.+"
+    id("de.itemis.mps.gradle.common") version "1.30.1.+"
+    id("download-jbr") version "1.30.1.+"
     id("base")
     id("maven-publish")
     id("co.riiid.gradle") version "0.4.2"
 
-    id("org.cyclonedx.bom") version "3.1.0"
+    id("org.cyclonedx.bom") version "3.2.4"
 }
 
 val jbrVers = "21.0.6-b895.109"
@@ -61,13 +61,13 @@ val jacoco by configurations.creating { isTransitive = false }
 dependencies {
     // Use the following dependency for published releases:
     //   mps("com.jetbrains:mps:$mpsVersion")
-    mps("com.jetbrains.mps:mps-prerelease:253.28294.10325")
+    mps("com.jetbrains.mps:mps-prerelease:261.23567.195")
 
-    plantuml("net.sourceforge.plantuml:plantuml-asl:1.2026.1")
+    plantuml("net.sourceforge.plantuml:plantuml-asl:1.2026.2")
 
     baseLib("org.apache.commons:commons-lang3:3.20.0")
     baseLib("commons-cli:commons-cli:1.11.0")
-    baseLib("commons-io:commons-io:2.21.0")
+    baseLib("commons-io:commons-io:2.22.0")
 
     treemap("net.sf.jtreemap:jtreemap:1.1.3")
     treemap("net.sf.jtreemap:ktreemap:1.1.0-atlassian-01")
@@ -83,7 +83,7 @@ dependencies {
     jacoco("org.jacoco:org.jacoco.core:$jacocoVersion")
     jacoco("org.jacoco:org.jacoco.report:$jacocoVersion")
 
-    antLib("org.apache.ant:ant-junit:1.10.15")
+    antLib("org.apache.ant:ant-junit:1.10.17")
     antLib("org.jacoco:org.jacoco.ant:$jacocoVersion")
 }
 
