@@ -14,7 +14,7 @@ plugins {
     id("org.cyclonedx.bom") version "3.2.4"
 }
 
-val jbrVers = "21.0.6-b895.109"
+val jbrVers = "25.0.2-b329.117"
 
 downloadJbr {
     jbrVersion = jbrVers
