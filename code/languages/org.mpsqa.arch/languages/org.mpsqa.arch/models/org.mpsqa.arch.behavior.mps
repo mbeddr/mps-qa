@@ -8,7 +8,7 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -187,15 +187,9 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -1201,14 +1195,101 @@
         </node>
       </node>
       <node concept="P$JXv" id="7_XHz4_Eb42" role="lGtFl">
-        <node concept="TZ5HA" id="7_XHz4_Eb43" role="TZ5H$">
-          <node concept="1dT_AC" id="7_XHz4_Eb44" role="1dT_Ay">
-            <property role="1dT_AB" value="Returns a list of SModules on which the module associated to this ModuleComponent depends. " />
+        <node concept="1PaTwC" id="RYGxAyAzkZ" role="1Vez_I">
+          <node concept="3oM_SD" id="RYGxAyAzl0" role="1PaTwD">
+            <property role="3oM_SC" value="Returns" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAzl1" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAzl2" role="1PaTwD">
+            <property role="3oM_SC" value="list" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAzl3" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAzl4" role="1PaTwD">
+            <property role="3oM_SC" value="SModules" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAzl5" role="1PaTwD">
+            <property role="3oM_SC" value="on" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAzl6" role="1PaTwD">
+            <property role="3oM_SC" value="which" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAzl7" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAzl8" role="1PaTwD">
+            <property role="3oM_SC" value="module" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAzl9" role="1PaTwD">
+            <property role="3oM_SC" value="associated" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAzla" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAzlb" role="1PaTwD">
+            <property role="3oM_SC" value="this" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAzlc" role="1PaTwD">
+            <property role="3oM_SC" value="ModuleComponent" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAzld" role="1PaTwD">
+            <property role="3oM_SC" value="depends." />
           </node>
         </node>
-        <node concept="TZ5HA" id="7_XHz4_EfKk" role="TZ5H$">
-          <node concept="1dT_AC" id="7_XHz4_EfKl" role="1dT_Ay">
-            <property role="1dT_AB" value="If some models are excluded, then dependencies caused by the other models of the module are considered." />
+        <node concept="1PaTwC" id="RYGxAyAzle" role="1Vez_I">
+          <node concept="3oM_SD" id="RYGxAyAzlf" role="1PaTwD">
+            <property role="3oM_SC" value="If" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAzlg" role="1PaTwD">
+            <property role="3oM_SC" value="some" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAzlh" role="1PaTwD">
+            <property role="3oM_SC" value="models" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAzli" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAzlj" role="1PaTwD">
+            <property role="3oM_SC" value="excluded," />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAzlk" role="1PaTwD">
+            <property role="3oM_SC" value="then" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAzll" role="1PaTwD">
+            <property role="3oM_SC" value="dependencies" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAzlm" role="1PaTwD">
+            <property role="3oM_SC" value="caused" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAzln" role="1PaTwD">
+            <property role="3oM_SC" value="by" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAzlo" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAzlp" role="1PaTwD">
+            <property role="3oM_SC" value="other" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAzlq" role="1PaTwD">
+            <property role="3oM_SC" value="models" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAzlr" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAzls" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAzlt" role="1PaTwD">
+            <property role="3oM_SC" value="module" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAzlu" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAzlv" role="1PaTwD">
+            <property role="3oM_SC" value="considered." />
           </node>
         </node>
       </node>
