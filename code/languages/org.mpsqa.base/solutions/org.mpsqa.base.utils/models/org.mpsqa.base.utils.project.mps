@@ -285,7 +285,7 @@
                   <ref role="2Gs0qQ" node="5ruws_4EC16" resolve="op" />
                 </node>
                 <node concept="liA8E" id="5ruws_4ED2o" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~IProject.getProjectModules()" resolve="getProjectModules" />
+                  <ref role="37wK5l" to="z1c3:~Project.getModules()" resolve="getModules" />
                 </node>
               </node>
             </node>
@@ -359,7 +359,7 @@
               <ref role="3cqZAo" node="7HJqs_aOYXK" resolve="project" />
             </node>
             <node concept="liA8E" id="7HJqs_aOZQe" role="2OqNvi">
-              <ref role="37wK5l" to="z1c3:~IProject.getProjectModules()" resolve="getProjectModules" />
+              <ref role="37wK5l" to="z1c3:~Project.getModules()" resolve="getModules" />
             </node>
           </node>
         </node>

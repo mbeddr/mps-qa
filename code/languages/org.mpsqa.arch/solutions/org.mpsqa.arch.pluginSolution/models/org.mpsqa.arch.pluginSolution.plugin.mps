@@ -123,6 +123,9 @@
         <child id="5538333046911298738" name="condition" index="1oa70y" />
       </concept>
     </language>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
       <concept id="7520713872864775836" name="jetbrains.mps.lang.plugin.standalone.structure.StandalonePluginDescriptor" flags="ng" index="2DaZZR" />
       <concept id="681855071694758165" name="jetbrains.mps.lang.plugin.standalone.structure.GetToolInProjectOperation" flags="nn" index="LR4U6">
@@ -363,7 +366,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
@@ -2826,7 +2828,7 @@
                             <node concept="37vLTw" id="1Nl9e7Dw7Ur" role="2Oq$k0">
                               <ref role="3cqZAo" node="1vMaDkDXckp" resolve="it" />
                             </node>
-                            <node concept="2qgKlT" id="1Nl9e7Dwa88" role="2OqNvi">
+                            <node concept="3zqWPK" id="5F$d9grWPPk" role="2OqNvi">
                               <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
                             </node>
                           </node>
@@ -2858,7 +2860,7 @@
                             <node concept="37vLTw" id="1Nl9e7Dwb2I" role="2Oq$k0">
                               <ref role="3cqZAo" node="1vMaDkDXckr" resolve="it" />
                             </node>
-                            <node concept="2qgKlT" id="1Nl9e7Dwb2J" role="2OqNvi">
+                            <node concept="3zqWPK" id="5F$d9grWPPm" role="2OqNvi">
                               <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
                             </node>
                           </node>
