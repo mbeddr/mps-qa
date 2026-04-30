@@ -5,18 +5,16 @@ import org.gradle.api.artifacts.ResolvedArtifact
 import java.util.*
 
 plugins {
-    id("de.itemis.mps.gradle.common") version "1.29.3.+"
-    id("download-jbr") version "1.29.3.+"
+    id("de.itemis.mps.gradle.common") version "1.30.1.+"
+    id("download-jbr") version "1.30.1.+"
     id("base")
     id("maven-publish")
     id("co.riiid.gradle") version "0.4.2"
 
-    id("de.itemis.mps.gradle.launcher") version "2.7.0.+"
-
-    id("org.cyclonedx.bom") version "2.2.0"
+    id("org.cyclonedx.bom") version "3.2.4"
 }
 
-val jbrVers = "21.0.6-b895.109"
+val jbrVers = "25.0.2-b329.117"
 
 downloadJbr {
     jbrVersion = jbrVers
@@ -31,7 +29,7 @@ val ciBuild = if (System.getenv("CI") != null && System.getenv("CI").toBoolean()
     project.hasProperty("teamcity")
 }
 
-val mpsVersion = "2025.1"
+val mpsVersion = "9999.9"
 
 // Project versions
 val major = mpsVersion.substring(0, 4)
@@ -61,19 +59,21 @@ val treemap by configurations.creating { isTransitive = false }
 val jacoco by configurations.creating { isTransitive = false }
 
 dependencies {
-    mps("com.jetbrains:mps:$mpsVersion")
+    // Use the following dependency for published releases:
+    //   mps("com.jetbrains:mps:$mpsVersion")
+    mps("com.jetbrains.mps:mps-prerelease:261.23567.195")
 
-    plantuml("net.sourceforge.plantuml:plantuml-asl:1.2025.2")
+    plantuml("net.sourceforge.plantuml:plantuml-asl:1.2026.2")
 
     baseLib("org.apache.commons:commons-lang3:3.20.0")
-    baseLib("commons-cli:commons-cli:1.5.0")
-    baseLib("commons-io:commons-io:2.21.0")
+    baseLib("commons-cli:commons-cli:1.11.0")
+    baseLib("commons-io:commons-io:2.22.0")
 
     treemap("net.sf.jtreemap:jtreemap:1.1.3")
     treemap("net.sf.jtreemap:ktreemap:1.1.0-atlassian-01")
 
-    val asmVersion = "9.2"
-    val jacocoVersion = "0.8.13"
+    val asmVersion = "9.9.1"
+    val jacocoVersion = "0.8.14"
 
     jacoco("org.ow2.asm:asm:$asmVersion")
     jacoco("org.ow2.asm:asm-commons:$asmVersion")
@@ -83,8 +83,8 @@ dependencies {
     jacoco("org.jacoco:org.jacoco.core:$jacocoVersion")
     jacoco("org.jacoco:org.jacoco.report:$jacocoVersion")
 
-    antLib("org.apache.ant:ant-junit:1.10.15")
-    antLib("org.jacoco:org.jacoco.ant:0.8.13")
+    antLib("org.apache.ant:ant-junit:1.10.17")
+    antLib("org.jacoco:org.jacoco.ant:$jacocoVersion")
 }
 
 repositories {
@@ -279,14 +279,13 @@ val build_allInOne_package = tasks.register("build_allInOne_package", BuildLangu
 }
 
 val package_mpsqa = tasks.register("package_mpsqa", Zip::class) {
-    dependsOn(build_allInOne_package, "cyclonedxBom")
+    dependsOn(build_allInOne_package)
     archiveBaseName.set("org.mpsqa")
     from(artifactsDir) {
         include("org.mpsqa.allInOne/**")
     }
-    from(reportsDir) {
-        include("sbom.json")
-        into("org.mpsqa.allInOne")
+    into ("org.mpsqa.allInOne") {
+        from(tasks.cyclonedxDirectBom)
     }
 }
 
@@ -314,10 +313,10 @@ tasks.register("check_lint", MpsCheck::class) {
     pluginRoots.add(layout.dir(provider { File(mpsHomeDir, "plugins/mps-modelchecker") }))
 }
 
-tasks.cyclonedxBom {
-    destination = reportsDir
-    outputName = "sbom"
-    outputFormat = "json"
+tasks.cyclonedxDirectBom {
+    jsonOutput = reportsDir.resolve("sbom.json")
+    xmlOutput.unsetConvention() // Not interested in XML output
+
     includeLicenseText = false
     includeConfigs = listOf("plantuml", "baseLib", "treemap", "jacoco")
 }

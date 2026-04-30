@@ -5,7 +5,7 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
@@ -219,15 +219,9 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
@@ -1630,9 +1624,45 @@
         <node concept="10Oyi0" id="584dPWt7z2A" role="1tU5fm" />
       </node>
       <node concept="P$JXv" id="4Q49ENJ3GnF" role="lGtFl">
-        <node concept="TZ5HA" id="4Q49ENJ3GnG" role="TZ5H$">
-          <node concept="1dT_AC" id="4Q49ENJ3GnH" role="1dT_Ay">
-            <property role="1dT_AB" value="Computes the percent of lines of this file which are covered by tests." />
+        <node concept="1PaTwC" id="RYGxAyAt3Q" role="1Vez_I">
+          <node concept="3oM_SD" id="RYGxAyAt3R" role="1PaTwD">
+            <property role="3oM_SC" value="Computes" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt3S" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt3T" role="1PaTwD">
+            <property role="3oM_SC" value="percent" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt3U" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt3V" role="1PaTwD">
+            <property role="3oM_SC" value="lines" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt3W" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt3X" role="1PaTwD">
+            <property role="3oM_SC" value="this" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt3Y" role="1PaTwD">
+            <property role="3oM_SC" value="file" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt3Z" role="1PaTwD">
+            <property role="3oM_SC" value="which" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt40" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt41" role="1PaTwD">
+            <property role="3oM_SC" value="covered" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt42" role="1PaTwD">
+            <property role="3oM_SC" value="by" />
+          </node>
+          <node concept="3oM_SD" id="RYGxAyAt43" role="1PaTwD">
+            <property role="3oM_SC" value="tests." />
           </node>
         </node>
       </node>

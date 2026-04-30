@@ -12,6 +12,7 @@ pluginManagement {
     }
 }
 
+include(":testing")
+project(":testing").projectDir = file("code/languages/org.mpsqa.testing")
 
 include(":testing:sandbox")
-project(":testing:sandbox").projectDir = file("code/languages/org.mpsqa.testing/sandbox")

@@ -25,6 +25,9 @@
         <reference id="1239576542472" name="component" index="2sxfKC" />
       </concept>
     </language>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
@@ -249,7 +252,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
@@ -403,7 +405,7 @@
                 <node concept="1YBJjd" id="fm3v0WXGDo" role="2Oq$k0">
                   <ref role="1YBMHb" node="1tkdAPw1fX2" resolve="componentDefinition" />
                 </node>
-                <node concept="2qgKlT" id="fm3v0WXGDp" role="2OqNvi">
+                <node concept="3zqWPK" id="5F$d9grWPQ0" role="2OqNvi">
                   <ref role="37wK5l" to="lm2w:1tkdAPw1H7s" resolve="getAllDependenciesTargets" />
                 </node>
               </node>
@@ -660,7 +662,7 @@
                 <node concept="2GrUjf" id="fm3v0WXNgl" role="2Oq$k0">
                   <ref role="2Gs0qQ" node="fm3v0WXL0p" resolve="currentSubComponent" />
                 </node>
-                <node concept="2qgKlT" id="fm3v0WXNgm" role="2OqNvi">
+                <node concept="3zqWPK" id="5F$d9grWPQ2" role="2OqNvi">
                   <ref role="37wK5l" to="lm2w:1tkdAPw1H7s" resolve="getAllDependenciesTargets" />
                 </node>
               </node>
@@ -1160,7 +1162,7 @@
           <node concept="1YBJjd" id="fm3v0WSRU2" role="2Oq$k0">
             <ref role="1YBMHb" node="6ESRMYICZ1k" resolve="moduleComponent" />
           </node>
-          <node concept="2qgKlT" id="fm3v0WSSGU" role="2OqNvi">
+          <node concept="3zqWPK" id="5F$d9grWPQ4" role="2OqNvi">
             <ref role="37wK5l" to="lm2w:fm3v0WRLT8" resolve="getModulesOnWhichThisModuleDepends" />
           </node>
         </node>
@@ -1284,7 +1286,7 @@
           <node concept="1YBJjd" id="fm3v0WUwus" role="2Oq$k0">
             <ref role="1YBMHb" node="6ESRMYICZ1k" resolve="moduleComponent" />
           </node>
-          <node concept="2qgKlT" id="fm3v0WUxri" role="2OqNvi">
+          <node concept="3zqWPK" id="5F$d9grWPQ6" role="2OqNvi">
             <ref role="37wK5l" to="lm2w:fm3v0WTSU$" resolve="getUsedLanguages" />
           </node>
         </node>
@@ -1473,7 +1475,7 @@
                 <node concept="37vLTw" id="1KHvhQerZ$t" role="2Oq$k0">
                   <ref role="3cqZAo" node="fm3v0WXEkP" resolve="srcLanguageComponentParent" />
                 </node>
-                <node concept="2qgKlT" id="1KHvhQerZ$u" role="2OqNvi">
+                <node concept="3zqWPK" id="5F$d9grWPQ8" role="2OqNvi">
                   <ref role="37wK5l" to="lm2w:1tkdAPw1H7s" resolve="getAllDependenciesTargets" />
                 </node>
               </node>
@@ -1747,7 +1749,7 @@
                   <node concept="37vLTw" id="sRpFtPzanC" role="2Oq$k0">
                     <ref role="3cqZAo" node="10aXpfQhjNz" resolve="moduleId" />
                   </node>
-                  <node concept="2qgKlT" id="sRpFtPzanu" role="2OqNvi">
+                  <node concept="3zqWPK" id="5F$d9grWPQa" role="2OqNvi">
                     <ref role="37wK5l" to="xlb7:1Bs_61$mqDd" resolve="toModuleReference" />
                   </node>
                 </node>
@@ -1775,7 +1777,7 @@
                       <node concept="37vLTw" id="1WMZ_AZ2sS4" role="2Oq$k0">
                         <ref role="3cqZAo" node="10aXpfQhjNz" resolve="moduleId" />
                       </node>
-                      <node concept="2qgKlT" id="1WMZ_AZ2tws" role="2OqNvi">
+                      <node concept="3zqWPK" id="5F$d9grWPQc" role="2OqNvi">
                         <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
                       </node>
                     </node>
