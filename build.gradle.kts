@@ -61,7 +61,7 @@ val jacoco by configurations.creating { isTransitive = false }
 dependencies {
     // Use the following dependency for published releases:
     //   mps("com.jetbrains:mps:$mpsVersion")
-    mps("com.jetbrains.mps:mps-prerelease:261.23567.195")
+    mps("com.jetbrains.mps:mps-prerelease:261.23567.215")
 
     plantuml("net.sourceforge.plantuml:plantuml-asl:1.2026.2")
 
