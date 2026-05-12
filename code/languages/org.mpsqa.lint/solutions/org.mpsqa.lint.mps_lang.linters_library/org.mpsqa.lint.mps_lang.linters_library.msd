@@ -35,6 +35,9 @@
     <dependency reexport="false">8585453e-6bfb-4d80-98de-b16074f1d86c(jetbrains.mps.lang.test)</dependency>
     <dependency reexport="false">c7d5b9dd-a05f-4be2-bc73-f2e16994cc67(jetbrains.mps.baseLanguage.lightweightdsl)</dependency>
     <dependency reexport="false">90746344-04fd-4286-97d5-b46ae6a81709(jetbrains.mps.lang.migration)</dependency>
+    <dependency reexport="false">40ab19e9-751a-4433-b645-0e65160e58a0(org.mpsqa.lint.generic)</dependency>
+    <dependency reexport="false">b15468d9-435b-45b2-bf51-3f984f734cc4(org.mpsqa.lint.generic.runtime)</dependency>
+    <dependency reexport="false">63d1f8cf-e65e-4d00-bcfa-f196ad4419ca(org.mpsqa.lint.generic.generator)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
@@ -88,9 +91,13 @@
     <module reference="7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)" version="1" />
     <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
     <module reference="8585453e-6bfb-4d80-98de-b16074f1d86c(jetbrains.mps.lang.test)" version="0" />
+    <module reference="c7fb639f-be78-4307-89b0-b5959c3fa8c8(jetbrains.mps.lang.text)" version="0" />
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
     <module reference="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" version="0" />
     <module reference="20c6e580-bdc5-4067-8049-d7e3265a86de(jetbrains.mps.typesystemEngine)" version="0" />
+    <module reference="40ab19e9-751a-4433-b645-0e65160e58a0(org.mpsqa.lint.generic)" version="0" />
+    <module reference="63d1f8cf-e65e-4d00-bcfa-f196ad4419ca(org.mpsqa.lint.generic.generator)" version="0" />
+    <module reference="b15468d9-435b-45b2-bf51-3f984f734cc4(org.mpsqa.lint.generic.runtime)" version="0" />
     <module reference="12a40499-ed72-4b23-9437-358c4217c97b(org.mpsqa.lint.mps_lang.linters_library)" version="0" />
   </dependencyVersions>
 </solution>
