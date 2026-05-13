@@ -16,6 +16,7 @@
     <import index="tpf8" ref="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" />
     <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
+    <import index="tpf3" ref="r:00000000-0000-4000-0000-011c895902f3(jetbrains.mps.lang.generator.generationContext.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
   </imports>
@@ -166,10 +167,23 @@
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
+      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
+        <reference id="1138056546658" name="link" index="3TtcxE" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
@@ -215,6 +229,7 @@
       </concept>
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
+      <concept id="1160666733551" name="jetbrains.mps.baseLanguage.collections.structure.AddAllElementsOperation" flags="nn" index="X8dFx" />
       <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
@@ -1271,6 +1286,388 @@
                                     </node>
                                     <node concept="3TrEf2" id="1xum14xJpD1" role="2OqNvi">
                                       <ref role="3Tt5mk" to="tpf8:husgKN8" resolve="labelDeclaration" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="1_3QMl" id="3kzQfDal7Ch" role="1_3QMm">
+                          <node concept="3gn64h" id="3kzQfDal7Cj" role="3Kbmr1">
+                            <ref role="3gnhBz" to="tpf8:gYVPola" resolve="CreateRootRule" />
+                          </node>
+                          <node concept="3clFbS" id="3kzQfDal7Cl" role="3Kbo56">
+                            <node concept="3clFbF" id="3kzQfDaleqM" role="3cqZAp">
+                              <node concept="2OqwBi" id="3kzQfDaleqN" role="3clFbG">
+                                <node concept="37vLTw" id="3kzQfDaleqO" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="1xum14xJe5R" resolve="referenced_MappingLabelConfiguration" />
+                                </node>
+                                <node concept="TSZUe" id="3kzQfDaleqP" role="2OqNvi">
+                                  <node concept="2OqwBi" id="3kzQfDaleqQ" role="25WWJ7">
+                                    <node concept="1PxgMI" id="3kzQfDaleqR" role="2Oq$k0">
+                                      <node concept="37vLTw" id="3kzQfDaleqT" role="1m5AlR">
+                                        <ref role="3cqZAo" node="1xum14xJlYM" resolve="it" />
+                                      </node>
+                                      <node concept="chp4Y" id="3kzQfDaleKH" role="3oSUPX">
+                                        <ref role="cht4Q" to="tpf8:gYVPola" resolve="CreateRootRule" />
+                                      </node>
+                                    </node>
+                                    <node concept="3TrEf2" id="3kzQfDaleqU" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="tpf8:husBCMG" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="1_3QMl" id="3kzQfDal7RP" role="1_3QMm">
+                          <node concept="3gn64h" id="3kzQfDal7RR" role="3Kbmr1">
+                            <ref role="3gnhBz" to="tpf8:fWbUwhP" resolve="MappingConfiguration" />
+                          </node>
+                          <node concept="3clFbS" id="3kzQfDal7RT" role="3Kbo56">
+                            <node concept="3SKdUt" id="3kzQfDalL40" role="3cqZAp">
+                              <node concept="1PaTwC" id="3kzQfDalL41" role="1aUNEU">
+                                <node concept="3oM_SD" id="3kzQfDalMUo" role="1PaTwD">
+                                  <property role="3oM_SC" value="get" />
+                                </node>
+                                <node concept="3oM_SD" id="3kzQfDalNea" role="1PaTwD">
+                                  <property role="3oM_SC" value="this" />
+                                </node>
+                                <node concept="3oM_SD" id="3kzQfDalNfP" role="1PaTwD">
+                                  <property role="3oM_SC" value="checked." />
+                                </node>
+                                <node concept="3oM_SD" id="3kzQfDalNiN" role="1PaTwD">
+                                  <property role="3oM_SC" value="" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="3SKdUt" id="3kzQfDalT1v" role="3cqZAp">
+                              <node concept="1PaTwC" id="3kzQfDalT1c" role="1aUNEU">
+                                <node concept="3oM_SD" id="3kzQfDalT1b" role="1PaTwD">
+                                  <property role="3oM_SC" value="because" />
+                                </node>
+                                <node concept="3oM_SD" id="3kzQfDalNRi" role="1PaTwD">
+                                  <property role="3oM_SC" value="only" />
+                                </node>
+                                <node concept="3oM_SD" id="3kzQfDalO8k" role="1PaTwD">
+                                  <property role="3oM_SC" value="in" />
+                                </node>
+                                <node concept="3oM_SD" id="3kzQfDalO9k" role="1PaTwD">
+                                  <property role="3oM_SC" value="this" />
+                                </node>
+                                <node concept="3oM_SD" id="3kzQfDalOaY" role="1PaTwD">
+                                  <property role="3oM_SC" value="scenario," />
+                                </node>
+                                <node concept="3oM_SD" id="3kzQfDalOvc" role="1PaTwD">
+                                  <property role="3oM_SC" value="MappingLabelDeclaration" />
+                                </node>
+                                <node concept="3oM_SD" id="3kzQfDalPUs" role="1PaTwD">
+                                  <property role="3oM_SC" value="is" />
+                                </node>
+                                <node concept="3oM_SD" id="3kzQfDalTNm" role="1PaTwD">
+                                  <property role="3oM_SC" value="a" />
+                                </node>
+                                <node concept="3oM_SD" id="3kzQfDalQKd" role="1PaTwD">
+                                  <property role="3oM_SC" value="child(0-n)" />
+                                </node>
+                                <node concept="3oM_SD" id="3kzQfDalRQR" role="1PaTwD">
+                                  <property role="3oM_SC" value="and" />
+                                </node>
+                                <node concept="3oM_SD" id="3kzQfDalS97" role="1PaTwD">
+                                  <property role="3oM_SC" value="not" />
+                                </node>
+                                <node concept="3oM_SD" id="3kzQfDalSas" role="1PaTwD">
+                                  <property role="3oM_SC" value="a" />
+                                </node>
+                                <node concept="3oM_SD" id="3kzQfDalSs2" role="1PaTwD">
+                                  <property role="3oM_SC" value="reference" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="1X3_iC" id="3kzQfDbG0VG" role="lGtFl">
+                              <property role="3V$3am" value="statement" />
+                              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                              <node concept="3clFbF" id="3kzQfDaleS5" role="8Wnug">
+                                <node concept="2OqwBi" id="3kzQfDaleS7" role="3clFbG">
+                                  <node concept="37vLTw" id="3kzQfDaleS8" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="1xum14xJe5R" resolve="referenced_MappingLabelConfiguration" />
+                                  </node>
+                                  <node concept="X8dFx" id="3kzQfDalK2f" role="2OqNvi">
+                                    <node concept="2OqwBi" id="3kzQfDalK2h" role="25WWJ7">
+                                      <node concept="1PxgMI" id="3kzQfDalK2i" role="2Oq$k0">
+                                        <node concept="37vLTw" id="3kzQfDalK2j" role="1m5AlR">
+                                          <ref role="3cqZAo" node="1xum14xJlYM" resolve="it" />
+                                        </node>
+                                        <node concept="chp4Y" id="3kzQfDalK2k" role="3oSUPX">
+                                          <ref role="cht4Q" to="tpf8:fWbUwhP" resolve="MappingConfiguration" />
+                                        </node>
+                                      </node>
+                                      <node concept="3Tsc0h" id="3kzQfDalK2l" role="2OqNvi">
+                                        <ref role="3TtcxE" to="tpf8:hurTMnT" resolve="mappingLabel" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="1_3QMl" id="3kzQfDal7X6" role="1_3QMm">
+                          <node concept="3gn64h" id="3kzQfDal7X7" role="3Kbmr1">
+                            <ref role="3gnhBz" to="tpf8:fP7Vmt2" resolve="NodeMacro" />
+                          </node>
+                          <node concept="3clFbS" id="3kzQfDal7X8" role="3Kbo56">
+                            <node concept="3clFbF" id="3kzQfDalfg6" role="3cqZAp">
+                              <node concept="2OqwBi" id="3kzQfDalfg7" role="3clFbG">
+                                <node concept="37vLTw" id="3kzQfDalfg8" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="1xum14xJe5R" resolve="referenced_MappingLabelConfiguration" />
+                                </node>
+                                <node concept="TSZUe" id="3kzQfDalfg9" role="2OqNvi">
+                                  <node concept="2OqwBi" id="3kzQfDalfga" role="25WWJ7">
+                                    <node concept="1PxgMI" id="3kzQfDalfgb" role="2Oq$k0">
+                                      <node concept="37vLTw" id="3kzQfDalfgc" role="1m5AlR">
+                                        <ref role="3cqZAo" node="1xum14xJlYM" resolve="it" />
+                                      </node>
+                                      <node concept="chp4Y" id="3kzQfDalk7S" role="3oSUPX">
+                                        <ref role="cht4Q" to="tpf8:fP7Vmt2" resolve="NodeMacro" />
+                                      </node>
+                                    </node>
+                                    <node concept="3TrEf2" id="3kzQfDalfge" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="tpf8:hurW$JJ" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="1_3QMl" id="3kzQfDal82k" role="1_3QMm">
+                          <node concept="3gn64h" id="3kzQfDal82l" role="3Kbmr1">
+                            <ref role="3gnhBz" to="tpf8:1$dcvTE4IIO" resolve="PatternReduction_MappingRule" />
+                          </node>
+                          <node concept="3clFbS" id="3kzQfDal82m" role="3Kbo56">
+                            <node concept="3clFbF" id="3kzQfDalfA2" role="3cqZAp">
+                              <node concept="2OqwBi" id="3kzQfDalfA3" role="3clFbG">
+                                <node concept="37vLTw" id="3kzQfDalfA4" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="1xum14xJe5R" resolve="referenced_MappingLabelConfiguration" />
+                                </node>
+                                <node concept="TSZUe" id="3kzQfDalfA5" role="2OqNvi">
+                                  <node concept="2OqwBi" id="3kzQfDalfA6" role="25WWJ7">
+                                    <node concept="1PxgMI" id="3kzQfDalfA7" role="2Oq$k0">
+                                      <node concept="37vLTw" id="3kzQfDalfA8" role="1m5AlR">
+                                        <ref role="3cqZAo" node="1xum14xJlYM" resolve="it" />
+                                      </node>
+                                      <node concept="chp4Y" id="3kzQfDalkpa" role="3oSUPX">
+                                        <ref role="cht4Q" to="tpf8:1$dcvTE4IIO" resolve="PatternReduction_MappingRule" />
+                                      </node>
+                                    </node>
+                                    <node concept="3TrEf2" id="3kzQfDalfAa" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="tpf8:1$dcvTE4IIU" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="1_3QMl" id="3kzQfDal87y" role="1_3QMm">
+                          <node concept="3gn64h" id="3kzQfDal87z" role="3Kbmr1">
+                            <ref role="3gnhBz" to="tpf8:fWrartG" resolve="TemplateFragment" />
+                          </node>
+                          <node concept="3clFbS" id="3kzQfDal87$" role="3Kbo56">
+                            <node concept="3clFbF" id="3kzQfDalg0a" role="3cqZAp">
+                              <node concept="2OqwBi" id="3kzQfDalg0b" role="3clFbG">
+                                <node concept="37vLTw" id="3kzQfDalg0c" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="1xum14xJe5R" resolve="referenced_MappingLabelConfiguration" />
+                                </node>
+                                <node concept="TSZUe" id="3kzQfDalg0d" role="2OqNvi">
+                                  <node concept="2OqwBi" id="3kzQfDalg0e" role="25WWJ7">
+                                    <node concept="1PxgMI" id="3kzQfDalg0f" role="2Oq$k0">
+                                      <node concept="37vLTw" id="3kzQfDalg0g" role="1m5AlR">
+                                        <ref role="3cqZAo" node="1xum14xJlYM" resolve="it" />
+                                      </node>
+                                      <node concept="chp4Y" id="3kzQfDalkEf" role="3oSUPX">
+                                        <ref role="cht4Q" to="tpf8:fWrartG" resolve="TemplateFragment" />
+                                      </node>
+                                    </node>
+                                    <node concept="3TrEf2" id="3kzQfDalg0i" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="tpf8:husdAGJ" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="1_3QMl" id="3kzQfDal8Dr" role="1_3QMm">
+                          <node concept="3gn64h" id="3kzQfDal8Dt" role="3Kbmr1">
+                            <ref role="3gnhBz" to="tpf3:hHiwH3m" resolve="GenerationContextOp_GetOutputByLabel" />
+                          </node>
+                          <node concept="3clFbS" id="3kzQfDal8Dv" role="3Kbo56">
+                            <node concept="3clFbF" id="3kzQfDalguu" role="3cqZAp">
+                              <node concept="2OqwBi" id="3kzQfDalguv" role="3clFbG">
+                                <node concept="37vLTw" id="3kzQfDalguw" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="1xum14xJe5R" resolve="referenced_MappingLabelConfiguration" />
+                                </node>
+                                <node concept="TSZUe" id="3kzQfDalgux" role="2OqNvi">
+                                  <node concept="2OqwBi" id="3kzQfDalguy" role="25WWJ7">
+                                    <node concept="1PxgMI" id="3kzQfDalguz" role="2Oq$k0">
+                                      <node concept="37vLTw" id="3kzQfDalgu$" role="1m5AlR">
+                                        <ref role="3cqZAo" node="1xum14xJlYM" resolve="it" />
+                                      </node>
+                                      <node concept="chp4Y" id="3kzQfDalkVr" role="3oSUPX">
+                                        <ref role="cht4Q" to="tpf3:hHiwH3m" resolve="GenerationContextOp_GetOutputByLabel" />
+                                      </node>
+                                    </node>
+                                    <node concept="3TrEf2" id="3kzQfDalguA" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="tpf3:hHiwH3n" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="1_3QMl" id="3kzQfDalb7M" role="1_3QMm">
+                          <node concept="3gn64h" id="3kzQfDalb7O" role="3Kbmr1">
+                            <ref role="3gnhBz" to="tpf3:hHiwH3r" resolve="GenerationContextOp_GetOutputByLabelAndInput" />
+                          </node>
+                          <node concept="3clFbS" id="3kzQfDalb7Q" role="3Kbo56">
+                            <node concept="3clFbF" id="3kzQfDalh0Y" role="3cqZAp">
+                              <node concept="2OqwBi" id="3kzQfDalh0Z" role="3clFbG">
+                                <node concept="37vLTw" id="3kzQfDalh10" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="1xum14xJe5R" resolve="referenced_MappingLabelConfiguration" />
+                                </node>
+                                <node concept="TSZUe" id="3kzQfDalh11" role="2OqNvi">
+                                  <node concept="2OqwBi" id="3kzQfDalh12" role="25WWJ7">
+                                    <node concept="1PxgMI" id="3kzQfDalh13" role="2Oq$k0">
+                                      <node concept="37vLTw" id="3kzQfDalh14" role="1m5AlR">
+                                        <ref role="3cqZAo" node="1xum14xJlYM" resolve="it" />
+                                      </node>
+                                      <node concept="chp4Y" id="3kzQfDallcy" role="3oSUPX">
+                                        <ref role="cht4Q" to="tpf3:hHiwH3r" resolve="GenerationContextOp_GetOutputByLabelAndInput" />
+                                      </node>
+                                    </node>
+                                    <node concept="3TrEf2" id="3kzQfDalh16" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="tpf3:hHiwH3s" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="1_3QMl" id="3kzQfDalbmJ" role="1_3QMm">
+                          <node concept="3gn64h" id="3kzQfDalbmL" role="3Kbmr1">
+                            <ref role="3gnhBz" to="tpf3:hLmkIjl" resolve="GenerationContextOp_GetOutputByLabelAndInputAndReferenceScope" />
+                          </node>
+                          <node concept="3clFbS" id="3kzQfDalbmN" role="3Kbo56">
+                            <node concept="3clFbF" id="3kzQfDalhlF" role="3cqZAp">
+                              <node concept="2OqwBi" id="3kzQfDalhlG" role="3clFbG">
+                                <node concept="37vLTw" id="3kzQfDalhlH" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="1xum14xJe5R" resolve="referenced_MappingLabelConfiguration" />
+                                </node>
+                                <node concept="TSZUe" id="3kzQfDalhlI" role="2OqNvi">
+                                  <node concept="2OqwBi" id="3kzQfDalhlJ" role="25WWJ7">
+                                    <node concept="1PxgMI" id="3kzQfDalhlK" role="2Oq$k0">
+                                      <node concept="37vLTw" id="3kzQfDalhlL" role="1m5AlR">
+                                        <ref role="3cqZAo" node="1xum14xJlYM" resolve="it" />
+                                      </node>
+                                      <node concept="chp4Y" id="3kzQfDalltK" role="3oSUPX">
+                                        <ref role="cht4Q" to="tpf3:hLmkIjl" resolve="GenerationContextOp_GetOutputByLabelAndInputAndReferenceScope" />
+                                      </node>
+                                    </node>
+                                    <node concept="3TrEf2" id="3kzQfDalhlN" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="tpf3:hLmmeDJ" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="1_3QMl" id="3kzQfDalbyD" role="1_3QMm">
+                          <node concept="3gn64h" id="3kzQfDalbyF" role="3Kbmr1">
+                            <ref role="3gnhBz" to="tpf3:hLiAAM3" resolve="GenerationContextOp_GetOutputListByLabelAndInput" />
+                          </node>
+                          <node concept="3clFbS" id="3kzQfDalbyH" role="3Kbo56">
+                            <node concept="3clFbF" id="3kzQfDali0z" role="3cqZAp">
+                              <node concept="2OqwBi" id="3kzQfDali0$" role="3clFbG">
+                                <node concept="37vLTw" id="3kzQfDali0_" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="1xum14xJe5R" resolve="referenced_MappingLabelConfiguration" />
+                                </node>
+                                <node concept="TSZUe" id="3kzQfDali0A" role="2OqNvi">
+                                  <node concept="2OqwBi" id="3kzQfDali0B" role="25WWJ7">
+                                    <node concept="1PxgMI" id="3kzQfDali0C" role="2Oq$k0">
+                                      <node concept="37vLTw" id="3kzQfDali0D" role="1m5AlR">
+                                        <ref role="3cqZAo" node="1xum14xJlYM" resolve="it" />
+                                      </node>
+                                      <node concept="chp4Y" id="3kzQfDallJ5" role="3oSUPX">
+                                        <ref role="cht4Q" to="tpf3:hLiAAM3" resolve="GenerationContextOp_GetOutputListByLabelAndInput" />
+                                      </node>
+                                    </node>
+                                    <node concept="3TrEf2" id="3kzQfDali0F" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="tpf3:hLiAAM5" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="1_3QMl" id="3kzQfDalbIz" role="1_3QMm">
+                          <node concept="3gn64h" id="3kzQfDalbI_" role="3Kbmr1">
+                            <ref role="3gnhBz" to="tpf3:hIfr3z2" resolve="GenerationContextOp_GetPrevInputByLabel" />
+                          </node>
+                          <node concept="3clFbS" id="3kzQfDalbIB" role="3Kbo56">
+                            <node concept="3clFbF" id="3kzQfDalipy" role="3cqZAp">
+                              <node concept="2OqwBi" id="3kzQfDalipz" role="3clFbG">
+                                <node concept="37vLTw" id="3kzQfDalip$" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="1xum14xJe5R" resolve="referenced_MappingLabelConfiguration" />
+                                </node>
+                                <node concept="TSZUe" id="3kzQfDalip_" role="2OqNvi">
+                                  <node concept="2OqwBi" id="3kzQfDalipA" role="25WWJ7">
+                                    <node concept="1PxgMI" id="3kzQfDalipB" role="2Oq$k0">
+                                      <node concept="37vLTw" id="3kzQfDalipC" role="1m5AlR">
+                                        <ref role="3cqZAo" node="1xum14xJlYM" resolve="it" />
+                                      </node>
+                                      <node concept="chp4Y" id="3kzQfDalm0x" role="3oSUPX">
+                                        <ref role="cht4Q" to="tpf3:hIfr3z2" resolve="GenerationContextOp_GetPrevInputByLabel" />
+                                      </node>
+                                    </node>
+                                    <node concept="3TrEf2" id="3kzQfDalipE" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="tpf3:hIfr3z3" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="1_3QMl" id="3kzQfDalbXw" role="1_3QMm">
+                          <node concept="3gn64h" id="3kzQfDalbXy" role="3Kbmr1">
+                            <ref role="3gnhBz" to="tpf3:4RJ0ilaVNjd" resolve="GenerationContextOp_RegisterLabel" />
+                          </node>
+                          <node concept="3clFbS" id="3kzQfDalbX$" role="3Kbo56">
+                            <node concept="3clFbF" id="3kzQfDaliOE" role="3cqZAp">
+                              <node concept="2OqwBi" id="3kzQfDaliOF" role="3clFbG">
+                                <node concept="37vLTw" id="3kzQfDaliOG" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="1xum14xJe5R" resolve="referenced_MappingLabelConfiguration" />
+                                </node>
+                                <node concept="TSZUe" id="3kzQfDaliOH" role="2OqNvi">
+                                  <node concept="2OqwBi" id="3kzQfDaliOI" role="25WWJ7">
+                                    <node concept="1PxgMI" id="3kzQfDaliOJ" role="2Oq$k0">
+                                      <node concept="37vLTw" id="3kzQfDaliOK" role="1m5AlR">
+                                        <ref role="3cqZAo" node="1xum14xJlYM" resolve="it" />
+                                      </node>
+                                      <node concept="chp4Y" id="3kzQfDalmi4" role="3oSUPX">
+                                        <ref role="cht4Q" to="tpf3:4RJ0ilaVNjd" resolve="GenerationContextOp_RegisterLabel" />
+                                      </node>
+                                    </node>
+                                    <node concept="3TrEf2" id="3kzQfDaliOM" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="tpf3:4RJ0ilaVRti" />
                                     </node>
                                   </node>
                                 </node>
