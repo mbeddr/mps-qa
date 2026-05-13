@@ -35,9 +35,6 @@
     <dependency reexport="false">8585453e-6bfb-4d80-98de-b16074f1d86c(jetbrains.mps.lang.test)</dependency>
     <dependency reexport="false">c7d5b9dd-a05f-4be2-bc73-f2e16994cc67(jetbrains.mps.baseLanguage.lightweightdsl)</dependency>
     <dependency reexport="false">90746344-04fd-4286-97d5-b46ae6a81709(jetbrains.mps.lang.migration)</dependency>
-    <dependency reexport="false">40ab19e9-751a-4433-b645-0e65160e58a0(org.mpsqa.lint.generic)</dependency>
-    <dependency reexport="false">b15468d9-435b-45b2-bf51-3f984f734cc4(org.mpsqa.lint.generic.runtime)</dependency>
-    <dependency reexport="false">63d1f8cf-e65e-4d00-bcfa-f196ad4419ca(org.mpsqa.lint.generic.generator)</dependency>
     <dependency reexport="false">d7706f63-9be2-479c-a3da-ae92af1e64d5(jetbrains.mps.lang.generator.generationContext)</dependency>
   </dependencies>
   <languageVersions>
@@ -46,7 +43,6 @@
     <language slang="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" version="2" />
     <language slang="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" version="2" />
     <language slang="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" version="0" />
-    <language slang="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" version="0" />
     <language slang="l:63650c59-16c8-498a-99c8-005c7ee9515d:jetbrains.mps.lang.access" version="0" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
     <language slang="l:446c26eb-2b7b-4bf0-9b35-f83fa582753e:jetbrains.mps.lang.modelapi" version="0" />
@@ -93,13 +89,9 @@
     <module reference="7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)" version="1" />
     <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
     <module reference="8585453e-6bfb-4d80-98de-b16074f1d86c(jetbrains.mps.lang.test)" version="0" />
-    <module reference="c7fb639f-be78-4307-89b0-b5959c3fa8c8(jetbrains.mps.lang.text)" version="0" />
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
     <module reference="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" version="0" />
     <module reference="20c6e580-bdc5-4067-8049-d7e3265a86de(jetbrains.mps.typesystemEngine)" version="0" />
-    <module reference="40ab19e9-751a-4433-b645-0e65160e58a0(org.mpsqa.lint.generic)" version="0" />
-    <module reference="63d1f8cf-e65e-4d00-bcfa-f196ad4419ca(org.mpsqa.lint.generic.generator)" version="0" />
-    <module reference="b15468d9-435b-45b2-bf51-3f984f734cc4(org.mpsqa.lint.generic.runtime)" version="0" />
     <module reference="12a40499-ed72-4b23-9437-358c4217c97b(org.mpsqa.lint.mps_lang.linters_library)" version="0" />
   </dependencyVersions>
 </solution>
