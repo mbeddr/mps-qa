@@ -434,11 +434,6 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
           </node>
         </node>
-        <node concept="1SiIV0" id="18IBE40n0gG" role="3bR37C">
-          <node concept="Rbm2T" id="18IBE40n0gH" role="1SiIV1">
-            <ref role="1E1Vl2" to="ffeo:3ZgZ1njKuFL" resolve="jetbrains.mps.lang.smodel.query" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="1BlvkgWy3qU" role="3bR37C">
           <node concept="3bR9La" id="1BlvkgWy3qV" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
