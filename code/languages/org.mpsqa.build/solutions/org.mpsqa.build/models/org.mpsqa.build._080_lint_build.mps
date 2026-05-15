@@ -883,11 +883,6 @@
             <ref role="3bR37D" to="ffeo:1CtrbKI23Wm" resolve="jetbrains.mps.lang.migration" />
           </node>
         </node>
-        <node concept="1SiIV0" id="5eRw4j9K5ji" role="3bR37C">
-          <node concept="3bR9La" id="5eRw4j9K5jj" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6L6o" resolve="jetbrains.mps.lang.generator.generationContext" />
-          </node>
-        </node>
       </node>
       <node concept="3LEwk6" id="NzCohCfYuI" role="2G$12L">
         <property role="BnDLt" value="true" />
