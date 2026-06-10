@@ -61,9 +61,9 @@ val jacoco by configurations.creating { isTransitive = false }
 dependencies {
     // Use the following dependency for published releases:
     //   mps("com.jetbrains:mps:$mpsVersion")
-    mps("com.jetbrains.mps:mps-prerelease:261.23567.195")
+    mps("com.jetbrains.mps:mps-prerelease:261.24374.10105")
 
-    plantuml("net.sourceforge.plantuml:plantuml-asl:1.2026.2")
+    plantuml("net.sourceforge.plantuml:plantuml-asl:1.2026.6")
 
     baseLib("org.apache.commons:commons-lang3:3.20.0")
     baseLib("commons-cli:commons-cli:1.11.0")
@@ -72,8 +72,8 @@ dependencies {
     treemap("net.sf.jtreemap:jtreemap:1.1.3")
     treemap("net.sf.jtreemap:ktreemap:1.1.0-atlassian-01")
 
-    val asmVersion = "9.9.1"
-    val jacocoVersion = "0.8.14"
+    val asmVersion = "9.10.1"
+    val jacocoVersion = "0.8.15"
 
     jacoco("org.ow2.asm:asm:$asmVersion")
     jacoco("org.ow2.asm:asm-commons:$asmVersion")
