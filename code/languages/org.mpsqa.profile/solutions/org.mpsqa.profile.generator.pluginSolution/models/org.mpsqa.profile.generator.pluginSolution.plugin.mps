@@ -5,7 +5,7 @@
   <languages>
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="4" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
@@ -80,6 +80,9 @@
       <concept id="1217413147516" name="jetbrains.mps.lang.plugin.structure.ActionParameter" flags="ngI" index="1NuADB">
         <child id="5538333046911298738" name="condition" index="1oa70y" />
       </concept>
+    </language>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
     </language>
     <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
       <concept id="7520713872864775836" name="jetbrains.mps.lang.plugin.standalone.structure.StandalonePluginDescriptor" flags="ng" index="2DaZZR" />
@@ -267,7 +270,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
         <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
@@ -2334,13 +2336,13 @@
                                     <ref role="2WH_rO" node="7xXJtOUY6gY" resolve="gpc" />
                                   </node>
                                 </node>
-                                <node concept="2qgKlT" id="7xXJtOUYauz" role="2OqNvi">
+                                <node concept="3zqWPK" id="5F$d9grX_uF" role="2OqNvi">
                                   <ref role="37wK5l" to="6a0l:7xXJtOUSUmu" resolve="collectModels" />
-                                  <node concept="2OqwBi" id="7xXJtOUYau$" role="37wK5m">
-                                    <node concept="2WthIp" id="7xXJtOUYau_" role="2Oq$k0">
+                                  <node concept="2OqwBi" id="5F$d9grX_uH" role="37wK5m">
+                                    <node concept="2WthIp" id="5F$d9grX_uI" role="2Oq$k0">
                                       <ref role="32nkFo" node="7xXJtOUY1mJ" resolve="GeneratorProfilingConfigAction" />
                                     </node>
-                                    <node concept="1DTwFV" id="7xXJtOUYauA" role="2OqNvi">
+                                    <node concept="1DTwFV" id="5F$d9grX_uJ" role="2OqNvi">
                                       <ref role="2WH_rO" node="7xXJtOUY1mM" resolve="project" />
                                     </node>
                                   </node>

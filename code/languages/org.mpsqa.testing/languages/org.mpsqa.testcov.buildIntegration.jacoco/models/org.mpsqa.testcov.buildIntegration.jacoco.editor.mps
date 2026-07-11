@@ -20,6 +20,9 @@
     <import index="jvez" ref="r:76c0c154-d1d8-4324-a714-0c8d4f287536(org.mpsqa.testcov.buildIntegration.jacoco.behavior)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
@@ -154,9 +157,6 @@
       <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
       </concept>
-    </language>
-    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
@@ -308,7 +308,7 @@
                                   <ref role="37wK5l" to="g51k:~EditorCell_Label.setDefaultText(java.lang.String)" resolve="setDefaultText" />
                                   <node concept="2OqwBi" id="2Y_MYwbRy$$" role="37wK5m">
                                     <node concept="pncrf" id="2Y_MYwbRydw" role="2Oq$k0" />
-                                    <node concept="2qgKlT" id="2Y_MYwbR$YB" role="2OqNvi">
+                                    <node concept="3zqWPK" id="5F$d9grW5t2" role="2OqNvi">
                                       <ref role="37wK5l" to="jvez:4rL2kFIpMLw" resolve="getDefaultReportsDir" />
                                     </node>
                                   </node>

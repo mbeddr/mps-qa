@@ -21,6 +21,9 @@
     <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
@@ -86,7 +89,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="8866923313515890008" name="jetbrains.mps.lang.smodel.structure.AsNodeOperation" flags="nn" index="FGMqu" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1181952871644" name="jetbrains.mps.lang.smodel.structure.Concept_GetAllSubConcepts" flags="nn" index="LSoRf">
@@ -148,7 +150,7 @@
                     <ref role="3Tt5mk" to="b0y:1yYJBoMXyaN" resolve="concept" />
                   </node>
                 </node>
-                <node concept="2qgKlT" id="1yYJBoMXUeT" role="2OqNvi">
+                <node concept="3zqWPK" id="5F$d9grX_Qt" role="2OqNvi">
                   <ref role="37wK5l" to="tpcn:hEwILLM" resolve="getPropertyDeclarations" />
                 </node>
               </node>
@@ -276,7 +278,7 @@
                     <ref role="3Tt5mk" to="b0y:1yYJBoMXyaN" resolve="concept" />
                   </node>
                 </node>
-                <node concept="2qgKlT" id="1yYJBoMYK06" role="2OqNvi">
+                <node concept="3zqWPK" id="5F$d9grX_Qv" role="2OqNvi">
                   <ref role="37wK5l" to="tpcn:hEwILKK" resolve="getLinkDeclarations" />
                 </node>
               </node>

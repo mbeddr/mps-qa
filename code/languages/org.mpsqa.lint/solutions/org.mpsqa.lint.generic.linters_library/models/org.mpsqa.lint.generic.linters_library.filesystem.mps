@@ -1123,7 +1123,7 @@
                         <ref role="3cqZAo" node="4mUq39YBYk3" resolve="module" />
                       </node>
                       <node concept="3uibUv" id="4mUq39YBY_k" role="10QFUM">
-                        <ref role="3uigEE" to="j8aq:~ReloadableModuleBase" resolve="ReloadableModuleBase" />
+                        <ref role="3uigEE" to="z1c4:~AbstractModule" resolve="AbstractModule" />
                       </node>
                     </node>
                   </node>
@@ -1382,7 +1382,7 @@
           </node>
           <node concept="2ZW3vV" id="4mUq39YBYBa" role="3clFbw">
             <node concept="3uibUv" id="4mUq39YBYBb" role="2ZW6by">
-              <ref role="3uigEE" to="j8aq:~ReloadableModuleBase" resolve="ReloadableModuleBase" />
+              <ref role="3uigEE" to="z1c4:~AbstractModule" resolve="AbstractModule" />
             </node>
             <node concept="37vLTw" id="4mUq39YBZUE" role="2ZW6bz">
               <ref role="3cqZAo" node="4mUq39YBYk3" resolve="module" />
@@ -1468,7 +1468,7 @@
                         <ref role="3cqZAo" node="4mUq39YGvCQ" resolve="module" />
                       </node>
                       <node concept="3uibUv" id="UvPwwlfc7K" role="10QFUM">
-                        <ref role="3uigEE" to="j8aq:~ReloadableModuleBase" resolve="ReloadableModuleBase" />
+                        <ref role="3uigEE" to="z1c4:~AbstractModule" resolve="AbstractModule" />
                       </node>
                     </node>
                   </node>
@@ -1756,7 +1756,7 @@
           </node>
           <node concept="2ZW3vV" id="UvPwwlfcaI" role="3clFbw">
             <node concept="3uibUv" id="UvPwwlfcaJ" role="2ZW6by">
-              <ref role="3uigEE" to="j8aq:~ReloadableModuleBase" resolve="ReloadableModuleBase" />
+              <ref role="3uigEE" to="z1c4:~AbstractModule" resolve="AbstractModule" />
             </node>
             <node concept="37vLTw" id="4mUq39YGzU6" role="2ZW6bz">
               <ref role="3cqZAo" node="4mUq39YGvCQ" resolve="module" />

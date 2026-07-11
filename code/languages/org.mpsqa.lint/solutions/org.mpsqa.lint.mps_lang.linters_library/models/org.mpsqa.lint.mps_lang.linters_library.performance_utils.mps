@@ -6,7 +6,7 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
   </languages>
   <imports>
@@ -27,9 +27,9 @@
     <import index="phxh" ref="r:5754bb7d-f802-4a0f-bd3d-0764f0d71413(jetbrains.mps.ide.modelchecker.platform.actions)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="tjjq" ref="9e98f4e2-decf-4e97-bf80-9109e8b759aa/java:jetbrains.mps.core.context(jetbrains.mps.lang.feedback.context/)" />
-    <import index="ze1i" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.runtime(MPS.Core/)" />
     <import index="ykok" ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee/java:jetbrains.mps.smodel.constraints(jetbrains.mps.lang.constraints.rules.runtime/)" />
     <import index="pdwk" ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee/java:jetbrains.mps.core.aspects.constraints.rules.kinds(jetbrains.mps.lang.constraints.rules.runtime/)" />
+    <import index="ze1i" ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee/java:jetbrains.mps.smodel.runtime(jetbrains.mps.lang.constraints.rules.runtime/)" />
     <import index="o99v" ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee/java:jetbrains.mps.core.aspects.constraints.rules(jetbrains.mps.lang.constraints.rules.runtime/)" implicit="true" />
   </imports>
   <registry>
@@ -215,14 +215,8 @@
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
       <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
@@ -328,9 +322,39 @@
           <ref role="3uigEE" to="tjjq:~Context" resolve="Context" />
         </node>
         <node concept="z59LJ" id="30a38016jpz" role="lGtFl">
-          <node concept="TZ5HA" id="30a38016jp$" role="TZ5H$">
-            <node concept="1dT_AC" id="30a38016jp_" role="1dT_Ay">
-              <property role="1dT_AB" value="DO_NOT_DELETE: dummy field to avoid triggering the linter for not used" />
+          <node concept="1PaTwC" id="RYGxAyBhv_" role="1Vez_I">
+            <node concept="3oM_SD" id="RYGxAyBhvA" role="1PaTwD">
+              <property role="3oM_SC" value="DO_NOT_DELETE:" />
+            </node>
+            <node concept="3oM_SD" id="RYGxAyBhvB" role="1PaTwD">
+              <property role="3oM_SC" value="dummy" />
+            </node>
+            <node concept="3oM_SD" id="RYGxAyBhvC" role="1PaTwD">
+              <property role="3oM_SC" value="field" />
+            </node>
+            <node concept="3oM_SD" id="RYGxAyBhvD" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="RYGxAyBhvE" role="1PaTwD">
+              <property role="3oM_SC" value="avoid" />
+            </node>
+            <node concept="3oM_SD" id="RYGxAyBhvF" role="1PaTwD">
+              <property role="3oM_SC" value="triggering" />
+            </node>
+            <node concept="3oM_SD" id="RYGxAyBhvG" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="RYGxAyBhvH" role="1PaTwD">
+              <property role="3oM_SC" value="linter" />
+            </node>
+            <node concept="3oM_SD" id="RYGxAyBhvI" role="1PaTwD">
+              <property role="3oM_SC" value="for" />
+            </node>
+            <node concept="3oM_SD" id="RYGxAyBhvJ" role="1PaTwD">
+              <property role="3oM_SC" value="not" />
+            </node>
+            <node concept="3oM_SD" id="RYGxAyBhvK" role="1PaTwD">
+              <property role="3oM_SC" value="used" />
             </node>
           </node>
         </node>
@@ -1663,44 +1687,6 @@
                   <property role="TrG5h" value="node" />
                 </node>
                 <node concept="3clFbS" id="6wZqgFKY$e7" role="2LFqv$">
-                  <node concept="3cpWs8" id="3$WIIvhc7j" role="3cqZAp">
-                    <node concept="3cpWsn" id="3$WIIvhc7k" role="3cpWs9">
-                      <property role="TrG5h" value="noopContext" />
-                      <node concept="3uibUv" id="3$WIIvhc7l" role="1tU5fm">
-                        <ref role="3uigEE" to="ze1i:~CheckingNodeContext" resolve="CheckingNodeContext" />
-                      </node>
-                      <node concept="2ShNRf" id="3$WIIvhchM" role="33vP2m">
-                        <node concept="YeOm9" id="3$WIIvhm9r" role="2ShVmc">
-                          <node concept="1Y3b0j" id="3$WIIvhm9u" role="YeSDq">
-                            <property role="2bfB8j" value="true" />
-                            <property role="373rjd" value="true" />
-                            <ref role="1Y3XeK" to="ze1i:~CheckingNodeContext" resolve="CheckingNodeContext" />
-                            <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-                            <node concept="3Tm1VV" id="3$WIIvhm9v" role="1B3o_S" />
-                            <node concept="3clFb_" id="3$WIIvhm9H" role="jymVt">
-                              <property role="TrG5h" value="setBreakingNode" />
-                              <node concept="3Tm1VV" id="3$WIIvhm9I" role="1B3o_S" />
-                              <node concept="3cqZAl" id="3$WIIvhm9K" role="3clF45" />
-                              <node concept="37vLTG" id="3$WIIvhm9L" role="3clF46">
-                                <property role="TrG5h" value="p1" />
-                                <node concept="3uibUv" id="3$WIIvhm9M" role="1tU5fm">
-                                  <ref role="3uigEE" to="mhbf:~SNodeReference" resolve="SNodeReference" />
-                                </node>
-                                <node concept="2AHcQZ" id="3$WIIvhm9N" role="2AJF6D">
-                                  <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
-                                </node>
-                              </node>
-                              <node concept="3clFbS" id="3$WIIvhm9O" role="3clF47" />
-                              <node concept="2AHcQZ" id="3$WIIvhm9Q" role="2AJF6D">
-                                <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3clFbH" id="3$WIIvhnw2" role="3cqZAp" />
                   <node concept="3cpWs8" id="4VtLjdspz0Z" role="3cqZAp">
                     <node concept="3cpWsn" id="4VtLjdspz10" role="3cpWs9">
                       <property role="TrG5h" value="cc" />

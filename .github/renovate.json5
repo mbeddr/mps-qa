@@ -1,0 +1,18 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:best-practices",
+    "schedule:monthly"
+  ],
+
+  "groupName": "all",
+  "separateMajorMinor": false,
+  "ignorePaths": ["code/applications/**"],
+
+  "packageRules": [
+    {
+      "matchPackageNames": ["download-jbr:download-jbr.gradle.plugin", "de.itemis.mps.gradle.common:de.itemis.mps.gradle.common.gradle.plugin"],
+      "allowedVersions": "< 2.0"
+    },
+  ]
+}

@@ -17,6 +17,9 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
@@ -111,7 +114,6 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="6995935425733782641" name="jetbrains.mps.lang.smodel.structure.Model_GetModule" flags="nn" index="13u695" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
@@ -547,7 +549,7 @@
                       <node concept="37vLTw" id="2Wh5DQ1PrSx" role="2Oq$k0">
                         <ref role="3cqZAo" node="2Wh5DQ1Po3z" resolve="cc" />
                       </node>
-                      <node concept="2qgKlT" id="2Wh5DQ1PrSy" role="2OqNvi">
+                      <node concept="3zqWPK" id="5F$d9grXzvO" role="2OqNvi">
                         <ref role="37wK5l" to="tpcu:hEwIO9y" resolve="getFqName" />
                       </node>
                     </node>
@@ -684,7 +686,7 @@
                       <node concept="37vLTw" id="2Wh5DQ1R3yr" role="2Oq$k0">
                         <ref role="3cqZAo" node="2Wh5DQ1R3yi" resolve="cc" />
                       </node>
-                      <node concept="2qgKlT" id="2Wh5DQ1R3ys" role="2OqNvi">
+                      <node concept="3zqWPK" id="5F$d9grXzvQ" role="2OqNvi">
                         <ref role="37wK5l" to="tpcu:hEwIO9y" resolve="getFqName" />
                       </node>
                     </node>

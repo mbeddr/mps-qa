@@ -5,7 +5,7 @@
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
-    <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
+    <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="1" />
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
@@ -40,6 +40,9 @@
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
+    </language>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
@@ -134,7 +137,6 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="4065387505485742666" name="jetbrains.mps.lang.smodel.structure.ModelPointer_ResolveOperation" flags="ng" index="2yCiCJ" />
       <concept id="4065387505485742749" name="jetbrains.mps.lang.smodel.structure.AbstractPointerResolveOperation" flags="ng" index="2yCiFS">
         <child id="3648723375513868575" name="repositoryArg" index="Vysub" />
@@ -422,17 +424,17 @@
               <node concept="37vLTw" id="2NOEa4F0EIA" role="2Oq$k0">
                 <ref role="3cqZAo" node="2NOEa4F0EIy" resolve="first_script" />
               </node>
-              <node concept="2qgKlT" id="2NOEa4F0EIf" role="2OqNvi">
+              <node concept="3zqWPK" id="5F$d9grXzvZ" role="2OqNvi">
                 <ref role="37wK5l" to="b659:6gY6GEDx76b" resolve="newViolations" />
-                <node concept="2ShNRf" id="2NOEa4F1GiQ" role="37wK5m">
-                  <node concept="Tc6Ow" id="2NOEa4F1GiR" role="2ShVmc">
-                    <node concept="3uibUv" id="2NOEa4F1GiS" role="HW$YZ">
+                <node concept="2ShNRf" id="5F$d9grXzw1" role="37wK5m">
+                  <node concept="Tc6Ow" id="5F$d9grXzw2" role="2ShVmc">
+                    <node concept="3uibUv" id="5F$d9grXzw3" role="HW$YZ">
                       <ref role="3uigEE" to="qqy:19GnlsUkKsu" resolve="Result" />
                     </node>
-                    <node concept="37vLTw" id="2NOEa4F1GiT" role="HW$Y0">
+                    <node concept="37vLTw" id="5F$d9grXzw4" role="HW$Y0">
                       <ref role="3cqZAo" node="2NOEa4F0EHM" resolve="r1" />
                     </node>
-                    <node concept="37vLTw" id="2NOEa4F1GiU" role="HW$Y0">
+                    <node concept="37vLTw" id="5F$d9grXzw5" role="HW$Y0">
                       <ref role="3cqZAo" node="2NOEa4F0EHY" resolve="r2" />
                     </node>
                   </node>
