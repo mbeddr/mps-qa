@@ -33,6 +33,7 @@
     <import index="n70j" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.checking(MPS.Editor/)" />
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
     <import index="kpve" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.message(MPS.Editor/)" implicit="true" />
   </imports>
   <registry>
@@ -1176,88 +1177,109 @@
           </node>
         </node>
         <node concept="3clFbH" id="5OzERE7j44M" role="3cqZAp" />
-        <node concept="3cpWs8" id="5mI4pZCi5AR" role="3cqZAp">
-          <node concept="3cpWsn" id="5mI4pZCi5AS" role="3cpWs9">
-            <property role="TrG5h" value="suppressor" />
-            <node concept="3uibUv" id="5mI4pZCi2Z$" role="1tU5fm">
-              <ref role="3uigEE" node="4c7y4qc4V7B" resolve="SuppressCheckerResults" />
+        <node concept="3clFbF" id="6SOVQStLIxv" role="3cqZAp">
+          <node concept="2OqwBi" id="6SOVQStLKYK" role="3clFbG">
+            <node concept="2YIFZM" id="6SOVQStLJut" role="2Oq$k0">
+              <ref role="37wK5l" to="4nm9:~DumbService.getInstance(com.intellij.openapi.project.Project)" resolve="getInstance" />
+              <ref role="1Pybhc" to="4nm9:~DumbService" resolve="DumbService" />
+              <node concept="2OqwBi" id="6SOVQStLKl$" role="37wK5m">
+                <node concept="1KvdUw" id="6SOVQStLJT1" role="2Oq$k0" />
+                <node concept="liA8E" id="6SOVQStLKQl" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c4:~MPSProject.getProject()" resolve="getProject" />
+                </node>
+              </node>
             </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="5mI4pZCkcv$" role="3cqZAp" />
-        <node concept="1QHqEK" id="4ZH1aVCAWfr" role="3cqZAp">
-          <node concept="1QHqEC" id="4ZH1aVCAWft" role="1QHqEI">
-            <node concept="3clFbS" id="4ZH1aVCAWfv" role="1bW5cS">
-              <node concept="3clFbF" id="5mI4pZCkbLw" role="3cqZAp">
-                <node concept="37vLTI" id="5mI4pZCkbLy" role="3clFbG">
-                  <node concept="2ShNRf" id="5mI4pZCi5AT" role="37vLTx">
-                    <node concept="1pGfFk" id="5mI4pZCi5AU" role="2ShVmc">
-                      <property role="373rjd" value="true" />
-                      <ref role="37wK5l" node="1DrnXKMVQNB" resolve="SuppressCheckerResults" />
-                      <node concept="1KvdUw" id="5mI4pZCi5AV" role="37wK5m" />
+            <node concept="liA8E" id="6SOVQStLM88" role="2OqNvi">
+              <ref role="37wK5l" to="4nm9:~DumbService.runWhenSmart(java.lang.Runnable)" resolve="runWhenSmart" />
+              <node concept="1bVj0M" id="6SOVQStLM9Q" role="37wK5m">
+                <node concept="3clFbS" id="6SOVQStLM9T" role="1bW5cS">
+                  <node concept="3cpWs8" id="5mI4pZCi5AR" role="3cqZAp">
+                    <node concept="3cpWsn" id="5mI4pZCi5AS" role="3cpWs9">
+                      <property role="TrG5h" value="suppressor" />
+                      <node concept="3uibUv" id="5mI4pZCi2Z$" role="1tU5fm">
+                        <ref role="3uigEE" node="4c7y4qc4V7B" resolve="SuppressCheckerResults" />
+                      </node>
                     </node>
                   </node>
-                  <node concept="37vLTw" id="5mI4pZCkbLA" role="37vLTJ">
-                    <ref role="3cqZAo" node="5mI4pZCi5AS" resolve="suppressor" />
+                  <node concept="3clFbH" id="5mI4pZCkcv$" role="3cqZAp" />
+                  <node concept="1QHqEK" id="4ZH1aVCAWfr" role="3cqZAp">
+                    <node concept="1QHqEC" id="4ZH1aVCAWft" role="1QHqEI">
+                      <node concept="3clFbS" id="4ZH1aVCAWfv" role="1bW5cS">
+                        <node concept="3clFbF" id="5mI4pZCkbLw" role="3cqZAp">
+                          <node concept="37vLTI" id="5mI4pZCkbLy" role="3clFbG">
+                            <node concept="2ShNRf" id="5mI4pZCi5AT" role="37vLTx">
+                              <node concept="1pGfFk" id="5mI4pZCi5AU" role="2ShVmc">
+                                <property role="373rjd" value="true" />
+                                <ref role="37wK5l" node="1DrnXKMVQNB" resolve="SuppressCheckerResults" />
+                                <node concept="1KvdUw" id="5mI4pZCi5AV" role="37wK5m" />
+                              </node>
+                            </node>
+                            <node concept="37vLTw" id="5mI4pZCkbLA" role="37vLTJ">
+                              <ref role="3cqZAo" node="5mI4pZCi5AS" resolve="suppressor" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="4ZH1aVCAY3n" role="ukAjM">
+                      <node concept="1KvdUw" id="4ZH1aVCAX5R" role="2Oq$k0" />
+                      <node concept="liA8E" id="4ZH1aVCAZaI" role="2OqNvi">
+                        <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbH" id="5mI4pZCkd4i" role="3cqZAp" />
+                  <node concept="3clFbF" id="5mI4pZCi0OA" role="3cqZAp">
+                    <node concept="2OqwBi" id="5mI4pZCi1ov" role="3clFbG">
+                      <node concept="2YIFZM" id="5mI4pZCi12a" role="2Oq$k0">
+                        <ref role="37wK5l" node="5mI4pZCi0Wq" resolve="getInstance" />
+                        <ref role="1Pybhc" node="5mI4pZChNr3" resolve="SuppressorManager" />
+                      </node>
+                      <node concept="liA8E" id="5mI4pZCi1Ev" role="2OqNvi">
+                        <ref role="37wK5l" node="5mI4pZChPmt" resolve="addSuppressor" />
+                        <node concept="1KvdUw" id="5mI4pZCi1KK" role="37wK5m" />
+                        <node concept="37vLTw" id="5mI4pZCi5AW" role="37wK5m">
+                          <ref role="3cqZAo" node="5mI4pZCi5AS" resolve="suppressor" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3cpWs8" id="t3a3_9RoR4" role="3cqZAp">
+                    <node concept="3cpWsn" id="t3a3_9RoR5" role="3cpWs9">
+                      <property role="TrG5h" value="registry" />
+                      <node concept="3uibUv" id="t3a3_9RoMw" role="1tU5fm">
+                        <ref role="3uigEE" to="2gg1:~CheckerRegistry" resolve="CheckerRegistry" />
+                      </node>
+                      <node concept="2OqwBi" id="t3a3_9RoR6" role="33vP2m">
+                        <node concept="2OqwBi" id="1DrnXKMVx0H" role="2Oq$k0">
+                          <node concept="1KvdUw" id="1DrnXKMVwdZ" role="2Oq$k0" />
+                          <node concept="liA8E" id="1DrnXKMVxYY" role="2OqNvi">
+                            <ref role="37wK5l" to="z1c3:~ProjectBase.getPlatform()" resolve="getPlatform" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="t3a3_9RoR8" role="2OqNvi">
+                          <ref role="37wK5l" to="wyuk:~ComponentHost.findComponent(java.lang.Class)" resolve="findComponent" />
+                          <node concept="3VsKOn" id="t3a3_9RoR9" role="37wK5m">
+                            <ref role="3VsUkX" to="2gg1:~CheckerRegistry" resolve="CheckerRegistry" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbF" id="t3a3_9RpqE" role="3cqZAp">
+                    <node concept="2EnYce" id="Ouax3vlocR" role="3clFbG">
+                      <node concept="37vLTw" id="t3a3_9RpqC" role="2Oq$k0">
+                        <ref role="3cqZAo" node="t3a3_9RoR5" resolve="registry" />
+                      </node>
+                      <node concept="liA8E" id="t3a3_9RpPL" role="2OqNvi">
+                        <ref role="37wK5l" to="2gg1:~CheckerRegistry.registerChecker(jetbrains.mps.checkers.IChecker)" resolve="registerChecker" />
+                        <node concept="37vLTw" id="5mI4pZCih0g" role="37wK5m">
+                          <ref role="3cqZAo" node="5mI4pZCi5AS" resolve="suppressor" />
+                        </node>
+                      </node>
+                    </node>
                   </node>
                 </node>
-              </node>
-            </node>
-          </node>
-          <node concept="2OqwBi" id="4ZH1aVCAY3n" role="ukAjM">
-            <node concept="1KvdUw" id="4ZH1aVCAX5R" role="2Oq$k0" />
-            <node concept="liA8E" id="4ZH1aVCAZaI" role="2OqNvi">
-              <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="5mI4pZCkd4i" role="3cqZAp" />
-        <node concept="3clFbF" id="5mI4pZCi0OA" role="3cqZAp">
-          <node concept="2OqwBi" id="5mI4pZCi1ov" role="3clFbG">
-            <node concept="2YIFZM" id="5mI4pZCi12a" role="2Oq$k0">
-              <ref role="37wK5l" node="5mI4pZCi0Wq" resolve="getInstance" />
-              <ref role="1Pybhc" node="5mI4pZChNr3" resolve="SuppressorManager" />
-            </node>
-            <node concept="liA8E" id="5mI4pZCi1Ev" role="2OqNvi">
-              <ref role="37wK5l" node="5mI4pZChPmt" resolve="addSuppressor" />
-              <node concept="1KvdUw" id="5mI4pZCi1KK" role="37wK5m" />
-              <node concept="37vLTw" id="5mI4pZCi5AW" role="37wK5m">
-                <ref role="3cqZAo" node="5mI4pZCi5AS" resolve="suppressor" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="t3a3_9RoR4" role="3cqZAp">
-          <node concept="3cpWsn" id="t3a3_9RoR5" role="3cpWs9">
-            <property role="TrG5h" value="registry" />
-            <node concept="3uibUv" id="t3a3_9RoMw" role="1tU5fm">
-              <ref role="3uigEE" to="2gg1:~CheckerRegistry" resolve="CheckerRegistry" />
-            </node>
-            <node concept="2OqwBi" id="t3a3_9RoR6" role="33vP2m">
-              <node concept="2OqwBi" id="1DrnXKMVx0H" role="2Oq$k0">
-                <node concept="1KvdUw" id="1DrnXKMVwdZ" role="2Oq$k0" />
-                <node concept="liA8E" id="1DrnXKMVxYY" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~ProjectBase.getPlatform()" resolve="getPlatform" />
-                </node>
-              </node>
-              <node concept="liA8E" id="t3a3_9RoR8" role="2OqNvi">
-                <ref role="37wK5l" to="wyuk:~ComponentHost.findComponent(java.lang.Class)" resolve="findComponent" />
-                <node concept="3VsKOn" id="t3a3_9RoR9" role="37wK5m">
-                  <ref role="3VsUkX" to="2gg1:~CheckerRegistry" resolve="CheckerRegistry" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="t3a3_9RpqE" role="3cqZAp">
-          <node concept="2EnYce" id="Ouax3vlocR" role="3clFbG">
-            <node concept="37vLTw" id="t3a3_9RpqC" role="2Oq$k0">
-              <ref role="3cqZAo" node="t3a3_9RoR5" resolve="registry" />
-            </node>
-            <node concept="liA8E" id="t3a3_9RpPL" role="2OqNvi">
-              <ref role="37wK5l" to="2gg1:~CheckerRegistry.registerChecker(jetbrains.mps.checkers.IChecker)" resolve="registerChecker" />
-              <node concept="37vLTw" id="5mI4pZCih0g" role="37wK5m">
-                <ref role="3cqZAo" node="5mI4pZCi5AS" resolve="suppressor" />
               </node>
             </node>
           </node>
