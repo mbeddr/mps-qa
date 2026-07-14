@@ -29,7 +29,7 @@ val ciBuild = if (System.getenv("CI") != null && System.getenv("CI").toBoolean()
     project.hasProperty("teamcity")
 }
 
-val mpsVersion = "9999.9"
+val mpsVersion = "2026.1"
 
 // Project versions
 val major = mpsVersion.substring(0, 4)
@@ -59,10 +59,8 @@ val treemap by configurations.creating { isTransitive = false }
 val jacoco by configurations.creating { isTransitive = false }
 
 dependencies {
-    // Use the following dependency for published releases:
-    //   mps("com.jetbrains:mps:$mpsVersion")
-    mps("com.jetbrains.mps:mps-prerelease:261.25134.10152")
-
+    mps("com.jetbrains:mps:$mpsVersion")
+    
     plantuml("net.sourceforge.plantuml:plantuml-asl:1.2026.6")
 
     baseLib("org.apache.commons:commons-lang3:3.20.0")
