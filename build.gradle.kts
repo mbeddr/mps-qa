@@ -5,13 +5,13 @@ import org.gradle.api.artifacts.ResolvedArtifact
 import java.util.*
 
 plugins {
-    id("de.itemis.mps.gradle.common") version "1.30.1.+"
-    id("download-jbr") version "1.30.1.+"
+    id("de.itemis.mps.gradle.common") version "1.31.0.+"
+    id("download-jbr") version "1.31.0.+"
     id("base")
     id("maven-publish")
     id("co.riiid.gradle") version "0.4.2"
 
-    id("org.cyclonedx.bom") version "3.2.4"
+    id("org.cyclonedx.bom") version "3.4.1"
 }
 
 val jbrVers = "25.0.2-b329.117"
@@ -61,9 +61,9 @@ val jacoco by configurations.creating { isTransitive = false }
 dependencies {
      // Use the following dependency for published releases:
     //   mps("com.jetbrains:mps:$mpsVersion")
-    mps("com.jetbrains.mps:mps-prerelease:261.25134.10152")
+    mps("com.jetbrains.mps:mps-prerelease:262.9437.258")
     
-    plantuml("net.sourceforge.plantuml:plantuml-asl:1.2026.6")
+    plantuml("net.sourceforge.plantuml:plantuml-asl:1.2026.7")
 
     baseLib("org.apache.commons:commons-lang3:3.20.0")
     baseLib("commons-cli:commons-cli:1.11.0")
