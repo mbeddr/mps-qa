@@ -5,6 +5,7 @@
   <property name="build.layout" location="${build.dir}/artifacts/org.mpsqa.allScripts" />
   <property name="mps.home" location="" />
   <property name="artifacts.mps" location="${mps.home}" />
+  <property name="artifacts.IDEA" location="${mps.home}" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property name="mps.build.number" value="${import.mps.mps.build.number}" />
   <property name="mps.date" value="${import.mps.mps.date}" />
@@ -26,7 +27,7 @@
   
   <path id="path.mps.ant.path">
     <pathelement location="${artifacts.mps}/lib/ant/lib/ant-mps.jar" />
-    <pathelement location="${artifacts.mps}/lib/util-8.jar" />
+    <pathelement location="${artifacts.IDEA}/lib/util-8.jar" />
   </path>
   
   <taskdef resource="jetbrains/mps/build/ant/antlib.xml" classpathref="path.mps.ant.path" />
