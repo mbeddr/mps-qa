@@ -638,6 +638,46 @@
           </node>
         </node>
       </node>
+      <node concept="3cpWs8" id="2d_6cEDDx6z" role="3cqZAp">
+        <node concept="3cpWsn" id="2d_6cEDDx6A" role="3cpWs9">
+          <property role="TrG5h" value="allSubComponentsSet" />
+          <node concept="2ShNRf" id="2d_6cEDDx6C" role="33vP2m">
+            <node concept="2i4dXS" id="2d_6cEDDx6E" role="2ShVmc">
+              <node concept="3Tqbb2" id="2d_6cEDDx6F" role="HW$YZ">
+                <ref role="ehGHo" to="ryx8:6MUZd5UjGNW" resolve="IComponentLike" />
+              </node>
+              <node concept="37vLTw" id="2d_6cEDDx6G" role="I$8f6">
+                <ref role="3cqZAo" node="fm3v0WXKkC" resolve="allSubComponents" />
+              </node>
+            </node>
+          </node>
+          <node concept="2hMVRd" id="2d_6cEDDx6H" role="1tU5fm">
+            <node concept="3Tqbb2" id="2d_6cEDDx6J" role="2hN53Y">
+              <ref role="ehGHo" to="ryx8:6MUZd5UjGNW" resolve="IComponentLike" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cpWs8" id="2d_6cEDDx6M" role="3cqZAp">
+        <node concept="3cpWsn" id="2d_6cEDDx6P" role="3cpWs9">
+          <property role="TrG5h" value="myDeclaredDependenciesSet" />
+          <node concept="2ShNRf" id="2d_6cEDDx6R" role="33vP2m">
+            <node concept="2i4dXS" id="2d_6cEDDx6T" role="2ShVmc">
+              <node concept="3Tqbb2" id="2d_6cEDDx6U" role="HW$YZ">
+                <ref role="ehGHo" to="ryx8:6MUZd5UjGNW" resolve="IComponentLike" />
+              </node>
+              <node concept="37vLTw" id="2d_6cEDDx6V" role="I$8f6">
+                <ref role="3cqZAo" node="5EbKmZ4nI02" resolve="myDeclaredDependencies" />
+              </node>
+            </node>
+          </node>
+          <node concept="2hMVRd" id="2d_6cEDDx6W" role="1tU5fm">
+            <node concept="3Tqbb2" id="2d_6cEDDx6Y" role="2hN53Y">
+              <ref role="ehGHo" to="ryx8:6MUZd5UjGNW" resolve="IComponentLike" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="2Gpval" id="fm3v0WXL0n" role="3cqZAp">
         <node concept="2GrKxI" id="fm3v0WXL0p" role="2Gsz3X">
           <property role="TrG5h" value="currentSubComponent" />
@@ -714,7 +754,7 @@
                 </node>
                 <node concept="2OqwBi" id="fm3v0WXP2B" role="3clFbw">
                   <node concept="37vLTw" id="fm3v0WXNsx" role="2Oq$k0">
-                    <ref role="3cqZAo" node="fm3v0WXKkC" resolve="allSubComponents" />
+                    <ref role="3cqZAo" node="2d_6cEDDx6A" resolve="allSubComponentsSet" />
                   </node>
                   <node concept="3JPx81" id="fm3v0WXQHh" role="2OqNvi">
                     <node concept="2GrUjf" id="fm3v0WXQIf" role="25WWJ7">
@@ -799,7 +839,7 @@
                 </node>
                 <node concept="2OqwBi" id="5EbKmZ4o0fd" role="3clFbw">
                   <node concept="37vLTw" id="5EbKmZ4nI0l" role="2Oq$k0">
-                    <ref role="3cqZAo" node="5EbKmZ4nI02" resolve="myDeclaredDependencies" />
+                    <ref role="3cqZAo" node="2d_6cEDDx6P" resolve="myDeclaredDependenciesSet" />
                   </node>
                   <node concept="3JPx81" id="5EbKmZ4o3m7" role="2OqNvi">
                     <node concept="2GrUjf" id="5EbKmZ4o4P_" role="25WWJ7">
