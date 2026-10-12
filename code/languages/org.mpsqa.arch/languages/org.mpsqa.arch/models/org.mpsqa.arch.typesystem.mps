@@ -20,8 +20,9 @@
     <import index="lm2w" ref="r:f5e4041f-398d-420c-a501-c76be3c82f70(org.mpsqa.arch.behavior)" />
     <import index="dvox" ref="r:9dfd3567-3b1f-4edb-85a0-3981ca2bfd8c(jetbrains.mps.lang.modelapi.structure)" />
     <import index="u41u" ref="r:88cf32d8-7e39-47c5-b37a-24d1801279ce(org.mpsqa.arch.util)" />
-    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
-    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
+    <import index="ni5j" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.regex(JDK/)" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
+    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -2012,6 +2013,26 @@
           </node>
           <node concept="3clFbJ" id="33N0Tlz1VG3" role="3cqZAp">
             <node concept="3clFbS" id="33N0Tlz1VG5" role="3clFbx">
+              <node concept="3cpWs8" id="4jdML25G3wM" role="3cqZAp">
+                <node concept="3cpWsn" id="4jdML25G3wL" role="3cpWs9">
+                  <property role="TrG5h" value="pattern" />
+                  <node concept="3uibUv" id="4jdML25G3wN" role="1tU5fm">
+                    <ref role="3uigEE" to="ni5j:~Pattern" resolve="java.util.regex.Pattern" />
+                  </node>
+                  <node concept="2YIFZM" id="4jdML25G3Er" role="33vP2m">
+                    <ref role="1Pybhc" to="ni5j:~Pattern" resolve="Pattern" />
+                    <ref role="37wK5l" to="ni5j:~Pattern.compile(java.lang.String)" resolve="compile" />
+                    <node concept="2OqwBi" id="4jdML25G56a" role="37wK5m">
+                      <node concept="1YBJjd" id="4jdML25G56d" role="2Oq$k0">
+                        <ref role="1YBMHb" node="10aXpfQh8sm" resolve="archSpecification" />
+                      </node>
+                      <node concept="3TrcHB" id="4jdML25G56e" role="2OqNvi">
+                        <ref role="3TsBF5" to="ryx8:33N0Tlz1Pl9" resolve="regexForModulesNamesToWhitelist" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3cpWs8" id="33N0Tlz2cdE" role="3cqZAp">
                 <node concept="3cpWsn" id="33N0Tlz2cdF" role="3cpWs9">
                   <property role="TrG5h" value="newList" />
@@ -2029,25 +2050,25 @@
                         <node concept="1bVj0M" id="33N0Tlz2cdK" role="23t8la">
                           <node concept="3clFbS" id="33N0Tlz2cdL" role="1bW5cS">
                             <node concept="3clFbF" id="33N0Tlz2cdM" role="3cqZAp">
-                              <node concept="2OqwBi" id="33N0Tlz2cdN" role="3clFbG">
-                                <node concept="2OqwBi" id="33N0Tlz2cdO" role="2Oq$k0">
-                                  <node concept="37vLTw" id="33N0Tlz2cdP" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="33N0Tlz2cdV" resolve="it" />
+                              <node concept="2OqwBi" id="4jdML25G5Mq" role="3clFbG">
+                                <node concept="2OqwBi" id="4jdML25G5LK" role="2Oq$k0">
+                                  <node concept="37vLTw" id="4jdML25G5Ls" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="4jdML25G3wL" />
                                   </node>
-                                  <node concept="liA8E" id="33N0Tlz2cdQ" role="2OqNvi">
-                                    <ref role="37wK5l" to="lui2:~SModule.getModuleName()" resolve="getModuleName" />
+                                  <node concept="liA8E" id="4jdML25G5LL" role="2OqNvi">
+                                    <ref role="37wK5l" to="ni5j:~Pattern.matcher(java.lang.CharSequence)" resolve="matcher" />
+                                    <node concept="2OqwBi" id="4jdML25G5OJ" role="37wK5m">
+                                      <node concept="37vLTw" id="4jdML25G5Ms" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="33N0Tlz2cdV" />
+                                      </node>
+                                      <node concept="liA8E" id="4jdML25G5OK" role="2OqNvi">
+                                        <ref role="37wK5l" to="lui2:~SModule.getModuleName()" resolve="getModuleName" />
+                                      </node>
+                                    </node>
                                   </node>
                                 </node>
-                                <node concept="liA8E" id="33N0Tlz2cdR" role="2OqNvi">
-                                  <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
-                                  <node concept="2OqwBi" id="33N0Tlz2cdS" role="37wK5m">
-                                    <node concept="1YBJjd" id="33N0Tlz2cdT" role="2Oq$k0">
-                                      <ref role="1YBMHb" node="10aXpfQh8sm" resolve="archSpecification" />
-                                    </node>
-                                    <node concept="3TrcHB" id="33N0Tlz2cdU" role="2OqNvi">
-                                      <ref role="3TsBF5" to="ryx8:33N0Tlz1Pl9" resolve="regexForModulesNamesToWhitelist" />
-                                    </node>
-                                  </node>
+                                <node concept="liA8E" id="4jdML25G5Mr" role="2OqNvi">
+                                  <ref role="37wK5l" to="ni5j:~Matcher.matches()" resolve="matches" />
                                 </node>
                               </node>
                             </node>
