@@ -354,6 +354,9 @@
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
+      <concept id="1196978630214" name="jetbrains.mps.lang.core.structure.IResolveInfo" flags="ngI" index="2Lv6Xg">
+        <property id="1196978656277" name="resolveInfo" index="2Lvdk3" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -3887,8 +3890,8 @@
           <node concept="3cpWsn" id="13En2Fwb4rS" role="3cpWs9">
             <property role="TrG5h" value="dependencyResolver" />
             <node concept="1ajhzC" id="13En2Fwb4rK" role="1tU5fm">
-              <node concept="_YKpA" id="13En2Fwb4rL" role="1ajw0F">
-                <node concept="3uibUv" id="13En2Fwb4rM" role="_ZDj9">
+              <node concept="2hMVRd" id="7da0P58NuMt" role="1ajw0F">
+                <node concept="3uibUv" id="7da0P58NuMv" role="2hN53Y">
                   <ref role="3uigEE" to="lui2:~SModuleReference" resolve="SModuleReference" />
                 </node>
               </node>
@@ -6638,8 +6641,8 @@
             <ref role="16sUi3" node="13En2Fv6yo$" resolve="Component" />
           </node>
         </node>
-        <node concept="_YKpA" id="13En2Fw2dnV" role="1ajw0F">
-          <node concept="16syzq" id="13En2Fw2dnW" role="_ZDj9">
+        <node concept="2hMVRd" id="7da0P58NFs_" role="1ajw0F">
+          <node concept="16syzq" id="7da0P58NFsB" role="2hN53Y">
             <ref role="16sUi3" node="13En2Fv6yo$" resolve="Component" />
           </node>
         </node>
@@ -6688,8 +6691,8 @@
               <ref role="16sUi3" node="13En2Fv6yo$" resolve="Component" />
             </node>
           </node>
-          <node concept="_YKpA" id="13En2Fw24ti" role="1ajw0F">
-            <node concept="16syzq" id="13En2Fw28Uz" role="_ZDj9">
+          <node concept="2hMVRd" id="7da0P58O0iC" role="1ajw0F">
+            <node concept="16syzq" id="7da0P58O0iE" role="2hN53Y">
               <ref role="16sUi3" node="13En2Fv6yo$" resolve="Component" />
             </node>
           </node>
@@ -8022,6 +8025,27 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="7da0P58NFxl" role="3cqZAp">
+          <node concept="3cpWsn" id="7da0P58NFxo" role="3cpWs9">
+            <property role="TrG5h" value="componentsSet" />
+            <property role="2Lvdk3" value="componentsSet" />
+            <node concept="2hMVRd" id="7da0P58NFxq" role="1tU5fm">
+              <node concept="16syzq" id="7da0P58NFxs" role="2hN53Y">
+                <ref role="16sUi3" node="13En2Fv6yo$" resolve="Component" />
+              </node>
+            </node>
+            <node concept="2ShNRf" id="7da0P58NFxt" role="33vP2m">
+              <node concept="2i4dXS" id="7da0P58NFxv" role="2ShVmc">
+                <node concept="16syzq" id="7da0P58NFxw" role="HW$YZ">
+                  <ref role="16sUi3" node="13En2Fv6yo$" resolve="Component" />
+                </node>
+                <node concept="37vLTw" id="7da0P58NFxx" role="I$8f6">
+                  <ref role="3cqZAo" node="13En2FvyssO" resolve="components" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="2Gpval" id="13En2Fvyst3" role="3cqZAp">
           <node concept="2GrKxI" id="13En2Fvyst4" role="2Gsz3X">
             <property role="TrG5h" value="component" />
@@ -8057,8 +8081,8 @@
                     <node concept="37vLTw" id="13En2Fvystj" role="2SgG2M">
                       <ref role="3cqZAo" node="13En2FvqIXu" resolve="dependencyResolver" />
                     </node>
-                    <node concept="37vLTw" id="13En2Fw2siP" role="2SgHGx">
-                      <ref role="3cqZAo" node="13En2FvyssO" resolve="components" />
+                    <node concept="37vLTw" id="7da0P58NFAc" role="2SgHGx">
+                      <ref role="3cqZAo" node="7da0P58NFxo" resolve="componentsSet" />
                     </node>
                     <node concept="2GrUjf" id="13En2Fvystk" role="2SgHGx">
                       <ref role="2Gs0qQ" node="13En2Fvyst4" resolve="component" />
