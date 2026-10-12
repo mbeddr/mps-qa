@@ -4,6 +4,7 @@
   <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -423,10 +424,8 @@
             <node concept="3clFbJ" id="48uyNAv77VX" role="3cqZAp">
               <node concept="1Wc70l" id="48uyNAv77VY" role="3clFbw">
                 <node concept="1Wc70l" id="48uyNAv77VZ" role="3uHU7B">
-                  <node concept="3fqX7Q" id="48uyNAv798J" role="3uHU7B">
-                    <node concept="37vLTw" id="48uyNAv798L" role="3fr31v">
-                      <ref role="3cqZAo" node="48uyNAv73sH" resolve="considerLanguages" />
-                    </node>
+                  <node concept="37vLTw" id="4jdML25HvBd" role="3uHU7B">
+                    <ref role="3cqZAo" node="4jdML25HvB8" resolve="considerSolutions" />
                   </node>
                   <node concept="2ZW3vV" id="48uyNAv77W1" role="3uHU7w">
                     <node concept="3uibUv" id="48uyNAv77W2" role="2ZW6by">
@@ -496,6 +495,10 @@
         <property role="TrG5h" value="considerLanguages" />
         <node concept="10P_77" id="48uyNAv74NP" role="1tU5fm" />
       </node>
+      <node concept="37vLTG" id="4jdML25HvB8" role="3clF46">
+        <property role="TrG5h" value="considerSolutions" />
+        <node concept="10P_77" id="4jdML25HvBa" role="1tU5fm" />
+      </node>
     </node>
     <node concept="2tJIrI" id="5enppyYDTG_" role="jymVt" />
     <node concept="2YIFZL" id="5enppyYDSMQ" role="jymVt">
@@ -529,6 +532,9 @@
                 </node>
                 <node concept="37vLTw" id="7HJqs_aQp5K" role="37wK5m">
                   <ref role="3cqZAo" node="48uyNAv72rJ" resolve="considerLanguages" />
+                </node>
+                <node concept="37vLTw" id="4jdML25HvBl" role="37wK5m">
+                  <ref role="3cqZAo" node="4jdML25HvBg" resolve="considerSolutions" />
                 </node>
               </node>
             </node>
@@ -572,6 +578,10 @@
       <node concept="37vLTG" id="48uyNAv72rJ" role="3clF46">
         <property role="TrG5h" value="considerLanguages" />
         <node concept="10P_77" id="48uyNAv72zS" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="4jdML25HvBg" role="3clF46">
+        <property role="TrG5h" value="considerSolutions" />
+        <node concept="10P_77" id="4jdML25HvBi" role="1tU5fm" />
       </node>
     </node>
     <node concept="2tJIrI" id="5enppyYDSJn" role="jymVt" />

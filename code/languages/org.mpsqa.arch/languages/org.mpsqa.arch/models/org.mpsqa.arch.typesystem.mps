@@ -1977,36 +1977,15 @@
                 <node concept="3clFbT" id="48uyNAv7PUs" role="37wK5m">
                   <property role="3clFbU" value="true" />
                 </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbJ" id="48uyNAv837X" role="3cqZAp">
-            <node concept="3clFbS" id="48uyNAv837Z" role="3clFbx">
-              <node concept="3clFbF" id="48uyNAv84RV" role="3cqZAp">
-                <node concept="2OqwBi" id="48uyNAv85rW" role="3clFbG">
-                  <node concept="37vLTw" id="48uyNAv84RT" role="2Oq$k0">
-                    <ref role="3cqZAo" node="5enppyYEK_I" resolve="projectModulesNotPartOfArchitectureDescription" />
-                  </node>
-                  <node concept="X8dFx" id="48uyNAv862A" role="2OqNvi">
-                    <node concept="2YIFZM" id="48uyNAv86Ol" role="25WWJ7">
-                      <ref role="37wK5l" to="u41u:5enppyYDSMQ" resolve="getProjectModulesNotPartOfArchitectureDescription" />
-                      <ref role="1Pybhc" to="u41u:5enppyYCuym" resolve="ArchitectureUtils" />
-                      <node concept="1YBJjd" id="48uyNAv86Om" role="37wK5m">
-                        <ref role="1YBMHb" node="10aXpfQh8sm" resolve="archSpecification" />
-                      </node>
-                      <node concept="3clFbT" id="48uyNAv88NT" role="37wK5m" />
+                <node concept="3fqX7Q" id="4jdML25HvBo" role="37wK5m">
+                  <node concept="2OqwBi" id="4jdML25HvBq" role="3fr31v">
+                    <node concept="1YBJjd" id="4jdML25HvBt" role="2Oq$k0">
+                      <ref role="1YBMHb" node="10aXpfQh8sm" resolve="archSpecification" />
+                    </node>
+                    <node concept="3TrcHB" id="4jdML25HvBu" role="2OqNvi">
+                      <ref role="3TsBF5" to="ryx8:48uyNAv6UZR" resolve="considerOnlyLanguages" />
                     </node>
                   </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3fqX7Q" id="48uyNAv84_L" role="3clFbw">
-              <node concept="2OqwBi" id="48uyNAv84_N" role="3fr31v">
-                <node concept="1YBJjd" id="48uyNAv84_O" role="2Oq$k0">
-                  <ref role="1YBMHb" node="10aXpfQh8sm" resolve="archSpecification" />
-                </node>
-                <node concept="3TrcHB" id="48uyNAv84_P" role="2OqNvi">
-                  <ref role="3TsBF5" to="ryx8:48uyNAv6UZR" resolve="considerOnlyLanguages" />
                 </node>
               </node>
             </node>
