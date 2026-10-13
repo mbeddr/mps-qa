@@ -995,7 +995,7 @@
             <node concept="2OqwBi" id="5Gza0pNvyyG" role="2Oq$k0">
               <node concept="13iPFW" id="5Gza0pNvyyJ" role="2Oq$k0" />
               <node concept="3Tsc0h" id="5Gza0pNvyyK" role="2OqNvi">
-                <ref role="3TtcxE" to="a1af:6gY6GEDvQYW" />
+                <ref role="3TtcxE" to="a1af:6gY6GEDvQYW" resolve="violations" />
               </node>
             </node>
             <node concept="1kEaZ2" id="5Gza0pNvyyL" role="2OqNvi">

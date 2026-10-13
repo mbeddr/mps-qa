@@ -388,7 +388,7 @@
               <node concept="liA8E" id="6o7R8__uzQ4" role="2OqNvi">
                 <ref role="37wK5l" to="phxh:3GsVPVaO85s" resolve="getSpecificCheckers" />
                 <node concept="37vLTw" id="6o7R8__uzQK" role="37wK5m">
-                  <ref role="3cqZAo" node="2xFKNLWBFC1" />
+                  <ref role="3cqZAo" node="2xFKNLWBFC1" resolve="project" />
                 </node>
               </node>
             </node>
@@ -644,7 +644,7 @@
             <node concept="3uibUv" id="5Gza0pNs0LX" role="1tU5fm">
               <ref role="3uigEE" to="wsw7:3xfDcbRbJai" resolve="IAbstractChecker" />
               <node concept="3uibUv" id="5Gza0pNs0LY" role="11_B2D">
-                <ref role="3uigEE" to="wsw7:4QJbmJH1Aa8" resolve="ItemsToCheck" />
+                <ref role="3uigEE" to="wsw7:4QJbmJH1Aa8" resolve="ModelCheckerBuilder.ItemsToCheck" />
               </node>
               <node concept="3uibUv" id="5Gza0pNs0LZ" role="11_B2D">
                 <ref role="3uigEE" to="d6hs:~IssueKindReportItem" resolve="IssueKindReportItem" />
@@ -661,7 +661,7 @@
               <node concept="2ShNRf" id="5Gza0pNs0Mo" role="2Oq$k0">
                 <node concept="1pGfFk" id="5Gza0pNs0Mq" role="2ShVmc">
                   <property role="373rjd" value="true" />
-                  <ref role="37wK5l" to="wsw7:6bXa3O$ak8k" />
+                  <ref role="37wK5l" to="wsw7:6bXa3O$ak8k" resolve="ModelCheckerBuilder" />
                   <node concept="3clFbT" id="5Gza0pNs0Mr" role="37wK5m">
                     <property role="3clFbU" value="false" />
                   </node>
@@ -957,7 +957,7 @@
         <node concept="3clFbF" id="6o7R8__uzQv" role="3cqZAp">
           <node concept="2OqwBi" id="6o7R8__uzQw" role="3clFbG">
             <node concept="37vLTw" id="6o7R8__uzQx" role="2Oq$k0">
-              <ref role="3cqZAo" node="5Gza0pNs0KR" />
+              <ref role="3cqZAo" node="5Gza0pNs0KR" resolve="checker" />
             </node>
             <node concept="liA8E" id="6o7R8__uzQy" role="2OqNvi">
               <ref role="37wK5l" to="wsw7:4SGXHKgYYAZ" resolve="check" />
@@ -990,7 +990,7 @@
         <node concept="3uibUv" id="5Gza0pNs0KT" role="1tU5fm">
           <ref role="3uigEE" to="wsw7:3xfDcbRbJai" resolve="IAbstractChecker" />
           <node concept="3uibUv" id="5Gza0pNs0KU" role="11_B2D">
-            <ref role="3uigEE" to="wsw7:4QJbmJH1Aa8" resolve="ItemsToCheck" />
+            <ref role="3uigEE" to="wsw7:4QJbmJH1Aa8" resolve="ModelCheckerBuilder.ItemsToCheck" />
           </node>
           <node concept="3uibUv" id="5Gza0pNs0KV" role="11_B2D">
             <ref role="3uigEE" to="d6hs:~IssueKindReportItem" resolve="IssueKindReportItem" />

@@ -1682,14 +1682,14 @@
                 <node concept="2OqwBi" id="5Gza0pNQItg" role="33vP2m">
                   <node concept="2OqwBi" id="5Gza0pNQIpH" role="2Oq$k0">
                     <node concept="37vLTw" id="5Gza0pNQIpa" role="2Oq$k0">
-                      <ref role="3cqZAo" node="5$DH147CUtk" />
+                      <ref role="3cqZAo" node="5$DH147CUtk" resolve="relativePath" />
                     </node>
                     <node concept="liA8E" id="5Gza0pNQIpI" role="2OqNvi">
                       <ref role="37wK5l" to="eoo2:~Path.toString()" resolve="toString" />
                     </node>
                   </node>
                   <node concept="liA8E" id="5Gza0pNQIth" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence)" />
+                    <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence)" resolve="replace" />
                     <node concept="Xl_RD" id="5Gza0pNQIti" role="37wK5m">
                       <property role="Xl_RC" value="\\" />
                     </node>

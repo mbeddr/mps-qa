@@ -603,7 +603,7 @@
                           <ref role="2Gs0qQ" node="5ILDA6EXtV6" resolve="reference" />
                         </node>
                         <node concept="3TrEf2" id="5Gza0pNBAjq" role="2OqNvi">
-                          <ref role="3Tt5mk" to="tp5g:3VyMYUb6r1I" />
+                          <ref role="3Tt5mk" to="tp5g:3VyMYUb6r1I" resolve="declaration" />
                         </node>
                       </node>
                     </node>
