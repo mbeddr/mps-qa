@@ -9134,6 +9134,88 @@
     <node concept="3clFb_" id="13En2FvJE3I" role="jymVt">
       <property role="TrG5h" value="DFSRecursive" />
       <node concept="3clFbS" id="13En2FvJE3K" role="3clF47">
+        <node concept="3SKdUt" id="5Gza0pNP3Xw" role="3cqZAp">
+          <node concept="1PaTwC" id="5Gza0pNP3Xx" role="1aUNEU">
+            <node concept="3oM_SD" id="5Gza0pNP3Xz" role="1PaTwD">
+              <property role="3oM_SC" value="visited" />
+            </node>
+            <node concept="3oM_SD" id="5Gza0pNP3X$" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="5Gza0pNP3X_" role="1PaTwD">
+              <property role="3oM_SC" value="deliberately" />
+            </node>
+            <node concept="3oM_SD" id="5Gza0pNP3XA" role="1PaTwD">
+              <property role="3oM_SC" value="not" />
+            </node>
+            <node concept="3oM_SD" id="5Gza0pNP3XB" role="1PaTwD">
+              <property role="3oM_SC" value="unwound:" />
+            </node>
+            <node concept="3oM_SD" id="5Gza0pNP3XC" role="1PaTwD">
+              <property role="3oM_SC" value="for" />
+            </node>
+            <node concept="3oM_SD" id="5Gza0pNP3XD" role="1PaTwD">
+              <property role="3oM_SC" value="one" />
+            </node>
+            <node concept="3oM_SD" id="5Gza0pNP3XE" role="1PaTwD">
+              <property role="3oM_SC" value="starting" />
+            </node>
+            <node concept="3oM_SD" id="5Gza0pNP3XF" role="1PaTwD">
+              <property role="3oM_SC" value="component" />
+            </node>
+            <node concept="3oM_SD" id="5Gza0pNP3XG" role="1PaTwD">
+              <property role="3oM_SC" value="we" />
+            </node>
+            <node concept="3oM_SD" id="5Gza0pNP3XH" role="1PaTwD">
+              <property role="3oM_SC" value="report" />
+            </node>
+            <node concept="3oM_SD" id="5Gza0pNP3XI" role="1PaTwD">
+              <property role="3oM_SC" value="some" />
+            </node>
+            <node concept="3oM_SD" id="5Gza0pNP3XJ" role="1PaTwD">
+              <property role="3oM_SC" value="cycle" />
+            </node>
+            <node concept="3oM_SD" id="5Gza0pNP3XK" role="1PaTwD">
+              <property role="3oM_SC" value="through" />
+            </node>
+            <node concept="3oM_SD" id="5Gza0pNP3XL" role="1PaTwD">
+              <property role="3oM_SC" value="it," />
+            </node>
+            <node concept="3oM_SD" id="5Gza0pNP3XM" role="1PaTwD">
+              <property role="3oM_SC" value="not" />
+            </node>
+            <node concept="3oM_SD" id="5Gza0pNP3XN" role="1PaTwD">
+              <property role="3oM_SC" value="all" />
+            </node>
+            <node concept="3oM_SD" id="5Gza0pNP3XO" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="5Gza0pNP3XP" role="1PaTwD">
+              <property role="3oM_SC" value="them" />
+            </node>
+            <node concept="3oM_SD" id="5Gza0pNP3XQ" role="1PaTwD">
+              <property role="3oM_SC" value="-" />
+            </node>
+            <node concept="3oM_SD" id="5Gza0pNP3XR" role="1PaTwD">
+              <property role="3oM_SC" value="backtracking" />
+            </node>
+            <node concept="3oM_SD" id="5Gza0pNP3XS" role="1PaTwD">
+              <property role="3oM_SC" value="would" />
+            </node>
+            <node concept="3oM_SD" id="5Gza0pNP3XT" role="1PaTwD">
+              <property role="3oM_SC" value="enumerate" />
+            </node>
+            <node concept="3oM_SD" id="5Gza0pNP3XU" role="1PaTwD">
+              <property role="3oM_SC" value="every" />
+            </node>
+            <node concept="3oM_SD" id="5Gza0pNP3XV" role="1PaTwD">
+              <property role="3oM_SC" value="simple" />
+            </node>
+            <node concept="3oM_SD" id="5Gza0pNP3XW" role="1PaTwD">
+              <property role="3oM_SC" value="path." />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="13En2FvJE3L" role="3cqZAp">
           <node concept="2OqwBi" id="13En2FvJE3M" role="3clFbG">
             <node concept="37vLTw" id="13En2FvJE3N" role="2Oq$k0">
@@ -9227,21 +9309,23 @@
                     <node concept="37vLTw" id="13En2FvKeOa" role="37wK5m">
                       <ref role="3cqZAo" node="13En2FvJE4K" resolve="visited" />
                     </node>
-                    <node concept="2ShNRf" id="13En2FvKiK9" role="37wK5m">
-                      <node concept="Tc6Ow" id="13En2FvKiKa" role="2ShVmc">
-                        <node concept="16syzq" id="13En2FvL65t" role="HW$YZ">
-                          <ref role="16sUi3" node="13En2FvIxxl" resolve="Component" />
-                        </node>
-                        <node concept="2OqwBi" id="13En2FvKiKc" role="I$8f6">
-                          <node concept="37vLTw" id="13En2FvKiKd" role="2Oq$k0">
-                            <ref role="3cqZAo" node="13En2FvJE4N" resolve="path" />
-                          </node>
-                          <node concept="ANE8D" id="13En2FvKiKe" role="2OqNvi" />
-                        </node>
-                      </node>
+                    <node concept="37vLTw" id="5Gza0pNNzFJ" role="37wK5m">
+                      <ref role="3cqZAo" node="13En2FvJE4N" resolve="path" />
                     </node>
                   </node>
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5Gza0pNNzFT" role="3cqZAp">
+          <node concept="2OqwBi" id="5Gza0pNNzFV" role="3clFbG">
+            <node concept="37vLTw" id="5Gza0pNNzFY" role="2Oq$k0">
+              <ref role="3cqZAo" node="13En2FvJE4N" resolve="path" />
+            </node>
+            <node concept="3dhRuq" id="5Gza0pNNzFZ" role="2OqNvi">
+              <node concept="37vLTw" id="5Gza0pNNzG1" role="25WWJ7">
+                <ref role="3cqZAo" node="13En2FvJE4v" resolve="currentComponent" />
               </node>
             </node>
           </node>
