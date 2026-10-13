@@ -2095,7 +2095,7 @@
       <node concept="2ShNRf" id="4jdML25$myL" role="33vP2m">
         <node concept="1pGfFk" id="4jdML25$myN" role="2ShVmc">
           <property role="373rjd" value="true" />
-          <ref role="37wK5l" to="33ny:~WeakHashMap.&lt;init&gt;()" />
+          <ref role="37wK5l" to="33ny:~WeakHashMap.&lt;init&gt;()" resolve="WeakHashMap" />
         </node>
       </node>
     </node>
