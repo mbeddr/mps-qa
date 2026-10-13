@@ -1953,6 +1953,25 @@
           </node>
         </node>
         <node concept="3clFbH" id="52u1lgl$VHS" role="3cqZAp" />
+        <node concept="3cpWs8" id="7hx0FZiUDq3" role="3cqZAp">
+          <node concept="3cpWsn" id="7hx0FZiUDq4" role="3cpWs9">
+            <property role="TrG5h" value="helper" />
+            <node concept="3uibUv" id="7hx0FZiUDmw" role="1tU5fm">
+              <ref role="3uigEE" to="w1kc:~ModelAccessHelper" resolve="ModelAccessHelper" />
+            </node>
+            <node concept="2ShNRf" id="7hx0FZiUDq5" role="33vP2m">
+              <node concept="1pGfFk" id="7hx0FZiUDq6" role="2ShVmc">
+                <ref role="37wK5l" to="w1kc:~ModelAccessHelper.&lt;init&gt;(org.jetbrains.mps.openapi.module.SRepository)" resolve="ModelAccessHelper" />
+                <node concept="2OqwBi" id="7hx0FZiUDq7" role="37wK5m">
+                  <node concept="1MG55F" id="7hx0FZiUDq8" role="2Oq$k0" />
+                  <node concept="liA8E" id="7hx0FZiUDq9" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="7hx0FZiVGxE" role="3cqZAp">
           <node concept="3cpWsn" id="7hx0FZiVGxH" role="3cpWs9">
             <property role="TrG5h" value="allActualReferences" />
@@ -1981,25 +2000,6 @@
             </node>
           </node>
           <node concept="3clFbS" id="7hx0FZiVFcH" role="2LFqv$">
-            <node concept="3cpWs8" id="7hx0FZiUDq3" role="3cqZAp">
-              <node concept="3cpWsn" id="7hx0FZiUDq4" role="3cpWs9">
-                <property role="TrG5h" value="helper" />
-                <node concept="3uibUv" id="7hx0FZiUDmw" role="1tU5fm">
-                  <ref role="3uigEE" to="w1kc:~ModelAccessHelper" resolve="ModelAccessHelper" />
-                </node>
-                <node concept="2ShNRf" id="7hx0FZiUDq5" role="33vP2m">
-                  <node concept="1pGfFk" id="7hx0FZiUDq6" role="2ShVmc">
-                    <ref role="37wK5l" to="w1kc:~ModelAccessHelper.&lt;init&gt;(org.jetbrains.mps.openapi.module.SRepository)" resolve="ModelAccessHelper" />
-                    <node concept="2OqwBi" id="7hx0FZiUDq7" role="37wK5m">
-                      <node concept="1MG55F" id="7hx0FZiUDq8" role="2Oq$k0" />
-                      <node concept="liA8E" id="7hx0FZiUDq9" role="2OqNvi">
-                        <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="3cpWs8" id="7cLvrVTQRIe" role="3cqZAp">
               <node concept="3cpWsn" id="7cLvrVTQRIf" role="3cpWs9">
                 <property role="TrG5h" value="actualReferences" />
