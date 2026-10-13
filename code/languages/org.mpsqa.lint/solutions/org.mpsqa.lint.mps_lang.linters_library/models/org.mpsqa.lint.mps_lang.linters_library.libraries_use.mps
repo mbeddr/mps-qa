@@ -8,13 +8,15 @@
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
     <use id="1a8554c4-eb84-43ba-8c34-6f0d90c6e75a" name="jetbrains.mps.lang.smodel.query" version="3" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
   </languages>
   <imports>
     <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="ni5j" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.regex(JDK/)" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -37,6 +39,9 @@
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -518,6 +523,36 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="5Gza0pNqst_" role="3cqZAp">
+          <node concept="3cpWsn" id="5Gza0pNqstC" role="3cpWs9">
+            <property role="TrG5h" value="fqClassNamePattern" />
+            <node concept="3uibUv" id="5Gza0pNqstE" role="1tU5fm">
+              <ref role="3uigEE" to="ni5j:~Pattern" resolve="Pattern" />
+            </node>
+            <node concept="2YIFZM" id="5Gza0pNqstF" role="33vP2m">
+              <ref role="1Pybhc" to="ni5j:~Pattern" resolve="Pattern" />
+              <ref role="37wK5l" to="ni5j:~Pattern.compile(java.lang.String)" resolve="compile" />
+              <node concept="2j1LYi" id="5Gza0pNqstG" role="37wK5m">
+                <ref role="2j1LYj" node="2Wh5DQ1OlF9" resolve="fqClassNameRegex" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5Gza0pNqstQ" role="3cqZAp">
+          <node concept="3cpWsn" id="5Gza0pNqstT" role="3cpWs9">
+            <property role="TrG5h" value="moduleNamePattern" />
+            <node concept="3uibUv" id="5Gza0pNqstV" role="1tU5fm">
+              <ref role="3uigEE" to="ni5j:~Pattern" resolve="Pattern" />
+            </node>
+            <node concept="2YIFZM" id="5Gza0pNqstW" role="33vP2m">
+              <ref role="1Pybhc" to="ni5j:~Pattern" resolve="Pattern" />
+              <ref role="37wK5l" to="ni5j:~Pattern.compile(java.lang.String)" resolve="compile" />
+              <node concept="2j1LYi" id="5Gza0pNqstX" role="37wK5m">
+                <ref role="2j1LYj" node="2Wh5DQ1Oz4W" resolve="moduleNameRegex" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="L3pyB" id="3pz5R1DPwO7" role="3cqZAp">
           <node concept="3clFbS" id="3pz5R1DPwOa" role="L3pyw">
             <node concept="2Gpval" id="2Wh5DQ1P9qZ" role="3cqZAp">
@@ -624,29 +659,39 @@
                         </node>
                       </node>
                       <node concept="3fqX7Q" id="2Wh5DQ1PCcs" role="3clFbw">
-                        <node concept="2OqwBi" id="2Wh5DQ1PCcu" role="3fr31v">
-                          <node concept="37vLTw" id="2Wh5DQ1PCcv" role="2Oq$k0">
-                            <ref role="3cqZAo" node="2Wh5DQ1P$Sw" resolve="containingModuleName" />
-                          </node>
-                          <node concept="liA8E" id="2Wh5DQ1PCcw" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
-                            <node concept="2j1LYi" id="2Wh5DQ1PCcx" role="37wK5m">
-                              <ref role="2j1LYj" node="2Wh5DQ1Oz4W" resolve="moduleNameRegex" />
+                        <node concept="2OqwBi" id="5Gza0pNqswD" role="3fr31v">
+                          <node concept="2OqwBi" id="5Gza0pNqswG" role="2Oq$k0">
+                            <node concept="37vLTw" id="5Gza0pNqswJ" role="2Oq$k0">
+                              <ref role="3cqZAo" node="5Gza0pNqstT" resolve="moduleNamePattern" />
                             </node>
+                            <node concept="liA8E" id="5Gza0pNqswK" role="2OqNvi">
+                              <ref role="37wK5l" to="ni5j:~Pattern.matcher(java.lang.CharSequence)" resolve="matcher" />
+                              <node concept="37vLTw" id="5Gza0pNqswL" role="37wK5m">
+                                <ref role="3cqZAo" node="2Wh5DQ1P$Sw" resolve="containingModuleName" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="5Gza0pNqswM" role="2OqNvi">
+                            <ref role="37wK5l" to="ni5j:~Matcher.matches()" resolve="matches" />
                           </node>
                         </node>
                       </node>
                     </node>
                   </node>
-                  <node concept="2OqwBi" id="2Wh5DQ1Pw17" role="3clFbw">
-                    <node concept="37vLTw" id="2Wh5DQ1PuZO" role="2Oq$k0">
-                      <ref role="3cqZAo" node="2Wh5DQ1PrSv" resolve="fqName" />
-                    </node>
-                    <node concept="liA8E" id="2Wh5DQ1PxJD" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
-                      <node concept="2j1LYi" id="2Wh5DQ1Pyqf" role="37wK5m">
-                        <ref role="2j1LYj" node="2Wh5DQ1OlF9" resolve="fqClassNameRegex" />
+                  <node concept="2OqwBi" id="5Gza0pNqsuB" role="3clFbw">
+                    <node concept="2OqwBi" id="5Gza0pNqsuE" role="2Oq$k0">
+                      <node concept="37vLTw" id="5Gza0pNqsuH" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5Gza0pNqstC" resolve="fqClassNamePattern" />
                       </node>
+                      <node concept="liA8E" id="5Gza0pNqsuI" role="2OqNvi">
+                        <ref role="37wK5l" to="ni5j:~Pattern.matcher(java.lang.CharSequence)" resolve="matcher" />
+                        <node concept="37vLTw" id="5Gza0pNqsuJ" role="37wK5m">
+                          <ref role="3cqZAo" node="2Wh5DQ1PrSv" resolve="fqName" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="5Gza0pNqsuK" role="2OqNvi">
+                      <ref role="37wK5l" to="ni5j:~Matcher.matches()" resolve="matches" />
                     </node>
                   </node>
                 </node>
@@ -761,29 +806,39 @@
                         </node>
                       </node>
                       <node concept="3fqX7Q" id="2Wh5DQ1R3yX" role="3clFbw">
-                        <node concept="2OqwBi" id="2Wh5DQ1R3yY" role="3fr31v">
-                          <node concept="37vLTw" id="2Wh5DQ1R3yZ" role="2Oq$k0">
-                            <ref role="3cqZAo" node="2Wh5DQ1R3yw" resolve="containingModuleName" />
-                          </node>
-                          <node concept="liA8E" id="2Wh5DQ1R3z0" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
-                            <node concept="2j1LYi" id="2Wh5DQ1R3z1" role="37wK5m">
-                              <ref role="2j1LYj" node="2Wh5DQ1Oz4W" resolve="moduleNameRegex" />
+                        <node concept="2OqwBi" id="5Gza0pNqs$N" role="3fr31v">
+                          <node concept="2OqwBi" id="5Gza0pNqs$Q" role="2Oq$k0">
+                            <node concept="37vLTw" id="5Gza0pNqs$T" role="2Oq$k0">
+                              <ref role="3cqZAo" node="5Gza0pNqstT" resolve="moduleNamePattern" />
                             </node>
+                            <node concept="liA8E" id="5Gza0pNqs$U" role="2OqNvi">
+                              <ref role="37wK5l" to="ni5j:~Pattern.matcher(java.lang.CharSequence)" resolve="matcher" />
+                              <node concept="37vLTw" id="5Gza0pNqs$V" role="37wK5m">
+                                <ref role="3cqZAo" node="2Wh5DQ1R3yw" resolve="containingModuleName" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="5Gza0pNqs$W" role="2OqNvi">
+                            <ref role="37wK5l" to="ni5j:~Matcher.matches()" resolve="matches" />
                           </node>
                         </node>
                       </node>
                     </node>
                   </node>
-                  <node concept="2OqwBi" id="2Wh5DQ1R3z2" role="3clFbw">
-                    <node concept="37vLTw" id="2Wh5DQ1R3z3" role="2Oq$k0">
-                      <ref role="3cqZAo" node="2Wh5DQ1R3yo" resolve="fqName" />
-                    </node>
-                    <node concept="liA8E" id="2Wh5DQ1R3z4" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
-                      <node concept="2j1LYi" id="2Wh5DQ1R3z5" role="37wK5m">
-                        <ref role="2j1LYj" node="2Wh5DQ1OlF9" resolve="fqClassNameRegex" />
+                  <node concept="2OqwBi" id="5Gza0pNqsyL" role="3clFbw">
+                    <node concept="2OqwBi" id="5Gza0pNqsyO" role="2Oq$k0">
+                      <node concept="37vLTw" id="5Gza0pNqsyR" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5Gza0pNqstC" resolve="fqClassNamePattern" />
                       </node>
+                      <node concept="liA8E" id="5Gza0pNqsyS" role="2OqNvi">
+                        <ref role="37wK5l" to="ni5j:~Pattern.matcher(java.lang.CharSequence)" resolve="matcher" />
+                        <node concept="37vLTw" id="5Gza0pNqsyT" role="37wK5m">
+                          <ref role="3cqZAo" node="2Wh5DQ1R3yo" resolve="fqName" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="5Gza0pNqsyU" role="2OqNvi">
+                      <ref role="37wK5l" to="ni5j:~Matcher.matches()" resolve="matches" />
                     </node>
                   </node>
                 </node>
