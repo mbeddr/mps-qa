@@ -2074,9 +2074,9 @@
                                           <ref role="3cqZAo" node="2Wh5DQ1xT1o" resolve="path1" />
                                         </node>
                                         <node concept="liA8E" id="1EJX3sM75YW" role="2OqNvi">
-                                          <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String)" resolve="replaceAll" />
+                                          <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence)" />
                                           <node concept="Xl_RD" id="1EJX3sM77uW" role="37wK5m">
-                                            <property role="Xl_RC" value="\\\\" />
+                                            <property role="Xl_RC" value="\\" />
                                           </node>
                                           <node concept="Xl_RD" id="1EJX3sM7bbQ" role="37wK5m">
                                             <property role="Xl_RC" value="/" />
@@ -2098,9 +2098,9 @@
                                   <ref role="3cqZAo" node="2Wh5DQ1yl7X" resolve="path2" />
                                 </node>
                                 <node concept="liA8E" id="1EJX3sM7g39" role="2OqNvi">
-                                  <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String)" resolve="replaceAll" />
+                                  <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence)" />
                                   <node concept="Xl_RD" id="1EJX3sM7g3a" role="37wK5m">
-                                    <property role="Xl_RC" value="\\\\" />
+                                    <property role="Xl_RC" value="\\" />
                                   </node>
                                   <node concept="Xl_RD" id="1EJX3sM7g3b" role="37wK5m">
                                     <property role="Xl_RC" value="/" />
