@@ -933,13 +933,8 @@
             <ref role="37wK5l" to="eoo2:~Files.walkFileTree(java.nio.file.Path,java.nio.file.FileVisitor)" resolve="walkFileTree" />
             <ref role="1Pybhc" to="eoo2:~Files" resolve="Files" />
             <node concept="2OqwBi" id="4mUq39YB3R9" role="37wK5m">
-              <node concept="2OqwBi" id="4mUq39YB3Ra" role="2Oq$k0">
-                <node concept="37vLTw" id="4mUq39YB3Rb" role="2Oq$k0">
-                  <ref role="3cqZAo" node="4mUq39YBJf0" resolve="projectFile" />
-                </node>
-                <node concept="liA8E" id="4mUq39YB3Rc" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~File.getParentFile()" resolve="getParentFile" />
-                </node>
+              <node concept="37vLTw" id="5Gza0pNSl9H" role="2Oq$k0">
+                <ref role="3cqZAo" node="4mUq39YBJf0" resolve="projectFile" />
               </node>
               <node concept="liA8E" id="4mUq39YB3Rd" role="2OqNvi">
                 <ref role="37wK5l" to="guwi:~File.toPath()" resolve="toPath" />

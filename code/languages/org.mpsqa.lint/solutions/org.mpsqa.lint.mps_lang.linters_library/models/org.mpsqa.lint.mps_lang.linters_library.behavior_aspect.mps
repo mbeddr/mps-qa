@@ -6,6 +6,7 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="1a8554c4-eb84-43ba-8c34-6f0d90c6e75a" name="jetbrains.mps.lang.smodel.query" version="3" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
@@ -1562,6 +1563,32 @@
                 </node>
                 <node concept="37vLTw" id="3cj_LrgSMiQ" role="37vLTJ">
                   <ref role="3cqZAo" node="3cj_LrgSJ2K" resolve="methodsToBeOverriden" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="5Gza0pNDcd8" role="3cqZAp">
+              <node concept="37vLTI" id="5Gza0pNDcda" role="3clFbG">
+                <node concept="37vLTw" id="5Gza0pNDcdd" role="37vLTJ">
+                  <ref role="3cqZAo" node="3cj_LrgQbQf" resolve="parentConceptBehaviors" />
+                </node>
+                <node concept="2OqwBi" id="5Gza0pNDcde" role="37vLTx">
+                  <node concept="37vLTw" id="5Gza0pNDcdh" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3cj_LrgQbQf" resolve="parentConceptBehaviors" />
+                  </node>
+                  <node concept="ANE8D" id="5Gza0pNDcdi" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="5Gza0pNDcdj" role="3cqZAp">
+              <node concept="37vLTI" id="5Gza0pNDcdl" role="3clFbG">
+                <node concept="37vLTw" id="5Gza0pNDcdo" role="37vLTJ">
+                  <ref role="3cqZAo" node="3cj_LrgSJ2K" resolve="methodsToBeOverriden" />
+                </node>
+                <node concept="2OqwBi" id="5Gza0pNDcdp" role="37vLTx">
+                  <node concept="37vLTw" id="5Gza0pNDcds" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3cj_LrgSJ2K" resolve="methodsToBeOverriden" />
+                  </node>
+                  <node concept="ANE8D" id="5Gza0pNDcdt" role="2OqNvi" />
                 </node>
               </node>
             </node>
