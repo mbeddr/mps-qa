@@ -117,6 +117,9 @@
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -218,6 +221,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1196978630214" name="jetbrains.mps.lang.core.structure.IResolveInfo" flags="ngI" index="2Lv6Xg">
+        <property id="1196978656277" name="resolveInfo" index="2Lvdk3" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -258,6 +264,10 @@
       <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
         <child id="540871147943773366" name="argument" index="25WWJ7" />
       </concept>
+      <concept id="1226511727824" name="jetbrains.mps.baseLanguage.collections.structure.SetType" flags="in" index="2hMVRd">
+        <child id="1226511765987" name="elementType" index="2hN53Y" />
+      </concept>
+      <concept id="1226516258405" name="jetbrains.mps.baseLanguage.collections.structure.HashSetCreator" flags="nn" index="2i4dXS" />
       <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
         <child id="1151688676805" name="elementType" index="_ZDj9" />
       </concept>
@@ -278,9 +288,9 @@
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1160666733551" name="jetbrains.mps.baseLanguage.collections.structure.AddAllElementsOperation" flags="nn" index="X8dFx" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
-      <concept id="1167380149909" name="jetbrains.mps.baseLanguage.collections.structure.RemoveElementOperation" flags="nn" index="3dhRuq" />
       <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
       <concept id="7125221305512719026" name="jetbrains.mps.baseLanguage.collections.structure.CollectionType" flags="in" index="3vKaQO" />
+      <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
       <concept id="5686963296372573083" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerType" flags="in" index="3O5elB">
         <child id="5686963296372573084" name="elementType" index="3O5elw" />
       </concept>
@@ -563,22 +573,36 @@
                 </node>
               </node>
             </node>
+            <node concept="3cpWs8" id="5Gza0pNBAiG" role="3cqZAp">
+              <node concept="3cpWsn" id="5Gza0pNBAiJ" role="3cpWs9">
+                <property role="TrG5h" value="referenced" />
+                <property role="2Lvdk3" value="referenced" />
+                <node concept="2hMVRd" id="5Gza0pNBAiL" role="1tU5fm">
+                  <node concept="3Tqbb2" id="5Gza0pNBAiN" role="2hN53Y" />
+                </node>
+                <node concept="2ShNRf" id="5Gza0pNBAiO" role="33vP2m">
+                  <node concept="2i4dXS" id="5Gza0pNBAiQ" role="2ShVmc">
+                    <node concept="3Tqbb2" id="5Gza0pNBAiR" role="HW$YZ" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="2Gpval" id="5ILDA6EXtV4" role="3cqZAp">
               <node concept="2GrKxI" id="5ILDA6EXtV6" role="2Gsz3X">
                 <property role="TrG5h" value="reference" />
               </node>
               <node concept="3clFbS" id="5ILDA6EXtVa" role="2LFqv$">
                 <node concept="3clFbF" id="5ILDA6EXu37" role="3cqZAp">
-                  <node concept="2OqwBi" id="5ILDA6EXws0" role="3clFbG">
-                    <node concept="37vLTw" id="5ILDA6EXu36" role="2Oq$k0">
-                      <ref role="3cqZAo" node="5ILDA6EXqe2" resolve="errorStmts" />
+                  <node concept="2OqwBi" id="5Gza0pNBAjg" role="3clFbG">
+                    <node concept="37vLTw" id="5Gza0pNBAjj" role="2Oq$k0">
+                      <ref role="3cqZAo" node="5Gza0pNBAiJ" resolve="referenced" />
                     </node>
-                    <node concept="3dhRuq" id="5ILDA6EXyF8" role="2OqNvi">
-                      <node concept="2OqwBi" id="5ILDA6EX_bt" role="25WWJ7">
-                        <node concept="2GrUjf" id="5ILDA6EX$Xo" role="2Oq$k0">
+                    <node concept="TSZUe" id="5Gza0pNBAjk" role="2OqNvi">
+                      <node concept="2OqwBi" id="5Gza0pNBAjm" role="25WWJ7">
+                        <node concept="2GrUjf" id="5Gza0pNBAjp" role="2Oq$k0">
                           <ref role="2Gs0qQ" node="5ILDA6EXtV6" resolve="reference" />
                         </node>
-                        <node concept="3TrEf2" id="5ILDA6EXAni" role="2OqNvi">
+                        <node concept="3TrEf2" id="5Gza0pNBAjq" role="2OqNvi">
                           <ref role="3Tt5mk" to="tp5g:3VyMYUb6r1I" resolve="declaration" />
                         </node>
                       </node>
@@ -601,21 +625,37 @@
                 <ref role="3cqZAo" node="5ILDA6EXqe2" resolve="errorStmts" />
               </node>
               <node concept="3clFbS" id="5ILDA6EXHEc" role="2LFqv$">
-                <node concept="3clFbF" id="5ILDA6EXI4U" role="3cqZAp">
-                  <node concept="2OqwBi" id="5ILDA6EVLVa" role="3clFbG">
-                    <node concept="37vLTw" id="5ILDA6EVKZX" role="2Oq$k0">
-                      <ref role="3cqZAo" node="5ILDA6EXCd$" resolve="res" />
+                <node concept="3clFbJ" id="5Gza0pNBAlt" role="3cqZAp">
+                  <node concept="3fqX7Q" id="5Gza0pNBAlw" role="3clFbw">
+                    <node concept="2OqwBi" id="5Gza0pNBAly" role="3fr31v">
+                      <node concept="37vLTw" id="5Gza0pNBAl_" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5Gza0pNBAiJ" resolve="referenced" />
+                      </node>
+                      <node concept="3JPx81" id="5Gza0pNBAlA" role="2OqNvi">
+                        <node concept="2GrUjf" id="5Gza0pNBAlC" role="25WWJ7">
+                          <ref role="2Gs0qQ" node="5ILDA6EXHE8" resolve="errorStmt" />
+                        </node>
+                      </node>
                     </node>
-                    <node concept="TSZUe" id="5ILDA6EVMKS" role="2OqNvi">
-                      <node concept="2ShNRf" id="5ILDA6EVMT_" role="25WWJ7">
-                        <node concept="1pGfFk" id="5ILDA6EVNz7" role="2ShVmc">
-                          <property role="373rjd" value="true" />
-                          <ref role="37wK5l" to="zn9m:~Pair.&lt;init&gt;(java.lang.Object,java.lang.Object)" resolve="Pair" />
-                          <node concept="Xl_RD" id="5ILDA6EVO56" role="37wK5m">
-                            <property role="Xl_RC" value="The error report statement is not referenced in any test" />
-                          </node>
-                          <node concept="2GrUjf" id="5ILDA6EXIdX" role="37wK5m">
-                            <ref role="2Gs0qQ" node="5ILDA6EXHE8" resolve="errorStmt" />
+                  </node>
+                  <node concept="3clFbS" id="5Gza0pNBAlD" role="3clFbx">
+                    <node concept="3clFbF" id="5ILDA6EXI4U" role="3cqZAp">
+                      <node concept="2OqwBi" id="5ILDA6EVLVa" role="3clFbG">
+                        <node concept="37vLTw" id="5ILDA6EVKZX" role="2Oq$k0">
+                          <ref role="3cqZAo" node="5ILDA6EXCd$" resolve="res" />
+                        </node>
+                        <node concept="TSZUe" id="5ILDA6EVMKS" role="2OqNvi">
+                          <node concept="2ShNRf" id="5ILDA6EVMT_" role="25WWJ7">
+                            <node concept="1pGfFk" id="5ILDA6EVNz7" role="2ShVmc">
+                              <property role="373rjd" value="true" />
+                              <ref role="37wK5l" to="zn9m:~Pair.&lt;init&gt;(java.lang.Object,java.lang.Object)" resolve="Pair" />
+                              <node concept="Xl_RD" id="5ILDA6EVO56" role="37wK5m">
+                                <property role="Xl_RC" value="The error report statement is not referenced in any test" />
+                              </node>
+                              <node concept="2GrUjf" id="5ILDA6EXIdX" role="37wK5m">
+                                <ref role="2Gs0qQ" node="5ILDA6EXHE8" resolve="errorStmt" />
+                              </node>
+                            </node>
                           </node>
                         </node>
                       </node>
