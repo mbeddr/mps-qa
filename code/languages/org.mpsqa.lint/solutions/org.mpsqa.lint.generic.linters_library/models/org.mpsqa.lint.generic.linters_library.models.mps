@@ -269,6 +269,9 @@
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
+      <concept id="1225797177491" name="jetbrains.mps.baseLanguage.closures.structure.InvokeFunctionOperation" flags="nn" index="1Bd96e">
+        <child id="1225797361612" name="parameter" index="1BdPVh" />
+      </concept>
     </language>
     <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
       <concept id="361130699826193248" name="jetbrains.mps.lang.modelapi.structure.ModelPointer" flags="ng" index="1dCxOl">
@@ -1530,6 +1533,30 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="3$9W3co6S5b" role="3cqZAp">
+          <node concept="2OqwBi" id="3$9W3co6Suv" role="3clFbG">
+            <node concept="37vLTw" id="3$9W3co6S59" role="2Oq$k0">
+              <ref role="3cqZAo" node="3$9W3co6PVT" resolve="function" />
+            </node>
+            <node concept="1Bd96e" id="3$9W3co6SYp" role="2OqNvi">
+              <node concept="Xl_RD" id="3$9W3co6Tnp" role="1BdPVh">
+                <property role="Xl_RC" value=".mps" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="61xqYhFZYTS" role="3cqZAp">
+          <node concept="2OqwBi" id="61xqYhFZYTT" role="3clFbG">
+            <node concept="37vLTw" id="61xqYhFZYTU" role="2Oq$k0">
+              <ref role="3cqZAo" node="3$9W3co6PVT" resolve="function" />
+            </node>
+            <node concept="1Bd96e" id="61xqYhFZYTV" role="2OqNvi">
+              <node concept="Xl_RD" id="61xqYhFZYTW" role="1BdPVh">
+                <property role="Xl_RC" value=".model" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3J1_TO" id="3$9W3co6WGk" role="3cqZAp">
           <node concept="3uVAMA" id="3$9W3co6X7m" role="1zxBo5">
             <node concept="XOnhg" id="3$9W3co6X7n" role="1zc67B">
@@ -1607,11 +1634,16 @@
                               <property role="TrG5h" value="fileName" />
                               <node concept="17QB3L" id="61xqYhG1Uut" role="1tU5fm" />
                               <node concept="2OqwBi" id="61xqYhG1SH1" role="33vP2m">
-                                <node concept="37vLTw" id="61xqYhG1SH2" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="3$9W3co6PW9" resolve="file" />
-                                </node>
                                 <node concept="liA8E" id="61xqYhG1SH3" role="2OqNvi">
                                   <ref role="37wK5l" to="eoo2:~Path.toString()" resolve="toString" />
+                                </node>
+                                <node concept="2OqwBi" id="5UzqfwWO8Mo" role="2Oq$k0">
+                                  <node concept="37vLTw" id="61xqYhG1SH2" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="3$9W3co6PW9" resolve="file" />
+                                  </node>
+                                  <node concept="liA8E" id="5UzqfwWO8Mp" role="2OqNvi">
+                                    <ref role="37wK5l" to="eoo2:~Path.getFileName()" resolve="getFileName" />
+                                  </node>
                                 </node>
                               </node>
                             </node>
@@ -1624,9 +1656,9 @@
                                     <ref role="3cqZAo" node="61xqYhG1SH0" resolve="fileName" />
                                   </node>
                                   <node concept="liA8E" id="61xqYhG1XDz" role="2OqNvi">
-                                    <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
+                                    <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String)" resolve="startsWith" />
                                     <node concept="Xl_RD" id="61xqYhG1XD$" role="37wK5m">
-                                      <property role="Xl_RC" value="descriptorclasses" />
+                                      <property role="Xl_RC" value="aspectcps-" />
                                     </node>
                                   </node>
                                 </node>
@@ -2044,9 +2076,9 @@
                                           <ref role="3cqZAo" node="2Wh5DQ1xT1o" resolve="path1" />
                                         </node>
                                         <node concept="liA8E" id="1EJX3sM75YW" role="2OqNvi">
-                                          <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence)" resolve="replace" />
+                                          <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String)" resolve="replaceAll" />
                                           <node concept="Xl_RD" id="1EJX3sM77uW" role="37wK5m">
-                                            <property role="Xl_RC" value="\\" />
+                                            <property role="Xl_RC" value="\\\\" />
                                           </node>
                                           <node concept="Xl_RD" id="1EJX3sM7bbQ" role="37wK5m">
                                             <property role="Xl_RC" value="/" />
@@ -2068,9 +2100,9 @@
                                   <ref role="3cqZAo" node="2Wh5DQ1yl7X" resolve="path2" />
                                 </node>
                                 <node concept="liA8E" id="1EJX3sM7g39" role="2OqNvi">
-                                  <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence)" resolve="replace" />
+                                  <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String)" resolve="replaceAll" />
                                   <node concept="Xl_RD" id="1EJX3sM7g3a" role="37wK5m">
-                                    <property role="Xl_RC" value="\\" />
+                                    <property role="Xl_RC" value="\\\\" />
                                   </node>
                                   <node concept="Xl_RD" id="1EJX3sM7g3b" role="37wK5m">
                                     <property role="Xl_RC" value="/" />
