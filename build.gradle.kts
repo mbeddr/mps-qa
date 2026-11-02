@@ -5,13 +5,12 @@ import org.gradle.api.artifacts.ResolvedArtifact
 import java.util.*
 
 plugins {
-    id("de.itemis.mps.gradle.common") version "1.30.1.+"
-    id("download-jbr") version "1.30.1.+"
+    id("de.itemis.mps.gradle.common") version "1.32.0"
+    id("download-jbr") version "1.32.0"
     id("base")
     id("maven-publish")
-    id("co.riiid.gradle") version "0.4.2"
 
-    id("org.cyclonedx.bom") version "3.2.4"
+    id("org.cyclonedx.bom") version "3.5.1"
 }
 
 val jbrVers = "25.0.2-b329.117"
@@ -29,7 +28,7 @@ val ciBuild = if (System.getenv("CI") != null && System.getenv("CI").toBoolean()
     project.hasProperty("teamcity")
 }
 
-val mpsVersion = "2026.1"
+val mpsVersion = "9999.9"
 
 // Project versions
 val major = mpsVersion.substring(0, 4)
@@ -59,19 +58,21 @@ val treemap by configurations.creating { isTransitive = false }
 val jacoco by configurations.creating { isTransitive = false }
 
 dependencies {
-    mps("com.jetbrains:mps:$mpsVersion")
+     // Use the following dependency for published releases:
+    //   mps("com.jetbrains:mps:$mpsVersion")
+    mps("com.jetbrains.mps:mps-prerelease:263.6259.158")
     
-    plantuml("net.sourceforge.plantuml:plantuml-asl:1.2026.6")
+    plantuml("net.sourceforge.plantuml:plantuml-asl:1.2026.9")
 
-    baseLib("org.apache.commons:commons-lang3:3.20.0")
+    baseLib("org.apache.commons:commons-lang3:3.21.0")
     baseLib("commons-cli:commons-cli:1.11.0")
     baseLib("commons-io:commons-io:2.22.0")
 
     treemap("net.sf.jtreemap:jtreemap:1.1.3")
     treemap("net.sf.jtreemap:ktreemap:1.1.0-atlassian-01")
 
-    val asmVersion = "9.10.1"
-    val jacocoVersion = "0.8.15"
+    val asmVersion = "9.11.1"
+    val jacocoVersion = "0.8.16"
 
     jacoco("org.ow2.asm:asm:$asmVersion")
     jacoco("org.ow2.asm:asm-commons:$asmVersion")
@@ -81,7 +82,7 @@ dependencies {
     jacoco("org.jacoco:org.jacoco.core:$jacocoVersion")
     jacoco("org.jacoco:org.jacoco.report:$jacocoVersion")
 
-    antLib("org.apache.ant:ant-junit:1.10.17")
+    antLib("org.apache.ant:ant-junit:1.10.18")
     antLib("org.jacoco:org.jacoco.ant:$jacocoVersion")
 }
 

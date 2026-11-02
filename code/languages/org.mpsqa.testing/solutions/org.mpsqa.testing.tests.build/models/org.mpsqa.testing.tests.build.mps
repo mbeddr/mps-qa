@@ -22,6 +22,10 @@
       </concept>
       <concept id="6593674873639474400" name="jetbrains.mps.build.mps.tests.structure.BuildMps_TestModules_Options" flags="ng" index="24cAiW">
         <child id="6593674873639478221" name="haltonfailure" index="24c_eh" />
+        <child id="6593674873635848987" name="requiredPlugins" index="24YFd7" />
+      </concept>
+      <concept id="6593674873635848984" name="jetbrains.mps.build.mps.tests.structure.RequiredPlugin" flags="ng" index="24YFd4">
+        <reference id="6593674873635848985" name="plugin" index="24YFd5" />
       </concept>
       <concept id="4005526075820600484" name="jetbrains.mps.build.mps.tests.structure.BuildModuleTestsPlugin" flags="ng" index="1gjT0q" />
     </language>
@@ -42,6 +46,10 @@
         <child id="8618885170173601778" name="tail" index="2Ry0An" />
       </concept>
       <concept id="6647099934206700647" name="jetbrains.mps.build.structure.BuildJavaPlugin" flags="ng" index="10PD9b" />
+      <concept id="7181125477683417252" name="jetbrains.mps.build.structure.BuildExternalLayoutDependency" flags="ng" index="13uUGR">
+        <reference id="7181125477683417255" name="layout" index="13uUGO" />
+        <child id="7181125477683417254" name="artifacts" index="13uUGP" />
+      </concept>
       <concept id="7389400916848136194" name="jetbrains.mps.build.structure.BuildFolderMacro" flags="ng" index="398rNT">
         <child id="7389400916848144618" name="defaultPath" index="398pKh" />
       </concept>
@@ -134,6 +142,9 @@
           <node concept="3Mxwew" id="5DtatEId8ap" role="3MwsjC">
             <property role="3MwjfP" value="true" />
           </node>
+        </node>
+        <node concept="24YFd4" id="6ImJfr$bTto" role="24YFd7">
+          <ref role="24YFd5" to="ffeo:7dOUAS9Gb_h" resolve="com.intellij.platform.vcs" />
         </node>
       </node>
     </node>
@@ -380,6 +391,12 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="13uUGR" id="1OBPUK59oqw" role="1l3spa">
+      <ref role="13uUGO" to="ffeo:6eCuTcwOnJO" resolve="IDEA" />
+      <node concept="398BVA" id="1OBPUK59oqx" role="13uUGP">
+        <ref role="398BVh" node="2WwuhUZ0zn6" resolve="mps.home" />
       </node>
     </node>
   </node>
