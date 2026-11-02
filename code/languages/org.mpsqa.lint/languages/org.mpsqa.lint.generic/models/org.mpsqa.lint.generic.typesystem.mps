@@ -135,6 +135,7 @@
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
+      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
         <child id="1070534760952" name="componentType" index="10Q1$1" />
       </concept>
@@ -179,6 +180,9 @@
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
@@ -378,7 +382,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="6138838330738724256" name="jetbrains.mps.lang.smodel.structure.NodePointer_GetModelOperation" flags="ng" index="202$lf" />
       <concept id="4705942098322609812" name="jetbrains.mps.lang.smodel.structure.EnumMember_IsOperation" flags="ng" index="21noJN">
         <child id="4705942098322609813" name="member" index="21noJM" />
       </concept>
@@ -388,7 +391,6 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
-      <concept id="5045161044515397667" name="jetbrains.mps.lang.smodel.structure.Node_PointerOperation" flags="ng" index="iZEcu" />
       <concept id="7400021826771268254" name="jetbrains.mps.lang.smodel.structure.SNodePointerType" flags="ig" index="2sp9CU">
         <reference id="7400021826771268269" name="concept" index="2sp9C9" />
       </concept>
@@ -3120,6 +3122,20 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="4107egRDXyT" role="3cqZAp">
+          <node concept="3cpWsn" id="4107egRDXyW" role="3cpWs9">
+            <property role="TrG5h" value="scriptName" />
+            <node concept="17QB3L" id="4107egRDXyR" role="1tU5fm" />
+            <node concept="2OqwBi" id="4107egRE6N_" role="33vP2m">
+              <node concept="37vLTw" id="4107egRE2Dk" role="2Oq$k0">
+                <ref role="3cqZAo" node="2dSiT1hQoRQ" resolve="script" />
+              </node>
+              <node concept="3TrcHB" id="4107egRE94F" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="y1G8y67DG7" role="3cqZAp">
           <node concept="3cpWsn" id="y1G8y67DG8" role="3cpWs9">
             <property role="TrG5h" value="clazzName" />
@@ -3170,6 +3186,38 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="4107egRBihP" role="3cqZAp">
+          <node concept="3cpWsn" id="4107egRBihS" role="3cpWs9">
+            <property role="TrG5h" value="moduleRuntimeFound" />
+            <node concept="10P_77" id="4107egRBihN" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4107egRC9JE" role="3cqZAp">
+          <node concept="3cpWsn" id="4107egRC9JF" role="3cpWs9">
+            <property role="TrG5h" value="scriptModuleRef" />
+            <node concept="3uibUv" id="4107egRC8zE" role="1tU5fm">
+              <ref role="3uigEE" to="lui2:~SModuleReference" resolve="SModuleReference" />
+            </node>
+            <node concept="2OqwBi" id="4107egRC9JG" role="33vP2m">
+              <node concept="liA8E" id="4107egRC9JH" role="2OqNvi">
+                <ref role="37wK5l" to="lui2:~SModule.getModuleReference()" resolve="getModuleReference" />
+              </node>
+              <node concept="2OqwBi" id="4107egRC9JI" role="2Oq$k0">
+                <node concept="2JrnkZ" id="4107egRC9JJ" role="2Oq$k0">
+                  <node concept="2OqwBi" id="4107egRC9JK" role="2JrQYb">
+                    <node concept="37vLTw" id="4107egRC9JL" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2dSiT1hQoRQ" resolve="script" />
+                    </node>
+                    <node concept="I4A8Y" id="4107egRC9JM" role="2OqNvi" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="4107egRC9JN" role="2OqNvi">
+                  <ref role="37wK5l" to="mhbf:~SModel.getModule()" resolve="getModule" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="1m8n9fdohx6" role="3cqZAp">
           <node concept="2OqwBi" id="1m8n9fdoy57" role="3clFbG">
             <node concept="2YIFZM" id="1m8n9fdomnl" role="2Oq$k0">
@@ -3189,21 +3237,8 @@
               <node concept="2YIFZM" id="1m8n9fdp1hG" role="37wK5m">
                 <ref role="37wK5l" to="1ctc:~Stream.of(java.lang.Object)" resolve="of" />
                 <ref role="1Pybhc" to="1ctc:~Stream" resolve="Stream" />
-                <node concept="2OqwBi" id="1m8n9fdpC2h" role="37wK5m">
-                  <node concept="2JrnkZ" id="1m8n9fdpzYj" role="2Oq$k0">
-                    <node concept="2OqwBi" id="1m8n9fdpqS7" role="2JrQYb">
-                      <node concept="2OqwBi" id="1m8n9fdpnmZ" role="2Oq$k0">
-                        <node concept="37vLTw" id="1m8n9fdp3rO" role="2Oq$k0">
-                          <ref role="3cqZAo" node="2dSiT1hQoRQ" resolve="script" />
-                        </node>
-                        <node concept="iZEcu" id="1m8n9fdppIj" role="2OqNvi" />
-                      </node>
-                      <node concept="202$lf" id="1m8n9fdpt6R" role="2OqNvi" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="1m8n9fdpE7Z" role="2OqNvi">
-                    <ref role="37wK5l" to="mhbf:~SModelReference.getModuleReference()" resolve="getModuleReference" />
-                  </node>
+                <node concept="37vLTw" id="4107egRC9JO" role="37wK5m">
+                  <ref role="3cqZAo" node="4107egRC9JF" resolve="scriptModuleRef" />
                 </node>
               </node>
               <node concept="1bVj0M" id="1m8n9fdpJks" role="37wK5m">
@@ -3212,6 +3247,16 @@
                   <node concept="2jxLKc" id="1m8n9fdpJkC" role="1tU5fm" />
                 </node>
                 <node concept="3clFbS" id="1m8n9fdpJl3" role="1bW5cS">
+                  <node concept="3clFbF" id="4107egRBGLe" role="3cqZAp">
+                    <node concept="37vLTI" id="4107egRBKc5" role="3clFbG">
+                      <node concept="3clFbT" id="4107egRBO1u" role="37vLTx">
+                        <property role="3clFbU" value="true" />
+                      </node>
+                      <node concept="37vLTw" id="4107egRBGLc" role="37vLTJ">
+                        <ref role="3cqZAo" node="4107egRBihS" resolve="moduleRuntimeFound" />
+                      </node>
+                    </node>
+                  </node>
                   <node concept="3J1_TO" id="6EiPrTPA81u" role="3cqZAp">
                     <node concept="3clFbS" id="6EiPrTPA81v" role="1zxBo7">
                       <node concept="3clFbF" id="6EiPrTPA9W3" role="3cqZAp">
@@ -3253,13 +3298,8 @@
                                       <node concept="Xl_RD" id="6EiPrTPAvnw" role="3uHU7B">
                                         <property role="Xl_RC" value="Class for linter '" />
                                       </node>
-                                      <node concept="2OqwBi" id="6EiPrTPAKzZ" role="3uHU7w">
-                                        <node concept="37vLTw" id="6EiPrTPAJvK" role="2Oq$k0">
-                                          <ref role="3cqZAo" node="2dSiT1hQoRQ" resolve="script" />
-                                        </node>
-                                        <node concept="3TrcHB" id="6EiPrTPAMqt" role="2OqNvi">
-                                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                                        </node>
+                                      <node concept="37vLTw" id="6EiPrTPAJvK" role="3uHU7w">
+                                        <ref role="3cqZAo" node="4107egRDXyW" resolve="scriptName" />
                                       </node>
                                     </node>
                                   </node>
@@ -3299,6 +3339,57 @@
           </node>
         </node>
         <node concept="3clFbH" id="y1G8y68sQB" role="3cqZAp" />
+        <node concept="3clFbJ" id="4107egRBRCX" role="3cqZAp">
+          <node concept="3clFbS" id="4107egRBRCZ" role="3clFbx">
+            <node concept="3clFbF" id="4107egRC1Xz" role="3cqZAp">
+              <node concept="2OqwBi" id="4107egRC1X_" role="3clFbG">
+                <node concept="37vLTw" id="4107egRC1XA" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6srt3FwKxFo" resolve="resultList" />
+                </node>
+                <node concept="TSZUe" id="4107egRC1XB" role="2OqNvi">
+                  <node concept="2ry78W" id="4107egRC1XC" role="25WWJ7">
+                    <ref role="2ryb1Q" to="qqy:19GnlsUkKsu" resolve="Result" />
+                    <node concept="2r$n1x" id="4107egRC1XD" role="2r_Bvh">
+                      <ref role="2r$qp6" to="qqy:19GnlsUkKsI" resolve="message" />
+                      <node concept="2YIFZM" id="4107egRCH4L" role="2r_lH1">
+                        <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
+                        <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                        <node concept="Xl_RD" id="4107egRC1XH" role="37wK5m">
+                          <property role="Xl_RC" value="Module runtime for module '%s', containing linter script '%s' could not be found. Make sure that the model is generated and the module can be correctly loaded." />
+                        </node>
+                        <node concept="37vLTw" id="4107egRDyvf" role="37wK5m">
+                          <ref role="3cqZAo" node="4107egRC9JF" resolve="scriptModuleRef" />
+                        </node>
+                        <node concept="37vLTw" id="4107egREjkx" role="37wK5m">
+                          <ref role="3cqZAo" node="4107egRDXyW" resolve="scriptName" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2r$n1x" id="4107egRC1XL" role="2r_Bvh">
+                      <ref role="2r$qp6" to="qqy:3ghOW5HS78o" resolve="node" />
+                      <node concept="37vLTw" id="4107egRC1XM" role="2r_lH1">
+                        <ref role="3cqZAo" node="2dSiT1hQoRQ" resolve="script" />
+                      </node>
+                    </node>
+                    <node concept="2r$n1x" id="4107egRC1XN" role="2r_Bvh">
+                      <ref role="2r$qp6" to="qqy:3ghOW5H_ihW" resolve="location" />
+                      <node concept="10Nm6u" id="4107egRC1XO" role="2r_lH1" />
+                    </node>
+                    <node concept="2r$n1x" id="4107egRC1XP" role="2r_Bvh">
+                      <ref role="2r$qp6" to="qqy:19GnlsUkK_C" resolve="quickfix" />
+                      <node concept="10Nm6u" id="4107egRC1XQ" role="2r_lH1" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="4107egRBW4H" role="3clFbw">
+            <node concept="37vLTw" id="4107egRC00l" role="3fr31v">
+              <ref role="3cqZAo" node="4107egRBihS" resolve="moduleRuntimeFound" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbJ" id="1m8n9fdrkkf" role="3cqZAp">
           <node concept="3clFbS" id="1m8n9fdrkkh" role="3clFbx">
             <node concept="3cpWs6" id="6EiPrTPCyAa" role="3cqZAp">
