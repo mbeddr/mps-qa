@@ -253,11 +253,6 @@
             <ref role="3bR37D" to="390y:3mJ3k6P7dwI" resolve="org.mpsqa.lint.generic.runtime" />
           </node>
         </node>
-        <node concept="1SiIV0" id="4aUJI_dq$N0" role="3bR37C">
-          <node concept="3bR9La" id="4aUJI_dq$N1" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
-          </node>
-        </node>
       </node>
     </node>
     <node concept="22LTRH" id="2JVMSZMFYqK" role="1hWBAP">
