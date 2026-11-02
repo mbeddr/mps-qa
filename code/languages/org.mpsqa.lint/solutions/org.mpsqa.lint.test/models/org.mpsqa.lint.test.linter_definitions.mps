@@ -134,5 +134,94 @@
       <property role="3qxsSb" value="r:71460244-caa9-40a3-9156-72ee6cd6ab55" />
     </node>
   </node>
+  <node concept="1MIHA_" id="5b9LNd0lkfn">
+    <property role="TrG5h" value="evaluated_script_two_saved_violations" />
+    <property role="3dJkfZ" value="true" />
+    <node concept="1Pa9Pv" id="5b9LNd0lkfo" role="1MIJl8">
+      <node concept="1PaTwC" id="5b9LNd0lkfp" role="1PaQFQ">
+        <node concept="3oM_SD" id="5b9LNd0lkfE" role="1PaTwD">
+          <property role="3oM_SC" value="Produces" />
+        </node>
+        <node concept="3oM_SD" id="5b9LNd0lkfF" role="1PaTwD">
+          <property role="3oM_SC" value="two" />
+        </node>
+        <node concept="3oM_SD" id="5b9LNd0lkfG" role="1PaTwD">
+          <property role="3oM_SC" value="errors" />
+        </node>
+        <node concept="3oM_SD" id="5b9LNd0lkfH" role="1PaTwD">
+          <property role="3oM_SC" value="with" />
+        </node>
+        <node concept="3oM_SD" id="5b9LNd0lkfI" role="1PaTwD">
+          <property role="3oM_SC" value="constant" />
+        </node>
+        <node concept="3oM_SD" id="5b9LNd0lkfJ" role="1PaTwD">
+          <property role="3oM_SC" value="strings." />
+        </node>
+        <node concept="3oM_SD" id="5b9LNd0lkfK" role="1PaTwD">
+          <property role="3oM_SC" value="Both" />
+        </node>
+        <node concept="3oM_SD" id="5b9LNd0lkfL" role="1PaTwD">
+          <property role="3oM_SC" value="are" />
+        </node>
+        <node concept="3oM_SD" id="5b9LNd0lkfM" role="1PaTwD">
+          <property role="3oM_SC" value="saved" />
+        </node>
+        <node concept="3oM_SD" id="5b9LNd0lkfN" role="1PaTwD">
+          <property role="3oM_SC" value="as" />
+        </node>
+        <node concept="3oM_SD" id="5b9LNd0lkfO" role="1PaTwD">
+          <property role="3oM_SC" value="known" />
+        </node>
+        <node concept="3oM_SD" id="5b9LNd0lkfP" role="1PaTwD">
+          <property role="3oM_SC" value="violations," />
+        </node>
+        <node concept="3oM_SD" id="5b9LNd0lkfQ" role="1PaTwD">
+          <property role="3oM_SC" value="so" />
+        </node>
+        <node concept="3oM_SD" id="5b9LNd0lkfR" role="1PaTwD">
+          <property role="3oM_SC" value="checking" />
+        </node>
+        <node concept="3oM_SD" id="5b9LNd0lkfS" role="1PaTwD">
+          <property role="3oM_SC" value="this" />
+        </node>
+        <node concept="3oM_SD" id="5b9LNd0lkfT" role="1PaTwD">
+          <property role="3oM_SC" value="model" />
+        </node>
+        <node concept="3oM_SD" id="5b9LNd0lkfU" role="1PaTwD">
+          <property role="3oM_SC" value="reports" />
+        </node>
+        <node concept="3oM_SD" id="5b9LNd0lkfV" role="1PaTwD">
+          <property role="3oM_SC" value="nothing." />
+        </node>
+      </node>
+    </node>
+    <node concept="1MIXq2" id="5b9LNd0lkfx" role="14J5yK">
+      <node concept="3clFbS" id="5b9LNd0lkfy" role="2VODD2">
+        <node concept="3cpWs6" id="5b9LNd0lkfz" role="3cqZAp">
+          <node concept="2ShNRf" id="5b9LNd0lkf$" role="3cqZAk">
+            <node concept="Tc6Ow" id="5b9LNd0lkf_" role="2ShVmc">
+              <node concept="17QB3L" id="5b9LNd0lkfA" role="HW$YZ" />
+              <node concept="Xl_RD" id="5b9LNd0lkfB" role="HW$Y0">
+                <property role="Xl_RC" value="demo error" />
+              </node>
+              <node concept="Xl_RD" id="5b9LNd0lkfC" role="HW$Y0">
+                <property role="Xl_RC" value="another error" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3dgnlM" id="5b9LNd0lkfD" role="3dgnlQ">
+      <property role="3dgnlN" value="demo error" />
+      <property role="3qxsY3" value="5965518204365521879" />
+      <property role="3qxsSb" value="r:71460244-caa9-40a3-9156-72ee6cd6ab55" />
+    </node>
+    <node concept="3dgnlM" id="5b9LNd0lkfW" role="3dgnlQ">
+      <property role="3dgnlN" value="another error" />
+      <property role="3qxsY3" value="5965518204365521879" />
+      <property role="3qxsSb" value="r:71460244-caa9-40a3-9156-72ee6cd6ab55" />
+    </node>
+  </node>
 </model>
 

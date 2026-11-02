@@ -21,7 +21,7 @@
     <import index="b659" ref="r:654c665e-d426-4acf-8be1-49f83baabbb4(org.mpsqa.lint.generic.behavior)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="kqrb" ref="r:608506d3-3472-4b1d-929c-779e49cabb27(org.mpsqa.lint.generic.typesystem)" />
-    <import index="z1c4" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
+    <import index="kcik" ref="r:71460244-caa9-40a3-9156-72ee6cd6ab55(org.mpsqa.lint.test.linter_definitions)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -110,9 +110,6 @@
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
-      <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
-        <reference id="1116615189566" name="classifier" index="3VsUkX" />
-      </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
@@ -132,6 +129,9 @@
       </concept>
     </language>
     <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
+      <concept id="4733039728785194814" name="jetbrains.mps.lang.modelapi.structure.NamedNodeReference" flags="ng" index="ZC_QK">
+        <reference id="7256306938026143658" name="target" index="2aWVGs" />
+      </concept>
       <concept id="361130699826193248" name="jetbrains.mps.lang.modelapi.structure.ModelPointer" flags="ng" index="1dCxOl">
         <property id="1863527487546097494" name="modelId" index="1XweGQ" />
         <child id="679099339649067980" name="name" index="1j$8Uc" />
@@ -151,6 +151,9 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
+      <concept id="7400021826774799413" name="jetbrains.mps.lang.smodel.structure.NodePointerExpression" flags="ng" index="2tJFMh">
+        <child id="7400021826774799510" name="ref" index="2tJFKM" />
+      </concept>
       <concept id="4065387505485742666" name="jetbrains.mps.lang.smodel.structure.ModelPointer_ResolveOperation" flags="ng" index="2yCiCJ" />
       <concept id="4065387505485742749" name="jetbrains.mps.lang.smodel.structure.AbstractPointerResolveOperation" flags="ng" index="2yCiFS">
         <child id="3648723375513868575" name="repositoryArg" index="Vysub" />
@@ -158,6 +161,7 @@
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
         <child id="6750920497477046361" name="conceptArgument" index="3MHsoP" />
       </concept>
+      <concept id="3648723375513868532" name="jetbrains.mps.lang.smodel.structure.NodePointer_ResolveOperation" flags="ng" index="Vyspw" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -505,57 +509,17 @@
             <node concept="3Tqbb2" id="4aUJI_cPEHo" role="1tU5fm">
               <ref role="ehGHo" to="a1af:2dSiT1hKD8P" resolve="CheckableScript" />
             </node>
-            <node concept="2OqwBi" id="4aUJI_cPEHp" role="33vP2m">
-              <node concept="2OqwBi" id="4aUJI_cPEHq" role="2Oq$k0">
-                <node concept="2OqwBi" id="4aUJI_cPEHr" role="2Oq$k0">
-                  <node concept="1Xw6AR" id="4aUJI_cPEHs" role="2Oq$k0">
-                    <node concept="1dCxOl" id="4aUJI_cPEHt" role="1XwpL7">
-                      <property role="1XweGQ" value="r:71460244-caa9-40a3-9156-72ee6cd6ab55" />
-                      <node concept="1j_P7g" id="4aUJI_cPEHu" role="1j$8Uc">
-                        <property role="1j_P7h" value="org.mpsqa.lint.test.linter_definitions" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="2yCiCJ" id="4aUJI_cPEHv" role="2OqNvi">
-                    <node concept="2OqwBi" id="4aUJI_cPEHw" role="Vysub">
-                      <node concept="1jxXqW" id="4aUJI_cPEHx" role="2Oq$k0" />
-                      <node concept="liA8E" id="4aUJI_cPEHy" role="2OqNvi">
-                        <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="2RRcyG" id="4aUJI_cPEHz" role="2OqNvi">
-                  <node concept="chp4Y" id="4aUJI_cPEH$" role="3MHsoP">
-                    <ref role="cht4Q" to="a1af:2dSiT1hKD8P" resolve="CheckableScript" />
-                  </node>
+            <node concept="2OqwBi" id="5b9LNd0lkWJ" role="33vP2m">
+              <node concept="2tJFMh" id="5b9LNd0lkWG" role="2Oq$k0">
+                <node concept="ZC_QK" id="5b9LNd0lkWH" role="2tJFKM">
+                  <ref role="2aWVGs" to="kcik:5b9LNd0lkfn" resolve="evaluated_script_two_saved_violations" />
                 </node>
               </node>
-              <node concept="1z4cxt" id="4aUJI_cPEH_" role="2OqNvi">
-                <node concept="1bVj0M" id="4aUJI_cPEHA" role="23t8la">
-                  <node concept="3clFbS" id="4aUJI_cPEHB" role="1bW5cS">
-                    <node concept="3clFbF" id="4aUJI_cPEHC" role="3cqZAp">
-                      <node concept="2OqwBi" id="4aUJI_cPEHD" role="3clFbG">
-                        <node concept="2OqwBi" id="4aUJI_cPEHE" role="2Oq$k0">
-                          <node concept="37vLTw" id="4aUJI_cPEHF" role="2Oq$k0">
-                            <ref role="3cqZAo" node="4aUJI_cPEHJ" resolve="it" />
-                          </node>
-                          <node concept="3TrcHB" id="4aUJI_cPEHG" role="2OqNvi">
-                            <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                          </node>
-                        </node>
-                        <node concept="liA8E" id="4aUJI_cPEHH" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
-                          <node concept="Xl_RD" id="4aUJI_cPEHI" role="37wK5m">
-                            <property role="Xl_RC" value="simple_script_two_constant_violations" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="gl6BB" id="4aUJI_cPEHJ" role="1bW2Oz">
-                    <property role="TrG5h" value="it" />
-                    <node concept="2jxLKc" id="4aUJI_cPEHK" role="1tU5fm" />
+              <node concept="Vyspw" id="5b9LNd0lkWI" role="2OqNvi">
+                <node concept="2OqwBi" id="4aUJI_cPEHw" role="Vysub">
+                  <node concept="1jxXqW" id="4aUJI_cPEHx" role="2Oq$k0" />
+                  <node concept="liA8E" id="4aUJI_cPEHy" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                   </node>
                 </node>
               </node>
@@ -571,28 +535,10 @@
               </node>
             </node>
             <node concept="2YIFZM" id="4aUJI_cPELJ" role="33vP2m">
-              <ref role="1Pybhc" to="kqrb:y1G8y6adzS" resolve="CheckingUtil" />
-              <ref role="37wK5l" to="kqrb:y1G8y6ad_x" resolve="check" />
+              <ref role="1Pybhc" to="kqrb:6gY6GEDvRz4" resolve="CheckingFacade" />
+              <ref role="37wK5l" to="kqrb:6gY6GEDvR$Z" resolve="checkScript" />
               <node concept="37vLTw" id="4aUJI_cPELK" role="37wK5m">
                 <ref role="3cqZAo" node="4aUJI_cPEHn" resolve="script" />
-              </node>
-              <node concept="37vLTw" id="4aUJI_cPELL" role="37wK5m">
-                <ref role="3cqZAo" node="4aUJI_cPEHn" resolve="script" />
-              </node>
-              <node concept="2OqwBi" id="4aUJI_cPEN6" role="37wK5m">
-                <node concept="1jxXqW" id="4aUJI_cPEN7" role="2Oq$k0" />
-                <node concept="liA8E" id="4aUJI_cPEN8" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getComponent(java.lang.Class)" resolve="getComponent" />
-                  <node concept="3VsKOn" id="4aUJI_cPEN9" role="37wK5m">
-                    <ref role="3VsUkX" to="z1c4:~MPSProject" resolve="MPSProject" />
-                  </node>
-                </node>
-              </node>
-              <node concept="37vLTw" id="4aUJI_cPELO" role="37wK5m">
-                <ref role="3cqZAo" node="4aUJI_cPEHn" resolve="script" />
-              </node>
-              <node concept="Xl_RD" id="4aUJI_cPELP" role="37wK5m">
-                <property role="Xl_RC" value="simple_script_two_constant_violations" />
               </node>
             </node>
           </node>
