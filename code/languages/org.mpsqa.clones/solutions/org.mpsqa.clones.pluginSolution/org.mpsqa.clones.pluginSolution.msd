@@ -20,6 +20,7 @@
     <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
     <dependency reexport="false">56f134c7-a829-428d-9119-715369c69768(org.mpsqa.treemap.lib)</dependency>
     <dependency reexport="false">56cfcf05-92e4-4822-8126-2ea0e0cece6b(org.mpsqa.clones.config)</dependency>
+    <dependency reexport="false">3867cfe1-8589-4ef1-9b3c-48b17d473edf(org.mpsqa.base.utils)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
@@ -36,6 +37,7 @@
     <language slang="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" version="5" />
     <language slang="l:982eb8df-2c96-4bd7-9963-11712ea622e5:jetbrains.mps.lang.resources" version="4" />
     <language slang="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" version="19" />
+    <language slang="l:1a8554c4-eb84-43ba-8c34-6f0d90c6e75a:jetbrains.mps.lang.smodel.query" version="3" />
     <language slang="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" version="0" />
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
   </languageVersions>
@@ -48,6 +50,7 @@
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
+    <module reference="3867cfe1-8589-4ef1-9b3c-48b17d473edf(org.mpsqa.base.utils)" version="0" />
     <module reference="56cfcf05-92e4-4822-8126-2ea0e0cece6b(org.mpsqa.clones.config)" version="0" />
     <module reference="48b1eeb1-bf01-4e84-8d12-d2fc8bf60fb7(org.mpsqa.clones.core)" version="0" />
     <module reference="6e30e90d-e786-4b8b-9ecd-fe6904eef946(org.mpsqa.clones.pluginSolution)" version="0" />
