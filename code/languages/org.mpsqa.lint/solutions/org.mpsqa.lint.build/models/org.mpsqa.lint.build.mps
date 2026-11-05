@@ -253,6 +253,21 @@
             <ref role="3bR37D" to="390y:3mJ3k6P7dwI" resolve="org.mpsqa.lint.generic.runtime" />
           </node>
         </node>
+        <node concept="1SiIV0" id="7UWqmCOqi8z" role="3bR37C">
+          <node concept="3bR9La" id="7UWqmCOqi8$" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7UWqmCOqi8_" role="3bR37C">
+          <node concept="3bR9La" id="7UWqmCOqi8A" role="1SiIV1">
+            <ref role="3bR37D" to="390y:3ywQ_KXEkYC" resolve="org.mpsqa.lint.generic.linters_library" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7UWqmCOqi8B" role="3bR37C">
+          <node concept="3bR9La" id="7UWqmCOqi8C" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="22LTRH" id="2JVMSZMFYqK" role="1hWBAP">
