@@ -3397,7 +3397,7 @@
                         <node concept="3clFbF" id="1yEzLKWp0GM" role="3cqZAp">
                           <node concept="2YIFZM" id="1yEzLKWp7em" role="3clFbG">
                             <ref role="37wK5l" to="umn4:1yEzLKWoK3S" resolve="openNode" />
-                            <ref role="1Pybhc" to="umn4:1yEzLKWoAZ8" resolve="NavigatorUtils" />
+                            <ref role="1Pybhc" to="umn4:1yEzLKWoAZ8" resolve="EditorNavigatorUtils" />
                             <node concept="37vLTw" id="1yEzLKWpbrZ" role="37wK5m">
                               <ref role="3cqZAo" node="E3aAvrJysa" resolve="project" />
                             </node>
@@ -3585,7 +3585,7 @@
                         <node concept="3clFbF" id="1yEzLKWpnhv" role="3cqZAp">
                           <node concept="2YIFZM" id="1yEzLKWpnhw" role="3clFbG">
                             <ref role="37wK5l" to="umn4:1yEzLKWoK3S" resolve="openNode" />
-                            <ref role="1Pybhc" to="umn4:1yEzLKWoAZ8" resolve="NavigatorUtils" />
+                            <ref role="1Pybhc" to="umn4:1yEzLKWoAZ8" resolve="EditorNavigatorUtils" />
                             <node concept="37vLTw" id="1yEzLKWpnhx" role="37wK5m">
                               <ref role="3cqZAo" node="E3aAvrJysa" resolve="project" />
                             </node>
@@ -3665,7 +3665,7 @@
                             <node concept="3clFbF" id="7_40vCYIyWm" role="3cqZAp">
                               <node concept="2YIFZM" id="7_40vCYIyWn" role="3clFbG">
                                 <ref role="37wK5l" to="umn4:1yEzLKWoK3S" resolve="openNode" />
-                                <ref role="1Pybhc" to="umn4:1yEzLKWoAZ8" resolve="NavigatorUtils" />
+                                <ref role="1Pybhc" to="umn4:1yEzLKWoAZ8" resolve="EditorNavigatorUtils" />
                                 <node concept="37vLTw" id="7_40vCYIyWo" role="37wK5m">
                                   <ref role="3cqZAo" node="E3aAvrJysa" resolve="project" />
                                 </node>

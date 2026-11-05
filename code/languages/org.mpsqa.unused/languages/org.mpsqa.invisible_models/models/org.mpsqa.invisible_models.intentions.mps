@@ -324,7 +324,7 @@
             <node concept="3clFbF" id="7UIPCWlsZ7" role="3cqZAp">
               <node concept="2YIFZM" id="7UIPCWlvPM" role="3clFbG">
                 <ref role="37wK5l" to="umn4:7UIPCWkGYF" resolve="openNodeAndExecuteHandlerOnceEditorReady" />
-                <ref role="1Pybhc" to="umn4:1yEzLKWoAZ8" resolve="NavigatorUtils" />
+                <ref role="1Pybhc" to="umn4:1yEzLKWoAZ8" resolve="EditorNavigatorUtils" />
                 <node concept="37vLTw" id="7UIPCWlvQD" role="37wK5m">
                   <ref role="3cqZAo" node="48uyNAvaEli" resolve="project" />
                 </node>

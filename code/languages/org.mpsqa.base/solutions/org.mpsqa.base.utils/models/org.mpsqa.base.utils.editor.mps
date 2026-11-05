@@ -90,7 +90,7 @@
     </language>
   </registry>
   <node concept="312cEu" id="1yEzLKWoAZ8">
-    <property role="TrG5h" value="NavigatorUtils" />
+    <property role="TrG5h" value="EditorNavigatorUtils" />
     <node concept="2tJIrI" id="1yEzLKWoAZ_" role="jymVt" />
     <node concept="2YIFZL" id="1yEzLKWoB0f" role="jymVt">
       <property role="TrG5h" value="openNode" />
