@@ -147,6 +147,7 @@
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
+      <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -1139,7 +1140,48 @@
           <property role="3oM_SC" value="'build/mps'" />
         </node>
         <node concept="3oM_SD" id="2CaUdg_YVYe" role="1PaTwD">
-          <property role="3oM_SC" value="directories)" />
+          <property role="3oM_SC" value="directories)." />
+        </node>
+      </node>
+      <node concept="1PaTwC" id="4nv8uBLshKw" role="1PaQFQ">
+        <node concept="3oM_SD" id="4nv8uBLshKv" role="1PaTwD">
+          <property role="3oM_SC" value="" />
+        </node>
+        <node concept="3oM_SD" id="4nv8uBLshL1" role="1PaTwD">
+          <property role="3oM_SC" value="" />
+        </node>
+        <node concept="3oM_SD" id="4nv8uBLshL3" role="1PaTwD">
+          <property role="3oM_SC" value="" />
+        </node>
+        <node concept="3oM_SD" id="4nv8uBLshL4" role="1PaTwD">
+          <property role="3oM_SC" value="" />
+        </node>
+        <node concept="3oM_SD" id="4nv8uBLshL5" role="1PaTwD">
+          <property role="3oM_SC" value="" />
+        </node>
+        <node concept="3oM_SD" id="4nv8uBLshL8" role="1PaTwD">
+          <property role="3oM_SC" value="An" />
+        </node>
+        <node concept="3oM_SD" id="4nv8uBLshL9" role="1PaTwD">
+          <property role="3oM_SC" value="empty" />
+        </node>
+        <node concept="3oM_SD" id="4nv8uBLshLa" role="1PaTwD">
+          <property role="3oM_SC" value="string" />
+        </node>
+        <node concept="3oM_SD" id="4nv8uBLshLb" role="1PaTwD">
+          <property role="3oM_SC" value="means" />
+        </node>
+        <node concept="3oM_SD" id="4nv8uBLshLc" role="1PaTwD">
+          <property role="3oM_SC" value="that" />
+        </node>
+        <node concept="3oM_SD" id="4nv8uBLshLd" role="1PaTwD">
+          <property role="3oM_SC" value="nothing" />
+        </node>
+        <node concept="3oM_SD" id="4nv8uBLshLe" role="1PaTwD">
+          <property role="3oM_SC" value="is" />
+        </node>
+        <node concept="3oM_SD" id="4nv8uBLshLf" role="1PaTwD">
+          <property role="3oM_SC" value="ignored." />
         </node>
       </node>
     </node>
@@ -1349,14 +1391,22 @@
                             </node>
                           </node>
                           <node concept="3clFbJ" id="2CaUdg_VNtB" role="3cqZAp">
-                            <node concept="2OqwBi" id="2CaUdg_VNv9" role="3clFbw">
-                              <node concept="37vLTw" id="2CaUdg_VNuF" role="2Oq$k0">
-                                <ref role="3cqZAo" node="2CaUdg_Rw7Y" resolve="location" />
-                              </node>
-                              <node concept="liA8E" id="2CaUdg_VNva" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
-                                <node concept="2j1LYi" id="2CaUdg_WzZ9" role="37wK5m">
+                            <node concept="1Wc70l" id="4nv8uBLsl1e" role="3clFbw">
+                              <node concept="2OqwBi" id="4nv8uBLqCLu" role="3uHU7B">
+                                <node concept="2j1LYi" id="4nv8uBLqBj0" role="2Oq$k0">
                                   <ref role="2j1LYj" node="2CaUdg_VvlT" resolve="ignoredPathsRegex" />
+                                </node>
+                                <node concept="17RvpY" id="4nv8uBLsiuM" role="2OqNvi" />
+                              </node>
+                              <node concept="2OqwBi" id="2CaUdg_VNv9" role="3uHU7w">
+                                <node concept="37vLTw" id="2CaUdg_VNuF" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="2CaUdg_Rw7Y" resolve="location" />
+                                </node>
+                                <node concept="liA8E" id="2CaUdg_VNva" role="2OqNvi">
+                                  <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
+                                  <node concept="2j1LYi" id="2CaUdg_WzZ9" role="37wK5m">
+                                    <ref role="2j1LYj" node="2CaUdg_VvlT" resolve="ignoredPathsRegex" />
+                                  </node>
                                 </node>
                               </node>
                             </node>
